@@ -1,0 +1,56 @@
+<div class="progressbar-block progressbar-block-romb">
+	<div class="container">
+		<div class="row">
+		  {{#if counters.length}}
+			{{#each_with_sort counters "order"}}
+				<div class="col-lg-3 col-sm-6 progressbar-item">
+					<div class="progress-main progress-{{order}}-{{id}}">
+						<svg>
+							<path d="M4,4 L168,4 L168,168 L4,168 L4,2" stroke="#e5e5e5" stroke-width="4" fill-opacity="0" transform="rotate(45, 64, 145)"></path>
+							<path class="st1" d="M4,4 L168,4 L168,168 L4,168 L4,2" stroke="#939497" stroke-width="4" fill-opacity="0" transform="rotate(45, 64, 145)"></path>
+						</svg>
+						<span class='progress-precents'><span>{{precents}}</span> %</span>
+						<h5 class="progress-title">{{title}}</h5>
+					</div>			
+				</div>
+				<script type="text/javascript">
+				jQuery(document).ready(function() {
+				    //Creating progressbar from svg shape
+					var bar = new ProgressBar.Path('.progress-{{order}}-{{id}} .st1', {
+					    duration: 2000
+					});
+
+					var waypoint = new Waypoint({
+					  element: document.getElementsByClassName('progress-{{order}}-{{id}}'),
+					  handler: function() {
+					  	bar.animate(({{precents}} / 100));
+					  	//Using countTo plugin for animating progress text
+						jQuery('.progress-{{order}}-{{id}} .progress-precents span').countTo({
+							from: 0,
+					        to: {{precents}},
+					        speed: 2000
+					    });
+						// Triggering animation on mouseenter event
+						jQuery('.progress-{{order}}-{{id}}').mouseenter(function(e) {
+							e.stopPropagation();
+							e.stopImmediatePropagation();
+							bar.set(0);
+							bar.animate(({{precents}} / 100), {easing: "bounce"});
+							jQuery('.progress-{{order}}-{{id}} .progress-precents span').countTo({
+								from: 0,
+						        to: {{precents}},
+						        speed: 2000
+						    });
+						});
+
+						this.destroy();
+					  },
+					    offset: '75%'
+					});
+				});
+				</script>
+			{{/each_with_sort}}
+          {{/if}}
+          </div>
+	</div>
+</div>

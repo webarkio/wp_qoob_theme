@@ -1,0 +1,26 @@
+/*--------------------------------------------------------------
+# video full page
+--------------------------------------------------------------*/
+
+.video-full-page {
+	padding: 6.3rem 0;
+}
+
+.video-full-page .header-block {
+	text-align: center;
+    margin-bottom: 3.2rem;
+}
+
+ .video-full-page .video-container-main {
+    overflow: hidden;
+    max-height: 90.0rem;
+}
+
+
+.video-full-page .video-container iframe, object, embed {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}

@@ -1,0 +1,31 @@
+<section class="tmpl-carousel-basic">
+            <div id="slider-{{id}}" class="carousel slide" data-ride="carousel">
+                <!-- Wrapper for slides -->
+                {{#if slider.length}}
+                    <div class="carousel-inner" role="listbox">
+                        {{#each_with_sort slider "order"}}
+                            <div class="item{{#ifCond order "==" "0"}} active{{/ifCond}}">
+                            {{#ifCond image '!=' 'empty'}}
+                                <img src="{{image}}" alt="image-{{ order }}">
+                            {{/ifCond}}
+                                <div class="carousel-content container">
+                                    <h1 class="carousel-title">{{ title }}</h1>
+                                    <div class="carousel-text">
+                                    {{#each buttons}}
+                                        <a class="btn" href="{{btn_link}}">{{title}}</a>
+                                    {{/each}}
+                                    </div> 
+                                </div>     
+                            </div>
+                        {{/each_with_sort}}
+                    </div>
+                {{/if}}
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#slider-{{id}}" role="button" data-slide="prev">
+                    <span class="arrow"></span>
+                </a>
+                <a class="right carousel-control" href="#slider-{{id}}" role="button" data-slide="next">
+                    <span class="arrow"></span>
+                </a>
+            </div>
+</section>

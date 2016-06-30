@@ -1,0 +1,79 @@
+/*--------------------------------------------------------------
+# landing mac
+--------------------------------------------------------------*/
+.landing-mac {
+	padding-top: 10.2rem;
+	padding-bottom: 13.8rem;
+}
+
+.landing-mac .header-block {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.landing-mac .mac-container {
+	margin-top: 3.3rem;
+	width: 117.2rem;
+	height: 67.6rem;
+	background: url('../blocks/landing_mac/assets/img/mac.png') center center no-repeat;
+}
+
+.landing-mac .inner-mac-container {
+	width: 87.9rem;
+	height: 54.9rem;
+	position: relative;
+    top: 4.9rem;
+    left: 14.8rem;
+    background-size: cover !important;
+    background-color: #000; 
+}
+
+.landing-mac video {
+	width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 1279px) {
+	.landing-mac .main-block {
+		margin-top: 3.3rem;
+	}
+	
+	.landing-mac .mac-container {
+		width: 78rem;
+    	height: 45.6rem;
+	    background-size: cover;
+	    margin: auto;
+	}
+
+	.landing-mac .inner-mac-container {
+		width: 59.4rem;
+	    height: 37.1rem;
+	    top: 3.3rem;
+	    left: 9.4rem;
+	}
+}
+
+@media (max-width: 991px) {
+	.landing-mac .mac-container {
+		width: 100%;
+		background: none;
+	}
+
+	.landing-mac .inner-mac-container {
+		width: 100%;
+	    background-size: contain !important;
+	    margin: auto;
+	    top: 0;
+	    left: 0;
+	}
+}
+
+@media (max-width: 531px) {
+	.landing-mac .mac-container {
+		display: inline;
+	}
+	.landing-mac {
+		padding-top: 3.9rem;
+		padding-bottom: 7rem;
+	}
+}

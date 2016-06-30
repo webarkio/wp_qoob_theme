@@ -1,0 +1,106 @@
+/*--------------------------------------------------------------
+## Slider v1
+--------------------------------------------------------------*/
+
+.carousel-content {
+    text-align: center;
+}
+
+.carousel-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.carousel-content .carousel-title,
+.carousel-content .carousel-text {
+    color: #fff;
+}
+
+.carousel-content .carousel-text {
+    margin-top: 4.3rem;
+}
+
+.carousel-content .carousel-title {
+    text-transform: uppercase;
+}
+
+.carousel-content .carousel-text a.btn {
+    color: #fff;
+    border-color: #fff;
+}
+
+.tmpl-carousel-basic .carousel-control {
+    width: 10%;
+}
+
+.tmpl-carousel-basic .carousel-control.left {
+    background: url('../images/slider_v1_arrow_left.png') center center no-repeat;
+}
+
+.tmpl-carousel-basic .carousel-control.right {
+    background: url('../images/slider_v1_arrow_right.png') center center no-repeat;
+}
+
+@media (max-width: 1170px) {
+    .carousel-content .carousel-title {
+        font-size: 3rem;
+    }
+    .carousel-content .carousel-text {
+        font-size: 1.4rem;
+        line-height: 2.8rem
+    }
+}
+
+@media (max-width: 970px) {
+    .carousel-content .carousel-title {
+        font-size: 2rem;
+        margin: 0;
+    }
+    .carousel-content .carousel-text,
+    .carousel-content .carousel-text p {
+        font-size: 1.0rem;
+        line-height: 2.0rem;
+        margin: 0;
+    }
+    .carousel-content .carousel-text {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .carousel-content .carousel-title {
+        font-size: 1.5rem;
+    }
+    .carousel-content .carousel-text,
+    .carousel-content .carousel-text p {
+        font-size: 0.8rem;
+        line-height: 1.2rem
+    }
+    .carousel-content .carousel-text {
+        margin-top: 1rem;
+    }
+    .carousel-text a.btn {
+        padding: 1.6rem 6.5rem;
+        margin-bottom: .3rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .carousel-content .carousel-title {
+        font-size: 1.5rem;
+        line-height: 1.6rem;
+    }
+    .carousel-text a.btn {
+        padding: 0.2rem 2.5rem;
+        margin-bottom: .3rem;
+    }
+    .tmpl-carousel-basic .carousel-control {
+        width: 15%;
+    }
+}

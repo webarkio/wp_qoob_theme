@@ -1,0 +1,60 @@
+{
+    "name": "",
+    "groups": "other",
+    "template": "template.hbs",
+    "settings": [{
+        "name": "iconbox",
+        "label": "Items",
+        "type": "accordion",
+        "viewcontent": "standart",
+        "viewType": "expand",
+        "settings": [{
+            "name" : "icon",
+            "type" : "icon",
+            "label": "Icon",
+            "presets": ["glyphicon glyphicon-asterisk", "fa fa-adjust", "fa fa-adn", "fa fa-automobile"]
+            },{
+            "name": "title",
+            "label": "Title",
+            "type": "text",
+            "placeholder": "Enter title"
+        },{
+            "name": "text",
+            "label": "Text",
+            "type": "textarea"
+        }]
+    }],
+    "defaults": {
+        "iconbox": [{
+            "icon": "entypo entypo-window",
+            "title": "Visual editor",
+            "text" : "The interface for editing will reflect how your project will look for users with no page reloading.",
+            "order": 1
+        },{
+            "icon": "entypo entypo-light-up icon",
+            "title": "So easy",
+            "text" : "Simply drag and drop the desired block to build your website in a few clicks.",
+            "order": 2
+        },{
+            "icon": "entypo entypo-monitor",
+            "title": "Touch Screen Ready",
+            "text" : "Qoob supports touchscreen devices including platforms for iOS and Android devices.",
+            "order": 3
+        },{
+            "icon": "ionicons ion-ios-photos-outline",
+            "title": "Device mode preview",
+            "text" : "Qoob automatically optimizes your pages for easy viewing on a variety of mobile devices.",
+            "order": 4
+        },{
+            "icon": "themify ti-shortcode",
+            "title": "No coding required",
+            "text" : "No programming and complete creative freedom. This tool provides automatic coding.",
+            "order": 5
+        },{
+            "icon": "ionicons ion-android-favorite-outline",
+            "title": "It'S FREE",
+            "text" : "A free website builder Qoob offers a huge amount of tools and features with an intuitive interface.",
+            "order": 6
+        }]
+    }
+}

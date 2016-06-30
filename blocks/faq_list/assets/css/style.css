@@ -1,0 +1,41 @@
+/*--------------------------------------------------------------
+# Faq list
+--------------------------------------------------------------*/
+
+.faq-list {
+	padding: 7.2rem 0 16.9rem;
+}
+
+.faq-list .header-block {
+	text-align: center;
+    margin: 1.7rem 0 6.8rem;
+}
+
+.faq-list .count {
+	color: #0085ff;
+	font-size: 5rem;
+	font-family: 'OpenSans-Bold';
+	padding-bottom: 0.1rem;
+}
+
+.faq-list h4 {
+	line-height: 4.9rem;
+}
+
+.faq-list .content {
+	padding-top: 2rem;
+}
+
+.faq-list .item {
+	margin-bottom: 4.2rem;
+}
+
+.faq-list .border-left-line:before {
+	 background: #c8c8c8;
+	 bottom: 4.6rem;
+	 content: " ";
+	 left: -3rem;
+	 position: absolute;
+	 width: 1px;
+	 top: 3.4rem;
+}

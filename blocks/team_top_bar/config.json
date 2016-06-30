@@ -1,0 +1,172 @@
+{
+    "name": "",
+    "groups": "our_team",
+    "template": "template.hbs",
+    "settings": [{
+            "name": "header",
+            "label": "Header",
+            "type": "text"
+        }, {
+            "name": "text",
+            "label": "Header",
+            "type": "textarea"
+        }, {
+            "name": "skills",
+            "label": "Skills",
+            "type": "accordion",
+            "viewcontent": "standart",
+            "viewType": "expand",
+            "settings": [{
+                    "name": "title",
+                    "label": "Skill's name",
+                    "type": "text"
+                }, {
+                    "name": "percent",
+                    "label": "Percent",
+                    "type": "text"
+                }]
+        }, {
+            "name": "team",
+            "label": "Items",
+            "type": "accordion",
+            "viewcontent": "standart",
+            "viewType": "flip",
+            "settings": [{
+                    "name": "image",
+                    "type": "image",
+                    "label": "Person"
+                }, {
+                    "name": "title",
+                    "label": "Name",
+                    "type": "text",
+                    "placeholder": "Enter name"
+                }, {
+                    "name": "position",
+                    "label": "Position",
+                    "type": "text",
+                    "placeholder": "Enter position"
+                }, {
+                    "name": "social",
+                    "label": "Social profile",
+                    "type": "accordion",
+                    "viewcontent": "standart",
+                    "viewType": "expand",
+                    "settings": [{
+                            "name": "title",
+                            "label": "Title",
+                            "type": "text"
+                        }, {
+                            "name": "url",
+                            "label": "Url profile",
+                            "type": "text"
+                        }, {
+                            "name": "icon",
+                            "type": "icon",
+                            "label": "Icon",
+                            "presets": ["fa fa-facebook-official", "fa fa-google-plus", "fa fa-twitter"]
+                        }]
+                }]
+        }],
+    "defaults": {
+        "header": "Meet The Team",
+        "text": "<p>Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur aliquet quam id dui posuere blandit. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus.</p>",
+        "team": [{
+                "image": "%block_url%/assets/img/person1.png",
+                "title": "Thara noles",
+                "position": "Designer",
+                "social": [{
+                        "title": "Facebook",
+                        "url": "http://qoob.it/",
+                        "icon": "fa fa-facebook-official",
+                        "order": 1
+                    }, {
+                        "title": "Google +",
+                        "url": "http://qoob.it/",
+                        "icon": "fa fa-google-plus",
+                        "order": 2
+                    }, {
+                        "title": "Twitter",
+                        "url": "http://qoob.it/",
+                        "icon": "fa fa-twitter",
+                        "order": 3
+                    }],
+                "order": 1
+            }, {
+                "image": "%block_url%/assets/img/person2.png",
+                "title": "jerry smith",
+                "position": "Manager",
+                "social": [{
+                        "title": "Facebook",
+                        "url": "http://qoob.it/",
+                        "icon": "fa fa-facebook-official",
+                        "order": 1
+                    }, {
+                        "title": "Google +",
+                        "url": "http://qoob.it/",
+                        "icon": "fa fa-google-plus",
+                        "order": 2
+                    }, {
+                        "title": "Twitter",
+                        "url": "http://qoob.it/",
+                        "icon": "fa fa-twitter",
+                        "order": 3
+                    }],
+                "order": 2
+            }, {
+                "image": "%block_url%/assets/img/person3.png",
+                "title": "Tom house",
+                "position": "Project manager",
+                "social": [{
+                        "title": "Facebook",
+                        "url": "http://qoob.it/",
+                        "icon": "fa fa-facebook-official",
+                        "order": 1
+                    }, {
+                        "title": "Google +",
+                        "url": "http://qoob.it/",
+                        "icon": "fa fa-google-plus",
+                        "order": 2
+                    }, {
+                        "title": "Twitter",
+                        "url": "http://qoob.it/",
+                        "icon": "fa fa-twitter",
+                        "order": 3
+                    }],
+                "order": 3
+            }, {
+                "image": "%block_url%/assets/img/person4.png",
+                "title": "Linda damon",
+                "position": "Designer",
+                "social": [{
+                        "title": "Facebook",
+                        "url": "http://qoob.it/",
+                        "icon": "fa fa-facebook-official",
+                        "order": 1
+                    }, {
+                        "title": "Google +",
+                        "url": "http://qoob.it/",
+                        "icon": "fa fa-google-plus",
+                        "order": 2
+                    }, {
+                        "title": "Twitter",
+                        "url": "http://qoob.it/",
+                        "icon": "fa fa-twitter",
+                        "order": 3
+                    }],
+                "order": 4
+            }],
+        "skills": [{
+                "title": "Quality",
+                "percent": "85",
+                "order": 1
+            }, {
+                "title": "Design",
+                "percent": "92",
+                "order": 2
+            }, {
+                "title": "Speed",
+                "percent": "60",
+                "order": 3
+            }]
+    }
+}

@@ -1,0 +1,69 @@
+/*--------------------------------------------------------------
+# Call to action bg
+--------------------------------------------------------------*/
+
+.call-to-action-bg {
+	padding-top: 10.5rem;
+	padding-bottom: 14.0rem;
+	text-align: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	position: relative;
+}
+
+.call-to-action-bg .background-block {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.call-to-action-bg .background-block.parallax {
+	width: 100vw;
+	height: 100vh;
+}
+
+.call-to-action-bg h1 {
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.call-to-action-bg .btn-action {
+	display: inline-block;
+	margin: auto;
+	margin-top: 105px;
+}
+
+.action-overlay {
+  position: relative;
+}
+
+.action-overlay:before{
+  position: absolute;
+  content:" ";
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display: block;
+  z-index:0;
+  background-color: rgba(0,0,0,0.4);
+}
+
+@media (max-width: 531px) { 
+	.call-to-action-bg {
+ 		padding-top: 3.9rem;
+    	padding-bottom: 7.1rem;
+ 	}
+ 	.call-to-action-bg .btn-action {
+ 		width: 25.9rem;
+		padding: 2.5rem 3.5rem;
+		margin-top: 10px;
+ 	}
+}

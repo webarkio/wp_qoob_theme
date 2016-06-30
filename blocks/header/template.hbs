@@ -1,0 +1,17 @@
+<div class="header-block-wrap">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<h1 class="header-block">{{header}}</h1>
+			</div>
+			<div class="col-lg-12">
+				{{{text}}}
+			</div>
+			<div class="col-lg-12 text-center btn-header-wrap">
+				{{#each_with_sort buttons "order"}}
+					<a href="{{action_url}}" class="btn inverse">{{title}}</a>
+				{{/each_with_sort}}
+			</div>
+		</div>
+	</div>
+</div>

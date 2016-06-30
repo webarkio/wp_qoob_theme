@@ -1,0 +1,99 @@
+
+/*--------------------------------------------------------------
+# contact fluid
+--------------------------------------------------------------*/
+
+.contact-fluid {
+	padding: 6.2rem 0 10.8rem;
+}
+
+.contact-fluid .header-block {
+	text-align: center;
+	margin-bottom: 8.9rem;
+}
+
+.contact-fluid form input[type="text"],
+.contact-fluid form input[type="email"],
+.contact-fluid form button[type="submit"],
+.contact-fluid form textarea {
+	width: 100%;
+}
+
+.contact-fluid form textarea {
+	height: 25.1rem;
+}
+
+.contact-fluid .form-group {
+	margin-bottom: 0.5rem;
+	padding: 0;
+}
+
+.contact-fluid form button[type="submit"] {
+	margin-top: 1.1rem;
+}
+
+.contact-fluid .map {
+	border: 0;
+	height: 60rem;
+	width: 100%;
+}
+
+.contact-fluid .block-contacts {
+	background-color: #0084ff;
+	color: #fff;
+	border-radius: 1.5rem;
+	font-size: 1.6rem;
+	padding: 5.4rem 5.8rem 4.1rem;
+	margin-top: 6.4rem;
+	margin-bottom: 2.1rem;
+}
+
+.contact-fluid .block-contacts .e-mail {
+	margin-bottom: 1.2rem;
+}
+
+.contact-fluid .block-contacts .address p {
+    margin-bottom: 1.2rem;
+    line-height: 2.4rem;
+}
+
+.contact-fluid .block-contacts .address p:last-child {
+	margin-bottom: 0;
+}
+
+.contact-fluid .map-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+
+
+@media (min-width: 992px) {
+	.contact-fluid .left-padding {
+		padding-right:0.6rem;
+	}
+
+	.contact-fluid .right-padding {
+		margin-left: -0.138297872340425%;
+		*margin-left: -0.13191489361702%;
+		padding-left:0.6rem;
+	}
+
+	.contact-fluid .right-padding:first-child {
+		margin-left: -0.11063829787234%;
+		*margin-left: -0.104255319148938%;
+	}
+}
+
+@media (max-width: 531px) {
+	.contact-fluid .header-block {
+	    margin-bottom: 1.7rem;
+	}
+
+	.contact-info-block {
+		padding-left: 25px;
+    	padding-right: 25px;
+	}
+}

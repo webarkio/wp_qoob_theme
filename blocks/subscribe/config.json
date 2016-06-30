@@ -1,0 +1,72 @@
+{
+    "name": "",
+    "groups": "subscribe_form",
+    "template": "template.hbs",
+    "settings": [
+    {
+        "name": "left_tip",
+        "label": "Text for left tooltip",
+        "type": "text"
+    },
+    {
+        "name": "right_tip",
+        "label": "Text for right tooltip",
+        "type": "text"
+    },
+    {
+        "name" : "subscribe_icon",
+        "label" : "Image",
+        "type" : "image"
+    },
+    {
+        "name": "email_pl",
+        "label": "Email palceholder",
+        "type": "text"
+    },
+    {
+        "name": "campaign_token",
+        "label": "Campaign",
+        "type": "text"
+    },
+    {
+        "name": "start_day",
+        "label": "Cycle on day",
+        "type": "text"
+    },
+    {
+        "name": "thankyou_url",
+        "label": "Custom Thank-you page URL",
+        "type": "text"
+    },
+    {
+        "name": "forward_data",
+        "label": "Forward data",
+        "options": [{
+            "id": "none",
+            "val": "none"
+        },{
+            "id": "get",
+            "val": "get"
+        },{
+            "id": "get",
+            "val": "get"
+        }],
+        "type": "select"
+    },
+    {
+        "name": "subscribe_btn",
+        "label": "Submit button value",
+        "type": "text"
+    }],
+    "defaults": {
+       "subscribe_icon" : "%block_url%/assets/img/subscribe_icon.png",
+       "campaign_token" : "p2nwC",
+       "email_pl" : "Your E-mail",
+       "start_day" : "0",
+       "thankyou_url" : "qoob.it",
+       "subscribe_btn" : "Subscribe",
+       "forward_data" : "get",
+       "left_tip" : "... Page will coming soon",
+       "right_tip" : "YOU CAN follow OUR last news"
+    }
+}

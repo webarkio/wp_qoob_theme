@@ -1,0 +1,132 @@
+/*--------------------------------------------------------------
+# Download block
+--------------------------------------------------------------*/
+.download-block {
+    padding-top: 10.5rem;
+    padding-bottom: 14rem;
+}
+.download-block h1,
+.download-block h6 {
+    text-align: center;
+}
+.download-block h1 {
+    text-transform: uppercase;
+}
+.download-block h6 {
+    font-size: 1.8rem;
+    color: #484848;
+    font-family: "OpenSans-Regular", sans-serif;
+    font-weight: normal;
+}
+.download-block .btn-action {
+    margin-top: 2rem;
+    width: 100%;
+}
+.download-block .btn-action.disabled {
+    pointer-events: none;
+}
+.download-block .box-wrap {
+    padding-left: 5.7rem;
+    margin-bottom: 8.1rem;
+}
+.download-block .box-wrap li {
+    width: 31.2rem;
+    float: left;
+    margin-right: 4.0rem;
+    margin-top: 4.7rem;
+}
+.download-block .box-wrap .release {
+    background: #0084ff;
+}
+.download-block .box-wrap .comingsoon {
+    background: #d0d0d0;
+}
+.download-block .box-wrap .block-image {
+    text-align: center;
+    width: 31.2rem;
+    height: 24.4rem;
+    line-height: 24.4rem;
+    border-radius: 1.5rem;
+}
+.download-block .box-wrap .block-image img {
+    vertical-align: middle;
+}
+
+.download-block .github-sourse {
+    text-align: center;
+}
+.download-block .github-sourse h3 {
+    text-transform: uppercase;
+    font-size: 5rem;
+    margin-bottom: 51px;
+}
+.download-block .github-sourse .github-logo img {
+    margin-right: 3.2rem;
+    margin-top: 0.8rem;
+}
+@media (max-width: 768px) { 
+    .download-block .box-wrap {
+        padding-left: 1.7rem;
+    }
+    .download-block .box-wrap li {
+        margin-right: 3rem;
+    }
+    .download-block .box-wrap li:nth-child(even){
+        margin-right: 0;
+    }
+}
+@media (max-width: 541px) { 
+        
+    .download-block {
+         padding-top: 3.9rem;
+         padding-bottom: 7rem;
+    }
+    .download-block .box-wrap {
+        padding-left: 2rem;
+        margin-bottom: 0;
+    }
+    .download-block h6 {
+        text-align: left;
+        padding-left: 18px;
+    }
+    .download-block .box-wrap li {
+        float: none;
+        width: 100%;
+        padding-right: 20px;
+    }
+
+    .download-block .box-wrap .block-image {
+        width: 100%;
+    }
+    .download-block .btn-action {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .download-block .github-sourse h3 {
+        font-size: 3.6rem;
+        text-align: left;
+        padding-left: 1.9rem;
+        margin-top: 0.5rem;
+        margin-bottom: 28px;
+    }
+
+    .download-block .github-star,
+    .download-block .github-fork {
+        float: right;
+        margin-bottom: .8rem;
+    }
+    .download-block .github-fork {
+        margin-right: 2px;
+    }
+    .download-block .github-logo {
+        float: left;
+        margin-left: 21px;
+        width: 63px;
+        margin-top: -9px;
+    }
+    .download-block .github-sourse .github-logo img {
+        margin-right: 0;
+    }
+}
+
+

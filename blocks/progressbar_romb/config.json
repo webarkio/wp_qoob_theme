@@ -1,0 +1,41 @@
+{
+    "name": "",
+    "groups": "other",
+    "template": "template.hbs",
+    "settings": [{
+            "name": "counters",
+            "label": "Counters",
+            "type": "accordion",
+            "viewcontent": "standart",
+            "viewType": "expand",
+            "settings": [{
+                "name": "title",
+                "label": "Title",
+                "type": "text",
+                "placeholder": "Enter title"
+            }, {
+                "name": "precents",
+                "label": "Precent to",
+                "type": "slider"
+            }]
+        }],
+        "defaults": {
+            "counters": [{
+                "title": "Created",
+                "precents": 82,
+                "order": 1
+            }, {
+                "title": "Happy clients",
+                "precents": 65,
+                "order": 2
+            }, {
+                "title": "Features",
+                "precents": 37,
+                "order": 3
+            }, {
+                "title": "Devices tested",
+                "precents": 100,
+                "order": 4
+            }]
+        }
+    }

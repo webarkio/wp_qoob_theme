@@ -1,0 +1,21 @@
+/*--------------------------------------------------------------
+# Call to action bg
+--------------------------------------------------------------*/
+
+.call-to-action-no-img{
+	padding-top: 10.5rem;
+	padding-bottom: 14.0rem;
+}
+
+.call-to-action-no-img .header-block h1 {
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 7.1rem;
+    margin-bottom: 2.1rem;
+}
+
+.call-to-action-no-img .btn-action {
+	display: inline-block;
+	margin: auto;
+	margin-top: 5px;
+}

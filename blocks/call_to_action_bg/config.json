@@ -1,0 +1,38 @@
+{
+    "name": "",
+    "groups": "call_to_action",
+    "template": "template.hbs",
+    "settings": [{
+        "name": "header",
+        "label": "Header",
+        "type": "text"
+    }, {
+        "name": "image",
+        "label": "Image",
+        "type": "image",
+        "tags": ["sky"]
+    },  {
+        "name": "parallax",
+        "label": "Parallax Background",
+        "type": "checkbox_switch"
+    }, {
+        "name": "action_text",
+        "label": "Action button text",
+        "type": "text"
+    }, {
+        "name": "action_url",
+        "label": "Url for action button",
+        "type": "text"
+    }],
+    "assets": [{
+        "type": "image",
+        "src": "%block_url%/assets/img/call_to_action_bg.jpg",
+        "tags": ["sky"]
+    }],
+    "defaults": {
+        "header": "Ready to build your web site?",
+        "image" : "%block_url%/assets/img/call_to_action_bg.jpg",
+        "action_text" : "Start building",
+        "action_url" : "http://qoob.it/"
+    }
+}

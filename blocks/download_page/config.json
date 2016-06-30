@@ -1,0 +1,112 @@
+{
+    "name": "",
+    "groups": "other",
+    "template": "template.hbs",
+    "settings": [{
+        "name": "header",
+        "label": "Header",
+        "type" : "text"
+        },{
+        "name": "subheader",
+        "label": "Sub title",
+        "type" : "text"
+        },{
+        "name": "box",
+        "label": "Items",
+        "type": "accordion",
+        "viewcontent": "standart",
+        "viewType": "expand",
+        "settings": [{
+            "name": "title",
+            "label": "Title",
+            "type": "text",
+            "placeholder": "Enter title"
+        },{
+            "name": "boxbg",
+            "label": "Background color",
+            "type": "select",
+            "visible_color": "true",
+            "options": [{
+                "id": "release",
+                "colorimage": "rgb(0, 132, 255)",
+                "val": "release"
+            },{
+                "id": "comingsoon",
+                "colorimage": "rgb(208, 208, 208)",
+                "val": "comingsoon"
+            }]
+        },{
+            "name": "textbtn",
+            "label": "Text button",
+            "type": "text"
+        },
+        {
+            "name": "linkbtn",
+            "label": "Url link button",
+            "type": "text"
+        },
+        {
+            "name": "disabled",
+            "label": "Disabled button?",
+            "type": "checkbox"
+        },
+        {
+            "name" : "image",
+            "type" : "image",
+            "label": "image"
+            }]
+    },
+    {
+        "name": "gittitle",
+        "label": "Title sourses",
+        "type" : "text"
+    },
+    {
+        "name": "gituser",
+        "label": "Github user name",
+        "type" : "text"
+    },
+    {
+        "name": "gitrepo",
+        "label": "Github repo",
+        "type" : "text"
+    },
+    {
+        "name" : "gitimage",
+        "type" : "image",
+        "label": "Source logo"
+    }],
+    "defaults": {
+        "header": "Download last version of qoob",
+        "subheader": "last version 1.0.0",
+        "box": [{
+            "boxbg" : "release",
+            "image" : "%block_url%/assets/img/wordpress.png",
+            "title": "Wordpress",
+            "textbtn" : "Download",
+            "linkbtn" : "#",
+            "disabled" : 0,
+            "order": 1
+        },{
+            "boxbg" : "comingsoon",
+            "image" : "%block_url%/assets/img/joomla.png",
+            "title": "Joomla",
+            "textbtn" : "Coming soon",
+            "linkbtn" : "#",
+            "disabled" : 1,
+            "order": 2
+        },{
+            "boxbg" : "comingsoon",
+            "image" : "%block_url%/assets/img/drupal.png",
+            "title": "Drupal",
+            "textbtn" : "Coming soon",
+            "linkbtn" : "#",
+            "disabled" : 1,
+            "order": 3
+        }],
+        "gittitle":"Sources on GitHub",
+        "gituser":"maxazan",
+        "gitrepo":"jquery-treegrid",
+        "gitimage":"%block_url%/assets/img/git_logo.png"
+    }
+}

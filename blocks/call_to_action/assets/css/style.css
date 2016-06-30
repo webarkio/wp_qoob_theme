@@ -1,0 +1,27 @@
+/*--------------------------------------------------------------
+# Call to action
+--------------------------------------------------------------*/
+
+.call-to-action {
+	padding-top: 10.5rem;
+	padding-bottom: 14.0rem;
+
+}
+.call-to-action img {
+	margin-top: 15px;
+}
+.call-to-action .text {
+	padding-top: 5px;
+	padding-left: 30px;
+}
+.call-to-action .header-block h1 {
+	text-align: center;
+	/*margin-bottom: 40px;*/
+	text-transform: uppercase;
+	line-height: 1.42;
+}
+
+.call-to-action .btn-action {
+	display: inline-block;
+	margin-top: 5px;
+}

@@ -1,0 +1,42 @@
+<div class="download-block">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<h1 class="header-block">{{header}}</h1>
+				<h6>{{subheader}}</h6>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12">
+				<ul class="box-wrap list-style-none">
+			  {{#if box.length}}
+				{{#each_with_sort box "order"}}
+					<li>
+						<div class= "block-image {{boxbg}}">
+						{{#if image}}
+							<image src="{{image}}">
+						{{/if}}
+						</div>
+						<a href="{{linkbtn}}" class="btn btn-action {{#ifCond disabled '==' '1'}}disabled{{/ifCond}}">{{textbtn}}</a>
+					</li>
+					{{#ifIsNthItem nth=3}} <div class="clearfix"></div> {{/ifIsNthItem}}
+				{{/each_with_sort}}
+	          {{/if}}
+	          </ul>
+	          <div class="github-sourse">
+	          		<h3>{{gittitle}}</h3>
+	          		<span class="github-star">
+						<iframe src="https://ghbtns.com/github-btn.html?user={{gituser}}&repo={{gitrepo}}&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+					</span>
+					<span class="github-logo"><img src="{{gitimage}}"></span>
+					<span class="github-fork">
+						<iframe src="https://ghbtns.com/github-btn.html?user={{gituser}}&repo={{gitrepo}}&type=fork&count=true&size=large" frameborder="0" scrolling="0" width="158px" height="30px"></iframe>
+					</span>
+	          </div>
+          	</div>
+          </div>
+	</div>
+</div>
+<script>
+
+</script>

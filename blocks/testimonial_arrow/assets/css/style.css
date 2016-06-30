@@ -1,0 +1,54 @@
+/*--------------------------------------------------------------
+## Testimonial arrow carousel 
+--------------------------------------------------------------*/
+
+.testimonial-carousel-arrow {
+    position: relative;
+}
+.testimonial-carousel.testimonial-carousel-center.testimonial-carousel-arrow {
+    margin-top: 4.7rem;
+}
+.testimonial-carousel.testimonial-carousel-center.testimonial-carousel-arrow .testimonial-content {
+    padding-left: 91px;
+    padding-right: 84px;
+}
+.testimonial-carousel-arrow .owl-nav .owl-prev {
+    left: -13px;
+    top: 50%;
+    background: transparent url(../images/carousel_arrow.png) no-repeat;
+    margin-top: -57px;
+}
+
+.testimonial-carousel-arrow .owl-nav {
+    width: 100%;
+    top: 50%;
+/*    margin-top: -50px;*/
+}
+
+.testimonial-carousel-arrow .owl-nav .owl-next {
+    right: -17px;
+    top: 50%;
+    background: transparent url(../images/video_carousel_arrow.png) no-repeat;
+    transform: rotate(180deg);
+    margin-top: -57px;
+}
+
+.testimonial-carousel-arrow .owl-nav .owl-prev,
+.testimonial-carousel-arrow .owl-nav .owl-next {
+    width: 26px;
+    height: 50px;
+}
+
+.testimonial-carousel-arrow .owl-nav,
+.testimonial-carousel-arrow .owl-nav .owl-prev,
+.testimonial-carousel-arrow .owl-nav .owl-next {
+    position: absolute;
+}
+.testimonial-carousel.testimonial-carousel-arrow.owl-theme .owl-dots {
+    margin-top: 4rem;
+}
+@media (max-width: 768px) {
+    .testimonial-carousel-arrow .owl-nav {
+        display: none;
+    }
+}

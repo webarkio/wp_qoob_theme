@@ -1,0 +1,31 @@
+{
+    "name": "",
+    "groups": "main_block",
+    "template": "template.hbs",
+    "settings": [{
+        "name": "header",
+        "label": "Header",
+        "type": "text"
+    },{
+        "name": "video",
+        "label": "Video",
+        "type": "video",
+        "tags": ["study"]
+    }],
+    "defaults": {
+        "header": "Create with Qube is so easy",
+        "video" : "%block_url%/assets/videos/builder_preview_1.mp4"
+    },
+    "assets" : [{
+        "type": "image",
+        "src": "%theme_url%/images/mac_pic.png",
+        "tags": ["woman", "person"]
+    },
+    {
+        "type": "video",
+        "src": "%block_url%/assets/videos/builder_preview_1.mp4",
+        "preview": "%block_url%/assets/videos/builder_preview_1.png",
+        "title": "Buidler Preview",
+        "tags": ["study"]
+    }]
+}

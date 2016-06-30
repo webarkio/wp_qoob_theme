@@ -1,0 +1,86 @@
+{
+    "name": "",
+    "groups": "faq",
+    "template": "template.hbs",
+    "settings": [{
+        "name": "header",
+        "label": "Header",
+        "type": "text"
+    }, {
+        "name": "image",
+        "label": "Image",
+        "type": "image",
+        "tags": ["sky"]
+    }, {
+        "name": "parallax",
+        "label": "Parallax Background",
+        "type": "checkbox_switch"
+    }, {
+        "name": "type_color",
+        "label": "Type",
+        "type": "select",
+        "options": [{
+                "id": "blue",
+                "val": "blue"
+            },{
+                "id": "grey",
+                "val": "grey"
+            },{
+                "id": "transparent",
+                "val": "transparent"
+            }]
+    }, {
+        "name": "faq",
+        "label": "List",
+        "type": "accordion",
+        "settings": [{
+            "name": "title",
+            "label": "Title",
+            "type": "text",
+            "placeholder": "Enter text"
+        }, {
+            "name": "content",
+            "label": "Text",
+            "type": "textarea"
+        }]
+    }],
+    "assets": [{
+        "type": "image",
+        "src": "%block_url%/assets/img/faq_accordion.jpg",
+        "tags": ["sky"]
+    }],
+    "defaults": {
+        "header": "FAQ",
+        "image" : "%block_url%/assets/img/faq_accordion.jpg",
+        "type_color": "blue",
+        "faq": [{
+            "title": "Curabitur non nulla sit amet nisl tempus convallis quis ac lectus?",
+            "content": "Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat.<br/><br/>Curabitur aliquet quam id dui posuere blandit.s ligula sed magna dictum porta. Lorem um dolor sit amet, consectetur adipiscing elit. Pellentesque in ipsum id orci porta dapibus. Vestibulum acasdiam sit amet ipsum quam vehicula elementum. ",
+            "order": 0
+        }, {
+            "title": "Nulla porttitor accumsan tincidunt?",
+            "content": "Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat.<br/><br/>Curabitur aliquet quam id dui posuere blandit.s ligula sed magna dictum porta. Lorem um dolor sit amet, consectetur adipiscing elit. Pellentesque in ipsum id orci porta dapibus. Vestibulum acasdiam sit amet ipsum quam vehicula elementum. ",
+            "order": 1
+        }, {
+            "title": "Curabitur non nulla sit amet nisl tempus convallis quis ac lectus?",
+            "content": "Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat.<br/><br/>Curabitur aliquet quam id dui posuere blandit.s ligula sed magna dictum porta. Lorem um dolor sit amet, consectetur adipiscing elit. Pellentesque in ipsum id orci porta dapibus. Vestibulum acasdiam sit amet ipsum quam vehicula elementum. ",
+            "order": 2
+        }, {
+            "title": "Amet nisl tempus convallis quis ac lectus?",
+            "content": "Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat.<br/><br/>Curabitur aliquet quam id dui posuere blandit.s ligula sed magna dictum porta. Lorem um dolor sit amet, consectetur adipiscing elit. Pellentesque in ipsum id orci porta dapibus. Vestibulum acasdiam sit amet ipsum quam vehicula elementum. ",
+            "order": 3
+        }, {
+            "title": "Curabitur non nulla sit amet nisl tempus convallis quis ac lectus?",
+            "content": "Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat.<br/><br/>Curabitur aliquet quam id dui posuere blandit.s ligula sed magna dictum porta. Lorem um dolor sit amet, consectetur adipiscing elit. Pellentesque in ipsum id orci porta dapibus. Vestibulum acasdiam sit amet ipsum quam vehicula elementum. ",
+            "order": 4
+        }, {
+            "title": "Amet nisl tempus convallis quis ac lectus?",
+            "content": "Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat.<br/><br/>Curabitur aliquet quam id dui posuere blandit.s ligula sed magna dictum porta. Lorem um dolor sit amet, consectetur adipiscing elit. Pellentesque in ipsum id orci porta dapibus. Vestibulum acasdiam sit amet ipsum quam vehicula elementum. ",
+            "order": 5
+        }, {
+            "title": "Curabitur non nulla sit amet nisl tempus convallis quis ac lectus?",
+            "content": "Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat.<br/><br/>Curabitur aliquet quam id dui posuere blandit.s ligula sed magna dictum porta. Lorem um dolor sit amet, consectetur adipiscing elit. Pellentesque in ipsum id orci porta dapibus. Vestibulum acasdiam sit amet ipsum quam vehicula elementum. ",
+            "order": 6
+        }]
+    }
+}

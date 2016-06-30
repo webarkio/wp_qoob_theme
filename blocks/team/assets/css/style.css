@@ -1,0 +1,149 @@
+/*--------------------------------------------------------------
+# Team
+--------------------------------------------------------------*/
+.team-block {
+	padding-top: 6.4rem;
+    padding-bottom: 9.3rem;
+}
+.team-block h1 {
+    margin-bottom: 2rem;
+}
+.progress-wrap {
+	margin-top: 4.2rem;
+	height: 4.7rem;
+}
+
+.team-wrap .team-img {
+    width: 22.7rem;
+    height: 22.7rem;
+    border-radius: 11.35rem;
+    border: 1.0rem solid #efefef;
+    background-position: center;
+    margin: auto;
+    margin-top: 5.2rem;
+}
+.team-wrap .team-name {
+	text-transform: uppercase;
+    margin-top: 2.2rem;
+    margin-bottom: .5rem;
+}
+.team-wrap .team-position {
+	margin-bottom: 2.3rem;
+    margin-top: 0rem;
+}
+
+.team-wrap .team-name,
+.team-wrap .team-position {
+	text-align: center;
+}
+.team-wrap .team-social {
+	text-align: center;
+	margin-bottom: 4.5rem;
+}
+.team-social .social-icons {
+    width: 4.0rem;
+    height: 4.0rem;
+    text-decoration: none;
+    background-color: #4b5169;
+    color: #fff;
+    border-radius: 2.0rem;
+    position: relative;
+    margin-left: 0.2rem;
+    display: inline-block;
+}
+.team-social.black-bg .social-icons {
+    color: #262b30;
+    background-color: #fff;
+}
+.team-social .social-icons::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -0.8rem;
+    margin-left: -0.8rem;
+}
+
+.team-block .progress{
+    height: 4.7rem;
+    margin-bottom: 0.5rem;
+    background-color: #e3e3e3;
+    border-radius: 4rem;
+    width: 75%;
+    float: right;
+    margin-top: 3.3rem;
+}
+.team-block .progress-bar {
+	background-color: #b8babf;
+	position: relative !important;
+	overflow: visible !important;
+	border-top-left-radius: 4rem;
+	border-bottom-left-radius: 4rem;
+}
+.team-block .progress-wrap span{
+	font-family: "OpenSans-Bold", sans-serif;
+	font-size: 2rem;
+	color: #b8babf;
+	text-transform: uppercase;
+}
+.team-block .progress-bar::before {
+	content: "";
+    display: block;
+    width: 2.0rem;
+    height: 2.1rem;
+    position: absolute;
+    color: #b8babf;
+    font-size: 2rem;
+    width: 100%;
+    top: -2.1rem;
+    border-top: 0.2rem solid #e3e3e3;
+    border-right: 0.2rem solid #e3e3e3;
+}
+
+.team-block .progress-bar.full-progress::before {
+	width: 98.1%;
+}
+
+.team-block .progress-bar::after {
+	content: "";
+    display: block;
+    width: 10.5rem;
+    height: 2.1rem;
+    position: absolute;
+    color: #b8babf;
+    font-size: 2rem;
+    top: -2.1rem;
+    left: -10.5rem;
+    border-top: 0.2rem solid #e3e3e3;
+    text-align: left;
+    background-repeat: no-repeat;
+    background-position: top -1.0rem left 0;
+}
+
+.team-block .point {
+	display: block;
+    width: 1.6rem;
+    height: 1.6rem;
+    position: absolute;
+    top: -2.8rem;
+    left: -10.6rem;
+    z-index: 2;
+    background-image: url(../images/point.png);
+}
+.team-block .skill-wrap {
+	display: block;
+    width: 15%;
+    float: left;
+}
+
+ @media screen and (max-width: 76.8rem) {
+	.team-block .skill-wrap {
+		display: block;
+	    width: 100%;
+	    float: left;
+	}
+
+	.team-block .progress {
+		width: 85%;
+	}
+
+ }

@@ -1,0 +1,65 @@
+/*--------------------------------------------------------------
+# Team step
+--------------------------------------------------------------*/
+.team-block.step h1 {
+    margin-bottom: 1.9rem;
+} 
+.team-block.step .progress-wrap {
+    margin-top: 3.6rem;
+}
+.team-block.step .progress-wrap .progress-wrap {
+    margin-top: 3.4rem;
+}
+.team-wrap .team-img{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.team-wrap.step1 .team-img{
+    width: 50.5rem;
+    height: 51.5rem;
+    border-radius: 30rem;
+}
+.team-wrap.step1 .team-name {
+    font-size: 3rem;
+    margin-top: 1.9rem;
+    margin-bottom: .2rem;
+}
+.team-wrap.step1 .team-social {
+
+}
+.team-wrap.step2 .team-img{
+    width: 32rem;
+    height: 32rem;
+    border-radius: 16rem;
+    margin-top: 4.5rem;
+}
+.team-wrap.step2 .team-name {
+    font-size: 3rem;
+    margin-top: 1.6rem;
+    margin-bottom: .2rem;
+}
+.team-wrap.step3 .team-img{
+    width: 27.6rem;
+    height: 27.6rem;
+    border-radius: 15rem;
+    margin-top: 4.7rem;
+}
+.team-wrap.step4 .team-img {
+    margin-top: 5rem;
+}
+.team-wrap.step4 .team-name {
+    margin-top: 1.9rem;
+}
+@media (max-width: 768px) {
+    .team-wrap.step3 .team-img {
+        width: 22rem;
+        height: 22rem;
+    }
+}
+@media (max-width: 375px) {
+    .team-wrap.step1 .team-img {
+        width: 30rem;
+        height: 30rem;
+    }   
+}
+

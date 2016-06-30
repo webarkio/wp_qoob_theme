@@ -1,0 +1,15 @@
+/*--------------------------------------------------------------
+# Header no bg block
+--------------------------------------------------------------*/
+.header-no-bg {
+	padding-top: 21.6rem;
+	padding-bottom: 14.0rem;
+}
+
+@media (max-width: 531px) {
+    .header-no-bg {
+    	padding-top: 10.8rem;
+    	padding-bottom: 0;
+    }
+}
+

@@ -1,0 +1,39 @@
+/*--------------------------------------------------------------
+# Social icon
+--------------------------------------------------------------*/
+.social-icon-block {
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+}
+.social-icon-block .block-icons {
+    margin-top: 3.8rem;
+}
+
+.social-icon-block.black-bg {
+    background-color: #262b30;
+}
+.social-icon-block.black-bg h3 {
+    color: #fff; 
+}
+.social-icon-block .social-icons {
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    background-color: #b8b8b8;
+    color: #fff;
+    border-radius: 20px;
+    position: relative;
+    margin-left: 2px;
+}
+.social-icon-block.black-bg .social-icons {
+    color: #262b30;
+    background-color: #fff;
+}
+.social-icon-block .social-icons::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -8px;
+    margin-left: -8px;
+}
+

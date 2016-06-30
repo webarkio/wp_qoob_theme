@@ -1,0 +1,33 @@
+{
+    "name": "",
+    "groups": "main_block",
+    "template": "template.hbs",
+    "settings": [{
+        "name": "header",
+        "label": "Header",
+        "type": "text"
+    }, {
+        "name": "image",
+        "label": "Image",
+        "type": "image",
+        "tags": ["laptop"]
+    }, {
+        "name": "parallax",
+        "label": "Parallax Background",
+        "type": "checkbox_switch"
+    }, {
+        "name": "text",
+        "label": "Text",
+        "type": "textarea"
+    }],
+    "assets": [{
+        "type": "image",
+        "src": "%block_url%/assets/img/header-bg-v3.jpg",
+        "tags": ["laptop"]
+    }],
+    "defaults": {
+        "header": "Create your website now - it's free and so easy!",
+        "image" : "%block_url%/assets/img/header-bg-v3.jpg",
+        "text": "<p>Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec rutrum congue leo eget malestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Cras ultricies ligula sed magna dictum porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in ipsum id orci porta dapibus.</p>"
+    }
+}

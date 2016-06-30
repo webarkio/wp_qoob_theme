@@ -1,0 +1,82 @@
+{
+    "name": "",
+    "groups": "other",
+    "template": "template.hbs",
+    "settings": [{
+            "name": "counters",
+            "label": "Counters",
+            "type": "accordion",
+            "viewcontent": "standart",
+            "viewType": "expand",
+            "settings": [{
+                "name": "icon",
+                "type": "icon",
+                "label": "Icon",
+                "presets": ["glyphicon glyphicon-asterisk", "fa fa-adjust", "fa fa-adn", "fa fa-automobile"]
+            }, {
+                "name": "title",
+                "label": "Title",
+                "type": "text",
+                "placeholder": "Enter title"
+            }, {
+                "name": "count_from",
+                "label": "Count from number",
+                "type": "text"
+            }, {
+                "name": "count_to",
+                "label": "Count to number",
+                "type": "text"
+            }]
+        }],
+        "defaults": {
+            "counters": [{
+                "icon": "ionicons ion-ios-lightbulb-outline",
+                "title": "Created",
+                "count_from": "0",
+                "count_to": "5993",
+                "order": 1
+            }, {
+                "icon": "ionicons ion-ios-people-outline",
+                "title": "Happy clients",
+                "count_from": "0",
+                "count_to": "993",
+                "order": 2
+            }, {
+                "icon": "ionicons ion-ios-list-outline",
+                "title": "Features",
+                "count_from": "0",
+                "count_to": "255",
+                "order": 3
+            }, {
+                "icon": "ionicons ion-ios-photos-outline",
+                "title": "Devices tested",
+                "count_from": "0",
+                "count_to": "29455",
+                "order": 4
+            }, {
+                "icon": "ionicons ion-ios-lightbulb-outline",
+                "title": "Created",
+                "count_from": "0",
+                "count_to": "5993",
+                "order": 5
+            }, {
+                "icon": "ionicons ion-ios-people-outline",
+                "title": "Happy clients",
+                "count_from": "0",
+                "count_to": "993",
+                "order": 6
+            }, {
+                "icon": "ionicons ion-ios-list-outline",
+                "title": "Features",
+                "count_from": "0",
+                "count_to": "255",
+                "order": 7
+            }, {
+                "icon": "ionicons ion-ios-photos-outline",
+                "title": "Devices tested",
+                "count_from": "0",
+                "count_to": "29455",
+                "order": 8
+            }]
+        }
+    }

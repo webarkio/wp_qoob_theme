@@ -1,0 +1,21 @@
+<div class="header-block-wrap header-small-bg header-small-bg-{{id}} action-overlay">
+	<div id="background-block-{{id}}" class="background-block {{#ifCond parallax '==' '1'}}parallax{{/ifCond}}" {{#ifCond image '!=' 'empty'}} style="background-image : url({{image}});" {{/ifCond}}></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<h1 class="header-block">{{header}}</h1>
+			</div>
+			<div class="col-lg-12">
+				{{{text}}}
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	jQuery(document).ready(function() {
+			jQuery(window).scroll(function () {
+		        var scrolled = jQuery(document).scrollTop() - jQuery('.header-small-bg-{{id}}').offset().top;
+		        jQuery('#background-block-{{id}}.parallax').css('top', scrolled + 'px');
+		    });
+	});
+</script>

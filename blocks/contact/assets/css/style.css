@@ -1,0 +1,202 @@
+/*--------------------------------------------------------------
+# contact
+--------------------------------------------------------------*/
+
+.contact {
+    padding: 6.2rem 0 10.8rem;
+}
+
+.contact .header-block {
+    text-align: center;
+    margin-bottom: 8.9rem;
+}
+
+.contact form input[type="text"],
+.contact form input[type="email"],
+.contact form button[type="submit"],
+.contact form textarea {
+    width: 100%;
+}
+
+.contact form textarea {
+    height: 24.4rem;
+}
+
+.contact form {
+    margin: 0 6.1rem 0 0;
+}
+
+.contact .form-group {
+    margin-bottom: 0.5rem;
+}
+
+.contact form button[type="submit"] {
+    margin-top: 0.3rem;
+}
+
+@-moz-document url-prefix() {
+    .contact form button[type="submit"] {
+        margin-top: 0.9rem;
+    }
+}
+
+.contact .map {
+    border: 0;
+    height: 33.0rem;
+    width: 100%;
+}
+
+.contact .block-contacts {
+    background-color: #0084ff;
+    color: #fff;
+    border-radius: 1.5rem;
+    font-size: 1.6rem;
+    padding: 3.5rem 5.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact .block-contacts .e-mail {
+    margin-bottom: 1.2rem;
+}
+
+.contact .block-contacts .address p {
+    margin-bottom: 1.2rem;
+    line-height: 3.2rem;
+}
+
+.contact .block-contacts .address p:last-child {
+    margin-bottom: 0;
+}
+
+.contact .map-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+/* form thank you */
+
+.form-thank-you {
+    display: none;
+}
+
+.form-group.error {
+    position: relative;
+}
+
+.form-group.error .error-text {
+    font-size: 1.4rem;
+    font-weight: bold;
+    position: absolute;
+    top: -4.3rem;
+    right: 0;
+    background-color: #FF0060;
+    color: #fff;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+    border-radius: 1rem;
+}
+
+.form-group.error.textarea .error-text {
+    top: 26.2rem;
+    z-index: 1;
+}
+
+.form-group.error .error-text:after {
+    top: 100%;
+    left: 50%;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    border: solid transparent;
+    border-color: rgba(255, 0, 96, 0);
+    pointer-events: none;
+    border-top-color: #FF0060;
+    border-width: 0.5rem;
+    margin-left: -0.5rem;
+}
+
+.form-group.error.textarea .error-text:after {
+    top: -30%;
+    left: 50%;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.form-group.error:after {
+    content: "*";
+    display: block;
+    width: .5rem;
+    height: .5rem;
+    position: absolute;
+    top: .4rem;
+    right: 1.8rem;
+    color: #FF0060;
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+.form-group.error.left-padding .error-text {
+    right: .7rem;
+}
+
+.form-group.error.right-padding:after {
+    right: 1.5rem;
+}
+
+@media (max-width: 1249px) {
+    .form-group.error.left-padding .error-text {
+        right: 0;
+    }
+
+    .form-group.error:after {
+        right: 1.5rem;
+    }
+}
+
+@media (max-width: 1199px) {
+    .contact form {
+        margin: 0 0 2.0rem 0;
+    }
+}
+
+/*RESPONSE ON SENDING*/
+.send-response {
+    padding-top: 17.3rem;
+    padding-bottom: 17.3rem;
+    text-align: center;
+    font-family: "OpenSans-Bold";
+    text-transform: uppercase;
+}
+
+.send-response-error {
+    color: #FF176C;
+}
+
+.send-response-success {
+    color: #0084FF;
+}
+
+.send-response-image {
+    display: block;
+    width: 7.4rem;
+    height: 5.7rem;
+    margin: auto;
+    margin-bottom: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.send-response-error .send-response-image {
+    background-image: url('../images/msg_error.png');
+}
+
+.send-response-success .send-response-image {
+    background-image: url('../images/msg_success.png');
+}

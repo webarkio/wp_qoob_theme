@@ -1,0 +1,31 @@
+{
+    "name": "",
+    "groups": "main_block",
+    "template": "template.hbs",
+    "settings": [{
+            "name": "image",
+            "label": "Image",
+            "type": "image",
+            "tags": ["404"]
+        },
+        {
+            "name": "text",
+            "label": "Text",
+            "type": "text"
+        },
+        {
+            "name": "button_text",
+            "label": "Button text",
+            "type": "text"
+        }],
+    "defaults" : {
+        "text": "Page not found",
+        "button_text": "Go to main page",
+        "image" : "%theme_url%/images/qoob_404.png"
+    },
+     "assets" : [{
+        "type": "image",
+        "src": "%theme_url%/images/qoob_404.png",
+        "tags": ["404", "error"]
+    }]
+}

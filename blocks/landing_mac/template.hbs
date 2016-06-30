@@ -1,0 +1,29 @@
+<div class="landing-mac landing-mac-{{id}}">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="header-block">{{header}}</h1>
+            </div>
+        </div>
+        <div class="row main-block">
+            <div class="col-lg-12">
+                <div class="mac-container">
+                    <div class="inner-mac-container"></div>            
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    jQuery(document).ready(function() {
+        var url = "{{video}}",
+            video = '',
+            format = url.substring(url.lastIndexOf('.') + 1, url.length);
+        
+        if (format === 'mp4' || format === 'ogv'|| format === 'webm') {
+            video = "<video controls><source src='" + url + "' type='video/" + (format === 'ogv' ? 'ogg' : format) + "'></source></video>";
+        }
+
+        jQuery(".landing-mac-{{id}} .inner-mac-container").append(video);
+    });
+</script>

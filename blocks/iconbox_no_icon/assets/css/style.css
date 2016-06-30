@@ -1,0 +1,16 @@
+/*--------------------------------------------------------------
+# Iconbox no icon
+--------------------------------------------------------------*/
+.iconbox-block.no-icon {
+	padding-top: 16.1rem;
+	padding-bottom: 10.6rem;
+}
+
+.iconbox-block.no-icon .clearfix {
+    margin-bottom: 1.7rem;
+}
+
+.iconbox-block.no-icon h5 {
+    margin-top: 0rem;
+    margin-bottom: 2.1rem; 
+}

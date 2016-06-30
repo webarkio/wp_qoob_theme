@@ -1,0 +1,41 @@
+/*--------------------------------------------------------------
+# Progress bar romb
+--------------------------------------------------------------*/
+.progressbar-block-romb .progressbar-item {
+	margin-bottom: 10.06rem;
+}
+
+.progressbar-block-romb .progress-main {
+	width: 24rem;
+	height: 24rem;
+	margin: 0 auto;
+}
+
+.progressbar-block-romb .progressbar-text {
+	width: 11.2rem;
+	left: 0;
+	transform: translate(0%, -50%);
+}
+
+.progressbar-block-romb .progress-precents {
+	display: inline-block;
+	position: absolute;
+	top: 8.1rem;
+	left: 0;
+	width: 100%;
+	color: #484848;
+	font-size: 5rem;
+	font-family: "OpenSans-Bold", sans-serif;
+	z-index: -1;
+}
+.progressbar-block-romb .progress-title {
+	text-transform: uppercase;
+	font-family: "OpenSans-Light", sans-serif;
+	color: #999;
+    margin-top: 0.4rem;
+}
+
+.progressbar-block-romb svg {
+	height: 24rem;
+	width: 24rem;
+}

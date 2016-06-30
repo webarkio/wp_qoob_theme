@@ -1,0 +1,48 @@
+<div class="gallery-zoom">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="header-block">{{header}}</h1>
+            </div>
+        </div>
+        <div class="row row-gallery">
+            {{#if gallery.length}}
+                <div class="gallery gallery-{{id}}">
+                    {{#each_with_sort gallery "order"}}
+                    {{#ifCond image '!=' 'empty'}}
+                        <div class="col-lg-3 col-md-3 col-xs-6 thumb">
+                            <img class="img-responsive" src="{{image}}" alt="">
+                        </div>
+                    {{/ifCond}}
+                    {{/each_with_sort}}
+                </div>
+            {{/if}}
+        </div>
+    </div>
+</div>
+<script>
+jQuery(document).ready(function () {
+  // resize image on click
+  jQuery('.gallery-{{id}} .thumb').click(function () {
+    if (jQuery(this).hasClass('active')) {
+      jQuery(this).removeClass('active');
+      return;
+    }
+    jQuery('.gallery-{{id}} .thumb').removeClass('active');
+    jQuery(this).addClass('active');
+  });
+
+  // define left a right elements
+  var order = 0;
+  jQuery('.gallery-{{id}} .thumb').each(function() {
+    if (++order < 3) {
+      jQuery(this).addClass('left');
+    } else {
+      jQuery(this).addClass('right');
+      if(order === 4) {
+        order = 0;
+      }
+    }     
+  });
+});
+</script>

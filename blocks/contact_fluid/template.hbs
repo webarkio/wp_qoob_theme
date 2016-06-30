@@ -1,0 +1,53 @@
+<div class="contacts contact-fluid">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="header-block">{{header}}</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 map-container">
+                <iframe class="map" frameborder="0" src="http://maps.google.com/maps?q={{ lat }},{{ lng }}&z={{ size }}&msa=0&ie=UTF8&t=m&amp;iwloc=near&amp&output=embed" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 contact-info-block">
+                <div class="block-contacts">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <div class="row">
+                                <div class="col-lg-6 e-mail">
+                                    <strong>E-mail:</strong> {{e-mail}}
+                                </div>
+                                <div class="col-lg-6 phone">
+                                    <strong>Phone:</strong> {{phone}}
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-6 address">
+                            {{{address}}}
+                        </div>
+                    </div>
+                </div>
+
+                <form role="form" class="contact-form">
+                    <div class="form-group col-lg-6 col-md-6 left-padding">
+                        <input type="text" name="name" class="form-control input-name" value="" placeholder="Name">
+                    </div>
+                    <div class="form-group  col-lg-6 col-md-6 right-padding">
+                        <input type="email" name="e-mail" class="form-control input-email" value="" placeholder="E-mail">
+                    </div>
+                    <div class="col-lg-12 col-md-12 form-group textarea">
+                        <textarea placeholder="Message" class="message form-control"></textarea>
+                    </div>
+                    <div class="col-lg-offset-4 col-lg-4 col-md-12 contact-button">
+                        <button type="submit" class="btn btn-default ">{{text-btn}}</button>
+                    </div>
+                </form>   
+            </div>
+        </div>
+    </div>
+</div>

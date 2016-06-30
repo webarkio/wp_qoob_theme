@@ -1,0 +1,77 @@
+{
+    "name": "",
+    "groups": "gallery",
+    "template": "template.hbs",
+    "settings": [{
+        "name": "header",
+        "label": "Header",
+        "type": "text"
+    },{
+        "name": "gallery",
+        "label": "Gallery",
+        "type": "accordion",
+        "settings": [{
+            "name": "title",
+            "label": "Title",
+            "type": "text",
+            "placeholder": "Enter text"
+        }, {
+            "name": "image",
+            "label": "Image",
+            "type": "image",
+            "hideDeleteButton": 1
+        }]
+    }],
+    "defaults": {
+        "header": "Gallery",
+        "gallery": [{
+            "title": "Vivamus suscipit tortor eget felis porttitor volutpat.",
+            "image": "%block_url%/assets/img/1.png",
+            "order": 0
+        }, {
+            "title": "SAY HALLO TO THE PEOPLE",
+            "image": "%block_url%/assets/img/2.png",
+            "order": 1
+        }, {
+            "title": "Vivamus suscipit tortor porttitor volutpat.",
+            "image": "%block_url%/assets/img/3.png",
+            "order": 2
+        }, {
+            "title": "Vivamus suscipit tortor eget felis porttitor volutpat.",
+            "image": "%block_url%/assets/img/4.png",
+            "order": 3
+        }, {
+            "title": "SAY HALLO TO THE PEOPLE",
+            "image": "%block_url%/assets/img/5.png",
+            "order": 4
+        }, {
+            "title": "Vivamus suscipit tortor porttitor volutpat.",
+            "image": "%block_url%/assets/img/6.png",
+            "order": 5
+        }, {
+            "title": "Vivamus suscipit tortor eget felis porttitor volutpat.",
+            "image": "%block_url%/assets/img/7.png",
+            "order": 6
+        }, {
+            "title": "SAY HALLO TO THE PEOPLE",
+            "image": "%block_url%/assets/img/8.png",
+            "order": 7
+        }, {
+            "title": "Vivamus suscipit tortor porttitor volutpat.",
+            "image": "%block_url%/assets/img/9.png",
+            "order": 8
+        }, {
+            "title": "Vivamus suscipit tortor eget felis porttitor volutpat.",
+            "image": "%block_url%/assets/img/10.png",
+            "order": 9
+        }, {
+            "title": "SAY HALLO TO THE PEOPLE",
+            "image": "%block_url%/assets/img/11.png",
+            "order": 10
+        }, {
+            "title": "Vivamus suscipit tortor porttitor volutpat.",
+            "image": "%block_url%/assets/img/12.png",
+            "order": 11
+        }]
+    }
+}

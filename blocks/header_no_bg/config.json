@@ -1,0 +1,37 @@
+{
+    "name": "",
+    "groups": "main_block",
+    "template": "template.hbs",
+    "settings": [{
+        "name": "header",
+        "label": "Header",
+        "type": "text"
+    }, {
+        "name": "buttons",
+        "label": "Buttons",
+        "type": "accordion",
+        "viewcontent": "standart",
+        "viewType": "expand",
+        "settings": [{
+            "name": "title",
+            "label": "Action button text",
+            "type": "text"
+        }, {
+            "name": "action_url",
+            "label": "Url for action button",
+            "type": "text"
+        }]
+    }],
+    "defaults": {
+        "header": "Create your website now - it's free and so easy!",
+        "buttons": [{
+            "title": "Try now",
+            "action_url": "http://qoob.it/",
+            "order": 1
+        }, {
+            "title": "Download",
+            "action_url": "http://qoob.it/",
+            "order": 2
+        }]
+    }
+}

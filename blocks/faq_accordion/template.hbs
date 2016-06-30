@@ -1,0 +1,45 @@
+<div class="faq-accordion faq-accordion-{{id}} action-overlay">
+	<div id="background-block-{{id}}" class="background-block {{#ifCond parallax '==' '1'}}parallax{{/ifCond}}" {{#ifCond image '!=' 'empty'}} style="background-image : url({{image}});" {{/ifCond}}></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<h1 class="header-block">{{header}}</h1>
+			</div>
+			<div class="col-lg-12">
+                {{#if faq.length}}
+					<div class="panel-group {{type_color}}" id="accordion-{{id}}" role="tablist" aria-multiselectable="true">
+					{{#each_with_sort faq "order"}}
+					  <div class="panel panel-default">
+					    <div class="panel-heading" role="tab" data-toggle="collapse" data-parent="#accordion-{{../id}}" data-target="#collapse-{{order}}" aria-expanded="{{#ifCond order "==" "0"}}true{{else}}false{{/ifCond}}" aria-controls="collapse-{{order}}">
+					      <h4 class="panel-title">
+					        <a class="accordion-toggle" role="button" href="#">
+					          {{ title }}
+					        </a>
+					        <i class="indicator"></i>
+					      </h4>
+					    </div>
+					    <div id="collapse-{{order}}" class="panel-collapse collapse {{#ifCond order "==" "0"}} in{{/ifCond}}" role="tabpanel" aria-labelledby="heading-{{order}}">
+					      <div class="panel-body">
+					        {{{ content }}}
+					      </div>
+					    </div>
+					  </div>
+					  {{/each_with_sort}}
+					</div>
+                {{/if}}
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+jQuery(document).ready(function() {
+    jQuery('#accordion-{{id}} .accordion-toggle').click(function(event) {
+    	event.preventDefault();
+    });
+    jQuery(window).scroll(function () {
+        var scrolled = jQuery(document).scrollTop() - jQuery('.faq-accordion-{{id}}').offset().top;
+        jQuery('#background-block-{{id}}.parallax').css('top', scrolled + 'px');
+    });
+});
+</script>

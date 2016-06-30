@@ -1,0 +1,42 @@
+{
+    "name": "",
+    "groups": "main_block",
+    "template": "template.hbs",
+    "settings": [{
+        "name": "header",
+        "label": "Header",
+        "type": "text"
+    }, {
+        "name": "text",
+        "label": "Text",
+        "type": "textarea"
+    }, {
+        "name": "buttons",
+        "label": "Buttons",
+        "type": "accordion",
+        "viewcontent": "standart",
+        "viewType": "expand",
+        "settings": [{
+            "name": "title",
+            "label": "Action button text",
+            "type": "text"
+        }, {
+            "name": "action_url",
+            "label": "Url for action button",
+            "type": "text"
+        }]
+    }],
+    "defaults": {
+        "header": "Create your website now - it's free and so easy!",
+        "text": "<p>A free website builder offers a huge amount of tools and features with an intuitive interface. Qoob is a perfect solution, that save you from any prior design and coding experience and let you handle it without hiring a professional. Modern and responsive websites in a few clicks. </p>",
+        "buttons": [{
+            "title": "Try now",
+            "action_url": "http://qoob.it/",
+            "order": 1
+        }, {
+            "title": "Download",
+            "action_url": "http://qoob.it/",
+            "order": 2
+        }]
+    }
+}

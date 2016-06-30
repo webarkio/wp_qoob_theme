@@ -1,0 +1,46 @@
+/*--------------------------------------------------------------
+# Progress bar circle
+--------------------------------------------------------------*/
+.progressbar-block {
+	padding: 5.3rem 0;
+}
+
+.progressbar-block .progressbar-item {
+	margin: 5.03rem 0;
+	text-align: center;
+	cursor: pointer;
+}
+
+.progressbar-block-circle .progress-main {
+	width: 22.5rem;
+    height: 22.5rem;
+    margin: 0 auto;
+}
+
+.progressbar-block-circle .progressbar-text {
+	width: 21.5rem;
+	left: 0;
+	transform: translate(0%, -50%);
+	z-index: -1;
+}
+
+.progressbar-block-circle .progress-precents {
+	position: relative;
+    top: 21px;
+    color: #484848;
+	font-size: 5rem;
+	font-family: "OpenSans-Bold", sans-serif;
+}
+
+.progressbar-block-circle .progress-title {
+    position: relative;
+    top: 8px;
+	text-transform: uppercase;
+	font-family: "OpenSans-Light", sans-serif;
+	color: #999;
+}
+@media (max-width: 531px) { 
+	.progressbar-block {
+    	padding: 2.3rem 0;
+	}
+}

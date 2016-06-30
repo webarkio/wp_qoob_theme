@@ -1,0 +1,61 @@
+/*--------------------------------------------------------------
+# gallery pop up
+--------------------------------------------------------------*/
+
+.gallery-popup {
+	padding: 7.7rem 0;
+}
+
+.gallery-popup .header-block {
+	text-align: center;
+	margin-bottom: 8.9rem;
+}
+
+.gallery-popup .thumb {
+	padding: 0;
+	position: relative;
+	padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+
+.gallery-popup .thumbnail {
+    display: block;
+    margin-bottom: 1.4rem;
+    line-height: 1.42857143;
+}
+
+.gallery-popup .caption {
+	position:absolute;
+    bottom:1.4rem;
+    left:0.8rem;
+    background:rgba(0, 54, 75, 0.85);
+    width: calc(100% - 1.5rem);
+    height: 36.5%;
+    padding: 3.3rem 3.4rem 3.4rem 3.4rem;
+    display: none;
+    text-align: left;
+    color:#fff;
+    z-index:2;
+    font-size: 2rem;
+    font-family: 'OpenSans-Bold';
+}
+
+@media (max-width: 117.0rem) {
+	.gallery-popup .caption {
+		padding: 2.3rem 2.4rem 2.4rem 2.4rem;
+    }    
+}
+
+/* Landscape phones and down */
+@media (max-width: 48rem) {
+    .gallery-popup .caption {
+        padding: 1.3rem 1.4rem 1.4rem 1.4rem;
+        line-height: 1.4rem;
+        font-size: 1.1rem;
+    }
+
+    .mfp-zoom-out-cur .mfp-image-holder .mfp-close {
+        top: -3.5rem;
+        right: 0;
+    }
+}

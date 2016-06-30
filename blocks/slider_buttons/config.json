@@ -1,0 +1,54 @@
+{
+    "name": "",
+    "groups": "slider",
+    "template": "template.hbs",
+    "settings": [{
+        "name": "slider",
+        "label": "Slider",
+        "type": "accordion",
+        "settings": [{
+            "name": "title",
+            "label": "Title",
+            "type": "text",
+            "placeholder": "Enter title"
+        }, {
+            "name": "buttons",
+            "label": "Buttons",
+            "type": "accordion",
+            "viewType": "expand",
+            "settings": [{
+                "name": "title",
+                "label": "Button text",
+                "type": "text"
+            }, {
+                "name": "btn_link",
+                "label": "Button link",
+                "type": "text"
+            }]
+        }, {
+            "name": "image",
+            "label": "Image",
+            "type": "image",
+            "hideDeleteButton": 1
+        }]
+    }],
+    "defaults": {
+        "slider": [{
+            "title": "Create your website now - it's free and so easy!",
+            "buttons": [{
+                "title": "View",
+                "btn_link": "#"
+            }],
+            "image": "%theme_url%/images/slider_pic_1.png",
+            "order": 0
+        }, {
+            "title": "Create your website now - it's free and so easy!",
+            "buttons": [{
+                "title": "Try now",
+                "btn_link": "#"
+            }],
+            "image": "%theme_url%/images/slider_pic_2.png",
+            "order": 1
+        }]
+    }
+}

@@ -1,0 +1,15 @@
+/*--------------------------------------------------------------
+# Iconbox no header
+--------------------------------------------------------------*/
+
+.iconbox-block.no-header {
+    padding-top: 14.8rem;
+    padding-bottom: 13.1rem;
+}
+
+@media (max-width: 531px) {
+    .iconbox-block.no-header {
+        padding-top: 5.8rem;
+        padding-bottom: 2.8rem;
+    }
+}

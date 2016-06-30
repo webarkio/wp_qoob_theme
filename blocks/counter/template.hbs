@@ -1,0 +1,32 @@
+<div class="counter-block">
+	<div class="container">
+		<div class="row">
+		  {{#if counters.length}}
+			{{#each_with_sort counters "order"}}
+				<div class="col-lg-3 col-sm-3 counter-item">
+					{{#if icon}}
+						<div class="counter-icon"><span class="{{icon}}"></span></div>
+					{{/if}}
+					{{#if count_from}}
+						<div class="counter-count"><span class="count-{{order}}-{{id}}"></span></div>
+					{{/if}}
+					{{#if title}}
+						<h5 class="counter-title">{{title}}</h5>
+					{{/if}}
+				</div>
+				<script type="text/javascript">
+				jQuery(document).ready(function() {
+					if(typeof {{count_from}} === 'number' && typeof {{count_to}} === 'number') {
+					    jQuery('.count-{{order}}-{{id}}').countTo({
+					       from: {{count_from}},
+					       to: {{count_to}},
+					       speed: 2000
+					    });
+					}
+				});
+				</script>
+			{{/each_with_sort}}
+          {{/if}}
+          </div>
+	</div>
+</div>

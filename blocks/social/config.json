@@ -1,0 +1,52 @@
+{
+    "name": "",
+    "groups": "text",
+    "template": "template.hbs",
+    "settings": [{
+        "name": "header",
+        "label": "Header",
+        "type": "text"
+    }, {
+        "name": "bg_row",
+        "label": "Background row",
+        "type": "select",
+        "visible_color": "true",
+        "options": [{
+            "id": "white_row",
+            "colorimage": "rgb(255, 255, 255)",
+            "val": "white row"
+        }, {
+            "id": "black_row",
+            "colorimage": "rgb(38, 43, 48)",
+            "val": "black row"
+        }]
+    },{
+        "name": "twitter",
+        "label": "Twitter",
+        "type": "text"
+    }, {
+        "name": "fb",
+        "label": "Facebook",
+        "type": "text",
+        "default": "#"
+    }, {
+        "name": "ints",
+        "label": "Instagram",
+        "type": "text",
+        "default": "#"
+    }, {
+        "name": "google",
+        "label": "Google",
+        "type": "text",
+        "default": "#"
+    }],
+    "defaults": {
+        "header": "We are social",
+        "bg_row": "black_row",
+        "twitter": "#",
+        "fb": "#",
+        "ints": "#",
+        "fl": "#",
+        "google": "#"
+    }
+}

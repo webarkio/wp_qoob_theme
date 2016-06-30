@@ -1,0 +1,52 @@
+{
+    "name": "",
+    "groups": "main_block",
+    "template": "template.hbs",
+    "settings": [{
+        "name": "header",
+        "label": "Header",
+        "type": "text"
+    },{
+        "name": "image",
+        "label": "Image",
+        "type": "image",
+        "tags": ["girl"]
+    }, {
+        "name": "parallax",
+        "label": "Parallax Background",
+        "type": "checkbox_switch"
+    }, {
+        "name": "buttons",
+        "label": "Buttons",
+        "type": "accordion",
+        "viewcontent": "standart",
+        "viewType": "expand",
+        "settings": [{
+            "name": "title",
+            "label": "Action button text",
+            "type": "text"
+        },{
+            "name": "action_url",
+            "label": "Url for action button",
+            "type": "text"
+        }]
+    }],
+    "assets": [{
+        "type": "image",
+        "src": "%block_url%/assets/img/header-bg-v2.jpg",
+        "tags": ["girl"]
+    }],
+    "defaults": {
+        "header": "Create your website now - it's free and so easy!",
+        "image" : "%block_url%/assets/img/header-bg-v2.jpg",
+        "buttons" : [{
+            "title": "Try now",
+            "action_url": "http://qoob.it/",
+            "order" : 1
+        },{
+            "title": "Download",
+            "action_url": "http://qoob.it/",
+            "order" : 2
+        }]
+    }
+}

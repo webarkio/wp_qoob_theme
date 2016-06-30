@@ -1,0 +1,15 @@
+<div class="social-icon-block  {{#ifCond bg_row '==' 'black_row'}}black-bg{{/ifCond}}">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 class="text-center">{{ header }}</h3>
+                    <div class="block-icons">
+                        {{#if twitter.length}}<a class="social-icons fa fa-twitter" href="{{ twitter }}"></a>{{/if}}
+                        {{#if fb.length}}<a class="social-icons fa fa-facebook-official" href="{{ fb }}"></a>{{/if}}
+                        {{#if ints.length}}<a class="social-icons  fa fa-instagram" href="{{ ints }}"></a>{{/if}}
+                        {{#if google.length}}<a class="social-icons fa fa-google-plus" href="{{ google }}"></a>{{/if}}
+                    </div>
+               </div>
+            </div>
+        </div>
+</div>

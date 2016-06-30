@@ -1,0 +1,43 @@
+/*--------------------------------------------------------------
+# Header small bg block 
+--------------------------------------------------------------*/
+
+.header-small-bg {
+	position: relative;
+	overflow: hidden;
+    padding-top: 21.2rem;
+    padding-bottom: 12.5rem;
+}
+
+.header-small-bg .background-block {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-small-bg .background-block.parallax {
+	width: 100vw;
+	height: 100vh;
+}
+
+.header-small-bg h1,
+.header-small-bg p{
+	color: #fff;
+}
+
+.header-small-bg h1 {
+    margin-bottom: 3.9rem;
+}
+
+@media (max-width: 531px) {
+	.header-small-bg {
+	    padding-top: 10.8rem;
+	    padding-bottom: 10.8rem;
+	}
+}

@@ -1,0 +1,73 @@
+{
+    "name": "",
+    "groups": "other",
+    "template": "template.hbs",
+    "settings": [{
+        "name": "counters",
+        "label": "Counters Circle",
+        "type": "accordion",
+        "viewcontent": "standart",
+        "viewType": "expand",
+        "settings": [{
+            "name": "title",
+            "label": "Title",
+            "type": "text",
+            "placeholder": "Enter title"
+        }, {
+            "name": "precents",
+            "label": "Precent to",
+            "type": "slider"
+        }, {
+            "name": "inverse_progress",
+            "label": "Inverse progress",
+            "type": "checkbox_switch"
+        }, {
+            "name": "count_from",
+            "label": "Count from number",
+            "type": "text"
+        }, {
+            "name": "count_to",
+            "label": "Count to number",
+            "type": "text"
+        }, {
+            "name": "formatter",
+            "label": "Number format",
+            "type": "text"
+        }]
+    }],
+    "defaults": {
+        "counters": [{
+            "title": "Downloads",
+            "precents": 100,
+            "count_from": "0",
+            "count_to": "1000",
+            "formatter": "%n",
+            "inverse_progress" : 0,
+            "order": 1
+        }, {
+            "title": "Github commits",
+            "precents": 100,
+            "count_from": "0",
+            "count_to": "500",
+            "formatter": "%n",
+            "inverse_progress" : 0,
+            "order": 2
+        }, {
+            "title": "Price",
+            "precents": 0,
+            "count_from": "100",
+            "count_to": "0",
+            "formatter": "$ %f1",
+            "inverse_progress" : 1,
+            "order": 3
+        }, {
+            "title": "Free blocks",
+            "precents": 100,
+            "count_from": "0",
+            "count_to": "20",
+            "formatter": "%n",
+            "inverse_progress" : 0,
+            "order": 4
+        }]
+    }
+}

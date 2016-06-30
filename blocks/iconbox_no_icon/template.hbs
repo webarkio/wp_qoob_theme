@@ -1,0 +1,19 @@
+<div class="iconbox-block no-icon">
+	<div class="container">
+		<div class="row">
+		  {{#if iconbox.length}}
+			{{#each_with_sort iconbox "order"}}
+				<div class="col-lg-4 col-sm-4 icon-box-wrap">
+					{{#if title}}
+						<h5>{{title}}</h5>
+					{{/if}}
+					{{#if text}}
+						{{{text}}}
+					{{/if}}
+				</div>
+				{{#ifIsNthItem nth=3}} <div class="clearfix"></div> {{/ifIsNthItem}}
+			{{/each_with_sort}}
+          {{/if}}
+          </div>
+	</div>
+</div>

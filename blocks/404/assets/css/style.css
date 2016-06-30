@@ -1,0 +1,39 @@
+
+/*--------------------------------------------------------------
+## 404
+--------------------------------------------------------------*/
+.content-404 {
+	text-align: center;
+}
+
+.content-404 .main-block-404 {
+	margin-top: 21.3rem;
+}
+
+.text-404 > h1 {
+	color: #73808c;
+	text-transform: uppercase;
+	margin-bottom: 0;
+}
+
+.button-404 {
+	text-align: center;
+	margin-top: 4.6rem;
+	margin-bottom: 21.3rem;
+}
+
+@media (min-width: 971px) {
+	.text-404 > h1 {
+		margin-top: 8.8rem;
+	}
+}
+
+@media (max-width: 531px) {
+	.row .text-404 {
+		margin-top: -10rem;
+	}
+	
+	.row .button-404 .btn {
+		max-width: 336px;
+	}
+}
