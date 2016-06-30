@@ -364,3 +364,13 @@ require get_template_directory() . '/inc/widgets/widget-register.php';
 define('OPTIONS_FRAMEWORK_DIRECTORY', get_template_directory_uri() . '/inc/options/');
 require get_template_directory() . '/inc/options/options-utils.php';
 require get_template_directory() . '/inc/options/options-framework.php';
+
+/**
+ * One click demo import plugin
+ */
+require_once(get_template_directory() . '/inc/radium/init.php');
+
+/**
+ * Plugin Activator
+ */
+require_once(get_template_directory() . '/inc/plugin_activation/init.php');
