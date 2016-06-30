@@ -167,19 +167,19 @@ function qoobtheme_comment($comment, $args, $depth) {
     <div class="comment-author vcard clearfix">
         <?php if ( $args['avatar_size'] != 0 ) echo get_avatar( $comment, $args['avatar_size'] ); ?>
         <div class="comment-author-text">
-            <?php printf( __( '<cite class="fn">%s</cite>' ), get_comment_author_link() ); ?>
+            <?php printf( __( '<cite class="fn">%s</cite>', 'qoob-theme' ), get_comment_author_link() ); ?>
             <?php comment_text(); ?>
             <div class="comment-meta commentmetadata"><a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ); ?>">
                 <?php
                 /* translators: 1: date, 2: time */
-                printf( __('%1$s'), get_comment_date('j.m.Y') ); ?></a><?php edit_comment_link( __( '(Edit)' ), '  ', '' );
+                printf( __('%1$s', 'qoob-theme'), get_comment_date('j.m.Y') ); ?></a><?php edit_comment_link( __( '(Edit)', 'qoob-theme' ), '  ', '' );
                 ?>
                 <?php comment_reply_link( array_merge( $args, array( 'add_below' => $add_below, 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
             </div>
         </div>
     </div>
     <?php if ( $comment->comment_approved == '0' ) : ?>
-         <em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.' ); ?></em>
+         <em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'qoob-theme' ); ?></em>
           <br />
     <?php endif; ?>
     <?php if ( 'div' != $args['style'] ) : ?>
@@ -197,8 +197,8 @@ function qoobtheme_comment($comment, $args, $depth) {
 function qoob_search_form( $form ) {
     $form = '<form role="search" method="get" class="search-form" action="' . esc_url( home_url( '/' ) ) . '">
                 <label>
-                    <span class="screen-reader-text">' . _x( 'Search for:', 'label' ) . '</span>
-                    <input type="search" class="search-field" placeholder="' . esc_attr_x( 'Search &hellip;', 'placeholder' ) . '" value="' . get_search_query() . '" name="s" />
+                    <span class="screen-reader-text">' . _x( 'Search for:', 'label', 'qoob-theme' ) . '</span>
+                    <input type="search" class="search-field" placeholder="' . esc_attr_x( 'Search &hellip;', 'placeholder', 'qoob-theme' ) . '" value="' . get_search_query() . '" name="s" />
                 </label>
             </form>';
     return $form;
