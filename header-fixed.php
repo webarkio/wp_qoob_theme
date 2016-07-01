@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package qoob.theme
+ * @package wp_qoob_theme
  */
 
 ?><!DOCTYPE html>

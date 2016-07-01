@@ -1,11 +1,11 @@
 <?php
 
 /**
- * qoob.theme functions and definitions.
+ * wp_qoob_theme functions and definitions.
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package qoob.theme
+ * @package wp_qoob_theme
  */
 if (!function_exists('qoob_theme_setup')) :
 
@@ -20,7 +20,7 @@ if (!function_exists('qoob_theme_setup')) :
         /*
          * Make theme available for translation.
          * Translations can be filed in the /languages/ directory.
-         * If you're building a theme based on qoob.theme, use a find and replace
+         * If you're building a theme based on wp_qoob_theme, use a find and replace
          * to change 'wp_qoob_theme' to the name of your theme in all the template files.
          */
         load_theme_textdomain('wp_qoob_theme', get_template_directory() . '/languages');

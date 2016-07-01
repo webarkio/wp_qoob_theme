@@ -7,7 +7,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package qoob.theme
+ * @package wp_qoob_theme
  */
 
 /*

@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  *
- * @package qoob.theme
+ * @package wp_qoob_theme
  */
 
 get_header(); ?>
