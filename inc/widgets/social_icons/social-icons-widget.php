@@ -27,8 +27,8 @@ class Social_Icons extends WP_Widget {
     function __construct() {
         parent::__construct(
                 'Social_Icons',
-                __('Social Networks Profiles', 'qoob-theme'), // Name
-                array('description' => __('Links to Author social media profile', 'qoob-theme'))
+                __('Social Networks Profiles', 'wp_qoob_theme'), // Name
+                array('description' => __('Links to Author social media profile', 'wp_qoob_theme'))
         );
     }
 

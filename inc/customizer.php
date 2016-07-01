@@ -1,8 +1,8 @@
 <?php
 /**
- * qoob.theme Theme Customizer.
+ * wp_qoob_theme Theme Customizer.
  *
- * @package qoob.theme
+ * @package wp_qoob_theme
  */
 
 /**

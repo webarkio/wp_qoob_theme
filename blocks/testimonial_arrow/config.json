@@ -7,6 +7,20 @@
         "label": "Header",
         "type": "text"
     }, {
+        "name": "bg_row",
+        "label": "Background row color",
+        "type": "select",
+        "visible_color": "true",
+        "options": [{
+            "id": "white_row",
+            "colorimage": "rgb(255, 255, 255)",
+            "val": "white row"
+        }, {
+            "id": "gray_row",
+            "colorimage": "rgb(239, 239, 239)",
+            "val": "gray row"
+        }]
+    }, {
         "name": "testimonial",
         "label": "Video",
         "type": "accordion",
