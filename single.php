@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package qoob.theme
+ * @package wp_qoob_theme
  */
 
 get_header('fixed'); ?>

@@ -30,18 +30,18 @@ function optionsframework_options() {
 
     $options = array(
         array(
-            'name' => __('General Settings', 'qoob-theme'),
+            'name' => __('General Settings', 'wp_qoob_theme'),
             'type' => 'heading'
         ),
         array(
-            'name' => __('Blog background image', 'qoob-theme'),
-            'desc' => __('Upload any media using the WordPress native uploader to set bg image', 'qoob-theme'),
+            'name' => __('Blog background image', 'wp_qoob_theme'),
+            'desc' => __('Upload any media using the WordPress native uploader to set bg image', 'wp_qoob_theme'),
             'id' => 'blog_bg_img',
             'std' => '',
             'type' => 'upload'
         ),
         array(
-            'name' => __('Blog layout', 'qoob-theme'),
+            'name' => __('Blog layout', 'wp_qoob_theme'),
             'id' => 'sidebar',
             'std' => 'on',
             'type' => 'radio',
@@ -51,7 +51,7 @@ function optionsframework_options() {
             )
         ),
         array(
-            'name' => __('Footer text', 'qoob-theme'),
+            'name' => __('Footer text', 'wp_qoob_theme'),
             'id' => 'footer_copy',
             'std' => '&copy; qoob 2016',
             'type' => 'text'

@@ -167,7 +167,7 @@ class Radium_Theme_Importer {
 	public function get_demo_content_data_files( $url, $file ) {
 		// Test if the URL to the file is defined
 		if ( empty( $url ) ) {
-			wp_die( printf( wp_kses_post( __( '<div class="error"><p>An error occurred! URL for <strong>%s</strong> is not defined!</p><p>Please try to manually import the demo data. Here are instructions on how to do that: <a href="%s" target="_blank">Documentation: Import XML File</a></p></div>', 'qoob-theme' ) ), $file, apply_filters( 'wpoci_docs_url', 'https://www.proteusthemes.com/docs/cargopress-pt/#import-xml-file' ) ) );
+			wp_die( printf( wp_kses_post( __( '<div class="error"><p>An error occurred! URL for <strong>%s</strong> is not defined!</p><p>Please try to manually import the demo data. Here are instructions on how to do that: <a href="%s" target="_blank">Documentation: Import XML File</a></p></div>', 'wp_qoob_theme' ) ), $file, apply_filters( 'wpoci_docs_url', 'https://www.proteusthemes.com/docs/cargopress-pt/#import-xml-file' ) ) );
 		}
 
 		// Get file contents from the server
@@ -176,7 +176,7 @@ class Radium_Theme_Importer {
 			$response_body = wp_remote_retrieve_body( $response );
 		}
 		else {
-			wp_die( printf( wp_kses_post( __( '<div class="error"><p>An error occurred while fetching <strong>%s</strong> from the server!</p><p>Reason: %s - %s</p><p>Please try to manually import the demo data. Here are instructions on how to do that: <a href="%s" target="_blank">Documentation: Import XML File</a></p></div>', 'qoob-theme' ) ), $file, $response->get_error_code(), $response->get_error_message(), apply_filters( 'wpoci_docs_url', 'https://www.proteusthemes.com/docs/cargopress-pt/#import-xml-file' ) ) );
+			wp_die( printf( wp_kses_post( __( '<div class="error"><p>An error occurred while fetching <strong>%s</strong> from the server!</p><p>Reason: %s - %s</p><p>Please try to manually import the demo data. Here are instructions on how to do that: <a href="%s" target="_blank">Documentation: Import XML File</a></p></div>', 'wp_qoob_theme' ) ), $file, $response->get_error_code(), $response->get_error_message(), apply_filters( 'wpoci_docs_url', 'https://www.proteusthemes.com/docs/cargopress-pt/#import-xml-file' ) ) );
 		}
 
 		// Get user credentials for WP filesystem API
@@ -198,7 +198,7 @@ class Radium_Theme_Importer {
 		// By this point, the $wp_filesystem global should be working, so let's use it to create a file
 		global $wp_filesystem;
 		if ( ! $wp_filesystem->put_contents( $filename, $response_body, FS_CHMOD_FILE ) ) {
-			wp_die( printf( wp_kses_post( __( '<div class="error"><p>An error occurred while writing file <strong>%s</strong> to the upload directory!</p><p>Please try to manually import the demo data. Here are instructions on how to do that: <a href="%s" target="_blank">Documentation: Import XML File</a></p></div>', 'qoob-theme' ) ), $file, apply_filters( 'wpoci_docs_url', 'https://www.proteusthemes.com/docs/cargopress-pt/#import-xml-file' ) ) );
+			wp_die( printf( wp_kses_post( __( '<div class="error"><p>An error occurred while writing file <strong>%s</strong> to the upload directory!</p><p>Please try to manually import the demo data. Here are instructions on how to do that: <a href="%s" target="_blank">Documentation: Import XML File</a></p></div>', 'wp_qoob_theme' ) ), $file, apply_filters( 'wpoci_docs_url', 'https://www.proteusthemes.com/docs/cargopress-pt/#import-xml-file' ) ) );
 		}
 	}
 
@@ -299,7 +299,7 @@ class Radium_Theme_Importer {
 		// File exists?
 		if ( ! file_exists( $file ) ) {
 			wp_die(
-				esc_html__( 'Theme options Import file could not be found. Please try again.', 'qoob-theme' ),
+				esc_html__( 'Theme options Import file could not be found. Please try again.', 'wp_qoob_theme' ),
 				'',
 				array( 'back_link' => true )
 			);
@@ -315,7 +315,7 @@ class Radium_Theme_Importer {
 		// If no data or could not decode
 		if ( empty( $data ) || ! is_array( $data ) ) {
 			wp_die(
-				esc_html__( 'Theme options import data could not be read. Please try a different file.', 'qoob-theme' ),
+				esc_html__( 'Theme options import data could not be read. Please try a different file.', 'wp_qoob_theme' ),
 				'',
 				array( 'back_link' => true )
 			);
@@ -378,7 +378,7 @@ class Radium_Theme_Importer {
 		// File exists?
 		if ( ! file_exists( $file ) ) {
 			wp_die(
-				esc_html__( 'Widget Import file could not be found. Please try again.', 'qoob-theme' ),
+				esc_html__( 'Widget Import file could not be found. Please try again.', 'wp_qoob_theme' ),
 				'',
 				array( 'back_link' => true )
 			);
@@ -415,7 +415,7 @@ class Radium_Theme_Importer {
 		// If no data or could not decode
 		if ( empty( $data ) || ! is_object( $data ) ) {
 			wp_die(
-				esc_html__( 'Widget import data could not be read. Please try a different file.', 'qoob-theme' ),
+				esc_html__( 'Widget import data could not be read. Please try a different file.', 'wp_qoob_theme' ),
 				'',
 				array( 'back_link' => true )
 			);
@@ -456,7 +456,7 @@ class Radium_Theme_Importer {
 				$sidebar_available = false;
 				$use_sidebar_id = 'wp_inactive_widgets'; // add to inactive if sidebar does not exist in theme
 				$sidebar_message_type = 'error';
-				$sidebar_message = esc_html__( 'Sidebar does not exist in theme (using Inactive)', 'qoob-theme' );
+				$sidebar_message = esc_html__( 'Sidebar does not exist in theme (using Inactive)', 'wp_qoob_theme' );
 			}
 
 			// Result for sidebar
@@ -478,7 +478,7 @@ class Radium_Theme_Importer {
 				if ( ! $fail && ! isset( $available_widgets[$id_base] ) ) {
 					$fail = true;
 					$widget_message_type = 'error';
-					$widget_message = esc_html__( 'Site does not support widget', 'qoob-theme' ); // explain why widget not imported
+					$widget_message = esc_html__( 'Site does not support widget', 'wp_qoob_theme' ); // explain why widget not imported
 				}
 
 				// Filter to modify settings before import
@@ -501,7 +501,7 @@ class Radium_Theme_Importer {
 
 							$fail = true;
 							$widget_message_type = 'warning';
-							$widget_message = esc_html__( 'Widget already exists', 'qoob-theme' ); // explain why widget not imported
+							$widget_message = esc_html__( 'Widget already exists', 'wp_qoob_theme' ); // explain why widget not imported
 
 							break;
 
@@ -550,17 +550,17 @@ class Radium_Theme_Importer {
 					// Success message
 					if ( $sidebar_available ) {
 						$widget_message_type = 'success';
-						$widget_message = esc_html__( 'Imported', 'qoob-theme' );
+						$widget_message = esc_html__( 'Imported', 'wp_qoob_theme' );
 					} else {
 						$widget_message_type = 'warning';
-						$widget_message = esc_html__( 'Imported to Inactive', 'qoob-theme' );
+						$widget_message = esc_html__( 'Imported to Inactive', 'wp_qoob_theme' );
 					}
 
 				}
 
 				// Result for widget instance
 				$results[$sidebar_id]['widgets'][$widget_instance_id]['name'] = isset( $available_widgets[$id_base]['name'] ) ? $available_widgets[$id_base]['name'] : $id_base; // widget name or ID if name not available (not supported by site)
-				$results[$sidebar_id]['widgets'][$widget_instance_id]['title'] = ! empty( $widget->title ) ? $widget->title : esc_html__( 'No Title', 'qoob-theme' ); // show "No Title" if widget instance is untitled
+				$results[$sidebar_id]['widgets'][$widget_instance_id]['title'] = ! empty( $widget->title ) ? $widget->title : esc_html__( 'No Title', 'wp_qoob_theme' ); // show "No Title" if widget instance is untitled
 				$results[$sidebar_id]['widgets'][$widget_instance_id]['message_type'] = $widget_message_type;
 				$results[$sidebar_id]['widgets'][$widget_instance_id]['message'] = $widget_message;
 
