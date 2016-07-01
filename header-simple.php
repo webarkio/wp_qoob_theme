@@ -47,7 +47,7 @@
     </svg>
 </div>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'qoob-theme' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'wp_qoob_theme' ); ?></a>
 
 	<header id="masthead" class="site-header <?php echo get_qoob_option('type_header'); ?>" role="banner">
 		<div class="container">

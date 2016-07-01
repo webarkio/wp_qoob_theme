@@ -313,10 +313,10 @@ add_filter( 'of_font_face', 'of_sanitize_font_face' );
  */
 function of_recognized_background_repeat() {
 	$default = array(
-		'no-repeat' => __( 'No Repeat', 'qoob-theme' ),
-		'repeat-x'  => __( 'Repeat Horizontally', 'qoob-theme' ),
-		'repeat-y'  => __( 'Repeat Vertically', 'qoob-theme' ),
-		'repeat'    => __( 'Repeat All', 'qoob-theme' ),
+		'no-repeat' => __( 'No Repeat', 'wp_qoob_theme' ),
+		'repeat-x'  => __( 'Repeat Horizontally', 'wp_qoob_theme' ),
+		'repeat-y'  => __( 'Repeat Vertically', 'wp_qoob_theme' ),
+		'repeat'    => __( 'Repeat All', 'wp_qoob_theme' ),
 		);
 	return apply_filters( 'of_recognized_background_repeat', $default );
 }
@@ -328,15 +328,15 @@ function of_recognized_background_repeat() {
  */
 function of_recognized_background_position() {
 	$default = array(
-		'top left'      => __( 'Top Left', 'qoob-theme' ),
-		'top center'    => __( 'Top Center', 'qoob-theme' ),
-		'top right'     => __( 'Top Right', 'qoob-theme' ),
-		'center left'   => __( 'Middle Left', 'qoob-theme' ),
-		'center center' => __( 'Middle Center', 'qoob-theme' ),
-		'center right'  => __( 'Middle Right', 'qoob-theme' ),
-		'bottom left'   => __( 'Bottom Left', 'qoob-theme' ),
-		'bottom center' => __( 'Bottom Center', 'qoob-theme' ),
-		'bottom right'  => __( 'Bottom Right', 'qoob-theme')
+		'top left'      => __( 'Top Left', 'wp_qoob_theme' ),
+		'top center'    => __( 'Top Center', 'wp_qoob_theme' ),
+		'top right'     => __( 'Top Right', 'wp_qoob_theme' ),
+		'center left'   => __( 'Middle Left', 'wp_qoob_theme' ),
+		'center center' => __( 'Middle Center', 'wp_qoob_theme' ),
+		'center right'  => __( 'Middle Right', 'wp_qoob_theme' ),
+		'bottom left'   => __( 'Bottom Left', 'wp_qoob_theme' ),
+		'bottom center' => __( 'Bottom Center', 'wp_qoob_theme' ),
+		'bottom right'  => __( 'Bottom Right', 'wp_qoob_theme')
 		);
 	return apply_filters( 'of_recognized_background_position', $default );
 }
@@ -348,8 +348,8 @@ function of_recognized_background_position() {
  */
 function of_recognized_background_attachment() {
 	$default = array(
-		'scroll' => __( 'Scroll Normally', 'qoob-theme' ),
-		'fixed'  => __( 'Fixed in Place', 'qoob-theme')
+		'scroll' => __( 'Scroll Normally', 'wp_qoob_theme' ),
+		'fixed'  => __( 'Fixed in Place', 'wp_qoob_theme')
 		);
 	return apply_filters( 'of_recognized_background_attachment', $default );
 }
@@ -421,10 +421,10 @@ function of_recognized_font_faces() {
  */
 function of_recognized_font_styles() {
 	$default = array(
-		'normal'      => __( 'Normal', 'qoob-theme' ),
-		'italic'      => __( 'Italic', 'qoob-theme' ),
-		'bold'        => __( 'Bold', 'qoob-theme' ),
-		'bold italic' => __( 'Bold Italic', 'qoob-theme' )
+		'normal'      => __( 'Normal', 'wp_qoob_theme' ),
+		'italic'      => __( 'Italic', 'wp_qoob_theme' ),
+		'bold'        => __( 'Bold', 'wp_qoob_theme' ),
+		'bold italic' => __( 'Bold Italic', 'wp_qoob_theme' )
 		);
 	return apply_filters( 'of_recognized_font_styles', $default );
 }

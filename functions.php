@@ -21,9 +21,9 @@ if (!function_exists('qoob_theme_setup')) :
          * Make theme available for translation.
          * Translations can be filed in the /languages/ directory.
          * If you're building a theme based on qoob.theme, use a find and replace
-         * to change 'qoob-theme' to the name of your theme in all the template files.
+         * to change 'wp_qoob_theme' to the name of your theme in all the template files.
          */
-        load_theme_textdomain('qoob-theme', get_template_directory() . '/languages');
+        load_theme_textdomain('wp_qoob_theme', get_template_directory() . '/languages');
 
         // Add default posts and comments RSS feed links to head.
         add_theme_support('automatic-feed-links');
@@ -45,7 +45,7 @@ if (!function_exists('qoob_theme_setup')) :
 
         // This theme uses wp_nav_menu() in one location.
         register_nav_menus(array(
-            'primary' => esc_html__('Primary', 'qoob-theme'),
+            'primary' => esc_html__('Primary', 'wp_qoob_theme'),
         ));
 
         /*
@@ -121,9 +121,9 @@ add_filter( 'excerpt_more', 'qoob_theme_excerpt_more' );
  */
 function qoob_theme_widgets_init() {
     register_sidebar(array(
-        'name' => esc_html__('Sidebar', 'qoob-theme'),
+        'name' => esc_html__('Sidebar', 'wp_qoob_theme'),
         'id' => 'sidebar-1',
-        'description' => esc_html__('Add widgets here.', 'qoob-theme'),
+        'description' => esc_html__('Add widgets here.', 'wp_qoob_theme'),
         'before_widget' => '<section id="%1$s" class="widget %2$s">',
         'after_widget' => '</section>',
         'before_title' => '<h2 class="widget-title">',
@@ -155,19 +155,19 @@ function qoobtheme_comment($comment, $args, $depth) {
     <div class="comment-author vcard clearfix">
         <?php if ( $args['avatar_size'] != 0 ) echo get_avatar( $comment, $args['avatar_size'] ); ?>
         <div class="comment-author-text">
-            <?php printf( __( '<cite class="fn">%s</cite>', 'qoob-theme' ), get_comment_author_link() ); ?>
+            <?php printf( __( '<cite class="fn">%s</cite>', 'wp_qoob_theme' ), get_comment_author_link() ); ?>
             <?php comment_text(); ?>
             <div class="comment-meta commentmetadata"><a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ); ?>">
                 <?php
                 /* translators: 1: date, 2: time */
-                printf( __('%1$s', 'qoob-theme'), get_comment_date('j.m.Y') ); ?></a><?php edit_comment_link( __( '(Edit)', 'qoob-theme' ), '  ', '' );
+                printf( __('%1$s', 'wp_qoob_theme'), get_comment_date('j.m.Y') ); ?></a><?php edit_comment_link( __( '(Edit)', 'wp_qoob_theme' ), '  ', '' );
                 ?>
                 <?php comment_reply_link( array_merge( $args, array( 'add_below' => $add_below, 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
             </div>
         </div>
     </div>
     <?php if ( $comment->comment_approved == '0' ) : ?>
-         <em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'qoob-theme' ); ?></em>
+         <em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'wp_qoob_theme' ); ?></em>
           <br />
     <?php endif; ?>
     <?php if ( 'div' != $args['style'] ) : ?>
@@ -185,8 +185,8 @@ function qoobtheme_comment($comment, $args, $depth) {
 function qoob_search_form( $form ) {
     $form = '<form role="search" method="get" class="search-form" action="' . esc_url( home_url( '/' ) ) . '">
                 <label>
-                    <span class="screen-reader-text">' . _x( 'Search for:', 'label', 'qoob-theme' ) . '</span>
-                    <input type="search" class="search-field" placeholder="' . esc_attr_x( 'Search &hellip;', 'placeholder', 'qoob-theme' ) . '" value="' . get_search_query() . '" name="s" />
+                    <span class="screen-reader-text">' . _x( 'Search for:', 'label', 'wp_qoob_theme' ) . '</span>
+                    <input type="search" class="search-field" placeholder="' . esc_attr_x( 'Search &hellip;', 'placeholder', 'wp_qoob_theme' ) . '" value="' . get_search_query() . '" name="s" />
                 </label>
             </form>';
     return $form;
@@ -215,8 +215,8 @@ if (!function_exists('bootstrapBasicPagination')) {
                 'format' => '/page/%#%',
                 'current' => max(1, get_query_var('paged')),
                 'total' => $postlist->max_num_pages,
-                'prev_text' => __('', 'qoob-theme'),
-                'next_text' => __('', 'qoob-theme'),
+                'prev_text' => __('', 'wp_qoob_theme'),
+                'next_text' => __('', 'wp_qoob_theme'),
                 'type' => 'array',
                 'add_args' => false
             ));
@@ -253,9 +253,9 @@ if (!function_exists('bootstrapBasicPagination')) {
 add_action( 'widgets_init', 'qoob_theme_footer_widgets_init' );
 function qoob_theme_footer_widgets_init() {
     register_sidebar( array(
-        'name' => __( 'Footer Sidebar', 'qoob-theme' ),
+        'name' => __( 'Footer Sidebar', 'wp_qoob_theme' ),
         'id' => 'footer',
-        'description' => __( 'Widgets in this area will be shown on footer.', 'qoob-theme' ),
+        'description' => __( 'Widgets in this area will be shown on footer.', 'wp_qoob_theme' ),
         'before_widget' => '<div class="footer-widget">',
         'after_widget'  => '</div>',
         'before_title'  => '<h2 class="widgettitle">',
