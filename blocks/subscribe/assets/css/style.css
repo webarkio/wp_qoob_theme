@@ -10,12 +10,13 @@
 	position: relative;
 	margin: auto;
 }
+
 .subscribe-block form input[name='email'] {
-	width: 98%;
+	width: 96%;
 }
 .subscribe-block form input[type='submit'] {
 	position: absolute;
-	padding: 2.4rem 5.5rem;
+	padding: 2.5rem 5.5rem;
     top: 0;
     right: 0;
     border-color: #0084ff;
@@ -124,4 +125,11 @@
 	}
 }
 
-
+@media (max-width: 480px) {
+	.subscribe-block form input[name='email'] {
+		width: 100%;
+	}
+	.subscribe-block form input[type='submit'] {
+		top: 8rem !important;
+	}
+}
