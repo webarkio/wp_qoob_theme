@@ -22,6 +22,16 @@
 </div>
 <script>
     jQuery(document).ready(function() {
+            if (jQuery(document).width() < 400) {
+                jQuery('#background-block-{{id}}').removeClass('parallax');
+            }
+            jQuery(document).resize(function() {
+                if (jQuery(document).width() < 400) {
+                    jQuery('#background-block-{{id}}').removeClass('parallax');
+                } else {
+                    jQuery('#background-block-{{id}}').addClass('parallax');
+                }
+            });
             jQuery(window).scroll(function () {
                 var scrolled = jQuery(document).scrollTop() - jQuery('.landing-photo-{{id}}').offset().top;
                 jQuery('#background-block-{{id}}.parallax').css('top', scrolled + 'px');
