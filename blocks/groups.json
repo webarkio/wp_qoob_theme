@@ -53,9 +53,5 @@
         "id": "call_to_action",
         "label": "Call to action",
         "position": "9"
-    },{
-        "id": "subscribe_form",
-        "label": "Subscribe form",
-        "position": "10"
     }
 ]
