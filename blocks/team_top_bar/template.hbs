@@ -22,9 +22,9 @@
 		  {{#if team.length}}
 			{{#each_with_sort team "order"}}
 				<div class="col-lg-3 col-sm-4 team-wrap">
-					{{#ifCond image '!=' 'empty'}}
+					{{#if image}}
 						<div class="team-img" style="background-image:url({{image}})"></div>
-					{{/ifCond}}
+					{{/if}}
 					{{#if title}}
 						<h5 class="team-name">{{title}}</h5>
 					{{/if}}

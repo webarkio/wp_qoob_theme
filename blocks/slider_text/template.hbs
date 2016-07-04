@@ -5,9 +5,9 @@
                     <div class="carousel-inner" role="listbox">
                         {{#each_with_sort slider "order"}}
                             <div class="item{{#ifCond order "==" "0"}} active{{/ifCond}}">
-                            {{#ifCond image '!=' 'empty'}}
+                            {{#if image}}
                                 <img src="{{image}}" alt="image-{{ order }}">
-                            {{/ifCond}}
+                            {{/if}}
                                 <div class="carousel-content container">
                                     <h1 class="carousel-title">{{ title }}</h1>
                                     <div class="carousel-text">{{{ text }}}</div> 
