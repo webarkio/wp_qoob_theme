@@ -515,7 +515,6 @@
 .counter-block {
 	padding: 5.03rem 0;
 }
-
 .counter-block .next-row:last-child {
 	float: none;
 }
@@ -2072,12 +2071,13 @@
 	position: relative;
 	margin: auto;
 }
+
 .subscribe-block form input[name='email'] {
-	width: 98%;
+	width: 96%;
 }
 .subscribe-block form input[type='submit'] {
 	position: absolute;
-	padding: 2.4rem 5.5rem;
+	padding: 2.5rem 5.5rem;
     top: 0;
     right: 0;
     border-color: #0084ff;
@@ -2186,7 +2186,14 @@
 	}
 }
 
-
+@media (max-width: 480px) {
+	.subscribe-block form input[name='email'] {
+		width: 100%;
+	}
+	.subscribe-block form input[type='submit'] {
+		top: 8rem !important;
+	}
+}
 
 /*--------------------------------------------------------------
 # Team
@@ -2561,14 +2568,7 @@
  .template-carousel .item-template figure:hover img {
     opacity: .4;
 }
- .template-carousel .item-template a:hover { 
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: rgba(255, 255, 255, 0.5);
- }
+
 /* Large desktop */
 
 @media (min-width: 120.0rem) {
