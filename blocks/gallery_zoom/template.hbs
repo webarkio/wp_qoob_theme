@@ -9,11 +9,11 @@
             {{#if gallery.length}}
                 <div class="gallery gallery-{{id}}">
                     {{#each_with_sort gallery "order"}}
-                    {{#ifCond image '!=' 'empty'}}
+                    {{#if image}}
                         <div class="col-lg-3 col-md-3 col-xs-6 thumb">
                             <img class="img-responsive" src="{{image}}" alt="">
                         </div>
-                    {{/ifCond}}
+                    {{/if}}
                     {{/each_with_sort}}
                 </div>
             {{/if}}
