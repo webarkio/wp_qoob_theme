@@ -72,13 +72,18 @@
         "type" : "text"
     },
     {
+        "name": "gitlink",
+        "label": "Github profile link",
+        "type" : "text"
+    },
+    {
         "name" : "gitimage",
         "type" : "image",
         "label": "Source logo"
     }],
     "defaults": {
         "header": "Download last version of qoob",
-        "subheader": "last version 1.0.0",
+        "subheader": "last version 1.0.2",
         "box": [{
             "boxbg" : "release",
             "image" : "%block_url%/assets/img/wordpress.png",
@@ -105,8 +110,9 @@
             "order": 3
         }],
         "gittitle":"Sources on GitHub",
-        "gituser":"maxazan",
-        "gitrepo":"jquery-treegrid",
-        "gitimage":"%block_url%/assets/img/git_logo.png"
+        "gituser":"webarkio",
+        "gitrepo":"qoob",
+        "gitimage":"%block_url%/assets/img/git_logo.png",
+        "gitlink" : "https://github.com/webarkio"
     }
 }

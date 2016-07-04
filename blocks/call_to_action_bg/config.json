@@ -32,7 +32,7 @@
     "defaults": {
         "header": "Ready to build your web site?",
         "image" : "%block_url%/assets/img/call_to_action_bg.jpg",
-        "action_text" : "Start building",
+        "action_text" : "Try now",
         "action_url" : "http://qoob.it/"
     }
 }
