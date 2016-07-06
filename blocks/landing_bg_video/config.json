@@ -60,7 +60,7 @@
         "type": "image"
     }],
     "defaults": {
-        "bg_video": "%block_url%/assets/videos/cube_girl.mp4",
+        "bg_video": "http://qoob.it/wp-content/uploads/2016/07/cube_girl.mp4",
         "logo": "%theme_url%/images/qoob_main_logo.png",
         "header": "Create your website now - it's free and so easy!",
         "text": "<p>A free website builder offers a huge amount of tools and features with an intuitive interface. Qoob is a perfect solution, that save you from any prior design and coding experience and let you handle it without hiring a professional. Modern and responsive websites in a few clicks. </p>",
@@ -88,7 +88,7 @@
     },
     {
         "type": "image",
-        "src": "%theme_url%/images/cube_girl_preview.png",
+        "src": "%block_url%/assets/videos/cube_girl_preview.png",
         "tags": ["preview"]
     },
     {
