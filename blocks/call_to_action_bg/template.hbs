@@ -1,5 +1,5 @@
 <div class="call-to-action-bg call-to-action-bg-{{id}} action-overlay">
-	<div id="background-block-{{id}}" class="background-block {{#ifCond parallax '==' '1'}}parallax{{/ifCond}}" {{#ifCond image '!=' 'empty'}} style="background-image : url({{image}});" {{/ifCond}}></div>
+	<div id="background-block-{{id}}" class="background-block {{#ifCond parallax '==' '1'}}parallax{{/ifCond}}" {{#if image}} style="background-image : url({{image}});" {{/if}}></div>
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">

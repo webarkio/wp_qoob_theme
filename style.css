@@ -782,12 +782,12 @@ textarea {
 .site-title a:visited {
     color: #484848;
 }
-@media (max-width: 102.4rem) {
-    .site-header.fixed {
-        top: 0;
-        background-color: #fff;
-    }
+
+.site-header.fixed.mobile-show {
+    top: 0;
+    background-color: #fff;
 }
+
 
 /*--------------------------------------------------------------
 # Navigation

@@ -12,13 +12,13 @@
                   </div>
                   <div class="col-lg-6 pull-right galleries">
                     {{#each_with_sort gallery "order"}}
-                    {{#ifCond image '!=' 'empty'}}
+                    {{#if image}}
                         <div class="col-lg-6 col-md-6 col-xs-6 thumb">
                             <a class="thumbnail" href="{{image}}">
                                 <span style="background-image:url('{{image}}"></span>
                             </a>
                         </div>
-                    {{/ifCond}}
+                    {{/if}}
                     {{/each_with_sort}}
                   </div>
             {{/if}}

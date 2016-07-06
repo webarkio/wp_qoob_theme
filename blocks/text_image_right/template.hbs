@@ -7,11 +7,11 @@
         </div>
         <div class="row">
             <div class="col-lg-12">
-                {{#ifCond image '!=' 'empty'}}
+                {{#if image}}
                     <div class="center-img">
                         <img src="{{image}}" alt="" class="alignright">
                     </div>                
-                {{/ifCond}}
+                {{/if}}
                 {{{text}}}
             </div>
         </div>

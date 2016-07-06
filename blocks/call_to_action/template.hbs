@@ -6,11 +6,11 @@
 			</div>
 		</div>
 		<div class="row">
-		{{#ifCond image '!=' 'empty'}}
+		{{#if image}}
 			<div class="col-lg-7 col-sm-7">
 				<img src="{{image}}" alt="">
 			</div>
-		{{/ifCond}}
+		{{/if}}
 			<div class="col-lg-5 col-sm-5 text">
 				{{{text}}}
 				<a href="{{action_url}}" class="btn btn-action">{{action_text}}</a>

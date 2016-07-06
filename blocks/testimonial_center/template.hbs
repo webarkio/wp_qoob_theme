@@ -6,9 +6,9 @@
                 <div id="testimonial-{{id}}" class="owl-carousel owl-theme testimonial-carousel testimonial-carousel-center">
                 {{#each_with_sort testimonial "order"}}
                     <div class="item testimonial-item clearfix">
-                    {{#ifCond image '!=' 'empty'}}
+                    {{#if image}}
                         <div class="testimonial-img" style="background-image: url('{{image}}');"></div>
-                    {{/ifCond}}
+                    {{/if}}
                         <div class="testimonial-content">
                             <h4>{{title}}</h4>
                             {{{text}}}

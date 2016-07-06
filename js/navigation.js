@@ -96,6 +96,11 @@
             jQuery('#mmenu-wrap').removeClass('open');
 
         }
+         if (jQuery(window).width() < 768) { 
+            jQuery('.site-header.fixed').addClass('mobile-show');
+        }else {
+            jQuery('.site-header.fixed').removeClass('mobile-show');
+        }
 
     }
 

@@ -10,11 +10,11 @@
                 <div class="gallery-{{id}}">
                     {{#each_with_sort gallery "order"}}
                         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 thumb">
-                            {{#ifCond image '!=' 'empty'}}
+                            {{#if image}}
                             <a class="thumbnail" href="{{image}}">
                                 <img class="img-responsive" src="{{image}}" alt="">
                             </a>
-                            {{/ifCond}}
+                            {{/if}}
                             <div class="caption">
                                 {{title}}
                             </div>
