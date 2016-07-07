@@ -67,38 +67,6 @@
 						e.stopImmediatePropagation();
 						progressbar.set({{inverse_progress}});
 						progressbar.animate(({{precents}} / 100), {easing: "bounce"});
-						jQuery('#progress-precents-{{order}}-{{id}}').countTo({
-					       from: {{#if count_from}} {{count_from}} {{else}} 0 {{/if}},
-					       to: {{#if  count_to}}  {{count_to}} {{else}} 0 {{/if}},
-					       speed: 2000,
-					       formatter: function (value, options) {
-			                  var form =  '{{formatter}}',
-			                     str;
-			                  if (form == '') {
-			                     str = value.toFixed(options.decimals);
-			                  } else {
-			                     var reg_exp_n = /%n/,
-			                        reg_exp_f = /%f/;
-			                     if(reg_exp_n.test(form)) {
-			                        str = form.replace('%n', value.toFixed(options.decimals));
-			                     } else if(reg_exp_f.test(form)) {
-			                        var count = form.match(/([^\?]*)\%f(\d*)/)[2],
-			                           str_count = '';
-
-			                        if(count == '') {
-			                          count = 0;
-			                        } else {
-			                           str_count = count;
-			                        }
-			                        var replace = '%f' + str_count;
-			                        
-			                        str = form.replace(replace, value.toFixed(count, 0));
-			                     }
-			                  }
-
-			                  return str;
-			               }
-						});
 					});
 					this.destroy();
 				  },
