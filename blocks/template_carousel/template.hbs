@@ -54,13 +54,20 @@ jQuery(document).ready(function() {
                 center:true
             },
             960:{
-                items:1,
-                center:true
+                items:2,
+                center:true,
+                startPosition: 1
             },
             1200: {
                 items:3
             }
         }
     });
+
 });
+jQuery(window).resize(function(){
+    console.log(jQuery('.template-carousel-{{id}}'));
+
+});
+
 </script>
