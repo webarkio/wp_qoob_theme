@@ -23,7 +23,7 @@
     	margin-bottom: 2.7rem;
 	}
 	.contact-info-block {
-		margin-left: 1rem;
-		margin-right: 1rem;
+		margin-left: -1rem;
+		margin-right: -1rem;
 	}
 }
