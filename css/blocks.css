@@ -500,12 +500,16 @@
 .contact-button {
 	padding: 0;
 }
-@media (max-width: 531px) { 
+@media (max-width: 769px) { 
 	.contact-fluid.no-map {
 		padding: 4rem 0 6rem;
 	}
 	.contact-fluid.no-map .header-block {
     	margin-bottom: 2.7rem;
+	}
+	.contact-info-block {
+		margin-left: 1rem;
+		margin-right: 1rem;
 	}
 }
 
