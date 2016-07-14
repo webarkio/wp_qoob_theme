@@ -1541,12 +1541,19 @@
 		margin-top: 0;
 	}
 
-	.header-block-bg-video .btn1 {
-		margin-left: 0rem;
-	}
 
 	.header-block-bg-video .btn {
 	    padding: 2.2rem 3.5rem;
+	}
+}
+
+@media (max-width: 769px) {
+	.bg-video-text {
+	    padding-left: 16px;
+	    padding-right: 16px;
+	}
+	.header-block-bg-video .btn1 {
+		margin-left: 18rem;
 	}
 }
 
@@ -1563,6 +1570,7 @@
 	}
 	.header-block-bg-video .btn {
 		margin-top: 1rem;
+		margin: auto;
 	}
 
 	.header-block-bg-video .btn-header-wrap .btn:first-child {
