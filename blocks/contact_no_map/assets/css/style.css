@@ -22,8 +22,12 @@
 	.contact-fluid.no-map .header-block {
     	margin-bottom: 2.7rem;
 	}
+}
+
+@media (max-width: 480px) {
 	.contact-info-block {
-		margin-left: -1rem;
-		margin-right: -1rem;
+    	padding-left: 1.7rem;
+    	padding-right: 1.9rem;
 	}
+
 }
