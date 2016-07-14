@@ -103,7 +103,7 @@
 	}
 }
 
-@media (max-width: 531px) {
+@media (max-width: 768px) {
 	.header-block-bg-video {
 		text-align: left;
 	}

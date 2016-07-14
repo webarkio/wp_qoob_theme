@@ -1574,7 +1574,7 @@
 	}
 }
 
-@media (max-width: 531px) {
+@media (max-width: 768px) {
 	.header-block-bg-video {
 		text-align: left;
 	}
@@ -3284,7 +3284,7 @@
 	.video-features .media-video-container {
 	    margin-bottom: 3rem;
 	    margin-left: 16px;
-    	margin-right: 2px;
+    	margin-right: 16px;
 	}
 }
 

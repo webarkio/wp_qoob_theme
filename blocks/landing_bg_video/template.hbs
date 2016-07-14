@@ -39,15 +39,7 @@
 	    }
 
 		jQuery(".header-block-{{id}}").append(video);
-		// Centering content
-		var height = jQuery('.header-block-{{id}} .row').height(),
-			totalHeight = jQuery('.header-block-{{id}}').height();
-		jQuery('.header-block-{{id}} .row').height(height).css('top', (totalHeight - height) / 2 );
-		jQuery(window).on('resize', function() {
-			var height = jQuery('.header-block-{{id}} .row').height(),
-				totalHeight = jQuery('.header-block-{{id}}').height();
-			jQuery('.header-block-{{id}} .row').height(height).css('top', (totalHeight - height) / 2 );
-		});
+		vertical_align_bg_video();
 		// Adding parallax to video
 		jQuery(window).on('scroll', function () {
 	        var scrolled = jQuery(document).scrollTop() - jQuery('.header-block-{{id}}').offset().top;
@@ -58,4 +50,16 @@
 	    	jQuery(".header-block-{{id}}").addClass('iPad');
 	    }
     });
+
+	jQuery(window).resize(function(){
+    	vertical_align_bg_video();
+	});
+
+	function vertical_align_bg_video() {
+		// Centering content
+		console.log('here');
+		var height = jQuery('.header-block-{{id}} .row').height(),
+			totalHeight = jQuery('.header-block-{{id}}').height();
+		jQuery('.header-block-{{id}} .row').height(height).css('top', (totalHeight - height) / 2 );
+	}
 </script>
