@@ -12,8 +12,8 @@
 	margin-bottom: 52px;
 }
 .video-features .video-element {
-   	width: 58.5rem;
-    height: 60.5rem;
+   	width: 56.5rem;
+    height: 58.5rem;
     border-radius: 0.7rem;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     margin-bottom: -6px;
@@ -23,7 +23,9 @@
 	padding-left: 0;
 	padding-right: 0;
 }
-
+.video-features .video-col.level-two {
+	margin-left: 16px;
+}
 .video-features .has-center-content {
     display: table;
     position: relative;

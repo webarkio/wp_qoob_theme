@@ -87,7 +87,6 @@
 		margin-top: 0;
 	}
 
-
 	.header-block-bg-video .btn {
 	    padding: 2.2rem 3.5rem;
 	}
@@ -107,6 +106,12 @@
 	.header-block-bg-video {
 		height: 100vh;
 		background: none!important;
+	}
+	.header-block-bg-video .btn {
+		margin: auto;
+	}
+	.header-block-bg-video .btn1 {
+		margin-left: 18rem;
 	}
 }
 
