@@ -1,0 +1,118 @@
+/*--------------------------------------------------------------
+# video features
+--------------------------------------------------------------*/
+.video-features {
+    padding-top: 8.5rem;
+    padding-bottom: 6.4rem;
+}
+
+.video-features .header-block {
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 52px;
+}
+.video-features .video-element {
+   	width: 56.5rem;
+    height: 58.5rem;
+    border-radius: 0.7rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin-bottom: -6px;
+}
+
+.video-features .video-col {
+	padding-left: 0;
+	padding-right: 0;
+}
+.video-features .video-col.level-two {
+	margin-left: 16px;
+}
+.video-features .has-center-content {
+    display: table;
+    position: relative;
+    height: 55.5rem;
+    margin: auto;
+}
+
+.video-features .has-center-content .center-content {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.video-features .has-center-content .center-block {
+    box-sizing: border-box;
+}
+
+.video-features .grid-content-copy {
+    width: 35.5rem;
+}
+.video-features .grid-content-copy h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.video-features .grid-content-copy p {
+	font-size: 1.6rem;
+	color: #909090;
+}
+
+@media screen and (max-width : 1025px){
+	.video-features .video-element {
+	    width: 48.5rem;
+    	height: auto;
+	}
+}
+@media screen and(min-device-width : 768px) and (max-device-width : 1025px) {
+	/*.video-features .video-element {
+	    width: 48.5rem;
+    	height: auto;
+	}*/
+}
+/*@media (min-width: 1024px) { 
+	.video-features .video-element {
+	    width: 45.5rem;
+    	height: auto;
+	}
+}*/
+/*@media (min-width: 992px){
+	.video-features .video-element {
+	    width: 45.5rem;
+    	height: 45.5rem;
+	}
+}*/
+
+@media (max-width: 768px) {
+	.video-features .video-col {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
+	.video-features {
+    	padding-top: 2.5rem;
+	}
+	.video-features .video-element {
+	    width: 100%;
+	    height: auto;
+	}
+	.video-features .has-center-content {
+	    height: 100%;
+	}
+	.video-features .header-block {
+		text-align: none;
+		margin-bottom: 2rem;
+	}
+	.video-features .grid-content-copy {
+		padding-left: 2.0rem;
+		padding-right: 2.1rem;
+	}
+	.video-features .features-read-more .btn{
+		padding: 2.4rem 6.5rem;
+		width: 87%;
+	}
+	
+	.video-features .grid-content-copy {
+    	width: 100%;
+	}
+	.video-features .media-video-container {
+	    margin-bottom: 3rem;
+	    margin-left: 16px;
+    	margin-right: 16px;
+	}
+}

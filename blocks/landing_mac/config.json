@@ -14,7 +14,7 @@
     }],
     "defaults": {
         "header": "Create with Qube is so easy",
-        "video" : "%block_url%/assets/videos/builder_preview_1.mp4"
+        "video" : "http://qoob.it/wp-content/uploads/2016/07/builder_preview_1.mp4"
     },
     "assets" : [{
         "type": "image",

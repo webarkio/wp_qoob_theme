@@ -1,6 +1,6 @@
 {
     "name": "",
-    "groups": "subscribe_form",
+    "groups": "forms",
     "template": "template.hbs",
     "settings": [
     {
