@@ -1757,6 +1757,21 @@
 	}
 }
 /*--------------------------------------------------------------
+# Load more button
+--------------------------------------------------------------*/
+.load-more-button .features-read-more {
+	background-color: #efefef;
+	text-align: center;
+	padding-top: 7rem;
+	padding-bottom: 7rem;
+}
+
+@media (max-width: 768px) {
+	.video-features .features-read-more {
+			margin-top: 2.4rem;
+	}
+}
+/*--------------------------------------------------------------
 # Progress bar circle
 --------------------------------------------------------------*/
 .progressbar-block {
@@ -3125,18 +3140,9 @@
 --------------------------------------------------------------*/
 .video-features {
     padding-top: 8.5rem;
-}
-.video-features .features-read-more {
-	margin-top: 6.4rem;
-	background-color: #efefef;
-	text-align: center;
-	padding-top: 7rem;
-	padding-bottom: 7rem;
+    padding-bottom: 6.4rem;
 }
 
-.video-features .features-read-more .btn {
-	
-}
 .video-features .header-block {
 	text-align: center;
 	text-transform: uppercase;
@@ -3235,9 +3241,7 @@
 		padding: 2.4rem 6.5rem;
 		width: 87%;
 	}
-	.video-features .features-read-more {
-		margin-top: 2.4rem;
-	}
+	
 	.video-features .grid-content-copy {
     	width: 100%;
 	}
