@@ -23,7 +23,7 @@
 	padding-left: 0;
 	padding-right: 0;
 }
-.video-features .video-col.level-two {
+.video-features .video-col.level-two .media-video-container{
 	margin-left: 16px;
 }
 .video-features .has-center-content {
