@@ -24,3 +24,8 @@
     text-align:center;
 }
 
+@media (max-width: 768px) {
+    .testimonial-carousel.testimonial-carousel-center .testimonial-content {
+        text-align: left;
+    }
+}
