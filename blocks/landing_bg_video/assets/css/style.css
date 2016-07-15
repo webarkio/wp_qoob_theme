@@ -165,6 +165,6 @@ _::-webkit-:not(:root:root), .custom-video-wrapper {
 _::-webkit-:not(:root:root), .custom-video-wrapper-overlay {
 	z-index: 0;
 }
-_::-webkit-:not(:root:root), .header-block-bg-video .container {
+_::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 	z-index: 1;
 }
