@@ -25,19 +25,19 @@
         "header": "Meet The Team",
         "video": [{
                 "title": "Cube Girl",
-                "url": "%blocks_url%/landing_bg_video/assets/videos/cube_girl.mp4",
+                "url": "http://qoob.it/wp-content/uploads/2016/07/cube_girl.mp4",
                 "order": 0
             }, {
                 "title": "Cube Girl",
-                "url": "%blocks_url%/landing_bg_video/assets/videos/cube_girl.mp4",
+                "url": "http://qoob.it/wp-content/uploads/2016/07/cube_girl.mp4",
                 "order": 1
             }, {
                 "title": "Cube Girl",
-                "url": "%blocks_url%/landing_bg_video/assets/videos/cube_girl.mp4",
+                "url": "http://qoob.it/wp-content/uploads/2016/07/cube_girl.mp4",
                 "order": 2
             }, {
                 "title": "Cube Girl",
-                "url": "%blocks_url%/landing_bg_video/assets/videos/cube_girl.mp4",
+                "url": "http://qoob.it/wp-content/uploads/2016/07/cube_girl.mp4",
                 "order": 3
             }]
     }

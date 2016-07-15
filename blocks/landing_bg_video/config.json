@@ -98,7 +98,7 @@
     },
     {
         "type": "video",
-        "src": "%block_url%/assets/videos/cube_girl.mp4",
+        "src": "http://qoob.it/wp-content/uploads/2016/07/cube_girl.mp4",
         "title": "Cube Girl",
         "preview": "%block_url%/assets/videos/cube_girl_preview.png",
         "tags": ["cube"]
