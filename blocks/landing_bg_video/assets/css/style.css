@@ -158,3 +158,13 @@
     	margin-top: 5.3rem;
 	}
 }
+/*Safari 9+ style*/
+_::-webkit-:not(:root:root), .custom-video-wrapper {
+	z-index: -9;
+}
+_::-webkit-:not(:root:root), .custom-video-wrapper-overlay {
+	z-index: 0;
+}
+_::-webkit-:not(:root:root), .header-block-bg-video .container {
+	z-index: 1;
+}
