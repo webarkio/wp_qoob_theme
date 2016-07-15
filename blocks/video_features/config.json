@@ -24,6 +24,12 @@
                 "type": "textarea"
             },
             {
+                "name": "poster",
+                "label": "Video poster",
+                "type": "image",
+                "tags": [""]
+            },
+            {
                 "name": "url",
                 "label": "Video",
                 "type": "video",
@@ -36,6 +42,7 @@
             "title" : "Live Editing",
             "text_feature" : "The live editor gives you an exact preview of your content, that you can edit in real-time. You can see all edits without leaving the page.",
             "url": "http://qoob.it/wp-content/uploads/2016/07/editing.mp4",
+            "poster" : "http://images.apple.com/macos/sierra-preview/overview/siri/features/dragdrop/endframe_large_2x.jpg",
             "order": 1
         }, {
             "title" : "Alaways Looking Good",
