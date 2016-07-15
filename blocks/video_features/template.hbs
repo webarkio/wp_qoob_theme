@@ -22,7 +22,9 @@
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 video-col {{#ifIsNthItem nth=2}} level-two col-lg-pull-6 col-md-pull-6 {{/ifIsNthItem}}">
                         <div class="media-video-container">
-                            <video type="" src="{{url}}" class="video-element video-element-{{order}}-{{id}}" style="visibility: visible;" loop></video>
+                            <video type="" class="video-element video-element-{{order}}-{{id}}" style="visibility: visible;" loop>
+                                <source src="{{url}}">
+                            </video>
                         </div>
                     </div>
                 </div>
@@ -31,7 +33,7 @@
                         format = url.substring(url.lastIndexOf('.') + 1, url.length);
                         typevideo = "video/" + (format === 'ogv' ? 'ogg' : format) + "";
                     
-                    jQuery(".video-element-{{order}}-{{id}}").attr("type", typevideo);
+                    jQuery(".video-element-{{order}}-{{id}}").find('source').attr("type", typevideo);
                     var waypoint = new Waypoint({
                         element: document.getElementsByClassName('center-block-{{order}}-{{id}}'),
                         handler: function() {
