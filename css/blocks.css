@@ -3203,7 +3203,7 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
     }
 }
 /*--------------------------------------------------------------
-# video features
+# video features new
 --------------------------------------------------------------*/
 .video-features {
     padding-top: 8.5rem;
@@ -3222,7 +3222,6 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     margin-bottom: -6px;
 }
-
 .video-features .video-col {
 	padding-left: 0;
 	padding-right: 0;
@@ -3260,7 +3259,7 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 
 @media screen and (max-width : 1025px){
 	.video-features .video-element {
-	    width: 48.5rem;
+	    width: 46.5rem;
     	height: auto;
 	}
 }
