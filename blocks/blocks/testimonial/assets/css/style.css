@@ -1,0 +1,107 @@
+/*--------------------------------------------------------------
+## Testimonial carousel 
+--------------------------------------------------------------*/
+.testimonial-block {
+    padding-top: 8.5rem;
+}
+.testimonial-block.gray-bg {
+    background-color: #efefef;
+}
+.testimonial-block h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+.testimonial-carousel {
+    margin-top: 6rem;
+}
+.testimonial-carousel .testimonial-img {
+    width: 22.8rem;
+    height: 22.8rem;
+    border-radius: 11.35rem;
+    border: 11px solid #efefef;
+    background-position: center;
+    float: left;
+    margin-top: 1.9rem;
+}
+
+.testimonial-carousel .testimonial-content {
+    float: right;
+    width: 78.94736842105263%;
+    padding-left: 0.8rem;
+}
+.testimonial-carousel .testimonial-content h4 {
+    margin-bottom: 2.7rem;
+}
+.testimonial-carousel.owl-theme .owl-dots {
+    text-align: center;
+    margin-top: 7.4rem;
+    margin-bottom: 11rem;
+    margin-left: 1.1rem;
+}
+.testimonial-carousel.owl-theme .owl-dots .owl-dot {
+    display: inline-block;
+    zoom: 1;
+    height: 22px;
+    width: 22px;
+    position: relative;
+}
+.testimonial-carousel.owl-theme .owl-dots .owl-dot span {
+    width: 16px;
+    height: 16px;
+    margin: 0 7px;
+    transition: all 0.3s;
+}
+.testimonial-carousel.owl-theme .owl-dots .owl-dot span {
+    width: 16px;
+    height: 16px;
+    margin: 4px 0px 5px 0px;
+    background: #d5d5d5;
+    display: block;
+    bottom: 0;
+    position: absolute;
+    -webkit-backface-visibility: visible;
+    -webkit-transition: opacity 200ms ease;
+    -moz-transition: opacity 200ms ease;
+    -ms-transition: opacity 200ms ease;
+    -o-transition: opacity 200ms ease;
+    transition: opacity 200ms ease;
+}
+
+.testimonial-carousel.owl-theme .owl-dots .owl-dot.active span {
+    background: #9f9f9f;
+    transition: all 0.3s;
+}
+
+@media (max-width: 1220px) {
+    .testimonial-carousel .testimonial-content {
+        width: 73.77049180327869%;
+    }
+}
+
+@media (max-width: 1010px) {
+    .testimonial-carousel .testimonial-img {
+        margin: auto;
+        float: none;
+    }
+    .testimonial-carousel .testimonial-content {
+        width: 100%;
+    }
+    .testimonial-carousel .testimonial-content h4 {
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    .testimonial-carousel {
+        margin-top: 2.5rem;
+    }
+    .testimonial-carousel.owl-theme .owl-dots {
+        margin-bottom: 5.9rem;
+        margin-top: 2.4rem;
+    }
+    .testimonial-carousel .testimonial-content {
+        padding-left: 1.9rem;
+    }
+    .testimonial-block {
+        padding-top: 3.9rem;
+    }
+}

@@ -1,0 +1,81 @@
+<div class="progressbar-block progressbar-block-circle counter-circle">
+	<div class="container">
+		<div class="row">
+		  {{#if counters.length}}
+			{{#each_with_sort counters "order"}}
+				<div class="col-lg-3 col-sm-6 progressbar-item">
+					<div class="progress-main progress-{{order}}-{{id}}">
+					</div>
+				</div>
+				<script type="text/javascript">
+				jQuery(document).ready(function() {
+					// waypoint = new Waypoint();
+				var progressbar = new ProgressBar.Circle('.progress-{{order}}-{{id}}', {
+						color: '#939497',
+					    strokeWidth: 2,
+					    trailColor: '#e5e5e5',
+					    trailWidth: 2,
+					    text: {
+					        value: "<span id='progress-precents-{{order}}-{{id}}' class='progress-precents'>100 %</span><h5 class='progress-title'>{{title}}</h5>"
+					    },
+					    duration: 2000,
+					    // Set default step function for all animate calls
+						step: function(state, circle) {
+						}
+					});
+
+				progressbar.set({{inverse_progress}});
+
+				var waypoint = new Waypoint({
+				  element: document.getElementsByClassName('progress-{{order}}-{{id}}'),
+				  handler: function() {
+				    progressbar.animate(({{precents}} / 100));
+					jQuery('#progress-precents-{{order}}-{{id}}').countTo({
+					       from: {{#if count_from}} {{count_from}} {{else}} 0 {{/if}},
+					       to: {{#if  count_to}}  {{count_to}} {{else}} 0 {{/if}},
+					       speed: 2000,
+					       formatter: function (value, options) {
+			                  var form =  '{{formatter}}',
+			                     str;
+			                  if (form == '') {
+			                     str = value.toFixed(options.decimals);
+			                  } else {
+			                     var reg_exp_n = /%n/,
+			                        reg_exp_f = /%f/;
+			                     if(reg_exp_n.test(form)) {
+			                        str = form.replace('%n', value.toFixed(options.decimals));
+			                     } else if(reg_exp_f.test(form)) {
+			                        var count = form.match(/([^\?]*)\%f(\d*)/)[2],
+			                           str_count = '';
+
+			                        if(count == '') {
+			                          count = 0;
+			                        } else {
+			                           str_count = count;
+			                        }
+			                        var replace = '%f' + str_count;
+			                        
+			                        str = form.replace(replace, value.toFixed(count, 0));
+			                     }
+			                  }
+
+			                  return str;
+			               }
+					});
+					jQuery('.progress-{{order}}-{{id}}').mouseenter(function(e) {
+						e.stopPropagation();
+						e.stopImmediatePropagation();
+						progressbar.set({{inverse_progress}});
+						progressbar.animate(({{precents}} / 100), {easing: "bounce"});
+					});
+					this.destroy();
+				  },
+				    offset: '75%'
+				});
+				});
+				</script>
+			{{/each_with_sort}}
+          {{/if}}
+          </div>
+	</div>
+</div>

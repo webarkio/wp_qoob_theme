@@ -1,0 +1,32 @@
+/*--------------------------------------------------------------
+# Iconbox no icon
+--------------------------------------------------------------*/
+.iconbox-block.no-icon {
+	padding-top: 16.1rem;
+	padding-bottom: 10.6rem;
+}
+
+.iconbox-block.no-icon .clearfix {
+    margin-bottom: 1.7rem;
+}
+
+.iconbox-block.no-icon h5 {
+    margin-top: 0rem;
+    margin-bottom: 2.1rem; 
+}
+
+@media (max-width: 768px) { 
+	.iconbox-block.no-icon .icon-box-wrap,
+	.iconbox-block.no-icon h1 {
+	    text-align: left;
+	}
+	.iconbox-block p {
+		text-align: left;
+		padding-left: 2rem;
+		padding-right: 1rem;
+	}
+	.iconbox-block.no-icon h5 { 
+		padding-left: 2rem;
+    	padding-right: 1rem;
+	}
+}

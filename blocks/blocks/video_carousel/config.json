@@ -1,0 +1,44 @@
+{
+    "name": "",
+    "groups": "video",
+    "template": "template.hbs",
+    "settings": [{
+            "name": "header",
+            "label": "Header",
+            "type": "text"
+        }, {
+            "name": "video",
+            "label": "Video",
+            "type": "accordion",
+            "settings": [{
+                    "name": "title",
+                    "label": "Title",
+                    "type": "text"
+                }, {
+                    "name": "url",
+                    "label": "Video",
+                    "type": "video",
+                    "tags": ["myVid"]
+                }]
+        }],
+    "defaults": {
+        "header": "Meet The Team",
+        "video": [{
+                "title": "Cube Girl",
+                "url": "http://qoob.it/wp-content/uploads/2016/07/cube_girl.mp4",
+                "order": 0
+            }, {
+                "title": "Cube Girl",
+                "url": "http://qoob.it/wp-content/uploads/2016/07/cube_girl.mp4",
+                "order": 1
+            }, {
+                "title": "Cube Girl",
+                "url": "http://qoob.it/wp-content/uploads/2016/07/cube_girl.mp4",
+                "order": 2
+            }, {
+                "title": "Cube Girl",
+                "url": "http://qoob.it/wp-content/uploads/2016/07/cube_girl.mp4",
+                "order": 3
+            }]
+    }
+}

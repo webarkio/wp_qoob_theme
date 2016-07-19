@@ -1,0 +1,106 @@
+{
+    "name": "",
+    "groups": "main_block",
+    "template": "template.hbs",
+    "settings": [{
+        "name": "bg_video",
+        "label": "Background video",
+        "type": "video"
+    },{
+        "name": "logo",
+        "label": "Logo",
+        "type": "image"
+    }, {
+        "name": "header",
+        "label": "Header",
+        "type": "text"
+    }, {
+        "name": "text",
+        "label": "Text",
+        "type": "textarea"
+    }, {
+        "name": "buttons",
+        "label": "Buttons",
+        "type": "accordion",
+        "viewcontent": "standart",
+        "viewType": "expand",
+        "settings": [{
+            "name": "inverse",
+            "label": "Color Scheme",
+            "options": [{
+                "id": "normal",
+                "val": "normal"
+            },{
+                "id": "inversed",
+                "val": "inversed"
+            }],
+            "type": "select"
+        }, {
+            "name": "title",
+            "label": "Action button text",
+            "type": "text"
+        }, {
+            "name": "action_url",
+            "label": "Url for action button",
+            "type": "text"
+        },
+        {
+            "name": "hidebtn",
+            "label": "Hide button on mobile devices?",
+            "type": "checkbox"
+        },
+        {
+            "name": "target",
+            "label": "Open link in new tab?",
+            "type": "checkbox"
+        }]
+    }, {
+        "name": "image",
+        "label": "Background Image (small devices)",
+        "type": "image"
+    }],
+    "defaults": {
+        "bg_video": "http://qoob.it/wp-content/uploads/2016/07/cube_girl.mp4",
+        "logo": "%theme_url%/images/qoob_main_logo.png",
+        "header": "Create your website now - it's free and so easy!",
+        "text": "<p>A free website builder offers a huge amount of tools and features with an intuitive interface. Qoob is a perfect solution, that save you from any prior design and coding experience and let you handle it without hiring a professional. Modern and responsive websites in a few clicks. </p>",
+        "buttons": [{
+            "title": "Try now",
+            "action_url": "http://qoob.it/",
+            "inverse": "normal",
+            "target" : 1,
+            "hidebtn" : 1,
+            "order": 0
+        }, {
+            "title": "Download",
+            "action_url": "http://qoob.it/",
+            "inverse": "normal",
+            "target" : 0,
+            "hidebtn" : 0,
+            "order": 1
+        }],
+        "image": "%block_url%/assets/img/mobile-bg.jpg"
+    },
+    "assets": [{
+        "type": "image",
+        "src": "%theme_url%/images/qoob_main_logo.png",
+        "tags": ["logo"]
+    },
+    {
+        "type": "image",
+        "src": "%block_url%/assets/videos/cube_girl_preview.png",
+        "tags": ["preview"]
+    },
+    {
+        "type": "image",
+        "src": "%block_url%/assets/img/mobile-bg.jpg",
+        "tags": ["preview, wall"]
+    },
+    {
+        "type": "video",
+        "src": "http://qoob.it/wp-content/uploads/2016/07/cube_girl.mp4",
+        "title": "Cube Girl",
+        "preview": "%block_url%/assets/videos/cube_girl_preview.png",
+        "tags": ["cube"]
+    }]
+}

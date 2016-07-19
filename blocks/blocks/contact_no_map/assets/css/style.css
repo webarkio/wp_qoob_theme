@@ -1,0 +1,33 @@
+
+/*--------------------------------------------------------------
+# contact no map
+--------------------------------------------------------------*/
+.contact-fluid.no-map {
+	padding: 10.2rem 0 13.8rem;
+}
+.contact-fluid.no-map .header-block {
+	margin-bottom: 8.7rem;
+}
+.contact-fluid.no-map form button[type="submit"] {
+    margin-top: 0.4rem;
+}
+
+.contact-button {
+	padding: 0;
+}
+@media (max-width: 769px) { 
+	.contact-fluid.no-map {
+		padding: 4rem 0 6rem;
+	}
+	.contact-fluid.no-map .header-block {
+    	margin-bottom: 2.7rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.contact-info-block {
+    	padding-left: 1.7rem;
+    	padding-right: 1.9rem;
+	}
+
+}
