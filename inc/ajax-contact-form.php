@@ -5,17 +5,17 @@ if (!function_exists('contactform_add_script')) {
     /**
      * Add script and localize form
      */
-    function contactform_add_script() {
+    function qoob_contactform_add_script() {
         wp_localize_script('qoob-theme-contact', 'ajax_object', array('ajax_url' => admin_url('admin-ajax.php')));
     }
 
 }
-add_action('wp_enqueue_scripts', 'contactform_add_script');
+add_action('wp_enqueue_scripts', 'qoob_contactform_add_script');
 
 /**
  * Ajax action callback form
  */
-function ajax_contactform_action_callback() {
+function qoob_ajax_contactform_action_callback() {
     $current_user = wp_get_current_user();
 
     $error = '';
@@ -73,5 +73,5 @@ function ajax_contactform_action_callback() {
     wp_send_json($resp);
 }
 
-add_action('wp_ajax_contactform_action', 'ajax_contactform_action_callback');
-add_action('wp_ajax_nopriv_contactform_action', 'ajax_contactform_action_callback');
+add_action('wp_ajax_contactform_action', 'qoob_ajax_contactform_action_callback');
+add_action('wp_ajax_nopriv_contactform_action', 'qoob_ajax_contactform_action_callback');

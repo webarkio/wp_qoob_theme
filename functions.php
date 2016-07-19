@@ -193,14 +193,14 @@ function qoob_search_form( $form ) {
 }
 add_filter( 'get_search_form', 'qoob_search_form' );
 
-if (!function_exists('bootstrapBasicPagination')) {
+if (!function_exists('qoob_pagination')) {
     /**
      * display pagination (1 2 3 ...) instead of previous, next of wordpress style.
      * 
      * @param string $pagination_align_class
      * @return string the content already echo
      */
-    function bootstrapBasicPagination($total = 1, $pagination_align_class = 'pagination-center pagination-row') 
+    function qoob_pagination($total = 1, $pagination_align_class = 'pagination-center pagination-row') 
     {
         global $wp_query;
         $current_page = (get_query_var('paged')) ? get_query_var('paged') : 1; 
@@ -244,13 +244,14 @@ if (!function_exists('bootstrapBasicPagination')) {
             }
 
             unset($page, $pagination_array);
-    }// bootstrapBasicPagination
+    }// qoob_pagination
 }
 /**
 * Register sidebar for footer
 *
 */
 add_action( 'widgets_init', 'qoob_theme_footer_widgets_init' );
+
 function qoob_theme_footer_widgets_init() {
     register_sidebar( array(
         'name' => __( 'Footer Sidebar', 'wp_qoob_theme' ),
@@ -262,52 +263,59 @@ function qoob_theme_footer_widgets_init() {
         'after_title'   => '</h2>',
     ));
 }
+
+function qoob_customize_register( $wp_customize ) {
+   
+}
+add_action( 'customize_register', 'qoob_customize_register' );
+
+
 /**
  * Enqueue scripts and styles.
  */
 function qoob_theme_scripts() {
     //grid system
-    wp_enqueue_style('qoob-theme-bootstrap-grid', get_template_directory_uri() . '/css/bootstrap.css');
+    wp_enqueue_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.css');
     //fonts
-    wp_enqueue_style('qoob-font-open-sans-light', get_template_directory_uri() . '/css/fonts/open-sans-light.css');
-    wp_enqueue_style('qoob-font-open-sans-bold', get_template_directory_uri() . '/css/fonts/open-sans-bold.css');
-	wp_enqueue_style('qoob-font-open-sans-semibold', get_template_directory_uri() . '/css/fonts/open-sans-semibold.css');
-    wp_enqueue_style('font-awesome-css', get_template_directory_uri() . '/css/fonts/fontawesome/font-awesome.min.css');
-    wp_enqueue_style('qoob-theme-megafish', get_template_directory_uri() . '/css/megafish.css');
-    wp_enqueue_style('qoob-theme-magnific-popup', get_template_directory_uri() . '/css/magnific-popup.css');
+    wp_enqueue_style('open-sans-light', get_template_directory_uri() . '/css/fonts/open-sans-light.css');
+    wp_enqueue_style('open-sans-bold', get_template_directory_uri() . '/css/fonts/open-sans-bold.css');
+	wp_enqueue_style('open-sans-semibold', get_template_directory_uri() . '/css/fonts/open-sans-semibold.css');
+    wp_enqueue_style('font-awesome', get_template_directory_uri() . '/css/fonts/fontawesome/font-awesome.min.css');
+    wp_enqueue_style('megafish', get_template_directory_uri() . '/css/megafish.css');
+    wp_enqueue_style('magnific-popup', get_template_directory_uri() . '/css/magnific-popup.css');
 
     wp_enqueue_style('qoob-theme-style', get_stylesheet_uri());
     wp_enqueue_style('qoob-theme-carousel-css', get_template_directory_uri() . '/css/carousel.css');
 	wp_enqueue_style('qoob-theme-collapse-css', get_template_directory_uri() . '/css/collapse.css');
     wp_enqueue_style('qoob-theme-blocks-style', get_template_directory_uri() . '/css/blocks.css');
     
-    wp_enqueue_style('qoob-theme-bootstrap-progressbar-css', get_template_directory_uri() . '/css/bootstrap-progressbar.css');
+    wp_enqueue_style('bootstrap-progressbar', get_template_directory_uri() . '/css/bootstrap-progressbar.css');
 
-	wp_enqueue_style('qoob-theme-owl-carousel-style', get_template_directory_uri() . '/css/owl.carousel.min.css');
-	wp_enqueue_style('qoob-theme-owl-theme-default', get_template_directory_uri() . '/css/owl.theme.default.min.css');
+	wp_enqueue_style('owl-carousel', get_template_directory_uri() . '/css/owl.carousel.min.css');
+	wp_enqueue_style('owl-theme-default', get_template_directory_uri() . '/css/owl.theme.default.min.css');
     wp_enqueue_style('qoob-theme-style', get_stylesheet_uri());
 
     wp_enqueue_script('qoob-theme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array('jquery'), false, true);
 
-    wp_enqueue_script('qoob-theme-hoverintent', get_template_directory_uri() . '/js/hoverIntent.js', array('jquery'), false, true);
-    wp_enqueue_script('qoob-theme-superfish', get_template_directory_uri() . '/js/superfish.min.js', array('jquery'), false, true);
-	wp_enqueue_script('qoob-theme-owl-carousel', get_template_directory_uri() . '/js/owl.carousel.min.js', array('jquery'), false, true);
-    wp_enqueue_script('qoob-theme-countTo', get_template_directory_uri() . '/js/jQuery.countTo.js', array('jquery'), false, true);
-    wp_enqueue_script('qoob-theme-progressbar', get_template_directory_uri() . '/js/progressbar.min.js', array('jquery'), false, true);
+    wp_enqueue_script('hoverintent', get_template_directory_uri() . '/js/hoverIntent.js', array('jquery'), false, true);
+    wp_enqueue_script('superfish', get_template_directory_uri() . '/js/superfish.min.js', array('jquery'), false, true);
+	wp_enqueue_script('owl-carousel', get_template_directory_uri() . '/js/owl.carousel.min.js', array('jquery'), false, true);
+    wp_enqueue_script('jQuery-countTo', get_template_directory_uri() . '/js/jQuery.countTo.js', array('jquery'), false, true);
+    wp_enqueue_script('progressbar', get_template_directory_uri() . '/js/progressbar.min.js', array('jquery'), false, true);
 
     wp_enqueue_script('qoob-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array('jquery'), false, true);
 
-	wp_enqueue_script('qoob-theme-masonry', get_template_directory_uri() . '/js/masonry.js', array('jquery'), false, true);
+	wp_enqueue_script('masonry', get_template_directory_uri() . '/js/masonry.js', array('jquery'), false, true);
 
-    wp_enqueue_script('qoob-theme-bootstrap-progressbar-js', get_template_directory_uri() . '/js/bootstrap-progressbar.js', array('jquery'));
-    wp_enqueue_script('qoob-theme-jquery-waypoints-js', get_template_directory_uri() . '/js/jquery.waypoints.js', array('jquery'));
+    wp_enqueue_script('bootstrap-progressbar', get_template_directory_uri() . '/js/bootstrap-progressbar.js', array('jquery'));
+    wp_enqueue_script('jquery-waypoints', get_template_directory_uri() . '/js/jquery.waypoints.js', array('jquery'));
     wp_enqueue_script('qoob-theme-common', get_template_directory_uri() . '/js/common.js', array('jquery'));
     wp_enqueue_script('qoob-theme-contact', get_template_directory_uri() . '/js/contact.js', array('jquery'));
 
     wp_enqueue_script('qoob-theme-carousel-js', get_template_directory_uri() . '/js/carousel.js', array('jquery'));
 	wp_enqueue_script('qoob-theme-collapse-js', get_template_directory_uri() . '/js/collapse.js', array('jquery'));
-    wp_enqueue_script('qoob-theme-magnific-popup-js', get_template_directory_uri() . '/js/jquery.magnific-popup.min.js', array('jquery'), false, true);
-    wp_enqueue_script('qoob-theme-bg-video-vimeo-lib', get_template_directory_uri() . '/js/froogaloop.min.js', array('jquery', 'qoob-theme-bg-video-vimeo'), false, true);
+    wp_enqueue_script('magnific-popup', get_template_directory_uri() . '/js/jquery.magnific-popup.min.js', array('jquery'), false, true);
+    wp_enqueue_script('froogaloop', get_template_directory_uri() . '/js/froogaloop.min.js', array('jquery', 'qoob-theme-bg-video-vimeo'), false, true);
 
     if (is_singular() && comments_open() && get_option('thread_comments')) {
         wp_enqueue_script('comment-reply');
@@ -347,17 +355,6 @@ require get_template_directory() . '/inc/jetpack.php';
 require get_template_directory() . '/inc/ajax-contact-form.php';
 
 require get_template_directory() . '/inc/widgets/widget-register.php';
-/**
- * Option framework
- */
-define('OPTIONS_FRAMEWORK_DIRECTORY', get_template_directory_uri() . '/inc/options/');
-require get_template_directory() . '/inc/options/options-utils.php';
-require get_template_directory() . '/inc/options/options-framework.php';
-
-/**
- * One click demo import plugin
- */
-require_once(get_template_directory() . '/inc/radium/init.php');
 
 /**
  * Plugin Activator
