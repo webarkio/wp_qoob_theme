@@ -2038,7 +2038,7 @@ img.mfp-img {
  /**
  */
 
- @media (max-width: 48rem) {
+ @media (max-width: 76.8rem) {
     .header-block {
         font-size: 3.6rem !important;
         line-height: 5.5rem !important;
