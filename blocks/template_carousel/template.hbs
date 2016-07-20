@@ -63,6 +63,10 @@ jQuery('.template-carousel-{{id}}').owlCarousel({
             }
         }
     });
-
+    jQuery(window).resize(function(){
+        jQuery(".template-carousel-{{id}}").trigger('reinit.owl.carousel', {});
+    });
 });
+
+
 </script>
