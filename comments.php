@@ -7,7 +7,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package wp_qoob_theme
+ * @package qoob
  */
 
 /*
@@ -28,7 +28,7 @@ if ( post_password_required() ) {
 		<h2 class="comments-title">
 			<?php
 				printf( // WPCS: XSS OK.
-					esc_html( _nx( 'One comment on &ldquo;%2$s&rdquo;', '%1$s comments on &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'wp_qoob_theme' ) ),
+					esc_html( _nx( 'One comment on &ldquo;%2$s&rdquo;', '%1$s comments on &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'qoob' ) ),
 					number_format_i18n( get_comments_number() ),
 					'<span>' . get_the_title() . '</span>'
 				);
@@ -37,11 +37,11 @@ if ( post_password_required() ) {
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
 		<nav id="comment-nav-above" class="navigation comment-navigation" role="navigation">
-			<h2 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'wp_qoob_theme' ); ?></h2>
+			<h2 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'qoob' ); ?></h2>
 			<div class="nav-links">
 
-				<div class="nav-previous"><?php previous_comments_link( esc_html__( 'Older Comments', 'wp_qoob_theme' ) ); ?></div>
-				<div class="nav-next"><?php next_comments_link( esc_html__( 'Newer Comments', 'wp_qoob_theme' ) ); ?></div>
+				<div class="nav-previous"><?php previous_comments_link( esc_html__( 'Older Comments', 'qoob' ) ); ?></div>
+				<div class="nav-next"><?php next_comments_link( esc_html__( 'Newer Comments', 'qoob' ) ); ?></div>
 
 			</div><!-- .nav-links -->
 		</nav><!-- #comment-nav-above -->
@@ -61,11 +61,11 @@ if ( post_password_required() ) {
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
 		<nav id="comment-nav-below" class="navigation comment-navigation" role="navigation">
-			<h2 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'wp_qoob_theme' ); ?></h2>
+			<h2 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'qoob' ); ?></h2>
 			<div class="nav-links">
 
-				<div class="nav-previous"><?php previous_comments_link( esc_html__( 'Older Comments', 'wp_qoob_theme' ) ); ?></div>
-				<div class="nav-next"><?php next_comments_link( esc_html__( 'Newer Comments', 'wp_qoob_theme' ) ); ?></div>
+				<div class="nav-previous"><?php previous_comments_link( esc_html__( 'Older Comments', 'qoob' ) ); ?></div>
+				<div class="nav-next"><?php next_comments_link( esc_html__( 'Newer Comments', 'qoob' ) ); ?></div>
 
 			</div><!-- .nav-links -->
 		</nav><!-- #comment-nav-below -->
@@ -78,7 +78,7 @@ if ( post_password_required() ) {
 	// If comments are closed and there are comments, let's leave a little note, shall we?
 	if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) : ?>
 
-		<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'wp_qoob_theme' ); ?></p>
+		<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'qoob' ); ?></p>
 	<?php
 	endif;
 	$commenter = wp_get_current_commenter();
@@ -113,14 +113,14 @@ if ( post_password_required() ) {
 				  'author' =>
 				    '<p class="comment-form-author">' .
 				    '<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) .
-				    '" placeholder="'.esc_html__( 'Name', 'wp_qoob_theme' ).'" ' . $aria_req . ' /></p>',
+				    '" placeholder="'.esc_html__( 'Name', 'qoob' ).'" ' . $aria_req . ' /></p>',
 
 				  'email' =>
 				    '<p class="comment-form-email">' .
 				    '<input id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) .
-				    '" placeholder="'.esc_html__( 'Email', 'wp_qoob_theme' ).'" ' . $aria_req . ' /></p>'
+				    '" placeholder="'.esc_html__( 'Email', 'qoob' ).'" ' . $aria_req . ' /></p>'
 				),
-		'comment_field' => '<p class="comment-form-comment"><textarea id="comment" name="comment" cols="45" rows="8"  ' . $aria_req . ' placeholder="'.esc_html__( 'Message', 'wp_qoob_theme' ).'"></textarea></p>'
+		'comment_field' => '<p class="comment-form-comment"><textarea id="comment" name="comment" cols="45" rows="8"  ' . $aria_req . ' placeholder="'.esc_html__( 'Message', 'qoob' ).'"></textarea></p>'
 	));
 	?>
 	</div>

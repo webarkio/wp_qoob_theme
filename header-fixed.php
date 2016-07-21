@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package wp_qoob_theme
+ * @package qoob
  */
 
 ?><!DOCTYPE html>
@@ -47,7 +47,7 @@
     </svg>
 </div>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'wp_qoob_theme' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'qoob' ); ?></a>
 
 	<header id="masthead" class="site-header fixed" role="banner">
 		<div class="container">
