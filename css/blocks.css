@@ -1548,11 +1548,11 @@
     z-index: -1;
 }
 .header-block-bg-video .btn-header-wrap .btn {
-		margin-right: 18rem;
-	}
-	.header-block-bg-video .btn-header-wrap .btn:last-child {
+		margin-right: 16rem;
+}
+.header-block-bg-video .btn-header-wrap .btn:last-child {
 		margin-right: 0;
-	}
+}
 @media (max-width: 1024px) {
 	.header-block-bg-video {
      	padding: 10.8rem 0 12.5rem;
@@ -1596,7 +1596,7 @@
 
 @media (max-width: 800px) {
 	.header-block-bg-video .container {
-		width: 75rem;
+		max-width: 75rem;
 	}
 	.header-block-bg-video {
 		text-align: left;
