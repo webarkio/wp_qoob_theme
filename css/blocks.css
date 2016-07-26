@@ -710,6 +710,26 @@
     }
 }
 
+@media only screen and (min-device-width : 768px)  and (max-device-width : 1024px) and (orientation : landscape) {
+    .download-block .box-wrap {
+        padding-left: 18px;
+    } 
+    .download-block .box-wrap .clearfix {
+        display: none;
+    }
+    .download-block .box-wrap li {
+        width: 27.2rem;
+    }
+    .download-block .box-wrap li:nth-child(3n) {
+        margin-right: 0 !important;
+    }
+    .download-block .box-wrap li a {
+        padding: 2.4rem 0;
+    }
+    .download-block .box-wrap .block-image {
+        width: 27.2rem;
+    }
+}
 
 
 /*--------------------------------------------------------------
