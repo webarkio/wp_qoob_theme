@@ -28,6 +28,7 @@
 .download-block .box-wrap {
     padding-left: 5.7rem;
     margin-bottom: 8.1rem;
+    overflow: hidden;
 }
 .download-block .box-wrap li {
     width: 31.2rem;
