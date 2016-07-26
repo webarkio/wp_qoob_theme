@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package wp_qoob_theme
+ * @package qoob
  */
 
 /**

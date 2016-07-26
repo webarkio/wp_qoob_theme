@@ -1,8 +1,8 @@
 <?php
 /**
- * wp_qoob_theme Theme Customizer.
+ * qoob Theme Customizer.
  *
- * @package wp_qoob_theme
+ * @package qoob
  */
 
 /**
@@ -20,7 +20,7 @@ function qoob_theme_customize_register( $wp_customize ) {
 	    'priority' => 10,
 	    'capability' => 'edit_theme_options',
 	    'theme_supports' => '',
-	    'title' => __( 'Blog Settings', 'wp_qoob_theme' ),
+	    'title' => __( 'Blog Settings', 'qoob' ),
 	    'description' => '',
 	    'panel' => '',
 	));
@@ -38,10 +38,10 @@ function qoob_theme_customize_register( $wp_customize ) {
 		    $wp_customize,
 		    'blog_image_bg',
 		    array(
-		        'label'      => __( 'Upload a blog background', 'wo_qoob_theme' ),
+		        'label'      => __( 'Upload a blog background', 'qoob' ),
 		        'section'    => 'blog_settings',
 		        'settings'   => 'blog_image_bg',
-		        'description' => __( 'Your theme recommends a blog background size of 1900 × 370 pixels.' ),
+		        'description' => __( 'Your theme recommends a blog background size of 1900 × 370 pixels.', 'qoob' ),
 		        'context'    => 'your_setting_context' 
 		    )
 		)
@@ -60,12 +60,12 @@ function qoob_theme_customize_register( $wp_customize ) {
 			$wp_customize,
 	        'blog_sidebar',
 	       	array(
-		  		'label' => __( 'Blog layout' ),
+		  		'label' => __( 'Blog layout', 'qoob' ),
 		  		'type' => 'radio',
 		  		'section' => 'blog_settings',
 		  		'choices' => array(
-	            	'sidebar_right'   => __( 'With sidebar' ),
-	            	'no_sidebar'  => __( 'Without sidebar' )
+	            	'sidebar_right'   => __( 'With sidebar', 'qoob' ),
+	            	'no_sidebar'  => __( 'Without sidebar', 'qoob' )
 	       		)
 			)
 		)
@@ -75,13 +75,13 @@ function qoob_theme_customize_register( $wp_customize ) {
 	    'priority' => 10,
 	    'capability' => 'edit_theme_options',
 	    'theme_supports' => '',
-	    'title' => __( 'Footer Settings', 'wp_qoob_theme' ),
+	    'title' => __( 'Footer Settings', 'qoob' ),
 	    'description' => '',
 	    'panel' => '',
 	));
 
 	$wp_customize->add_setting( 'footer_text', array(
-		'default' => __('© qoob 2016', 'wp_qoob_theme'),
+		'default' => __('© qoob 2016', 'qoob'),
 		'type' => 'theme_mod',
 		'capability' => 'edit_theme_options',
 		'transport' => '',
@@ -92,7 +92,7 @@ function qoob_theme_customize_register( $wp_customize ) {
 	    'type' => 'text',
 	    'priority' => 10,
 	    'section' => 'footer_settings',
-	    'label' => __( 'Footer text', 'wp_qoob_theme' ),
+	    'label' => __( 'Footer text', 'qoob' ),
 	    'description' => '',
 	) );
 }

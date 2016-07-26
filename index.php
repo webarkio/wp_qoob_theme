@@ -9,7 +9,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package wp_qoob_theme
+ * @package qoob
  */
 
 get_header('fixed'); ?>
