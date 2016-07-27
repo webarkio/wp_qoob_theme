@@ -2,8 +2,12 @@
 	position: relative;
 	text-align: center;
 	background-size: cover !important;
+	background-repeat: no-repeat;
+	background-position: center center;
 	overflow: hidden;
 }
+
+
 
 .header-block-bg-video .container {
  	height: 100%;
