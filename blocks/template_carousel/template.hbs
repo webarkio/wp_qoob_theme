@@ -13,7 +13,7 @@
                             <div class="item-template" data-url="{{url}}">
                                 <a href="{{link}}">
                                     <figure>
-                                        <img src="{{url}}">
+                                        <img src="{{url}}" alt="">
                                     </figure>
                                 </a>
                             </div>
@@ -28,7 +28,7 @@
 <script type="text/javascript">
 jQuery(document).ready(function() {
    
-    jQuery('.template-carousel-{{id}}').owlCarousel({
+jQuery('.template-carousel-{{id}}').owlCarousel({
         margin:25,
         video:false,
         lazyLoad:true,
@@ -54,13 +54,19 @@ jQuery(document).ready(function() {
                 center:true
             },
             960:{
-                items:1,
-                center:true
+                items:2,
+                center:true,
+                startPosition: 1
             },
             1200: {
                 items:3
             }
         }
     });
+    jQuery(window).resize(function(){
+        jQuery(".template-carousel-{{id}}").trigger('reinit.owl.carousel', {});
+    });
 });
+
+
 </script>

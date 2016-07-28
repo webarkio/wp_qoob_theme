@@ -1,5 +1,5 @@
 /*
-Theme Name: wp_qoob_theme
+Theme Name: Qoob
 Theme URI: http://qoob.it/
 Author: webark.io
 Author URI: http://webark.io/
@@ -7,14 +7,14 @@ Description: Corporate & Business WordPress Theme. Qoob.it Theme has minimal and
 Version: 1.0.1
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
-Text Domain: wp_qoob_theme
+Text Domain: qoob
 Domain Path: /languages/
 Tags: one-column, two-columns, right-sidebar, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-wp_qoob_theme is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Qoob is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
@@ -2038,7 +2038,7 @@ img.mfp-img {
  /**
  */
 
- @media (max-width: 48rem) {
+ @media (max-width: 76.8rem) {
     .header-block {
         font-size: 3.6rem !important;
         line-height: 5.5rem !important;

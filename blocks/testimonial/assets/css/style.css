@@ -90,7 +90,7 @@
         text-align: center;
     }
 }
-@media (max-width: 531px) { 
+@media (max-width: 768px) {
     .testimonial-carousel {
         margin-top: 2.5rem;
     }

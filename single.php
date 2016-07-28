@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package wp_qoob_theme
+ * @package qoob
  */
 
 get_header('fixed'); ?>
@@ -21,7 +21,7 @@ get_header('fixed'); ?>
 	</div>
 </div>
 <div class="container">
-<?php if(get_qoob_option('sidebar') == 'on'): ?>
+<?php if(get_theme_mod('blog_sidebar') == 'sidebar_right'): ?>
 	<div id="primary" class="content-area sidebar-on col-lg-9">
 <?php else:?>
 	<div id="primary" class="content-area sidebar-off col-lg-12">
@@ -45,7 +45,7 @@ get_header('fixed'); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 	<?php
-	if(get_qoob_option('sidebar') == 'on'){
+	if(get_theme_mod('blog_sidebar') == 'sidebar_right'){
 		get_sidebar();
 	}
 ?>

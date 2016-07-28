@@ -1,4 +1,4 @@
-<div class="header-block-bg-video header-block-{{id}}">
+<div class="header-block-bg-video header-block-{{id}}" style="background-image: url({{image}});">
      <div class="container">
 		<div class="row">
 			<div class="col-lg-12 bg-video-logo">
@@ -18,15 +18,6 @@
 		</div>
 	</div>
 </div>
-<style>
-	.header-block-{{id}} {
-		background: url('{{image}}') center center no-repeat;
-	}
-
-	.iPad.header-block-{{id}} {
-		background: url('{{image}}') center center no-repeat !important;
-	}
-</style>
 <script type="text/javascript">
 	jQuery(document).ready(function(){
 		var url = "{{bg_video}}",
@@ -39,15 +30,7 @@
 	    }
 
 		jQuery(".header-block-{{id}}").append(video);
-		// Centering content
-		var height = jQuery('.header-block-{{id}} .row').height(),
-			totalHeight = jQuery('.header-block-{{id}}').height();
-		jQuery('.header-block-{{id}} .row').height(height).css('top', (totalHeight - height) / 2 );
-		jQuery(window).on('resize', function() {
-			var height = jQuery('.header-block-{{id}} .row').height(),
-				totalHeight = jQuery('.header-block-{{id}}').height();
-			jQuery('.header-block-{{id}} .row').height(height).css('top', (totalHeight - height) / 2 );
-		});
+		vertical_align_bg_video();
 		// Adding parallax to video
 		jQuery(window).on('scroll', function () {
 	        var scrolled = jQuery(document).scrollTop() - jQuery('.header-block-{{id}}').offset().top;
@@ -58,4 +41,15 @@
 	    	jQuery(".header-block-{{id}}").addClass('iPad');
 	    }
     });
+
+	jQuery(window).resize(function(){
+    	vertical_align_bg_video();
+	});
+
+	function vertical_align_bg_video() {
+		// Centering content
+		var height = jQuery('.header-block-{{id}} .row').height(),
+			totalHeight = jQuery('.header-block-{{id}}').height();
+		jQuery('.header-block-{{id}} .row').height(height).css('top', (totalHeight - height) / 2 );
+	}
 </script>
