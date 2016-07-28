@@ -59,24 +59,6 @@
     	height: auto;
 	}
 }
-@media screen and(min-device-width : 768px) and (max-device-width : 1025px) {
-	/*.video-features .video-element {
-	    width: 48.5rem;
-    	height: auto;
-	}*/
-}
-/*@media (min-width: 1024px) { 
-	.video-features .video-element {
-	    width: 45.5rem;
-    	height: auto;
-	}
-}*/
-/*@media (min-width: 992px){
-	.video-features .video-element {
-	    width: 45.5rem;
-    	height: 45.5rem;
-	}
-}*/
 
 @media (max-width: 800px) {
 	.video-features .video-col {

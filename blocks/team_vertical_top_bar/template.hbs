@@ -1,4 +1,4 @@
-<div class="team-block vertical">
+<section class="team-block vertical">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
@@ -7,19 +7,19 @@
 			</div>
 		</div>
 		
-	        <div class="row">
-	        	{{#each skills}}
-		        	<div class="col-lg-2 col-sm-4">
-		        		<div class="progress-wrap clearfix">
-		        			<div class="progress vertical bottom top-bar">
-						    	<div class="progress-bar" role="progressbar" data-transitiongoal="{{percent}}"></div>
-							</div>
-							<span class="skill-wrap">{{title}} <span class="percent">0</span>%</span>
-							<span  class="point"></span>
-		        		</div>
-		        	</div>
-	        	{{/each}}
-	        </div>
+        <div class="row">
+        	{{#each skills}}
+	        	<div class="col-lg-2 col-sm-4">
+	        		<div class="progress-wrap clearfix">
+	        			<div class="progress vertical bottom top-bar">
+					    	<div class="progress-bar" role="progressbar" data-transitiongoal="{{percent}}"></div>
+						</div>
+						<span class="skill-wrap">{{title}} <span class="percent">0</span>%</span>
+						<span  class="point"></span>
+	        		</div>
+	        	</div>
+        	{{/each}}
+        </div>
 		<div class="row">
 		  {{#if team.length}}
 			{{#each_with_sort team "order"}}
@@ -44,7 +44,7 @@
           {{/if}}
         </div>
 	</div>
-</div>
+</section>
 <script type="text/javascript">
 	jQuery(document).ready(function() {
 	    jQuery('.progress.vertical .progress-bar').progressbar({

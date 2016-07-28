@@ -1,4 +1,4 @@
-<div class="landing-photo landing-photo-{{id}}">
+<section class="landing-photo landing-photo-{{id}}">
     <div id="background-block-{{id}}" class="background-block {{#ifCond parallax '==' '1'}}parallax{{/ifCond}}" {{#if image}} style="background-image : url({{bg_image}});" {{/if}}></div>
     <div class="container">
         <div class="row">
@@ -19,7 +19,7 @@
             </div>
         </div>
     </div>
-</div>
+</section>
 <script>
     jQuery(document).ready(function() {
             if (jQuery(document).width() < 400) {

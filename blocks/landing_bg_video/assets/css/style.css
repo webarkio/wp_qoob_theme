@@ -1,3 +1,6 @@
+/*--------------------------------------------------------------
+# Landing background video
+--------------------------------------------------------------*/
 .header-block-bg-video {
 	position: relative;
 	text-align: center;
@@ -6,8 +9,6 @@
 	background-position: center center;
 	overflow: hidden;
 }
-
-
 
 .header-block-bg-video .container {
  	height: 100%;
