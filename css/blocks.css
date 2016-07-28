@@ -593,6 +593,10 @@
 .download-block h1 {
     text-transform: uppercase;
 }
+.download-block iframe {
+    border: 0;
+    overflow: hidden;
+}
 .download-block h6 {
     font-size: 1.8rem;
     color: #484848;
@@ -646,6 +650,7 @@
     margin-right: 3.2rem;
     margin-top: 0.8rem;
 }
+
 @media (max-width: 768px) { 
     .download-block .box-wrap {
         padding-left: 1.7rem;
@@ -1497,8 +1502,12 @@
 	position: relative;
 	text-align: center;
 	background-size: cover !important;
+	background-repeat: no-repeat;
+	background-position: center center;
 	overflow: hidden;
 }
+
+
 
 .header-block-bg-video .container {
  	height: 100%;

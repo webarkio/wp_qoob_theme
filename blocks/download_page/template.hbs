@@ -14,7 +14,7 @@
 					<li>
 						<div class= "block-image {{boxbg}}">
 						{{#if image}}
-							<image src="{{image}}">
+							<img alt="" src="{{image}}">
 						{{/if}}
 						</div>
 						<a href="{{linkbtn}}" class="btn btn-action {{#ifCond disabled '==' '1'}}disabled{{/ifCond}}">{{textbtn}}</a>
@@ -26,11 +26,11 @@
 	          <div class="github-sourse">
 	          		<h3>{{gittitle}}</h3>
 	          		<span class="github-star">
-						<iframe src="https://ghbtns.com/github-btn.html?user={{gituser}}&repo={{gitrepo}}&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+						<iframe src="https://ghbtns.com/github-btn.html?user={{gituser}}&repo={{gitrepo}}&type=star&count=true&size=large" width="160" height="30"></iframe>
 					</span>
-					<span class="github-logo"><a href="{{gitlink}}"><img src="{{gitimage}}"></a></span>
+					<span class="github-logo"><a href="{{gitlink}}"><img alt="" src="{{gitimage}}"></a></span>
 					<span class="github-fork">
-						<iframe src="https://ghbtns.com/github-btn.html?user={{gituser}}&repo={{gitrepo}}&type=fork&count=true&size=large" frameborder="0" scrolling="0" width="158px" height="30px"></iframe>
+						<iframe src="https://ghbtns.com/github-btn.html?user={{gituser}}&repo={{gitrepo}}&type=fork&count=true&size=large" width="158" height="30"></iframe>
 					</span>
 	          </div>
           	</div>
