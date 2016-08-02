@@ -1,4 +1,4 @@
-<div class="faq-accordion faq-accordion-{{id}} action-overlay">
+<section class="faq-accordion faq-accordion-{{id}} action-overlay">
 	<div id="background-block-{{id}}" class="background-block {{#ifCond parallax '==' '1'}}parallax{{/ifCond}}" {{#if image}} style="background-image : url({{image}});" {{/if}}></div>
 	<div class="container">
 		<div class="row">
@@ -10,7 +10,7 @@
 					<div class="panel-group {{type_color}}" id="accordion-{{id}}" role="tablist" aria-multiselectable="true">
 					{{#each_with_sort faq "order"}}
 					  <div class="panel panel-default">
-					    <div class="panel-heading" role="tab" data-toggle="collapse" data-parent="#accordion-{{../id}}" data-target="#collapse-{{order}}" aria-expanded="{{#ifCond order "==" "0"}}true{{else}}false{{/ifCond}}" aria-controls="collapse-{{order}}">
+					    <div class="panel-heading" role="tab" data-toggle="collapse" data-parent="#accordion-{{../id}}" data-target="#collapse-{{order}}" aria-expanded="{{#ifCond order "==" "0"}}true{{else}}false{{/ifCond}}" aria-controls="collapse-{{order}}" id="heading-{{order}}">
 					      <h4 class="panel-title">
 					        <a class="accordion-toggle" role="button" href="#">
 					          {{ title }}
@@ -18,7 +18,7 @@
 					        <i class="indicator"></i>
 					      </h4>
 					    </div>
-					    <div id="collapse-{{order}}" class="panel-collapse collapse {{#ifCond order "==" "0"}} in{{/ifCond}}" role="tabpanel" aria-labelledby="heading-{{order}}">
+					    <div id="collapse-{{order}}" class="panel-collapse collapse {{#ifCond order "==" "0"}}in{{/ifCond}}" role="tabpanel" aria-labelledby="heading-{{order}}">
 					      <div class="panel-body">
 					        {{{ content }}}
 					      </div>
@@ -30,7 +30,7 @@
 			</div>
 		</div>
 	</div>
-</div>
+</section>
 
 <script type="text/javascript">
 jQuery(document).ready(function() {

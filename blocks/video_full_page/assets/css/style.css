@@ -1,7 +1,6 @@
 /*--------------------------------------------------------------
 # video full page
 --------------------------------------------------------------*/
-
 .video-full-page {
 	padding: 6.3rem 0;
 }
@@ -15,7 +14,6 @@
     overflow: hidden;
     max-height: 90.0rem;
 }
-
 
 .video-full-page .video-container iframe, object, embed {
     position:absolute;

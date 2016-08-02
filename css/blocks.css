@@ -593,6 +593,10 @@
 .download-block h1 {
     text-transform: uppercase;
 }
+.download-block iframe {
+    border: 0;
+    overflow: hidden;
+}
 .download-block h6 {
     font-size: 1.8rem;
     color: #484848;
@@ -646,6 +650,7 @@
     margin-right: 3.2rem;
     margin-top: 0.8rem;
 }
+
 @media (max-width: 768px) { 
     .download-block .box-wrap {
         padding-left: 1.7rem;
@@ -736,7 +741,6 @@
 /*--------------------------------------------------------------
 # Faq accordion
 --------------------------------------------------------------*/
-
 .faq-accordion {
 	padding: 14.0rem 0;
 	background-repeat: no-repeat;
@@ -1014,7 +1018,6 @@
 /*--------------------------------------------------------------
 # Faq list
 --------------------------------------------------------------*/
-
 .faq-list {
 	padding: 7.2rem 0 16.9rem;
 }
@@ -1055,7 +1058,6 @@
 /*--------------------------------------------------------------
 # gallery pop up
 --------------------------------------------------------------*/
-
 .gallery-popup {
 	padding: 7.7rem 0;
 }
@@ -1116,7 +1118,6 @@
 /*--------------------------------------------------------------
 # gallery pop up
 --------------------------------------------------------------*/
-
 .gallery-scroll {
     position: relative;
     margin-top: 7.7rem;
@@ -1203,7 +1204,6 @@
 /*--------------------------------------------------------------
 # gallery zoom
 --------------------------------------------------------------*/
-
 .gallery-zoom {
     padding: 8.2rem 0 12rem 0;
 }
@@ -1297,7 +1297,6 @@
 /*--------------------------------------------------------------
 # Header big bg block 
 --------------------------------------------------------------*/
-
 .header-big-bg {
 	overflow: hidden;
 	position: relative;
@@ -1355,7 +1354,6 @@
 /*--------------------------------------------------------------
 # Header small bg block 
 --------------------------------------------------------------*/
-
 .header-small-bg {
 	position: relative;
 	overflow: hidden;
@@ -1399,7 +1397,6 @@
 /*--------------------------------------------------------------
 # Iconbox
 --------------------------------------------------------------*/
-
 .iconbox-block {
     padding-top: 10.5rem;
     padding-bottom: 9.8rem;
@@ -1447,7 +1444,6 @@
 /*--------------------------------------------------------------
 # Iconbox no header
 --------------------------------------------------------------*/
-
 .iconbox-block.no-header {
     padding-top: 14.8rem;
     padding-bottom: 13.1rem;
@@ -1493,12 +1489,19 @@
 	}
 }
 
+/*--------------------------------------------------------------
+# Landing background video
+--------------------------------------------------------------*/
 .header-block-bg-video {
 	position: relative;
 	text-align: center;
 	background-size: cover !important;
+	background-repeat: no-repeat;
+	background-position: center center;
 	overflow: hidden;
 }
+
+
 
 .header-block-bg-video .container {
  	height: 100%;
@@ -1938,7 +1941,6 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 /*--------------------------------------------------------------
 ## Slider v1
 --------------------------------------------------------------*/
-
 .carousel-content {
     text-align: center;
 }
@@ -2531,7 +2533,6 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
-
 .team-block.vertical .progress-wrap {
 	margin-top: 1.5rem;
 	/*height: 42.5rem;*/
@@ -2622,7 +2623,6 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 /*--------------------------------------------------------------
 # template full page
 --------------------------------------------------------------*/
-
 .template-carousel {
     padding: 10.4rem 0 13.9rem 0;
 }
@@ -2903,7 +2903,6 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 /*--------------------------------------------------------------
 ## Testimonial arrow carousel 
 --------------------------------------------------------------*/
-
 .testimonial-carousel-arrow {
     position: relative;
 }
@@ -3001,7 +3000,6 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 /*--------------------------------------------------------------
 # text
 --------------------------------------------------------------*/
-
 .text {
 	padding: 12.2rem 0;
 }
@@ -3012,7 +3010,6 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 /*--------------------------------------------------------------
 # text image left
 --------------------------------------------------------------*/
-
 .text-image-left {
 	padding: 12.2rem 0;
 }
@@ -3034,7 +3031,6 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 /*--------------------------------------------------------------
 # text image right
 --------------------------------------------------------------*/
-
 .text-image-right {
 	padding: 12.2rem 0;
 }
@@ -3056,7 +3052,6 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 /*--------------------------------------------------------------
 # video from center
 --------------------------------------------------------------*/
-
 .video {
 	padding: 6.3rem 0;
 }
@@ -3066,7 +3061,6 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
     margin-bottom: 3.2rem;
 }
 
-
 .video .video-container {
     position: relative;
     overflow: hidden;
@@ -3074,7 +3068,6 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
     width: 100%;
     margin: 0 auto;
 }
-
 
 .video .video-container iframe, object, embed {
     position:absolute;
@@ -3086,7 +3079,6 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 /*--------------------------------------------------------------
 # video full page
 --------------------------------------------------------------*/
-
 .video-carousel {
 	padding: 6.3rem 0;
 }
@@ -3287,24 +3279,6 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
     	height: auto;
 	}
 }
-@media screen and(min-device-width : 768px) and (max-device-width : 1025px) {
-	/*.video-features .video-element {
-	    width: 48.5rem;
-    	height: auto;
-	}*/
-}
-/*@media (min-width: 1024px) { 
-	.video-features .video-element {
-	    width: 45.5rem;
-    	height: auto;
-	}
-}*/
-/*@media (min-width: 992px){
-	.video-features .video-element {
-	    width: 45.5rem;
-    	height: 45.5rem;
-	}
-}*/
 
 @media (max-width: 800px) {
 	.video-features .video-col {
@@ -3343,11 +3317,9 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
     	margin-right: 16px;
 	}
 }
-
 /*--------------------------------------------------------------
 # video full page
 --------------------------------------------------------------*/
-
 .video-full-page {
 	padding: 6.3rem 0;
 }
@@ -3361,7 +3333,6 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
     overflow: hidden;
     max-height: 90.0rem;
 }
-
 
 .video-full-page .video-container iframe, object, embed {
     position:absolute;

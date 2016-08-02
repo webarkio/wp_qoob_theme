@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all pages.
+ * Template Name: Page with left sidebar
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -15,7 +15,7 @@
 get_header(); ?>
 
 			<?php
-			$template_parts = 'page';
+			$template_parts = 'page-sidebar';
 			while ( have_posts() ) : the_post();
 				$content = get_the_content();
 				if(preg_match("/\[qoob-page\]/i", $content)) {

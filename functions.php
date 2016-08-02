@@ -121,8 +121,18 @@ add_filter( 'excerpt_more', 'qoob_theme_excerpt_more' );
  */
 function qoob_theme_widgets_init() {
     register_sidebar(array(
-        'name' => esc_html__('Sidebar', 'qoob'),
+        'name' => esc_html__('Sidebar blog', 'qoob'),
         'id' => 'sidebar-1',
+        'description' => esc_html__('Add widgets here.', 'qoob'),
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget' => '</section>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
+    ));
+
+    register_sidebar(array(
+        'name' => esc_html__('Sidebar page', 'qoob'),
+        'id' => 'sidebar-page',
         'description' => esc_html__('Add widgets here.', 'qoob'),
         'before_widget' => '<section id="%1$s" class="widget %2$s">',
         'after_widget' => '</section>',

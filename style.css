@@ -1432,6 +1432,9 @@ a:active {
 	background-color: #f4f4f4;
 	margin-top: 10rem;
 }
+.widget-area.page-sidebar {
+    margin-top: 3rem;
+}
 
 .widget ul {
 	padding-left: 1.4rem;
