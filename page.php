@@ -20,7 +20,8 @@ get_header(); ?>
 				$content = get_the_content();
 				//Check for qoob page
 				$meta = get_post_meta(get_the_ID());
-				if(isset($meta['qoob_data']) && !empty($meta['qoob_data'])) {
+
+				if((isset($meta['qoob_data']) && !empty($meta['qoob_data'])) || $_GET['qoob'] == 'true') {
 					$template_parts = 'qoob';
 				}
 				get_template_part( 'template-parts/content', $template_parts );
