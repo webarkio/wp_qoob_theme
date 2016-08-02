@@ -2072,3 +2072,7 @@ img.mfp-img {
     top: calc(50% - 32.5px);
     left: calc(50% - 32.5px);
 }
+
+#wpadminbar {
+    z-index:9998;
+}
