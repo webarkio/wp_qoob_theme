@@ -57,7 +57,11 @@
 .testimonial-grid-item dd {
     margin-left: 12.7rem;
 }
-
+@media (max-width: 800px) {
+    .testimonial-grid-item {
+        margin-left: 16px;
+    }
+}
 @media (max-width: 480px) {
     .testimonial-grid-item {
         margin-left: 21px;

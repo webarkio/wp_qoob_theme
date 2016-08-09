@@ -2928,26 +2928,12 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 /* Portrait tablet to landscape and desktop */
 
 @media (min-width: 76.8rem) and (max-width: 99.1rem) {
-    .template-carousel .item-template {
-        height: 57.1rem;
-    }
-    .template-carousel .owl-nav {
-        width: auto;
-        top: auto;
-        right: 7.8rem;
-        bottom: -0.7rem;
-    }
-    .template-carousel .owl-nav .owl-prev,
-    .template-carousel .owl-nav .owl-next {
-        width: 3rem;
-        height: 3rem;
-        transform: none;
-    }
-    .template-carousel .owl-nav .owl-prev {
+
+    .template-carousel.ver-two .owl-nav .owl-prev {
         left: 0.2rem;
         background: transparent url(../images/prev.png) no-repeat;
     }
-    .template-carousel .owl-nav .owl-next {
+    .template-carousel.ver-two .owl-nav .owl-next {
         background: transparent url(../images/next.png) no-repeat;
     }
 }
@@ -2956,26 +2942,23 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 /* Landscape phone to portrait tablet */
 
 @media (max-width: 76.7rem) {
-    .template-carousel .item-template {
-        /*height: 47.1rem;*/
-    }
-    .template-carousel .owl-nav {
+    .template-carousel.ver-two .owl-nav {
         width: auto;
         top: auto;
         right: 7.8rem;
         bottom: -0.7rem;
     }
-    .template-carousel .owl-nav .owl-prev,
-    .template-carousel .owl-nav .owl-next {
+    .template-carousel.ver-two .owl-nav .owl-prev,
+    .template-carousel.ver-two .owl-nav .owl-next {
         width: 3rem;
         height: 3rem;
         transform: none;
     }
-    .template-carousel .owl-nav .owl-prev {
+    .template-carousel.ver-two .owl-nav .owl-prev {
         left: 0.2rem;
         background: transparent url(../images/prev.png) no-repeat;
     }
-    .template-carousel .owl-nav .owl-next {
+    .template-carousel.ver-two .owl-nav .owl-next {
         background: transparent url(../images/next.png) no-repeat;
     }
 }
@@ -2984,26 +2967,23 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 /* Landscape phones and down */
 
 @media (max-width: 48rem) {
-    .template-carousel .item-template {
-        /*height: 25.2rem;*/
-    }
-    .template-carousel .owl-nav {
+    .template-carousel.ver-two .owl-nav {
         width: auto;
         top: auto;
         right: 7.8rem;
         bottom: -0.7rem;
     }
-    .template-carousel .owl-nav .owl-prev,
-    .template-carousel .owl-nav .owl-next {
+    .template-carousel.ver-two .owl-nav .owl-prev,
+    .template-carousel.ver-two .owl-nav .owl-next {
         width: 3rem;
         height: 3rem;
         transform: none;
     }
-    .template-carousel .owl-nav .owl-prev {
+    .template-carousel.ver-two .owl-nav .owl-prev {
         left: 0.2rem;
         background: transparent url(../images/prev.png) no-repeat;
     }
-    .template-carousel .owl-nav .owl-next {
+    .template-carousel.ver-two .owl-nav .owl-next {
         background: transparent url(../images/next.png) no-repeat;
     }
     .header-block {
@@ -3011,14 +2991,7 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
     }
 }
 
-@media (max-width: 531px) {
-    .template-carousel {
-        padding: 4rem 0 10.8rem 0;
-    }
-    .template-carousel .header-block {
-        margin-bottom: 2.7rem;
-    }
-}
+
 /*--------------------------------------------------------------
 ## Testimonial carousel 
 --------------------------------------------------------------*/
@@ -3282,7 +3255,11 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 .testimonial-grid-item dd {
     margin-left: 12.7rem;
 }
-
+@media (max-width: 800px) {
+    .testimonial-grid-item {
+        margin-left: 16px;
+    }
+}
 @media (max-width: 480px) {
     .testimonial-grid-item {
         margin-left: 21px;
@@ -3622,7 +3599,9 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 /*--------------------------------------------------------------
 # video features new
 --------------------------------------------------------------*/
-
+.video-features.number {
+   padding-bottom: 0;
+}
 .video-features.number .video-element {
    	width: 70rem;
     height: 44.5rem;
@@ -3691,6 +3670,36 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 	.video-features.number .video-col .media-video-container {
     	width: 61rem;
 	}
+}
+@media (max-width: 800px) { 
+    .video-features .video-col {
+        margin-bottom: 22px;
+    }
+    .video-features.number .video-col .media-video-container {
+        margin-bottom: 0;
+        float: none;
+        margin: auto;
+    }
+    .video-features.number .video-col.level-two .media-video-container {
+          margin-bottom: 0;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 23px;
+    }
+    .video-features.number .has-center-content {
+        height: 44rem;
+    }
+
+}
+
+@media (max-width: 640px) { 
+    .video-features.number .video-element {
+        width: 57.5rem;
+    }
+    .video-features.number .video-col .media-video-container {
+        width: 57.5rem;
+    }
 }
 @media (max-width: 480px) { 
 	.video-features.number .video-element {

@@ -1,7 +1,9 @@
 /*--------------------------------------------------------------
 # video features new
 --------------------------------------------------------------*/
-
+.video-features.number {
+   padding-bottom: 0;
+}
 .video-features.number .video-element {
    	width: 70rem;
     height: 44.5rem;
@@ -70,6 +72,36 @@
 	.video-features.number .video-col .media-video-container {
     	width: 61rem;
 	}
+}
+@media (max-width: 800px) { 
+    .video-features .video-col {
+        margin-bottom: 22px;
+    }
+    .video-features.number .video-col .media-video-container {
+        margin-bottom: 0;
+        float: none;
+        margin: auto;
+    }
+    .video-features.number .video-col.level-two .media-video-container {
+          margin-bottom: 0;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 23px;
+    }
+    .video-features.number .has-center-content {
+        height: 44rem;
+    }
+
+}
+
+@media (max-width: 640px) { 
+    .video-features.number .video-element {
+        width: 57.5rem;
+    }
+    .video-features.number .video-col .media-video-container {
+        width: 57.5rem;
+    }
 }
 @media (max-width: 480px) { 
 	.video-features.number .video-element {
