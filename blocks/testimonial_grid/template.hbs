@@ -1,0 +1,31 @@
+<section class="testimonial-block grid">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="header-block">{{header}}</h1>
+            </div>
+        </div>
+        <div class="row">
+          {{#each_with_sort testimonial "order"}}
+            <div class="col-lg-6">
+                    <dl class="testimonial-grid-item">
+                      <dt>
+                        {{#if image}}
+                          <img src="{{image}}" class="person">
+                        {{/if}}
+                      </dt>
+                       <dd class="testimonial-grid-item-content">
+                           <span class="title">{{title}}</span>
+                           <div class="testimonial-grid-item-text">
+                                {{{text}}}
+                           </div>
+                           <span class="company">{{company}}</span>
+                       </dd>
+                    </dl>
+            </div> 
+            {{#ifIsNthItem nth=2}} <div class="clearfix"></div> {{/ifIsNthItem}}
+            {{/each_with_sort}}   
+        </div>
+        
+    </div>
+</section>

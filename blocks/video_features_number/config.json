@@ -1,0 +1,83 @@
+{
+    "name": "",
+    "groups": "video",
+    "template": "template.hbs",
+    "settings": [{
+        "name": "header",
+        "label": "Header block",
+        "type": "text"
+    },
+    {
+        "name": "features",
+        "label": "Features list",
+        "type": "accordion",
+        "viewcontent": "standart",
+        "viewType": "expand",
+        "settings": [{
+                "name": "title",
+                "label": "Title",
+                "type": "text"
+            },
+            {
+                "name": "text_feature",
+                "label": "Text",
+                "type": "textarea"
+            },
+            {
+                "name": "number",
+                "label": "Number",
+                "type": "text"
+            },
+            {
+                "name": "poster",
+                "label": "Video poster",
+                "type": "image",
+                "tags": [""]
+            },
+            {
+                "name": "url",
+                "label": "Video",
+                "type": "video",
+                "tags": [""]
+            }]
+    }],
+    "defaults": {
+        "header": "5 reasons why you need to try qoob",
+        "features": [{
+            "title" : "Clean intuitive UI",
+            "text_feature" : "The live editor gives you an exact preview of your content, that you can edit in real-time. You can see all edits without leaving the page.",
+            "url": "http://qoob.it/wp-content/uploads/2016/07/editing.mp4",
+            "poster" : "http://qoob.it/wp-content/uploads/2016/07/poster-editing.png",
+            "number" : "1",
+            "order": 1
+        }, {
+            "title" : "Alaways Looking Good",
+            "text_feature" : "QOOB automatically optimizes your website's pages for desktop, tablet and mobile. This ensures your visitors get the best viewing experience no matter what device they use.",
+            "url": "http://qoob.it/wp-content/uploads/2016/07/device.mp4",
+            "poster" : "http://qoob.it/wp-content/uploads/2016/07/poster-good.png",
+            "number" : "2",
+            "order": 2
+        }, {
+            "title" : "Predefined blocks",
+            "text_feature" : "QOOB comes with many predefined blocks, so building and prototyping is crazy fast. Simply click, select, edit and enjoy stacking blocks to build your website. You will like it.",
+            "url": "http://qoob.it/wp-content/uploads/2016/07/predefine.mp4",
+            "poster" : "http://qoob.it/wp-content/uploads/2016/07/poster-predefined.png",
+            "number" : "3",
+            "order": 3
+        },{
+            "title" : "Predefined blocks",
+            "text_feature" : "QOOB comes with many predefined blocks, so building and prototyping is crazy fast. Simply click, select, edit and enjoy stacking blocks to build your website. You will like it.",
+            "url": "http://qoob.it/wp-content/uploads/2016/07/predefine.mp4",
+            "poster" : "http://qoob.it/wp-content/uploads/2016/07/poster-predefined.png",
+            "number" : "4",
+            "order": 3
+        },{
+            "title" : "Predefined blocks",
+            "text_feature" : "QOOB comes with many predefined blocks, so building and prototyping is crazy fast. Simply click, select, edit and enjoy stacking blocks to build your website. You will like it.",
+            "url": "http://qoob.it/wp-content/uploads/2016/07/predefine.mp4",
+            "poster" : "http://qoob.it/wp-content/uploads/2016/07/poster-predefined.png",
+            "number" : "5",
+            "order": 3
+        }]
+    }
+}

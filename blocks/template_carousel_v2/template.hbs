@@ -1,0 +1,70 @@
+<section class="template-carousel ver-two" style="background-image: url({{bg_url}});">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="header-block">{{header}}</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="owl-carousel template-carousel-{{id}}">
+                    {{#if theme.length}}
+                        {{#each_with_sort theme "order"}}
+                            <div class="item-template" data-url="{{url}}">
+                                <a href="{{link}}">
+                                    <figure>
+                                        <img src="{{url}}" alt="">
+                                    </figure>
+                                </a>
+                            </div>
+                        {{/each_with_sort}}
+                    {{/if}}
+                </div>
+            </div>                
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript">
+jQuery(document).ready(function() {
+   
+jQuery('.template-carousel-{{id}}').owlCarousel({
+        margin:25,
+        video:false,
+        lazyLoad:true,
+        navText: [],
+        nav:true,
+        responsive:{
+            0:{
+                items:2,
+                margin:10,
+                startPosition: 1,
+                center:true
+            },
+            480:{
+                items:2,
+                margin:10,
+                startPosition: 1,
+                margin:0
+            },
+            678:{
+                items:2,
+                margin:10,
+                startPosition: 1,
+                center:true
+            },
+            960:{
+                items:2,
+                center:true,
+                startPosition: 1
+            },
+            1200: {
+                items:3
+            }
+        }
+    });
+    jQuery(window).resize(function(){
+        jQuery(".template-carousel-{{id}}").trigger('reinit.owl.carousel', {});
+    });
+});
+</script>

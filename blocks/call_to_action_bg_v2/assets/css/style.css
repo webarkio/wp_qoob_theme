@@ -1,0 +1,15 @@
+/*--------------------------------------------------------------
+# Call to action bg v2
+--------------------------------------------------------------*/
+/*OpenSans-ExstraBold*/
+.call-to-action-bg.ver-two.action-overlay:before {
+	background-color: rgba(0,0,0,0.7);
+}
+.call-to-action-bg.ver-two .header-desc {
+	font-family: "OpenSans-ExstraBold", sans-serif;
+	font-weight: 800;
+}
+.call-to-action-bg.ver-two .btn {
+	border: 3px solid !important;
+	margin-top: 35px;
+}

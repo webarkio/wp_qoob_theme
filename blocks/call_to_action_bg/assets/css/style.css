@@ -33,7 +33,9 @@
 	text-transform: uppercase;
 	color: #fff;
 }
-
+.call-to-action-bg .header-desc {
+	color: #fff;
+}
 .call-to-action-bg .btn-action {
 	display: inline-block;
 	margin: auto;

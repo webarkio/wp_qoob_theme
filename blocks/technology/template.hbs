@@ -1,0 +1,41 @@
+<section class="landing-photo landing-photo-{{id}} technology">
+    <div id="background-block-{{id}}" class="background-block {{#ifCond parallax '==' '1'}}parallax{{/ifCond}}" {{#if bg_image}} style="background-image : url({{bg_image}});" {{/if}}></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="header-block">{{header}}</h1>
+            </div>
+        </div>
+        <div class="row">
+         {{#if images.length}}
+            {{#each_with_sort images "order"}}
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                    <div class="technology-image">
+                        	{{#if image}}
+                    		  <img src="{{image}}" alt="">
+                    	    {{/if}}
+                    </div>
+                </div>
+            {{/each_with_sort}}
+        {{/if}}
+        </div>
+    </div>
+</section>
+<script>
+    jQuery(document).ready(function() {
+            if (jQuery(document).width() < 400) {
+                jQuery('#background-block-{{id}}').removeClass('parallax');
+            }
+            jQuery(document).resize(function() {
+                if (jQuery(document).width() < 400) {
+                    jQuery('#background-block-{{id}}').removeClass('parallax');
+                } else {
+                    jQuery('#background-block-{{id}}').addClass('parallax');
+                }
+            });
+            jQuery(window).scroll(function () {
+                var scrolled = jQuery(document).scrollTop() - jQuery('.landing-photo-{{id}}').offset().top;
+                jQuery('#background-block-{{id}}.parallax').css('top', scrolled + 'px');
+            });
+    });
+</script>

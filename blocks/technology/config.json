@@ -1,0 +1,106 @@
+{
+    "name": "",
+    "groups": "main_block",
+    "template": "template.hbs",
+    "settings": [{
+        "name": "header",
+        "label": "Header",
+        "type": "text"
+    },{
+        "name": "bg_image",
+        "label": "Background image",
+        "type": "image",
+        "tags": ["pc", "table"]
+    }, {
+        "name": "parallax",
+        "label": "Parallax Background",
+        "type": "checkbox_switch"
+    },{
+        "name": "btn_url",
+        "label": "Button url",
+        "type": "text"
+    },{
+        "name": "btn_text",
+        "label": "Button text",
+        "type": "text"
+    },{
+        "name": "images",
+        "label": "Image",
+        "type": "accordion",
+        "viewcontent": "standart",
+        "viewType": "expand",
+        "settings" : [
+            {
+                "name" : "image",
+                "type": "image",
+                "tags": ["tehnology"]
+            }
+        ]
+    }],
+    "defaults": {
+        "header": "What technology do we use?",
+        "images" : [
+            {
+                "image": "%block_url%/assets/img/technology_wp.png",
+                "order": 1
+            },
+            {
+                "image": "%block_url%/assets/img/technology_backbone.png",
+                "order": 2
+            },
+            {
+                "image": "%block_url%/assets/img/technology_php.png",
+                "order": 3
+            },
+            {
+                "image": "%block_url%/assets/img/technology_bootstrap.png",
+                "order": 4
+            },
+            {
+                "image": "%block_url%/assets/img/technology_hbs.png",
+                "order": 5
+            },
+            {
+                "image": "%block_url%/assets/img/technology_jquery.png",
+                "order": 6
+            }
+        ],
+        "bg_image" : "%block_url%/assets/img/landing_photo_bg.jpg",
+        "btn_url" : "",
+        "btn_text" : "Read more"
+    },
+    "assets" : [{
+        "type": "image",
+        "src": "%block_url%/assets/img/technology_wp.png",
+        "tags": ["technology", "wp", "wordpress"]
+    },{
+        "type": "image",
+        "src": "%block_url%/assets/img/technology_hbs.png",
+        "tags": ["technology", "hbs", "handlebars", "underscore"]
+    },
+    {
+        "type": "image",
+        "src": "%block_url%/assets/img/tehnology_php.png",
+        "tags": ["technology", "php"]
+    },
+    {
+        "type": "image",
+        "src": "%block_url%/assets/img/technology_jquery.png",
+        "tags": ["technology", "jquery", "jq"]
+    },
+    {
+        "type": "image",
+        "src": "%block_url%/assets/img/technology_bootstrap.png",
+        "tags": ["technology", "bootstrap"]
+    },
+    {
+        "type": "image",
+        "src": "%block_url%/assets/img/technology_backbone.png",
+        "tags": ["technology", "backbone"]
+    },
+    {
+        "type": "image",
+        "src": "%block_url%/assets/img/landing_photo_bg.jpg",
+        "tags": ["wall"]
+    }]
+}

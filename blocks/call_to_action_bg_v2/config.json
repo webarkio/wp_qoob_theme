@@ -8,6 +8,11 @@
         "type": "text"
     }, 
     {
+        "name": "description",
+        "label": "Description",
+        "type": "text"
+    }
+    ,{
         "name": "image",
         "label": "Image",
         "type": "image",
@@ -27,14 +32,14 @@
     }],
     "assets": [{
         "type": "image",
-        "src": "%block_url%/assets/img/call_to_action_bg.jpg",
-        "tags": ["wall"]
+        "src": "%block_url%/assets/img/call_to_action_bg2.jpg",
+        "tags": ["tablet"]
     }],
     "defaults": {
-        "header": "Ready to build your web site?",
+        "header": "By the way…",
         "description" : "This web site was created with qoob!",
-        "image" : "%block_url%/assets/img/call_to_action_bg.jpg",
-        "action_text" : "Try now",
-        "action_url" : "http://qoob.it/"
+        "image" : "%block_url%/assets/img/call_to_action_bg2.jpg",
+        "action_text" : "Download",
+        "action_url" : "http://qoob.it/download/"
     }
 }
