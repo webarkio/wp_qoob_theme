@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package wp_qoob_theme
+ * @package qoob
  */
 
 ?>
@@ -20,7 +20,7 @@
 					the_content();
 
 					wp_link_pages( array(
-						'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'wp_qoob_theme' ),
+						'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'qoob' ),
 						'after'  => '</div>',
 					) );
 				?>
@@ -31,7 +31,7 @@
 					edit_post_link(
 						sprintf(
 							/* translators: %s: Name of current post */
-							esc_html__( 'Edit %s', 'wp_qoob_theme' ),
+							esc_html__( 'Edit %s', 'qoob' ),
 							the_title( '<span class="screen-reader-text">"', '"</span>', false )
 						),
 						'<span class="edit-link">',
@@ -40,6 +40,11 @@
 				?>
 			</footer><!-- .entry-footer -->
 		</article><!-- #post-## -->
+		<?php
+			if(get_theme_mod('blog_sidebar') == 'sidebar_right'){
+				get_sidebar();
+			}
+		?>
 	</main><!-- #main -->
 	<?php
 		// If comments are open or we have at least one comment, load up the comment template.
@@ -47,4 +52,5 @@
 			comments_template();
 		endif;
 	?>
+
 </div><!-- #primary -->

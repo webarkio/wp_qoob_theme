@@ -1,7 +1,12 @@
+/*--------------------------------------------------------------
+# Landing background video
+--------------------------------------------------------------*/
 .header-block-bg-video {
 	position: relative;
 	text-align: center;
 	background-size: cover !important;
+	background-repeat: no-repeat;
+	background-position: center center;
 	overflow: hidden;
 }
 
@@ -74,11 +79,11 @@
     z-index: -1;
 }
 .header-block-bg-video .btn-header-wrap .btn {
-		margin-right: 18rem;
-	}
-	.header-block-bg-video .btn-header-wrap .btn:last-child {
+		margin-right: 16rem;
+}
+.header-block-bg-video .btn-header-wrap .btn:last-child {
 		margin-right: 0;
-	}
+}
 @media (max-width: 1024px) {
 	.header-block-bg-video {
      	padding: 10.8rem 0 12.5rem;
@@ -120,7 +125,10 @@
 	}*/
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
+	.header-block-bg-video .container {
+		max-width: 75rem;
+	}
 	.header-block-bg-video {
 		text-align: left;
 	}
@@ -157,4 +165,14 @@
 	.header-block-bg-video .btn-header-wrap {
     	margin-top: 5.3rem;
 	}
+}
+/*Safari 9+ style*/
+_::-webkit-:not(:root:root), .custom-video-wrapper {
+	z-index: -9;
+}
+_::-webkit-:not(:root:root), .custom-video-wrapper-overlay {
+	z-index: 0;
+}
+_::-webkit-:not(:root:root), .header-block-bg-video .container .row{
+	z-index: 1;
 }

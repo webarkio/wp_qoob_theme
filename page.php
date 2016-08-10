@@ -9,7 +9,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package wp_qoob_theme
+ * @package qoob
  */
 
 get_header(); ?>
@@ -30,5 +30,7 @@ get_header(); ?>
 
 			endwhile; // End of the loop.
 			?>
+			<?php
+?>
 <?php
 get_footer();

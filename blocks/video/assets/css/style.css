@@ -1,7 +1,6 @@
 /*--------------------------------------------------------------
 # video from center
 --------------------------------------------------------------*/
-
 .video {
 	padding: 6.3rem 0;
 }
@@ -11,7 +10,6 @@
     margin-bottom: 3.2rem;
 }
 
-
 .video .video-container {
     position: relative;
     overflow: hidden;
@@ -19,7 +17,6 @@
     width: 100%;
     margin: 0 auto;
 }
-
 
 .video .video-container iframe, object, embed {
     position:absolute;

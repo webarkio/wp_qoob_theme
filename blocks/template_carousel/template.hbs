@@ -1,4 +1,4 @@
-<div class="template-carousel" style="background-image: url({{bg_url}});">
+<section class="template-carousel" style="background-image: url({{bg_url}});">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -13,7 +13,7 @@
                             <div class="item-template" data-url="{{url}}">
                                 <a href="{{link}}">
                                     <figure>
-                                        <img src="{{url}}">
+                                        <img src="{{url}}" alt="">
                                     </figure>
                                 </a>
                             </div>
@@ -23,12 +23,12 @@
             </div>                
         </div>
     </div>
-</div>
+</section>
 
 <script type="text/javascript">
 jQuery(document).ready(function() {
    
-    jQuery('.template-carousel-{{id}}').owlCarousel({
+jQuery('.template-carousel-{{id}}').owlCarousel({
         margin:25,
         video:false,
         lazyLoad:true,
@@ -63,11 +63,8 @@ jQuery(document).ready(function() {
             }
         }
     });
-
+    jQuery(window).resize(function(){
+        jQuery(".template-carousel-{{id}}").trigger('reinit.owl.carousel', {});
+    });
 });
-jQuery(window).resize(function(){
-    console.log(jQuery('.template-carousel-{{id}}'));
-
-});
-
 </script>

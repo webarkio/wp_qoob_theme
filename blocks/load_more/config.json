@@ -11,9 +11,24 @@
         "name": "btn_action_url",
         "label": "Url button",
         "type": "text"
+    },{
+        "name": "bg_row",
+        "label": "Background row color",
+        "type": "select",
+        "visible_color": "true",
+        "options": [{
+            "id": "white_row",
+            "colorimage": "rgb(255, 255, 255)",
+            "val": "white row"
+        }, {
+            "id": "gray_row",
+            "colorimage": "rgb(239, 239, 239)",
+            "val": "gray row"
+        }]
     }],
     "defaults": {
         "btn_title": "More features",
-        "btn_action_url": "#"
+        "btn_action_url": "#",
+        "bg_row" : "gray_row"
     }
 }

@@ -1,0 +1,58 @@
+{
+    "name": "",
+    "groups": "slider",
+    "template": "template.hbs",
+    "settings": [{
+        "name": "header",
+        "label": "Header",
+        "type": "text"
+    }, {
+        "name": "bg_url",
+        "label": "Background image",
+        "type": "image",
+        "tags": ["meet"]
+    }, {
+        "name": "theme",
+        "label": "Theme images",
+        "type": "accordion",
+        "settings": [{
+            "name": "title",
+            "label": "Title",
+            "type": "text"
+        }, {
+            "name": "url",
+            "label": "Image",
+            "type": "image",
+            "tags": ["template"]
+        },{
+            "name": "link",
+            "label": "Link item",
+            "type": "text"
+        }]
+    }],
+    "defaults": {
+        "header": "Coming soon proffesional templates",
+        "bg_url": "%block_url%/assets/img/theme-carusel-bg.jpg",
+        "theme": [{
+            "title": "Cube Girl",
+            "url": "%block_url%/assets/img/theme1.jpg",
+            "link" : "http://qoob.it/market/",
+            "order": 0
+        }, {
+            "title": "Cube Girl",
+            "url": "%block_url%/assets/img/theme2.jpg",
+            "link" : "http://qoob.it/market/",
+            "order": 1
+        }, {
+            "title": "Cube Girl",
+            "url": "%block_url%/assets/img/theme3.jpg",
+            "link" : "http://qoob.it/market/",
+            "order": 2
+        }, {
+            "title": "Cube Girl",
+            "url": "%block_url%/assets/img/theme3.jpg",
+            "link" : "http://qoob.it/market/",
+            "order": 2
+        }]
+    }
+}

@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package wp_qoob_theme
+ * @package qoob
  */
 
 ?>
@@ -16,7 +16,7 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info container">
 			<?php dynamic_sidebar( 'footer' ); ?>
-			<?php echo get_qoob_option('footer_copy'); ?>
+			<?php echo get_theme_mod('footer_text'); ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

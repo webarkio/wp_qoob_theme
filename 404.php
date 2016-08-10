@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  *
- * @package wp_qoob_theme
+ * @package qoob
  */
 
 get_header(); ?>
@@ -16,10 +16,10 @@ get_header(); ?>
 			        <div class="col-lg-12 main-block-404"></div>
 			    </div>
 			    <div class="row text-404">
-			        <h1><?php esc_html_e( 'Page not found', 'wp_qoob_theme' ); ?></h1>
+			        <h1><?php esc_html_e( 'Page not found', 'qoob' ); ?></h1>
 			    </div>
 			    <div class="row button-404">
-			        <a class="btn" href="/"><?php esc_html_e( 'Go to main page', 'wp_qoob_theme' ); ?></a>
+			        <a class="btn" href="/"><?php esc_html_e( 'Go to main page', 'qoob' ); ?></a>
 			    </div>
 			</section><!-- end container-404 -->
 		</main><!-- #main -->

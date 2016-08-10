@@ -6,11 +6,11 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package wp_qoob_theme
+ * @package qoob
  */
 
 ?><!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?> itemscope itemtype="http://schema.org/WebSite">
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -47,9 +47,9 @@
     </svg>
 </div>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'wp_qoob_theme' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'qoob' ); ?></a>
 
-	<header id="masthead" class="site-header <?php echo get_qoob_option('type_header'); ?>" role="banner">
+	<header id="masthead" class="site-header" role="banner">
 		<div class="container">
 			<div class="site-branding">
 				<?php

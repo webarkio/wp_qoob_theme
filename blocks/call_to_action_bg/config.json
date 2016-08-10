@@ -6,11 +6,12 @@
         "name": "header",
         "label": "Header",
         "type": "text"
-    }, {
+    }, 
+    {
         "name": "image",
         "label": "Image",
         "type": "image",
-        "tags": ["sky"]
+        "tags": ["wall", "tablet"]
     },  {
         "name": "parallax",
         "label": "Parallax Background",
@@ -27,10 +28,11 @@
     "assets": [{
         "type": "image",
         "src": "%block_url%/assets/img/call_to_action_bg.jpg",
-        "tags": ["sky"]
+        "tags": ["wall"]
     }],
     "defaults": {
         "header": "Ready to build your web site?",
+        "description" : "This web site was created with qoob!",
         "image" : "%block_url%/assets/img/call_to_action_bg.jpg",
         "action_text" : "Try now",
         "action_url" : "http://qoob.it/"

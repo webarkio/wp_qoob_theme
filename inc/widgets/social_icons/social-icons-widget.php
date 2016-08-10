@@ -10,7 +10,7 @@
 /**
  * Adds Social_Icons widget.
  */
-class Social_Icons extends WP_Widget {
+class Qoob_Social_Icons extends WP_Widget {
 
     public $iconsClass = array(
         'twitter' => "fa fa-twitter",
@@ -26,9 +26,9 @@ class Social_Icons extends WP_Widget {
      */
     function __construct() {
         parent::__construct(
-                'Social_Icons',
-                __('Social Networks Profiles', 'wp_qoob_theme'), // Name
-                array('description' => __('Links to Author social media profile', 'wp_qoob_theme'))
+                'Qoob_Social_Icons',
+                __('Social Networks Profiles', 'qoob'), // Name
+                array('description' => __('Links to Author social media profile', 'qoob'))
         );
     }
 
@@ -111,15 +111,15 @@ class Social_Icons extends WP_Widget {
 }
 
 // register Social_Icons widget
-function register_social_profile() {
-    register_widget('Social_Icons');
+function qoob_register_social_profile() {
+    register_widget('Qoob_Social_Icons');
 }
 
-add_action('widgets_init', 'register_social_profile');
+add_action('widgets_init', 'qoob_register_social_profile');
 
 // enqueue css stylesheet
-function social_icons_widget_css() {
-    wp_enqueue_style('social-icons-widget', get_template_directory_uri() . '/inc/widgets/social_icons/social-icons-widget.css');
+function qoob_social_icons_widget_css() {
+    wp_enqueue_style('qoob-social-icons-widget', get_template_directory_uri() . '/inc/widgets/social_icons/social-icons-widget.css');
 }
 
-add_action('wp_enqueue_scripts', 'social_icons_widget_css');
+add_action('wp_enqueue_scripts', 'qoob_social_icons_widget_css');

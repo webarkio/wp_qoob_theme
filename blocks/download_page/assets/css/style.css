@@ -12,6 +12,10 @@
 .download-block h1 {
     text-transform: uppercase;
 }
+.download-block iframe {
+    border: 0;
+    overflow: hidden;
+}
 .download-block h6 {
     font-size: 1.8rem;
     color: #484848;
@@ -28,6 +32,7 @@
 .download-block .box-wrap {
     padding-left: 5.7rem;
     margin-bottom: 8.1rem;
+    overflow: hidden;
 }
 .download-block .box-wrap li {
     width: 31.2rem;
@@ -64,6 +69,7 @@
     margin-right: 3.2rem;
     margin-top: 0.8rem;
 }
+
 @media (max-width: 768px) { 
     .download-block .box-wrap {
         padding-left: 1.7rem;
@@ -129,4 +135,24 @@
     }
 }
 
+@media only screen and (min-device-width : 768px)  and (max-device-width : 1024px) and (orientation : landscape) {
+    .download-block .box-wrap {
+        padding-left: 18px;
+    } 
+    .download-block .box-wrap .clearfix {
+        display: none;
+    }
+    .download-block .box-wrap li {
+        width: 27.2rem;
+    }
+    .download-block .box-wrap li:nth-child(3n) {
+        margin-right: 0 !important;
+    }
+    .download-block .box-wrap li a {
+        padding: 2.4rem 0;
+    }
+    .download-block .box-wrap .block-image {
+        width: 27.2rem;
+    }
+}
 

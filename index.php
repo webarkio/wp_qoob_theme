@@ -9,11 +9,11 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package wp_qoob_theme
+ * @package qoob
  */
 
 get_header('fixed'); ?>
-<div class="entry-thumbnail-blog" style="background-image: url(<?php echo get_qoob_option('blog_bg_img'); ?>)">
+<div class="entry-thumbnail-blog" style="background-image: url(<?php echo get_theme_mod('blog_image_bg'); ?>)">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
@@ -28,7 +28,7 @@ get_header('fixed'); ?>
 	</div>
 </div>
 <div class="container">
-<?php if(get_qoob_option('sidebar') == 'on'): ?>
+<?php if(get_theme_mod('blog_sidebar') == 'sidebar_right'): ?>
 	<div id="primary" class="content-area sidebar-on col-lg-9">
 <?php else:?>
 	<div id="primary" class="content-area sidebar-off col-lg-12">
@@ -57,12 +57,12 @@ get_header('fixed'); ?>
 
 		</main><!-- #main -->
 		<?php 
-		    bootstrapBasicPagination();
+		    qoob_pagination();
 		?>
 	</div><!-- #primary -->
 
 <?php
-if(get_qoob_option('sidebar') == 'on'){
+if(get_theme_mod('blog_sidebar') == 'sidebar_right'){
 	get_sidebar();
 }
 

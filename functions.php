@@ -1,11 +1,11 @@
 <?php
 
 /**
- * wp_qoob_theme functions and definitions.
+ * qoob functions and definitions.
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package wp_qoob_theme
+ * @package qoob
  */
 if (!function_exists('qoob_theme_setup')) :
 
@@ -20,10 +20,10 @@ if (!function_exists('qoob_theme_setup')) :
         /*
          * Make theme available for translation.
          * Translations can be filed in the /languages/ directory.
-         * If you're building a theme based on wp_qoob_theme, use a find and replace
-         * to change 'wp_qoob_theme' to the name of your theme in all the template files.
+         * If you're building a theme based on qoob, use a find and replace
+         * to change 'qoob' to the name of your theme in all the template files.
          */
-        load_theme_textdomain('wp_qoob_theme', get_template_directory() . '/languages');
+        load_theme_textdomain('qoob', get_template_directory() . '/languages');
 
         // Add default posts and comments RSS feed links to head.
         add_theme_support('automatic-feed-links');
@@ -45,7 +45,7 @@ if (!function_exists('qoob_theme_setup')) :
 
         // This theme uses wp_nav_menu() in one location.
         register_nav_menus(array(
-            'primary' => esc_html__('Primary', 'wp_qoob_theme'),
+            'primary' => esc_html__('Primary', 'qoob'),
         ));
 
         /*
@@ -121,9 +121,19 @@ add_filter( 'excerpt_more', 'qoob_theme_excerpt_more' );
  */
 function qoob_theme_widgets_init() {
     register_sidebar(array(
-        'name' => esc_html__('Sidebar', 'wp_qoob_theme'),
+        'name' => esc_html__('Sidebar blog', 'qoob'),
         'id' => 'sidebar-1',
-        'description' => esc_html__('Add widgets here.', 'wp_qoob_theme'),
+        'description' => esc_html__('Add widgets here.', 'qoob'),
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget' => '</section>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
+    ));
+
+    register_sidebar(array(
+        'name' => esc_html__('Sidebar page', 'qoob'),
+        'id' => 'sidebar-page',
+        'description' => esc_html__('Add widgets here.', 'qoob'),
         'before_widget' => '<section id="%1$s" class="widget %2$s">',
         'after_widget' => '</section>',
         'before_title' => '<h2 class="widget-title">',
@@ -155,19 +165,19 @@ function qoobtheme_comment($comment, $args, $depth) {
     <div class="comment-author vcard clearfix">
         <?php if ( $args['avatar_size'] != 0 ) echo get_avatar( $comment, $args['avatar_size'] ); ?>
         <div class="comment-author-text">
-            <?php printf( __( '<cite class="fn">%s</cite>', 'wp_qoob_theme' ), get_comment_author_link() ); ?>
+            <?php printf( __( '<cite class="fn">%s</cite>', 'qoob' ), get_comment_author_link() ); ?>
             <?php comment_text(); ?>
             <div class="comment-meta commentmetadata"><a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ); ?>">
                 <?php
                 /* translators: 1: date, 2: time */
-                printf( __('%1$s', 'wp_qoob_theme'), get_comment_date('j.m.Y') ); ?></a><?php edit_comment_link( __( '(Edit)', 'wp_qoob_theme' ), '  ', '' );
+                printf( __('%1$s', 'qoob'), get_comment_date('j.m.Y') ); ?></a><?php edit_comment_link( __( '(Edit)', 'qoob' ), '  ', '' );
                 ?>
                 <?php comment_reply_link( array_merge( $args, array( 'add_below' => $add_below, 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
             </div>
         </div>
     </div>
     <?php if ( $comment->comment_approved == '0' ) : ?>
-         <em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'wp_qoob_theme' ); ?></em>
+         <em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'qoob' ); ?></em>
           <br />
     <?php endif; ?>
     <?php if ( 'div' != $args['style'] ) : ?>
@@ -185,22 +195,22 @@ function qoobtheme_comment($comment, $args, $depth) {
 function qoob_search_form( $form ) {
     $form = '<form role="search" method="get" class="search-form" action="' . esc_url( home_url( '/' ) ) . '">
                 <label>
-                    <span class="screen-reader-text">' . _x( 'Search for:', 'label', 'wp_qoob_theme' ) . '</span>
-                    <input type="search" class="search-field" placeholder="' . esc_attr_x( 'Search &hellip;', 'placeholder', 'wp_qoob_theme' ) . '" value="' . get_search_query() . '" name="s" />
+                    <span class="screen-reader-text">' . _x( 'Search for:', 'label', 'qoob' ) . '</span>
+                    <input type="search" class="search-field" placeholder="' . esc_attr_x( 'Search &hellip;', 'placeholder', 'qoob' ) . '" value="' . get_search_query() . '" name="s" />
                 </label>
             </form>';
     return $form;
 }
 add_filter( 'get_search_form', 'qoob_search_form' );
 
-if (!function_exists('bootstrapBasicPagination')) {
+if (!function_exists('qoob_pagination')) {
     /**
      * display pagination (1 2 3 ...) instead of previous, next of wordpress style.
      * 
      * @param string $pagination_align_class
      * @return string the content already echo
      */
-    function bootstrapBasicPagination($total = 1, $pagination_align_class = 'pagination-center pagination-row') 
+    function qoob_pagination($total = 1, $pagination_align_class = 'pagination-center pagination-row') 
     {
         global $wp_query;
         $current_page = (get_query_var('paged')) ? get_query_var('paged') : 1; 
@@ -215,8 +225,8 @@ if (!function_exists('bootstrapBasicPagination')) {
                 'format' => '/page/%#%',
                 'current' => max(1, get_query_var('paged')),
                 'total' => $postlist->max_num_pages,
-                'prev_text' => __('', 'wp_qoob_theme'),
-                'next_text' => __('', 'wp_qoob_theme'),
+                'prev_text' => __('', 'qoob'),
+                'next_text' => __('', 'qoob'),
                 'type' => 'array',
                 'add_args' => false
             ));
@@ -244,70 +254,79 @@ if (!function_exists('bootstrapBasicPagination')) {
             }
 
             unset($page, $pagination_array);
-    }// bootstrapBasicPagination
+    }// qoob_pagination
 }
 /**
 * Register sidebar for footer
 *
 */
 add_action( 'widgets_init', 'qoob_theme_footer_widgets_init' );
+
 function qoob_theme_footer_widgets_init() {
     register_sidebar( array(
-        'name' => __( 'Footer Sidebar', 'wp_qoob_theme' ),
+        'name' => __( 'Footer Sidebar', 'qoob' ),
         'id' => 'footer',
-        'description' => __( 'Widgets in this area will be shown on footer.', 'wp_qoob_theme' ),
+        'description' => __( 'Widgets in this area will be shown on footer.', 'qoob' ),
         'before_widget' => '<div class="footer-widget">',
         'after_widget'  => '</div>',
         'before_title'  => '<h2 class="widgettitle">',
         'after_title'   => '</h2>',
     ));
 }
+
+function qoob_customize_register( $wp_customize ) {
+   
+}
+add_action( 'customize_register', 'qoob_customize_register' );
+
+
 /**
  * Enqueue scripts and styles.
  */
 function qoob_theme_scripts() {
     //grid system
-    wp_enqueue_style('qoob-theme-bootstrap-grid', get_template_directory_uri() . '/css/bootstrap.css');
+    wp_enqueue_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.css');
     //fonts
-    wp_enqueue_style('qoob-font-open-sans-light', get_template_directory_uri() . '/css/fonts/open-sans-light.css');
-    wp_enqueue_style('qoob-font-open-sans-bold', get_template_directory_uri() . '/css/fonts/open-sans-bold.css');
-	wp_enqueue_style('qoob-font-open-sans-semibold', get_template_directory_uri() . '/css/fonts/open-sans-semibold.css');
-    wp_enqueue_style('font-awesome-css', get_template_directory_uri() . '/css/fonts/fontawesome/font-awesome.min.css');
-    wp_enqueue_style('qoob-theme-megafish', get_template_directory_uri() . '/css/megafish.css');
-    wp_enqueue_style('qoob-theme-magnific-popup', get_template_directory_uri() . '/css/magnific-popup.css');
+    wp_enqueue_style('open-sans-light', get_template_directory_uri() . '/css/fonts/open-sans-light.css');
+    wp_enqueue_style('open-sans-bold', get_template_directory_uri() . '/css/fonts/open-sans-bold.css');
+	wp_enqueue_style('open-sans-semibold', get_template_directory_uri() . '/css/fonts/open-sans-semibold.css');
+    wp_enqueue_style('open-sans-exstarbold', get_template_directory_uri() . '/css/fonts/open-sans-exstrabold.css');
+    wp_enqueue_style('font-awesome', get_template_directory_uri() . '/css/fonts/fontawesome/font-awesome.min.css');
+    wp_enqueue_style('megafish', get_template_directory_uri() . '/css/megafish.css');
+    wp_enqueue_style('magnific-popup', get_template_directory_uri() . '/css/magnific-popup.css');
 
     wp_enqueue_style('qoob-theme-style', get_stylesheet_uri());
     wp_enqueue_style('qoob-theme-carousel-css', get_template_directory_uri() . '/css/carousel.css');
 	wp_enqueue_style('qoob-theme-collapse-css', get_template_directory_uri() . '/css/collapse.css');
     wp_enqueue_style('qoob-theme-blocks-style', get_template_directory_uri() . '/css/blocks.css');
     
-    wp_enqueue_style('qoob-theme-bootstrap-progressbar-css', get_template_directory_uri() . '/css/bootstrap-progressbar.css');
+    wp_enqueue_style('bootstrap-progressbar', get_template_directory_uri() . '/css/bootstrap-progressbar.css');
 
-	wp_enqueue_style('qoob-theme-owl-carousel-style', get_template_directory_uri() . '/css/owl.carousel.min.css');
-	wp_enqueue_style('qoob-theme-owl-theme-default', get_template_directory_uri() . '/css/owl.theme.default.min.css');
+	wp_enqueue_style('owl-carousel', get_template_directory_uri() . '/css/owl.carousel.min.css');
+	wp_enqueue_style('owl-theme-default', get_template_directory_uri() . '/css/owl.theme.default.min.css');
     wp_enqueue_style('qoob-theme-style', get_stylesheet_uri());
 
     wp_enqueue_script('qoob-theme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array('jquery'), false, true);
 
-    wp_enqueue_script('qoob-theme-hoverintent', get_template_directory_uri() . '/js/hoverIntent.js', array('jquery'), false, true);
-    wp_enqueue_script('qoob-theme-superfish', get_template_directory_uri() . '/js/superfish.min.js', array('jquery'), false, true);
-	wp_enqueue_script('qoob-theme-owl-carousel', get_template_directory_uri() . '/js/owl.carousel.min.js', array('jquery'), false, true);
-    wp_enqueue_script('qoob-theme-countTo', get_template_directory_uri() . '/js/jQuery.countTo.js', array('jquery'), false, true);
-    wp_enqueue_script('qoob-theme-progressbar', get_template_directory_uri() . '/js/progressbar.min.js', array('jquery'), false, true);
+    wp_enqueue_script('hoverintent', get_template_directory_uri() . '/js/hoverIntent.js', array('jquery'), false, true);
+    wp_enqueue_script('superfish', get_template_directory_uri() . '/js/superfish.min.js', array('jquery'), false, true);
+	wp_enqueue_script('owl-carousel', get_template_directory_uri() . '/js/owl.carousel.min.js', array('jquery'), false, true);
+    wp_enqueue_script('jQuery-countTo', get_template_directory_uri() . '/js/jQuery.countTo.js', array('jquery'), false, true);
+    wp_enqueue_script('progressbar', get_template_directory_uri() . '/js/progressbar.min.js', array('jquery'), false, true);
 
     wp_enqueue_script('qoob-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array('jquery'), false, true);
 
-	wp_enqueue_script('qoob-theme-masonry', get_template_directory_uri() . '/js/masonry.js', array('jquery'), false, true);
+	wp_enqueue_script('masonry', get_template_directory_uri() . '/js/masonry.js', array('jquery'), false, true);
 
-    wp_enqueue_script('qoob-theme-bootstrap-progressbar-js', get_template_directory_uri() . '/js/bootstrap-progressbar.js', array('jquery'));
-    wp_enqueue_script('qoob-theme-jquery-waypoints-js', get_template_directory_uri() . '/js/jquery.waypoints.js', array('jquery'));
+    wp_enqueue_script('bootstrap-progressbar', get_template_directory_uri() . '/js/bootstrap-progressbar.js', array('jquery'));
+    wp_enqueue_script('jquery-waypoints', get_template_directory_uri() . '/js/jquery.waypoints.js', array('jquery'));
     wp_enqueue_script('qoob-theme-common', get_template_directory_uri() . '/js/common.js', array('jquery'));
-    wp_enqueue_script('qoob-theme-contact', get_template_directory_uri() . '/js/contact.js', array('jquery'));
+    // wp_enqueue_script('qoob-theme-contact', get_template_directory_uri() . '/js/contact.js', array('jquery'));
 
     wp_enqueue_script('qoob-theme-carousel-js', get_template_directory_uri() . '/js/carousel.js', array('jquery'));
 	wp_enqueue_script('qoob-theme-collapse-js', get_template_directory_uri() . '/js/collapse.js', array('jquery'));
-    wp_enqueue_script('qoob-theme-magnific-popup-js', get_template_directory_uri() . '/js/jquery.magnific-popup.min.js', array('jquery'), false, true);
-    wp_enqueue_script('qoob-theme-bg-video-vimeo-lib', get_template_directory_uri() . '/js/froogaloop.min.js', array('jquery', 'qoob-theme-bg-video-vimeo'), false, true);
+    wp_enqueue_script('magnific-popup', get_template_directory_uri() . '/js/jquery.magnific-popup.min.js', array('jquery'), false, true);
+    wp_enqueue_script('froogaloop', get_template_directory_uri() . '/js/froogaloop.min.js', array('jquery', 'qoob-theme-bg-video-vimeo'), false, true);
 
     if (is_singular() && comments_open() && get_option('thread_comments')) {
         wp_enqueue_script('comment-reply');
@@ -342,22 +361,9 @@ require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/jetpack.php';
 
 /**
- * Contact form
+ * Register widget
  */
-require get_template_directory() . '/inc/ajax-contact-form.php';
-
 require get_template_directory() . '/inc/widgets/widget-register.php';
-/**
- * Option framework
- */
-define('OPTIONS_FRAMEWORK_DIRECTORY', get_template_directory_uri() . '/inc/options/');
-require get_template_directory() . '/inc/options/options-utils.php';
-require get_template_directory() . '/inc/options/options-framework.php';
-
-/**
- * One click demo import plugin
- */
-require_once(get_template_directory() . '/inc/radium/init.php');
 
 /**
  * Plugin Activator

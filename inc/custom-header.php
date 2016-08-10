@@ -12,7 +12,7 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @package wp_qoob_theme
+ * @package qoob
  */
 
 /**

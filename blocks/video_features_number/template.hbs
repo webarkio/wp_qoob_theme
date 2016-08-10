@@ -1,0 +1,50 @@
+<section class="video-features number">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="header-block">{{header}}</h1>
+            </div>
+        </div>
+        {{#if features.length}}
+            {{#each_with_sort features "order"}}
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12 video-col {{#ifIsNthItem nth=2}}  col-lg-push-8 col-md-push-8{{/ifIsNthItem}}">
+                        <div class="has-center-content" data-number="{{number}}">
+                            <div class="center-content">
+                                <div class="center-block center-block-{{order}}-{{id}}">
+                                    <div class="grid-content-copy">
+                                        <h2>{{title}}</h2>
+                                        {{{text_feature}}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-12 video-col {{#ifIsNthItem nth=2}} level-two col-lg-pull-4 col-md-pull-4 {{/ifIsNthItem}}">
+                        <div class="media-video-container">
+                            <video class="video-element video-element-{{order}}-{{id}}" style="visibility: visible;" loop controls poster="{{poster}}">
+                                <source src="{{url}}">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    var url = "{{url}}",
+                        format = url.substring(url.lastIndexOf('.') + 1, url.length);
+                        typevideo = "video/" + (format === 'ogv' ? 'ogg' : format) + "";
+                    
+                    jQuery(".video-element-{{order}}-{{id}}").find('source').attr("type", typevideo);
+                    var waypoint = new Waypoint({
+                        element: document.getElementsByClassName('center-block-{{order}}-{{id}}'),
+                        handler: function() {
+                            var video = document.getElementsByClassName('video-element-{{order}}-{{id}}');
+                            video[0].play();
+                            this.destroy();
+                        },
+                        offset: '75%'
+                    });
+                </script>
+            {{/each_with_sort}}
+        {{/if}}
+    </div>
+</section>
