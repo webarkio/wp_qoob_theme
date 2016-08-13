@@ -1278,6 +1278,7 @@ a:active {
 --------------------------------------------------------------*/
 .content-area {
 	margin-top: 5rem;
+	margin-bottom: 5rem;
 }
 .sticky {
     display: block;
@@ -1434,6 +1435,7 @@ a:active {
 }
 .widget-area.page-sidebar {
     margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .widget ul {
@@ -1470,7 +1472,7 @@ a:active {
 	padding-left: 2.8rem;
 }
 .search-form {
-	padding-top: 10rem;
+	padding-top: 4rem;
 }
 .widget .search-field {
 	padding: 1.3rem  3.5rem  1.3rem 3.5rem;
