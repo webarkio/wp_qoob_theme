@@ -1,6 +1,6 @@
 {
     "name": "",
-    "groups": "main_block",
+    "groups": "other",
     "template": "template.hbs",
     "settings": [{
         "name": "header",
