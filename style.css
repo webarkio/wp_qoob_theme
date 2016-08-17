@@ -2040,17 +2040,15 @@ img.mfp-img {
 .mfp-title {
     padding: 0;
 }
- /**
- */
 
- @media (max-width: 76.8rem) {
-    .header-block {
+@media all and (max-width: 979px) {
+    .header-block-wrap h1 {
         font-size: 3.6rem !important;
         line-height: 5.5rem !important;
         text-align: left !important;
         padding-left: 17px !important;
     }
- }
+}
 
 /*--------------------------------------------------------------
 # Loader
@@ -2063,7 +2061,7 @@ img.mfp-img {
     top: 0;
     left: 0;
     background: #fff;
-    z-index: 99999999999999999999999999999;
+    z-index: 999999;
 }
 
 .loader svg {

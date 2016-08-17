@@ -3516,8 +3516,8 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 	margin-bottom: 52px;
 }
 .video-features .video-element {
-   	width: 56.5rem;
-    height: 58.5rem;
+   	width: 100%;
+    height: 100%;
     border-radius: 0.7rem;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     margin-bottom: -6px;
@@ -3557,14 +3557,17 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 	color: #909090;
 }
 
-@media screen and (max-width : 1025px){
+/*@media screen and (min-width: 992px) {
+
+}*/
+/*@media (min-width: 768px) and (max-width: 979px) {
 	.video-features .video-element {
 	    width: 46.5rem;
     	height: auto;
 	}
-}
+}*/
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
 	.video-features .video-col {
 		padding-left: 1.5rem;
 		padding-right: 1.5rem;
@@ -3574,13 +3577,13 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 	}
 	.video-features .video-element {
 	    width: 100%;
-	    height: auto;
+	    height: 100%;
 	}
 	.video-features .has-center-content {
 	    height: 100%;
 	}
 	.video-features .header-block {
-		text-align: none;
+		text-align: left;
 		margin-bottom: 2rem;
 	}
 	.video-features .grid-content-copy {
@@ -3676,9 +3679,25 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
     	width: 61rem;
 	}
 }
-@media (max-width: 800px) { 
+
+@media (min-width: 992px) {
+    .video-features .grid-content-copy {
+        width: 100%;
+    }
+    .video-features.number .video-element {
+        width: 100%;
+    }
+    .video-features.number .video-col .media-video-container {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
     .video-features .video-col {
         margin-bottom: 22px;
+    }
+    .video-features .grid-content-copy {
+        width: 100%;
     }
     .video-features.number .video-col .media-video-container {
         margin-bottom: 0;
@@ -3686,7 +3705,7 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
         margin: auto;
     }
     .video-features.number .video-col.level-two .media-video-container {
-          margin-bottom: 0;
+        margin-bottom: 0;
         float: none;
         margin-left: auto;
         margin-right: auto;
@@ -3699,6 +3718,9 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 }
 
 @media (max-width: 640px) { 
+    .video-features .video-col {
+        margin-bottom: 44px;
+    }
     .video-features.number .video-element {
         width: 57.5rem;
     }
