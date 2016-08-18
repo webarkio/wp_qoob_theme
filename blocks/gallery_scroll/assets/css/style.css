@@ -9,9 +9,6 @@
 .gallery-scroll .col-lg-6 {
     padding: 0;
 }
-.gallery-zoom .container-fluid {
-    padding: 0;
-}
 .gallery-scroll .header-block {
 	text-align: center;
 	margin-bottom: 8.9rem;
@@ -69,6 +66,9 @@
 }
 .gallery-scroll-mobile .thumb span {
     cursor: pointer;
+}
+.gallery-scroll .img-responsive {
+    width: 100%;
 }
 @media (min-width: 992px) {
     .gallery-scroll-mobile .thumb.active {

@@ -69,29 +69,26 @@
  .template-carousel-v2 .item-template figure:hover img {
     opacity: .4;
 }
-/* Large desktop */
 
+/* Large desktop */
 @media (min-width: 120.0rem) {
     .template-carousel-v2 .item-template {
-        /* height: 41.0rem;*/
-        width: 37.4rem;
+        width: 36rem;
     }
 }
-
 
 /* Landscape tablets and medium desktops */
-
 @media (min-width: 99.2rem) and (max-width: 119.9rem) {
-    .template-carousel-v2 .item-template {
-        /*height: 40.2rem;*/
+    .template-carousel-v2 {
+        background-size: cover;
     }
 }
 
-
 /* Portrait tablet to landscape and desktop */
-
 @media (min-width: 76.8rem) and (max-width: 99.1rem) {
-
+    .template-carousel-v2 {
+        background-size: cover;
+    }
     .template-carousel-v2.ver-two .owl-nav .owl-prev {
         left: 0.2rem;
         background: transparent url(../images/prev.png) no-repeat;
@@ -101,10 +98,11 @@
     }
 }
 
-
 /* Landscape phone to portrait tablet */
-
 @media (max-width: 76.7rem) {
+    .template-carousel-v2 {
+        background-size: cover;
+    }
     .template-carousel-v2.ver-two .owl-nav {
         width: auto;
         top: auto;
@@ -128,7 +126,6 @@
 
 
 /* Landscape phones and down */
-
 @media (max-width: 48rem) {
     .template-carousel-v2.ver-two .owl-nav {
         width: auto;
@@ -153,4 +150,3 @@
         font-size: 4.6rem;
     }
 }
-

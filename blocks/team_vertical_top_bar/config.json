@@ -68,7 +68,7 @@
                 }]
         }],
     "defaults": {
-        "header": "Meet The Team",
+        "header": "MEET THE TEAM",
         "text": "<p>Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur aliquet quam id dui posuere blandit. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus.</p>",
         "team": [{
                 "image": "%block_url%/assets/img/person1.png",

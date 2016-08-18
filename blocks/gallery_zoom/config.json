@@ -22,7 +22,7 @@
                 }]
         }],
     "defaults": {
-        "header": "Gallery",
+        "header": "GALLERY",
         "gallery": [{
                 "title": "Image 1",
                 "image": "%blocks_url%/gallery_popup/assets/img/1.jpg",

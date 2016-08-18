@@ -3,13 +3,13 @@
 --------------------------------------------------------------*/
 .video-features {
     padding-top: 8.5rem;
-    padding-bottom: 6.4rem;
+    padding-bottom: 1.6rem;
 }
 
 .video-features .header-block {
 	text-align: center;
 	text-transform: uppercase;
-	margin-bottom: 52px;
+	margin-bottom: 12rem;
 }
 .video-features .video-element {
    	width: 100%;
@@ -28,7 +28,7 @@
 .video-features .has-center-content {
     display: table;
     position: relative;
-    height: 55.5rem;
+    height: 58.5rem;
     margin: auto;
 }
 
@@ -53,9 +53,6 @@
 	color: #909090;
 }
 
-/*@media screen and (min-width: 992px) {
-
-}*/
 /*@media (min-width: 768px) and (max-width: 979px) {
 	.video-features .video-element {
 	    width: 46.5rem;
@@ -98,5 +95,11 @@
 	    margin-bottom: 3rem;
 	    margin-left: 16px;
     	margin-right: 16px;
+	}
+}
+
+@media (min-width: 992px) {
+	.video-features .has-center-content {
+	    height: 48rem;
 	}
 }

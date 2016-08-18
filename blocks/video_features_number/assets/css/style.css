@@ -65,31 +65,43 @@
     font-weight: bold;
 }
 
-@media screen and (max-width : 1025px){
-	.video-features.number .video-element {
-    	width: 61rem;
-	}
-	.video-features.number .video-col .media-video-container {
-    	width: 61rem;
-	}
-}
-
-@media (min-width: 992px) {
-    .video-features .grid-content-copy {
-        width: 100%;
+@media (max-width: 640px) { 
+    .video-features .video-col {
+        margin-bottom: 44px;
     }
     .video-features.number .video-element {
+        width: 57.5rem;
+    }
+    .video-features.number .video-col .media-video-container {
+        width: 57.5rem;
+    }
+}
+@media (max-width: 480px) { 
+    .video-features.number .video-element {
         width: 100%;
+        height: 100%;
     }
     .video-features.number .video-col .media-video-container {
         width: 100%;
+    }
+    .video-features .media-video-container {
+        margin-bottom: 3rem;
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
 @media (min-width: 768px) {
     .video-features .video-col {
-        margin-bottom: 22px;
+        margin-bottom: 2.2rem;
     }
+    .video-features .video-col:nth-child(2) {
+        padding-left: 2rem;
+    }
+    .video-features .level-two.video-col:nth-child(2) {
+        padding-right: 2rem;
+    }
+    
     .video-features .grid-content-copy {
         width: 100%;
     }
@@ -103,7 +115,6 @@
         float: none;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 23px;
     }
     .video-features.number .has-center-content {
         height: 44rem;
@@ -111,23 +122,26 @@
 
 }
 
-@media (max-width: 640px) { 
+@media (min-width: 992px) {
     .video-features .video-col {
-        margin-bottom: 44px;
+        margin-bottom: 8rem;
+    }
+    .video-features .grid-content-copy {
+        width: 100%;
     }
     .video-features.number .video-element {
-        width: 57.5rem;
+        width: 100%;
     }
     .video-features.number .video-col .media-video-container {
-        width: 57.5rem;
+        width: 100%;
     }
 }
-@media (max-width: 480px) { 
-	.video-features.number .video-element {
-    	width: 32rem;
-    	height: 35.5rem;
-	}
-	.video-features.number .video-col .media-video-container {
-    	width: 31rem;
-	}
-}
+
+/*@media screen and (max-width : 1025px){
+    .video-features.number .video-element {
+        width: 61rem;
+    }
+    .video-features.number .video-col .media-video-container {
+        width: 61rem;
+    }
+}*/
