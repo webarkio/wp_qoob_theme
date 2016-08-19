@@ -2041,56 +2041,6 @@ img.mfp-img {
     padding: 0;
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
-    .container-fluid .header-block {
-        font-size: 3.6rem !important;
-        line-height: 5.5rem !important;
-        text-align: left !important;
-        padding-left: 2.4rem !important;
-    }
-
-    .container .header-block {
-        font-size: 3.6rem !important;
-        line-height: 5.5rem !important;
-        text-align: left !important;
-        padding-left: 1.7rem !important;
-    }
-}
-
-/* Portrait tablet to landscape and desktop */
-/*@media (min-width: 76.8rem) and (max-width: 99.1rem) {
-    .container-fluid .header-block {
-        font-size: 3.6rem !important;
-        line-height: 5.5rem !important;
-        text-align: left !important;
-        padding-left: 2.4rem !important;
-    }
-
-    .container .header-block {
-        font-size: 3.6rem !important;
-        line-height: 5.5rem !important;
-        text-align: left !important;
-        padding-left: 1.7rem !important;
-    }
-}
-*/
-/* Landscape phone to portrait tablet */
-@media (max-width: 76.7rem) {
-    .container-fluid .header-block {
-        font-size: 3.6rem !important;
-        line-height: 5.5rem !important;
-        text-align: left !important;
-        padding-left: 4.2rem !important;
-    }
-
-    .container .header-block {
-        font-size: 3.6rem !important;
-        line-height: 5.5rem !important;
-        text-align: left !important;
-        padding-left: 1.7rem !important;
-    }
-}
-
 @media only screen and (max-width: 76.7rem) and (orientation: portrait) {
     /* portrait phones */
     .container-fluid .header-block,
