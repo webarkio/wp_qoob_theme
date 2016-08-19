@@ -2058,7 +2058,7 @@ img.mfp-img {
 }
 
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 76.8rem) and (max-width: 99.1rem) {
+/*@media (min-width: 76.8rem) and (max-width: 99.1rem) {
     .container-fluid .header-block {
         font-size: 3.6rem !important;
         line-height: 5.5rem !important;
@@ -2073,7 +2073,7 @@ img.mfp-img {
         padding-left: 1.7rem !important;
     }
 }
-
+*/
 /* Landscape phone to portrait tablet */
 @media (max-width: 76.7rem) {
     .container-fluid .header-block {
