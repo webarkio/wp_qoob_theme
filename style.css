@@ -2041,8 +2041,7 @@ img.mfp-img {
     padding: 0;
 }
 
-@media only screen and (max-width: 76.7rem) and (orientation: portrait) {
-    /* portrait phones */
+/*@media (min-width: 992px) {
     .container-fluid .header-block,
     .container .header-block {
         font-size: 3.6rem !important;
@@ -2050,8 +2049,39 @@ img.mfp-img {
         text-align: left !important;
         padding-left: 1.7rem !important;
     }
+}*/
+
+@media screen and (max-width: 76.8rem) and (orientation: portrait) {
+        /* portrait phones */
+        .container-fluid .header-block,
+        .container .header-block {
+            font-size: 3.6rem !important;
+            line-height: 5.5rem !important;
+            text-align: left !important;
+            padding-left: 1.7rem !important;
+        }
 }
 
+@media (max-height: 767px) and (max-width: 768px) {
+        .container-fluid .header-block,
+        .container .header-block {
+            font-size: 3.6rem !important;
+            line-height: 5.5rem !important;
+            text-align: left !important;
+            padding-left: 1.7rem !important;
+        }
+}
+
+/*@media screen and (max-width: 76.7rem) and (min-height: 767px) {
+        .container-fluid .header-block,
+        .container .header-block {
+            font-size: 3.6rem !important;
+            line-height: 5.5rem !important;
+            text-align: left !important;
+            padding-left: 1.7rem !important;
+        }
+}
+*/
 /* Landscape phones and down */
 @media (max-width: 480px) {
     .container-fluid .header-block {
