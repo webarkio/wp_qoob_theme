@@ -3688,8 +3688,8 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
     }
     .video-features .level-two.video-col:nth-child(2) {
         padding-right: 2rem;
+        padding-left: 0;
     }
-    
     .video-features .grid-content-copy {
         width: 100%;
     }
