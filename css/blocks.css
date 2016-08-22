@@ -2722,21 +2722,21 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 }
 
 /* Large desktop */
-@media (min-width: 120.0rem) {
+@media (min-width: 1200px) {
     .template-carousel .item-template {
         width: 37.4rem;
     }
 }
 
 /* Landscape tablets and medium desktops */
-@media (min-width: 99.2rem) and (max-width: 119.9rem) {
+@media (min-width: 992px) and (max-width: 1199px) {
     .template-carousel .item-template {
         /*height: 40.2rem;*/
     }
 }
 
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 76.8rem) and (max-width: 99.1rem) {
+@media (min-width: 768px) and (max-width: 991px) {
     .template-carousel {
         background-size: cover;
     }
@@ -2766,7 +2766,7 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 76.7rem) {
+@media (max-width: 767px) {
     .template-carousel {
         background-size: cover;
     }
@@ -2801,7 +2801,7 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 }
 
 /* Landscape phones and down */
-@media (max-width: 48rem) {
+@media (max-width: 480px) {
     .template-carousel .item-template {
         /*height: 25.2rem;*/
     }
@@ -2903,21 +2903,21 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 }
 
 /* Large desktop */
-@media (min-width: 120.0rem) {
+@media (min-width: 1200px) {
     .template-carousel-v2 .item-template {
         width: 36rem;
     }
 }
 
 /* Landscape tablets and medium desktops */
-@media (min-width: 99.2rem) and (max-width: 119.9rem) {
+@media (min-width: 992px) and (max-width: 1199px) {
     .template-carousel-v2 {
         background-size: cover;
     }
 }
 
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 76.8rem) and (max-width: 99.1rem) {
+@media (min-width: 768px) and (max-width: 991px) {
     .template-carousel-v2 {
         background-size: cover;
     }
@@ -2931,7 +2931,7 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 }
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 76.7rem) {
+@media (max-width: 767px) {
     .template-carousel-v2 {
         background-size: cover;
     }
@@ -2956,9 +2956,8 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
     }
 }
 
-
 /* Landscape phones and down */
-@media (max-width: 48rem) {
+@media (max-width: 480px) {
     .template-carousel-v2.ver-two .owl-nav {
         width: auto;
         top: auto;
