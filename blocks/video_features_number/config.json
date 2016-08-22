@@ -44,38 +44,38 @@
     "defaults": {
         "header": "5 reasons why you need to try qoob",
         "features": [{
-            "title" : "Clean intuitive UI",
-            "text_feature" : "The live editor gives you an exact preview of your content, that you can edit in real-time. You can see all edits without leaving the page.",
-            "url": "http://qoob.it/wp-content/uploads/2016/07/editing.mp4",
-            "poster" : "http://qoob.it/wp-content/uploads/2016/07/poster-editing.png",
+            "title" : "Blocks Builder",
+            "text_feature" : "You add to your page ready-made blocks. You do not need to think about the size, font, indentation. Everything is ready and works fine. You can easily create your first page in 30 seconds.",
+            "url": "http://qoob.it/wp-content/uploads/2016/08/BlocksBuilder.mp4",
+            "poster" : "http://qoob.it/wp-content/uploads/2016/08/BlocksBuilder.png",
             "number" : "1",
             "order": 1
         }, {
-            "title" : "Alaways Looking Good",
-            "text_feature" : "QOOB automatically optimizes your website's pages for desktop, tablet and mobile. This ensures your visitors get the best viewing experience no matter what device they use.",
-            "url": "http://qoob.it/wp-content/uploads/2016/07/device.mp4",
-            "poster" : "http://qoob.it/wp-content/uploads/2016/07/poster-good.png",
+            "title" : "Live Editing",
+            "text_feature" : "You will be amazed to see how it is easy to change the contents of the blocks. We have tried to make this process as easy as possible. And the most amazing thing is that this happens in real time. You can see all changes without leaving the page.",
+            "url": "http://qoob.it/wp-content/uploads/2016/08/LiveEditing.mp4",
+            "poster" : "http://qoob.it/wp-content/uploads/2016/08/LiveEditing.png",
             "number" : "2",
             "order": 2
         }, {
-            "title" : "Predefined blocks",
-            "text_feature" : "QOOB comes with many predefined blocks, so building and prototyping is crazy fast. Simply click, select, edit and enjoy stacking blocks to build your website. You will like it.",
-            "url": "http://qoob.it/wp-content/uploads/2016/07/predefine.mp4",
-            "poster" : "http://qoob.it/wp-content/uploads/2016/07/poster-predefined.png",
+            "title" : "Alaways Looking Good",
+            "text_feature" : "QOOB automatically optimizes your website's pages for desktop, tablet and mobile. This ensures your visitors get the best viewing experience no matter what device they use.",
+            "url": "http://qoob.it/wp-content/uploads/2016/08/AlwaysLookingGood.mp4",
+            "poster" : "http://qoob.it/wp-content/uploads/2016/08/AlwaysLookingGood.png",
             "number" : "3",
             "order": 3
         },{
-            "title" : "Predefined blocks",
-            "text_feature" : "QOOB comes with many predefined blocks, so building and prototyping is crazy fast. Simply click, select, edit and enjoy stacking blocks to build your website. You will like it.",
-            "url": "http://qoob.it/wp-content/uploads/2016/07/predefine.mp4",
-            "poster" : "http://qoob.it/wp-content/uploads/2016/07/poster-predefined.png",
+            "title" : "Clean and Intuitive UI",
+            "text_feature" : "All the visual editors that you met before almost always do not fit the overall design. They add their own frame, buttons and other elements that, almost always fit into the overall design of the site. Qoob is the only editor that does not do it! This editing site content is simple and straightforward.",
+            "url": "http://qoob.it/wp-content/uploads/2016/08/CleanIntuitiveUI.mp4",
+            "poster" : "http://qoob.it/wp-content/uploads/2016/08/CleanIntuitiveUI.png",
             "number" : "4",
             "order": 3
         },{
-            "title" : "Predefined blocks",
-            "text_feature" : "QOOB comes with many predefined blocks, so building and prototyping is crazy fast. Simply click, select, edit and enjoy stacking blocks to build your website. You will like it.",
-            "url": "http://qoob.it/wp-content/uploads/2016/07/predefine.mp4",
-            "poster" : "http://qoob.it/wp-content/uploads/2016/07/poster-predefined.png",
+            "title" : "Realtime Editing Mobile Version",
+            "text_feature" : "You have not seen it. You can add, delete and edit the unit is in tablet modeor even on a mobile device.",
+            "url": "http://qoob.it/wp-content/uploads/2016/08/EditingMobileVersion.mp4",
+            "poster" : "http://qoob.it/wp-content/uploads/2016/08/EditingMobileVersion.png",
             "number" : "5",
             "order": 3
         }]
