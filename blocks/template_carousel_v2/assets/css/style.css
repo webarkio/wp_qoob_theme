@@ -82,12 +82,43 @@
     .template-carousel-v2 {
         background-size: cover;
     }
+    .template-carousel-v2 .owl-nav {
+        width: auto;
+        top: auto;
+        right: 7.8rem;
+        bottom: -0.7rem;
+    }
+    .template-carousel-v2.ver-two .owl-nav .owl-prev,
+    .template-carousel-v2.ver-two .owl-nav .owl-next {
+        width: 3rem;
+        height: 3rem;
+        transform: none;
+    }
+    .template-carousel-v2.ver-two .owl-nav .owl-prev {
+        left: 0.2rem;
+        background: transparent url(../images/prev.png) no-repeat;
+    }
+    .template-carousel-v2.ver-two .owl-nav .owl-next {
+        background: transparent url(../images/next.png) no-repeat;
+    }
 }
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 991px) {
     .template-carousel-v2 {
         background-size: cover;
+    }
+    .template-carousel-v2 .owl-nav {
+        width: auto;
+        top: auto;
+        right: 7.8rem;
+        bottom: -0.7rem;
+    }
+    .template-carousel-v2.ver-two .owl-nav .owl-prev,
+    .template-carousel-v2.ver-two .owl-nav .owl-next {
+        width: 3rem;
+        height: 3rem;
+        transform: none;
     }
     .template-carousel-v2.ver-two .owl-nav .owl-prev {
         left: 0.2rem;

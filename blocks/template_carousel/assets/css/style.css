@@ -66,8 +66,27 @@
 
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
-    .template-carousel .item-template {
-        /*height: 40.2rem;*/
+    .template-carousel {
+        background-size: cover;
+    }
+    .template-carousel .owl-nav {
+        width: auto;
+        top: auto;
+        right: 7.8rem;
+        bottom: -0.7rem;
+    }
+    .template-carousel .owl-nav .owl-prev,
+    .template-carousel .owl-nav .owl-next {
+        width: 3rem;
+        height: 3rem;
+        transform: none;
+    }
+    .template-carousel .owl-nav .owl-prev {
+        left: 0.2rem;
+        background: transparent url(../images/prev.png) no-repeat;
+    }
+    .template-carousel .owl-nav .owl-next {
+        background: transparent url(../images/next.png) no-repeat;
     }
 }
 
@@ -99,7 +118,6 @@
         background: transparent url(../images/next.png) no-repeat;
     }
 }
-
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
