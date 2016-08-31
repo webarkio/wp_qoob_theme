@@ -1262,7 +1262,9 @@ a:active {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
-
+.site-main {
+    overflow: hidden;
+}
 .container-no-padding {
     padding: 0;
     overflow: hidden;
