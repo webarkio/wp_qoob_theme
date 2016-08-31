@@ -1280,6 +1280,7 @@ a:active {
 --------------------------------------------------------------*/
 .content-area {
 	margin-top: 5rem;
+	margin-bottom: 5rem;
 }
 .sticky {
     display: block;
@@ -1436,6 +1437,7 @@ a:active {
 }
 .widget-area.page-sidebar {
     margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .widget ul {
@@ -1472,7 +1474,7 @@ a:active {
 	padding-left: 2.8rem;
 }
 .search-form {
-	padding-top: 10rem;
+	padding-top: 4rem;
 }
 .widget .search-field {
 	padding: 1.3rem  3.5rem  1.3rem 3.5rem;
@@ -2040,17 +2042,37 @@ img.mfp-img {
 .mfp-title {
     padding: 0;
 }
- /**
- */
 
- @media (max-width: 76.8rem) {
-    .header-block {
+@media screen and (max-width: 76.8rem) and (orientation: portrait) {
+    .container-fluid .header-block,
+    .container .header-block {
         font-size: 3.6rem !important;
         line-height: 5.5rem !important;
         text-align: left !important;
-        padding-left: 17px !important;
+        padding-left: 1.7rem !important;
     }
- }
+}
+
+@media (max-height: 767px) and (max-width: 768px) {
+    .container-fluid .header-block,
+    .container .header-block {
+        font-size: 3.6rem !important;
+        line-height: 5.5rem !important;
+        text-align: left !important;
+        padding-left: 1.7rem !important;
+    }
+}
+
+*/
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    .container-fluid .header-block {
+        font-size: 3.6rem !important;
+        line-height: 5.5rem !important;
+        text-align: left !important;
+        padding-left: 0.4rem !important;
+    }
+}
 
 /*--------------------------------------------------------------
 # Loader
@@ -2063,7 +2085,7 @@ img.mfp-img {
     top: 0;
     left: 0;
     background: #fff;
-    z-index: 99999999999999999999999999999;
+    z-index: 999999;
 }
 
 .loader svg {

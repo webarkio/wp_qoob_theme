@@ -1,6 +1,6 @@
 {
     "name": "",
-    "groups": "video",
+    "groups": "features",
     "template": "template.hbs",
     "settings": [{
         "name": "header",

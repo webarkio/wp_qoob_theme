@@ -18,9 +18,13 @@ get_header(); ?>
 			$template_parts = 'page-sidebar';
 			while ( have_posts() ) : the_post();
 				$content = get_the_content();
-				if(preg_match("/\[qoob-page\]/i", $content)) {
+				
+				//Check for qoob page
+				$meta = get_post_meta(get_the_ID(), 'qoob_data', true);
+
+				if( (isset($_GET['qoob']) && $_GET['qoob'] == true) || ($meta != '{"blocks":[]}' && $meta != '') )
 					$template_parts = 'qoob';
-				}
+				
 				get_template_part( 'template-parts/content', $template_parts );
 
 			endwhile; // End of the loop.

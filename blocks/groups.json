@@ -1,57 +1,49 @@
-[
-    {
-        "id": "video",
-        "label": "Video",
-        "position": "0"
-    },
-    {
-        "id": "slider",
-        "label": "Slider",
-        "position": "1"
-    },
-    {
-        "id": "testimonial",
-        "label": "Testimonial",
-        "position": "11"
-    },
-    {
-        "id": "gallery",
-        "label": "Gallery",
-        "position": "2"
-    },
-    {
-        "id": "text",
-        "label": "Text",
-        "position": "3"
-    },
-    {
-        "id": "forms",
-        "label": "Forms",
-        "position": "4"
-    },   
-    {
-        "id": "our_team",
-        "label": "Our Team",
-        "position": "5"
-    },  
-    {
-        "id": "other",
-        "label": "Other",
-        "position": "6"
-    },
-    {
-        "id": "main_block",
-        "label": "Main block",
-        "position": "7"
-    },
-    {
-        "id": "faq",
-        "label": "FAQ",
-        "position": "8"
-    },
-    {
-        "id": "call_to_action",
-        "label": "Call to action",
-        "position": "9"
-    }
-]
+[{
+    "id": "introduction",
+    "label": "Introduction",
+    "position": 0
+}, {
+    "id": "text",
+    "label": "Text",
+    "position": 1
+}, {
+    "id": "features",
+    "label": "Features",
+    "position": 2
+}, {
+    "id": "gallery",
+    "label": "Gallery",
+    "position": 3
+}, {
+    "id": "video",
+    "label": "Video",
+    "position": 4
+}, {
+    "id": "slider",
+    "label": "Slider",
+    "position": 5
+}, {
+    "id": "call_to_action",
+    "label": "Call to action",
+    "position": 6
+}, {
+    "id": "forms",
+    "label": "Forms",
+    "position": 7
+}, {
+    "id": "testimonial",
+    "label": "Testimonial",
+    "position": 8
+}, {
+    "id": "our_team",
+    "label": "Our Team",
+    "position": 9
+}, {
+    "id": "faq",
+    "label": "FAQ",
+    "position": 10
+}, {
+    "id": "other",
+    "label": "Other",
+    "position": 11
+}]

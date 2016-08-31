@@ -1,13 +1,13 @@
 /*--------------------------------------------------------------
-# template full page
+# template carousel v2
 --------------------------------------------------------------*/
-.template-carousel {
+.template-carousel-v2 {
     padding: 10.4rem 0 13.9rem 0;
 }
-.template-carousel.ver-two {
+.template-carousel-v2.ver-two {
     position: relative;
 }
-.template-carousel.ver-two::before {
+.template-carousel-v2.ver-two::before {
     position: absolute;
     content: "";
     top: 0;
@@ -16,136 +16,167 @@
     right: 0;
     background-color: rgba(0,0,0,.6);
 }
-.template-carousel .header-block {
+.template-carousel-v2 .header-block {
     text-align: center;
     margin-bottom: 5.2rem;
     color: #fff;
     text-transform: uppercase;
 }
 
-.template-carousel .owl-nav,
-.template-carousel .owl-nav .owl-prev,
-.template-carousel .owl-nav .owl-next {
+.template-carousel-v2 .owl-nav,
+.template-carousel-v2 .owl-nav .owl-prev,
+.template-carousel-v2 .owl-nav .owl-next {
     position: absolute;
 }
 
-.template-carousel .owl-nav {
+.template-carousel-v2 .owl-nav {
     width: 100%;
     top: 45%;
 }
 
-.template-carousel .owl-nav .owl-prev,
-.template-carousel .owl-nav .owl-next {
+.template-carousel-v2 .owl-nav .owl-prev,
+.template-carousel-v2 .owl-nav .owl-next {
     width: 2.6rem;
     height: 5.0rem;
 }
 
-.template-carousel.ver-two .owl-nav .owl-prev {
+.template-carousel-v2.ver-two .owl-nav .owl-prev {
+    left: -7.8rem;
+    top: 0;
     background: transparent url(../images/video_carousel_arrow_v2.png) no-repeat;
 }
 
-.template-carousel.ver-two .owl-nav .owl-next {
+.template-carousel-v2.ver-two .owl-nav .owl-next {
+    right: -7.8rem;
+    top: 0;
     background: transparent url(../images/video_carousel_arrow_v2.png) no-repeat;
+    transform: rotate(180deg);
 }
- .template-carousel .item-template {
+ .template-carousel-v2 .item-template {
     position: relative;
  }
- .template-carousel.ver-two .item-template figure {
+ .template-carousel-v2.ver-two .item-template figure {
     margin: 0;
     background: #000;
     border: 3px solid #fff;
     border-radius: 3px;
  }
- .template-carousel .item-template figure img {
+ .template-carousel-v2 .item-template figure img {
     opacity: 1;
     -webkit-transition: opacity.3s ease-in-out;
     transition: opacity .3s ease-in-out;
 }
- .template-carousel .item-template figure:hover img {
+ .template-carousel-v2 .item-template figure:hover img {
     opacity: .4;
 }
-/* Large desktop */
 
-@media (min-width: 120.0rem) {
-    .template-carousel .item-template {
-        /* height: 41.0rem;*/
-        width: 37.4rem;
+/* Large desktop */
+@media (min-width: 1200px) {
+    .template-carousel-v2 .item-template {
+        width: 36rem;
     }
 }
-
 
 /* Landscape tablets and medium desktops */
-
-@media (min-width: 99.2rem) and (max-width: 119.9rem) {
-    .template-carousel .item-template {
-        /*height: 40.2rem;*/
+@media (min-width: 992px) and (max-width: 1199px) {
+    .template-carousel-v2 {
+        background-size: cover;
+    }
+    .template-carousel-v2 .owl-nav {
+        width: auto;
+        top: auto;
+        right: 7.8rem;
+        bottom: -0.7rem;
+    }
+    .template-carousel-v2.ver-two .owl-nav .owl-prev,
+    .template-carousel-v2.ver-two .owl-nav .owl-next {
+        width: 3rem;
+        height: 3rem;
+        transform: none;
+    }
+    .template-carousel-v2.ver-two .owl-nav .owl-prev {
+        left: 0.2rem;
+        background: transparent url(../images/prev.png) no-repeat;
+    }
+    .template-carousel-v2.ver-two .owl-nav .owl-next {
+        background: transparent url(../images/next.png) no-repeat;
     }
 }
-
 
 /* Portrait tablet to landscape and desktop */
-
-@media (min-width: 76.8rem) and (max-width: 99.1rem) {
-
-    .template-carousel.ver-two .owl-nav .owl-prev {
+@media (min-width: 768px) and (max-width: 991px) {
+    .template-carousel-v2 {
+        background-size: cover;
+    }
+    .template-carousel-v2 .owl-nav {
+        width: auto;
+        top: auto;
+        right: 7.8rem;
+        bottom: -0.7rem;
+    }
+    .template-carousel-v2.ver-two .owl-nav .owl-prev,
+    .template-carousel-v2.ver-two .owl-nav .owl-next {
+        width: 3rem;
+        height: 3rem;
+        transform: none;
+    }
+    .template-carousel-v2.ver-two .owl-nav .owl-prev {
         left: 0.2rem;
         background: transparent url(../images/prev.png) no-repeat;
     }
-    .template-carousel.ver-two .owl-nav .owl-next {
+    .template-carousel-v2.ver-two .owl-nav .owl-next {
         background: transparent url(../images/next.png) no-repeat;
     }
 }
-
 
 /* Landscape phone to portrait tablet */
-
-@media (max-width: 76.7rem) {
-    .template-carousel.ver-two .owl-nav {
+@media (max-width: 767px) {
+    .template-carousel-v2 {
+        background-size: cover;
+    }
+    .template-carousel-v2.ver-two .owl-nav {
         width: auto;
         top: auto;
         right: 7.8rem;
         bottom: -0.7rem;
     }
-    .template-carousel.ver-two .owl-nav .owl-prev,
-    .template-carousel.ver-two .owl-nav .owl-next {
+    .template-carousel-v2.ver-two .owl-nav .owl-prev,
+    .template-carousel-v2.ver-two .owl-nav .owl-next {
         width: 3rem;
         height: 3rem;
         transform: none;
     }
-    .template-carousel.ver-two .owl-nav .owl-prev {
+    .template-carousel-v2.ver-two .owl-nav .owl-prev {
         left: 0.2rem;
         background: transparent url(../images/prev.png) no-repeat;
     }
-    .template-carousel.ver-two .owl-nav .owl-next {
+    .template-carousel-v2.ver-two .owl-nav .owl-next {
         background: transparent url(../images/next.png) no-repeat;
     }
 }
 
-
 /* Landscape phones and down */
-
-@media (max-width: 48rem) {
-    .template-carousel.ver-two .owl-nav {
+@media (max-width: 480px) {
+    .template-carousel-v2.ver-two .owl-nav {
         width: auto;
         top: auto;
         right: 7.8rem;
         bottom: -0.7rem;
     }
-    .template-carousel.ver-two .owl-nav .owl-prev,
-    .template-carousel.ver-two .owl-nav .owl-next {
+    .template-carousel-v2.ver-two .owl-nav .owl-prev,
+    .template-carousel-v2.ver-two .owl-nav .owl-next {
         width: 3rem;
         height: 3rem;
         transform: none;
     }
-    .template-carousel.ver-two .owl-nav .owl-prev {
+    .template-carousel-v2.ver-two .owl-nav .owl-prev {
         left: 0.2rem;
         background: transparent url(../images/prev.png) no-repeat;
     }
-    .template-carousel.ver-two .owl-nav .owl-next {
+    .template-carousel-v2.ver-two .owl-nav .owl-next {
         background: transparent url(../images/next.png) no-repeat;
     }
     .header-block {
         font-size: 4.6rem;
     }
 }
-

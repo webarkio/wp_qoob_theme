@@ -1,6 +1,6 @@
 {
     "name": "",
-    "groups": "main_block",
+    "groups": "introduction",
     "template": "template.hbs",
     "settings": [{
         "name": "bg_video",
