@@ -82,29 +82,28 @@ if (!function_exists('qoob_theme_setup')) :
         /**
          * Add theme path to theme Qoob blocks to theme options
          */
-        $qoobGroupsPaths = get_site_option( 'qoob_libs' );
+        $blocksUrl = get_template_directory_uri() . '/blocks';
+        $qoobLibs = get_site_option( 'qoob_libs' );
+        $qoobLib = array('name' => 'qoob_theme','url' => $blocksUrl);
 
-        if ( !$qoobGroupsPaths ) {
+        if ( !$qoobLibs ) {
 
-            update_option( 'qoob_libs', array(
-                'theme' => array(
-                    'path' => get_template_directory() . '/blocks',
-                    'url' => get_template_directory_uri() . '/blocks'
-                    )
-                ) 
-            );
+            $qoobLibs = array($qoobLib);
 
-        } else if ( ( !isset( $qoobGroupsPaths['theme'] ) || !isset( $qoobGroupsPaths['theme']['path'] ) ) ||
-            $qoobGroupsPaths['theme'] !== get_template_directory() . '/blocks' ) {
-            
-            $qoobGroupsPaths['theme'] = array(
-                'path' => get_template_directory() . '/blocks',
-                'url' => get_template_directory_uri() . '/blocks'
-                );
+        } else {
 
-            update_option( 'qoob_libs', $qoobGroupsPaths );
+            for ($i = 0; $i < count($qoobLibs); $i++) { 
+                if ($qoobLibs[$i]['name'] === $qoobLib['name'] && ($defaultLibExists = true) && $qoobLibs[$i]['url'] !== $blocksUrl) {
+                    $qoobLibs[$i] = $qoobLib;
+                }
+            }
 
+            if ( !isset($defaultLibExists) ) {
+                $qoobLibs[] = $qoobLib;
+            }
         }
+        
+        update_option( 'qoob_libs', $qoobLibs); 
     }
 
 endif;
