@@ -4,7 +4,7 @@ Theme URI: http://qoob.it/
 Author: webark.io
 Author URI: http://webark.io/
 Description: Corporate & Business WordPress Theme. Qoob.it Theme has minimal and fully responsive design with clean typography. It is specifically designed for business websites. Qoob.it can be used for a wide variety of corporate websites. It has clean and fully responsive design for professionals. Easily edit your content in real-time and compose the page layout with drag & drop page builder. This means that you can play around with the look and feel of your site with an instant preview, before your changes go live.
-Version: 1.0.1
+Version: 1.0.2
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: qoob
@@ -2095,8 +2095,4 @@ img.mfp-img {
     position: absolute;
     top: calc(50% - 32.5px);
     left: calc(50% - 32.5px);
-}
-
-#wpadminbar {
-    z-index:9998;
 }

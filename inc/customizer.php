@@ -41,8 +41,8 @@ function qoob_theme_customize_register( $wp_customize ) {
 		        'label'      => __( 'Upload a blog background', 'qoob' ),
 		        'section'    => 'blog_settings',
 		        'settings'   => 'blog_image_bg',
-		        'description' => __( 'Your theme recommends a blog background size of 1900 × 370 pixels.', 'qoob' ),
-		        'context'    => 'your_setting_context' 
+		        'description' => __( 'Your theme recommends a blog background size of 1900 x 370 pixels.', 'qoob' ),
+		        'context'    => 'your_setting_context',
 		    )
 		)
 	);
@@ -66,7 +66,7 @@ function qoob_theme_customize_register( $wp_customize ) {
 		  		'choices' => array(
 	            	'sidebar_right'   => __( 'With sidebar', 'qoob' ),
 	            	'no_sidebar'  => __( 'Without sidebar', 'qoob' )
-	       		)
+	       		),
 			)
 		)
 	);
@@ -81,12 +81,12 @@ function qoob_theme_customize_register( $wp_customize ) {
 	));
 
 	$wp_customize->add_setting( 'footer_text', array(
-		'default' => __('© qoob 2016', 'qoob'),
+		'default' => __('Copyright qoob') . ' ' . date('Y'),
 		'type' => 'theme_mod',
 		'capability' => 'edit_theme_options',
 		'transport' => '',
 		'sanitize_callback' => 'esc_html',
-	) );
+	));
 
 	$wp_customize->add_control( 'footer_text', array(
 	    'type' => 'text',
