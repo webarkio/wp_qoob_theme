@@ -30,7 +30,7 @@
         "tags": ["woman"]
     }],
     "defaults": {
-        "header": "H1 Header Vestibulum ac diam sit amet quam sed sit dui.",
+        "header": "H1 HEADER VESTIBULUM AC DIAM SIT AMET QUAM SED SIT DUI",
         "image": "%block_url%/assets/img/call_to_action1.jpg",
         "action_text": "Try now",
         "action_url": "http://qoob.it/",

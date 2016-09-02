@@ -21,11 +21,5 @@
 .testimonial-carousel.testimonial-carousel-center .testimonial-content {
     float: none;
     width: 100%;
-    text-align:center;
-}
-
-@media (max-width: 768px) {
-    .testimonial-carousel.testimonial-carousel-center .testimonial-content {
-        text-align: left;
-    }
+    text-align:left;
 }

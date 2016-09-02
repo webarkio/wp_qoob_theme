@@ -4,7 +4,7 @@ Theme URI: http://qoob.it/
 Author: webark.io
 Author URI: http://webark.io/
 Description: Corporate & Business WordPress Theme. Qoob.it Theme has minimal and fully responsive design with clean typography. It is specifically designed for business websites. Qoob.it can be used for a wide variety of corporate websites. It has clean and fully responsive design for professionals. Easily edit your content in real-time and compose the page layout with drag & drop page builder. This means that you can play around with the look and feel of your site with an instant preview, before your changes go live.
-Version: 1.0.1
+Version: 1.0.2
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: qoob
@@ -1262,7 +1262,9 @@ a:active {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
-
+.site-main {
+    overflow: hidden;
+}
 .container-no-padding {
     padding: 0;
     overflow: hidden;
@@ -1278,6 +1280,7 @@ a:active {
 --------------------------------------------------------------*/
 .content-area {
 	margin-top: 5rem;
+	margin-bottom: 5rem;
 }
 .sticky {
     display: block;
@@ -1434,6 +1437,7 @@ a:active {
 }
 .widget-area.page-sidebar {
     margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .widget ul {
@@ -1470,7 +1474,7 @@ a:active {
 	padding-left: 2.8rem;
 }
 .search-form {
-	padding-top: 10rem;
+	padding-top: 4rem;
 }
 .widget .search-field {
 	padding: 1.3rem  3.5rem  1.3rem 3.5rem;
@@ -2038,17 +2042,37 @@ img.mfp-img {
 .mfp-title {
     padding: 0;
 }
- /**
- */
 
- @media (max-width: 76.8rem) {
-    .header-block {
+@media screen and (max-width: 76.8rem) and (orientation: portrait) {
+    .container-fluid .header-block,
+    .container .header-block {
         font-size: 3.6rem !important;
         line-height: 5.5rem !important;
         text-align: left !important;
-        padding-left: 17px !important;
+        padding-left: 1.7rem !important;
     }
- }
+}
+
+@media (max-height: 767px) and (max-width: 768px) {
+    .container-fluid .header-block,
+    .container .header-block {
+        font-size: 3.6rem !important;
+        line-height: 5.5rem !important;
+        text-align: left !important;
+        padding-left: 1.7rem !important;
+    }
+}
+
+*/
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    .container-fluid .header-block {
+        font-size: 3.6rem !important;
+        line-height: 5.5rem !important;
+        text-align: left !important;
+        padding-left: 0.4rem !important;
+    }
+}
 
 /*--------------------------------------------------------------
 # Loader
@@ -2061,7 +2085,7 @@ img.mfp-img {
     top: 0;
     left: 0;
     background: #fff;
-    z-index: 99999999999999999999999999999;
+    z-index: 999999;
 }
 
 .loader svg {
@@ -2071,8 +2095,4 @@ img.mfp-img {
     position: absolute;
     top: calc(50% - 32.5px);
     left: calc(50% - 32.5px);
-}
-
-#wpadminbar {
-    z-index:9998;
 }
