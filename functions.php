@@ -82,28 +82,32 @@ if (!function_exists('qoob_theme_setup')) :
         /**
          * Add theme path to theme Qoob blocks to theme options
          */
-        $blocksUrl = get_template_directory_uri() . '/blocks';
-        $qoobLibs = get_site_option( 'qoob_libs' );
-        $qoobLib = array('name' => 'qoob_theme','url' => $blocksUrl);
+        $qoobLibs = get_site_option('qoob_libs');
+        $lib = file_get_contents(get_template_directory() . '/blocks/lib.json');
 
-        if ( !$qoobLibs ) {
+        if (!!$lib) {
+            $libUrl = get_template_directory_uri() . '/blocks';
+            $lib = preg_replace('/%theme_url%/', get_template_directory_uri(), $lib);
+            $lib = preg_replace('/%lib_url%/', $libUrl, $lib);
+            $qoobLib = array_merge( array('url' => $libUrl), json_decode($lib, true) );
 
-            $qoobLibs = array($qoobLib);
+            if (!$qoobLibs) {
+                $result = array( $qoobLib );
+            } else {
+                for ($i = 0; $i < count($qoobLibs); $i++) { 
+                    if ($qoobLibs[$i]['name'] === $qoobLib['name'])
+                        $defaultLibExists = true;
+                }
 
-        } else {
-
-            for ($i = 0; $i < count($qoobLibs); $i++) { 
-                if ($qoobLibs[$i]['name'] === $qoobLib['name'] && ($defaultLibExists = true) && $qoobLibs[$i]['url'] !== $blocksUrl) {
-                    $qoobLibs[$i] = $qoobLib;
+                if (!isset($defaultLibExists)) {
+                        $qoobLibs[] = $qoobLib;
+                        $result = $qoobLibs;
                 }
             }
-
-            if ( !isset($defaultLibExists) ) {
-                $qoobLibs[] = $qoobLib;
-            }
         }
-        
-        update_option( 'qoob_libs', $qoobLibs); 
+
+        if (isset($result))
+            update_option('qoob_libs', $result); 
     }
 
 endif;
@@ -324,7 +328,6 @@ function qoob_theme_scripts() {
     wp_enqueue_style('qoob-theme-style', get_stylesheet_uri());
     wp_enqueue_style('qoob-theme-carousel-css', get_template_directory_uri() . '/css/carousel.css');
 	wp_enqueue_style('qoob-theme-collapse-css', get_template_directory_uri() . '/css/collapse.css');
-    wp_enqueue_style('qoob-theme-blocks-style', get_template_directory_uri() . '/css/blocks.css');
     
     wp_enqueue_style('bootstrap-progressbar', get_template_directory_uri() . '/css/bootstrap-progressbar.css');
 

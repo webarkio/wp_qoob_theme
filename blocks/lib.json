@@ -1,295 +1,327 @@
-{"groups": [
-    {
-        "id": "video",
-        "label": "Video",
-        "position": "0"
-    },
-    {
-        "id": "slider",
-        "label": "Slider",
-        "position": "1"
-    },
-    {
-        "id": "testimonial",
-        "label": "Testimonial",
-        "position": "11"
-    },
-    {
-        "id": "gallery",
-        "label": "Gallery",
-        "position": "2"
-    },
-    {
-        "id": "text",
-        "label": "Text",
-        "position": "3"
-    },
-    {
-        "id": "forms",
-        "label": "Forms",
-        "position": "4"
-    },   
-    {
-        "id": "our_team",
-        "label": "Our Team",
-        "position": "5"
-    },  
-    {
-        "id": "other",
-        "label": "Other",
-        "position": "6"
-    },
-    {
-        "id": "main_block",
-        "label": "Main block",
-        "position": "7"
-    },
-    {
-        "id": "faq",
-        "label": "FAQ",
-        "position": "8"
-    },
-    {
-        "id": "call_to_action",
-        "label": "Call to action",
-        "position": "9"
+{
+    "name": "qoob_theme",
+    "groups": [
+        {
+            "id": "video",
+            "label": "Video",
+            "position": "0"
+        },
+        {
+            "id": "slider",
+            "label": "Slider",
+            "position": "1"
+        },
+        {
+            "id": "testimonial",
+            "label": "Testimonial",
+            "position": "11"
+        },
+        {
+            "id": "gallery",
+            "label": "Gallery",
+            "position": "2"
+        },
+        {
+            "id": "text",
+            "label": "Text",
+            "position": "3"
+        },
+        {
+            "id": "forms",
+            "label": "Forms",
+            "position": "4"
+        },   
+        {
+            "id": "our_team",
+            "label": "Our Team",
+            "position": "5"
+        },  
+        {
+            "id": "other",
+            "label": "Other",
+            "position": "6"
+        },
+        {
+            "id": "main_block",
+            "label": "Main block",
+            "position": "7"
+        },
+        {
+            "id": "faq",
+            "label": "FAQ",
+            "position": "8"
+        },
+        {
+            "id": "call_to_action",
+            "label": "Call to action",
+            "position": "9"
+        }
+    ],
+    "blocks": [
+        {
+            "name": "404",
+            "url": "%theme_url%/blocks/404/"
+        },
+        {
+            "name": "call_to_action",
+            "url": "%theme_url%/blocks/call_to_action/"
+        },
+        {
+            "name": "call_to_action_bg",
+            "url": "%theme_url%/blocks/call_to_action_bg/"
+        },
+        {
+            "name": "call_to_action_bg_v2",
+            "url": "%theme_url%/blocks/call_to_action_bg_v2/"
+        },
+        {
+            "name": "call_to_action_noimg",
+            "url": "%theme_url%/blocks/call_to_action_noimg/"
+        },
+        {
+            "name": "contact",
+            "url": "%theme_url%/blocks/contact/"
+        },
+        {
+            "name": "contact_fluid",
+            "url": "%theme_url%/blocks/contact_fluid/"
+        },
+        {
+            "name": "contact_no_map",
+            "url": "%theme_url%/blocks/contact_no_map/"
+        },
+        {
+            "name": "counter",
+            "url": "%theme_url%/blocks/counter/"
+        },
+        {
+            "name": "counter_circle",
+            "url": "%theme_url%/blocks/counter_circle/"
+        },
+        {
+            "name": "download_page",
+            "url": "%theme_url%/blocks/download_page/"
+        },
+        {
+            "name": "entypo",
+            "url": "%theme_url%/blocks/entypo/"
+        },
+        {
+            "name": "faq_accordion",
+            "url": "%theme_url%/blocks/faq_accordion/"
+        },
+        {
+            "name": "faq_list",
+            "url": "%theme_url%/blocks/contact/"
+        },
+        {
+            "name": "fontawesome",
+            "url": "%theme_url%/blocks/fontawesome/"
+        },
+        {
+            "name": "gallery_popup",
+            "url": "%theme_url%/blocks/gallery_popup/"
+        },
+        {
+            "name": "gallery_scroll",
+            "url": "%theme_url%/blocks/gallery_scroll/"
+        },
+        {
+            "name": "gallery_zoom",
+            "url": "%theme_url%/blocks/gallery_zoom/"
+        },
+        {
+            "name": "glyphicons",
+            "url": "%theme_url%/blocks/glyphicons/"
+        },
+        {
+            "name": "header",
+            "url": "%theme_url%/blocks/header/"
+        },
+        {
+            "name": "header_big_bg",
+            "url": "%theme_url%/blocks/header_big_bg/"
+        },
+        {
+            "name": "header_no_bg",
+            "url": "%theme_url%/blocks/header_no_bg/"
+        },
+        {
+            "name": "header_small_bg",
+            "url": "%theme_url%/blocks/header_small_bg/"
+        },
+        {
+            "name": "iconbox",
+            "url": "%theme_url%/blocks/iconbox/"
+        },
+        {
+            "name": "iconbox_no_header",
+            "url": "%theme_url%/blocks/iconbox_no_header/"
+        },
+        {
+            "name": "iconbox_no_icon",
+            "url": "%theme_url%/blocks/iconbox_no_icon/"
+        },
+        {
+            "name": "ionicons",
+            "url": "%theme_url%/blocks/ionicons/"
+        },
+        {
+            "name": "landing_bg_video",
+            "url": "%theme_url%/blocks/landing_bg_video/"
+        },
+        {
+            "name": "landing_mac",
+            "url": "%theme_url%/blocks/landing_mac/"
+        },
+        {
+            "name": "landing_photo",
+            "url": "%theme_url%/blocks/landing_photo/"
+        },
+        {
+            "name": "load_more",
+            "url": "%theme_url%/blocks/load_more/"
+        },
+        {
+            "name": "progressbar_circle",
+            "url": "%theme_url%/blocks/progressbar_circle/"
+        },
+        {
+            "name": "progressbar_romb",
+            "url": "%theme_url%/blocks/progressbar_romb/"
+        },
+        {
+            "name": "slider_buttons",
+            "url": "%theme_url%/blocks/slider_buttons/"
+        },
+        {
+            "name": "slider_text",
+            "url": "%theme_url%/blocks/slider_text/"
+        },
+        {
+            "name": "social",
+            "url": "%theme_url%/blocks/social/"
+        },
+        {
+            "name": "subscribe",
+            "url": "%theme_url%/blocks/subscribe/"
+        },
+        {
+            "name": "team",
+            "url": "%theme_url%/blocks/team/"
+        },
+        {
+            "name": "team_step",
+            "url": "%theme_url%/blocks/team_step/"
+        },
+        {
+            "name": "team_step_vertical",
+            "url": "%theme_url%/blocks/team_step_vertical/"
+        },
+        {
+            "name": "team_top_bar",
+            "url": "%theme_url%/blocks/team_top_bar/"
+        },
+        {
+            "name": "team_vertical",
+            "url": "%theme_url%/blocks/team_vertical/"
+        },
+        {
+            "name": "team_vertical_top_bar",
+            "url": "%theme_url%/blocks/team_vertical_top_bar/"
+        },
+        {
+            "name": "technology",
+            "url": "%theme_url%/blocks/technology/"
+        },
+        {
+            "name": "template_carousel",
+            "url": "%theme_url%/blocks/template_carousel/"
+        },
+        {
+            "name": "template_carousel_v2",
+            "url": "%theme_url%/blocks/template_carousel_v2/"
+        },
+        {
+            "name": "testimonial",
+            "url": "%theme_url%/blocks/testimonial/"
+        },
+        {
+            "name": "testimonial_arrow",
+            "url": "%theme_url%/blocks/testimonial_arrow/"
+        },
+        {
+            "name": "testimonial_center",
+            "url": "%theme_url%/blocks/testimonial_center/"
+        },
+        {
+            "name": "testimonial_grid",
+            "url": "%theme_url%/blocks/testimonial_grid/"
+        },
+        {
+            "name": "text",
+            "url": "%theme_url%/blocks/call_to_action_bg/"
+        },
+        {
+            "name": "text_image_left",
+            "url": "%theme_url%/blocks/text_image_left/"
+        },
+        {
+            "name": "text_image_right",
+            "url": "%theme_url%/blocks/text_image_right/"
+        },
+        {
+            "name": "themify",
+            "url": "%theme_url%/blocks/themify/"
+        },
+        {
+            "name": "video",
+            "url": "%theme_url%/blocks/video/"
+        },
+        {
+            "name": "video_carousel",
+            "url": "%theme_url%/blocks/video_carousel/"
+        },
+        {
+            "name": "video_features",
+            "url": "%theme_url%/blocks/video_features/"
+        },
+        {
+            "name": "video_features_number",
+            "url": "%theme_url%/blocks/video_features_number/"
+        },
+        {
+            "name": "video_full_page",
+            "url": "%theme_url%/blocks/video_full_page/"
+        }
+    ],
+    "res": {
+        "css": [
+            {
+                "name": "qoob_theme_css",
+                "url": "%theme_url%/css/blocks.css"
+            },
+            {
+                "name": "entypo_css",
+                "url": "%lib_url%/entypo/assets/css/entypo.css"
+            },
+            {
+                "name": "fontawesome_css",
+                "url": "%lib_url%/fontawesome/assets/css/fontawesome.css"
+            },
+            {
+                "name": "glyphicons_css",
+                "url": "%lib_url%/glyphicons/assets/css/glyphicons.css"
+            },
+            {
+                "name": "ionicons_css",
+                "url": "%lib_url%/ionicons/assets/css/ionicons.css"
+            },
+            {
+                "name": "themify_css",
+                "url": "%lib_url%/themify/assets/css/themify.css"
+            }
+        ],
+        "js": []
     }
-],
-"blocks": [
-    {
-        "name": "404",
-        "url": "%theme_url%/blocks/404/"
-    },
-    {
-        "name": "call_to_action",
-        "url": "%theme_url%/blocks/call_to_action/"
-    },
-    {
-        "name": "call_to_action_bg",
-        "url": "%theme_url%/blocks/call_to_action_bg/"
-    },
-    {
-        "name": "call_to_action_bg_v2",
-        "url": "%theme_url%/blocks/call_to_action_bg_v2/"
-    },
-    {
-        "name": "call_to_action_noimg",
-        "url": "%theme_url%/blocks/call_to_action_noimg/"
-    },
-    {
-        "name": "contact",
-        "url": "%theme_url%/blocks/contact/"
-    },
-    {
-        "name": "contact_fluid",
-        "url": "%theme_url%/blocks/contact_fluid/"
-    },
-    {
-        "name": "contact_no_map",
-        "url": "%theme_url%/blocks/contact_no_map/"
-    },
-    {
-        "name": "counter",
-        "url": "%theme_url%/blocks/counter/"
-    },
-    {
-        "name": "counter_circle",
-        "url": "%theme_url%/blocks/counter_circle/"
-    },
-    {
-        "name": "download_page",
-        "url": "%theme_url%/blocks/download_page/"
-    },
-    {
-        "name": "entypo",
-        "url": "%theme_url%/blocks/entypo/"
-    },
-    {
-        "name": "faq_accordion",
-        "url": "%theme_url%/blocks/faq_accordion/"
-    },
-    {
-        "name": "faq_list",
-        "url": "%theme_url%/blocks/contact/"
-    },
-    {
-        "name": "fontawesome",
-        "url": "%theme_url%/blocks/fontawesome/"
-    },
-    {
-        "name": "gallery_popup",
-        "url": "%theme_url%/blocks/gallery_popup/"
-    },
-    {
-        "name": "gallery_scroll",
-        "url": "%theme_url%/blocks/gallery_scroll/"
-    },
-    {
-        "name": "gallery_zoom",
-        "url": "%theme_url%/blocks/gallery_zoom/"
-    },
-    {
-        "name": "glyphicons",
-        "url": "%theme_url%/blocks/glyphicons/"
-    },
-    {
-        "name": "header",
-        "url": "%theme_url%/blocks/header/"
-    },
-    {
-        "name": "header_big_bg",
-        "url": "%theme_url%/blocks/header_big_bg/"
-    },
-    {
-        "name": "header_no_bg",
-        "url": "%theme_url%/blocks/header_no_bg/"
-    },
-    {
-        "name": "header_small_bg",
-        "url": "%theme_url%/blocks/header_small_bg/"
-    },
-    {
-        "name": "iconbox",
-        "url": "%theme_url%/blocks/iconbox/"
-    },
-    {
-        "name": "iconbox_no_header",
-        "url": "%theme_url%/blocks/iconbox_no_header/"
-    },
-    {
-        "name": "iconbox_no_icon",
-        "url": "%theme_url%/blocks/iconbox_no_icon/"
-    },
-    {
-        "name": "ionicons",
-        "url": "%theme_url%/blocks/ionicons/"
-    },
-    {
-        "name": "landing_bg_video",
-        "url": "%theme_url%/blocks/landing_bg_video/"
-    },
-    {
-        "name": "landing_mac",
-        "url": "%theme_url%/blocks/landing_mac/"
-    },
-    {
-        "name": "landing_photo",
-        "url": "%theme_url%/blocks/landing_photo/"
-    },
-    {
-        "name": "load_more",
-        "url": "%theme_url%/blocks/load_more/"
-    },
-    {
-        "name": "progressbar_circle",
-        "url": "%theme_url%/blocks/progressbar_circle/"
-    },
-    {
-        "name": "progressbar_romb",
-        "url": "%theme_url%/blocks/progressbar_romb/"
-    },
-    {
-        "name": "slider_buttons",
-        "url": "%theme_url%/blocks/slider_buttons/"
-    },
-    {
-        "name": "slider_text",
-        "url": "%theme_url%/blocks/slider_text/"
-    },
-    {
-        "name": "social",
-        "url": "%theme_url%/blocks/social/"
-    },
-    {
-        "name": "subscribe",
-        "url": "%theme_url%/blocks/subscribe/"
-    },
-    {
-        "name": "team",
-        "url": "%theme_url%/blocks/team/"
-    },
-    {
-        "name": "team_step",
-        "url": "%theme_url%/blocks/team_step/"
-    },
-    {
-        "name": "team_step_vertical",
-        "url": "%theme_url%/blocks/team_step_vertical/"
-    },
-    {
-        "name": "team_top_bar",
-        "url": "%theme_url%/blocks/team_top_bar/"
-    },
-    {
-        "name": "team_vertical",
-        "url": "%theme_url%/blocks/team_vertical/"
-    },
-    {
-        "name": "team_vertical_top_bar",
-        "url": "%theme_url%/blocks/team_vertical_top_bar/"
-    },
-    {
-        "name": "technology",
-        "url": "%theme_url%/blocks/technology/"
-    },
-    {
-        "name": "template_carousel",
-        "url": "%theme_url%/blocks/template_carousel/"
-    },
-    {
-        "name": "template_carousel_v2",
-        "url": "%theme_url%/blocks/template_carousel_v2/"
-    },
-    {
-        "name": "testimonial",
-        "url": "%theme_url%/blocks/testimonial/"
-    },
-    {
-        "name": "testimonial_arrow",
-        "url": "%theme_url%/blocks/testimonial_arrow/"
-    },
-    {
-        "name": "testimonial_center",
-        "url": "%theme_url%/blocks/testimonial_center/"
-    },
-    {
-        "name": "testimonial_grid",
-        "url": "%theme_url%/blocks/testimonial_grid/"
-    },
-    {
-        "name": "text",
-        "url": "%theme_url%/blocks/call_to_action_bg/"
-    },
-    {
-        "name": "text_image_left",
-        "url": "%theme_url%/blocks/text_image_left/"
-    },
-    {
-        "name": "text_image_right",
-        "url": "%theme_url%/blocks/text_image_right/"
-    },
-    {
-        "name": "themify",
-        "url": "%theme_url%/blocks/themify/"
-    },
-    {
-        "name": "video",
-        "url": "%theme_url%/blocks/video/"
-    },
-    {
-        "name": "video_carousel",
-        "url": "%theme_url%/blocks/video_carousel/"
-    },
-    {
-        "name": "video_features",
-        "url": "%theme_url%/blocks/video_features/"
-    },
-    {
-        "name": "video_features_number",
-        "url": "%theme_url%/blocks/video_features_number/"
-    },
-    {
-        "name": "video_full_page",
-        "url": "%theme_url%/blocks/video_full_page/"
-    }
-]}
+}
