@@ -81,7 +81,7 @@ function qoob_theme_customize_register( $wp_customize ) {
 	));
 
 	$wp_customize->add_setting( 'footer_text', array(
-		'default' => __('Copyright qoob') . ' ' . date('Y'),
+		'default' => __('Copyright qoob', 'qoob') . ' ' . date('Y'),
 		'type' => 'theme_mod',
 		'capability' => 'edit_theme_options',
 		'transport' => '',
