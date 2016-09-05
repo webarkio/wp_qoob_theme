@@ -1003,6 +1003,28 @@ a:active {
     padding-right: 1em;
 }
 
+.sf-menu .social-media-icon a {
+    padding: 1em 1rem;
+}
+
+.sf-menu .social-media-icon i {
+    display: block;
+    position: relative;
+    height: 3rem;
+    width: 3.2rem;
+    background-image: url(images/nav_linkicons.svg);
+    background-size: 13rem 6.1rem;
+}
+
+.sf-menu .social-media-icon i.github {
+    background-position: -32px 0;
+}
+
+.sf-menu .social-media-icon i.twitter {
+    background-position: -98px 0;
+    top: 0.2rem;
+}
+
 /*--------------------------------------------------------------
 ## Mobile Menu
 --------------------------------------------------------------*/

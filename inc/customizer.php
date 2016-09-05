@@ -95,6 +95,33 @@ function qoob_theme_customize_register( $wp_customize ) {
 	    'label' => __( 'Footer text', 'qoob' ),
 	    'description' => '',
 	) );
+
+	$wp_customize->add_section( 'my_social_settings', array(
+		'title'    => __('Social Media Icons', 'qoob'),
+		'panel'       => 'nav_menus',
+		'priority' => 5,
+	));
+
+	$social_sites = qoob_customizer_social_media_array();
+	$priority = 5;
+
+	foreach($social_sites as $social_site) {
+		$wp_customize->add_setting( "$social_site", array(
+			'default' => '',
+			'type' => 'theme_mod',
+			'capability' => 'edit_theme_options',
+			'sanitize_callback' => 'esc_url_raw'
+		));
+
+		$wp_customize->add_control( $social_site, array(
+				'label'    => __("$social_site url:", 'qoob'),
+				'section'  => 'my_social_settings',
+				'type'     => 'text',
+				'priority' => $priority,
+		));
+
+		$priority = $priority + 5;
+	}
 }
 
 add_action( 'customize_register', 'qoob_theme_customize_register' );
@@ -106,3 +133,12 @@ function qoob_theme_customize_preview_js() {
 	wp_enqueue_script( 'qoob_theme_customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20151215', true );
 }
 add_action( 'customize_preview_init', 'qoob_theme_customize_preview_js' );
+
+/**
+ * Store the Social Media Site Names
+ */
+function qoob_customizer_social_media_array() {
+	/* store social site names in array */
+	$social_sites = array('github', 'twitter');
+	return $social_sites;
+}

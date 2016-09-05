@@ -83,6 +83,35 @@ if (!function_exists('qoob_theme_setup')) :
 endif;
 add_action('after_setup_theme', 'qoob_theme_setup');
 
+/*
+ * Adding social media icons links to a Specific WordPress Menu
+ * takes user input from the customizer and outputs linked social media icons 
+*/
+function qoob_social_media_icons( $nav, $args ) {
+    $social_sites = qoob_customizer_social_media_array();
+
+    if( $args->theme_location == 'primary' ) {
+        /* any inputs that aren't empty are stored in $active_sites array */
+        foreach($social_sites as $social_site) {
+            if( strlen( get_theme_mod( $social_site ) ) > 0 ) {
+                $active_sites[] = $social_site;
+            }
+        }
+
+        $icons = '';
+        /* for each active social site, add it as a list item */
+        if ( ! empty( $active_sites ) ) {
+            foreach ( $active_sites as $active_site ) {
+                $icons .= '<li class="menu-item social-media-icon"><a target="_blank" href="' . esc_url(get_theme_mod($active_site)) .'"><i class="'. $active_site . '"></i></a></li>';
+            }
+        }
+
+        return $nav . $icons;
+    }
+    return $nav;
+}
+add_filter('wp_nav_menu_items','qoob_social_media_icons', 10, 2);
+
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
