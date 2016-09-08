@@ -1,0 +1,31 @@
+{
+  "name": "qoob.wordpress.theme",
+  "version": "1.0.0",
+  "description": "Wordpress theme, based on Qoob Page Editor",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webarkio/wp_qoob_theme.git"
+  },
+  "keywords": [
+    "qoob",
+    "builder",
+    "theme"
+  ],
+  "author": "Webark Systems",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/webarkio/wp_qoob_theme"
+  },
+  "homepage": "https://github.com/webarkio/wp_qoob_theme#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "load-grunt-tasks": "^3.2.0"
+  }
+}
