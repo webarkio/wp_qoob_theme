@@ -82,36 +82,27 @@ if (!function_exists('qoob_theme_setup')) :
         /**
          * Add theme path to theme Qoob blocks to theme options
          */
-        $qoobLibs = get_site_option('qoob_libs');
-        $lib = file_get_contents(get_template_directory() . '/blocks/lib.json');
-
-        if (!!$lib) {
-            $libUrl = get_template_directory_uri() . '/blocks';
-            $lib = preg_replace('/%theme_url%/', get_template_directory_uri(), $lib);
-            $lib = preg_replace('/%lib_url%/', $libUrl, $lib);
-            $qoobLib = array_merge( array('url' => $libUrl), json_decode($lib, true) );
-
-            if (!$qoobLibs) {
-                $result = array( $qoobLib );
-            } else {
-                for ($i = 0; $i < count($qoobLibs); $i++) { 
-                    if ($qoobLibs[$i]['name'] === $qoobLib['name'])
-                        $defaultLibExists = true;
-                }
-
-                if (!isset($defaultLibExists)) {
-                        $qoobLibs[] = $qoobLib;
-                        $result = $qoobLibs;
-                }
-            }
-        }
-
-        if (isset($result))
-            update_option('qoob_libs', $result); 
+        $masks = array(
+            'theme_url' => get_template_directory_uri(),
+            'lib_url' => get_template_directory_uri() . '/blocks'
+       );
+       $pathToLib = get_template_directory() . '/blocks/lib.json';
+       
+       if (class_exists('Qoob'))
+            Qoob::addLib($pathToLib, $masks);
     }
 
 endif;
 add_action('after_setup_theme', 'qoob_theme_setup');
+
+function onDeactivation() {
+    if (!class_exists('Qoob'))
+        return;
+    Qoob::removeLib('qoob_theme'); 
+}
+
+add_action('switch_theme', 'onDeactivation');
+
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
