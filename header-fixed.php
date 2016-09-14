@@ -20,30 +20,13 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div class="loader">
-    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 44 44" style="enable-background:new 0 0 44 44;" xml:space="preserve">
-    <style type="text/css">
-     .st0{fill:none;stroke:#949599;stroke-width:2;}
-    </style>
-    <g>
-     <circle class="st0" cx="22" cy="22" r="1">
-     
-      <animate  accumulate="none" additive="replace" attributeName="r" begin="0s" calcMode="spline" dur="1.8s" fill="remove" keySplines="0.165, 0.84, 0.44, 1" keyTimes="0; 1" repeatCount="indefinite" restart="always" values="1; 20">
-      </animate>
-     
-      <animate  accumulate="none" additive="replace" attributeName="stroke-opacity" begin="0s" calcMode="spline" dur="1.8s" fill="remove" keySplines="0.3, 0.61, 0.355, 1" keyTimes="0; 1" repeatCount="indefinite" restart="always" values="1; 0">
-      </animate>
-     </circle>
-     <circle class="st0" cx="22" cy="22" r="1">
-     
-      <animate  accumulate="none" additive="replace" attributeName="r" begin="-0.9s" calcMode="spline" dur="1.8s" fill="remove" keySplines="0.165, 0.84, 0.44, 1" keyTimes="0; 1" repeatCount="indefinite" restart="always" values="1; 20">
-      </animate>
-     
-      <animate  accumulate="none" additive="replace" attributeName="stroke-opacity" begin="-0.9s" calcMode="spline" dur="1.8s" fill="remove" keySplines="0.3, 0.61, 0.355, 1" keyTimes="0; 1" repeatCount="indefinite" restart="always" values="1; 0">
-      </animate>
-     </circle>
-    </g>
-    </svg>
+<div class="loader-wrap">
+  <div class="loader">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 </div>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'qoob' ); ?></a>

@@ -23,6 +23,6 @@ jQuery(window).resize(function(){
 
 // Loader fading out
 jQuery(window).load(function() {
-    jQuery(".loader svg").fadeOut();
-    jQuery(".loader").delay(400).fadeOut("slow");
+    jQuery(".loader").fadeOut();
+    jQuery(".loader-wrap").delay(400).fadeOut("slow");
 });
