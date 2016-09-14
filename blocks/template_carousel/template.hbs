@@ -38,7 +38,8 @@ jQuery(document).ready(function() {
                 items:2,
                 margin:10,
                 startPosition: 1,
-                center:true
+                center:true,
+                nav:true
             },
             480:{
                 items:2,
@@ -61,9 +62,6 @@ jQuery(document).ready(function() {
                 items:3
             }
         }
-    });
-    jQuery(window).resize(function(){
-        jQuery(".template-carousel-{{id}}").trigger('reinit.owl.carousel', {});
     });
 });
 </script>
