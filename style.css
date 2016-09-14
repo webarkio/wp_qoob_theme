@@ -68,6 +68,7 @@ html {
 
 body {
     margin: 0;
+    position: relative;
 }
 
 article,
@@ -2146,7 +2147,7 @@ img.mfp-img {
     left: 0;
     bottom: 0;
     background: #fff;
-    z-index: 20;
+    z-index: 9999999;
 }
 .loader {
   position: absolute;
@@ -2156,6 +2157,7 @@ img.mfp-img {
   height: 80px;
   transform: translate(-50%, -50%) rotate(45deg) translate3d(0, 0, 0);
   animation: loader 1.2s infinite ease-in-out;
+  z-index: 9999999;
 }
 .loader span {
   position: absolute;
