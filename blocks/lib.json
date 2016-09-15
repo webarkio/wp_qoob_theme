@@ -303,23 +303,43 @@
             },
             {
                 "name": "entypo_css",
-                "url": "%lib_url%/entypo/assets/css/entypo.css"
+                "url": "%lib_url%/entypo/assets/css/entypo.css",
+                "use": {
+                    "frontend": true,
+                    "backend": true
+                }
             },
             {
                 "name": "fontawesome_css",
-                "url": "%lib_url%/fontawesome/assets/css/fontawesome.css"
+                "url": "%lib_url%/fontawesome/assets/css/fontawesome.css",
+                "use": {
+                    "frontend": true,
+                    "backend": true
+                }
             },
             {
                 "name": "glyphicons_css",
-                "url": "%lib_url%/glyphicons/assets/css/glyphicons.css"
+                "url": "%lib_url%/glyphicons/assets/css/glyphicons.css",
+                "use": {
+                    "frontend": true,
+                    "backend": true
+                }
             },
             {
                 "name": "ionicons_css",
-                "url": "%lib_url%/ionicons/assets/css/ionicons.css"
+                "url": "%lib_url%/ionicons/assets/css/ionicons.css",
+                "use": {
+                    "frontend": true,
+                    "backend": true
+                }
             },
             {
                 "name": "themify_css",
-                "url": "%lib_url%/themify/assets/css/themify.css"
+                "url": "%lib_url%/themify/assets/css/themify.css",
+                "use": {
+                    "frontend": true,
+                    "backend": true
+                }
             }
         ],
         "js": []
