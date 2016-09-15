@@ -20,13 +20,12 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div class="loader-wrap">
-  <div class="loader">
+<div class="loader-wrap"></div>
+<div class="loader">
     <span></span>
     <span></span>
     <span></span>
     <span></span>
-  </div>
 </div>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'qoob' ); ?></a>
