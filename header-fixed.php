@@ -20,9 +20,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div class="loader-wrap">
- 
-</div>
+<div class="loader-wrap"></div>
  <div class="loader">
     <span></span>
     <span></span>
