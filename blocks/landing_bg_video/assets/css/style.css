@@ -9,16 +9,9 @@
 	background-position: center center;
 	overflow: hidden;
 }
-/*
-.header-block-bg-video:before {
-    content:"";
-    width:100%;
-    height:100%;
-    display:block;
-    background:red; 
-}*/
 
 .header-block-bg-video .container {
+	display: table;
  	height: 100%;
  	width: 100%;
     z-index: 999;
@@ -26,6 +19,8 @@
 
 .header-block-bg-video .container .row {
 	position: relative;
+	display: table-cell;
+    vertical-align: middle;
 }
 
 .bg-video-title h1 {
@@ -67,12 +62,10 @@
 
 .custom-video-wrapper {
 	display: block;
-	height: 150%;
-	width: auto;
-	position: absolute;
-	left: 0;
-	top: -100px;
-	z-index: -99999999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -99999999;
 }
 
 .custom-video-wrapper-overlay {
@@ -110,27 +103,36 @@
 	}
 }
 
-@media (max-width: 769px) {
-	/*.bg-video-text {
-	    padding-left: 16px;
-	    padding-right: 16px;
-	}*/
-	/*.header-block-bg-video .btn1 {
-		margin-left: 18rem;
-	}*/
+@media only screen and (max-width: 1280px) and (min-height: 801px) {
+	@media (max-aspect-ratio: 16/9) {
+		.header-block-bg-video {
+			width: auto;
+			height: 100% !important;
+			top: -100px;
+	  	}
+	}
+}
+
+@media (min-width:769px) and (max-width:1024px){
+	.header-block-bg-video {
+		width: auto;
+		height: 100% !important;
+		top: -100px;
+  	}
 }
 
 @media (min-width: 1024px) {
 	.header-block-bg-video {
-		height: 100vh;
-		background: none!important;
+		background: none !important;
+		position: relative;
+		padding-bottom: 56.25%;
+		padding-top: 25px;
+		height: 0;
+		overflow: hidden;
 	}
 	.header-block-bg-video .btn {
 		margin: auto;
 	}
-	/*.header-block-bg-video .btn1 {
-		margin-left: 18rem;
-	}*/
 }
 
 @media (max-width: 800px) {
