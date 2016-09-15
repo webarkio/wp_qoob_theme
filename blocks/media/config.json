@@ -1,0 +1,39 @@
+{
+    "assets": [{
+        "type": "video",
+        "src": "%block_url%/assets/videos/cube_girl.mp4",
+        "title": "Cube Girl",
+        "preview": "%block_url%/assets/img/cube_girl_preview.png",
+        "tags": ["cube"]
+    },{
+        "type": "video",
+        "src": "%block_url%/assets/videos/always_looking_good.mp4",
+        "title": "Responsive",
+        "preview": "%block_url%/assets/img/always_looking_good.png",
+        "tags": ["responsive"]
+    },{
+        "type": "video",
+        "src": "%block_url%/assets/videos/blocks_builder.mp4",
+        "title": "Blocks Builder",
+        "preview": "%block_url%/assets/img/blocks_builder.png",
+        "tags": ["builder"]
+    },{
+        "type": "video",
+        "src": "%block_url%/assets/videos/clean_intuitive_ui.mp4",
+        "title": "Clean and Intuitive UI",
+        "preview": "%block_url%/assets/img/clean_intuitive_ui.png",
+        "tags": ["ui"]
+    },{
+        "type": "video",
+        "src": "%block_url%/assets/videos/editing_mobile_version.mp4",
+        "title": "Edit in mobile version",
+        "preview": "%block_url%/assets/img/editing_mobile_version.png",
+        "tags": ["mobile"]
+    },{
+        "type": "video",
+        "src": "%block_url%/assets/videos/live_editing.mp4",
+        "title": "Live Editing",
+        "preview": "%block_url%/assets/img/live_editing.png",
+        "tags": ["live","edit"]
+    }]
+}

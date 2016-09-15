@@ -1510,6 +1510,14 @@
 	background-position: center center;
 	overflow: hidden;
 }
+/*
+.header-block-bg-video:before {
+    content:"";
+    width:100%;
+    height:100%;
+    display:block;
+    background:red; 
+}*/
 
 .header-block-bg-video .container {
  	height: 100%;
