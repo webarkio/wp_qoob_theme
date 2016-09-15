@@ -1,8 +1,5 @@
 {
-    "assets": [{
-            "type": "style",
-            "src": "%block_url%/assets/css/themify.css"
-        },
+    "assets": [
         { "type": "icon", "pack": "themify", "classes": "themify ti-wand", "tags": "wand" },
         { "type": "icon", "pack": "themify", "classes": "themify ti-volume", "tags": "volume" },
         { "type": "icon", "pack": "themify", "classes": "themify ti-user", "tags": "person user client" },
