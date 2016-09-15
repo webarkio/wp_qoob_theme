@@ -1,8 +1,5 @@
 {
-    "assets": [{
-            "type": "style",
-            "src": "%block_url%/assets/css/fontawesome.css"
-        },
+    "assets": [
         { "type": "icon", "pack": "fa", "classes": "fa fa-adjust", "tags": "adjust contrast" },
         { "type": "icon", "pack": "fa", "classes": "fa fa-adn", "tags": "adn fontcase" },
         { "type": "icon", "pack": "fa", "classes": "fa fa-align-center", "tags": "aligncenter" },

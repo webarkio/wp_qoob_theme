@@ -78,10 +78,31 @@ if (!function_exists('qoob_theme_setup')) :
          */
         add_image_size( 'thumbnail-size-post-page', 1903, 720, array( 'left', 'top' )); // Hard crop left top
         add_image_size( 'thumbnail-blog-list', 540, 420, array( 'left', 'top' )); // Hard crop left top
+
+        /**
+         * Add theme path to theme Qoob blocks to theme options
+         */
+        $masks = array(
+            'theme_url' => get_template_directory_uri(),
+            'lib_url' => get_template_directory_uri() . '/blocks'
+       );
+       $pathToLib = get_template_directory() . '/blocks/lib.json';
+       
+       if (class_exists('Qoob'))
+            Qoob::addLib($pathToLib, $masks);
     }
 
 endif;
 add_action('after_setup_theme', 'qoob_theme_setup');
+
+function onDeactivation() {
+    if (!class_exists('Qoob'))
+        return;
+    Qoob::removeLib('qoob_theme'); 
+}
+
+add_action('switch_theme', 'onDeactivation');
+
 
 /*
  * Adding social media icons links to a Specific WordPress Menu
@@ -319,7 +340,7 @@ function qoob_theme_scripts() {
     wp_enqueue_style('open-sans-light', get_template_directory_uri() . '/css/fonts/open-sans-light.css');
     wp_enqueue_style('open-sans-bold', get_template_directory_uri() . '/css/fonts/open-sans-bold.css');
 	wp_enqueue_style('open-sans-semibold', get_template_directory_uri() . '/css/fonts/open-sans-semibold.css');
-    wp_enqueue_style('open-sans-extarbold', get_template_directory_uri() . '/css/fonts/open-sans-extrabold.css');
+    wp_enqueue_style('open-sans-exstarbold', get_template_directory_uri() . '/css/fonts/open-sans-extrabold.css');
     wp_enqueue_style('font-awesome', get_template_directory_uri() . '/css/fonts/fontawesome/font-awesome.min.css');
     wp_enqueue_style('megafish', get_template_directory_uri() . '/css/megafish.css');
     wp_enqueue_style('magnific-popup', get_template_directory_uri() . '/css/magnific-popup.css');
@@ -327,7 +348,6 @@ function qoob_theme_scripts() {
     wp_enqueue_style('qoob-theme-style', get_stylesheet_uri());
     wp_enqueue_style('qoob-theme-carousel-css', get_template_directory_uri() . '/css/carousel.css');
 	wp_enqueue_style('qoob-theme-collapse-css', get_template_directory_uri() . '/css/collapse.css');
-    wp_enqueue_style('qoob-theme-blocks-style', get_template_directory_uri() . '/css/blocks.css');
     
     wp_enqueue_style('bootstrap-progressbar', get_template_directory_uri() . '/css/bootstrap-progressbar.css');
 
