@@ -88,7 +88,7 @@ if (!function_exists('qoob_theme_setup')) :
        );
        $pathToLib = get_template_directory() . '/blocks/lib.json';
        
-       if (class_exists('Qoob'))
+       if (class_exists('Qoob') && method_exists('Qoob', 'addLib'))
             Qoob::addLib($pathToLib, $masks);
     }
 
@@ -341,7 +341,6 @@ function qoob_theme_scripts() {
     wp_enqueue_style('open-sans-bold', get_template_directory_uri() . '/css/fonts/open-sans-bold.css');
 	wp_enqueue_style('open-sans-semibold', get_template_directory_uri() . '/css/fonts/open-sans-semibold.css');
     wp_enqueue_style('open-sans-exstarbold', get_template_directory_uri() . '/css/fonts/open-sans-extrabold.css');
-    wp_enqueue_style('font-awesome', get_template_directory_uri() . '/css/fonts/fontawesome/font-awesome.min.css');
     wp_enqueue_style('megafish', get_template_directory_uri() . '/css/megafish.css');
     wp_enqueue_style('magnific-popup', get_template_directory_uri() . '/css/magnific-popup.css');
 
