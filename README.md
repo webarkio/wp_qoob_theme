@@ -9,4 +9,11 @@ Theme includes a lot of  blocks with professional design that you can edit throu
 Getting Started
 ---------------
 
+= Installing Through FTP =
+
+1. Download the ZIP file and unpack it
+2. Upload the qoob theme to the `/wp-content/themes/` directory
+3. Activate the theme through the 'Themes' menu in WordPress
+4. You are now ready to use the qoob theme
+
 Good luck!
