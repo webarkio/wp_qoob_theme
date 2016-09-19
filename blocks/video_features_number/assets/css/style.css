@@ -137,11 +137,11 @@
     }
 }
 
-/*@media screen and (max-width : 1025px){
+@media screen and (max-width : 1025px){
     .video-features.number .video-element {
         width: 61rem;
     }
     .video-features.number .video-col .media-video-container {
         width: 61rem;
     }
-}*/
+}
