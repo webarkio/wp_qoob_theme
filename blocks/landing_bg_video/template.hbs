@@ -49,7 +49,7 @@
 	function vertical_align_bg_video() {
 		// Centering content
 		var height = jQuery('.header-block-{{id}} .row').height(),
-			totalHeight = jQuery('.header-block-{{id}}').height();
+			totalHeight = jQuery('.header-block-{{id}}').outerHeight();
 		jQuery('.header-block-{{id}} .row').height(height).css('top', (totalHeight - height) / 2 );
 	}
 </script>

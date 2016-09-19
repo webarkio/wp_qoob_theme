@@ -1,8 +1,5 @@
 {
-    "assets": [{
-            "type": "style",
-            "src": "%block_url%/assets/css/glyphicons.css"
-        },
+    "assets": [
         { "type": "icon", "pack": "glyphicon", "classes": "glyphicon glyphicon-asterisk", "tags": "asterisk" },
         { "type": "icon", "pack": "glyphicon", "classes": "glyphicon glyphicon-plus", "tags": "plus" },
         { "type": "icon", "pack": "glyphicon", "classes": "glyphicon glyphicon-euro", "tags": "euro" },

@@ -1,8 +1,5 @@
 {
-    "assets": [{
-            "type": "style",
-            "src": "%block_url%/assets/css/ionicons.css"
-        },
+    "assets": [
         { "type": "icon", "pack": "ionicons", "classes": "ionicons ion-alert", "tags": "alert warningsign" },
         { "type": "icon", "pack": "ionicons", "classes": "ionicons ion-alert-circled", "tags": "alertcircled warningsign" },
         { "type": "icon", "pack": "ionicons", "classes": "ionicons ion-android-add", "tags": "androidadd plus" },

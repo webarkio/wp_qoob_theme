@@ -1,29 +1,3 @@
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-# Normalize
-# Typography
-# Elements
-# Forms
-# Header
-# Navigation
-	## Links
-	## Menus
-# Accessibility
-# Alignments
-# Clearings
-# Widgets
-# Content
-	## Posts and pages
-	## Asides
-	## Comments
-# Footer
-# Infinite scroll
-# Media
-	## Captions
-	## Galleries
---------------------------------------------------------------*/
-
 
 /*--------------------------------------------------------------
 ## 404
@@ -90,6 +64,7 @@
 	display: inline-block;
 	margin-top: 5px;
 }
+
 /*--------------------------------------------------------------
 # Call to action bg
 --------------------------------------------------------------*/
@@ -165,18 +140,19 @@
 /*--------------------------------------------------------------
 # Call to action bg v2
 --------------------------------------------------------------*/
-/*OpenSans-ExtraBold*/
+/*OpenSans-ExstraBold*/
 .call-to-action-bg.ver-two.action-overlay:before {
 	background-color: rgba(0,0,0,0.7);
 }
 .call-to-action-bg.ver-two .header-desc {
-	font-family: "OpenSans-ExstraBold", sans-serif;
+	font-family: "OpenSans-ExtraBold", sans-serif;
 	font-weight: 800;
 }
 .call-to-action-bg.ver-two .btn {
 	border: 3px solid !important;
 	margin-top: 35px;
 }
+
 /*--------------------------------------------------------------
 # Call to action bg
 --------------------------------------------------------------*/
@@ -1512,6 +1488,7 @@
 }
 
 .header-block-bg-video .container {
+	display: table;
  	height: 100%;
  	width: 100%;
     z-index: 999;
@@ -1519,6 +1496,8 @@
 
 .header-block-bg-video .container .row {
 	position: relative;
+	display: table-cell;
+    vertical-align: middle;
 }
 
 .bg-video-title h1 {
@@ -1560,12 +1539,10 @@
 
 .custom-video-wrapper {
 	display: block;
-	height: 150%;
-	width: auto;
-	position: absolute;
-	left: 0;
-	top: -100px;
-	z-index: -99999999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -99999999;
 }
 
 .custom-video-wrapper-overlay {
@@ -1603,27 +1580,36 @@
 	}
 }
 
-@media (max-width: 769px) {
-	/*.bg-video-text {
-	    padding-left: 16px;
-	    padding-right: 16px;
-	}*/
-	/*.header-block-bg-video .btn1 {
-		margin-left: 18rem;
-	}*/
+@media only screen and (max-width: 1280px) and (min-height: 801px) {
+	@media (max-aspect-ratio: 16/9) {
+		.header-block-bg-video {
+			width: auto;
+			height: 100% !important;
+			top: -100px;
+	  	}
+	}
+}
+
+@media (min-width:769px) and (max-width:1024px){
+	.header-block-bg-video {
+		width: auto;
+		height: 100% !important;
+		top: -100px;
+  	}
 }
 
 @media (min-width: 1024px) {
 	.header-block-bg-video {
-		height: 100vh;
-		background: none!important;
+		background: none !important;
+		position: relative;
+		padding-bottom: 56.25%;
+		padding-top: 25px;
+		height: 0;
+		overflow: hidden;
 	}
 	.header-block-bg-video .btn {
 		margin: auto;
 	}
-	/*.header-block-bg-video .btn1 {
-		margin-left: 18rem;
-	}*/
 }
 
 @media (max-width: 800px) {

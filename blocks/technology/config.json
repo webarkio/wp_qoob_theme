@@ -80,7 +80,7 @@
     },
     {
         "type": "image",
-        "src": "%block_url%/assets/img/tehnology_php.png",
+        "src": "%block_url%/assets/img/technology_php.png",
         "tags": ["technology", "php"]
     },
     {

@@ -1,8 +1,5 @@
 {
-    "assets": [{
-            "type": "style",
-            "src": "%block_url%/assets/css/entypo.css"
-        },
+    "assets": [
         { "type": "icon", "pack": "entypo", "classes": "entypo entypo-note", "tags": "music note musicalt" },
         { "type": "icon", "pack": "entypo", "classes": "entypo entypo-note-beamed", "tags": "music note" },
         { "type": "icon", "pack": "entypo", "classes": "entypo entypo-music", "tags": "music note musicthree" },
