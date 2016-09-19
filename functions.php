@@ -337,10 +337,7 @@ function qoob_theme_scripts() {
     //grid system
     wp_enqueue_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.css');
     //fonts
-    wp_enqueue_style('open-sans-light', get_template_directory_uri() . '/css/fonts/open-sans-light.css');
-    wp_enqueue_style('open-sans-bold', get_template_directory_uri() . '/css/fonts/open-sans-bold.css');
-	wp_enqueue_style('open-sans-semibold', get_template_directory_uri() . '/css/fonts/open-sans-semibold.css');
-    wp_enqueue_style('open-sans-exstarbold', get_template_directory_uri() . '/css/fonts/open-sans-extrabold.css');
+    wp_enqueue_style('qoob-fonts', get_template_directory_uri() . '/css/fonts/fonts.css');
     wp_enqueue_style('megafish', get_template_directory_uri() . '/css/megafish.css');
     wp_enqueue_style('magnific-popup', get_template_directory_uri() . '/css/magnific-popup.css');
 
