@@ -9,7 +9,7 @@ Theme includes a lot of  blocks with professional design that you can edit throu
 Getting Started
 ---------------
 
-= Installing Through FTP =
+Installing Through FTP
 
 1. Download the ZIP file and unpack it
 2. Upload the qoob theme to the `/wp-content/themes/` directory
