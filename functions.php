@@ -78,30 +78,18 @@ if (!function_exists('qoob_theme_setup')) :
          */
         add_image_size( 'thumbnail-size-post-page', 1903, 720, array( 'left', 'top' )); // Hard crop left top
         add_image_size( 'thumbnail-blog-list', 540, 420, array( 'left', 'top' )); // Hard crop left top
+        
+        add_filter('qoob_libs', 'qoob_add_theme_lib', 10, 2);
 
-        /**
-         * Add theme path to theme Qoob blocks to theme options
-         */
-        $masks = array(
-            'theme_url' => get_template_directory_uri(),
-            'lib_url' => get_template_directory_uri() . '/blocks'
-       );
-       $pathToLib = get_template_directory() . '/blocks/lib.json';
-       
-       if (class_exists('Qoob') && method_exists('Qoob', 'addLib'))
-            Qoob::addLib($pathToLib, $masks);
+    }
+
+    function qoob_add_theme_lib($qoobLibs){
+        $qoobLibs[]=get_template_directory() . '/blocks/lib.json';
+        return $qoobLibs;
     }
 
 endif;
 add_action('after_setup_theme', 'qoob_theme_setup');
-
-function onDeactivation() {
-    if (!class_exists('Qoob'))
-        return;
-    Qoob::removeLib('qoob_theme'); 
-}
-
-add_action('switch_theme', 'onDeactivation');
 
 
 /*
