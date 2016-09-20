@@ -14,6 +14,6 @@
     }],
     "defaults": {
         "header": "MEET THE TEAM",
-        "url": "http://qoob.it/wp-content/uploads/2016/07/cube_girl.mp4"
+        "url": "%block_url(assets)%/assets/videos/cube_girl.mp4"
     }
 }

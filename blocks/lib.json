@@ -59,6 +59,10 @@
     ],
     "blocks": [
         {
+            "name": "assets",
+            "url": "http://webark.com/qoob/blocks/default/media/"
+        },
+        {
             "name": "404",
             "url": "%theme_url%/blocks/404/"
         },
