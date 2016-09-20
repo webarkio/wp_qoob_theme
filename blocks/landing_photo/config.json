@@ -31,14 +31,14 @@
     }],
     "defaults": {
         "header": "What technology do we use?",
-        "image" : "%block_url%/assets/img/tehnology.png",
+        "image" : "%block_url%/assets/img/technology.png",
         "bg_image" : "%block_url%/assets/img/landing_photo_bg.jpg",
         "btn_url" : "",
         "btn_text" : "Read more"
     },
     "assets" : [{
         "type": "image",
-        "src": "%block_url%/assets/img/tehnology.png",
+        "src": "%block_url%/assets/img/technology.png",
         "tags": ["tehnology"]
     },{
         "type": "image",
