@@ -51,6 +51,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Galleries
 	## Lightbox
 # Loader
+# Sidebar docs
 --------------------------------------------------------------*/
 
 
@@ -2184,4 +2185,50 @@ img.mfp-img {
 .loader span:nth-child(4) {
   bottom: 0;
   right: 0;
+}
+
+/*--------------------------------------------------------------
+# Sidebar docs
+--------------------------------------------------------------*/
+.sidebar-docs {
+    margin-top: 0rem;
+    padding-top: 5.5rem;
+}
+.sidebar-docs .widget ul.menu {
+    padding-left: 1.1rem;
+}
+.sidebar-docs .widget ul.menu > li,
+.sidebar-docs .widget ul.menu > li a {
+    font-size: 1.6rem;
+    font-family: "OpenSans-Bold", sans-serif;
+}
+.sidebar-docs .widget ul.sub-menu > li,
+.sidebar-docs .widget ul.sub-menu > li a {
+    font-size: 1.6rem;
+    font-family: "OpenSans-Light", sans-serif;
+}
+.sidebar-docs .widget ul li {
+    margin-top: 0;
+    margin-bottom: 1.8rem;
+    /*arrow_list_widge_gray.png*/
+}
+.sidebar-docs .widget ul.sub-menu {
+    padding-left: 0;
+    margin-left: 1.8rem;
+    margin-top: 2.4rem;
+}
+.sidebar-docs .widget ul.sub-menu > li.menu-item-has-children,
+.sidebar-docs .widget ul.sub-menu > li.menu-item-has-children > a {
+    font-family: "OpenSans-Bold", sans-serif;
+}
+.sidebar-docs .widget ul li:before {
+    content: url(images/arrow_list_widge_gray.png);
+    margin: 0.6rem 0.8rem 0.7rem 0;
+    background-color: transparent;
+}
+.page-docs {
+    padding-left: 40px;
+}
+.page-docs .entry-header .entry-title {
+    margin-top: 0;
 }
