@@ -1,7 +1,7 @@
 jQuery(document).ready(function(){
 	// Init masonry blog list
-    jQuery('.blog-list').masonry({
-      // columnWidth: '.col-lg-4',
+  jQuery('.blog-list').masonry({
+    // columnWidth: '.col-lg-4',
 	  itemSelector: '.col-lg-4',
 	  percentPosition: true,
 	  resize: true
@@ -13,12 +13,11 @@ jQuery(document).ready(function(){
       } else {
       	jQuery('.site-header.fixed').removeClass('move');
       }
-    };
-
-});
-
-jQuery(window).resize(function(){
+  };
+  
+  jQuery(window).resize(function(){
     jQuery('.blog-list').masonry('reloadItems');
+  });
 });
 
 // Loader fading out

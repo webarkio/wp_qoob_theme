@@ -78,30 +78,18 @@ if (!function_exists('qoob_theme_setup')) :
          */
         add_image_size( 'thumbnail-size-post-page', 1903, 720, array( 'left', 'top' )); // Hard crop left top
         add_image_size( 'thumbnail-blog-list', 540, 420, array( 'left', 'top' )); // Hard crop left top
+        
+        add_filter('qoob_libs', 'qoob_add_theme_lib', 10, 2);
 
-        /**
-         * Add theme path to theme Qoob blocks to theme options
-         */
-        $masks = array(
-            'theme_url' => get_template_directory_uri(),
-            'lib_url' => get_template_directory_uri() . '/blocks'
-       );
-       $pathToLib = get_template_directory() . '/blocks/lib.json';
-       
-       if (class_exists('Qoob'))
-            Qoob::addLib($pathToLib, $masks);
+    }
+
+    function qoob_add_theme_lib($qoobLibs){
+        $qoobLibs[]=get_template_directory() . '/blocks/lib.json';
+        return $qoobLibs;
     }
 
 endif;
 add_action('after_setup_theme', 'qoob_theme_setup');
-
-function onDeactivation() {
-    if (!class_exists('Qoob'))
-        return;
-    Qoob::removeLib('qoob_theme'); 
-}
-
-add_action('switch_theme', 'onDeactivation');
 
 
 /*
@@ -183,6 +171,16 @@ function qoob_theme_widgets_init() {
     register_sidebar(array(
         'name' => esc_html__('Sidebar page', 'qoob'),
         'id' => 'sidebar-page',
+        'description' => esc_html__('Add widgets here.', 'qoob'),
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget' => '</section>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
+    ));
+
+    register_sidebar(array(
+        'name' => esc_html__('Sidebar docs page', 'qoob'),
+        'id' => 'sidebar-docs',
         'description' => esc_html__('Add widgets here.', 'qoob'),
         'before_widget' => '<section id="%1$s" class="widget %2$s">',
         'after_widget' => '</section>',
@@ -337,11 +335,7 @@ function qoob_theme_scripts() {
     //grid system
     wp_enqueue_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.css');
     //fonts
-    wp_enqueue_style('open-sans-light', get_template_directory_uri() . '/css/fonts/open-sans-light.css');
-    wp_enqueue_style('open-sans-bold', get_template_directory_uri() . '/css/fonts/open-sans-bold.css');
-	wp_enqueue_style('open-sans-semibold', get_template_directory_uri() . '/css/fonts/open-sans-semibold.css');
-    wp_enqueue_style('open-sans-exstarbold', get_template_directory_uri() . '/css/fonts/open-sans-extrabold.css');
-    wp_enqueue_style('font-awesome', get_template_directory_uri() . '/css/fonts/fontawesome/font-awesome.min.css');
+    wp_enqueue_style('qoob-fonts', get_template_directory_uri() . '/css/fonts/fonts.css');
     wp_enqueue_style('megafish', get_template_directory_uri() . '/css/megafish.css');
     wp_enqueue_style('magnific-popup', get_template_directory_uri() . '/css/magnific-popup.css');
 
