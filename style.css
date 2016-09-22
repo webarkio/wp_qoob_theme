@@ -566,6 +566,7 @@ input[type="submit"]:hover {
     border-color: #fff;
     background-color: #0084ff;
     color: #fff;
+    text-decoration: none;
 }
 
 .btn.inverse:hover,
