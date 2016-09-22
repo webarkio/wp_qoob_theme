@@ -204,7 +204,7 @@
         "url": "%theme_url%/blocks/testimonial_grid/"
     }, {
         "name": "text",
-        "url": "%theme_url%/blocks/call_to_action_bg/"
+        "url": "%theme_url%/blocks/text/"
     }, {
         "name": "text_image_left",
         "url": "%theme_url%/blocks/text_image_left/"
