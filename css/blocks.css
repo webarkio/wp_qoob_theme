@@ -2682,13 +2682,13 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 .template-carousel .owl-nav .owl-prev {
     left: -7.8rem;
     top: 0;
-    background: transparent url(../images/video_carousel_arrow.png) no-repeat;
+    background: transparent url(../images/video_carousel_arrow.png) no-repeat !important;
 }
 
 .template-carousel .owl-nav .owl-next {
     right: -7.8rem;
     top: 0;
-    background: transparent url(../images/video_carousel_arrow.png) no-repeat;
+    background: transparent url(../images/video_carousel_arrow.png) no-repeat !important;
     transform: rotate(180deg);
 }
  .template-carousel .item-template {
@@ -2733,10 +2733,10 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
     }
     .template-carousel .owl-nav .owl-prev {
         left: 0.2rem;
-        background: transparent url(../images/prev.png) no-repeat;
+        background: transparent url(../images/prev.png) no-repeat !important;
     }
     .template-carousel .owl-nav .owl-next {
-        background: transparent url(../images/next.png) no-repeat;
+        background: transparent url(../images/next.png) no-repeat !important;
     }
 }
 
@@ -2762,10 +2762,10 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
     }
     .template-carousel .owl-nav .owl-prev {
         left: 0.2rem;
-        background: transparent url(../images/prev.png) no-repeat;
+        background: transparent url(../images/prev.png) no-repeat !important;
     }
     .template-carousel .owl-nav .owl-next {
-        background: transparent url(../images/next.png) no-repeat;
+        background: transparent url(../images/next.png) no-repeat !important;
     }
 }
 
@@ -2788,10 +2788,10 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
     }
     .template-carousel .owl-nav .owl-prev {
         left: 0.2rem;
-        background: transparent url(../images/prev.png) no-repeat;
+        background: transparent url(../images/prev.png) no-repeat !important;
     }
     .template-carousel .owl-nav .owl-next {
-        background: transparent url(../images/next.png) no-repeat;
+        background: transparent url(../images/next.png) no-repeat !important;
     }
 }
 
@@ -2823,10 +2823,10 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
     }
     .template-carousel .owl-nav .owl-prev {
         left: 0.2rem;
-        background: transparent url(../images/prev.png) no-repeat;
+        background: transparent url(../images/prev.png) no-repeat !important;
     }
     .template-carousel .owl-nav .owl-next {
-        background: transparent url(../images/next.png) no-repeat;
+        background: transparent url(../images/next.png) no-repeat !important;
     }
     .header-block {
         font-size: 4.6rem;
@@ -2879,13 +2879,13 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 .template-carousel-v2.ver-two .owl-nav .owl-prev {
     left: -7.8rem;
     top: 0;
-    background: transparent url(../images/video_carousel_arrow_v2.png) no-repeat;
+    background: transparent url(../images/video_carousel_arrow_v2.png) no-repeat !important;
 }
 
 .template-carousel-v2.ver-two .owl-nav .owl-next {
     right: -7.8rem;
     top: 0;
-    background: transparent url(../images/video_carousel_arrow_v2.png) no-repeat;
+    background: transparent url(../images/video_carousel_arrow_v2.png) no-repeat !important;
     transform: rotate(180deg);
 }
  .template-carousel-v2 .item-template {
@@ -2932,10 +2932,10 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
     }
     .template-carousel-v2.ver-two .owl-nav .owl-prev {
         left: 0.2rem;
-        background: transparent url(../images/prev.png) no-repeat;
+        background: transparent url(../images/prev.png) no-repeat !important;
     }
     .template-carousel-v2.ver-two .owl-nav .owl-next {
-        background: transparent url(../images/next.png) no-repeat;
+        background: transparent url(../images/next.png) no-repeat !important;
     }
 }
 
@@ -2958,10 +2958,10 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
     }
     .template-carousel-v2.ver-two .owl-nav .owl-prev {
         left: 0.2rem;
-        background: transparent url(../images/prev.png) no-repeat;
+        background: transparent url(../images/prev.png) no-repeat !important;
     }
     .template-carousel-v2.ver-two .owl-nav .owl-next {
-        background: transparent url(../images/next.png) no-repeat;
+        background: transparent url(../images/next.png) no-repeat !important;
     }
 }
 
@@ -2984,10 +2984,10 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
     }
     .template-carousel-v2.ver-two .owl-nav .owl-prev {
         left: 0.2rem;
-        background: transparent url(../images/prev.png) no-repeat;
+        background: transparent url(../images/prev.png) no-repeat !important;
     }
     .template-carousel-v2.ver-two .owl-nav .owl-next {
-        background: transparent url(../images/next.png) no-repeat;
+        background: transparent url(../images/next.png) no-repeat !important;
     }
 }
 
@@ -3007,10 +3007,10 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
     }
     .template-carousel-v2.ver-two .owl-nav .owl-prev {
         left: 0.2rem;
-        background: transparent url(../images/prev.png) no-repeat;
+        background: transparent url(../images/prev.png) no-repeat !important;
     }
     .template-carousel-v2.ver-two .owl-nav .owl-next {
-        background: transparent url(../images/next.png) no-repeat;
+        background: transparent url(../images/next.png) no-repeat !important;
     }
     .header-block {
         font-size: 4.6rem;
@@ -3406,13 +3406,13 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 .video-carousel .owl-nav .owl-prev {
     left: -7.8rem;
     top: 0;
-    background: transparent url(../images/video_carousel_arrow.png) no-repeat;
+    background: transparent url(../images/video_carousel_arrow.png) no-repeat !important;
 }
 
 .video-carousel .owl-nav .owl-next {
     right: -7.8rem;
     top: 0;
-    background: transparent url(../images/video_carousel_arrow.png) no-repeat;
+    background: transparent url(../images/video_carousel_arrow.png) no-repeat !important;
     transform: rotate(180deg);
 }
 
@@ -3450,11 +3450,11 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 
     .video-carousel .owl-nav .owl-prev {
         left: 0.2rem;
-        background: transparent url(../images/prev.png) no-repeat;
+        background: transparent url(../images/prev.png) no-repeat !important;
     }
 
     .video-carousel .owl-nav .owl-next {
-        background: transparent url(../images/next.png) no-repeat;
+        background: transparent url(../images/next.png) no-repeat !important;
     }
 }
 /* Landscape phone to portrait tablet */
@@ -3479,11 +3479,11 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 
     .video-carousel .owl-nav .owl-prev {
         left: 0.2rem;
-        background: transparent url(../images/prev.png) no-repeat;
+        background: transparent url(../images/prev.png) no-repeat !important;
     }
 
     .video-carousel .owl-nav .owl-next {
-        background: transparent url(../images/next.png) no-repeat;
+        background: transparent url(../images/next.png) no-repeat !important;
     }
 }
 /* Landscape phones and down */
@@ -3508,11 +3508,11 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 
     .video-carousel .owl-nav .owl-prev {
         left: 0.2rem;
-        background: transparent url(../images/prev.png) no-repeat;
+        background: transparent url(../images/prev.png) no-repeat !important;
     }
 
     .video-carousel .owl-nav .owl-next {
-        background: transparent url(../images/next.png) no-repeat;
+        background: transparent url(../images/next.png) no-repeat !important;
     }
 }
 /*--------------------------------------------------------------
