@@ -232,9 +232,6 @@
     }],
     "res": {
         "css": [{
-            "name": "qoob_theme_css",
-            "url": "%theme_url%/css/blocks.css"
-        }, {
             "name": "entypo_css",
             "url": "%theme_url%/blocks/entypo/assets/css/entypo.css",
             "use": {

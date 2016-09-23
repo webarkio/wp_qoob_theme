@@ -60,7 +60,7 @@
         "type": "image"
     }],
     "defaults": {
-        "bg_video": "http://webark.com/qoob/blocks/default/media/assets/videos/cube_girl.mp4",
+        "bg_video": "%block_url(assets)%/assets/videos/cube_girl.mp4",
         "logo": "%theme_url%/images/qoob_main_logo.png",
         "header": "Realtime Frontend Page Builder of New Generation",
         "text": "Even a little child can make an amazing website",
@@ -95,12 +95,5 @@
         "type": "image",
         "src": "%block_url%/assets/img/mobile-bg.jpg",
         "tags": ["preview, wall"]
-    },
-    {
-        "type": "video",
-        "src": "http://qoob.it/wp-content/uploads/2016/07/cube_girl.mp4",
-        "title": "Cube Girl",
-        "preview": "%block_url%/assets/videos/cube_girl_preview.png",
-        "tags": ["cube"]
     }]
 }

@@ -342,7 +342,7 @@ function qoob_theme_scripts() {
     wp_enqueue_style('qoob-theme-style', get_stylesheet_uri());
     wp_enqueue_style('qoob-theme-carousel-css', get_template_directory_uri() . '/css/carousel.css');
 	wp_enqueue_style('qoob-theme-collapse-css', get_template_directory_uri() . '/css/collapse.css');
-    
+    wp_enqueue_style('blocks', get_template_directory_uri() . '/css/blocks.css');
     wp_enqueue_style('bootstrap-progressbar', get_template_directory_uri() . '/css/bootstrap-progressbar.css');
 
 	wp_enqueue_style('owl-carousel', get_template_directory_uri() . '/css/owl.carousel.min.css');
