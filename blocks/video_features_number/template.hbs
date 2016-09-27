@@ -29,19 +29,22 @@
                     </div>
                 </div>
                 <script type="text/javascript">
-                    var url = "{{url}}",
+                    jQuery( document ).ready(function() {
+                        var url = "{{url}}",
                         format = url.substring(url.lastIndexOf('.') + 1, url.length);
                         typevideo = "video/" + (format === 'ogv' ? 'ogg' : format) + "";
                     
-                    jQuery(".video-element-{{order}}-{{id}}").find('source').attr("type", typevideo);
-                    var waypoint = new Waypoint({
-                        element: document.getElementsByClassName('center-block-{{order}}-{{id}}'),
-                        handler: function() {
-                            var video = document.getElementsByClassName('video-element-{{order}}-{{id}}');
-                            video[0].play();
-                            this.destroy();
-                        },
-                        offset: '75%'
+                        jQuery(".video-element-{{order}}-{{id}}").find('source').attr("type", typevideo);
+                        
+                        var waypoint = new Waypoint({
+                            element: document.getElementsByClassName('center-block-{{order}}-{{id}}'),
+                            handler: function() {
+                                var video = document.getElementsByClassName('video-element-{{order}}-{{id}}');
+                                video[0].play();
+                                this.destroy();
+                            },
+                            offset: '75%'
+                        });
                     });
                 </script>
             {{/each_with_sort}}
