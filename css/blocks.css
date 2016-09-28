@@ -1475,20 +1475,14 @@
 	}
 }
 
-/*--------------------------------------------------------------
-# Landing background video
---------------------------------------------------------------*/
 .header-block-bg-video {
 	position: relative;
 	text-align: center;
 	background-size: cover !important;
-	background-repeat: no-repeat;
-	background-position: center center;
 	overflow: hidden;
 }
 
 .header-block-bg-video .container {
-	display: table;
  	height: 100%;
  	width: 100%;
     z-index: 999;
@@ -1496,8 +1490,6 @@
 
 .header-block-bg-video .container .row {
 	position: relative;
-	display: table-cell;
-    vertical-align: middle;
 }
 
 .bg-video-title h1 {
@@ -1539,10 +1531,12 @@
 
 .custom-video-wrapper {
 	display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -99999999;
+	height: 150%;
+	width: auto;
+	position: absolute;
+	left: 0;
+	top: -100px;
+	z-index: -99999999;
 }
 
 .custom-video-wrapper-overlay {
@@ -1556,12 +1550,7 @@
     opacity: .3;
     z-index: -1;
 }
-.header-block-bg-video .btn-header-wrap .btn {
-		margin-right: 16rem;
-}
-.header-block-bg-video .btn-header-wrap .btn:last-child {
-		margin-right: 0;
-}
+
 @media (max-width: 1024px) {
 	.header-block-bg-video {
      	padding: 10.8rem 0 12.5rem;
@@ -1575,53 +1564,28 @@
 		margin-top: 0;
 	}
 
+	.header-block-bg-video .btn1 {
+		margin-left: 0rem;
+	}
+
 	.header-block-bg-video .btn {
 	    padding: 2.2rem 3.5rem;
 	}
 }
 
-@media only screen and (max-width: 1280px) and (min-height: 801px) {
-	@media (max-aspect-ratio: 16/9) {
-		.header-block-bg-video {
-			width: auto;
-			height: 100% !important;
-			top: -100px;
-	  	}
-	}
-}
-
-@media (min-width:769px) and (max-width:1024px){
-	.header-block-bg-video {
-		width: auto;
-		height: 100% !important;
-		top: -100px;
-  	}
-}
-
 @media (min-width: 1024px) {
 	.header-block-bg-video {
-		background: none !important;
-		position: relative;
-		padding-bottom: 56.25%;
-		padding-top: 25px;
-		height: 0;
-		overflow: hidden;
-	}
-	.header-block-bg-video .btn {
-		margin: auto;
+		height: 100vh;
+		background: none!important;
 	}
 }
 
-@media (max-width: 800px) {
-	.header-block-bg-video .container {
-		max-width: 75rem;
-	}
+@media (max-width: 531px) {
 	.header-block-bg-video {
 		text-align: left;
 	}
 	.header-block-bg-video .btn {
 		margin-top: 1rem;
-		margin: auto;
 	}
 
 	.header-block-bg-video .btn-header-wrap .btn:first-child {
@@ -1652,16 +1616,6 @@
 	.header-block-bg-video .btn-header-wrap {
     	margin-top: 5.3rem;
 	}
-}
-/*Safari 9+ style*/
-_::-webkit-:not(:root:root), .custom-video-wrapper {
-	z-index: -9;
-}
-_::-webkit-:not(:root:root), .custom-video-wrapper-overlay {
-	z-index: 0;
-}
-_::-webkit-:not(:root:root), .header-block-bg-video .container .row{
-	z-index: 1;
 }
 /*--------------------------------------------------------------
 # landing mac
