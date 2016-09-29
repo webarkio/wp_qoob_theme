@@ -94,6 +94,7 @@
 	.header-block-bg-video .btn {
 	    padding: 2.2rem 3.5rem;
 	}
+
 }
 
 @media (min-width: 1024px) {
@@ -103,7 +104,7 @@
 	}
 }
 
-@media (max-width: 531px) {
+@media (max-width: 578px) {
 	.header-block-bg-video {
 		text-align: left;
 	}
@@ -117,12 +118,6 @@
 
 	.header-block-bg-video .container .row {
 		height: 100% !important;
-	}
-
-	.header-block-bg-video .header-block {
-    	font-size: 3.6rem;
-    	padding-left: 17px;
-    	line-height: 5.5rem;
 	}
 
 	.bg-video-text {
@@ -139,8 +134,32 @@
 	.header-block-bg-video .btn-header-wrap {
     	margin-top: 5.3rem;
 	}
+
+	.header-block-bg-video .btn-header-wrap > a {
+		float: none !Important;
+	}
 }
 
+@media (max-height: 767px) and (max-width: 768px) {
+	.header-block-bg-video .header-block {
+		text-align: left;
+	    padding-left: 3.6rem;
+	    line-height: 5.5rem;
+	}
+
+	.header-block-bg-video .bg-video-text {
+		text-align: left;
+		padding-left: 3.6rem;
+	}
+
+	.header-block-bg-video .btn-header-wrap > a:nth-child(1) {
+		float: left;
+	}
+
+	.header-block-bg-video .btn-header-wrap > a:nth-child(2) {
+		float: right;
+	}
+}
 /*Safari 9+ style*/
 _::-webkit-:not(:root:root), .custom-video-wrapper {
 	z-index: -9;

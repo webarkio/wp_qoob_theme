@@ -65,29 +65,61 @@
     font-weight: bold;
 }
 
-@media (max-width: 640px) { 
-    .video-features.number .video-col {
-        margin-bottom: 44px;
-    }
+@media screen and (max-width : 1025px){
     .video-features.number .video-element {
-        width: 57.5rem;
+        width: 61rem;
     }
     .video-features.number .video-col .media-video-container {
-        width: 57.5rem;
+        width: 61rem;
     }
 }
-@media (max-width: 480px) { 
+
+@media (max-width: 767px) { 
+    .video-features.number .video-col {
+        margin-bottom: 44px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     .video-features.number .video-element {
         width: 100%;
-        height: 100%;
+    }
+
+    .video-features .media-video-container {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 1.7rem;
+        padding-right: 1.7rem;
+    }
+
+    .video-features.number .video-col .media-video-container::before {
+        left: 30px;
+    }
+
+    .video-features.number .video-col .media-video-container,
+    .video-features.number .video-element {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) { 
+    .video-features .media-video-container {
+        margin-bottom: 3rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .video-features.number .video-col {
+        margin-bottom: 8rem;
+    }
+    .video-features.number .grid-content-copy {
+        width: 100%;
+    }
+    .video-features.number .video-element {
+        width: 100%;
     }
     .video-features.number .video-col .media-video-container {
         width: 100%;
-    }
-    .video-features .media-video-container {
-        margin-bottom: 3rem;
-        margin-left: 0;
-        margin-right: 0;
     }
 }
 
@@ -120,28 +152,4 @@
         height: 44rem;
     }
 
-}
-
-@media (min-width: 992px) {
-    .video-features.number .video-col {
-        margin-bottom: 8rem;
-    }
-    .video-features.number .grid-content-copy {
-        width: 100%;
-    }
-    .video-features.number .video-element {
-        width: 100%;
-    }
-    .video-features.number .video-col .media-video-container {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width : 1025px){
-    .video-features.number .video-element {
-        width: 61rem;
-    }
-    .video-features.number .video-col .media-video-container {
-        width: 61rem;
-    }
 }

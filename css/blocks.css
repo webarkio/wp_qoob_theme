@@ -144,15 +144,18 @@
 .call-to-action-bg.ver-two.action-overlay:before {
 	background-color: rgba(0,0,0,0.7);
 }
-.call-to-action-bg.ver-two .header-desc {
-	font-family: "OpenSans-ExtraBold", sans-serif;
-	font-weight: 800;
-}
+
 .call-to-action-bg.ver-two .btn {
 	border: 3px solid !important;
 	margin-top: 35px;
 }
 
+@media (max-height: 767px) and (max-width: 768px) {
+	.call-to-action-bg .header-desc {
+		text-align: left;
+		padding-left: 1.8rem;
+	}
+}
 /*--------------------------------------------------------------
 # Call to action bg
 --------------------------------------------------------------*/
@@ -1571,6 +1574,7 @@
 	.header-block-bg-video .btn {
 	    padding: 2.2rem 3.5rem;
 	}
+
 }
 
 @media (min-width: 1024px) {
@@ -1580,7 +1584,7 @@
 	}
 }
 
-@media (max-width: 531px) {
+@media (max-width: 578px) {
 	.header-block-bg-video {
 		text-align: left;
 	}
@@ -1594,12 +1598,6 @@
 
 	.header-block-bg-video .container .row {
 		height: 100% !important;
-	}
-
-	.header-block-bg-video .header-block {
-    	font-size: 3.6rem;
-    	padding-left: 17px;
-    	line-height: 5.5rem;
 	}
 
 	.bg-video-text {
@@ -1616,6 +1614,41 @@
 	.header-block-bg-video .btn-header-wrap {
     	margin-top: 5.3rem;
 	}
+
+	.header-block-bg-video .btn-header-wrap > a {
+		float: none !Important;
+	}
+}
+
+@media (max-height: 767px) and (max-width: 768px) {
+	.header-block-bg-video .header-block {
+		text-align: left;
+	    padding-left: 3.6rem;
+	    line-height: 5.5rem;
+	}
+
+	.header-block-bg-video .bg-video-text {
+		text-align: left;
+		padding-left: 3.6rem;
+	}
+
+	.header-block-bg-video .btn-header-wrap > a:nth-child(1) {
+		float: left;
+	}
+
+	.header-block-bg-video .btn-header-wrap > a:nth-child(2) {
+		float: right;
+	}
+}
+/*Safari 9+ style*/
+_::-webkit-:not(:root:root), .custom-video-wrapper {
+	z-index: -9;
+}
+_::-webkit-:not(:root:root), .custom-video-wrapper-overlay {
+	z-index: 0;
+}
+_::-webkit-:not(:root:root), .header-block-bg-video .container .row{
+	z-index: 1;
 }
 /*--------------------------------------------------------------
 # landing mac
@@ -3641,29 +3674,61 @@
     font-weight: bold;
 }
 
-@media (max-width: 640px) { 
-    .video-features.number .video-col {
-        margin-bottom: 44px;
-    }
+@media screen and (max-width : 1025px){
     .video-features.number .video-element {
-        width: 57.5rem;
+        width: 61rem;
     }
     .video-features.number .video-col .media-video-container {
-        width: 57.5rem;
+        width: 61rem;
     }
 }
-@media (max-width: 480px) { 
+
+@media (max-width: 767px) { 
+    .video-features.number .video-col {
+        margin-bottom: 44px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     .video-features.number .video-element {
         width: 100%;
-        height: 100%;
+    }
+
+    .video-features .media-video-container {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 1.7rem;
+        padding-right: 1.7rem;
+    }
+
+    .video-features.number .video-col .media-video-container::before {
+        left: 30px;
+    }
+
+    .video-features.number .video-col .media-video-container,
+    .video-features.number .video-element {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) { 
+    .video-features .media-video-container {
+        margin-bottom: 3rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .video-features.number .video-col {
+        margin-bottom: 8rem;
+    }
+    .video-features.number .grid-content-copy {
+        width: 100%;
+    }
+    .video-features.number .video-element {
+        width: 100%;
     }
     .video-features.number .video-col .media-video-container {
         width: 100%;
-    }
-    .video-features .media-video-container {
-        margin-bottom: 3rem;
-        margin-left: 0;
-        margin-right: 0;
     }
 }
 
@@ -3696,30 +3761,6 @@
         height: 44rem;
     }
 
-}
-
-@media (min-width: 992px) {
-    .video-features.number .video-col {
-        margin-bottom: 8rem;
-    }
-    .video-features.number .grid-content-copy {
-        width: 100%;
-    }
-    .video-features.number .video-element {
-        width: 100%;
-    }
-    .video-features.number .video-col .media-video-container {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width : 1025px){
-    .video-features.number .video-element {
-        width: 61rem;
-    }
-    .video-features.number .video-col .media-video-container {
-        width: 61rem;
-    }
 }
 /*--------------------------------------------------------------
 # video full page
