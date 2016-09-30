@@ -167,6 +167,10 @@
 }
 
 @media (max-width: 680px) {
+	.header-block-bg-video {
+		height: auto;
+	}
+
 	.header-block-bg-video .btn-header-wrap > a:nth-child(2) {
 		float: none;
 	}
