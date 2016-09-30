@@ -66,11 +66,10 @@
 }
 
 @media screen and (max-width : 1025px){
-    .video-features.number .video-element {
-        width: 61rem;
-    }
+    .video-features.number .video-element,
     .video-features.number .video-col .media-video-container {
         width: 61rem;
+        height: auto;
     }
 }
 
@@ -99,6 +98,7 @@
     .video-features.number .video-col .media-video-container,
     .video-features.number .video-element {
         width: 100%;
+        height: auto;
     }
 }
 
