@@ -20,11 +20,16 @@
 </div>
 <style>
 	.header-block-{{id}} {
-		background: url('{{image}}') center center no-repeat;
+		background-image: url('{{image}}');
+		background-position: center center;
+		background-repeat:  no-repeat;
 	}
 
 	.iPad.header-block-{{id}} {
-		background: url('{{image}}') center center no-repeat !important;
+		background-image: url('{{image}}');
+		background-position: center center;
+		background-repeat:  no-repeat;
+		background-size: cover !important;
 	}
 </style>
 <script type="text/javascript">

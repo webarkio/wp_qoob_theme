@@ -1555,8 +1555,13 @@
 }
 
 @media (max-width: 1024px) {
+	.custom-video-wrapper {
+		display: none;
+	}
+
 	.header-block-bg-video {
      	padding: 10.8rem 0 12.5rem;
+     	height: 100vh;
  	}
 
 	.bg-video-logo {
@@ -1577,10 +1582,10 @@
 
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
 	.header-block-bg-video {
 		height: 100vh;
-		background: none!important;
+		background-image: none!important;
 	}
 }
 
@@ -1620,7 +1625,7 @@
 	}
 }
 
-@media (max-height: 767px) and (max-width: 768px) {
+@media (max-width: 768px) {
 	.header-block-bg-video .header-block {
 		text-align: left;
 	    padding-left: 3.6rem;
@@ -1638,6 +1643,12 @@
 
 	.header-block-bg-video .btn-header-wrap > a:nth-child(2) {
 		float: right;
+	}
+}
+
+@media (max-width: 680px) {
+	.header-block-bg-video .btn-header-wrap > a:nth-child(2) {
+		float: none;
 	}
 }
 /*Safari 9+ style*/
