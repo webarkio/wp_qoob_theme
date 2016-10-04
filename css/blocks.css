@@ -3689,6 +3689,7 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
     font-weight: bold;
 }
 
+
 @media screen and (max-width : 1025px){
     .video-features.number .video-element,
     .video-features.number .video-col .media-video-container {
@@ -3775,7 +3776,9 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
     .video-features.number .has-center-content {
         height: 44rem;
     }
-
+    .video-features.number .video-features-row {
+        margin-bottom: 8rem;
+    }
 }
 /*--------------------------------------------------------------
 # video full page

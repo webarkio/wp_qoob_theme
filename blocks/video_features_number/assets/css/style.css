@@ -65,6 +65,7 @@
     font-weight: bold;
 }
 
+
 @media screen and (max-width : 1025px){
     .video-features.number .video-element,
     .video-features.number .video-col .media-video-container {
@@ -151,5 +152,7 @@
     .video-features.number .has-center-content {
         height: 44rem;
     }
-
+    .video-features.number .video-features-row {
+        margin-bottom: 8rem;
+    }
 }
