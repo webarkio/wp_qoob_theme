@@ -2213,6 +2213,12 @@ img.mfp-img {
     margin-bottom: 1.8rem;
     /*arrow_list_widge_gray.png*/
 }
+.sidebar-docs .widget ul li.current_page_item {
+    font-weight: bold;
+}
+.sidebar-docs .widget ul li.current_page_item a {
+    color: #0084ff;
+}
 .sidebar-docs .widget ul.sub-menu {
     padding-left: 0;
     margin-left: 1.8rem;
@@ -2227,6 +2233,7 @@ img.mfp-img {
     margin: 0.6rem 0.8rem 0.7rem 0;
     background-color: transparent;
 }
+
 .page-docs {
     padding-left: 40px;
 }
