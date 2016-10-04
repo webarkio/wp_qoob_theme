@@ -333,7 +333,7 @@ add_action( 'customize_register', 'qoob_customize_register' );
  */
 function qoob_theme_scripts() {
     //grid system
-    wp_enqueue_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.css');
+    wp_enqueue_style('qoob_custom_bootstrap', get_template_directory_uri() . '/css/bootstrap.css');
     //fonts
     wp_enqueue_style('qoob-fonts', get_template_directory_uri() . '/css/fonts/fonts.css');
     wp_enqueue_style('megafish', get_template_directory_uri() . '/css/megafish.css');
