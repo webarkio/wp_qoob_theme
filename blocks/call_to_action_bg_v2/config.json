@@ -28,6 +28,11 @@
             "type": "text"
     },
     {
+            "name": "btn_onclick",
+            "label": "Button's onclick",
+            "type": "text"
+    },
+    {
         "name": "action_text",
         "label": "Action button text",
         "type": "text"
@@ -43,6 +48,7 @@
     }],
     "defaults": {
         "btn_id" : "",
+        "btn_onclick" : "",
         "header": "By the way…",
         "description" : "This web site was created with qoob!",
         "image" : "%block_url%/assets/img/call_to_action_bg2.jpg",

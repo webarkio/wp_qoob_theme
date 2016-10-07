@@ -17,7 +17,7 @@
 							<img alt="" src="{{image}}">
 						{{/if}}
 						</div>
-						<a href="{{linkbtn}}" {{#if btn_id }} id="{{btn_id}}" {{/if}} class="btn btn-action {{#ifCond disabled '==' '1'}}disabled{{/ifCond}}">{{textbtn}}</a>
+						<a href="{{linkbtn}}" {{#if btn_id }} id="{{btn_id}}" {{/if}} {{#if btn_onclick }} onclick="{{btn_onclick}}" {{/if}} class="btn btn-action {{#ifCond disabled '==' '1'}}disabled{{/ifCond}}">{{textbtn}}</a>
 					</li>
 					
 				{{/each_with_sort}}

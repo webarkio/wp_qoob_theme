@@ -41,6 +41,11 @@
             "label": "Button's id",
             "type": "text"
         },
+         {
+            "name": "btn_onclick",
+            "label": "Button's onclick",
+            "type": "text"
+        },
         {
             "name": "textbtn",
             "label": "Text button",
@@ -95,6 +100,7 @@
             "image" : "%block_url%/assets/img/wordpress.png",
             "title": "Wordpress",
             "btn_id" : "",
+            "btn_onclick" : "",
             "textbtn" : "Download",
             "linkbtn" : "#",
             "disabled" : 0,
@@ -104,6 +110,7 @@
             "image" : "%block_url%/assets/img/joomla.png",
             "title": "Joomla",
             "btn_id" : "",
+            "btn_onclick" : "",
             "textbtn" : "Coming soon",
             "linkbtn" : "#",
             "disabled" : 1,
@@ -113,6 +120,7 @@
             "image" : "%block_url%/assets/img/drupal.png",
             "title": "Drupal",
             "btn_id" : "",
+            "btn_onclick" : "",
             "textbtn" : "Coming soon",
             "linkbtn" : "#",
             "disabled" : 1,

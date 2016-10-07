@@ -31,6 +31,11 @@
             "type": "text"
         },
         {
+            "name": "btn_onclick",
+            "label": "Button's onclick",
+            "type": "text"
+        },
+        {
             "name": "inverse",
             "label": "Color Scheme",
             "options": [{
@@ -72,6 +77,7 @@
         "text": "Even a little child can make an amazing website",
         "buttons": [{
             "btn_id": "",
+            "btn_onclick": "",
             "title": "Try now",
             "action_url": "http://webark.com/qoob/clone.php",
             "inverse": "normal",
@@ -80,6 +86,7 @@
             "order": 0
         }, {
             "btn_id": "",
+            "btn_onclick": "",
             "title": "Download",
             "action_url": "http://webark.com/qoob/download",
             "inverse": "normal",
