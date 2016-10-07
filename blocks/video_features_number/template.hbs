@@ -7,7 +7,7 @@
         </div>
         {{#if features.length}}
             {{#each_with_sort features "order"}}
-                <div class="row">
+                <div class="row video-features-row">
                     <div class="col-lg-4 col-md-4 col-sm-12 video-col {{#ifIsNthItem nth=2}}  col-lg-push-8 col-md-push-8{{/ifIsNthItem}}">
                         <div class="has-center-content" data-number="{{number}}">
                             <div class="center-content">
@@ -22,7 +22,7 @@
                     </div>
                     <div class="col-lg-8 col-md-8 col-sm-12 video-col {{#ifIsNthItem nth=2}} level-two col-lg-pull-4 col-md-pull-4 {{/ifIsNthItem}}">
                         <div class="media-video-container">
-                            <video class="video-element video-element-{{order}}-{{id}}" style="visibility: visible;" loop controls poster="{{poster}}">
+                            <video class="video-element video-element-{{order}}-{{id}}" style="visibility: visible;" loop controls="true" poster="{{poster}}">
                                 <source src="{{url}}">
                             </video>
                         </div>

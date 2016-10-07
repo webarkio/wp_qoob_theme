@@ -35,7 +35,13 @@
                 "colorimage": "rgb(208, 208, 208)",
                 "val": "comingsoon"
             }]
-        },{
+        },
+        {
+            "name": "btn_id",
+            "label": "Button's id",
+            "type": "text"
+        },
+        {
             "name": "textbtn",
             "label": "Text button",
             "type": "text"
@@ -88,6 +94,7 @@
             "boxbg" : "release",
             "image" : "%block_url%/assets/img/wordpress.png",
             "title": "Wordpress",
+            "btn_id" : "",
             "textbtn" : "Download",
             "linkbtn" : "#",
             "disabled" : 0,
@@ -96,6 +103,7 @@
             "boxbg" : "comingsoon",
             "image" : "%block_url%/assets/img/joomla.png",
             "title": "Joomla",
+            "btn_id" : "",
             "textbtn" : "Coming soon",
             "linkbtn" : "#",
             "disabled" : 1,
@@ -104,6 +112,7 @@
             "boxbg" : "comingsoon",
             "image" : "%block_url%/assets/img/drupal.png",
             "title": "Drupal",
+            "btn_id" : "",
             "textbtn" : "Coming soon",
             "linkbtn" : "#",
             "disabled" : 1,

@@ -24,7 +24,13 @@
         "type": "accordion",
         "viewcontent": "standart",
         "viewType": "expand",
-        "settings": [{
+        "settings": [
+        {
+            "name": "btn_id",
+            "label": "Button's id",
+            "type": "text"
+        },
+        {
             "name": "inverse",
             "label": "Color Scheme",
             "options": [{
@@ -65,6 +71,7 @@
         "header": "Realtime Frontend Page Builder of New Generation",
         "text": "Even a little child can make an amazing website",
         "buttons": [{
+            "btn_id": "",
             "title": "Try now",
             "action_url": "http://webark.com/qoob/clone.php",
             "inverse": "normal",
@@ -72,6 +79,7 @@
             "hidebtn" : 1,
             "order": 0
         }, {
+            "btn_id": "",
             "title": "Download",
             "action_url": "http://webark.com/qoob/download",
             "inverse": "normal",

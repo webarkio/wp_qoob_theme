@@ -21,7 +21,13 @@
         "name": "parallax",
         "label": "Parallax Background",
         "type": "checkbox_switch"
-    }, {
+    }, 
+    {
+            "name": "btn_id",
+            "label": "Button's id",
+            "type": "text"
+    },
+    {
         "name": "action_text",
         "label": "Action button text",
         "type": "text"
@@ -36,6 +42,7 @@
         "tags": ["tablet"]
     }],
     "defaults": {
+        "btn_id" : "",
         "header": "By the way…",
         "description" : "This web site was created with qoob!",
         "image" : "%block_url%/assets/img/call_to_action_bg2.jpg",

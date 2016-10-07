@@ -12,7 +12,7 @@
 			</div>
 			<div class="col-lg-12 text-center btn-header-wrap">
 				{{#each_with_sort buttons "order"}}
-					<a href="{{action_url}}" class="btn btn{{order}} {{#ifCond inverse '==' 'inversed'}}inverse{{/ifCond}} br-white {{#ifCond hidebtn '==' '1'}}hidden-xs{{/ifCond}}" {{#if target}}target="blank"{{/if}}>{{title}}</a>
+					<a href="{{action_url}}" {{#if btn_id }} id="{{btn_id}}" {{/if}} class="btn btn{{order}} {{#ifCond inverse '==' 'inversed'}}inverse{{/ifCond}} br-white {{#ifCond hidebtn '==' '1'}}hidden-xs{{/ifCond}}" {{#if target}}target="blank"{{/if}}>{{title}}</a>
 				{{/each_with_sort}}
 			</div>
 		</div>
