@@ -16,6 +16,7 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info container">
 			<?php dynamic_sidebar( 'footer' ); ?>
+			<?php if ( has_nav_menu( 'footer' ) ): ?>
 				<?php 
                         wp_nav_menu( array(
                             'theme_location'  => 'footer',
@@ -36,6 +37,7 @@
                             'walker'          => '',
                         ) ); 
                 ?>
+             <?php endif;?>
 			<?php echo get_theme_mod('footer_text'); ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
