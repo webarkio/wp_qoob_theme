@@ -3026,7 +3026,7 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 .testimonial-block.gray-bg {
     background-color: #efefef;
 }
-.testimonial-block h1 {
+.testimonial-block .header-block {
     text-align: center;
     text-transform: uppercase;
 }
@@ -3193,7 +3193,7 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 /*--------------------------------------------------------------
 ## Testimonial center carousel 
 --------------------------------------------------------------*/
-.testimonial-block h1 {
+.testimonial-block .header-block {
     text-align: center;
     text-transform: uppercase;
 }

@@ -1,7 +1,7 @@
 /*--------------------------------------------------------------
 ## Testimonial center carousel 
 --------------------------------------------------------------*/
-.testimonial-block h1 {
+.testimonial-block .header-block {
     text-align: center;
     text-transform: uppercase;
 }
