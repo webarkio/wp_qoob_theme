@@ -29,7 +29,7 @@
 	height: 100vh;
 }
 
-.call-to-action-bg h1 {
+.call-to-action-bg .header-block {
 	text-transform: uppercase;
 	color: #fff;
 }
