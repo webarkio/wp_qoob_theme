@@ -30,7 +30,7 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'qoob' ); ?></a>
 
-	<header id="masthead" class="site-header" role="banner">
+	<header id="masthead" class="site-header">
 		<div class="container">
 			<div class="site-branding">
 				<?php
@@ -47,7 +47,7 @@
                             <i class="line"></i>
                         </span>
                     </a>
-			<nav id="site-navigation" class="main-navigation" role="navigation">
+			<nav id="site-navigation" class="main-navigation">
 				<?php 
                         wp_nav_menu( array(
                             'theme_location'  => 'primary',
