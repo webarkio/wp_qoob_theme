@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="header-block">{{header}}</h1>
+                <h2 class="header-block">{{header}}</h2>
             </div>
         </div>
         {{#if features.length}}
@@ -22,7 +22,7 @@
                     </div>
                     <div class="col-lg-8 col-md-8 col-sm-12 video-col {{#ifIsNthItem nth=2}} level-two col-lg-pull-4 col-md-pull-4 {{/ifIsNthItem}}">
                         <div class="media-video-container">
-                            <video class="video-element video-element-{{order}}-{{id}}" style="visibility: visible;" loop controls="true" poster="{{poster}}">
+                            <video class="video-element video-element-{{order}}-{{id}}" style="visibility: visible;" loop controls poster="{{poster}}">
                                 <source src="{{url}}">
                             </video>
                         </div>

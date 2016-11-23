@@ -53,7 +53,7 @@
 	padding-top: 5px;
 	padding-left: 30px;
 }
-.call-to-action .header-block h1 {
+.call-to-action .header-block {
 	text-align: center;
 	/*margin-bottom: 40px;*/
 	text-transform: uppercase;
@@ -96,7 +96,7 @@
 	height: 100vh;
 }
 
-.call-to-action-bg h1 {
+.call-to-action-bg .header-block {
 	text-transform: uppercase;
 	color: #fff;
 }
@@ -165,7 +165,7 @@
 	padding-bottom: 14.0rem;
 }
 
-.call-to-action-no-img .header-block h1 {
+.call-to-action-no-img .header-block {
 	text-transform: uppercase;
 	text-align: center;
 	line-height: 7.1rem;
@@ -492,7 +492,6 @@
 .contact-fluid.no-map form button[type="submit"] {
     margin-top: 0.4rem;
 }
-
 .contact-button {
 	padding: 0;
 }
@@ -3027,7 +3026,7 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 .testimonial-block.gray-bg {
     background-color: #efefef;
 }
-.testimonial-block h1 {
+.testimonial-block .header-block {
     text-align: center;
     text-transform: uppercase;
 }
@@ -3194,7 +3193,7 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 /*--------------------------------------------------------------
 ## Testimonial center carousel 
 --------------------------------------------------------------*/
-.testimonial-block h1 {
+.testimonial-block .header-block {
     text-align: center;
     text-transform: uppercase;
 }
