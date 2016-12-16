@@ -2266,3 +2266,101 @@ img.mfp-img {
 .page-docs .entry-header .entry-title {
     margin-top: 0;
 }
+/*--------------------------------------------------------------
+# Page 404
+--------------------------------------------------------------*/
+.page-404 {
+    margin-bottom: 130px;
+}
+
+.page-404 h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #73808c;
+}
+
+.page-404 h3 {
+    text-align: center;
+    color: #73808c;
+    margin-top: 40px;
+    margin-bottom: 74px;
+}
+
+.page-404 p {
+    text-align: center;
+    color: #73808c;
+    margin-bottom: 7.2rem;
+}
+
+.page-404 .col-container {
+    overflow: hidden;
+}
+
+.page-404 .col-form {
+    float: left;
+    width: 70.5%;
+    overflow: hidden;
+}
+
+.page-404 .col-button {
+    float: left;   
+}
+
+.page-404 .searchform .input-text {
+    width: calc(100% - 132px);
+    float: left;
+    padding: 20px 26px 20px 36px;
+    background-color: #fff;
+    border-top: solid 2px #898989;
+    border-bottom: solid 2px #898989;
+    border-left: solid 2px #898989;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 100px;
+}
+
+.page-404 .searchform input.input-text::-webkit-input-placeholder {
+    color: #898989;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-family: "OpenSans-Bold", sans-serif;
+}
+
+.page-404 .searchform .button-submit {
+    float: left;
+    width: 112px;
+    border: none;
+    color: #fff;
+    background-color: #0084ff;
+    border-top-left-radius: 0;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 0;
+    padding: 2.3rem 4.5rem;
+    margin-right: 20px;
+}
+
+.page-404 .searchform .button-submit i {
+    font-size: 25px;
+}
+
+@media (max-width: 1199px) {
+    .page-404 .col-form {
+        width: 100%;
+        float: none;
+        margin-bottom: 85px;
+    }
+    .page-404 .col-button {
+        margin-top: 60px;
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+    .page-404 .searchform .input-text {
+        width: calc(100% - 112px);
+    }
+    .page-404 .searchform .button-submit {
+        margin-right: 0;
+    }
+}
