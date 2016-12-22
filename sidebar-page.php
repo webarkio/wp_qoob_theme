@@ -12,6 +12,6 @@ if ( ! is_active_sidebar( 'sidebar-page' ) ) {
 }
 ?>
 
-<aside id="secondary" class="widget-area col-lg-3 page-sidebar" role="complementary">
+<aside id="secondary" class="widget-area col-lg-3 sidebar-docs" role="complementary">
 	<?php dynamic_sidebar( 'sidebar-page' ); ?>
 </aside><!-- #secondary -->

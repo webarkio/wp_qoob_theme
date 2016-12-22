@@ -15,7 +15,7 @@
 			get_sidebar('page');
 
 		?>
-		<article id="post-<?php the_ID(); ?>" <?php post_class('col-lg-9'); ?>>
+		<article id="post-<?php the_ID(); ?>" <?php post_class('col-lg-9 page-docs'); ?>>
 			<header class="entry-header">
 				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 			</header><!-- .entry-header -->
