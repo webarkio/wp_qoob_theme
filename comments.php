@@ -107,7 +107,7 @@ if ( post_password_required() ) {
 	}
 
 	comment_form(array(
-		"title_reply" => "Leave a Comment",
+		"title_reply" => esc_html__( 'Leave a Comment', 'qoob' ),
 		"comment_notes_before" => "",
 		"fields" =>  array(
 				  'author' =>

@@ -17,11 +17,11 @@ get_header('fixed'); ?>
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
-				<h2><?php 
+				<h2><?php
 				global $wp_query;
 
 				$wp_query->is_posts_page ?  wp_title('') : bloginfo('name');
-					
+
 				?></h2>
 			</div>
 		</div>
@@ -56,8 +56,13 @@ get_header('fixed'); ?>
 		endif; ?>
 
 		</main><!-- #main -->
-		<?php 
-		    qoob_pagination();
+		<?php
+			the_posts_pagination(array(
+				'prev_text'          => '',
+				'next_text'          => '',
+				'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'qoob' ) . ' </span>'
+			));
+
 		?>
 	</div><!-- #primary -->
 

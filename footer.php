@@ -38,7 +38,7 @@
                         ) ); 
                 ?>
              <?php endif;?>
-			<?php echo get_theme_mod('footer_text'); ?>
+			<?php echo esc_attr(get_theme_mod('footer_text')); ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

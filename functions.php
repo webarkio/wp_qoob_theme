@@ -251,60 +251,6 @@ function qoob_search_form( $form ) {
     return $form;
 }
 add_filter( 'get_search_form', 'qoob_search_form' );
-
-if (!function_exists('qoob_pagination')) {
-    /**
-     * display pagination (1 2 3 ...) instead of previous, next of wordpress style.
-     * 
-     * @param string $pagination_align_class
-     * @return string the content already echo
-     */
-    function qoob_pagination($total = 1, $pagination_align_class = 'pagination-center pagination-row') 
-    {
-        global $wp_query;
-        $current_page = (get_query_var('paged')) ? get_query_var('paged') : 1; 
-            $args = array(
-                'posts_per_page' => get_option('posts_per_page'), 
-                'paged' => $current_page 
-            );
-            $postlist = new WP_Query($args);
-            $big = 999999999;
-            $pagination_array = paginate_links(array(
-                'base' => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
-                'format' => '/page/%#%',
-                'current' => max(1, get_query_var('paged')),
-                'total' => $postlist->max_num_pages,
-                'prev_text' => __('', 'qoob'),
-                'next_text' => __('', 'qoob'),
-                'type' => 'array',
-                'add_args' => false
-            ));
-
-            unset($big);
-
-            if (is_array($pagination_array) && !empty($pagination_array)) {
-                echo '<nav class="' . $pagination_align_class . '">';
-                echo '<ul class="pagination blog list-style-none">';
-                foreach ($pagination_array as $page) {
-                    echo '<li';
-                    if (strpos($page, '<a') === false && strpos($page, '&hellip;') === false) {
-                        echo ' class="active"';
-                    }
-                    echo '>';
-                    if (strpos($page, '<a') === false && strpos($page, '&hellip;') === false) {
-                        echo '<span>' . $page . '</span>';
-                    } else {
-                        echo $page;
-                    }
-                    echo '</li>';
-                }
-                echo '</ul>';
-                echo '</nav>';
-            }
-
-            unset($page, $pagination_array);
-    }// qoob_pagination
-}
 /**
 * Register sidebar for footer
 *
@@ -322,12 +268,6 @@ function qoob_theme_footer_widgets_init() {
         'after_title'   => '</h2>',
     ));
 }
-
-function qoob_customize_register( $wp_customize ) {
-   
-}
-add_action( 'customize_register', 'qoob_customize_register' );
-
 
 /**
  * Enqueue scripts and styles.
@@ -365,7 +305,6 @@ function qoob_theme_scripts() {
     wp_enqueue_script('bootstrap-progressbar', get_template_directory_uri() . '/js/bootstrap-progressbar.js', array('jquery'));
     wp_enqueue_script('jquery-waypoints', get_template_directory_uri() . '/js/jquery.waypoints.js', array('jquery'));
     wp_enqueue_script('qoob-theme-common', get_template_directory_uri() . '/js/common.js', array('jquery'));
-    // wp_enqueue_script('qoob-theme-contact', get_template_directory_uri() . '/js/contact.js', array('jquery'));
 
     wp_enqueue_script('qoob-theme-carousel-js', get_template_directory_uri() . '/js/carousel.js', array('jquery'));
 	wp_enqueue_script('qoob-theme-collapse-js', get_template_directory_uri() . '/js/collapse.js', array('jquery'));

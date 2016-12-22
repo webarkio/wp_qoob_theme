@@ -79,8 +79,8 @@ class Qoob_Social_Icons extends WP_Widget {
             $name = $this->get_field_name($key);
             ?>
             <p>
-                <label for="<?php echo $id; ?>"><?php echo ucfirst($key); ?></label> 
-                <input class="widefat" id="<?php echo $id; ?>" name="<?php echo $name; ?>" type="text" value="<?php echo esc_attr($value); ?>">
+                <label for="<?php echo esc_attr($id); ?>"><?php echo ucfirst($key); ?></label> 
+                <input class="widefat" id="<?php echo esc_attr($id); ?>" name="<?php echo esc_attr($name); ?>" type="text" value="<?php echo esc_attr($value); ?>">
             </p>
             <?php
         }
