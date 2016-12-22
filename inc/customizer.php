@@ -20,7 +20,7 @@ function qoob_theme_customize_register( $wp_customize ) {
 	    'priority' => 10,
 	    'capability' => 'edit_theme_options',
 	    'theme_supports' => '',
-	    'title' => __( 'Blog Settings', 'qoob' ),
+	    'title' => esc_html__( 'Blog Settings', 'qoob' ),
 	    'description' => '',
 	    'panel' => '',
 	));
@@ -38,10 +38,10 @@ function qoob_theme_customize_register( $wp_customize ) {
 		    $wp_customize,
 		    'blog_image_bg',
 		    array(
-		        'label'      => __( 'Upload a blog background', 'qoob' ),
+		        'label'      => esc_html__( 'Upload a blog background', 'qoob' ),
 		        'section'    => 'blog_settings',
 		        'settings'   => 'blog_image_bg',
-		        'description' => __( 'Your theme recommends a blog background size of 1900 x 370 pixels.', 'qoob' ),
+		        'description' => esc_html__( 'Your theme recommends a blog background size of 1900 x 370 pixels.', 'qoob' ),
 		        'context'    => 'your_setting_context',
 		    )
 		)
@@ -64,8 +64,8 @@ function qoob_theme_customize_register( $wp_customize ) {
 		  		'type' => 'radio',
 		  		'section' => 'blog_settings',
 		  		'choices' => array(
-	            	'sidebar_right'   => __( 'With sidebar', 'qoob' ),
-	            	'no_sidebar'  => __( 'Without sidebar', 'qoob' )
+	            	'sidebar_right'   => esc_html__( 'With sidebar', 'qoob' ),
+	            	'no_sidebar'  => esc_html__( 'Without sidebar', 'qoob' )
 	       		),
 			)
 		)
@@ -75,7 +75,7 @@ function qoob_theme_customize_register( $wp_customize ) {
 	    'priority' => 10,
 	    'capability' => 'edit_theme_options',
 	    'theme_supports' => '',
-	    'title' => __( 'Footer Settings', 'qoob' ),
+	    'title' => esc_html__( 'Footer Settings', 'qoob' ),
 	    'description' => '',
 	    'panel' => '',
 	));
@@ -97,7 +97,7 @@ function qoob_theme_customize_register( $wp_customize ) {
 	) );
 
 	$wp_customize->add_section( 'my_social_settings', array(
-		'title'    => __('Social Media Icons', 'qoob'),
+		'title'    => esc_html__('Social Media Icons', 'qoob'),
 		'panel'       => 'nav_menus',
 		'priority' => 5,
 	));
@@ -106,7 +106,7 @@ function qoob_theme_customize_register( $wp_customize ) {
 	$priority = 5;
 
 	foreach($social_sites as $social_site) {
-		$wp_customize->add_setting( "$social_site", array(
+		$wp_customize->add_setting( $social_site, array(
 			'default' => '',
 			'type' => 'theme_mod',
 			'capability' => 'edit_theme_options',
@@ -114,7 +114,7 @@ function qoob_theme_customize_register( $wp_customize ) {
 		));
 
 		$wp_customize->add_control( $social_site, array(
-				'label'    => __("$social_site url:", 'qoob'),
+				'label'    => $social_site . ' ' . esc_html__("url:", 'qoob'),
 				'section'  => 'my_social_settings',
 				'type'     => 'text',
 				'priority' => $priority,
