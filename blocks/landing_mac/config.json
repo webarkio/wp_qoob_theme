@@ -18,7 +18,7 @@
     },
     "assets" : [{
         "type": "image",
-        "src": "%theme_url%/images/mac_pic.png",
+        "src": "%block_url(assets)%/assets/img/mac_pic.png",
         "tags": ["woman", "person"]
     }]
 }

@@ -72,7 +72,7 @@
     }],
     "defaults": {
         "bg_video": "%block_url(assets)%/assets/videos/cube_girl.mp4",
-        "logo": "%theme_url%/images/qoob_main_logo.png",
+        "logo": "%block_url%/assets/img/qoob_main_logo.png",
         "header": "Realtime Frontend Page Builder of New Generation",
         "text": "Even a little child can make an amazing website",
         "buttons": [{
@@ -98,7 +98,7 @@
     },
     "assets": [{
         "type": "image",
-        "src": "%theme_url%/images/qoob_main_logo.png",
+        "src": "%block_url%/assets/img/qoob_main_logo.png",
         "tags": ["logo"]
     },
     {
