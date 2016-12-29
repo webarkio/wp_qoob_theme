@@ -13,7 +13,7 @@
  */
 
 get_header('fixed'); ?>
-<div class="entry-thumbnail-blog" style="background-image: url(<?php echo get_theme_mod('blog_image_bg'); ?>)">
+<div class="entry-thumbnail-blog" style="background-image: url(<?php echo esc_url(get_theme_mod('blog_image_bg')); ?>)">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">

@@ -9,7 +9,7 @@ License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: qoob
 Domain Path: /languages/
-Tags: one-column, two-columns, right-sidebar, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+Tags: one-column, two-columns, right-sidebar, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, microformats, post-formats, sticky-post, threaded-comments, translation-ready
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -1538,7 +1538,7 @@ a:active {
 	padding: 1.3rem  3.5rem  1.3rem 3.5rem;
 	color: #cbcbcb;
 	font-style: italic;
-	width: 100%;
+    width: calc(100% - 7rem);
     font-size: 1.4rem;
     background: #fff url(images/widget-search-icon.png) no-repeat center right 1.7rem;
 }

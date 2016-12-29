@@ -5,7 +5,7 @@ Tested up to: WordPress 4.7
 Version: 1.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: one-column, right-sidebar, flexible-header, accessibility-ready, custom-header, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+Tags: one-column, right-sidebar, flexible-header, accessibility-ready, custom-header, footer-widgets, post-formats, sticky-post, theme-options, threaded-comments, translation-ready
 
 A starter theme called qoob.
 
@@ -76,6 +76,14 @@ Source: http://underscores.me/
 normalize.css, Copyright 2012-2016 Nicolas Gallagher and Jonathan Neal
 License: MIT
 Source: https://necolas.github.io/normalize.css/
+
+Fonts OpenSans, Copyright 2010 Steve Matteson
+License: Licensed under the Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0)
+Source: http://www.fonts2u.com/open-sans.font
+
+Fonts Roboto, Copyright Google 2011
+License:  Apache License Version 2.0, January 2004 (http://www.apache.org/licenses/)
+Source: https://material.io/guidelines/resources/roboto-noto-fonts.html
 
 == Frequently Asked Questions ==
 
