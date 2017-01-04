@@ -25,6 +25,10 @@ Hi. I'm a starter theme called qoob, or underscores, if you like. I'm a theme me
 
 qoob bundles the following third-party resources:
 
+bootstrap-progressbar, Copyright (c) 2012-2015 Stephan Groß
+Licenses: MIT
+Source: http://www.minddust.com/project/bootstrap-progressbar/
+
 Bootstrap, Copyright 2011-2016 Twitter, Inc.
 License: MIT
 Source: http://getbootstrap.com
@@ -32,6 +36,10 @@ Source: http://getbootstrap.com
 hoverIntent, Copyright 2007, 2013 Brian Cherne
 License: MIT
 Source: http://cherne.net/brian/resources/jquery.hoverIntent.html
+
+jquery-countTo, Copyright (c) 2012-2014 Matt Huggins
+License: MIT
+Source: https://github.com/mhuggins/jquery-countTo
 
 Magnific Popup - v1.1.0 - 2016-02-20, Copyright (c) 2016 Dmitry Semenov
 License: MIT
@@ -41,9 +49,21 @@ jquery.mb.YTPlayer.js, Copyright (C) 2001, 2014 Matteo Bicocchi, Open Lab srl
 Licenses: MIT, GPL
 Source: http://pupunzi.com
 
+Waypoints, Copyright (c) 2011-2015 Caleb Troughton
+License: MIT
+Source: https://github.com/imakewebthings/waypoints
+
 Masonry PACKAGED, Copyright (c) 2016 David DeSandro
 License: MIT
 Source: http://masonry.desandro.com
+
+Owl Carousel, Copyright 2013-2016 David Deutsch
+License: MIT
+Source: https://github.com/OwlCarousel2/OwlCarousel2/
+
+ProgressBar.js, Copyright (c) 2015 Kimmo Brunfeldt
+License: MIT
+Source: https://kimmobrunfeldt.github.io/progressbar.js
 
 jQuery Superfish Menu Plugin, Copyright (c) 2016 Joel Birch
 Licenses: MIT, GPL
