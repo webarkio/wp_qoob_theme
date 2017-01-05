@@ -11,7 +11,8 @@
     padding-left: 9.1rem;
     padding-right: 8.4rem;
 }
-.testimonial-carousel-arrow .owl-nav .owl-prev {
+.testimonial-carousel-arrow .owl-nav .owl-prev,
+.testimonial-carousel-arrow .owl-nav .owl-prev:hover {
     left: -13px;
     top: 50%;
     background: transparent url(../images/carousel_arrow.png) no-repeat;
@@ -24,7 +25,8 @@
 /*    margin-top: -50px;*/
 }
 
-.testimonial-carousel-arrow .owl-nav .owl-next {
+.testimonial-carousel-arrow .owl-nav .owl-next,
+.testimonial-carousel-arrow .owl-nav .owl-next:hover {
     right: -17px;
     top: 50%;
     background: transparent url(../images/video_carousel_arrow.png) no-repeat;

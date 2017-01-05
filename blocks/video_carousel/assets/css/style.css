@@ -28,13 +28,15 @@
     height: 5.0rem;
 }
 
-.video-carousel .owl-nav .owl-prev {
+.video-carousel .owl-nav .owl-prev,
+.video-carousel .owl-nav .owl-prev:hover {
     left: -7.8rem;
     top: 0;
     background: transparent url(../images/video_carousel_arrow.png) no-repeat !important;
 }
 
-.video-carousel .owl-nav .owl-next {
+.video-carousel .owl-nav .owl-next,
+.video-carousel .owl-nav .owl-next:hover {
     right: -7.8rem;
     top: 0;
     background: transparent url(../images/video_carousel_arrow.png) no-repeat !important;

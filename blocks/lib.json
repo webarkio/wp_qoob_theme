@@ -342,14 +342,14 @@
                 }
             }, {
                 "name": "carousel_js",
-                "url": "%theme_url%/blocks/slider_buttons/assets/css/carousel.js",
+                "url": "%theme_url%/blocks/slider_buttons/assets/js/carousel.js",
                 "use": {
                     "frontend": true,
                     "backend": true
                 }
             }, {
                 "name": "collapse_js",
-                "url": "%theme_url%/blocks/faq_accordion/assets/css/collapse.js",
+                "url": "%theme_url%/blocks/faq_accordion/assets/js/collapse.js",
                 "use": {
                     "frontend": true,
                     "backend": true
