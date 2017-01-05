@@ -1540,7 +1540,7 @@ a:active {
 	font-style: italic;
     width: calc(100% - 7rem);
     font-size: 1.4rem;
-    background: #fff url(images/widget-search-icon.png) no-repeat center right 1.7rem;
+    background: #e4e4e4 url(images/widget-search-icon.png) no-repeat center right 1.7rem;
 }
 .widget .search-field::-webkit-input-placeholder {
 	color: #cbcbcb;
