@@ -34,13 +34,8 @@ get_header(); ?>
 				get_template_part( 'template-parts/content', get_post_format() );
 
 			endwhile;
-
-			// the_posts_navigation();
-
 		else :
-
 			get_template_part( 'template-parts/content', 'none' );
-
 		endif; ?>
 
 		</main><!-- #main -->

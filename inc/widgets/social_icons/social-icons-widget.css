@@ -1,59 +1,59 @@
 .social-icons {
-    text-align: center;
+	text-align: center;
 }
 
 .social-icons a {
-    color: #FFFFFF;
-    margin-bottom: 5px;
-    display: inline-block;
-    margin-right: 15px;
-    width: 76px;
-    height: 76px;
+	color: #FFFFFF;
+	margin-bottom: 5px;
+	display: inline-block;
+	margin-right: 15px;
+	width: 76px;
+	height: 76px;
 }
 
 .social-icons a:hover {
-    opacity: .7;
+	opacity: .7;
 }
 
 /*--------------------------------------------------------------
 # Social icon
 --------------------------------------------------------------*/
 .social-icon-block {
-    padding-top: 4rem;
-    padding-bottom: 6rem;
+	padding-top: 4rem;
+	padding-bottom: 6rem;
 }
 .social-icon-block.black-bg {
-    background-color: #262b30;
+	background-color: #262b30;
 }
 .social-icon-block.black-bg h3 {
-    color: #fff; 
+	color: #fff;
 }
 .social-icon-block .social-icons {
-    width: 40px;
-    height: 40px;
-    text-decoration: none;
-    background-color: #b8b8b8;
-    color: #fff;
-    border-radius: 20px;
-    position: relative;
-    margin-left: 2px;
+	width: 40px;
+	height: 40px;
+	text-decoration: none;
+	background-color: #b8b8b8;
+	color: #fff;
+	border-radius: 20px;
+	position: relative;
+	margin-left: 2px;
 }
 .social-icon-block.black-bg .social-icons {
-    color: #262b30;
-    background-color: #fff;
+	color: #262b30;
+	background-color: #fff;
 }
 .social-icon-block .social-icons::before {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -8px;
-    margin-left: -8px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -8px;
+	margin-left: -8px;
 }
 
 .footer-widget .social-icon-block {
-    padding-top: 0;
-    padding-bottom: 0.9rem;
+	padding-top: 0;
+	padding-bottom: 0.9rem;
 }
 .footer-widget .social-icon-block .social-icons {
-    margin-right: .6rem;
+	margin-right: .6rem;
 }

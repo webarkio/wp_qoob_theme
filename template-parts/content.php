@@ -9,21 +9,20 @@
 
 ?>
 <div class="col-lg-4 col-sm-4">
-<article id="post-<?php the_ID(); ?>" <?php post_class("posts-list"); ?>>
-	<?php if(has_post_thumbnail($post->ID)): ?>
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'posts-list' ); ?>>
+	<?php if ( has_post_thumbnail( $post->ID ) ) : ?>
 	<div class="entry-thumbnail">
-		<img src="<?php the_post_thumbnail_url('thumbnail-blog-list'); ?>" alt="">
+		<img src="<?php the_post_thumbnail_url( 'thumbnail-blog-list' ); ?>" alt="">
 	</div>
 	<?php endif;?>
 	<div class="entry-wrap-content">
 		<header class="entry-header">
 			<?php
-				if ( is_single() ) {
-					the_title( '<h1 class="entry-title">', '</h1>' );
-				} else {
-					the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-				}
-
+			if ( is_single() ) {
+				the_title( '<h1 class="entry-title">', '</h1>' );
+			} else {
+				the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+			}
 			?>
 		</header><!-- .entry-header -->
 

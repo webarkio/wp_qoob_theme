@@ -40,7 +40,7 @@ class Qoob_Social_Icons extends WP_Widget {
 	 */
 	public function widget( $args, $instance ) {
 		$links = '';
-		echo esc_html( $args['before_widget'] );
+		echo wp_kses( $args['before_widget'], 'div' );
 		?>
 		<div class="social-icon-block  black-bg">
 			<div class="block-icons">
@@ -54,7 +54,7 @@ class Qoob_Social_Icons extends WP_Widget {
 			</div>
 		</div>
 		<?php
-		echo esc_html( $args['after_widget'] );
+		echo wp_kses( $args['after_widget'] , 'div' );
 	}
 
 	/**

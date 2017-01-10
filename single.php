@@ -7,8 +7,8 @@
  * @package qoob
  */
 
-get_header('fixed'); ?>
-<div class="entry-thumbnail-full" style="background-image: url(<?php the_post_thumbnail_url('thumbnail-size-post-page'); ?>)">
+get_header( 'fixed' ); ?>
+<div class="entry-thumbnail-full" style="background-image: url(<?php the_post_thumbnail_url( 'thumbnail-size-post-page' ); ?>)">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
@@ -21,12 +21,12 @@ get_header('fixed'); ?>
 	</div>
 </div>
 <div class="container">
-<?php if(get_theme_mod('blog_sidebar') == 'sidebar_right'): ?>
+<?php if ( 'sidebar_right' === get_theme_mod( 'blog_sidebar' ) ) : ?>
 	<div id="primary" class="content-area sidebar-on col-lg-9">
-<?php else:?>
+<?php else : ?>
 	<div id="primary" class="content-area sidebar-off col-lg-12">
-<?php endif;?>
-	
+<?php endif; ?>
+
 		<main id="main" class="site-main" role="main">
 
 		<?php
@@ -45,7 +45,7 @@ get_header('fixed'); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 	<?php
-	if(get_theme_mod('blog_sidebar') == 'sidebar_right'){
+	if ( 'sidebar_right' === get_theme_mod( 'blog_sidebar' ) ) {
 		get_sidebar();
 	}
 ?>

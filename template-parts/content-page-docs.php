@@ -11,11 +11,11 @@
 <div id="primary" class="content-area container">
 	<main id="main" class="site-main" role="main">
 		<?php
-			
-			get_sidebar('docs');
+
+			get_sidebar( 'docs' );
 
 		?>
-		<article id="post-<?php the_ID(); ?>" <?php post_class('col-lg-9 page-docs'); ?>>
+		<article id="post-<?php the_ID(); ?>" <?php post_class( 'col-lg-9 page-docs' ); ?>>
 			<header class="entry-header">
 				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 			</header><!-- .entry-header -->
@@ -47,10 +47,10 @@
 		</article><!-- #post-## -->
 	</main><!-- #main -->
 	<?php
-		// If comments are open or we have at least one comment, load up the comment template.
-		if ( comments_open() || get_comments_number() ) :
-			comments_template();
-		endif;
+	// If comments are open or we have at least one comment, load up the comment template.
+	if ( comments_open() || get_comments_number() ) :
+		comments_template();
+	endif;
 	?>
 
 </div><!-- #primary -->

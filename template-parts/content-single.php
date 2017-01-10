@@ -8,8 +8,7 @@
  */
 
 ?>
-
-<article id="post-<?php the_ID(); ?>" <?php post_class('single-post-template no-side-bar'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'single-post-template no-side-bar' ); ?>>
 	<div class="entry-content">
 		<?php
 			the_content( sprintf(

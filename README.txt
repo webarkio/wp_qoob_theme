@@ -37,10 +37,6 @@ Magnific Popup - v1.1.0 - 2016-02-20, Copyright (c) 2016 Dmitry Semenov
 License: MIT
 Source: http://dimsemenov.com/plugins/magnific-popup/
 
-jquery.mb.YTPlayer.js, Copyright (C) 2001, 2014 Matteo Bicocchi, Open Lab srl
-Licenses: MIT, GPL
-Source: http://pupunzi.com
-
 Masonry PACKAGED, Copyright (c) 2016 David DeSandro
 License: MIT
 Source: http://masonry.desandro.com

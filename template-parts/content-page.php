@@ -41,16 +41,16 @@
 			</footer><!-- .entry-footer -->
 		</article><!-- #post-## -->
 		<?php
-			if(get_theme_mod('blog_sidebar') == 'sidebar_right'){
-				get_sidebar();
-			}
+		if ( 'sidebar_right' === get_theme_mod( 'blog_sidebar' ) ) {
+			get_sidebar();
+		}
 		?>
 	</main><!-- #main -->
 	<?php
-		// If comments are open or we have at least one comment, load up the comment template.
-		if ( comments_open() || get_comments_number() ) :
-			comments_template();
-		endif;
+	// If comments are open or we have at least one comment, load up the comment template.
+	if ( comments_open() || get_comments_number() ) :
+		comments_template();
+	endif;
 	?>
 
 </div><!-- #primary -->

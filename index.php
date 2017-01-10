@@ -12,15 +12,15 @@
  * @package qoob
  */
 
-get_header('fixed'); ?>
-<div class="entry-thumbnail-blog" style="background-image: url(<?php echo esc_url(get_theme_mod('blog_image_bg')); ?>)">
+get_header( 'fixed' ); ?>
+<div class="entry-thumbnail-blog" style="background-image: url(<?php echo esc_url( get_theme_mod( 'blog_image_bg' ) ); ?>)">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
 				<h2><?php
 				global $wp_query;
 
-				$wp_query->is_posts_page ?  wp_title('') : bloginfo('name');
+				$wp_query->is_posts_page ?  wp_title( '' ) : bloginfo( 'name' );
 
 				?></h2>
 			</div>
@@ -28,11 +28,11 @@ get_header('fixed'); ?>
 	</div>
 </div>
 <div class="container">
-<?php if(get_theme_mod('blog_sidebar') == 'sidebar_right'): ?>
+<?php if ( 'sidebar_right' === get_theme_mod( 'blog_sidebar' ) ) : ?>
 	<div id="primary" class="content-area sidebar-on col-lg-9">
-<?php else:?>
+<?php else : ?>
 	<div id="primary" class="content-area sidebar-off col-lg-12">
-<?php endif;?>
+<?php endif; ?>
 		<main id="main" class="site-main blog-list row" role="main">
 		<?php
 		if ( have_posts() ) :
@@ -57,17 +57,17 @@ get_header('fixed'); ?>
 
 		</main><!-- #main -->
 		<?php
-			the_posts_pagination(array(
+			the_posts_pagination( array(
 				'prev_text'          => '',
 				'next_text'          => '',
-				'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'qoob' ) . ' </span>'
-			));
+				'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'qoob' ) . ' </span>',
+			) );
 
 		?>
 	</div><!-- #primary -->
 
 <?php
-if(get_theme_mod('blog_sidebar') == 'sidebar_right'){
+if ( 'sidebar_right' === get_theme_mod( 'blog_sidebar' ) ) {
 	get_sidebar();
 }
 
