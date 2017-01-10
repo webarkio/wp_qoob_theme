@@ -214,17 +214,17 @@ add_action( 'widgets_init', 'qoob_theme_widgets_init' );
  * @link https://codex.wordpress.org/Function_Reference/wp_list_comments
  */
 function qoobtheme_comment( $comment, $args, $depth ) {
+
 	if ( 'div' === $args['style'] ) {
-		$html_tag       = 'div';
+		$tag       = 'div';
 		$add_below = 'comment';
 	} else {
-		$html_tag       = 'li';
+		$tag       = 'li';
 		$add_below = 'div-comment';
 	}
 	?>
-	<
-	<?php echo esc_html( $html_tag ); comment_class( empty( $args['has_children'] ) ? '' : 'parent' ) . 'id="comment-' . comment_ID() ?>"
-	>
+	
+	<<?php echo wp_kses( $tag , array( 'div', 'li' ) ) ?> <?php comment_class( empty( $args['has_children'] ) ? '' : 'parent' ) ?> id="comment-<?php comment_ID() ?>">
 	<?php if ( 'div' !== $args['style'] ) : ?>
 		<div id="div-comment-<?php comment_ID() ?>" class="comment-body">
 	<?php endif; ?>
@@ -235,13 +235,10 @@ function qoobtheme_comment( $comment, $args, $depth ) {
 		<div class="comment-author-text">
 			<?php printf( wp_kses_post( __( '<cite class="fn">%s</cite>', 'qoob' ) ), get_comment_author_link() ); ?>
 			<?php comment_text(); ?>
-			<div class="comment-meta commentmetadata">
-				<a href="<?php echo esc_html( get_comment_link( $comment->comment_ID ) ); ?>">
-					<?php
-						printf( '%1$s', get_comment_date( 'j.m.Y' ) );
-					?>
-				</a>
-				<?php edit_comment_link( esc_html__( '(Edit)', 'qoob' ), '  ', '' ); ?>
+			<div class="comment-meta commentmetadata"><a href="<?php echo esc_html( get_comment_link( $comment->comment_ID ) ); ?>">
+				<?php
+				printf( esc_html__( '%1$s', 'qoob' ), get_comment_date( 'j.m.Y' ) ); ?></a><?php edit_comment_link( esc_html__( '(Edit)', 'qoob' ), '  ', '' );
+				?>
 				<?php comment_reply_link( array_merge( $args, array( 'add_below' => $add_below, 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
 			</div>
 		</div>
