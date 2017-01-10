@@ -27,11 +27,27 @@ if ( post_password_required() ) {
 	if ( have_comments() ) : ?>
 		<h2 class="comments-title">
 			<?php
-				printf( // WPCS: XSS OK.
-					esc_html( _nx( 'One comment on &ldquo;%2$s&rdquo;', '%1$s comments on &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'qoob' ) ),
-					number_format_i18n( get_comments_number() ),
+			$comments_number = get_comments_number();
+			if ( 1 === $comments_number ) {
+				printf(
+					/* translators: %s: post title */
+					esc_html_x( 'One thought on &ldquo;%s&rdquo;', 'comments title', 'qoob' ),
 					'<span>' . get_the_title() . '</span>'
 				);
+			} else {
+				printf( // WPCS: XSS OK.
+					/* translators: 1: number of comments, 2: post title */
+					esc_html( _nx(
+						'%1$s thought on &ldquo;%2$s&rdquo;',
+						'%1$s thoughts on &ldquo;%2$s&rdquo;',
+						$comments_number,
+						'comments title',
+						'qoob'
+					) ),
+					number_format_i18n( $comments_number ),
+					'<span>' . get_the_title() . '</span>'
+				);
+			}
 			?>
 		</h2>
 
@@ -54,7 +70,7 @@ if ( post_password_required() ) {
 					'short_ping' => true,
 					'avatar_size' => 78,
 					'max_depth' => 2,
-					'callback' => 'qoobtheme_comment'
+					'callback' => 'qoobtheme_comment',
 				) );
 			?>
 		</ol><!-- .comment-list -->
@@ -81,46 +97,19 @@ if ( post_password_required() ) {
 		<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'qoob' ); ?></p>
 	<?php
 	endif;
+
 	$commenter = wp_get_current_commenter();
 	$req = get_option( 'require_name_email' );
 	$aria_req = ( $req ? " aria-required='true'" : '' );
 
-	// Change order comment fields
-	add_filter('comment_form_fields', 'qoob_reorder_comment_fields' );
-
-	function qoob_reorder_comment_fields( $fields ){
-
-		$new_fields = array(); 
-
-		$myorder = array('author','email','comment');
-
-		foreach( $myorder as $key ){
-			$new_fields[ $key ] = $fields[ $key ];
-			unset( $fields[ $key ] );
-		}
-
-		if( $fields )
-			foreach( $fields as $key => $val )
-				$new_fields[ $key ] = $val;
-
-		return $new_fields;
-	}
-
 	comment_form(array(
-		"title_reply" => esc_html__( 'Leave a Comment', 'qoob' ),
-		"comment_notes_before" => "",
-		"fields" =>  array(
-				  'author' =>
-				    '<p class="comment-form-author">' .
-				    '<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) .
-				    '" placeholder="'.esc_html__( 'Name', 'qoob' ).'" ' . $aria_req . ' /></p>',
-
-				  'email' =>
-				    '<p class="comment-form-email">' .
-				    '<input id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) .
-				    '" placeholder="'.esc_html__( 'Email', 'qoob' ).'" ' . $aria_req . ' /></p>'
+		'title_reply' => esc_html__( 'Leave a Comment', 'qoob' ),
+		'comment_notes_before' => '',
+		'fields' => array(
+				'author' => '<p class="comment-form-author"><input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '"', 'placeholder="' . esc_html__( 'Name', 'qoob' ) . '" ' . $aria_req . ' /></p>',
+				'email' => '<p class="comment-form-email"><input id="email" name="email" type="text" value="' . esc_attr( $commenter['comment_author_email'] ) . '" placeholder="' . esc_html__( 'Email', 'qoob' ) . '" ' . $aria_req . ' /></p>',
 				),
-		'comment_field' => '<p class="comment-form-comment"><textarea id="comment" name="comment" cols="45" rows="8"  ' . $aria_req . ' placeholder="'.esc_html__( 'Message', 'qoob' ).'"></textarea></p>'
+		'comment_field' => '<p class="comment-form-comment"><textarea id="comment" name="comment" cols="45" rows="8"  ' . $aria_req . ' placeholder="' . esc_html__( 'Message', 'qoob' ) . '"></textarea></p>',
 	));
 	?>
 	</div>

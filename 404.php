@@ -14,14 +14,14 @@ get_header(); ?>
 			<section class="container content-404 relative">
 			    <div class="row">
 			        <div class="col-lg-12 main-block-404">
-			        	<img alt="<?php esc_html_e( '404', 'qoob' ); ?>" src="<?php echo get_template_directory_uri() . '/images/qoob_404.png'; ?>">
+			        	<img alt="<?php esc_html_e( '404', 'qoob' ); ?>" src="<?php echo esc_url( get_template_directory_uri() ) . '/images/qoob_404.png'; ?>">
 			        </div>
 			    </div>
 			    <div class="row text-404">
 			        <h1><?php esc_html_e( 'Page not found', 'qoob' ); ?></h1>
 			    </div>
 			    <div class="row button-404">
-			        <a class="btn" href="<?php echo home_url('/'); ?>"><?php esc_html_e( 'Go to main page', 'qoob' ); ?></a>
+			        <a class="btn" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php esc_html_e( 'Go to main page', 'qoob' ); ?></a>
 			    </div>
 			</section><!-- end container-404 -->
 		</main><!-- #main -->
