@@ -55,19 +55,19 @@
         "type": "checkbox"
     }, {
         "name": "btn_second_title",
-        "label": "First Action button text",
+        "label": "Second Action button text",
         "type": "text"
     }, {
         "name": "second_btn_id",
-        "label": "First Button's id",
+        "label": "Second Button's id",
         "type": "text"
     }, {
         "name": "second_btn_onclick",
-        "label": "First Button's onclick",
+        "label": "Second Button's onclick",
         "type": "text"
     }, {
         "name": "btn_second_inverse",
-        "label": "First Button Color Scheme",
+        "label": "Second Button Color Scheme",
         "options": [{
             "id": "normal",
             "val": "normal"
@@ -78,15 +78,15 @@
         "type": "select"
     }, {
         "name": "btn_second_action_url",
-        "label": "First Url for action button",
+        "label": "Second Url for action button",
         "type": "text"
     }, {
         "name": "btn_second_hidebtn",
-        "label": "First Hide button on mobile devices?",
+        "label": "Second Hide button on mobile devices?",
         "type": "checkbox"
     }, {
         "name": "btn_second_target",
-        "label": "First Button Open link in new tab?",
+        "label": "Second Button Open link in new tab?",
         "type": "checkbox"
     }, {
         "name": "image",

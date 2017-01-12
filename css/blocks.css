@@ -2681,7 +2681,7 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 }
 
 .template-carousel .owl-nav .owl-prev,
-.template-carousel .owl-nav .owl-prev:hover, {
+.template-carousel .owl-nav .owl-prev:hover {
     left: -7.8rem;
     top: 0;
     background: transparent url(../images/video_carousel_arrow.png) no-repeat !important;
@@ -3515,18 +3515,19 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
     .video-carousel .owl-nav .owl-next {
         width: 3rem;
         height: 3rem;
-        transform: none;
     }
 
     .video-carousel .owl-nav .owl-prev,
     .video-carousel .owl-nav .owl-prev:hover {
         left: 0.2rem;
         background: transparent url(../images/prev.png) no-repeat !important;
+        transform: none;
     }
 
     .video-carousel .owl-nav .owl-next,
     .video-carousel .owl-nav .owl-next:hover {
         background: transparent url(../images/next.png) no-repeat !important;
+        transform: none;
     }
 }
 /*--------------------------------------------------------------
