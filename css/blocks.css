@@ -1115,8 +1115,8 @@
 --------------------------------------------------------------*/
 .gallery-scroll {
     position: relative;
-    margin-top: 7.7rem;
-    margin-bottom: 7.7rem;
+    padding-top: 7.7rem;
+    padding-bottom: 7.7rem;
 }
 .gallery-scroll .col-lg-6 {
     padding: 0;
@@ -1309,7 +1309,7 @@
 	height: 100vh;
 }
 
-.header-big-bg h1{
+.header-big-bg .header-block {
 	color: #fff;
 }
 
@@ -3455,13 +3455,16 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
         transform: none;
     }
 
-    .video-carousel .owl-nav .owl-prev {
+    .video-carousel .owl-nav .owl-prev,
+    .video-carousel .owl-nav .owl-prev:hover {
         left: 0.2rem;
         background: transparent url(../images/prev.png) no-repeat !important;
     }
 
-    .video-carousel .owl-nav .owl-next {
+    .video-carousel .owl-nav .owl-next,
+    .video-carousel .owl-nav .owl-next:hover {
         background: transparent url(../images/next.png) no-repeat !important;
+        transform: rotate(0deg);
     }
 }
 /* Landscape phone to portrait tablet */
@@ -3484,12 +3487,14 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
         transform: none;
     }
 
-    .video-carousel .owl-nav .owl-prev {
+    .video-carousel .owl-nav .owl-prev,
+    .video-carousel .owl-nav .owl-prev:hover {
         left: 0.2rem;
         background: transparent url(../images/prev.png) no-repeat !important;
     }
 
-    .video-carousel .owl-nav .owl-next {
+    .video-carousel .owl-nav .owl-next,
+    .video-carousel .owl-nav .owl-next:hover {
         background: transparent url(../images/next.png) no-repeat !important;
     }
 }
@@ -3513,12 +3518,14 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
         transform: none;
     }
 
-    .video-carousel .owl-nav .owl-prev {
+    .video-carousel .owl-nav .owl-prev,
+    .video-carousel .owl-nav .owl-prev:hover {
         left: 0.2rem;
         background: transparent url(../images/prev.png) no-repeat !important;
     }
 
-    .video-carousel .owl-nav .owl-next {
+    .video-carousel .owl-nav .owl-next,
+    .video-carousel .owl-nav .owl-next:hover {
         background: transparent url(../images/next.png) no-repeat !important;
     }
 }

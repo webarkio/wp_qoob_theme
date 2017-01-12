@@ -23,43 +23,43 @@
 jQuery(document).ready(function() {
     //Creating video for each carousel item, using data-url attribute of each one
     jQuery(".video-carousel-{{id}} .item-video").each(function() {
-            var url = jQuery(this).data('url'),
-                video = '',
-                format = url.substring(url.lastIndexOf('.') + 1, url.length);
+        var url = jQuery(this).data('url'),
+            video = '',
+            format = url.substring(url.lastIndexOf('.') + 1, url.length);
 
-            if (format === 'mp4' || format === 'ogv'|| format === 'webm') {
-                video = "<video width='100%' height='100%' controls><source src='" + url + "' type='video/" + (format === 'ogv' ? 'ogg' : format) + "'></source></video>";
-            }
-            jQuery(this).append(video);
+        if (format === 'mp4' || format === 'ogv' || format === 'webm') {
+            video = "<video width='100%' height='100%' controls  preload='metadata'><source src='" + url + "' type='video/" + (format === 'ogv' ? 'ogg' : format) + "'></source></video>";
+        }
+        jQuery(this).append(video);
     });
 
     jQuery('.video-carousel-{{id}}').owlCarousel({
-        margin:50,
-        video:false,
-        lazyLoad:true,
+        margin: 50,
+        video: false,
+        lazyLoad: true,
         navText: [],
-        nav:true,
-        responsive:{
-            0:{
-                items:1,
-                margin:0,
-                center:true
+        nav: true,
+        responsive: {
+            0: {
+                items: 1,
+                margin: 0,
+                center: true
             },
-            480:{
-                items:1,
-                center:true,
-                margin:0
+            480: {
+                items: 1,
+                center: true,
+                margin: 0
             },
-            678:{
-                items:1,
-                center:true
+            678: {
+                items: 1,
+                center: true
             },
-            960:{
-                items:1,
-                center:true
+            960: {
+                items: 1,
+                center: true
             },
             1200: {
-                items:2
+                items: 2
             }
         }
     });

@@ -3,8 +3,8 @@
 --------------------------------------------------------------*/
 .gallery-scroll {
     position: relative;
-    margin-top: 7.7rem;
-    margin-bottom: 7.7rem;
+    padding-top: 7.7rem;
+    padding-bottom: 7.7rem;
 }
 .gallery-scroll .col-lg-6 {
     padding: 0;

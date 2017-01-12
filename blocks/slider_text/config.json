@@ -26,12 +26,12 @@
         "slider": [{
             "title": "Create your website now - it's free and so easy!",
             "text": "A free website builder offers a huge amount of tools and features with an intuitive interface. Qoob is a perfect solution, that save you from any prior design and coding experience and let you handle it without hiring a professional. Modern and responsive websites in a few clicks.",
-            "image": "%block_url(media)%/assets/img/slider_pic_2.png",
+            "image": "%block_url(slider_buttons)%/assets/img/slider_pic_2.png",
             "order": 0
         }, {
             "title": "Create your website now - it's free and so easy!",
             "text": "A free website builder offers a huge amount of tools and features with an intuitive interface. Qoob is a perfect solution, that save you from any prior design and coding experience and let you handle it without hiring a professional. Modern and responsive websites in a few clicks.",
-            "image": "%block_url(media)%/assets/img/slider_pic_1.png",
+            "image": "%block_url(slider_buttons)%/assets/img/slider_pic_1.png",
             "order": 1
         }]
     }

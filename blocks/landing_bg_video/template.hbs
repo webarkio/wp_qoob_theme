@@ -11,9 +11,9 @@
 				{{{text}}}
 			</div>
 			<div class="col-lg-12 text-center btn-header-wrap">
-				{{#each_with_sort buttons "order"}}
-					<a href="{{action_url}}" {{#if btn_id }} id="{{btn_id}}" {{/if}} {{#if btn_onclick }} onclick="{{btn_onclick}}" {{/if}} class="btn btn{{order}} {{#ifCond inverse '==' 'inversed'}}inverse{{/ifCond}} br-white {{#ifCond hidebtn '==' '1'}}hidden-xs{{/ifCond}}" {{#if target}}target="blank"{{/if}}>{{title}}</a>
-				{{/each_with_sort}}
+				<a href="{{btn_first_action_url}}" {{#if first_btn_id }} id="{{first_btn_id}}" {{/if}} {{#if first_btn_onclick }} onclick="{{first_btn_onclick}}" {{/if}} class="btn {{#ifCond btn_first_inverse '==' 'inversed'}}inverse{{/ifCond}} br-white {{#ifCond btn_first_hidebtn '==' '1'}}hidden-xs{{/ifCond}}" {{#if btn_first_target}}target="blank"{{/if}}>{{btn_first_title}}</a>
+				
+				<a href="{{btn_second_action_url}}" {{#if second_btn_id }} id="{{second_btn_id}}" {{/if}} {{#if second_btn_onclick }} onclick="{{second_btn_onclick}}" {{/if}} class="btn btn1 {{#ifCond btn_second_inverse '==' 'inversed'}}inverse{{/ifCond}} br-white {{#ifCond btn_second_hidebtn '==' '1'}}hidden-xs{{/ifCond}}" {{#if btn_second_target}}target="blank"{{/if}}>{{btn_second_title}}</a>
 			</div>
 		</div>
 	</div>

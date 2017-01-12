@@ -25,7 +25,7 @@
 	height: 100vh;
 }
 
-.header-big-bg h1{
+.header-big-bg .header-block {
 	color: #fff;
 }
 

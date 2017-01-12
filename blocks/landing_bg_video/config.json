@@ -6,7 +6,7 @@
         "name": "bg_video",
         "label": "Background video",
         "type": "video"
-    },{
+    }, {
         "name": "logo",
         "label": "Logo",
         "type": "image"
@@ -19,52 +19,75 @@
         "label": "Text",
         "type": "textarea"
     }, {
-        "name": "buttons",
-        "label": "Buttons",
-        "type": "accordion",
-        "viewcontent": "standart",
-        "viewType": "expand",
-        "settings": [
-        {
-            "name": "btn_id",
-            "label": "Button's id",
-            "type": "text"
-        },
-        {
-            "name": "btn_onclick",
-            "label": "Button's onclick",
-            "type": "text"
-        },
-        {
-            "name": "inverse",
-            "label": "Color Scheme",
-            "options": [{
-                "id": "normal",
-                "val": "normal"
-            },{
-                "id": "inversed",
-                "val": "inversed"
-            }],
-            "type": "select"
+        "name": "btn_first_title",
+        "label": "First Action button text",
+        "type": "text"
+    }, {
+        "name": "first_btn_id",
+        "label": "First Button's id",
+        "type": "text"
+    }, {
+        "name": "first_btn_onclick",
+        "label": "First Button's onclick",
+        "type": "text"
+    }, {
+        "name": "btn_first_inverse",
+        "label": "First Button Color Scheme",
+        "options": [{
+            "id": "normal",
+            "val": "normal"
         }, {
-            "name": "title",
-            "label": "Action button text",
-            "type": "text"
+            "id": "inversed",
+            "val": "inversed"
+        }],
+        "type": "select"
+    }, {
+        "name": "btn_first_action_url",
+        "label": "First Url for action button",
+        "type": "text"
+    }, {
+        "name": "btn_first_hidebtn",
+        "label": "First Hide button on mobile devices?",
+        "type": "checkbox"
+    }, {
+        "name": "btn_first_target",
+        "label": "First Button Open link in new tab?",
+        "type": "checkbox"
+    }, {
+        "name": "btn_second_title",
+        "label": "First Action button text",
+        "type": "text"
+    }, {
+        "name": "second_btn_id",
+        "label": "First Button's id",
+        "type": "text"
+    }, {
+        "name": "second_btn_onclick",
+        "label": "First Button's onclick",
+        "type": "text"
+    }, {
+        "name": "btn_second_inverse",
+        "label": "First Button Color Scheme",
+        "options": [{
+            "id": "normal",
+            "val": "normal"
         }, {
-            "name": "action_url",
-            "label": "Url for action button",
-            "type": "text"
-        },
-        {
-            "name": "hidebtn",
-            "label": "Hide button on mobile devices?",
-            "type": "checkbox"
-        },
-        {
-            "name": "target",
-            "label": "Open link in new tab?",
-            "type": "checkbox"
-        }]
+            "id": "inversed",
+            "val": "inversed"
+        }],
+        "type": "select"
+    }, {
+        "name": "btn_second_action_url",
+        "label": "First Url for action button",
+        "type": "text"
+    }, {
+        "name": "btn_second_hidebtn",
+        "label": "First Hide button on mobile devices?",
+        "type": "checkbox"
+    }, {
+        "name": "btn_second_target",
+        "label": "First Button Open link in new tab?",
+        "type": "checkbox"
     }, {
         "name": "image",
         "label": "Background Image (small devices)",
@@ -75,38 +98,31 @@
         "logo": "%block_url%/assets/img/qoob_main_logo.png",
         "header": "Realtime Frontend Page Builder of New Generation",
         "text": "Even a little child can make an amazing website",
-        "buttons": [{
-            "btn_id": "",
-            "btn_onclick": "",
-            "title": "Try now",
-            "action_url": "http://webark.com/qoob/clone.php",
-            "inverse": "normal",
-            "target" : 1,
-            "hidebtn" : 1,
-            "order": 0
-        }, {
-            "btn_id": "",
-            "btn_onclick": "",
-            "title": "Download",
-            "action_url": "http://webark.com/qoob/download",
-            "inverse": "normal",
-            "target" : 0,
-            "hidebtn" : 0,
-            "order": 1
-        }],
+        "first_btn_id": "",
+        "first_btn_onclick": "",
+        "btn_first_title": "Try now",
+        "btn_first_action_url": "http://webark.com/qoob/clone.php",
+        "btn_first_inverse": "normal",
+        "btn_first_target": 1,
+        "btn_first_hidebtn": 1,
+        "second_btn_id": "",
+        "second_btn_onclick": "",
+        "btn_second_title": "Download",
+        "btn_second_action_url": "http://webark.com/qoob/download",
+        "btn_second_inverse": "normal",
+        "btn_second_target": 0,
+        "btn_second_hidebtn": 0,
         "image": "%block_url%/assets/img/mobile-bg.jpg"
     },
     "assets": [{
         "type": "image",
         "src": "%block_url%/assets/img/qoob_main_logo.png",
         "tags": ["logo"]
-    },
-    {
+    }, {
         "type": "image",
         "src": "%block_url%/assets/videos/cube_girl_preview.png",
         "tags": ["preview"]
-    },
-    {
+    }, {
         "type": "image",
         "src": "%block_url%/assets/img/mobile-bg.jpg",
         "tags": ["preview, wall"]

@@ -39,7 +39,7 @@
                 "title": "View",
                 "btn_link": "#"
             }],
-            "image": "%block_url(media)%/assets/img/slider_pic_1.png",
+            "image": "%block_url%/assets/img/slider_pic_1.png",
             "order": 0
         }, {
             "title": "Create your website now - it's free and so easy!",
@@ -47,7 +47,7 @@
                 "title": "Try now",
                 "btn_link": "#"
             }],
-            "image": "%block_url(media)%/assets/img/slider_pic_2.png",
+            "image": "%block_url%/assets/img/slider_pic_2.png",
             "order": 1
         }]
     }
