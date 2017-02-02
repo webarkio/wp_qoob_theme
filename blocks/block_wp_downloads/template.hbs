@@ -1,0 +1,28 @@
+<section class="block_wp_downloads block_wp_downloads-{{id}}">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="header-block">WordPress Version<span> {{header}} downloads</span></h1>
+            </div>
+            <div class="col-lg-12">
+                {{#if html_list.length}}
+                    <ul id="accordion-{{id}}" >
+                    {{#each_with_sort html_list "order"}}         
+                        <li>
+                             <a class="link_html" href="{{url}}"><i class="{{icon}}"></i> {{title}}</a>
+                        </li>
+                      {{/each_with_sort}}
+                    </ul>
+                {{/if}}
+            </div>
+           <div class="col-lg-12">
+                <form action="https://app.getresponse.com/add_subscriber.html" accept-charset="utf-8" method="post">
+                    <!-- Email field (required) -->
+                    <input type="text" name="email" placeholder="{{email_pl}}"/>
+                    <!-- Subscriber button -->
+                    <input type="submit" class="inverse" value="{{contact_me}}"/>
+                </form>
+        </div>
+        </div>
+    </div>
+</section>

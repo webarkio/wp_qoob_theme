@@ -1,0 +1,71 @@
+{
+    "name": "",
+    "groups": "slider",
+    "template": "template.hbs",
+    "settings": [{
+        "name": "header",
+        "label": "Header",
+        "type": "text"
+    }, {
+        "name": "action_text",
+        "label": "Action button text",
+        "type": "text"
+    }, {
+        "name": "action_url",
+        "label": "Url for action button",
+        "type": "text"
+    }, {
+        "name": "image",
+        "label": "Image",
+        "type": "image",
+        "tags": ["wall", "tablet"]
+    }, {
+        "name": "parallax",
+        "label": "Parallax Background",
+        "type": "checkbox_switch"
+    }, {
+        "name": "slider",
+        "label": "Slider",
+        "type": "accordion",
+        "settings": [{
+            "name": "title",
+            "label": "Title",
+            "type": "text",
+            "placeholder": "Enter title"
+        }, {
+            "name": "text",
+            "label": "Text",
+            "type": "textarea"
+        }]
+    }], 
+
+    "assets": [{
+        "type": "image",
+        "src": "%block_url%/assets/img/slider_comments_bg.jpg",
+        "tags": ["tablet"]
+    }],
+    
+    "defaults": {
+        "header" : "What people are Saying <br>about us",
+        "action_text": "Leave comment",
+        "image" : "%block_url%/assets/img/slider_comments_bg.jpg",
+        "action_url": "#",
+        "slider": [{
+            "title": "Create your website now - it's free and so easy!",
+            "text": "Lorem ipsum dolor sit amet, persius adipisci vim in. Ea est ponderum persequeris efficiantur. Ut eros nostrum neglegentur vis. Mea eius porro erant ex, ex postulant rationibus vel. In dolorem accusata perpetua mei, zril eripuit nominavi ius ad. Hinc voluptatum pro et, vero sapientem ei nam.",
+            "order": 0
+        }, {
+            "title": "Tom Daniels",
+            "text": "Lorem ipsum dolor sit amet, persius adipisci vim in. Ea est ponderum persequeris efficiantur. Ut eros nostrum neglegentur vis. Mea eius porro erant ex, ex postulant rationibus vel. In dolorem accusata perpetua mei, zril eripuit nominavi ius ad. Hinc voluptatum pro et, vero sapientem ei nam.",
+            "order": 1
+        }, {
+            "title": "Create your website now - it's free and so easy!",
+            "text": "Lorem ipsum dolor sit amet, persius adipisci vim in. Ea est ponderum persequeris efficiantur. Ut eros nostrum neglegentur vis. Mea eius porro erant ex, ex postulant rationibus vel. In dolorem accusata perpetua mei, zril eripuit nominavi ius ad. Hinc voluptatum pro et, vero sapientem ei nam.",
+            "order": 2
+        }, {
+            "title": "Tom Daniels",
+            "text": "Lorem ipsum dolor sit amet, persius adipisci vim in. Ea est ponderum persequeris efficiantur. Ut eros nostrum neglegentur vis. Mea eius porro erant ex, ex postulant rationibus vel. In dolorem accusata perpetua mei, zril eripuit nominavi ius ad. Hinc voluptatum pro et, vero sapientem ei nam.",
+            "order": 3
+        }]      
+    }
+}

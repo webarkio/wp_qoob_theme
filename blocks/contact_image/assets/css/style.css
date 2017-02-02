@@ -1,0 +1,21 @@
+/*--------------------------------------------------------------
+# text image left
+--------------------------------------------------------------*/
+.text-image-left {
+	padding: 12.2rem 0;
+}
+
+.text-image-left .header-block {
+	text-align: center;
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 76.7rem) {
+	.text-image-left .center-img {
+		text-align: center;
+	}
+	.text-image-left .center-img img {
+		float: none;
+		margin-right: 0;
+	}
+}

@@ -1,0 +1,152 @@
+/*--------------------------------------------------------------
+# video full page
+--------------------------------------------------------------*/
+.video-carousel {
+	padding: 6.3rem 0;
+}
+
+.video-carousel .header-block {
+	text-align: center;
+    margin-bottom: 3.2rem;
+}
+
+.video-carousel .owl-nav,
+.video-carousel .owl-nav .owl-prev,
+.video-carousel .owl-nav .owl-next {
+    position: absolute;    
+}
+
+
+.video-carousel .owl-nav {
+    width: 100%;
+    top: 45%;
+}
+
+.video-carousel .owl-nav .owl-prev,
+.video-carousel .owl-nav .owl-next {
+    width: 2.6rem;
+    height: 5.0rem;
+}
+
+.video-carousel .owl-nav .owl-prev,
+.video-carousel .owl-nav .owl-prev:hover {
+    left: -7.8rem;
+    top: 0;
+    background: transparent url(../images/video_carousel_arrow.png) no-repeat !important;
+}
+
+.video-carousel .owl-nav .owl-next,
+.video-carousel .owl-nav .owl-next:hover {
+    right: -7.8rem;
+    top: 0;
+    background: transparent url(../images/video_carousel_arrow.png) no-repeat !important;
+    transform: rotate(180deg);
+}
+
+/* Large desktop */
+@media (min-width: 120.0rem) {
+    .video-carousel .item-video {
+        height: 41.0rem;
+    }
+}
+/* Landscape tablets and medium desktops */
+@media (min-width: 99.2rem) and (max-width: 119.9rem) {
+    .video-carousel .item-video {
+        height: 40.2rem;
+    }
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 76.8rem) and (max-width: 99.1rem) {
+    .video-carousel .item-video {
+        height: 57.1rem;
+    }
+
+    .video-carousel .owl-nav {
+        width: auto;
+        top: auto;
+        right: 7.8rem;
+        bottom: -0.7rem;
+    }
+
+    .video-carousel .owl-nav .owl-prev,
+    .video-carousel .owl-nav .owl-next {
+        width: 3rem;
+        height: 3rem;
+        transform: none;
+    }
+
+    .video-carousel .owl-nav .owl-prev,
+    .video-carousel .owl-nav .owl-prev:hover {
+        left: 0.2rem;
+        background: transparent url(../images/prev.png) no-repeat !important;
+    }
+
+    .video-carousel .owl-nav .owl-next,
+    .video-carousel .owl-nav .owl-next:hover {
+        background: transparent url(../images/next.png) no-repeat !important;
+        transform: rotate(0deg);
+    }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 76.7rem) {
+    .video-carousel .item-video {
+        height: 47.1rem;
+    }
+
+    .video-carousel .owl-nav {
+        width: auto;
+        top: auto;
+        right: 7.8rem;
+        bottom: -0.7rem;
+    }
+
+    .video-carousel .owl-nav .owl-prev,
+    .video-carousel .owl-nav .owl-next {
+        width: 3rem;
+        height: 3rem;
+        transform: none;
+    }
+
+    .video-carousel .owl-nav .owl-prev,
+    .video-carousel .owl-nav .owl-prev:hover {
+        left: 0.2rem;
+        background: transparent url(../images/prev.png) no-repeat !important;
+    }
+
+    .video-carousel .owl-nav .owl-next,
+    .video-carousel .owl-nav .owl-next:hover {
+        background: transparent url(../images/next.png) no-repeat !important;
+    }
+}
+/* Landscape phones and down */
+@media (max-width: 48rem) {
+    .video-carousel .item-video {
+        height: 25.2rem;
+    }
+
+    .video-carousel .owl-nav {
+        width: auto;
+        top: auto;
+        right: 7.8rem;
+        bottom: -0.7rem;
+    }
+
+    .video-carousel .owl-nav .owl-prev,
+    .video-carousel .owl-nav .owl-next {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .video-carousel .owl-nav .owl-prev,
+    .video-carousel .owl-nav .owl-prev:hover {
+        left: 0.2rem;
+        background: transparent url(../images/prev.png) no-repeat !important;
+        transform: none;
+    }
+
+    .video-carousel .owl-nav .owl-next,
+    .video-carousel .owl-nav .owl-next:hover {
+        background: transparent url(../images/next.png) no-repeat !important;
+        transform: none;
+    }
+}

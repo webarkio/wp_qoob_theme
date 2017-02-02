@@ -1,0 +1,42 @@
+{
+    "name": "",
+    "groups": "other",
+    "template": "template.hbs",
+    "settings": [{
+        "name": "header",
+        "label": "Header",
+        "type": "text"
+    },  {
+        "name": "image",
+        "label": "Image",
+        "type": "image",
+        "tags": ["wall", "tablet"]
+    },  {
+        "name": "parallax",
+        "label": "Parallax Background",
+        "type": "checkbox_switch"
+    }, {
+        "name": "item_icon_color",
+        "label": "Item's icon color",
+        "type": "select",
+        "visible_color": "true",
+         "options": [{
+             "id": "green",
+            "colorimage": "rgb(40, 183, 141)",
+             "val": "green"
+          }, {
+             "id": "gray",
+            "colorimage": "rgb(100, 100, 100)",
+             "val": "gray"
+         }, {
+             "id": "white",
+            "colorimage": "rgb(255, 255, 255)",
+             "val": "gray"
+         }]
+     }],
+    "defaults": {
+        "header": "Download",
+        "item_icon_color" : "white",
+        "image" : "%block_url%/assets/img/download_bg.jpg"
+    }
+}

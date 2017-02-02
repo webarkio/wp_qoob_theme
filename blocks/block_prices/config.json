@@ -1,0 +1,180 @@
+{
+    "name": "",
+    "groups": "other",
+    "template": "template.hbs",
+    "settings": [{
+        "name": "header",
+        "label": "Header",
+        "type": "text"
+    }, {
+        "name": "button_text",
+        "label": "Button text",
+        "type": "text"
+    }, {
+        "name": "button_url",
+        "label": "Button url",
+        "type": "text"
+    }, { 
+        "name": "description",
+        "label": "Description",
+        "type": "text"
+    }, {
+        "name": "image",
+        "label": "Image",
+        "type": "image",
+        "tags": ["wall", "tablet"]
+    },  {
+        "name": "parallax",
+        "label": "Parallax Background",
+        "type": "checkbox_switch"
+    }, {
+        "name": "case",
+        "label": "List", 
+        "type": "accordion",
+        "title": "Area",
+        "viewType" : "flip",
+        "settings": [{
+            "name": "case_name",
+            "label": "Case name",
+            "type": "text"
+        }, {
+            "name": "price",
+            "label": "Price",
+            "type": "text"
+        }, {
+            "name": "content_list",
+            "label": "List text",
+            "type": "accordion",
+            "settings": [{
+                "name": "text_li",
+                "label": "Text list",
+                "type": "text"
+            }]
+        }, {
+            "name": "action_text",
+            "label": "Action button text",
+            "type": "text"
+        }, {
+            "name": "action_url",
+            "label": "Url for action button",
+            "type": "text"
+        }, {
+            "name": "best_proposal",
+            "label": "Zoom best proposal",
+            "type": "checkbox"
+        }]
+    }],
+    "assets": [{
+        "type": "image",
+        "src": "%block_url%/assets/img/prices_bg.jpg",
+        "tags": ["wall"]
+    }],
+    "defaults": {
+        "header": "Used by 385,236 happy <br>customers",
+        "description" : "We do have a 30 day money back guarantee for all type of licenses.",
+        "image" : "%block_url%/assets/img/prices_bg.jpg",
+        "button_text" : "Try now",
+        "button_url" : "http://qoob.it/",
+        "case": [{
+            "case_name": "Open source license",
+            "price": "Free",
+            "content_list": [{
+                "title": "Page Builder Plugin",
+                "order": 0
+                }, {
+                "title": "Limited Technical Supportn",
+                "order": 1
+                }, {
+                "title": "Use for open source",
+                "order": 2
+                }, {
+                "title": "Free updates",
+                "order": 3
+                }, {
+                "title": "Use for any CMS and framework",
+                "order": 4
+                }, {
+                "title": "Not use for commerce",
+                "order": 5
+            }],
+            "action_text": "Download",
+            "action_url": "http://qoob.it/",
+            "title": "Area"
+        }, {
+            "case_name": "Personal license",
+            "price": "<span>$</span>29",
+            "content_list": [{
+                "title": "Page Builder Plugin",
+                "order": 0
+                }, {
+                "title": "Regular support",
+                "order": 1
+                }, {
+                "title": "Use for 1 website",
+                "order": 2
+                }, {
+                "title": "Free updates",
+                "order": 3
+                }, {
+                "title": "Use for any CMS and framework",
+                "order": 4
+                }, {
+                "title": "Not use for commerce",
+                "order": 5
+            }],
+            "action_text": "Buy",
+            "action_url": "http://qoob.it/",
+            "title": "Area"
+        }, {
+            "case_name": "Professional license",
+            "price": "<span>$</span>99",
+            "content_list": [{
+                "title": "Page Builder Plugin",
+                "order": 0
+                }, {
+                "title": "Regular support",
+                "order": 1
+                }, {
+                "title": "Use for 1 website",
+                "order": 2
+                }, {
+                "title": "Free updates",
+                "order": 3
+                }, {
+                "title": "Use for any CMS and framework",
+                "order": 4
+                }, {
+                "title": "Not use for commerce",
+                "order": 5
+            }],
+            "action_text": "Buy",
+            "action_url": "http://qoob.it/",
+            "title": "Area"
+        }, {
+            "case_name": "Commerce license",
+            "price": "<span>$</span>179",
+            "content_list": [{
+                "title": "Page Builder Plugin",
+                "order": 0
+                }, {
+                "title": "Regular support",
+                "order": 1
+                }, {
+                "title": "Use for 1 website",
+                "order": 2
+                }, {
+                "title": "Free updates",
+                "order": 3
+                }, {
+                "title": "Use for any CMS and framework",
+                "order": 4
+                }, {
+                "title": "Not use for commerce",
+                "order": 5
+            }],
+            "action_text": "Buy",
+            "action_url": "http://qoob.it/",
+            "title": "Area"
+        }]
+    }
+}

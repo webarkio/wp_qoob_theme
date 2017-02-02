@@ -1,0 +1,40 @@
+{
+    "name": "",
+    "groups": "call_to_action",
+    "template": "template.hbs",
+    "settings": [{
+        "name": "header",
+        "label": "Header",
+        "type": "text"
+    }, 
+    {
+        "name": "image",
+        "label": "Image",
+        "type": "image",
+        "tags": ["wall", "tablet"]
+    },  {
+        "name": "parallax",
+        "label": "Parallax Background",
+        "type": "checkbox_switch"
+    }, {
+        "name": "action_text",
+        "label": "Action button text",
+        "type": "text"
+    }, {
+        "name": "action_url",
+        "label": "Url for action button",
+        "type": "text"
+    }],
+    "assets": [{
+        "type": "image",
+        "src": "%block_url%/assets/img/call_to_action_bg_v3.jpg",
+        "tags": ["wall"]
+    }],
+    "defaults": {
+        "header": "30 + Predefined Blocks",
+        "description" : "This web site was created with qoob!",
+        "image" : "%block_url%/assets/img/call_to_action_bg_v3.jpg",
+        "action_text" : "Read",
+        "action_url" : "http://qoob.it/"
+    }
+}

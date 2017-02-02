@@ -1,0 +1,38 @@
+{
+    "name": "",
+    "groups": "text",
+    "template": "template.hbs",
+    "settings": [{
+        "name": "header",
+        "label": "Header",
+        "type": "text"
+    }, {
+        "name": "list",
+        "label": "List",
+        "type": "accordion",
+        "settings": [{
+            "name": "title",
+            "label": "Title",
+            "type": "text"
+        }]
+    }],
+    "defaults": {
+        "header": "WHAT'S NEW",
+        "list": [{
+            "title": "A free website builder offers that save you from any prior design",
+            "order": 0
+        }, {
+            "title": "A free website builder offers that save you from any prior design",
+            "order": 1
+        }, {
+            "title": "Qoob is a perfect solution, that save you",
+            "order": 2
+        }, {
+            "title": "Qoob is a perfect solution, that save you ",
+            "order": 3
+        }, {
+            "title": "Qoob is a perfect solution, that save you ",
+            "order": 4
+        }]
+    }
+}

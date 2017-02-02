@@ -1,0 +1,38 @@
+{
+    "name": "",
+    "groups": "forms",
+    "template": "template.hbs",
+    "settings": [{
+        "name": "header",
+        "label": "Header",
+        "type": "text"
+    },
+    {
+        "name": "image",
+        "label": "Image",
+        "type": "image",
+        "tags": ["woman", "person"]
+    },
+    {
+        "name": "text",
+        "label": "Text",
+        "type": "textarea"
+    },
+    {
+        "name": "email_pl",
+        "label": "Email palceholder",
+        "type": "text"
+    },
+    {
+        "name": "contact_me",
+        "label": "Submit button value",
+        "type": "text"
+    }],
+    "defaults": {
+        "header": "Are You a WordPress Developer?",
+        "image" : "%block_url%/assets/img/contact_image_bg.jpg",
+        "text" : "We would gladly help you integrate qoob to your project for FREE",
+        "email_pl" : "Your E-mail",
+        "contact_me" : "contact me"
+    }
+}

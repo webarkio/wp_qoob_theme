@@ -78,7 +78,7 @@ if ( ! function_exists( 'qoob_theme_setup' ) ) :
 		 * See https://developer.wordpress.org/reference/functions/add_image_size/
 		 */
 		add_image_size( 'thumbnail-size-post-page', 1903, 720, array( 'left', 'top' ) ); // Hard crop left top
-		add_image_size( 'thumbnail-blog-list', 540, 420, array( 'left', 'top' ) ); // Hard crop left top
+		add_image_size( 'thumbnail-blog-list'); // Hard crop left top
 
 		add_filter( 'qoob_libs', 'qoob_add_theme_lib', 10, 2 );
 	}
@@ -120,6 +120,26 @@ function qoob_social_media_icons( $nav, $args ) {
 		if ( ! empty( $active_sites ) ) {
 			foreach ( $active_sites as $active_site ) {
 				$icons .= '<li class="menu-item social-media-icon"><a target="_blank" href="' . esc_url( get_theme_mod( $active_site ) ) . '"><i class="' . $active_site . '"></i></a></li>';
+			}
+		}
+
+		return $nav . $icons;
+	}
+
+	$socials_footer = qoob_customizer_social_media_array();
+	if ( 'footer' === $args->theme_location ) {
+		/* any inputs that aren't empty are stored in $active_sites array */
+		foreach ( $socials_footer as $social_footer ) {
+			if ( strlen( get_theme_mod( $social_footer ) ) > 0 ) {
+				$active_sites[] = $social_footer;
+			}
+		}
+
+		$icons = '';
+		/* for each active social site, add it as a list item */
+		if ( ! empty( $active_sites ) ) {
+			foreach ( $active_sites as $active_site ) {
+				$icons .= '<li class="menu-item social-media-icon-footer"><a target="_blank" href="' . esc_url( get_theme_mod( $active_site ) ) . '"><i class="fa fa-'. $active_site . '"' . ' aria-hidden="true"></i>';
 			}
 		}
 
@@ -274,9 +294,36 @@ function qoob_search_form( $form ) {
 
 add_action( 'widgets_init', 'qoob_theme_footer_widgets_init' );
 
+function getPostViews($postID){
+    $count_key = 'post_views_count';
+    $count = get_post_meta($postID, $count_key, true);
+    if($count==''){
+        delete_post_meta($postID, $count_key);
+        add_post_meta($postID, $count_key, '0');
+        return "0";
+    }
+    return $count;
+}
+
+
+function setPostViews($postID) {
+    $count_key = 'post_views_count';
+    $count = get_post_meta($postID, $count_key, true);
+    if($count==''){
+        $count = 0;
+        delete_post_meta($postID, $count_key);
+        add_post_meta($postID, $count_key, '0');
+    }else{
+        $count++;
+        update_post_meta($postID, $count_key, $count);
+    }
+}
+
 /**
  * Register sidebar for footer
  */
+
+
 function qoob_theme_footer_widgets_init() {
 	register_sidebar( array(
 		'name' => __( 'Footer Sidebar', 'qoob' ),

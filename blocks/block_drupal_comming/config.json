@@ -1,0 +1,13 @@
+{
+    "name": "",
+    "groups": "other",
+    "template": "template.hbs",
+    "settings": [{
+        "name": "header",
+        "label": "Header",
+        "type": "text"
+    }],
+    "defaults": {
+        "header": "<b>Drupal Version</b> Comming soon..."
+    }
+}

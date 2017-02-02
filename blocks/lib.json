@@ -62,14 +62,32 @@
         "name": "call_to_action_bg",
         "url": "%theme_url%/blocks/call_to_action_bg/"
     }, {
+        "name": "call_to_action_v4",
+        "url": "%theme_url%/blocks/call_to_action_bg_v4/"
+    }, {
         "name": "call_to_action_bg_v2",
         "url": "%theme_url%/blocks/call_to_action_bg_v2/"
+    }, {
+        "name": "call_to_action_bg_v3",
+        "url": "%theme_url%/blocks/call_to_action_bg_v3/"
     }, {
         "name": "call_to_action_noimg",
         "url": "%theme_url%/blocks/call_to_action_noimg/"
     }, {
+        "name": "image_bg",
+        "url": "%theme_url%/blocks/image_bg/"
+    }, {
+        "name": "image_download",
+        "url": "%theme_url%/blocks/image_download/"
+    }, {
+        "name": "block_drupal_comming",
+        "url": "%theme_url%/blocks/block_drupal_comming/"
+    }, {
         "name": "contact",
         "url": "%theme_url%/blocks/contact/"
+    }, {
+        "name": "contact_image",
+        "url": "%theme_url%/blocks/contact_image/"
     }, {
         "name": "contact_fluid",
         "url": "%theme_url%/blocks/contact_fluid/"
@@ -92,6 +110,9 @@
         "name": "faq_accordion",
         "url": "%theme_url%/blocks/faq_accordion/"
     }, {
+        "name": "faq_customers",
+        "url": "%theme_url%/blocks/faq_customers/"
+    }, {
         "name": "faq_list",
         "url": "%theme_url%/blocks/contact/"
     }, {
@@ -113,6 +134,9 @@
         "name": "header",
         "url": "%theme_url%/blocks/header/"
     }, {
+        "name": "header_new",
+        "url": "%theme_url%/blocks/header_new/"
+    },{
         "name": "header_big_bg",
         "url": "%theme_url%/blocks/header_big_bg/"
     }, {
@@ -157,12 +181,21 @@
     }, {
         "name": "slider_text",
         "url": "%theme_url%/blocks/slider_text/"
+    },  {
+        "name": "slider_comments",
+        "url": "%theme_url%/blocks/slider_comments/"
+    },  {
+        "name": "slider_video",
+        "url": "%theme_url%/blocks/slider_video/"
     }, {
         "name": "social",
         "url": "%theme_url%/blocks/social/"
     }, {
         "name": "subscribe",
         "url": "%theme_url%/blocks/subscribe/"
+    }, {
+        "name": "achievements",
+        "url": "%theme_url%/blocks/achievements/"
     }, {
         "name": "team",
         "url": "%theme_url%/blocks/team/"
@@ -205,6 +238,18 @@
     }, {
         "name": "text",
         "url": "%theme_url%/blocks/text/"
+    }, {
+        "name": "list_simple",
+        "url": "%theme_url%/blocks/list_simple/"
+    }, {
+        "name": "block_html",
+        "url": "%theme_url%/blocks/block_html/"
+    }, {
+        "name": "block_prices",
+        "url": "%theme_url%/blocks/block_prices/"
+    }, {
+        "name": "block_wp_downloads",
+        "url": "%theme_url%/blocks/block_wp_downloads/"
     }, {
         "name": "text_image_left",
         "url": "%theme_url%/blocks/text_image_left/"
@@ -302,6 +347,13 @@
                     "frontend": true,
                     "backend": true
                 }
+            }, {
+                "name": "waves_css",
+                "url": "%theme_url%/blocks/faq_customers/assets/css/waves.min.css",
+                "use": {
+                    "frontend": true,
+                    "backend": true
+                }
             }
         ],
         "js": [
@@ -350,6 +402,13 @@
             }, {
                 "name": "collapse_js",
                 "url": "%theme_url%/blocks/faq_accordion/assets/js/collapse.js",
+                "use": {
+                    "frontend": true,
+                    "backend": true
+                }
+            }, {
+                "name": "waves_js",
+                "url": "%theme_url%/blocks/faq_customers/assets/js/waves.min.js",
                 "use": {
                     "frontend": true,
                     "backend": true

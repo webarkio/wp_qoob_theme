@@ -1,0 +1,44 @@
+{
+    "name": "",
+    "groups": "faq",
+    "template": "template.hbs",
+    "settings": [{
+        "name": "header",
+        "label": "Header",
+        "type": "text"
+    }, {
+        "name": "faq",
+        "label": "List",
+        "type": "accordion",
+        "settings": [{
+            "name": "title",
+            "label": "Title",
+            "type": "text",
+            "placeholder": "Enter text"
+        }, {
+            "name": "content",
+            "label": "Text",
+            "type": "textarea"
+        }]
+    }],
+    "defaults": {
+        "header": "FAQ",
+        "faq": [{
+            "title": "Can I use qoob for my theme?",
+            "content": "Lorem ipsum dolor sit amet, persius adipisci vim in. Ea est ponderum persequeris efficiantur. Ut eros nostrum neglegentur vis. Mea eius porro erant ex, ex postulant rationibus vel. In dolorem accusata perpetua mei, zril eripuit nominavi ius ad. Hinc voluptatum pro et, vero sapientem ei nam.<br/><br/>Ei est elit deserunt, diceret ancillae ea mea, mel alterum persequeris an. Vis altera volumus at, te ius epicuri offendit pericula. Quo ne mutat melius scripserit, sit augue aeterno eu, velit dictas accusam an pro. Sanctus repudiandae cum ut, et omnis dicta ius. Eos et quod duis offendit. Civibus vivendum molestiae id vis. Ei est elit deserunt, diceret ancillae ea mea, mel alterum persequeris an. Vis altera volumus at, te ius epicuri offendit pericula. Quo ne mutat melius scripserit, sit augue aeterno eu, velit dictas accusam an pro. Sanctus repudiandae cum ut, et omnis dicta ius!",
+            "order": 0
+        }, {
+            "title": "Personal license",
+            "content": "Lorem ipsum dolor sit amet, persius adipisci vim in. Ea est ponderum persequeris efficiantur. Ut eros nostrum neglegentur vis. Mea eius porro erant ex, ex postulant rationibus vel. In dolorem accusata perpetua mei, zril eripuit nominavi ius ad. Hinc voluptatum pro et, vero sapientem ei nam.<br/><br/>Ei est elit deserunt, diceret ancillae ea mea, mel alterum persequeris an. Vis altera volumus at, te ius epicuri offendit pericula. Quo ne mutat melius scripserit, sit augue aeterno eu, velit dictas accusam an pro. Sanctus repudiandae cum ut, et omnis dicta ius. Eos et quod duis offendit. Civibus vivendum molestiae id vis. Ei est elit deserunt, diceret ancillae ea mea, mel alterum persequeris an. Vis altera volumus at, te ius epicuri offendit pericula. Quo ne mutat melius scripserit, sit augue aeterno eu, velit dictas accusam an pro. Sanctus repudiandae cum ut, et omnis dicta ius!",
+            "order": 1
+        }, {
+            "title": "Personal license",
+            "content": "Lorem ipsum dolor sit amet, persius adipisci vim in. Ea est ponderum persequeris efficiantur. Ut eros nostrum neglegentur vis. Mea eius porro erant ex, ex postulant rationibus vel. In dolorem accusata perpetua mei, zril eripuit nominavi ius ad. Hinc voluptatum pro et, vero sapientem ei nam.<br/><br/>Ei est elit deserunt, diceret ancillae ea mea, mel alterum persequeris an. Vis altera volumus at, te ius epicuri offendit pericula. Quo ne mutat melius scripserit, sit augue aeterno eu, velit dictas accusam an pro. Sanctus repudiandae cum ut, et omnis dicta ius. Eos et quod duis offendit. Civibus vivendum molestiae id vis. Ei est elit deserunt, diceret ancillae ea mea, mel alterum persequeris an. Vis altera volumus at, te ius epicuri offendit pericula. Quo ne mutat melius scripserit, sit augue aeterno eu, velit dictas accusam an pro. Sanctus repudiandae cum ut, et omnis dicta ius!",
+            "order": 2
+        }, {
+            "title": "Personal license",
+            "content": "Lorem ipsum dolor sit amet, persius adipisci vim in. Ea est ponderum persequeris efficiantur. Ut eros nostrum neglegentur vis. Mea eius porro erant ex, ex postulant rationibus vel. In dolorem accusata perpetua mei, zril eripuit nominavi ius ad. Hinc voluptatum pro et, vero sapientem ei nam.<br/><br/>Ei est elit deserunt, diceret ancillae ea mea, mel alterum persequeris an. Vis altera volumus at, te ius epicuri offendit pericula. Quo ne mutat melius scripserit, sit augue aeterno eu, velit dictas accusam an pro. Sanctus repudiandae cum ut, et omnis dicta ius. Eos et quod duis offendit. Civibus vivendum molestiae id vis. Ei est elit deserunt, diceret ancillae ea mea, mel alterum persequeris an. Vis altera volumus at, te ius epicuri offendit pericula. Quo ne mutat melius scripserit, sit augue aeterno eu, velit dictas accusam an pro. Sanctus repudiandae cum ut, et omnis dicta ius!",
+            "order": 3
+        }]
+    }
+}

@@ -15,7 +15,8 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info container">
-			<?php dynamic_sidebar( 'footer' ); ?>
+			<?php dynamic_sidebar( 'footer' ); 
+			?>
 			<?php if ( has_nav_menu( 'footer' ) ) : ?>
 				<?php
 						wp_nav_menu( array(
@@ -32,13 +33,14 @@
 							'after'           => '',
 							'link_before'     => '<span>',
 							'link_after'      => '</span>',
-							'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+							'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s<li class="footer-copyright">' . esc_attr( get_theme_mod( 'footer_text' ) ) . '</li></ul>',
 							'depth'           => 1,
 							'walker'          => '',
 						) );
 				?>
+			<?php else: ?>
+				<div class="footer-copyright"><?php echo wp_kses_post( get_theme_mod( 'footer_text' ) ) ?></div>
 			<?php endif; ?>
-			<?php echo esc_attr( get_theme_mod( 'footer_text' ) ); ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

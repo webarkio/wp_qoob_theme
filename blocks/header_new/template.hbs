@@ -1,0 +1,21 @@
+<section class="header-block-wrap header-new-bg-{{id}} header-new-bg" >
+<div id="background-block-{{id}}" class="background-block {{#ifCond parallax '==' '1'}}parallax{{/ifCond}}" {{#if image}} style="background-image : url({{image}});" {{/if}}></div>
+	<div class="container">
+		<div class="row">
+		<div class="col-lg-12 bg-image-logo">
+				<img src="{{logo}}" alt="logo"/>
+			</div>
+			<div class="col-lg-12">
+				<h1 class="header-block">{{{header}}}</h1>
+			</div>
+			<div class="col-lg-12">
+				{{{text}}}
+			</div>
+			<div class="col-lg-12 text-center btn-header-wrap">
+				<a href="{{action_url}}" class="btn inverse">{{text-btn-left}}</a>
+				<a href="#slider-video" class="block-video-play" id="block-video-play-{{id}}"></a>
+				<a href="{{action_url}}" class="btn inverse">{{text-btn-right}}</a>
+			</div>
+		</div>
+	</div>
+</section>

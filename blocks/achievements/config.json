@@ -1,0 +1,32 @@
+{
+    "name": "",
+    "groups": "forms",
+    "template": "template.hbs",
+    "settings": [
+    {
+        "name": "downloads_achievement",
+        "label": "Value downloads",
+        "type": "text"
+    },
+    {
+        "name": "installs_achievement",
+        "label": "Value install",
+        "type": "text"
+    },
+    {
+        "name": "email_pl",
+        "label": "Email palceholder",
+        "type": "text"
+    },
+    {
+        "name": "subscribe_btn",
+        "label": "Submit button value",
+        "type": "text"
+    }],
+    "defaults": {
+       "email_pl" : "Enter your website url",
+       "subscribe_btn" : "install",
+       "downloads_achievement" : "2,299",
+       "installs_achievement" : "60 +"
+    }
+}

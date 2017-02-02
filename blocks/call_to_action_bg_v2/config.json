@@ -6,13 +6,11 @@
         "name": "header",
         "label": "Header",
         "type": "text"
-    }, 
-    {
+    }, {
         "name": "description",
         "label": "Description",
         "type": "text"
-    }
-    ,{
+    }, {
         "name": "image",
         "label": "Image",
         "type": "image",
@@ -21,18 +19,15 @@
         "name": "parallax",
         "label": "Parallax Background",
         "type": "checkbox_switch"
-    }, 
-    {
-            "name": "btn_id",
-            "label": "Button's id",
-            "type": "text"
-    },
-    {
-            "name": "btn_onclick",
-            "label": "Button's onclick",
-            "type": "text"
-    },
-    {
+    }, {
+        "name": "btn_id",
+        "label": "Button's id",
+        "type": "text"
+    }, {
+        "name": "btn_onclick",
+        "label": "Button's onclick",
+        "type": "text"
+    }, {
         "name": "action_text",
         "label": "Action button text",
         "type": "text"

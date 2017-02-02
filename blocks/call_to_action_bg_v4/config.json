@@ -1,0 +1,41 @@
+{
+    "name": "",
+    "groups": "call_to_action",
+    "template": "template.hbs",
+    "settings": [{
+        "name": "header",
+        "label": "Header",
+        "type": "text"
+    }, {
+        "name": "imagedesktop",
+        "label": "Image for desktop",
+        "type": "image",
+        "tags": ["wall", "desktop"]
+    }, {
+        "name": "imagetablet",
+        "label": "Image for tablet",
+        "type": "image",
+        "tags": ["wall", "tablet"]
+    }, {
+        "name": "imagemobile",
+        "label": "Image for modile",
+        "type": "image",
+        "tags": ["wall", "mobile"]
+    }, {
+        "name": "action_text",
+        "label": "Action button text",
+        "type": "text"
+    }, {
+        "name": "action_url",
+        "label": "Url for action button",
+        "type": "text"
+    }],
+    "defaults": {
+        "header": "Premium <br>themes",
+        "action_text" : "More",
+        "action_url" : "http://qoob.it/",
+        "imagedesktop" : "%block_url%/assets/img/call_to_action_bg4.jpg",
+        "imagetablet" : "%block_url%/assets/img/call_to_action_tablet_bg4.png",
+        "imagemobile" : "%block_url%/assets/img/call_to_action_mobile_bg4.png"
+    }
+}

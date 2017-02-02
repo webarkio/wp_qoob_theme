@@ -1,0 +1,62 @@
+{
+    "name": "",
+    "groups": "other",
+    "template": "template.hbs",
+    "settings": [{
+        "name": "header",
+        "label": "Downloads",
+        "type": "text"
+    }, {
+        "name": "html_list",
+        "label": "List",
+        "type": "accordion",
+        "settings": [{
+            "name": "title",
+            "label": "Title",
+            "type": "text"
+        }, {
+            "name": "url",
+            "label": "Link",
+            "type": "text"
+        }, {
+            "name": "icon",
+            "label": "Icon",
+            "type": "icon",
+            "presets": ["fa fa-play-circle", "fa fa-github", "fa fa-book", "fa fa-book"]
+        }]
+    }, {
+        "name": "email_pl",
+        "label": "Email palceholder",
+        "type": "text"
+    }, {
+        "name": "contact_me",
+        "label": "Submit button value",
+        "type": "text"
+    }],
+    "defaults": {
+        "header": "3000",
+        "email_pl" : "Enter your website url",
+        "contact_me" : "install",
+        "html_list": [{
+            "title": "Try demo",
+            "url": "#try",
+            "icon": "fa fa-play-circle",
+            "order": 0
+        }, {
+            "title": "View on GitHub",
+            "url": "#git",
+            "icon": "fa fa-github",
+            "order": 1
+        }, {
+            "title": "Installation",
+            "url": "#install",
+            "icon": "fa fa-book",
+            "order": 2
+        }, {
+            "title": "Getting Started with qoob for HTML",
+            "url": "#start",
+            "icon": "fa fa-book",
+            "order": 3
+        }]
+    }
+}

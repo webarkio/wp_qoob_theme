@@ -1,0 +1,135 @@
+/*--------------------------------------------------------------
+# Subscribe form
+--------------------------------------------------------------*/
+.subscribe-block {
+	padding-top: 27.8rem;
+    padding-bottom: 27.8rem;
+}
+.subscribe-block form {
+	max-width: 81.2rem;
+	position: relative;
+	margin: auto;
+}
+
+.subscribe-block form input[name='email'] {
+	width: 96%;
+}
+.subscribe-block form input[type='submit'] {
+	position: absolute;
+	padding: 2.5rem 5.5rem;
+    top: 0;
+    right: 0;
+    border-color: #0084ff;
+}
+.subscribe-block form input[type='submit']:hover {
+	background-color: #0084ff;
+	border-color: #fff !important;
+	color: #fff;
+}
+.subscribe-block .subscribe-wrap-image {
+	text-align: center;
+	position: relative;
+	max-width: 81.2rem;
+    margin: auto;
+    margin-bottom: 55px;
+}
+.subscribe-block .subscribe-wrap-image .subscribe-icon {
+	text-align: center;
+	max-width: 17.8rem;
+	margin: auto;
+	margin-top: -16px;
+}
+.subscribe-block .subscribe-wrap-image .subscribe-icon img {
+	max-width: 17.8rem;
+	max-height: 13rem;
+	position: relative;
+}
+
+.subscribe-block .subscribe-wrap-image .comingsoon-title {
+	
+	display: inline-block;
+	left: 0;
+	top: 20px;
+}
+
+.subscribe-block .subscribe-wrap-image .follow-title {
+	background-color: #0084ff;
+	display: inline-block;
+	right: 0;
+}
+.subscribe-block .subscribe-wrap-text {
+	overflow: hidden;
+	max-width: 81.2rem;
+	margin: auto;
+}
+.subscribe-block .icon-red, 
+.subscribe-block .icon-blue {
+	text-transform: uppercase;
+	font-size: 1.8rem;
+	font-family: "OpenSans-Bold", sans-serif;
+	padding: 2rem 2.7rem;
+	color: #fff;
+	border-radius: 12px;
+	max-width: 50%;
+}
+
+.subscribe-block .icon-red {
+	background-color: #ff0060;
+	float: left;
+	position: relative;
+	margin-bottom: 1.6rem;
+	margin-top: 5.2rem;
+}
+
+.subscribe-block .icon-red::after {
+	content: url(../images/subscribe_red.png);
+	display: block;
+	width: 1.7rem;
+	height: 1.7rem;
+	position: absolute;
+	bottom: -14px;
+    right: 28px;
+}
+.subscribe-block .icon-blue {
+	background-color: #0084ff;
+	float: right;
+	position: relative;
+	margin-bottom: 1.6rem;
+}
+.subscribe-block .icon-blue::after {
+	content: url(../images/subscribe_blue.png);
+	display: block;
+	width: 1.7rem;
+	height: 1.7rem;
+	position: absolute;
+	bottom: -14px;
+    left: 28px;
+}
+@media (max-width: 768px) {
+	.subscribe-block {
+	    padding-top: 14.8rem;
+	    padding-bottom: 14rem;
+	}
+	
+	.subscribe-block .icon-red, 
+	.subscribe-block .icon-blue {
+		max-width: 100%;
+		float: none;
+	}
+	.subscribe-block .icon-blue {
+		margin-bottom: 4.6rem;
+	}
+	.subscribe-block .icon-blue::after,
+	.subscribe-block .icon-red::after {
+		display: none;
+	}
+}
+
+@media (max-width: 480px) {
+	.subscribe-block form input[name='email'] {
+		width: 100%;
+	}
+	.subscribe-block form input[type='submit'] {
+		top: 8rem !important;
+	}
+}

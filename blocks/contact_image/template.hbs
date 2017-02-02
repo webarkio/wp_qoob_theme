@@ -1,0 +1,33 @@
+<section class="contact-image contact-image-{{id}}">
+    <div id="background-block-{{id}}" class="background-block {{#ifCond parallax '==' '1'}}parallax{{/ifCond}}" {{#if image}} style="background-image : url({{image}});" {{/if}}></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                {{#if header}}
+                <h2 class="header-block">{{header}}</h2>
+                {{/if}}
+            </div>
+            <div class="col-lg-12">
+            <div class="contact-image-text">
+                 {{{text}}}
+            </div>
+            </div>
+            <div class="col-lg-12">
+                <form action="https://app.getresponse.com/add_subscriber.html" accept-charset="utf-8" method="post">
+                    <!-- Email field (required) -->
+                    <input type="text" name="email" placeholder="{{email_pl}}"/>
+                    <!-- Subscriber button -->
+                    <input type="submit" class="inverse" value="{{contact_me}}"/>
+                </form>
+        </div>
+        </div>
+    </div>
+</section>
+<script>
+    jQuery(document).ready(function() {
+            jQuery(window).scroll(function () {
+                var scrolled = jQuery(document).scrollTop() - jQuery('.contact-image-{{id}}').offset().top;
+                jQuery('#background-block-{{id}}.parallax').css('top', scrolled + 'px');
+            });
+    });
+</script>

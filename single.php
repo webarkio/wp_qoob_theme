@@ -8,10 +8,11 @@
  */
 
 get_header( 'fixed' ); ?>
+<?php setPostViews(get_the_ID()); ?>
 <div class="entry-thumbnail-full" style="background-image: url(<?php the_post_thumbnail_url( 'thumbnail-size-post-page' ); ?>)">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-12">
+			<div class="col-lg-12 col-md-12">
 				<h1><?php echo get_the_title(); ?></h1>
 				<div class="entry-meta">
 					<?php qoob_theme_posted_on(); ?>
@@ -22,9 +23,9 @@ get_header( 'fixed' ); ?>
 </div>
 <div class="container">
 <?php if ( 'sidebar_right' === get_theme_mod( 'blog_sidebar' ) ) : ?>
-	<div id="primary" class="content-area sidebar-on col-lg-9">
+	<div id="primary" class="content-area sidebar-on col-lg-8 col-md-8">
 <?php else : ?>
-	<div id="primary" class="content-area sidebar-off col-lg-12">
+	<div id="primary" class="content-area sidebar-off col-lg-12 col-md-8">
 <?php endif; ?>
 
 		<main id="main" class="site-main" role="main">

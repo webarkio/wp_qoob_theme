@@ -1,0 +1,63 @@
+{
+    "name": "",
+    "groups": "introduction",
+    "template": "template.hbs",
+    "settings": [{
+        "name": "logo",
+        "label": "Logo",
+        "type": "image"
+    }, {
+        "name": "image",
+        "label": "Image",
+        "type": "image",
+        "tags": ["girl"]
+    }, {
+        "name": "header",
+        "label": "Header",
+        "type": "text"
+    }, {
+        "name": "text-btn-left",
+        "label": "Button left",
+        "type": "text"
+    }, {
+        "name": "text-btn-right",
+        "label": "Button right",
+        "type": "text"
+    }, {
+        "name": "text",
+        "label": "Text",
+        "type": "textarea"
+    }, {
+        "name": "buttons",
+        "label": "Buttons",
+        "type": "accordion",
+        "viewcontent": "standart",
+        "viewType": "expand",
+        "settings": [{
+            "name": "title",
+            "label": "Action button text",
+            "type": "text"
+        }, {
+            "name": "action_url",
+            "label": "Url for action button",
+            "type": "text"
+        }]
+    }],
+    "defaults": {
+        "logo": "%block_url%/assets/img/qoob_main_logo_black.png",
+        "image" : "%block_url%/assets/img/header-bg-new.jpg",
+        "header": "Create your website now <br>- it's free and so easy!",
+        "text": "<p>A free website builder offers a huge amount of tools and features with an intuitive interface. Qoob is a perfect solution, that save you from any prior design and coding experience and let you handle it without hiring a professional. Modern and responsive websites in a few clicks. </p>",
+        "text-btn-left": "Try now",
+        "text-btn-right": "Download",
+        "buttons": [{
+            "title": "Try now",
+            "action_url": "http://qoob.it/",
+            "order": 1
+        }, {
+            "title": "Download",
+            "action_url": "http://qoob.it/",
+            "order": 2
+        }]
+    }
+}

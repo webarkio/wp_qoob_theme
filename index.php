@@ -12,11 +12,12 @@
  * @package qoob
  */
 
-get_header( 'fixed' ); ?>
+get_header( 'fixed' );
+?>
 <div class="entry-thumbnail-blog" style="background-image: url(<?php echo esc_url( get_theme_mod( 'blog_image_bg' ) ); ?>)">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-12">
+			<div class="col-lg-12 col-md-12">
 				<h2><?php
 				global $wp_query;
 
@@ -29,7 +30,7 @@ get_header( 'fixed' ); ?>
 </div>
 <div class="container">
 <?php if ( 'sidebar_right' === get_theme_mod( 'blog_sidebar' ) ) : ?>
-	<div id="primary" class="content-area sidebar-on col-lg-9">
+	<div id="primary" class="content-area sidebar-on col-lg-8 col-md-8 col-sm-12 col-xs-12">
 <?php else : ?>
 	<div id="primary" class="content-area sidebar-off col-lg-12">
 <?php endif; ?>
@@ -56,6 +57,7 @@ get_header( 'fixed' ); ?>
 		endif; ?>
 
 		</main><!-- #main -->
+
 		<?php
 			the_posts_pagination( array(
 				'prev_text'          => '',
@@ -64,6 +66,7 @@ get_header( 'fixed' ); ?>
 			) );
 
 		?>
+
 	</div><!-- #primary -->
 
 <?php

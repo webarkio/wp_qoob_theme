@@ -7,6 +7,41 @@
  * @package qoob
  */
 
+if ( ! function_exists( 'qoob_theme_posted_meta' ) ) :
+	/**
+	 * Prints HTML with meta information for the current post-date/time and author.
+	 */
+	function qoob_theme_posted_meta() {
+		echo '<span class="posted-auther"><i class="fa fa-user-o" aria-hidden="true"></i>' . get_the_author() . '</span>';
+		echo '<span class="posted-data"><i class="fa fa-calendar-o" aria-hidden="true"></i>' . get_the_date('F j, Y') . '</span>';
+		echo '<span class="posted-comments"><i class="fa fa-comment-o" aria-hidden="true"></i>' . get_comments_number('0', '1', '%') . '</span>';
+		echo '<span class="posted-eye"><i class="fa fa-eye" aria-hidden="true"></i>' . getPostViews(get_the_ID()) . '</span>';
+		// $time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
+		// if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
+		// 	$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
+		// }
+
+		// $time_string = sprintf( $time_string,
+		// 	esc_attr( get_the_date( 'j' ) ),
+		// 	esc_html( get_the_date( 'j.m.Y' ) ),
+		// 	esc_attr( get_the_modified_date( 'j' ) ),
+		// 	esc_html( get_the_modified_date( 'j.m.Y' ) )
+		// );
+
+		// $posted_on = sprintf(
+		// 	esc_html_x( '%s', 'post date', 'qoob' ),
+		// 	'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
+		// );
+
+		// $byline = sprintf(
+		// 	esc_html_x( 'by %s', 'post author', 'qoob' ),
+		// 	'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
+		// );
+
+		// echo '<span class="posted-on"><i class="time-icon"></i>' . wp_kses_post( $posted_on ) . '</span>';
+	}
+endif;
+
 if ( ! function_exists( 'qoob_theme_posted_on' ) ) :
 	/**
 	 * Prints HTML with meta information for the current post-date/time and author.

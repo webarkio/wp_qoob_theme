@@ -1,0 +1,31 @@
+{
+    "name": "",
+    "groups": "other",
+    "template": "template.hbs",
+    "settings": [{
+        "name": "header",
+        "label": "Header",
+        "type": "text"
+    }, {
+        "name": "imagedesktop",
+        "label": "Image for desktop",
+        "type": "image",
+        "tags": ["wall", "desktop"]
+    }, {
+        "name": "imagetablet",
+        "label": "Image for tablet",
+        "type": "image",
+        "tags": ["wall", "tablet"]
+    }, {
+        "name": "imagemobile",
+        "label": "Image for modile",
+        "type": "image",
+        "tags": ["wall", "mobile"]
+    }],
+    "defaults": {
+        "header": "What tehnologies <br>do we use",
+        "imagedesktop" : "%block_url%/assets/img/image_bg.jpg",
+        "imagetablet" : "%block_url%/assets/img/image_bg768.jpg",
+        "imagemobile" : "%block_url%/assets/img/image_bg.jpg"
+    }
+}

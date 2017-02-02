@@ -90,11 +90,36 @@ function qoob_theme_customize_register( $wp_customize ) {
 
 	$wp_customize->add_control( 'footer_text', array(
 		'type' => 'text',
-		'priority' => 10,
+		'priority' => 5,
 		'section' => 'footer_settings',
 		'label' => __( 'Footer text', 'qoob' ),
 		'description' => '',
-	) );
+	));
+// -----------------------------
+	$socials_footer = qoob_customizer_social_media_array();
+	
+	$priority = 10;
+
+	foreach ( $socials_footer as $social_footer ) {
+		$wp_customize->add_setting( 'footer_' . $social_footer, array(
+			'default' => '',
+			'type' => 'theme_mod',
+			'capability' => 'edit_theme_options',
+			'sanitize_callback' => 'esc_url_raw',
+		) );
+
+		$wp_customize->add_control( 'footer_' . $social_footer, array(
+				'label'    => $social_footer . ' ' . esc_html__( 'url:', 'qoob' ),
+				'section'  => 'footer_settings',
+				'type'     => 'text',
+				'priority' => $priority,
+		) );
+
+		$priority = $priority + 5;
+	}
+
+
+// -----------------------------
 
 	$wp_customize->add_section( 'my_social_settings', array(
 		'title'    => esc_html__( 'Social Media Icons', 'qoob' ),
@@ -139,6 +164,6 @@ add_action( 'customize_preview_init', 'qoob_theme_customize_preview_js' );
  */
 function qoob_customizer_social_media_array() {
 	/* store social site names in array */
-	$social_sites = array( 'github', 'twitter' );
+	$social_sites = array( 'github', 'twitter', 'facebook' );
 	return $social_sites;
 }

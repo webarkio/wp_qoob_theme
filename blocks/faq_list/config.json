@@ -6,7 +6,7 @@
         "name": "header",
         "label": "Header",
         "type": "text"
-    },{
+    }, {
         "name": "faq",
         "label": "List",
         "type": "accordion",

@@ -8,12 +8,12 @@
  */
 
 ?>
-<div class="col-lg-4 col-sm-4">
+<div class="col-lg-12 col-md-12 col-sm-12 hux">
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'posts-list' ); ?>>
 	<?php if ( has_post_thumbnail( $post->ID ) ) : ?>
-	<div class="entry-thumbnail">
-		<img src="<?php the_post_thumbnail_url( 'thumbnail-blog-list' ); ?>" alt="">
-	</div>
+	<!-- <div class="entry-thumbnail"> -->
+		<img class="thumbnail-blog" src="<?php the_post_thumbnail_url( 'thumbnail-blog-list' ); ?>" alt="">
+	<!-- </div> -->
 	<?php endif;?>
 	<div class="entry-wrap-content">
 		<header class="entry-header">
@@ -36,8 +36,9 @@
 			?>
 		</div><!-- .entry-content -->
 		<div class="entry-meta">
-				<?php qoob_theme_posted_on(); ?>
+				<?php qoob_theme_posted_meta(); ?>
 		</div><!-- .entry-meta -->
 	</div><!-- #entry-wrap-content-->
 </article><!-- #post-## -->
+
 </div>

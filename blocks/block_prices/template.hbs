@@ -1,0 +1,55 @@
+<section class="block-prices block-prices-bg-{{id}}">
+    <div id="background-block-{{id}}" class="background-block {{#ifCond parallax '==' '1'}}parallax{{/ifCond}}" {{#if image}} style="background-image : url({{image}});" {{/if}}></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                {{#if header}}
+                <h2 class="header-block">{{{header}}}</h2>
+                {{/if}}
+            </div>
+            <div class="col-lg-12">
+                <a href="{{button_url}}" class="btn btn-action br-white">{{button_text}}</a>
+            </div>  
+            </div>
+            <div class="row">                     
+                {{#if case.length}}
+                    {{#each_with_sort case "order"}}
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="block_license {{#ifCond best_proposal '==' '1'}}best_proposal{{/ifCond}}">
+                            <div class="top_license">
+                                <div class="name_licence"> 
+                                    {{case_name}}
+                                </div>
+                                <div class="cost_license">
+                                    {{{price}}}
+                                </div>
+                            </div>
+
+                            <ul class="content_license">
+                                {{#if content_list.length}}
+                                    {{#each_with_sort content_list "order"}}
+                                        <li>{{{title}}}</li>
+                                    {{/each_with_sort}}
+                                {{/if}}
+                            </ul>
+                            <a class="link_license" href="{{action_url}}">{{action_text}}</a>
+                        </div>
+                    </div>
+                    {{/each_with_sort}}
+                {{/if}}
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="description">{{description}}</div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    jQuery(document).ready(function() {
+            jQuery(window).scroll(function () {
+                var scrolled = jQuery(document).scrollTop() - jQuery('.block-prices-bg-{{id}}').offset().top;
+                jQuery('#background-block-{{id}}.parallax').css('top', scrolled + 'px');
+            });
+    });
+</script>

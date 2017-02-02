@@ -46,3 +46,21 @@
     font-style: normal;
 
 }
+@font-face {
+    font-family: "RobotoLight";
+    src: url("../../fonts/RobotoLight/RobotoLight.eot");
+    src: url("../../fonts/RobotoLight/RobotoLight.eot?#iefix")format("embedded-opentype"),
+    url("../../fonts/RobotoLight/RobotoLight.woff") format("woff"),
+    url("../../fonts/RobotoLight/RobotoLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "RobotoBlack";
+    src: url("../../fonts/RobotoBlack/RobotoBlack.eot");
+    src: url("../../fonts/RobotoBlack/RobotoBlack.eot?#iefix")format("embedded-opentype"),
+    url("../../fonts/RobotoBlack/RobotoBlack.woff") format("woff"),
+    url("../../fonts/RobotoBlack/RobotoBlack.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
