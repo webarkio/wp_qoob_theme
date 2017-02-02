@@ -25,7 +25,7 @@
     "defaults": {
         "header": "What tehnologies <br>do we use",
         "imagedesktop" : "%block_url%/assets/img/image_bg.jpg",
-        "imagetablet" : "%block_url%/assets/img/image_bg768.jpg",
-        "imagemobile" : "%block_url%/assets/img/image_bg.jpg"
+        "imagetablet" : "%block_url%/assets/img/image_bgtablet.jpg",
+        "imagemobile" : "%block_url%/assets/img/image_bgmobile.png"
     }
 }

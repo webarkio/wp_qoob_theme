@@ -6,14 +6,17 @@
         "name": "header",
         "label": "Header",
         "type": "text"
-    },
-    {
+    }, {
         "name": "image",
         "label": "Image",
         "type": "image",
         "tags": ["woman", "person"]
-    },
-    {
+    }, {
+        "name": "imagetablet",
+        "label": "Image for tablet",
+        "type": "image",
+        "tags": ["wall", "tablet"]
+    }, {
         "name": "text",
         "label": "Text",
         "type": "textarea"
@@ -31,6 +34,7 @@
     "defaults": {
         "header": "Are You a WordPress Developer?",
         "image" : "%block_url%/assets/img/contact_image_bg.jpg",
+        "imagetablet" : "%block_url%/assets/img/contact_image_bgtablet.jpg",
         "text" : "We would gladly help you integrate qoob to your project for FREE",
         "email_pl" : "Your E-mail",
         "contact_me" : "contact me"
