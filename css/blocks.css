@@ -1283,7 +1283,7 @@
 }
 .list_simple .header-block {
     font-size: 5.4rem;
-    text-align: center;
+    text-align: center !important;
     color: #000;
     font-family: "RobotoBlack", sans-serif;
     margin: 1.7rem 0 1.4rem;
@@ -1292,7 +1292,7 @@
    display: none;
 }
 .list_simple ul li {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: #000;
     margin: 17px auto;
 }
@@ -1301,25 +1301,24 @@
 }
 .list_simple ul {
     max-width: 565px;
-    padding: 0;
     margin: 0 auto;
 }
 
-@media (max-width: 900px) {
-    .list_simple ul {
-        max-width: 100%;    
-    }
-
-    .list_simple .header-block {
-        padding-left: 0 !important;
-    }
-}
 
 @media (max-width: 768px) {
+        .list_simple .header-block, .list_simple ul {
+        padding-left: 0 !important;
+    }
+        .list_simple ul {
+        max-width: 100%;    
+    }
     .list_simple {
         padding-top: 3.5rem;
         padding-bottom: 2.3rem;
     }
+    .list_simple .header-block {
+    text-align: left !important;
+}
 
     .list_simple .header-block {
         font-size: 3.0rem !important;
@@ -2589,8 +2588,8 @@
     .header-new-bg p {
         font-size: 1.6rem;
         text-align: left;
-        line-height: 2.36rem;
-        margin-bottom: 2.5rem;
+        line-height: 2.4rem;
+        margin-bottom: 2rem;
     }
 
     .header-new-bg .btn-header-wrap .btn {
@@ -3677,7 +3676,7 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 .achievements-block form input[name='email'] {
     width: 100%;
     float: left;
-    max-width: calc(100% - 222px);
+    max-width: calc(100% - 224px);
     border-radius: 0px;
     border: 3px solid #000;
     background: #fff;
@@ -3691,7 +3690,7 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
     background: #000;
     float: left;
     color: #fff;
-    max-width: 222px;
+    max-width: 224px;
     width: 100%;
     border: none;
     border-radius: 0px 64px 64px 0;
@@ -3758,13 +3757,14 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 }
 @media (max-width: 768px) {
     .achievements-block {
-        padding-top: 3.8rem;
-        padding-bottom: 4.5rem;
+        padding-top: 5.8rem;
+        padding-bottom: 4.9rem;
     }
     .achievements-block .downloads_achievement, .achievements-block .installs_achievement {
         max-width: 100% !important;
         width: 100%;
         text-align: center;
+        line-height: 43px;
     }
     .achievements-block form input[name="email"] {
         max-width: calc(100% - 108px);
@@ -3774,6 +3774,17 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
         width: 100%;
         font-size: 1.4rem;
     }   
+    .achievements-block .downloads_achievement {
+            margin-bottom: 3rem;
+    }
+     .achievements-block .downloads_achievement span, 
+    .achievements-block .installs_achievement span {
+        display: inherit;
+    }
+    .achievements-block form {
+    height: 54px;
+    margin: 39px auto 15px;
+}
 }
 
 @media (max-width: 480px) {
@@ -3834,7 +3845,7 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 .contact-image form {
     max-width: 750px;
     position: relative;
-    height: 64px;
+    height: 70px;
     margin: 15px auto 15px;
 }
 
@@ -3918,15 +3929,15 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 
 @media (max-width: 768px) {
     .contact-image {
-     padding-top: 5rem;
-     padding-bottom: 0rem;
+     padding-top: 3.3rem;
+     padding-bottom: 4.5rem;
  }
  .contact-image form input[type='submit'] {
-    max-width: 130px;
+    max-width: 126px;
     font-size: 1.4rem;
 }
 .contact-image form input[name='email'] {
-    max-width: calc(100% - 132px);
+    max-width: calc(100% - 126px);
     height: 100%;
     font-size: 1.4rem;
 
@@ -3941,8 +3952,15 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
     font-size: 1.6rem;
     color: #000;
     text-align: left;
-    margin-bottom: 7rem;
+    line-height: 22px;
+    margin-bottom: 5.3rem;
 }
+.contact-image form {
+    height: 52px;
+    }
+    .contact-image .background-block {
+    display: none;
+    }
 }
 
 @media (max-width: 480px) {

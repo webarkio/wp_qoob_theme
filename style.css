@@ -1023,7 +1023,7 @@ a:active {
 	}
 
 	.social-media-icon-footer i {
-		font-size: 21px;
+		font-size: 25px;
 	}
 
 	.social-media-icon-footer i:hover {
@@ -1250,6 +1250,7 @@ a:active {
 	font-size: 1.5rem;
 	font-family: "RobotoLight", sans-serif;
 	text-decoration: none;
+	letter-spacing: 0.01em;
 }
 
 .footer-navigation li a:hover {
@@ -1542,9 +1543,12 @@ a:active {
 	}
 	.footer-navigation li {
 		display: block;
+		margin: 5px 16px 5px 16px;
 	}
 	.social-media-icon-footer {
 		display: inline-block !important;
+		    margin-top: 13px !important;
+    margin-bottom: 16px !important;
 	}
 }
 
@@ -1977,6 +1981,11 @@ a:active {
 	color: #fff;
 	text-align: center;
 }
+@media (max-width: 768px) {
+.site-footer {
+	padding: 30px 0;
+}
+	}
 
 
 /*--------------------------------------------------------------
