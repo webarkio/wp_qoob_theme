@@ -1286,6 +1286,7 @@
     text-align: center;
     color: #000;
     font-family: "RobotoBlack", sans-serif;
+    margin: 1.7rem 0 1.4rem;
 }
 .list_simple ul li:before {
    display: none;
@@ -2486,6 +2487,10 @@
 
 .header-new-bg p { 
     margin-top: 2rem;
+    font-family: "RobotoLight", sans-serif;
+    color: #000;
+    line-height: 30px;
+
 }
 
 .header-new-bg .background-block.parallax {
@@ -2532,7 +2537,7 @@
 }
 
 .header-new-bg .btn-header-wrap {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     margin-bottom: 3.9rem;
 }
 
@@ -3405,7 +3410,7 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 # Slider video
 --------------------------------------------------------------*/
 .slider-video {
-    padding: 2.9rem 0 4rem;
+    padding: 2.9rem 0 5.5rem;
 }
 
 .slider-video .header-block {
@@ -3426,7 +3431,7 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 }
 
 .slider-video .owl-dots {
-    margin-top: 15px !important;
+    margin-top: 16px !important;
 }
 
 .slider-video .owl-dots .owl-dot {

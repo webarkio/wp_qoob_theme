@@ -1010,14 +1010,13 @@ a:active {
 
 	.sf-menu .social-media-icon a {
 		padding: 0;
-		margin: 1.2rem -0.2rem 0.7em 1.5em;
+		position: relative;
+		top: 10px;
+		margin: 0 4px
 	}
 
 	.sf-menu .social-media-icon i, #mobile-menu .social-media-icon i {
-		display: block;
-		position: relative;
-		height: 2.2rem;
-		background-image: url(images/nav_linkicons-small.png);
+		font-size: 25px;
 	}
 	.social-media-icon-footer {
 		margin: 0 6px !important;
