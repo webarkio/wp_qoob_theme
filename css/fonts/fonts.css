@@ -37,11 +37,11 @@
 }
 @font-face {
     font-family: 'RobotoBold';
-    src: url('../../fonts/RobotoBold/Roboto-Bold-webfont.eot');
-    src: url('../../fonts/RobotoBold/Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../../fonts/RobotoBold/Roboto-Bold-webfont.woff') format('woff'),
-         url('../../fonts/RobotoBold/Roboto-Bold-webfont.ttf') format('truetype'),
-         url('../../fonts/RobotoBold/Roboto-Bold-webfont.svg#robotobold') format('svg');
+    src: url('../../fonts/RobotoBold/RobotoBold.eot');
+    src: url('../../fonts/RobotoBold/RobotoBold.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/RobotoBold/RobotoBold.woff') format('woff'),
+         url('../../fonts/RobotoBold/RobotoBold.ttf') format('truetype'),
+         url('../../fonts/RobotoBold/RobotoBold.svg#robotobold') format('svg');
     font-weight: normal;
     font-style: normal;
 

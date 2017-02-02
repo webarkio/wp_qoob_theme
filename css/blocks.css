@@ -70,8 +70,8 @@
 --------------------------------------------------------------*/
 
 .block-image-bg {
-    padding-top: 9rem;
-    padding-bottom: 14.0rem;
+    padding-top: 11rem;
+    padding-bottom: 0rem;
     text-align: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -95,13 +95,14 @@
 
 .block-image-bg .h2-block {
    text-transform: uppercase;
+   margin-top: 0px;
    color: #000;
    font-size: 5.4rem;
    position: absolute;
    left: 0;
    right: 0;
-   font-family: "RobotoBold", sans-serif;
-   line-height: 67px;
+   font-family: "RobotoBlack", sans-serif;
+   line-height: 65px;
 }
 .block-image-bg .imagetablet, .block-image-bg .imagemobile {
     display: none;
@@ -113,14 +114,15 @@
     .block-image-bg .imagetablet {
         display: block;
     }
-    .block-image-bg .h2-block {
-        top: 23px;
-    }
+
 }
 
 @media (max-width: 992px) { 
     .block-image-bg {
-        padding-top: 6rem;
+        padding-top: 11rem;
+    }
+        .block-image-bg .h2-block {
+        top: 46px;
     }
 }
 @media (max-width: 768px) { 
@@ -379,6 +381,7 @@
 .call-to-action-bg .header-block {
 	text-transform: uppercase;
 	color: #fff;
+    font-family: "RobotoBold", sans-serif;
 }
 .call-to-action-bg .header-desc {
 	color: #fff;
@@ -459,6 +462,7 @@
     line-height: 1.25;
     position: relative;
     top: 95px;
+    font-family: "RobotoBlack", sans-serif;
     float: left;
 }
 .call-to-action-bg-v4 .header-desc {
@@ -471,6 +475,8 @@
     position: relative;
     top: 464px;
     left: 23%;
+    font-family: "RobotoBold", sans-serif;
+    font-size: 1.8rem;
     color: #000;
     border-color: #000;
 }
@@ -640,7 +646,7 @@
     text-transform: uppercase;
     color: #000;
     font-size: 5.4rem;
-    font-family: "Roboto", sans-serif;
+    font-family: "RobotoBlack", sans-serif;
 }
 .call-to-action-bg-v3 .header-desc {
     color: #000;
@@ -704,6 +710,7 @@
 	text-align: center;
 	line-height: 7.1rem;
     margin-bottom: 2.1rem;
+    font-family: "RobotoBold", sans-serif;
 }
 
 .call-to-action-no-img .btn-action {
@@ -723,6 +730,7 @@
 .contact .header-block {
     text-align: center;
     margin-bottom: 8.9rem;
+
 }
 
 .contact form input[type="text"],
@@ -1277,6 +1285,7 @@
     font-size: 5.4rem;
     text-align: center;
     color: #000;
+    font-family: "RobotoBlack", sans-serif;
 }
 .list_simple ul li:before {
    display: none;
@@ -1326,8 +1335,9 @@
     }
 
     .list_simple ul li {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         margin: 15px auto 32px;
+        font-family: "RobotoLight", sans-serif;
     }
 
     .list_simple ul li i {
@@ -2459,7 +2469,7 @@
 }
 .header-new-bg .bg-image-logo img{
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 32px;
 }
 .header-new-bg .background-block {
     display: block;
@@ -2475,7 +2485,7 @@
 }
 
 .header-new-bg p { 
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 .header-new-bg .background-block.parallax {
@@ -2484,15 +2494,12 @@
 }
 
 .header-new-bg .btn-header-wrap .btn {
-    border: 3px solid #0084ff;
-}
-
-.header-new-bg .btn-header-wrap .btn {
     margin-right: 0rem;
     min-width: 260px;
     font-size: 1.8rem;
     font-family: "RobotoBold", sans-serif;
     padding: 23px;
+    border: 3px solid #0084ff;
 }
 
 .header-new-bg .btn-header-wrap .btn:last-child {
@@ -2520,10 +2527,12 @@
 .header-new-bg .header-block {
     color: #000;
     font-size: 5.4rem;
+    font-family: "RobotoBlack", sans-serif;
+    line-height: 1.2;
 }
 
 .header-new-bg .btn-header-wrap {
-    margin-top: 5.2rem;
+    margin-top: 2rem;
     margin-bottom: 3.9rem;
 }
 
@@ -3789,6 +3798,7 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
     text-transform: uppercase;
     color: #000;
     font-size: 5.4rem;
+     font-family: "RobotoBlack", sans-serif;
     margin-bottom: 3rem;
 }
 .contact-image-text p {
@@ -3919,6 +3929,7 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 .contact-image .h2-block {
     font-size: 3rem;
     text-align: left;
+    line-height: 37px;
     margin-bottom: 2rem;
 }
 .contact-image-text p {
