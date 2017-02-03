@@ -16,37 +16,33 @@
                     "type": "text"
                 }, {
                     "name": "url",
-                    "label": "Video",
-                    "type": "video",
+                    "label": "Url video",
+                    "type": "text",
                     "tags": ["myVid"]
-                }, {
-                    "name": "poster",
-                    "label": "Poster",
-                    "type": "image"
                 }]
         }],
     "defaults": {
         "header": "",
         "video": [{
-                "title": "Cube Girl",
-                "url": "%block_url(assets)%/assets/videos/cube_girl.mp4",
-                "poster": "%block_url%/assets/img/poster_img1.jpg",
+                "title": "Adding new blocks Reflect",
+                "url": "http://www.youtube.com/v/w-obbc-a4R4",
                 "order": 0
             }, {
-                "title": "Cube Girl",
-                "url": "%block_url(assets)%/assets/videos/cube_girl.mp4",
-                "poster": "%block_url%/assets/img/poster_img1.jpg",
+                "title": "Adding new blocks Flareup",
+                "url": "http://www.youtube.com/v/bAqjUbBflqY",
                 "order": 1
             }, {
-                "title": "Cube Girl",
-                "url": "%block_url(assets)%/assets/videos/cube_girl.mp4",
-                "poster": "%block_url%/assets/img/poster_img1.jpg",
+                "title": "Adding new blocks Pizza",
+                "url": "http://www.youtube.com/v/Nf3QCrUUugg",
                 "order": 2
             }, {
-                "title": "Cube Girl",
-                "url": "%block_url(assets)%/assets/videos/cube_girl.mp4",
-                "poster": "%block_url%/assets/img/poster_img1.jpg",
+                "title": "Adding new blocks Spring",
+                "url": "http://www.youtube.com/v/cPcTQRgkJUA",
                 "order": 3
+            },{
+                "title": "Adding new blocks Birva",
+                "url": "http://www.youtube.com/v/WSz8nDjt9lM",
+                "order": 4
             }]
     }
 }

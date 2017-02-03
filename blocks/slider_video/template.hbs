@@ -10,9 +10,12 @@
                 <div class="owl-carousel owl-theme video-carousel-{{id}}">
                     {{#if video.length}}
                         {{#each_with_sort video "order"}}
-                            <div class="item-video" data-url="{{url}}" data-poster="{{poster}}"></div>
+                            <div class="item-video"">
+                                <iframe width="100%" height="100%" src="{{url}}" frameborder="0" allowfullscreen></iframe>
+                            </div>
                         {{/each_with_sort}}
                     {{/if}}
+
 
                 </div>                
             </div>
@@ -23,17 +26,17 @@
 <script type="text/javascript">
 jQuery(document).ready(function() {
     //Creating video for each carousel item, using data-url attribute of each one
-    jQuery(".video-carousel-{{id}} .item-video").each(function() {
-        var url = jQuery(this).data('url'),
-            poster = jQuery(this).data('poster'),
-            video = '',
-            format = url.substring(url.lastIndexOf('.') + 1, url.length);
+    // jQuery(".video-carousel-{{id}} .item-video").each(function() {
+    //     var url = jQuery(this).data('url'),
+    //         poster = jQuery(this).data('poster'),
+    //         video = '',
+    //         format = url.substring(url.lastIndexOf('.') + 1, url.length);
 
-        if (format === 'mp4' || format === 'ogv' || format === 'webm') {
-            video = "<video width='100%' height='100%' controls='controls' preload='metadata' poster='" + poster + "'><source src='" + url + "' type='video/" + (format === 'ogv' ? 'ogg' : format) + "'></source></video>";
-        }
-        jQuery(this).append(video);
-    });
+    //     if (format === 'mp4' || format === 'ogv' || format === 'webm') {
+    //         video = "<video width='100%' height='100%' controls='controls' preload='metadata' poster='" + poster + "'><source src='" + url + "' type='video/" + (format === 'ogv' ? 'ogg' : format) + "'></source></video>";
+    //     }
+    //     jQuery(this).append(video);
+    // });
     jQuery(".item-video").on("click", function() {
         jQuery(this).find("video")[0].play();
     });
@@ -42,6 +45,7 @@ jQuery(document).ready(function() {
         video: false,
         lazyLoad: true,
         navText: [],
+        video: true,
         nav: false,
         dots: true,
         responsive: {
