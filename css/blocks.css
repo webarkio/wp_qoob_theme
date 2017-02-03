@@ -468,7 +468,7 @@
     font-size: 5.4rem;
     margin-left: 10.3rem;
     max-width: 310px;
-    line-height: 1.25;
+    line-height: 1.31;
     position: relative;
     top: 95px;
     font-family: "RobotoBlack", sans-serif;
@@ -2578,6 +2578,13 @@
     .header-new-bg .container-no-padding {
         padding: 0;
     }
+        .header-new-bg .btn-header-wrap .btn {
+        margin-right: 0rem;
+        max-width: 290px;
+        width: 100%;
+        padding: 16px 10px;
+        font-size: 1.6rem;
+    }
 }
 @media (max-width: 531px) {
     .header-new-bg .btn-header-wrap {
@@ -2605,12 +2612,7 @@
         margin-bottom: 2.3rem;
     }
 
-    .header-new-bg .btn-header-wrap .btn {
-        margin-right: 0rem;
-        min-width: 290px;
-        padding: 16px 10px;
-        font-size: 1.6rem;
-    }
+
 }
 /*--------------------------------------------------------------
 # Header no bg block
