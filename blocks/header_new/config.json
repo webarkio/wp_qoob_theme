@@ -16,14 +16,6 @@
         "label": "Header",
         "type": "text"
     }, {
-        "name": "text-btn-left",
-        "label": "Button left",
-        "type": "text"
-    }, {
-        "name": "text-btn-right",
-        "label": "Button right",
-        "type": "text"
-    }, {
         "name": "text",
         "label": "Text",
         "type": "textarea"
@@ -52,11 +44,11 @@
         "text-btn-right": "Download",
         "buttons": [{
             "title": "Try now",
-            "action_url": "http://qoob.it/",
+            "action_url": "http://webark.com/qoob/clone.php",
             "order": 1
         }, {
             "title": "Download",
-            "action_url": "http://qoob.it/",
+            "action_url": "http://webark.com/qoob/download",
             "order": 2
         }]
     }
