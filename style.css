@@ -1200,13 +1200,13 @@ top: 10px
 #mobile-menu-button .icon .line {
 	transition: all 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 	transform-origin: 50% 50%;
-	background: #484848;
+	background: #000;
 	display: block;
 	width: 100%;
 	height: 3px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 7px;
+	margin-bottom: 4px;
 }
 
 @media (max-width: 531px) {
@@ -1220,7 +1220,7 @@ top: 10px
 		width: 21px;
 		display: inline-block;
 		cursor: pointer;
-		margin-top: 12px;
+		margin-top: 14px;
 	}
 	.site-header {
 		width: 51px;

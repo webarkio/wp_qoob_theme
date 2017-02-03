@@ -144,7 +144,7 @@
     }
     .block-image-bg .h2-block {
         font-size: 3rem;
-        line-height: 40px;
+        line-height: 41px;
     }
     .block-image-bg {
         padding-top: 8.9rem;
@@ -479,6 +479,7 @@
     font-size: 1.8rem;
     color: #000;
     border-color: #000;
+    border-width: 3px
 }
 .call-to-action-bg-v4 .btn-action:hover {
     color: #fff;
@@ -690,7 +691,7 @@
     }
     .call-to-action-bg-v3 .btn-action {
         max-width: 29rem;
-        padding: 1.45rem 3.5rem;
+        padding: 1.55rem 3.5rem;
         margin-top: 10px;
         width: 100%;
         font-size: 1.6rem;
@@ -1335,7 +1336,7 @@
     }
 
     .list_simple ul li {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         margin: 15px auto 32px;
         font-family: "RobotoLight", sans-serif;
     }
@@ -2569,12 +2570,13 @@
 }
 @media (max-width: 531px) {
     .header-new-bg .btn-header-wrap {
-        margin-top: 1.3rem;
+        margin-top: 2.5rem;
         margin-bottom: 5.9rem;
     }
     .header-new-bg {
         padding-top: 6rem;
         padding-bottom: 0;
+        background: #cbcbcb;
     }
 
     .header-new-bg .header-block {
@@ -2588,14 +2590,14 @@
     .header-new-bg p {
         font-size: 1.6rem;
         text-align: left;
-        line-height: 2.4rem;
-        margin-bottom: 2rem;
+        line-height: 2rem;
+        margin-bottom: 2.3rem;
     }
 
     .header-new-bg .btn-header-wrap .btn {
         margin-right: 0rem;
         min-width: 290px;
-        padding: 14.5px 10px;
+        padding: 16px 10px;
         font-size: 1.6rem;
     }
 }
@@ -3469,7 +3471,7 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 /* Large desktop */
 @media (max-width: 768px) {
     .slider-video {
-        padding: 1.2rem 0 5.6rem;
+        padding: 1.2rem 0 4rem;
     }
     
     .slider-video .item-video video {
@@ -3692,6 +3694,7 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
     color: #fff;
     max-width: 224px;
     width: 100%;
+    font-family: "RobotoBlack", sans-serif;
     border: none;
     border-radius: 0px 64px 64px 0;
     height: 100%;
@@ -3783,13 +3786,14 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
     }
     .achievements-block form {
     height: 54px;
-    margin: 39px auto 15px;
+    margin: 33px auto 15px;
 }
 }
 
 @media (max-width: 480px) {
     .achievements-block form input[name='email'] {
         width: 100%;
+        font-size: 13px;
     }
     .achievements-block form input[type='submit'] {
         top: 8rem !important;
@@ -3869,6 +3873,7 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
     max-width: 222px;
     width: 100%;
     border: none;
+    font-family: "RobotoBlack", sans-serif;
     border-radius: 0px 64px 64px 0;
     height: 100%;
     padding: 0;
@@ -3939,14 +3944,14 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 .contact-image form input[name='email'] {
     max-width: calc(100% - 126px);
     height: 100%;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 
 }
 .contact-image .h2-block {
     font-size: 3rem;
     text-align: left;
     line-height: 37px;
-    margin-bottom: 2rem;
+    margin-bottom: 1.7rem;
 }
 .contact-image-text p {
     font-size: 1.6rem;
