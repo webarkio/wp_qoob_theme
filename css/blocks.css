@@ -1302,16 +1302,17 @@
    display: none;
 }
 .list_simple ul li {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     color: #000;
     margin: 17px auto;
+    font-family: "RobotoLight", sans-serif;
 }
 .list_simple ul .fa-check {
     margin-right: 7px;
 }
 .list_simple ul {
     max-width: 565px;
-    margin: 31px auto 0;
+    margin: 20px auto 0;
 }
 
 
