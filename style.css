@@ -738,16 +738,16 @@ textarea {
 
 	.site-branding {
 		float: left;
-		margin-top: 5px;
-		margin-bottom: 5px;
+		margin-top: 7px;
+		margin-bottom: 3px;
 	}
 	.site-header.fixed .site-branding {
 		margin-top: 4px;
 		margin-bottom: 5px;
 	}
 	.site-header .site-branding img {
-		height: 3.5rem;
-		width: 3.5rem;
+		height: 3rem;
+		width: 3rem;
 	}
 	.site-header.fixed .site-title {
 		margin-top: -6px;
@@ -769,8 +769,8 @@ textarea {
 	.site-title {
 		margin: 0;
 		font-weight: normal;
-		line-height: 3.2rem;
-		margin-top: -0.7rem;
+		line-height: 2.2rem;
+		margin-top: -1.7rem;
 	}
 
 	.site-title a {
@@ -856,12 +856,13 @@ a:active {
 }
 .sf-menu a {
 	border: none;
-	padding: 0.75em 1.5em;
-	padding-right: 3.6rem;
+	padding: 0.75em 0em;
+	padding-right: 3rem;
+	letter-spacing: 0.01em
 }
 
 .sf-menu li {
-	background: transparent;
+	background: none !important;
 }
 
 .sf-menu > li {
@@ -870,7 +871,11 @@ a:active {
 
 .sf-menu li.menu-item:hover,
 .sf-menu li.menu-item.sfHover {
-	background: transparent;
+	background: none !important;
+}
+.sf-menu li.social-media-icon {
+position: relative;
+top: 10px
 }
 
 .sf-menu li.menu-item-has-children:hover,
@@ -890,7 +895,7 @@ a:active {
 	content: url(images/menu-arrow-black.png);
 	position: absolute;
 	top: 50%;
-	right: 3rem;
+	right: 2.3rem;
 	margin-top: -5px;
 	height: 9px;
 	width: 5px;
@@ -898,14 +903,14 @@ a:active {
 	transform: rotate(90deg);
 }
 .sf-arrows .sf-with-ul {
-	padding-right: 3.6em;
+	padding-right: 2.8em;
 }
 .sf-arrows > li > .sf-with-ul:focus:after,
 .sf-arrows > li:hover > .sf-with-ul:after,
 .sf-arrows > .sfHover > .sf-with-ul:after {
 	content: url(images/menu-arrow-hover.png);
 	transform: rotate(-90deg);
-	right: 4.6rem;
+	right: 3.8rem;
 }
 
 .sf-menu ul {
@@ -1011,10 +1016,11 @@ a:active {
 	.sf-menu .social-media-icon a {
 		padding: 0;
 		position: relative;
-		top: 10px;
 		margin: 0 4px
 	}
-
+	.sf-menu li.social-media-icon:first-child {
+		margin-right: 20px;
+	}
 	.sf-menu .social-media-icon i, #mobile-menu .social-media-icon i {
 		font-size: 25px;
 	}
