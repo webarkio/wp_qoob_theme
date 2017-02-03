@@ -70,7 +70,7 @@
 --------------------------------------------------------------*/
 
 .block-image-bg {
-    padding-top: 11rem;
+    padding-top: 0rem;
     padding-bottom: 0rem;
     text-align: center;
     background-repeat: no-repeat;
@@ -95,7 +95,7 @@
 
 .block-image-bg .h2-block {
    text-transform: uppercase;
-   margin-top: 0px;
+   margin-top: 107px;
    color: #000;
    font-size: 5.4rem;
    position: absolute;
@@ -106,6 +106,14 @@
 }
 .block-image-bg .imagetablet, .block-image-bg .imagemobile {
     display: none;
+}
+@media (max-width: 1700px) {
+.block-image-bg .h2-block {
+    margin-top: 0;
+}
+.block-image-bg {
+    padding-top: 9.5rem;
+   }
 }
 @media (max-width: 1200px) { 
     .block-image-bg .imagedesktop {
@@ -458,7 +466,8 @@
     color: #000;
     text-align: center;
     font-size: 5.4rem;
-    margin-left: 12.3rem;
+    margin-left: 10.3rem;
+    max-width: 310px;
     line-height: 1.25;
     position: relative;
     top: 95px;
@@ -506,7 +515,7 @@
         position: relative;
     }
     .call-to-action-bg-v4 .header-block {
-        margin-left: 26.3rem;
+        margin-left: 21.3rem;
         font-size: 4.4rem;
         top: 80px;
     }
@@ -527,7 +536,7 @@
 }
 @media (max-width: 1199px) {
     .call-to-action-bg-v4 .header-block {
-       margin-left: 16.3rem;
+       margin-left: 11.3rem;
        font-size: 4.4rem;
    }
    .call-to-action-bg-v4 .btn-action {
@@ -547,7 +556,7 @@
 }
 @media (max-width: 991px) {
  .call-to-action-bg-v4 .header-block {
-    margin-left: 5.3rem;
+    margin-left: 0rem;
     font-size: 4.4rem !important;
     text-align: center !important;
 }
@@ -558,7 +567,7 @@
 @media (max-width: 768px) {
     .call-to-action-bg-v4 {
         height: auto;
-        padding-top: 5rem;
+        padding-top: 4.3rem;
         background: #dedede;
         padding-bottom: 60px;
     }
@@ -569,10 +578,10 @@
         display: block;
         width: 100%;
         padding-left: 0 !important;
-        font-size: 5.4rem !important;
+        font-size: 3rem !important;
         top: 0px;
-        text-align: center !important;
-        padding-bottom: 21px;
+        text-align: left !important;
+        padding-bottom: 13px;
     }
     .call-to-action-bg-v4 .btn-action {
         margin-top: 30px;
@@ -588,7 +597,7 @@
     .call-to-action-bg-v4 .imagemobile {
         display: block;
         z-index: 1;
-        width: 95%;
+        width: calc(100% - 30px);
         margin: 0 auto;
     }
 }
@@ -1302,7 +1311,7 @@
 }
 .list_simple ul {
     max-width: 565px;
-    margin: 0 auto;
+    margin: 31px auto 0;
 }
 
 
@@ -1311,7 +1320,8 @@
         padding-left: 0 !important;
     }
         .list_simple ul {
-        max-width: 100%;    
+        max-width: 100%; 
+        margin-top: 16px;   
     }
     .list_simple {
         padding-top: 3.5rem;
@@ -3671,8 +3681,8 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 .achievements-block form {
     max-width: 945px;
     position: relative;
-    height: 64px;
-    margin: 15px auto 15px;
+    height: 70px;
+    margin: 39px auto 8px;
 }
 
 .achievements-block form input[name='email'] {
@@ -3770,15 +3780,17 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
         line-height: 43px;
     }
     .achievements-block form input[name="email"] {
-        max-width: calc(100% - 108px);
+        max-width: calc(100% - 103px);
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .achievements-block form input[type="submit"] {
-        max-width: 104px;
+        max-width: 103px;
         width: 100%;
         font-size: 1.4rem;
     }   
     .achievements-block .downloads_achievement {
-            margin-bottom: 3rem;
+            margin-bottom: 3.6rem;
     }
      .achievements-block .downloads_achievement span, 
     .achievements-block .installs_achievement span {
@@ -3945,7 +3957,7 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
     max-width: calc(100% - 126px);
     height: 100%;
     font-size: 1.3rem;
-
+    padding: 0 15px 0 15px;
 }
 .contact-image .h2-block {
     font-size: 3rem;

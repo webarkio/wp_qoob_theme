@@ -31,7 +31,7 @@
         "type": "text"
     }],
     "defaults": {
-        "header": "Premium <br>themes",
+        "header": "Premium themes",
         "action_text" : "More",
         "action_url" : "http://qoob.it/",
         "imagedesktop" : "%block_url%/assets/img/call_to_action_bg4.jpg",
