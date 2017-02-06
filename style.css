@@ -1448,6 +1448,15 @@ top: 10px
 	position: relative;
 }
 
+.entry-thumbnail-full .entry-meta .posted-auther, .entry-thumbnail-full .entry-meta .posted-data, .entry-thumbnail-full .entry-meta .posted-comments, .entry-thumbnail-full .entry-meta .posted-eye {
+    font-size: 16px;
+    color: #fff;
+    font-family: "RobotoLight", sans-serif;
+    margin-right: 20px;
+    position: relative;
+    display: inline-block;
+}
+
 .entry-thumbnail-full::before {
 	content: "";
 	display: block;

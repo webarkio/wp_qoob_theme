@@ -15,7 +15,7 @@ get_header( 'fixed' ); ?>
 			<div class="col-lg-12 col-md-12">
 				<h1><?php echo get_the_title(); ?></h1>
 				<div class="entry-meta">
-					<?php qoob_theme_posted_on(); ?>
+					<?php qoob_theme_posted_meta(); ?>
 				</div>
 			</div>
 		</div>
