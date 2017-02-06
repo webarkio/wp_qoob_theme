@@ -31,7 +31,7 @@ jQuery('.site-header').removeClass('fixed');
 }
 
 
-	jQuery(window).resize(function(){
+	jQuery(window).resize(function() {
 		jQuery('.blog-list').masonry('reloadItems');
 
 	});
