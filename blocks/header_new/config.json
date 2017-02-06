@@ -20,20 +20,13 @@
         "label": "Text",
         "type": "textarea"
     }, {
-        "name": "buttons",
-        "label": "Buttons",
-        "type": "accordion",
-        "viewcontent": "standart",
-        "viewType": "expand",
-        "settings": [{
-            "name": "title",
-            "label": "Action button text",
-            "type": "text"
-        }, {
-            "name": "action_url",
-            "label": "Url for action button",
-            "type": "text"
-        }]
+        "name": "text-btn-left",
+        "label": "Text",
+        "type": "text"
+    }, {
+        "name": "text-btn-right",
+        "label": "Text",
+        "type": "text"
     }],
     "defaults": {
         "logo": "%block_url%/assets/img/qoob_main_logo_black.png",
@@ -41,15 +34,6 @@
         "header": "Your ideal website starts here. <br>Make it on your own for free.",
         "text": "<p>Qoob website builder offers a great number of tools and features with an intuitive interface for free. It is a powerful solution that enables you to make a customized website without any prior design and run it with minimum technical knowledge. The first page of your awesome website is just a few clicks away.</p>",
         "text-btn-left": "Try now",
-        "text-btn-right": "Download",
-        "buttons": [{
-            "title": "Try now",
-            "action_url": "http://webark.com/qoob/clone.php",
-            "order": 1
-        }, {
-            "title": "Download",
-            "action_url": "http://webark.com/qoob/download",
-            "order": 2
-        }]
+        "text-btn-right": "Download"
     }
 }

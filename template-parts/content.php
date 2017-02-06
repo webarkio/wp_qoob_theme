@@ -30,7 +30,6 @@
 
 		<div class="entry-content">
 			<?php
-				 the_excerpt();
 				wp_link_pages( array(
 					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'qoob' ),
 					'after'  => '</div>',
