@@ -7,15 +7,22 @@ jQuery(document).ready(function(){
 	});
 
 	window.onscroll = function() {
-			if (window.pageYOffset > 107) {
-				jQuery('.site-header.fixed').addClass('move');
-			} else {
-				jQuery('.site-header.fixed').removeClass('move');
-			}
+		if (window.pageYOffset > 107) {
+			jQuery('.site-header.fixed').addClass('move');
+			
+		} 
+		else {
+				jQuery('.site-header.fixed').removeClass('move');	
+		}
 	};
+if(jQuery(document).width() < 768) {
+jQuery('.site-header').removeClass('fixed');
+}
+
 
 	jQuery(window).resize(function(){
 		jQuery('.blog-list').masonry('reloadItems');
+
 	});
 });
 

@@ -28,3 +28,25 @@ get_header( 'fixed' ); ?>
 	?>
 <?php
 get_footer();
+?>
+<script type='text/javascript'>
+    $(function(){
+      //Keep track of last scroll
+      var lastScroll = 0;
+      $(window).scroll(function(event){
+          //Sets the current scroll position
+          var st = $(this).scrollTop();
+          //Determines up-or-down scrolling
+          if (st > lastScroll){
+             //Replace this with your function call for downward-scrolling
+             alert("DOWN");
+          }
+          else {
+             //Replace this with your function call for upward-scrolling
+             alert("UP");
+          }
+          //Updates scroll position
+          lastScroll = st;
+      });
+    });
+</script>

@@ -38,8 +38,8 @@
     "defaults": {
         "logo": "%block_url%/assets/img/qoob_main_logo_black.png",
         "image" : "%block_url%/assets/img/header-bg-new.jpg",
-        "header": "Create your website now <br>- it's free and so easy!",
-        "text": "<p>A free website builder offers a huge amount of tools and features with an intuitive interface. Qoob is a perfect solution, that save you from any prior design and coding experience and let you handle it without hiring a professional. Modern and responsive websites in a few clicks. </p>",
+        "header": "Your ideal website starts here. <br>Make it on your own for free.",
+        "text": "<p>Qoob website builder offers a great number of tools and features with an intuitive interface for free. It is a powerful solution that enables you to make a customized website without any prior design and run it with minimum technical knowledge. The first page of your awesome website is just a few clicks away.</p>",
         "text-btn-left": "Try now",
         "text-btn-right": "Download",
         "buttons": [{

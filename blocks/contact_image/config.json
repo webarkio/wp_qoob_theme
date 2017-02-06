@@ -37,6 +37,6 @@
         "imagetablet" : "%block_url%/assets/img/contact_image_bgtablet.jpg",
         "text" : "We would gladly help you integrate qoob to your project for FREE",
         "email_pl" : "Your E-mail",
-        "contact_me" : "contact me"
+        "contact_me" : "contact us"
     }
 }

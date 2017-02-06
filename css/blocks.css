@@ -127,10 +127,10 @@
 
 @media (max-width: 992px) { 
     .block-image-bg {
-        padding-top: 11rem;
+        padding-top: 10rem;
     }
         .block-image-bg .h2-block {
-        top: 46px;
+        top: 53px;
     }
 }
 @media (max-width: 768px) { 
@@ -144,20 +144,25 @@
     font-size: 3.4rem;
     line-height: 40px;
 }
+.block-image-bg {
+        padding-top: 6.6rem;
+    }
 }
 @media (max-width: 531px) { 
-    .block-image-bg {
-        padding-top: 3.9rem;
-        padding-bottom: 7.1rem;
-    }
     .block-image-bg .h2-block {
         font-size: 3rem;
         line-height: 41px;
+        top: 50px;
     }
     .block-image-bg {
-        padding-top: 8.9rem;
+        padding-top: 7rem;
         padding-bottom: 0;
-    }  
+    }
+}
+@media (max-width: 480px) {
+.block-image-bg {
+    padding-top: 10rem;
+}  
 }
 
 
@@ -2582,8 +2587,20 @@
         margin-right: 0rem;
         max-width: 290px;
         width: 100%;
-        padding: 16px 10px;
+        padding: 15.5px 10px;
         font-size: 1.6rem;
+    }
+        .header-new-bg p {
+        font-size: 1.6rem;
+        text-align: left;
+        line-height: 1.9rem;
+        margin-top: 1rem;
+        margin-bottom: 2.7rem;
+    }
+       .header-new-bg .header-block {
+        text-align: center !important;
+        padding-left: 0 !important;
+        margin-bottom: 1.3rem;
     }
 }
 @media (max-width: 531px) {
@@ -2604,14 +2621,9 @@
         padding-left: 0 !important;
         text-align: left !important;
     }
-
     .header-new-bg p {
-        font-size: 1.6rem;
-        text-align: left;
-        line-height: 2rem;
-        margin-bottom: 2.3rem;
-    }
-
+    margin-top: 1.8rem;
+}
 
 }
 /*--------------------------------------------------------------
@@ -3964,7 +3976,7 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 
 @media (max-width: 768px) {
     .contact-image {
-     padding-top: 3.3rem;
+     padding-top: 3.5rem;
      padding-bottom: 4.5rem;
  }
  .contact-image form input[type='submit'] {
@@ -3980,7 +3992,7 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 .contact-image .h2-block {
     font-size: 3rem;
     text-align: left;
-    line-height: 37px;
+    line-height: 36px;
     margin-bottom: 1.7rem;
 }
 .contact-image-text p {

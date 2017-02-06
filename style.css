@@ -715,15 +715,15 @@ textarea {
 
 .site-header.fixed {
 	position: fixed;
-	top: -100px;
+	top: 0px;
 	left: 0;
-	background-color: transparent;
+	/*background-color: transparent;*/
 	width: 100%;
 	z-index: 999999;
 	transition: all 0.5s ease;
 }
 .site-header.fixed.move {
-	top: 0;
+	top: -100px;
 	background-color: #fff;
 }
 .site-header.fixed .sf-menu ul {
@@ -1185,10 +1185,11 @@ top: 10px
 .site-header.fixed #mobile-menu-button .icon {
 	margin: 7px 0 0px 7px;
 }
+
 #mobile-menu-button .icon {
 	line-height: 92px;
 	padding: 9px 8px;
-	margin: 2px 0 0px 6px;
+	margin: 5px 0 0px 6px;
 	font-size: 0;
 	height: 35px;
 	width: 40px;
@@ -1443,7 +1444,7 @@ top: 10px
 
 .entry-thumbnail-full {
 	background-position: center center;
-	height: 72.0rem;
+	height: auto;
 	position: relative;
 }
 
@@ -1455,7 +1456,7 @@ top: 10px
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-image: url(images/mask_thumbnail-post.png);
+	background: rgba(0,0,0,.8);
 	background-repeat: no-repeat;
 	background-position: center center;
 }
@@ -1646,6 +1647,7 @@ top: 10px
 	overflow: hidden;
 	border-radius: 0;
 }
+
 .site-main {
 	height: auto !important;
 }
@@ -1655,12 +1657,27 @@ top: 10px
 	height: 100%;
 	max-width: inherit;
 }
-.site-main .posts-list.post:hover .thumbnail-blog {
+
+.site-main .posts-list.post:before {
+	display: none;
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.8);
+	z-index: 1
+	}
+
+.site-main .posts-list.post:hover .thumbnail-blog, .site-main .posts-list.post:hover:before {
 	display: block;
 }
 .site-main .posts-list .entry-wrap-content {
 	border: none;
 	border-radius: 0;
+	position: relative;
+	z-index: 2;
 }
 .data-publish-last-posts .posted-auther, .data-publish-last-posts .posted-data, .data-publish-last-posts .posted-comments, .data-publish-last-posts .posted-eye  {
 	font-size: 1.4rem;

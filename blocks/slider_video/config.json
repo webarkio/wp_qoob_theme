@@ -24,24 +24,24 @@
     "defaults": {
         "header": "",
         "video": [{
-                "title": "Adding new blocks Reflect",
-                "url": "http://www.youtube.com/v/w-obbc-a4R4",
+                "title": "Title 1",
+                "url": "https://www.youtube.com/embed/nTvWrpHp80w",
                 "order": 0
             }, {
-                "title": "Adding new blocks Flareup",
-                "url": "http://www.youtube.com/v/bAqjUbBflqY",
+                "title": "Title 2",
+                "url": "https://www.youtube.com/embed/xkrxfAhzE9E",
                 "order": 1
             }, {
-                "title": "Adding new blocks Pizza",
-                "url": "http://www.youtube.com/v/Nf3QCrUUugg",
+                "title": "Title 3",
+                "url": "https://www.youtube.com/embed/Bnzi-FQpLqk",
                 "order": 2
             }, {
-                "title": "Adding new blocks Spring",
-                "url": "http://www.youtube.com/v/cPcTQRgkJUA",
+                "title": "Title 4",
+                "url": "https://www.youtube.com/embed/GgnTbYsqOZQ",
                 "order": 3
             },{
-                "title": "Adding new blocks Birva",
-                "url": "http://www.youtube.com/v/WSz8nDjt9lM",
+                "title": "Title 5",
+                "url": "https://www.youtube.com/embed/Mlimu8xuukc",
                 "order": 4
             }]
     }

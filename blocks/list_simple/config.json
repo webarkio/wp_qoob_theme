@@ -19,20 +19,26 @@
     "defaults": {
         "header": "WHAT'S NEW",
         "list": [{
-            "title": "A free website builder offers that save you from any prior design",
+            "title": "Create your page in minutes with Blocks builder",
             "order": 0
         }, {
-            "title": "A free website builder offers that save you from any prior design",
+            "title": "Get a real time preview of your page with Live Editing while modifying it",
             "order": 1
         }, {
-            "title": "Qoob is a perfect solution, that save you",
+            "title": "Be confident that your website looks awesome on any device",
             "order": 2
         }, {
-            "title": "Qoob is a perfect solution, that save you ",
+            "title": "Be sure your website has a professional-looking design with Clean and Intuitive UI",
             "order": 3
         }, {
-            "title": "Qoob is a perfect solution, that save you ",
+            "title": "Arrange your website faster with a Real-time Editing Mobile Version",
             "order": 4
+        }, {
+            "title": "Now you can save your templates",
+            "order": 5
+        }, {
+            "title": "Add, update or delete the libraries fast and easily",
+            "order": 6
         }]
     }
 }

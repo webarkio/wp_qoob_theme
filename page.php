@@ -12,7 +12,7 @@
  * @package qoob
  */
 
-get_header(); ?>
+get_header('fixed'); ?>
 	<?php
 	$template_parts = 'page';
 	while ( have_posts() ) : the_post();
