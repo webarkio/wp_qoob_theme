@@ -1447,6 +1447,8 @@ top: 10px
 	background-position: center center;
 	height: auto;
 	position: relative;
+	background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .entry-thumbnail-full .entry-meta .posted-auther, .entry-thumbnail-full .entry-meta .posted-data, .entry-thumbnail-full .entry-meta .posted-comments, .entry-thumbnail-full .entry-meta .posted-eye {
@@ -1519,7 +1521,7 @@ top: 10px
 	text-transform: uppercase;
 	font-size: 5.4rem;
 	text-align: center;
-	font-family: "Roboto-Bold", sans-serif;
+	font-family: "RobotoBold", sans-serif;
 }
 
 .entry-thumbnail-blog .entry-meta {
@@ -1772,7 +1774,7 @@ top: 10px
 	text-decoration: none;
 	text-transform: none;
 	line-height: 43px;
-	font-family: "RobotoBold", sans-serif;
+	font-family: "RobotoBlack", sans-serif;
 	position: relative;
 }
 .site-main .posts-list.post:hover .entry-title a {

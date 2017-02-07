@@ -9,7 +9,7 @@
 
 get_header( 'fixed' ); ?>
 <?php setPostViews(get_the_ID()); ?>
-<div class="entry-thumbnail-full" style="background-image: url(<?php the_post_thumbnail_url( 'thumbnail-size-post-page' ); ?>)">
+<div class="entry-thumbnail-full" style="background-image: url(<?php the_post_thumbnail_url( 'full' ); ?>)">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 col-md-12">
