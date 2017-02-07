@@ -750,8 +750,9 @@ textarea {
 		width: 3rem;
 	}
 	.site-header.fixed .site-title {
-		margin-top: -6px;
+		margin-top: -12px;
 		font-size: 2.7rem;
+		margin-left: 0px;
 	}
 	.custom-logo-link,
 	.site-title {
