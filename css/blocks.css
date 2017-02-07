@@ -572,7 +572,7 @@
 @media (max-width: 768px) {
     .call-to-action-bg-v4 {
         height: auto;
-        padding-top: 4.3rem;
+        padding-top: 5.3rem;
         background: #dedede;
         padding-bottom: 60px;
     }
@@ -586,7 +586,8 @@
         font-size: 3rem !important;
         top: 0px;
         text-align: left !important;
-        padding-bottom: 13px;
+        padding-bottom: 23px;
+        line-height: 37px !important;
     }
     .call-to-action-bg-v4 .btn-action {
         margin-top: 30px;
@@ -3804,7 +3805,7 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 @media (max-width: 768px) {
     .achievements-block {
         padding-top: 5.8rem;
-        padding-bottom: 4.9rem;
+        padding-bottom: 4.5rem;
     }
     .achievements-block .downloads_achievement, .achievements-block .installs_achievement {
         max-width: 100% !important;
