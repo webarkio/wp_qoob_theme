@@ -742,8 +742,8 @@ textarea {
 		margin-bottom: 3px;
 	}
 	.site-header.fixed .site-branding {
-		margin-top: 9px;
-		margin-bottom: 3px;
+		margin-top: 7px;
+		margin-bottom: 1px;
 	}
 	.site-header .site-branding img {
 		height: 3rem;
@@ -857,7 +857,7 @@ a:active {
 }
 .sf-menu a {
 	border: none;
-	padding: 0.75em 0em;
+	padding: 0.66em 0em;
 	padding-right: 3rem;
 	letter-spacing: 0.01em
 }
@@ -1668,6 +1668,7 @@ top: 10px
 	position: absolute;
 	height: 100%;
 	max-width: inherit;
+	min-width: 100%;
 }
 
 .site-main .posts-list.post:before {
