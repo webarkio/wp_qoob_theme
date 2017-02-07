@@ -269,13 +269,14 @@
 --------------------------------------------------------------*/
 
 .block-image-download {
-    padding-top: 10.1rem;
-    padding-bottom: 8.5rem;
+    padding-top: 8.2rem;
+    padding-bottom: 8.2rem;
     text-align: center;
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
     position: relative;
+    margin-top: 45px;
 }
 
 .block-image-download .background-block {
@@ -300,13 +301,18 @@
     text-transform: uppercase;
     font-family: "RobotoBlack", sans-serif;
     color: #000;
+    text-align: center !important;
     font-size: 5.4rem;
 }
-
-@media (max-width: 531px) { 
-    .block-image-download {
-        padding-top: 3.9rem;
-        padding-bottom: 7.1rem;
+@media (max-width: 768px) { 
+        .block-image-download {
+        padding-top: 2.6rem;
+        padding-bottom: 2.6rem;
+        background: #dfdfdf;
+        margin-top: 0;
+    }
+    .block-image-download .background-block {
+        display: none;
     }
 }
 
@@ -316,8 +322,8 @@
 --------------------------------------------------------------*/
 
 .block-drupal-comming {
-    padding-top: 9.1rem;
-    padding-bottom: 8.3rem;
+    padding-top: 8.9rem;
+    padding-bottom: 8.9rem;
     text-align: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -347,17 +353,23 @@
     font-size: 3.6rem;
     color: #000;
     font-family: "RobotoLight", sans-serif;
+    text-align: center !important;
 }
 
 .block-drupal-comming .header-block b {
     font-family: "RobotoBlack", sans-serif;   
 }
 
-@media (max-width: 531px) { 
+@media (max-width: 768px) { 
     .block-drupal-comming {
         padding-top: 3.9rem;
-        padding-bottom: 7.1rem;
+        padding-bottom: 2.9rem;
+
     }
+    .block-drupal-comming .header-block {
+    font-size: 3rem;
+    text-align: left !important;
+}
 }
 
 /*--------------------------------------------------------------
@@ -1368,13 +1380,13 @@
 # Block html
 --------------------------------------------------------------*/
 .block_html {
-    padding-top: 9rem;
+    padding-top: 8.8rem;
     padding-bottom: 9.5rem;
 }
 
 .block_html .header-block {
     font-size: 3.6rem;
-    text-align: center;
+    text-align: center !important;
     color: #000;
     margin-bottom: 0.3rem;
     font-family: "RobotoBlack", sans-serif;
@@ -1407,6 +1419,7 @@
     text-align: center;
     border: none;
     display: block;
+    font-family: "RobotoBold", sans-serif;
     font-size: 1.6rem;
     padding: 17px 0px;
     background-color: #0084ff;
@@ -1447,28 +1460,35 @@
 }
 
 @media (max-width: 768px) {
+    .block_html .header-block span {
+        display: block;
+    }
     .block_html {
         padding-top: 3.5rem;
-        padding-bottom: 2.3rem;
+        padding-bottom: 3.5rem;
+    }
+    .block_html ul {
+        display: block;
+    }
+    .block_html ul li {
+        margin: 11px auto 11px;
+        display: block;
+        float: none;
     }
 
     .block_html .header-block {
         font-size: 3.0rem !important;
         line-height: 37px !important;
         margin-bottom: 1.3rem;
+        text-align: left !important;
     }
 
     .block_html .btn-action {
         max-width: 29rem;
-        padding: 1.45rem 3.5rem;
-        margin-top: 10px;
+        padding: 1.85rem 3.5rem;
+        margin-top: 27px;
         width: 100%;
         font-size: 1.6rem;
-    }
-
-    .block_html ul li {
-        font-size: 1.6rem;
-        margin: 15px auto 32px;
     }
 
     .block_html ul li i {
@@ -1670,14 +1690,14 @@
 # Block wp downloads
 --------------------------------------------------------------*/
 .block_wp_downloads {
-    padding-top: 9.1rem;
+    padding-top: 8.9rem;
     padding-bottom: 9.5rem;
     background: #e2e2e2;
 }
 
 .block_wp_downloads .header-block {
     font-size: 3.6rem;
-    text-align: center;
+    text-align: center !important;
     color: #000;
     font-family: "RobotoBlack", sans-serif;
     margin-bottom: 0.3rem;
@@ -1761,26 +1781,52 @@
 @media (max-width: 768px) {
     .block_wp_downloads {
         padding-top: 3.5rem;
-        padding-bottom: 2.3rem;
+        padding-bottom: 3.5rem;
     }
-
+    .block_wp_downloads form input[name="email"] {
+        max-width: calc(100% - 110px);
+        width: 100%;
+        padding: 1.65rem 23px;
+        font-size: 1.3rem;
+    }
+    .block_wp_downloads form input[type="submit"] {
+        padding: 18.5px 5px;
+        max-width: 110px;
+        width: 100%;
+}
+    .block_wp_downloads .header-block span {
+        display: block;
+    }
+    .block_wp_downloads form {
+        margin-top: 28px;
+    }
+    .block_wp_downloads ul {
+    padding: 0;
+    display: block;
+    }
+    .block_wp_downloads ul li {
+        font-size: 1.6rem;
+        margin: 11px auto 11px;
+        float: none;
+        display: block;
+    }
     .block_wp_downloads .header-block {
         font-size: 3.0rem !important;
         line-height: 37px !important;
         margin-bottom: 1.3rem;
+        text-align: left !important;
+    }
+    .block-drupal-comming .header-block b {
+        display: block;
+        line-height: 33px;
     }
 
     .block_wp_downloads .btn-action {
         max-width: 29rem;
-        padding: 1.45rem 3.5rem;
+        padding: 1.85rem 3.5rem;
         margin-top: 10px;
         width: 100%;
         font-size: 1.6rem;
-    }
-
-    .block_wp_downloads ul li {
-        font-size: 1.6rem;
-        margin: 15px auto 32px;
     }
 
     .block_wp_downloads ul li i {

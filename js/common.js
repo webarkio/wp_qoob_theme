@@ -11,7 +11,7 @@ jQuery(document).ready(function(){
 		if (window.pageYOffset > 107) {
 			jQuery('.site-header.fixed').addClass('move');	
 		} 
-	
+
 		if(scrollDefault > window.pageYOffset) {
 			jQuery('.site-header.fixed').removeClass('move');	
 		}
@@ -21,24 +21,28 @@ jQuery(document).ready(function(){
 		}
 		else {
 			jQuery('.site-header.fixed').removeClass('move');
-				
+
 		}
 		scrollDefault = window.pageYOffset;
 	};
 
-if(jQuery(document).width() < 768) {
-jQuery('.site-header').removeClass('fixed');
-}
-
+	if(jQuery(window).width() < 768) {
+		jQuery('.site-header').removeClass('fixed');
+	}
 
 	jQuery(window).resize(function() {
 		jQuery('.blog-list').masonry('reloadItems');
-
+		if(jQuery(window).width() < 768) {
+			jQuery('.site-header').removeClass('fixed');
+		}
+		else {
+			jQuery('.site-header').addClass('fixed');
+		}
 	});
 });
 
 // Loader fading out
 jQuery(window).load(function() {
-		jQuery(".loader").fadeOut();
-		jQuery(".loader-wrap").delay(400).fadeOut("slow");
+	jQuery(".loader").fadeOut();
+	jQuery(".loader-wrap").delay(400).fadeOut("slow");
 });

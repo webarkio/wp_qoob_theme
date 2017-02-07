@@ -164,6 +164,6 @@ add_action( 'customize_preview_init', 'qoob_theme_customize_preview_js' );
  */
 function qoob_customizer_social_media_array() {
 	/* store social site names in array */
-	$social_sites = array( 'facebook' , 'twitter', 'github' );
+	$social_sites = array( 'facebook' , 'github', 'twitter' );
 	return $social_sites;
 }

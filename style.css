@@ -743,7 +743,7 @@ textarea {
 	}
 	.site-header.fixed .site-branding {
 		margin-top: 7px;
-		margin-bottom: 1px;
+		margin-bottom: 3px;
 	}
 	.site-header .site-branding img {
 		height: 3rem;
@@ -1030,12 +1030,12 @@ top: 10px
 		margin-top: 2px;
 	}
 		.sf-menu .social-media-icon .fa-github {
-		font-size: 24px;
-	}
-		.sf-menu .social-media-icon .fa-twitter {	
-			position: relative;
+		position: relative;
 			font-size: 25px;
 			top: -1px;
+	}
+		.sf-menu .social-media-icon .fa-twitter {	
+			font-size: 24px;
 	}
 	.social-media-icon-footer {
 		margin: 0 6px !important;
