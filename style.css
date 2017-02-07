@@ -1421,7 +1421,7 @@ top: 10px
 ## Posts and pages
 --------------------------------------------------------------*/
 .content-area {
-	margin-top: 5rem;
+	margin-top: 8rem;
 	margin-bottom: 5rem;
 	border-right: 1px solid #d5dde2;
 	padding-right: 30px;
@@ -1557,14 +1557,27 @@ top: 10px
 .site-main .posts-list:hover .entry-meta .posted-auther, .site-main .posts-list:hover .entry-meta .posted-data, .site-main .posts-list:hover .entry-meta .posted-comments, .site-main .posts-list:hover  .posted-eye {
 	color: #fff;
 }
-
+@media (max-width: 992px) {
+	.entry-thumbnail-blog {
+		margin-top: 0;
+}
+}
 @media (max-width: 768px) {
+	.entry-thumbnail-blog {
+		height: 14rem;
+	}
+	.entry-thumbnail-blog h2 {
+    margin-top: 4.7rem;
+    font-size: 3rem;
+    font-family: "RobotoBold", sans-serif;
+}
 	.entry-thumbnail-full h1 {
-		margin-top: 20rem;
-		font-size: 3rem;
+		margin-top: 14rem;
+		font-size: 2.4rem;
+		line-height: 28px;
 	}
 	.entry-thumbnail-full {
-		height: 40rem;
+		height: 27rem;
 	}
 
 	.single-post-template.no-side-bar .entry-content{
@@ -1587,7 +1600,7 @@ top: 10px
 
 @media (max-width: 420px) {
 	.entry-thumbnail-full h1 {
-		margin-top: 5rem;
+		margin-top: 7rem;
 	}
 
 	.form-submit input[type="submit"] {
@@ -1599,7 +1612,7 @@ top: 10px
 ## Widgets
 --------------------------------------------------------------*/
 .widget-area {
-	margin-top: 5rem;
+	margin-top: 9rem;
 	padding-left: 0;
 }
 .widget-area.page-sidebar {
@@ -1654,6 +1667,16 @@ top: 10px
 .widget .search-field::-webkit-input-placeholder {
 	color: #cbcbcb;
 }
+@media (max-width: 768px) {
+.widget-title {
+	padding-bottom: 0;
+	border-bottom: none;
+	margin-bottom: 11px;
+}
+.widget ul li:first-child {
+    margin-top: 0rem;
+}
+	}
 /*--------------------------------------------------------------
 ## Asides
 --------------------------------------------------------------*/
@@ -1666,8 +1689,7 @@ top: 10px
 .site-main .posts-list.post {
 	border-radius: 1.8rem;
 	position: relative;
-	margin-bottom: 1rem;
-	padding-bottom: 0.5rem;
+	margin-bottom: 0.2rem;
 	position: relative;
 	z-index: 1;
 	overflow: hidden;
@@ -1752,7 +1774,7 @@ top: 10px
 .site-main .posts-list .entry-meta {
 	padding-left: 3rem;
 	margin-bottom: 3rem;
-	margin-top: 11px;
+	margin-top: 7px;
 }
 .site-main .posts-list .entry-meta .posted-on a {
 	color: #e1e1e1;
@@ -1777,7 +1799,7 @@ top: 10px
 	text-transform: uppercase;
 	padding-left: 3rem;
 	padding-right: 3rem;
-	margin-bottom: 11px;
+	margin-bottom: 0px;
 }
 
 .site-main .posts-list .entry-title a {
@@ -1791,6 +1813,36 @@ top: 10px
 }
 .site-main .posts-list.post:hover .entry-title a {
 	color: #fff;
+}
+@media (max-width: 768px) {
+	.site-main .posts-list .entry-title, .site-main .posts-list .entry-title a {
+		font-size: 2.4rem;
+		line-height: 28px;
+	}
+	.site-main .posts-list .entry-meta {
+		margin-top: 14px;
+	}
+	.site-main .posts-list .entry-meta {
+   		margin-bottom: 2.3rem;
+        padding-left: 2.3rem;
+}
+	.site-main .posts-list .entry-title {
+		padding-left: 2.3rem;
+		padding-right: 2.3rem;
+
+	}
+	.site-main .posts-list.post:before {
+		display: block;
+	}
+	.site-main .posts-list.post .thumbnail-blog, .site-main .posts-list.post:before {
+	display: block;
+	}
+	.site-main .posts-list.post .entry-title a {
+	color: #fff;
+}
+.entry-meta .posted-auther, .entry-meta .posted-data, .entry-meta .posted-comments, .entry-meta .posted-eye {
+	color: #fff;
+	}
 }
 /*--------------------------------------------------------------
 ## Comments
@@ -2272,7 +2324,9 @@ img.mfp-img {
 	font-family: "OpenSans-Bold", sans-serif;
 	text-align: center;
 }
-
+.content-area .hux {
+	padding-left: 0;
+}
 .mfp-title {
 	padding: 0;
 }
@@ -2301,6 +2355,8 @@ img.mfp-img {
 }
 
 @media screen and (max-width: 76.8rem) and (orientation: portrait) {
+
+
 	.container-fluid .header-block,
 	.container .header-block {
 		font-size: 3.6rem !important;
@@ -2309,7 +2365,17 @@ img.mfp-img {
 		padding-left: 1.7rem !important;
 	}
 }
-
+@media screen and (max-width: 768px) {
+	.site-main .posts-list.post {
+    margin-bottom: 1.5rem;
+    }
+    	.content-area .hux {
+	padding-left: 15px;
+}
+.content-area {
+    margin-top: 6rem;
+    }
+}
 @media (max-height: 767px) and (max-width: 768px) {
 	.container-fluid .header-block,
 	.container .header-block {
