@@ -1025,6 +1025,18 @@ top: 10px
 	.sf-menu .social-media-icon i, #mobile-menu .social-media-icon i {
 		font-size: 25px;
 	}
+	.sf-menu .social-media-icon .fa-facebook {
+		font-size: 21px;
+		margin-top: 2px;
+	}
+		.sf-menu .social-media-icon .fa-github {
+		font-size: 24px;
+	}
+		.sf-menu .social-media-icon .fa-twitter {	
+			position: relative;
+			font-size: 25px;
+			top: -1px;
+	}
 	.social-media-icon-footer {
 		margin: 0 6px !important;
 	}
@@ -1475,7 +1487,7 @@ top: 10px
 
 .entry-thumbnail-full h1 {
 	color: #fff;
-	margin-top: 48.5rem;
+	margin-top: 19.6rem;
 	text-transform: uppercase;
 	font-size: 4.0rem;
 }
