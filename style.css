@@ -1563,7 +1563,7 @@ top: 10px
 		margin-top: 0;
 }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	.entry-thumbnail-blog {
 		height: 14rem;
 	}
@@ -1672,7 +1672,7 @@ top: 10px
 .widget .search-field::-webkit-input-placeholder {
 	color: #cbcbcb;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 .widget-title {
 	padding-bottom: 0;
 	border-bottom: none;
@@ -1822,7 +1822,7 @@ top: 10px
 .site-main .posts-list.post:hover .entry-title a {
 	color: #fff;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	.site-main .posts-list .entry-title, .site-main .posts-list .entry-title a {
 		font-size: 2.4rem;
 		line-height: 28px;
@@ -2091,7 +2091,7 @@ top: 10px
 	color: #fff;
 	text-align: center;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 .site-footer {
 	padding: 30px 0;
 }
@@ -2373,7 +2373,7 @@ img.mfp-img {
 		padding-left: 1.7rem !important;
 	}
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 	.site-main .posts-list.post {
     margin-bottom: 1.5rem;
     }
@@ -2384,7 +2384,7 @@ img.mfp-img {
     margin-top: 6rem;
     }
 }
-@media (max-height: 767px) and (max-width: 768px) {
+@media (max-height: 767px) and (max-width: 767px) {
 	.container-fluid .header-block,
 	.container .header-block {
 		font-size: 3.6rem !important;

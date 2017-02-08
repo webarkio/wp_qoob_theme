@@ -133,7 +133,7 @@
         top: 53px;
     }
 }
-@media (max-width: 768px) { 
+@media (max-width: 767px) { 
  .block-image-bg .imagetablet {
     display: none;
 }
@@ -306,7 +306,7 @@
     text-align: center !important;
     font-size: 5.4rem;
 }
-@media (max-width: 768px) { 
+@media (max-width: 767px) { 
         .block-image-download {
         padding-top: 2.6rem;
         padding-bottom: 2.6rem;
@@ -365,7 +365,7 @@
     font-family: "RobotoBlack", sans-serif;   
 }
 
-@media (max-width: 768px) { 
+@media (max-width: 767px) { 
     .block-drupal-comming {
         padding-top: 3.9rem;
         padding-bottom: 2.9rem;
@@ -586,7 +586,7 @@
     left: 21%;
 }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .call-to-action-bg-v4 {
         height: auto;
         padding-top: 5.3rem;
@@ -711,7 +711,7 @@
         text-align: center !important;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .call-to-action-bg-v3 {
         padding-top: 3.7rem;
         padding-bottom: 2rem;
@@ -1221,7 +1221,7 @@
     margin-top: 0.8rem;
 }
 
-@media (max-width: 768px) { 
+@media (max-width: 767px) { 
     .download-block .box-wrap {
         padding-left: 1.7rem;
     }
@@ -1339,7 +1339,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
         .list_simple .header-block, .list_simple ul {
         padding-left: 0 !important;
     }
@@ -1464,7 +1464,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .block_html .header-block span {
         display: block;
         line-height: 45px;
@@ -1657,7 +1657,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .block-prices .best_proposal {
         padding-bottom: 20px !important;
         position: relative;
@@ -1784,7 +1784,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .block_wp_downloads {
         padding-top: 3.5rem;
         padding-bottom: 3.5rem;
@@ -2636,7 +2636,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .header-new-bg .container-no-padding {
         padding: 0;
     }
@@ -2821,7 +2821,7 @@
     margin-bottom: 2.1rem; 
 }
 
-@media (max-width: 768px) { 
+@media (max-width: 767px) { 
 	.iconbox-block.no-icon .icon-box-wrap,
 	.iconbox-block.no-icon h1 {
      text-align: left;
@@ -2984,7 +2984,7 @@
 }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	.header-block-bg-video .header-block {
 		text-align: left;
      padding-left: 3.6rem;
@@ -3566,7 +3566,7 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 }
 
 /* Large desktop */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .slider-video {
         padding: 1.2rem 0 4rem;
     }
@@ -3855,7 +3855,7 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
         bottom: 0px;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .achievements-block {
         padding-top: 5.8rem;
         padding-bottom: 4.5rem;
@@ -4031,7 +4031,7 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
  }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .contact-image {
      padding-top: 3.5rem;
      padding-bottom: 4.5rem;
