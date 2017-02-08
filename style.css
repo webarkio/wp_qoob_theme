@@ -1677,6 +1677,7 @@ top: 10px
 	padding-bottom: 0;
 	border-bottom: none;
 	margin-bottom: 12px;
+	padding-left: 0;
 }
 .widget ul li:first-child {
     margin-top: 0rem;
@@ -1684,6 +1685,10 @@ top: 10px
 .widget ul li:last-child {
        margin-bottom: 5.4rem;
 }
+.widget-area {
+	padding-left: 0;
+	padding-right: 0;
+	}
 	}
 /*--------------------------------------------------------------
 ## Asides

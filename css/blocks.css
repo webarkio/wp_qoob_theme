@@ -367,14 +367,18 @@
 
 @media (max-width: 767px) { 
     .block-drupal-comming {
-        padding-top: 3.9rem;
-        padding-bottom: 2.9rem;
+        padding-top: 3.5rem;
+        padding-bottom: 3.4rem;
 
     }
     .block-drupal-comming .header-block {
+        line-height: 44px !important;
     font-size: 3rem;
     text-align: left !important;
 }
+    .block-drupal-comming .header-block b {
+        display: block;
+    }
 }
 
 /*--------------------------------------------------------------
@@ -1315,7 +1319,7 @@
     padding-bottom: 9.7rem;
 }
 .list_simple .header-block {
-    font-size: 5.4rem;
+    font-size: 5.4rem !important;
     text-align: center !important;
     color: #000;
     font-family: "RobotoBlack", sans-serif;
@@ -1467,7 +1471,6 @@
 @media (max-width: 767px) {
     .block_html .header-block span {
         display: block;
-        line-height: 45px;
     }
     .block_html {
         padding-top: 3.5rem;
@@ -1484,7 +1487,7 @@
 
     .block_html .header-block {
         font-size: 3.0rem !important;
-        line-height: 37px !important;
+        line-height: 40px !important;
         margin-bottom: 0rem;
         text-align: left !important;
     }
@@ -1802,7 +1805,6 @@
 }
     .block_wp_downloads .header-block span {
         display: block;
-        line-height: 44px;
     }
     .block_wp_downloads form {
         margin-top: 28px;
@@ -1819,13 +1821,9 @@
     }
     .block_wp_downloads .header-block {
         font-size: 3.0rem !important;
-        line-height: 37px !important;
+        line-height: 40px !important;
         margin-bottom: 0rem;
         text-align: left !important;
-    }
-    .block-drupal-comming .header-block b {
-        display: block;
-        line-height: 33px;
     }
 
     .block_wp_downloads .btn-action {
@@ -2604,7 +2602,7 @@
 
 .header-new-bg .header-block {
     color: #000;
-    font-size: 5.4rem;
+    font-size: 5.4rem !important;
     font-family: "RobotoBlack", sans-serif;
     line-height: 1.2;
 }
