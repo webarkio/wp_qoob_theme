@@ -1525,6 +1525,7 @@ top: 10px
 	background-position: center center;
 	height: 28rem;
 	position: relative;
+	margin-top: 45px;
 }
 
 .entry-thumbnail-blog h2 {
@@ -1612,7 +1613,7 @@ top: 10px
 ## Widgets
 --------------------------------------------------------------*/
 .widget-area {
-	margin-top: 5.7rem;
+	margin-top: 8.5rem;
 	padding-left: 0;
 }
 .widget-area.page-sidebar {
