@@ -1590,6 +1590,7 @@ top: 10px
 
 	.comments-main-content {
 		width: 90% !important;
+		margin-bottom: 4.5rem !important;
 	}
 	.footer-navigation li {
 		display: block;
@@ -1864,7 +1865,7 @@ top: 10px
 	margin: auto;
 	padding-top: 3.6rem;
 	padding-bottom: 8.4rem;
-	margin-bottom: 14.0rem;
+	margin-bottom: 3.0rem;
 }
 
 .sidebar-on .comments-main-content {
