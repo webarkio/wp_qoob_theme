@@ -82,10 +82,11 @@
 
 .block-image-bg .background-block {
     display: block;
-    
+    margin: 0 auto;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
+    width: 100%;
 }
 
 .block-image-bg .background-block.parallax {
@@ -175,7 +176,7 @@
 --------------------------------------------------------------*/
 
 .slider-comments {
-    padding-top: 9rem;
+    padding-top: 9.1rem;
     padding-bottom: 12.0rem;
     text-align: center;
     background-repeat: no-repeat;
@@ -206,8 +207,8 @@
     text-transform: uppercase;
     color: #000;
     font-size: 5.4rem;
-    line-height: 66px;
-    font-family: "RobotoBold", sans-serif;
+    line-height: 63px;
+    font-family: "RobotoBlack", sans-serif;
 }
 
 .slider-comments .title_slider {
@@ -232,7 +233,7 @@
     font-family: "RobotoBold", sans-serif;
     font-size: 1.8rem;
     padding: 23px 72px;
-    margin-top: 35px;
+    margin-top: 36px;
 }
 
 .slider-comments .btn-action:hover {
@@ -257,6 +258,13 @@
     font-family: "RobotoRegular", sans-serif;
     line-height: 1.5;
     margin-bottom: 2.1rem;
+}
+
+@media (max-width: 767px) {
+    .slider-comments .header-block {
+        font-size: 30px;
+        line-height: 36px;
+    }
 }
 
 @media (max-width: 531px) { 
@@ -1512,7 +1520,7 @@
 --------------------------------------------------------------*/
 .block-prices {
    position: relative;
-   padding-top: 90px;
+   padding-top: 106px;
    padding-bottom: 109px;
 }
 .block-prices .background-block {
@@ -1525,12 +1533,12 @@
     background-position: center top;
 }
 .block-prices .header-block {
-    line-height: 1.2;
     font-size: 5.4rem;
     text-align: center;
     text-transform: uppercase;
-    font-family: "RobotoBold", sans-serif;
+    font-family: "RobotoBlack", sans-serif;
     color: #000;
+    line-height: 63px;
     font-weight: 800;
 }
 .block-prices .best_proposal {
@@ -1549,7 +1557,7 @@
     color: #000;
     font-size: 1.8rem;
     padding: 23px 20px;
-    margin: 17px auto 90px;
+    margin: 16px auto 110px;
     font-family: "RobotoBold", sans-serif;
 }
 .block-prices .btn-action:hover {
@@ -1607,7 +1615,7 @@
     background: #000;
     color: #fff;
     padding-top: 36px;
-    padding-bottom: 29px;
+    padding-bottom: 24px;
     padding-left: 25px;
     padding-right: 25px;
 }
@@ -1623,9 +1631,11 @@
     font-family: "RobotoLight", sans-serif;
     margin-right: 8px;
     font-size: 3.6rem;
+    position: relative;
+    top: -4px;
 }
 .block-prices .content_license {
-    padding: 0 32px;
+    padding: 0 25px;
     margin-bottom: 2.4rem;
     padding-top: 25px;
 }
@@ -1649,7 +1659,7 @@
     text-align: center;
     color: #000;
     font-family: "RobotoLight", sans-serif;
-    margin-top: 30px;
+    margin-top: 11px;
 }
 @media (max-width: 900px) {
     .block_prices ul {
@@ -2123,7 +2133,7 @@
 # Faq customers
 --------------------------------------------------------------*/
 .faq-customers {
-    padding: 8.2rem 0 12rem;
+    padding: 8.2rem 0 11.9rem;
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
@@ -2207,7 +2217,7 @@
 .faq-customers .panel-body {
     border-left: 1px solid #dbdbdb;
     border-right: 1px solid #dbdbdb;
-    padding: 36px 17%;
+    padding: 40px 17% 36px;
 }
 
 .faq-customers .panel-body p {

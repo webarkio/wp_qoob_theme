@@ -73,7 +73,7 @@
         "header": "Used by 385,236 happy <br>customers",
         "description" : "We do have a 30 day money back guarantee for all type of licenses.",
         "image" : "%block_url%/assets/img/prices_bg.jpg",
-        "button_text" : "Try now",
+        "button_text" : "TRY LIVE DEMO BEFORE BUY",
         "button_url" : "http://qoob.it/",
         "case": [{
             "case_name": "Open source license",
