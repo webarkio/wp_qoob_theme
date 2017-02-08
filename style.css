@@ -2085,7 +2085,12 @@ top: 10px
 	vertical-align: middle;
 	outline: none;
 }
-
+@media (max-width: 767px) {
+.pagination .nav-links a {
+    display: inline-block;
+    margin: 2.7rem 1.8rem 3.6rem;
+}
+}
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
