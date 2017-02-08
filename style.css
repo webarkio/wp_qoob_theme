@@ -1580,8 +1580,11 @@ top: 10px
 	.entry-thumbnail-full {
 		height: 27rem;
 	}
-
-	.single-post-template.no-side-bar .entry-content{
+	.entry-thumbnail-blog {
+		background-image: none !important;
+		background-color: #dfdfdf;
+	}
+	.single-post-template.no-side-bar .entry-content {
 		width: 100%;
 	}
 
@@ -1626,7 +1629,7 @@ top: 10px
 }
 .widget ul li {
 	margin-top: 0;
-	margin-bottom: 3.7rem;
+	margin-bottom: 3.8rem;
 }
 .widget ul li:first-child {
 	margin-top: 2.9rem;
@@ -1672,10 +1675,13 @@ top: 10px
 .widget-title {
 	padding-bottom: 0;
 	border-bottom: none;
-	margin-bottom: 11px;
+	margin-bottom: 12px;
 }
 .widget ul li:first-child {
     margin-top: 0rem;
+}
+.widget ul li:last-child {
+       margin-bottom: 5.4rem;
 }
 	}
 /*--------------------------------------------------------------
