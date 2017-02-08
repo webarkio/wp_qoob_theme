@@ -1423,8 +1423,7 @@ top: 10px
 .content-area {
 	margin-top: 8rem;
 	margin-bottom: 5rem;
-	border-right: 1px solid #d5dde2;
-	padding-right: 30px;
+	padding-right: 15px;
 }
 .sticky {
 	display: block;
@@ -1619,7 +1618,19 @@ top: 10px
 .widget-area {
 	margin-top: 8.5rem;
 	padding-left: 0;
+	position: relative;
+	margin-bottom: 58px;
 }
+.widget-area:before {
+	content: "";
+	position: absolute;
+	display: block;
+	height: 100%;
+	width: 1px;
+	left: -1px;
+	top: 0;
+	background: #d5dde2;
+	}
 .widget-area.page-sidebar {
 	margin-top: 3rem;
 	margin-bottom: 3rem;
@@ -1688,6 +1699,10 @@ top: 10px
 .widget-area {
 	padding-left: 0 !important;
 	padding-right: 0;
+	margin-bottom: 0;
+	}
+	.widget-area:before {
+		display: none;
 	}
 	}
 /*--------------------------------------------------------------
@@ -1711,6 +1726,7 @@ top: 10px
 
 .site-main {
 	height: auto !important;
+	border-right: 1px solid #d5dde2;
 }
 .site-main .posts-list.post .thumbnail-blog {
 	display: none;
@@ -1828,6 +1844,9 @@ top: 10px
 	color: #fff;
 }
 @media (max-width: 767px) {
+	.site-main {
+		border-right: none;
+	}
 	.site-main .posts-list .entry-title, .site-main .posts-list .entry-title a {
 		font-size: 2.4rem;
 		line-height: 28px;
@@ -2049,7 +2068,7 @@ top: 10px
 	z-index: 1;
 }
 .pagination .nav-links {
-	margin: 0 0 1.5em 0em;
+	margin: 0 0 1.2em 0em;
 }
 .pagination .nav-links a {
 	display: inline-block;
@@ -2344,6 +2363,7 @@ img.mfp-img {
 }
 .content-area .hux {
 	padding-left: 0;
+	padding-right: 30px;
 }
 .mfp-title {
 	padding: 0;
@@ -2353,7 +2373,6 @@ img.mfp-img {
 		margin-top: 0;
 	}
 	.content-area {
-		border-right: none;
 		padding-right: 0px;
 		padding-left: 0px;
 	}
@@ -2389,6 +2408,7 @@ img.mfp-img {
     }
     	.content-area .hux {
 	padding-left: 15px;
+	padding-right: 15px;
 }
 .content-area {
     margin-top: 6rem;
