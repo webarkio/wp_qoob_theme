@@ -102,7 +102,7 @@
    left: 0;
    right: 0;
    font-family: "RobotoBlack", sans-serif;
-   line-height: 65px;
+   line-height: 63px;    
 }
 .block-image-bg .imagetablet, .block-image-bg .imagemobile {
     display: none;
@@ -130,7 +130,7 @@
         padding-top: 10rem;
     }
         .block-image-bg .h2-block {
-        top: 53px;
+        top: 48px;
     }
 }
 @media (max-width: 767px) { 
@@ -141,10 +141,11 @@
     display: block;
 } 
 .block-image-bg .h2-block {
-    font-size: 3.4rem;
+    font-size: 3rem;
     line-height: 40px;
     padding-left: 15px;
     padding-right: 15px;
+     line-height: 36px;  
 }
 .block-image-bg {
         padding-top: 6.6rem;
@@ -722,7 +723,7 @@
     }
     .call-to-action-bg-v3 .h2-block {
         font-size: 3.0rem !important;
-        line-height: 37px !important;
+        line-height: 36px !important;
         margin-bottom: 1.3rem;
     }
     .call-to-action-bg-v3 .btn-action {
@@ -2604,7 +2605,7 @@
     color: #000;
     font-size: 5.4rem !important;
     font-family: "RobotoBlack", sans-serif;
-    line-height: 1.2;
+    line-height: 63px !important;
 }
 
 .header-new-bg .btn-header-wrap {
@@ -2656,6 +2657,8 @@
         text-align: center !important;
         padding-left: 0 !important;
         margin-bottom: 1.3rem;
+        font-size: 3rem !important;
+        line-height: 36px !important;
     }
 }
 @media (max-width: 531px) {
@@ -2670,8 +2673,7 @@
     }
 
     .header-new-bg .header-block {
-        font-size: 3rem !important;
-        line-height: 36px !important;
+
         margin-top: 3.7rem;
         padding-left: 0 !important;
         text-align: left !important;
@@ -3917,6 +3919,7 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
     font-size: 5.4rem;
      font-family: "RobotoBlack", sans-serif;
     margin-bottom: 3rem;
+    line-height: 63px;
 }
 .contact-image-text p {
     font-size: 1.7rem;
