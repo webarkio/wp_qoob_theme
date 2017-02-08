@@ -1686,7 +1686,7 @@ top: 10px
        margin-bottom: 5.4rem;
 }
 .widget-area {
-	padding-left: 0;
+	padding-left: 0 !important;
 	padding-right: 0;
 	}
 	}
