@@ -3812,7 +3812,7 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 # Achievements block
 --------------------------------------------------------------*/
 .achievements-block {
-    padding-top: 8.8rem;
+    padding-top: 9rem;
     padding-bottom: 11.2rem;
 }
 .achievements-block form {
@@ -3873,7 +3873,7 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 .achievements-block .downloads_achievement, 
 .achievements-block .installs_achievement {
     font-size: 8.1rem;
-    font-family: "RobotoBold", sans-serif;
+    font-family: "RobotoBlack", sans-serif;
     color: #000;
     max-width: 50%;
 }
