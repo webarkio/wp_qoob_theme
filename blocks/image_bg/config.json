@@ -23,7 +23,7 @@
         "tags": ["wall", "mobile"]
     }],
     "defaults": {
-        "header": "What tehnologies <br>do we use",
+        "header": "The technologies we use",
         "imagedesktop" : "%block_url%/assets/img/image_bg.jpg",
         "imagetablet" : "%block_url%/assets/img/image_bgtablet.jpg",
         "imagemobile" : "%block_url%/assets/img/image_bgmobile.png"
