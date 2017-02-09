@@ -167,6 +167,7 @@
     .block-image-bg {
         padding-top: 10rem;
     } 
+   }
     @media (max-width: 360px) {
     .block-image-bg {
         padding-top: 13rem;
