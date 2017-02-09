@@ -2123,6 +2123,11 @@ a:active {
 	vertical-align: middle;
 	outline: none;
 }
+@media (max-width: 992px) {
+	.pagination {
+	margin-bottom: 0px;
+}
+	}
 @media (max-width: 767px) {
 	.pagination .nav-links a {
 		display: inline-block;
