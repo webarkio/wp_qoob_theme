@@ -388,13 +388,13 @@
 
 @media (max-width: 767px) { 
     .block-drupal-comming {
-        padding-top: 3.5rem;
+        padding-top: 3.4rem;
         padding-bottom: 3.4rem;
 
     }
     .block-drupal-comming .header-block {
-        line-height: 44px !important;
-        font-size: 3rem;
+        line-height: 40px !important;
+        font-size: 3rem !important;
         text-align: left !important;
     }
     .block-drupal-comming .header-block b {
