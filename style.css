@@ -1390,7 +1390,7 @@ a:active {
 
 .widget {
 	margin: 0 0 1.5em;
-	padding-left: 3rem;
+	padding-left: 1.5rem;
 }
 
 
@@ -1423,7 +1423,8 @@ a:active {
 .content-area {
 	margin-top: 8rem;
 	margin-bottom: 3rem;
-	padding-right: 15px;
+	padding-left: 0px;
+	padding-right: 0;
 }
 .sticky {
 	display: block;
@@ -1617,7 +1618,7 @@ a:active {
 --------------------------------------------------------------*/
 .widget-area {
 	margin-top: 8.5rem;
-	padding-left: 0;
+/*	padding-left: 0;*/
 	position: relative;
 	margin-bottom: 58px;
 }
@@ -1730,6 +1731,8 @@ a:active {
 .site-main {
 	height: auto !important;
 	border-right: 1px solid #d5dde2;
+	overflow: hidden;
+	padding-right: 30px;
 }
 .site-main .posts-list.post .thumbnail-blog {
 	display: none;
@@ -1849,6 +1852,7 @@ a:active {
 @media (max-width: 992px) {
 	.site-main {
 		border-right: none;
+		padding-right: 0;
 	}
 }
 @media (max-width: 767px) {
@@ -2374,8 +2378,8 @@ img.mfp-img {
 	text-align: center;
 }
 .content-area .hux {
-	padding-left: 0;
-	padding-right: 30px;
+	padding-left: 0px;
+	padding-right: 0;
 }
 .mfp-title {
 	padding: 0;
