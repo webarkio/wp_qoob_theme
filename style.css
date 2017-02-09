@@ -1422,7 +1422,7 @@ a:active {
 --------------------------------------------------------------*/
 .content-area {
 	margin-top: 8rem;
-	margin-bottom: 3rem;
+	margin-bottom: 7.6rem;
 	padding-left: 0px;
 	padding-right: 0;
 }
@@ -1618,9 +1618,8 @@ a:active {
 --------------------------------------------------------------*/
 .widget-area {
 	margin-top: 8.5rem;
-/*	padding-left: 0;*/
 	position: relative;
-	margin-bottom: 58px;
+	margin-bottom: 71px;
 }
 .widget-area:before {
 	content: "";
@@ -2079,6 +2078,7 @@ a:active {
 	position: relative;
 	z-index: 1;
 	margin-top: 33px;
+	margin-bottom: -46px;
 }
 .pagination .nav-links {
 	margin: 0 0 1.2em 0em;
@@ -2124,6 +2124,7 @@ a:active {
 	}
 	.pagination {
 		margin-top: 0;
+		margin-bottom: 0;
 	}
 }
 /*--------------------------------------------------------------
@@ -2423,8 +2424,8 @@ img.mfp-img {
 		margin-bottom: 1.5rem;
 	}
 	.content-area .hux {
-		padding-left: 15px;
-		padding-right: 15px;
+		padding-left: 0px;
+		padding-right: 0px;
 	}
 	.content-area {
 		margin-top: 6rem;

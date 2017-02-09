@@ -215,7 +215,7 @@
     color: #000;
     font-size: 3rem;
     font-family: "RobotoBold", sans-serif;
-    margin-bottom: 13px;
+    margin-bottom: 17px;
     line-height: 36px
 }
 
@@ -249,7 +249,8 @@
 
 
 .slider-comments .item-slider {
-    margin-top: 48px;
+    margin: 48px auto;
+    max-width: 730px;
 }
 
 .slider-comments .text_slider p {
@@ -1336,15 +1337,16 @@
 # List simple
 --------------------------------------------------------------*/
 .list_simple {
-    padding-top: 8.3rem;
+    padding-top: 9.1rem;
     padding-bottom: 9.7rem;
 }
 .list_simple .header-block {
     font-size: 5.4rem !important;
     text-align: center !important;
+    line-height: 63px !important;
     color: #000;
     font-family: "RobotoBlack", sans-serif;
-    margin: 1.7rem 0 1.4rem;
+    margin: 1.7rem 0 2.1rem !important;
 }
 .list_simple ul li:before {
  display: none;
@@ -1360,7 +1362,7 @@
 }
 .list_simple ul {
     max-width: 565px;
-    margin: 20px auto 0;
+    margin: 17px auto 0;
 }
 
 
@@ -1378,9 +1380,6 @@
     }
     .list_simple .header-block {
         text-align: left !important;
-    }
-
-    .list_simple .header-block {
         font-size: 3.0rem !important;
         line-height: 37px !important;
         margin-bottom: 1.3rem;
@@ -1550,13 +1549,17 @@
     text-transform: uppercase;
     font-family: "RobotoBlack", sans-serif;
     color: #000;
-    line-height: 63px;
+    line-height: 65px;
     font-weight: 800;
 }
 .block-prices .best_proposal {
     padding-bottom: 20px !important;
     position: relative;
     top: -20px;
+}
+.block-prices .wrap-licence {
+    padding-left: 8px;
+    padding-right: 8px;
 }
 .block-prices .best_proposal .top_license {
     padding-top: 56px;
@@ -1616,10 +1619,10 @@
 
 
 .block-prices .block_license {
-    max-width: 273px;
+    max-width: 277px;
     background: #fff;
     border-radius: 5px;
-    margin: 10px auto;
+    margin: 10px 0;
     overflow: hidden;
     width: 100%;
 }
@@ -1628,6 +1631,7 @@
     color: #fff;
     padding-top: 36px;
     padding-bottom: 24px;
+    text-align: center;
     padding-left: 25px;
     padding-right: 25px;
 }
@@ -1647,7 +1651,7 @@
     top: -4px;
 }
 .block-prices .content_license {
-    padding: 0 25px;
+    padding: 0 40px;
     margin-bottom: 2.4rem;
     padding-top: 25px;
 }
@@ -3812,7 +3816,7 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 # Achievements block
 --------------------------------------------------------------*/
 .achievements-block {
-    padding-top: 9rem;
+    padding-top: 8.9rem;
     padding-bottom: 11.2rem;
 }
 .achievements-block form {
@@ -3896,6 +3900,9 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
     margin-bottom: 1.6rem;
 }
 @media (max-width: 992px) {
+    .achievements-block {
+    padding-top: 10rem;
+}
     .achievements-block .downloads_achievement, .achievements-block .installs_achievement {
         font-size: 5.4rem !important;
     }
