@@ -72,7 +72,7 @@
                         class: "",
                         id: "mobile-menu"
                     }).appendTo("#mmenu-wrap");
-                    jQuery("#mobile-menu a.sf-with-ul").next('ul').css('margin-top', '0px');
+                    jQuery("#mobile-menu a.sf-with-ul, .mobile-menu-close").next('ul').css('margin-top', '0px');
 
                     jQuery("#mobile-menu a.sf-with-ul").on("click", function(e) {
 
@@ -83,11 +83,13 @@
 
                     });
 
+
                 }
                 jQuery('#mobile-menu-button').show();
                 jQuery('#menu').hide();
             }
 
+           
         } else {
 
             jQuery("#mobile-menu").hide();
@@ -96,18 +98,24 @@
             jQuery('#mmenu-wrap').removeClass('open');
 
         }
-         if (jQuery(window).width() < 768) { 
+         if (jQuery(window).width() < 1025) { 
             jQuery('.site-header.fixed').addClass('mobile-show');
         }else {
             jQuery('.site-header.fixed').removeClass('mobile-show');
         }
-
+        
     }
 
 jQuery(document).ready(function() {
     qoob_menu();
     show_hide_show_qoob_theme_menu();
     menu_center();
+     jQuery("#mobile-menu").find(".social-media-icon").detach();
+        jQuery(".social-media-icon").prependTo(jQuery("#mobile-menu"));
+        jQuery("<div class='mobile-menu-close'></div>").prependTo(jQuery("#mobile-menu"));
+        jQuery(".mobile-menu-close").on("click", function() {
+        jQuery("#mobile-menu").toggleClass("open").slideToggle(300);
+    });
 });
 
 jQuery(window).resize(function(){
