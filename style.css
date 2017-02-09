@@ -1142,10 +1142,9 @@ a:active {
 #mobile-menu li a {
 	padding: 0rem 1.5rem 1rem 1.4rem;
 	display: inline-block;
-	color: #484848;
-	font-family: "RobotoBold", sans-serif;
-	font-size: 1.5rem;
-	text-transform: uppercase;
+	color: #000;
+	font-family: "RobotoMedium", sans-serif;
+	font-size: 1.8rem;
 	outline: none;
 	text-decoration: none;
 }

@@ -1627,7 +1627,7 @@
     max-width: 277px;
     background: #fff;
     border-radius: 5px;
-    margin: 10px 0;
+    margin: 10px auto;
     overflow: hidden;
     width: 100%;
 }
@@ -2241,6 +2241,10 @@
 
 .faq-customers .panel {
     margin-bottom: 0.2rem;
+}
+
+.faq-customers .panel:last-child {
+    border-bottom: 1px solid #dbdbdb;
 }
 
 .faq-customers .panel-heading[aria-expanded="false"] .indicator {
