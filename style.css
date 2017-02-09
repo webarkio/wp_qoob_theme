@@ -1562,6 +1562,9 @@ a:active {
 	.entry-thumbnail-blog {
 		margin-top: 0;
 	}
+	.comments-main-content {
+    margin-bottom: 2.9rem !important;
+}
 }
 @media (max-width: 767px) {
 	.entry-thumbnail-blog {
@@ -1590,7 +1593,6 @@ a:active {
 
 	.comments-main-content {
 		width: 90% !important;
-		margin-bottom: 4.5rem !important;
 	}
 	.footer-navigation li {
 		display: block;
@@ -1687,6 +1689,9 @@ a:active {
 	.widget-area:before {
 		display: none;
 	}
+	.widget-title {
+		margin-top: 0;
+	}
 }
 @media (max-width: 767px) {
 	.widget-title {
@@ -1694,6 +1699,7 @@ a:active {
 		border-bottom: none;
 		margin-bottom: 12px;
 		padding-left: 0;
+		margin-top: 1.7rem;
 	}
 	.widget ul li:first-child {
 		margin-top: 0rem;
@@ -1900,7 +1906,7 @@ a:active {
 	margin: auto;
 	padding-top: 3.6rem;
 	padding-bottom: 8.4rem;
-	margin-bottom: 3.0rem;
+	margin-bottom: 1.3rem;
 }
 
 .sidebar-on .comments-main-content {
@@ -2388,20 +2394,19 @@ img.mfp-img {
 @media (max-width: 992px) {
 	.widget-area {
 		margin-top: 0;
+		margin-bottom: 16px;
 	}
 	.content-area {
 		padding-right: 0px;
 		padding-left: 0px;
+		margin-bottom: 1.7rem;
 	}
 	.widget {
 		padding-left: 0;
+		margin-bottom: 49px;
 	}
 	.widget-area {
 		padding-left: 15px;
-	}
-	.content-area {
-		margin-top: 3.5rem;
-		margin-bottom: 0;
 	}
 	.pagination .nav-links {
 		margin-bottom: 1.6rem !important;
@@ -2429,7 +2434,12 @@ img.mfp-img {
 	}
 	.content-area {
 		margin-top: 6rem;
+		margin-bottom: 1rem;
 	}
+	.widget {
+		margin-bottom: 6.6rem;
+	}
+
 }
 @media (max-height: 767px) and (max-width: 767px) {
 	.container-fluid .header-block,
