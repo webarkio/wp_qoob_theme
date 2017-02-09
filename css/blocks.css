@@ -166,6 +166,10 @@
 @media (max-width: 480px) {
     .block-image-bg {
         padding-top: 10rem;
+    } 
+    @media (max-width: 360px) {
+    .block-image-bg {
+        padding-top: 13rem;
     }  
 }
 
@@ -2703,7 +2707,7 @@
     .header-new-bg p {
         font-size: 1.6rem;
         text-align: left;
-        line-height: 1.9rem;
+        line-height: 2.4rem;
         margin-top: 1rem;
         margin-bottom: 2.7rem;
     }
@@ -2733,7 +2737,7 @@
         text-align: left !important;
     }
     .header-new-bg p {
-        margin-top: 1.8rem;
+        margin-top: 1.2rem;
     }
 
 }
