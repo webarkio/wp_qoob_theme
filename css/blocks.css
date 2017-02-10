@@ -277,7 +277,7 @@
     }
     .slider-comments {
     padding-top: 3.6rem;
-        padding-bottom: 6rem;
+        padding-bottom: 5rem;
     }
    .owl-carousel .owl-item {
     padding-left: 15px;
@@ -286,9 +286,7 @@
 .owl-theme .owl-nav.disabled + .owl-dots {
     margin-top: 0;
 }
-.slider-comments .btn-action {
-    margin-top: 24px;
-}
+
 }
 
 
@@ -1722,7 +1720,7 @@
 
     .block-prices .btn-action {
         max-width: 29rem;
-        padding: 1.45rem 3.5rem;
+        padding: 1.60rem 3.5rem;
         margin-top: 22px;
         width: 100%;
         margin-bottom: 50px;
@@ -1737,6 +1735,10 @@
     .block-prices ul li i {
         font-size: 1.4rem;    
     }
+    .block-prices .wrap-licence {
+    padding-left: 15px;
+    padding-right: 15px;
+}
 }
 
 /*--------------------------------------------------------------
@@ -2216,6 +2218,7 @@
     display: block;
     padding: 15px 45px;
     min-height: 70px;
+    height: 100%;
     background: #d9d9d9;
     font-size: 1.6rem;
     color: #000;
@@ -2270,15 +2273,36 @@
     .faq-customers .header-block {
     text-align: center !important;
     line-height: 36px !important;
-    font-size: 3rem;
+    font-size: 3rem !important;
+    padding-left: 0 !important;
     margin-bottom: 54px;
+    margin-bottom: 24px;
     }
     .faq-customers {
-        padding-top: 3.9em;
+        padding-top: 2em;
         padding-bottom: 5.8rem;
     }
     .faq-customers .panel-title .waves-effect {
     text-align: center;
+    line-height: 24px;
+    padding-top: 25px;
+}
+.slider-comments .item-slider {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.slider-comments .title_slider {
+    margin-top: 8px;
+}
+.slider-comments .text_slider p {
+    margin-bottom: 1.5rem;
+}
+.slider-comments .btn-action {
+    font-size: 1.6rem;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    max-width: 290px;
+    margin-top: 21px;
 }
 }
 /*--------------------------------------------------------------
