@@ -2297,6 +2297,9 @@
 .slider-comments .text_slider p {
     margin-bottom: 1.5rem;
 }
+.faq-customers .panel-body p {
+    text-align: left;
+}
 .slider-comments .btn-action {
     font-size: 1.6rem;
     padding-top: 16px;
