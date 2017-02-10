@@ -46,8 +46,12 @@
             "label": "List text",
             "type": "accordion",
             "settings": [{
+                "name": "title",
+                "label": "Titile",
+                "type": "text"
+            }, {
                 "name": "text_li",
-                "label": "Text list",
+                "label": "Text",
                 "type": "text"
             }]
         }, {
@@ -80,21 +84,27 @@
             "price": "Free",
             "content_list": [{
                 "title": "Page Builder Plugin",
+                 "text_li": "Page Builder Plugin",
                 "order": 0
                 }, {
                 "title": "Limited Technical Supportn",
+                "text_li": "Limited Technical Supportn",
                 "order": 1
                 }, {
                 "title": "Use for open source",
+                "text_li": "Use for open source",
                 "order": 2
                 }, {
                 "title": "Free updates",
+                "text_li": "Free updates",
                 "order": 3
                 }, {
                 "title": "Use for any CMS and framework",
+                "text_li": "Use for any CMS and framework",
                 "order": 4
                 }, {
                 "title": "Not use for commerce",
+                "text_li": "Not use for commerce",
                 "order": 5
             }],
             "action_text": "Download",
@@ -105,21 +115,27 @@
             "price": "<span>$</span>29",
             "content_list": [{
                 "title": "Page Builder Plugin",
+                "text_li": "Page Builder Plugin",
                 "order": 0
                 }, {
                 "title": "Regular support",
+                 "text_li": "Regular support",
                 "order": 1
                 }, {
                 "title": "Use for 1 website",
+                "text_li": "Use for 1 website",
                 "order": 2
                 }, {
                 "title": "Free updates",
+                "text_li": "Free updates",
                 "order": 3
                 }, {
                 "title": "Use for any CMS and framework",
+                "text_li": "Use for any CMS and framework",
                 "order": 4
                 }, {
                 "title": "Not use for commerce",
+                "text_li": "Not use for commerce",
                 "order": 5
             }],
             "action_text": "Buy",
@@ -130,21 +146,27 @@
             "price": "<span>$</span>99",
             "content_list": [{
                 "title": "Page Builder Plugin",
+                "text_li": "Page Builder Plugin",
                 "order": 0
                 }, {
                 "title": "Regular support",
+                 "text_li": "Regular support",
                 "order": 1
                 }, {
                 "title": "Use for 1 website",
+                 "text_li": "Use for 1 website",
                 "order": 2
                 }, {
                 "title": "Free updates",
+                "text_li": "Free updates",
                 "order": 3
                 }, {
                 "title": "Use for any CMS and framework",
+                "text_li": "Use for any CMS and framework",
                 "order": 4
                 }, {
                 "title": "Not use for commerce",
+                "text_li": "Not use for commerce",
                 "order": 5
             }],
             "action_text": "Buy",
@@ -155,21 +177,27 @@
             "price": "<span>$</span>179",
             "content_list": [{
                 "title": "Page Builder Plugin",
+                "text_li": "Page Builder Plugin",
                 "order": 0
                 }, {
                 "title": "Regular support",
+                "text_li": "Regular support",
                 "order": 1
                 }, {
                 "title": "Use for 1 website",
+                "text_li": "Use for 1 website",
                 "order": 2
                 }, {
                 "title": "Free updates",
+                "text_li": "Free updates",
                 "order": 3
                 }, {
                 "title": "Use for any CMS and framework",
+                "text_li": "Use for any CMS and framework",
                 "order": 4
                 }, {
                 "title": "Not use for commerce",
+                "text_li": "Not use for commerce",
                 "order": 5
             }],
             "action_text": "Buy",
