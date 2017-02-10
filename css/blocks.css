@@ -2277,7 +2277,6 @@
     font-size: 3rem !important;
     padding-left: 0 !important;
     margin-bottom: 54px;
-    margin-bottom: 24px;
     }
     .faq-customers {
         padding-top: 2em;
@@ -2293,7 +2292,7 @@
     margin-bottom: 0;
 }
 .slider-comments .title_slider {
-    margin-top: 8px;
+    margin-top: 13px;
 }
 .slider-comments .text_slider p {
     margin-bottom: 1.5rem;
