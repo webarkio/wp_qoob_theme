@@ -2283,7 +2283,7 @@
         padding-bottom: 5.8rem;
     }
     .faq-customers .panel-title .waves-effect {
-    text-align: center;
+    text-align: left;
     line-height: 24px;
     padding-top: 25px;
 }
@@ -2303,7 +2303,13 @@
     padding-bottom: 16px;
     max-width: 290px;
     margin-top: 21px;
+    padding-right: 15px;
+    padding-left: 15px;
     width: calc(100% - 30px);
+}
+.faq-customers .panel-body {
+    padding-left: 22px;
+    padding-right: 22px;
 }
 }
 /*--------------------------------------------------------------
