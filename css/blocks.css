@@ -290,8 +290,6 @@
 
 }
 
-
-
 /*--------------------------------------------------------------
 # Block image download
 --------------------------------------------------------------*/
@@ -325,7 +323,7 @@
     height: 100vh;
 }
 
-.block-image-download .header-block {
+.block-image-download .header-h2 {
     text-transform: uppercase;
     font-family: "RobotoBlack", sans-serif;
     color: #000;
@@ -342,7 +340,7 @@
     .block-image-download .background-block {
         display: none;
     }
-    .block-image-download .header-block {
+    .block-image-download .header-h2 {
         font-size: 3rem !important;
     }
 }
