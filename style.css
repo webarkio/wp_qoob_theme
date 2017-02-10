@@ -1965,7 +1965,21 @@ a:active {
 		border-right: none;
 		padding-right: 0;
 	}
-
+	.site-main .posts-list.post:before {
+		display: block;
+	}
+	.site-main .posts-list.post .thumbnail-blog, .site-main .posts-list.post:before {
+		display: block;
+	}
+	.site-main .posts-list.post .entry-title a {
+		color: #fff;
+	}
+	.entry-meta .posted-auther, .entry-meta .posted-data, .entry-meta .posted-comments, .entry-meta .posted-eye {
+		color: #fff;
+	}
+	.site-main .posts-list.post {
+		margin-bottom: 1.5rem;
+	}
 }
 @media (max-width: 767px) {
 	.site-main {
@@ -1987,18 +2001,7 @@ a:active {
 		padding-right: 2.3rem;
 
 	}
-	.site-main .posts-list.post:before {
-		display: block;
-	}
-	.site-main .posts-list.post .thumbnail-blog, .site-main .posts-list.post:before {
-		display: block;
-	}
-	.site-main .posts-list.post .entry-title a {
-		color: #fff;
-	}
-	.entry-meta .posted-auther, .entry-meta .posted-data, .entry-meta .posted-comments, .entry-meta .posted-eye {
-		color: #fff;
-	}
+
 }
 /*--------------------------------------------------------------
 ## Comments

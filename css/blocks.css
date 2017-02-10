@@ -1681,6 +1681,11 @@
     font-family: "RobotoLight", sans-serif;
     margin-top: 11px;
 }
+@media (max-width: 992px) {
+    .block-prices .best_proposal {
+        margin-top: 30px;
+}
+    }
 @media (max-width: 900px) {
     .block-prices ul {
         max-width: 100%;    
@@ -1707,6 +1712,9 @@
     .block-prices .cost_license {
         text-align: center;
     }
+        .block-prices .best_proposal {
+        margin-top: 10px;
+}
     .block-prices .description {
     font-size: 24px;
     line-height: 30px;
