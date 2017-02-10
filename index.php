@@ -14,7 +14,21 @@
 
 get_header( 'fixed' );
 ?>
-<div class="entry-thumbnail-blog" style="background-image: url(<?php echo esc_url( get_theme_mod( 'blog_image_bg' ) ); ?>)">
+<div class="entry-thumbnail-blog standart" style="background-image: url(<?php echo esc_url( get_theme_mod( 'blog_image_bg' ) ); ?>)">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12">
+				<h2><?php
+				global $wp_query;
+
+				$wp_query->is_posts_page ?  wp_title( '' ) : bloginfo( 'name' );
+
+				?></h2>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="entry-thumbnail-blog retina" style="background-image: url(<?php echo esc_url( get_theme_mod( 'blog_image_bg_retina' ) ); ?>)">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 col-md-12">

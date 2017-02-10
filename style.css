@@ -1640,7 +1640,12 @@ a:active {
 	text-align: center;
 	font-family: "RobotoBold", sans-serif;
 }
-
+.entry-thumbnail-blog.standart {
+		display: block;
+	}
+	.entry-thumbnail-blog.retina {
+		display: none;
+	}
 .entry-thumbnail-blog .entry-meta {
 	padding-top: 0.5rem;
 }
@@ -1721,6 +1726,14 @@ a:active {
 		width: 100%;
 	}
 }
+@media (min-width: 1920px) {
+	.entry-thumbnail-blog.standart {
+		display: none;
+	}
+		.entry-thumbnail-blog.retina {
+		display: block;
+	}
+	}
 /*--------------------------------------------------------------
 ## Widgets
 --------------------------------------------------------------*/

@@ -33,6 +33,14 @@ function qoob_theme_customize_register( $wp_customize ) {
 		'sanitize_callback' => 'esc_url',
 	));
 
+	$wp_customize->add_setting( 'blog_image_bg_retina', array(
+		'default' => '',
+		'type' => 'theme_mod',
+		'capability' => 'edit_theme_options',
+		'transport' => '',
+		'sanitize_callback' => 'esc_url',
+	));
+
 	$wp_customize->add_control(
 		new WP_Customize_Image_Control(
 			$wp_customize,
@@ -42,6 +50,20 @@ function qoob_theme_customize_register( $wp_customize ) {
 				'section'    => 'blog_settings',
 				'settings'   => 'blog_image_bg',
 				'description' => esc_html__( 'Your theme recommends a blog background size of 1900 x 370 pixels.', 'qoob' ),
+				'context'    => 'your_setting_context',
+			)
+		)
+	);
+
+	$wp_customize->add_control(
+		new WP_Customize_Image_Control(
+			$wp_customize,
+			'blog_image_bg_retina',
+			array(
+				'label'      => esc_html__( 'Upload a blog background retina', 'qoob' ),
+				'section'    => 'blog_settings',
+				'settings'   => 'blog_image_bg_retina',
+				'description' => esc_html__( 'Your theme recommends a blog background size of 2560 x 280 pixels.', 'qoob' ),
 				'context'    => 'your_setting_context',
 			)
 		)
