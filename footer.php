@@ -33,7 +33,7 @@
 							'after'           => '',
 							'link_before'     => '<span>',
 							'link_after'      => '</span>',
-							'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s<li class="footer-copyright">' . esc_attr( get_theme_mod( 'footer_text' ) ) . '</li></ul>',
+							'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s<li class="footer-copyright">' . wp_kses_post( get_theme_mod( 'footer_text' ) ) . '</li></ul>',
 							'depth'           => 1,
 							'walker'          => '',
 						) );
