@@ -214,6 +214,9 @@
     font-size: 5.4rem;
     line-height: 63px;
     font-family: "RobotoBlack", sans-serif;
+    width: calc(100% - 30px);
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .slider-comments .title_slider {
@@ -275,6 +278,7 @@
         text-align: center !important;
         padding-left: 15px;
         padding-right: 15px;
+
     }
     .slider-comments {
     padding-top: 3.6rem;
