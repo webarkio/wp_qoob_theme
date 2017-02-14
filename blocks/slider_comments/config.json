@@ -47,24 +47,24 @@
     
     "defaults": {
         "header" : "What people are Saying <br>about us",
-        "action_text": "Leave comment",
+        "action_text": "Leave a comment",
         "image" : "%block_url%/assets/img/slider_comments_bg.jpg",
         "action_url": "#",
         "slider": [{
-            "title": "Create your website now - it's free and so easy!",
-            "text": "Lorem ipsum dolor sit amet, persius adipisci vim in. Ea est ponderum persequeris efficiantur. Ut eros nostrum neglegentur vis. Mea eius porro erant ex, ex postulant rationibus vel. In dolorem accusata perpetua mei, zril eripuit nominavi ius ad. Hinc voluptatum pro et, vero sapientem ei nam.",
+            "title": "STEVE BLASTER",
+            "text": "Qoob is truly one of the simple and user-friendly page builders. It took us a little time to get started with our new project. We've created several sites based on Qoob and really pleased with the results we've got.",
             "order": 0
         }, {
-            "title": "Tom Daniels",
-            "text": "Lorem ipsum dolor sit amet, persius adipisci vim in. Ea est ponderum persequeris efficiantur. Ut eros nostrum neglegentur vis. Mea eius porro erant ex, ex postulant rationibus vel. In dolorem accusata perpetua mei, zril eripuit nominavi ius ad. Hinc voluptatum pro et, vero sapientem ei nam.",
+            "title": "MARK JONES",
+            "text": "No words but emotions... You can really see how your wishes fulfill. Qoob is the greatest helper in launching your startup and making it succesful.",
             "order": 1
         }, {
-            "title": "Create your website now - it's free and so easy!",
-            "text": "Lorem ipsum dolor sit amet, persius adipisci vim in. Ea est ponderum persequeris efficiantur. Ut eros nostrum neglegentur vis. Mea eius porro erant ex, ex postulant rationibus vel. In dolorem accusata perpetua mei, zril eripuit nominavi ius ad. Hinc voluptatum pro et, vero sapientem ei nam.",
+            "title": "LUIS RICARDO",
+            "text": "It's amazing how easily you can build the website of your dream. Just move the blocks and you're done! No coding and desigh skills are needed. It's really a miracle!",
             "order": 2
         }, {
-            "title": "Tom Daniels",
-            "text": "Lorem ipsum dolor sit amet, persius adipisci vim in. Ea est ponderum persequeris efficiantur. Ut eros nostrum neglegentur vis. Mea eius porro erant ex, ex postulant rationibus vel. In dolorem accusata perpetua mei, zril eripuit nominavi ius ad. Hinc voluptatum pro et, vero sapientem ei nam.",
+            "title": "LEE CHONG",
+            "text": "I really love this cute page creator. You're able to create incredible website that will showcase your projects. I have no doubts you really need to try it.",
             "order": 3
         }]      
     }
