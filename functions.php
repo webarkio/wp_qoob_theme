@@ -127,11 +127,13 @@ function qoob_social_media_icons( $nav, $args ) {
 	}
 
 	$socials_footer = qoob_customizer_social_media_array();
+
 	if ( 'footer' === $args->theme_location ) {
 		/* any inputs that aren't empty are stored in $active_sites array */
 		foreach ( $socials_footer as $social_footer ) {
-			if ( strlen( get_theme_mod( $social_footer ) ) > 0 ) {
-				$active_sites[] = $social_footer;
+			
+			if ( strlen( get_theme_mod( 'footer_' . $social_footer ) ) > 0 ) {
+				$active_sites[] =  $social_footer;
 			}
 		}
 
