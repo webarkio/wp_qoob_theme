@@ -1119,8 +1119,8 @@ a:active {
 	padding-left: 4rem;
 	color: #898989;
 }
-#mobile-menu ul.sub-menu li a:hover, #mobile-menu ul.sub-menu li a:active, #mobile-menu ul.sub-menu li a:focus, #mobile-menu li a:hover {
-	color: #0084ff;
+#mobile-menu ul.sub-menu li a:hover, #mobile-menu li a:hover #mobile-menu li a span:hover {
+	color: #0084ff !important;
 }
 #mobile-menu ul.sub-menu ul {
 	background-color: #fbfbfb;
