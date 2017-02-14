@@ -1226,6 +1226,8 @@ a:active {
 }
 #mobile-menu li a {
 	padding-bottom: 0.7rem;
+	position: relative;
+	z-index: 1;
 }
 #mmenu-wrap {
     background-color: #fff;
