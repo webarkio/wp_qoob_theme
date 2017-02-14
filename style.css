@@ -1156,6 +1156,7 @@ a:active {
 
 #mobile-menu li a.sf-with-ul {
 	position: relative;
+	z-index: 1;
 }
 
 #mobile-menu li a.sf-with-ul::after {
