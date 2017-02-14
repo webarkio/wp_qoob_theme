@@ -1022,15 +1022,7 @@ a:active {
 	.sf-menu li.social-media-icon:first-child {
 		margin-right: 20px;
 	}
-/*	.sf-menu .social-media-icon i, #mobile-menu .social-media-icon i {
-		font-size: 25px;
-	}
-	.sf-menu .social-media-icon i, #mobile-menu .social-media-icon i {
-		font-size: 25px;
-	}
-	.sf-menu .social-media-icon i, #mobile-menu .social-media-icon i {
-		font-size: 25px;
-	}*/
+
 	.sf-menu .social-media-icon .fa-facebook {
 		font-size: 21px;
 		margin-top: 2px;
@@ -1127,7 +1119,7 @@ a:active {
 	padding-left: 4rem;
 	color: #898989;
 }
-#mobile-menu ul.sub-menu li a:hover span, #mobile-menu ul.sub-menu li a:active span, #mobile-menu ul.sub-menu li a:focus span {
+#mobile-menu ul.sub-menu li a:hover, #mobile-menu ul.sub-menu li a:active, #mobile-menu ul.sub-menu li a:focus {
 	color: #0084ff;
 }
 #mobile-menu ul.sub-menu ul {
