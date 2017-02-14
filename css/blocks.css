@@ -146,7 +146,7 @@
     line-height: 40px;
     padding-left: 15px;
     padding-right: 15px;
-    line-height: 36px;  
+    line-height: 36px !important;  
 }
 .block-image-bg {
     padding-top: 6.6rem;
@@ -155,7 +155,7 @@
 @media (max-width: 531px) { 
     .block-image-bg .h2-block {
         font-size: 3rem;
-        line-height: 41px;
+        line-height: 36px;
         top: 50px;
     }
     .block-image-bg {
@@ -630,7 +630,7 @@
         padding-left: 0 !important;
         font-size: 3rem !important;
         top: 0px;
-        text-align: left !important;
+        text-align: center !important;
         padding-bottom: 23px;
         line-height: 37px !important;
     }
