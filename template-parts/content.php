@@ -9,12 +9,13 @@
 
 ?>
 <div class="col-lg-12 col-md-12 col-sm-12 hux">
-<article id="post-<?php the_ID(); ?>" <?php post_class( 'posts-list' ); ?>>
+<article style="background-image: url(<?php the_post_thumbnail_url( 'thumbnail-blog-list' );?>);" id="post-<?php the_ID(); ?>" <?php post_class( 'posts-list' ); ?>>
+	<div class="overflow-grey"></div>
 	<?php if ( has_post_thumbnail( $post->ID ) ) : ?>
 	<!-- <div class="entry-thumbnail"> -->
 		<div class="overlay-dark"></div>
+<!-- <?php var_dump(the_post_thumbnail_url( 'thumbnail-blog-list' ));?> -->
 
-		<img class="thumbnail-blog" src="<?php the_post_thumbnail_url( 'thumbnail-blog-list' ); ?>" alt="">
 	<!-- </div> -->
 	<?php endif;?>
 	<div class="entry-wrap-content">

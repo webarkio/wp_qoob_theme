@@ -78,8 +78,7 @@ if ( ! function_exists( 'qoob_theme_setup' ) ) :
 		 * See https://developer.wordpress.org/reference/functions/add_image_size/
 		 */
 		add_image_size( 'thumbnail-size-post-page', 1903, 720, array( 'left', 'top' ) ); // Hard crop left top
-		add_image_size( 'thumbnail-blog-list'); // Hard crop left top
-
+		add_image_size( 'thumbnail-blog-list', 750, 175); // Hard crop left top
 		add_filter( 'qoob_libs', 'qoob_add_theme_lib', 10, 2 );
 	}
 
@@ -131,7 +130,7 @@ function qoob_social_media_icons( $nav, $args ) {
 	if ( 'footer' === $args->theme_location ) {
 		/* any inputs that aren't empty are stored in $active_sites array */
 		foreach ( $socials_footer as $social_footer ) {
-			
+
 			if ( strlen( get_theme_mod( 'footer_' . $social_footer ) ) > 0 ) {
 				$active_sites[] =  $social_footer;
 			}
