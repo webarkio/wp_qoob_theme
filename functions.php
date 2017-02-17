@@ -119,7 +119,7 @@ function qoob_social_media_icons( $nav, $args ) {
 		/* for each active social site, add it as a list item */
 		if ( ! empty( $active_sites ) ) {
 			foreach ( $active_sites as $active_site ) {
-				$icons .= '<li class="menu-item social-media-icon"><a target="_blank" href="' . esc_url( get_theme_mod( $active_site ) ) . '"><i class="' . $active_site . '"></i></a></li>';
+				$icons .= '<li class="menu-item social-media-icon"><a aria-hidden target="_blank" href="' . esc_url( get_theme_mod( $active_site ) ) . '"><i class="' . $active_site . '"></i></a></li>';
 			}
 		}
 
