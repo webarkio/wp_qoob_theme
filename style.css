@@ -868,19 +868,23 @@ a:active {
 }
 
 .sf-menu li.menu-item:hover,
+.sf-menu li.menu-item:focus,
 .sf-menu li.menu-item.sfHover {
 	background: transparent;
 }
 
 .sf-menu li.menu-item-has-children:hover,
+.sf-menu li.menu-item-has-children:focus,
 .sf-menu li.menu-item-has-children.sfHover {
 	background: #fff;
 }
 
 .sf-menu > li.menu-item-has-children:hover,
+.sf-menu > li.menu-item-has-children:focus,
 .sf-menu > li.menu-item-has-children.sfHover {}
 
 .sf-menu li:hover a,
+.sf-menu li:focus a,
 .sf-menu li.sfHover a {
 	color: #0084ff;
 }
@@ -918,12 +922,6 @@ a:active {
 	margin-bottom: 1.3rem;
 }
 
-
-/*.sf-menu ul li .sf-with-ul:after {
-	border-top-color: #aaafb3;
-}*/
-
-
 /* styling for right-facing arrows */
 
 .sf-arrows ul .sf-with-ul:after {
@@ -942,9 +940,6 @@ a:active {
 	content: url(images/menu-arrow-hover.png);
 }
 
-.sf-menu ul li:hover {
-	/*background-color: #0084ff !important;*/
-}
 .sf-menu ul {
 	padding-left: 2.5rem;
 	padding-right: 2.5rem;
@@ -987,7 +982,8 @@ a:active {
 }
 
 .sf-menu ul li.sfHover > a,
-.sf-menu ul li a:hover {
+.sf-menu ul li a:hover,
+.sf-menu ul li a:focus {
 	color: #0084ff !important;
 }
 
@@ -1030,11 +1026,13 @@ a:active {
 	width: 3.3rem;
 }
 
-.sf-menu .social-media-icon:hover i.github {
+.sf-menu .social-media-icon a:hover i.github,
+.sf-menu .social-media-icon a:focus i.github {
 	background-position: -127px 0;
 }
 
-.sf-menu .social-media-icon:hover i.twitter {
+.sf-menu .social-media-icon a:hover i.twitter,
+.sf-menu .social-media-icon a:focus i.twitter {
 	background-position: 34px 0;
 }
 
@@ -1079,7 +1077,8 @@ a:active {
 	padding-left: 4rem;
 	color: #898989;
 }
-#mobile-menu ul.sub-menu li a:hover span {
+#mobile-menu ul.sub-menu li a:hover,
+#mobile-menu ul.sub-menu li a:focus {
 	color: #0084ff;
 }
 #mobile-menu ul.sub-menu ul {
@@ -1110,7 +1109,8 @@ a:active {
 #mobile-menu li:last-child > a {
 	margin-bottom: 2.4rem;
 }
-#mobile-menu > li > a:hover {
+#mobile-menu > li > a:hover,
+#mobile-menu > li > a:focus {
 	background-color: transparent;
 	color: #0084ff;
 }
@@ -1150,8 +1150,19 @@ a:active {
 	margin-bottom: 2.4rem;
 }
 #mobile-menu-button {
-	float: right;
-	outline: none;
+    float: right;
+    outline: none;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    background-color: transparent;
+    margin: 28px 0 28px 7px;
+}
+#mobile-menu-button:focus {
+	outline: thin dotted;
+}
+#mobile-menu-button .screen-reader-text {
+	display: none;
 }
 .site-header.fixed #mobile-menu-button .icon {
 	margin: 7px 0 0px 7px;
@@ -1159,7 +1170,6 @@ a:active {
 #mobile-menu-button .icon {
 	line-height: 92px;
 	padding: 9px 8px;
-	margin: 28px 0 28px 7px;
 	font-size: 0;
 	height: 35px;
 	width: 40px;

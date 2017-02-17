@@ -40,13 +40,14 @@
 				?>
 				<h2 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h2>
 			</div><!-- .site-branding -->
-			<a id="mobile-menu-button" href="#">
-						<span class="icon">
-							<i class="line"></i>
-							<i class="line"></i>
-							<i class="line"></i>
-						</span>
-					</a>
+			<button id="mobile-menu-button">
+				<span class="icon">
+					<i class="line"></i>
+					<i class="line"></i>
+					<i class="line"></i>
+				</span>
+				<strong class="screen-reader-text"><?php esc_html_e( 'Menu', 'qoob' ); ?></strong>
+			</button>
 			<nav id="site-navigation" class="main-navigation">
 				<?php
 						wp_nav_menu( array(
