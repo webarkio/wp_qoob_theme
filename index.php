@@ -17,12 +17,12 @@ get_header(); ?>
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
-				<h2><?php
+				<h1><?php
 				global $wp_query;
 
 				$wp_query->is_posts_page ?  wp_title( '' ) : bloginfo( 'name' );
 
-				?></h2>
+				?></h1>
 			</div>
 		</div>
 	</div>

@@ -564,7 +564,12 @@ input[type="submit"].br-white {
 button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
-input[type="submit"]:hover {
+input[type="submit"]:hover,
+.btn:focus,
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus {
 	border-color: #fff;
 	background-color: #0084ff;
 	color: #fff;
@@ -575,16 +580,27 @@ input[type="submit"]:hover {
 button.inverse:hover,
 input[type="button"].inverse:hover,
 input[type="reset"].inverse:hover,
-input[type="submit"].inverse:hover {
+input[type="submit"].inverse:hover,
+.btn.inverse:focus,
+button.inverse:focus,
+input[type="button"].inverse:focus,
+input[type="reset"].inverse:focus,
+input[type="submit"].inverse:focus {
 	border-color: #898989;
 	background: transparent;
 	color: #898989;
 }
+
 .btn.white.inverse:hover,
 button.white.inverse:hover,
 input[type="button"].white.inverse:hover,
 input[type="reset"].white.inverse:hover,
-input[type="submit"].white.inverse:hover {
+input[type="submit"].white.inverse:hover,
+.btn.white.inverse:focus,
+button.white.inverse:focus,
+input[type="button"].white.inverse:focus,
+input[type="reset"].white.inverse:focus,
+input[type="submit"].white.inverse:focus {
 	border-color: #fff;
 	color: #fff;
 }
@@ -1199,7 +1215,7 @@ a:active {
 }
 
 .footer-navigation li {
-	color: #898989;
+	color: #fff;
 	display: inline-block;
 	margin: 20px 0 20px 10px;
 }
@@ -1210,7 +1226,7 @@ a:active {
 }
 
 .footer-navigation li a:hover {
-	color: #fff;
+	color: #0084ff;
 }
 
 /*--------------------------------------------------------------
@@ -1450,7 +1466,7 @@ a:active {
 	background-color: rgba(0,0,0,0.35);
 }
 
-.entry-thumbnail-blog h2 {
+.entry-thumbnail-blog h1 {
 	color: #fff;
 	margin-top: 18.4rem;
 	text-transform: uppercase;
@@ -1528,15 +1544,16 @@ a:active {
 	font-size: 1.4rem;
 }
 .widget ul li a {
-	color: #898989;
+	color: #000;
 	text-decoration: none;
 	outline: none;
 }
-.widget ul li a:hover {
+.widget ul li a:hover,
+.widget ul li a:focus {
 	color: #0084ff;
 }
 .widget-title {
-	color: #898989;
+	color: #000;
 	font-size: 2rem;
 	text-transform: uppercase;
 	padding-left: 2.8rem;
@@ -1546,14 +1563,17 @@ a:active {
 }
 .widget .search-field {
 	padding: 1.3rem  3.5rem  1.3rem 3.5rem;
-	color: #cbcbcb;
+	color: #000;
 	font-style: italic;
 	width: calc(100% - 7rem);
 	font-size: 1.4rem;
-	background: #e4e4e4 url(images/widget-search-icon.png) no-repeat center right 1.7rem;
+	background: #fff url(images/widget-search-icon.png) no-repeat center right 1.7rem;
+}
+.widget .search-field:focus {
+	outline: 1px solid #0084ff;
 }
 .widget .search-field::-webkit-input-placeholder {
-	color: #cbcbcb;
+	color: #000;
 }
 /*--------------------------------------------------------------
 ## Asides
@@ -1581,7 +1601,7 @@ a:active {
 }
 .site-main .posts-list .entry-content p {
 	font-size: 1.5rem;
-	color: #898989;
+	color: #000;
 	line-height: 2.8rem;
 	margin-bottom: 3rem;
 }
@@ -1603,7 +1623,7 @@ a:active {
 	margin-bottom: 4rem;
 }
 .site-main .posts-list .entry-meta .posted-on a {
-	color: #e1e1e1;
+	color: #898989;
 	font-size: 1.3rem;
 	line-height: 2.5rem;
 }
@@ -1628,7 +1648,7 @@ a:active {
 }
 
 .site-main .posts-list .entry-title a {
-	color: #898989;
+	color: #000;
 	text-decoration: none;
 }
 /*--------------------------------------------------------------
@@ -1657,7 +1677,7 @@ a:active {
 
 .comments-title {
 	font-size: 2rem;
-	color: #898989;
+	color: #000;
 	text-transform: uppercase;
 	padding-bottom: 2.7rem;
 	border-bottom: .1rem solid #d2d2d2;
@@ -1735,7 +1755,7 @@ a:active {
 
 .comment-meta a {
 	text-decoration: none;
-	color: #bbbbbb;
+	color: #898989;
 	font-size: 1.3rem;
 }
 
@@ -1749,11 +1769,16 @@ a:active {
 	width: 49.5%;
 	margin-bottom: .4rem;
 }
-
+.comment-form .comment-form-author label,
+.comment-form .comment-form-email  label {
+	display: none;
+}
 .comment-form .comment-form-comment {
 	margin-bottom: -0.2rem;
 }
-
+.comment-form .comment-form-comment label {
+	display: none;
+}
 .comment-form .comment-form-author input,
 .comment-form .comment-form-email input,
 .comment-form .comment-form-comment textarea {
@@ -1763,7 +1788,11 @@ a:active {
 	font-size: 1.5rem;
 	width: 100%;
 }
-
+.comment-form .comment-form-author input:focus,
+.comment-form .comment-form-email input:focus,
+.comment-form .comment-form-comment textarea:focus {
+	outline: 1px solid #0084ff;
+}
 .comment-form .comment-form-author input::-webkit-input-placeholder,
 .comment-form .comment-form-email input::-webkit-input-placeholder,
 .comment-form .comment-form-comment textarea::-webkit-input-placeholder {
@@ -1793,7 +1822,7 @@ a:active {
 
 .comment-respond .comment-reply-title {
 	text-transform: uppercase;
-	color: #898989;
+	color: #000;
 	font-size: 2rem;
 	margin-bottom: 2.8rem;
 	margin-top: 4.9rem;
@@ -1809,7 +1838,8 @@ a:active {
 	padding: 1.9rem 6.2rem;
 }
 
-.form-submit input[type="submit"]:hover {
+.form-submit input[type="submit"]:hover,
+.form-submit input[type="submit"]:focus {
 	color: #fff;
 	border-color: #fff;
 }
