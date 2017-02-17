@@ -1228,6 +1228,7 @@ a:active {
 			padding-bottom: 0.7rem;
 			position: relative;
 			z-index: 10;
+			display: block;
 		}
 		#mmenu-wrap {
 			background-color: #fff;
