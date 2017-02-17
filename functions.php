@@ -289,6 +289,15 @@ function qoob_theme_footer_widgets_init() {
 	));
 }
 
+
+add_action( 'admin_init', 'wpdocs_theme_add_editor_styles' );
+/**
+ * Registers an editor stylesheet for the theme.
+ */
+function wpdocs_theme_add_editor_styles() {
+	add_editor_style( 'custom-editor-style.css' );
+}
+
 /**
 * Change order comment fields
 */

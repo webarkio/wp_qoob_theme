@@ -7,7 +7,7 @@
  * @package qoob
  */
 
-get_header( 'fixed' ); ?>
+get_header(); ?>
 <div class="entry-thumbnail-full" style="background-image: url(<?php the_post_thumbnail_url( 'thumbnail-size-post-page' ); ?>)">
 	<div class="container">
 		<div class="row">
