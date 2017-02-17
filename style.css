@@ -1230,6 +1230,9 @@ a:active {
 			z-index: 10;
 			display: block;
 		}
+		#mobile-menu li:hover span {
+			color: #0084ff;
+		}
 		#mmenu-wrap {
 			background-color: #fff;
 			position: absolute;
