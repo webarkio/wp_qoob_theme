@@ -12,7 +12,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'posts-list' ); ?>>
 	<?php if ( has_post_thumbnail( $post->ID ) ) : ?>
 	<div class="entry-thumbnail">
-		<img src="<?php the_post_thumbnail_url( 'thumbnail-blog-list' ); ?>" alt="">
+		<?php the_post_thumbnail( 'thumbnail-blog-list' ); ?>
 	</div>
 	<?php endif;?>
 	<div class="entry-wrap-content">
