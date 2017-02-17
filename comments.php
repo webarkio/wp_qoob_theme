@@ -106,10 +106,10 @@ if ( post_password_required() ) {
 		'title_reply' => esc_html__( 'Leave a Comment', 'qoob' ),
 		'comment_notes_before' => '',
 		'fields' => array(
-				'author' => '<p class="comment-form-author"><label for="author">' . esc_html__( 'Name', 'qoob' ) . '</label><input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '", placeholder="' . esc_html__( 'Name', 'qoob' ) . '" ' . $aria_req . ' /></p>',
-				'email' => '<p class="comment-form-email"><label for="email">' . esc_html__( 'Email', 'qoob' ) . '</label><input id="email" name="email" type="text" value="' . esc_attr( $commenter['comment_author_email'] ) . '" placeholder="' . esc_html__( 'Email', 'qoob' ) . '" ' . $aria_req . ' /></p>',
+				'author' => '<p class="comment-form-author"><label class="screen-reader-text" for="author">' . esc_html__( 'Name', 'qoob' ) . '</label><input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '", placeholder="' . esc_html__( 'Name', 'qoob' ) . '" ' . $aria_req . ' /></p>',
+				'email' => '<p class="comment-form-email"><label class="screen-reader-text" for="email">' . esc_html__( 'Email', 'qoob' ) . '</label><input id="email" name="email" type="text" value="' . esc_attr( $commenter['comment_author_email'] ) . '" placeholder="' . esc_html__( 'Email', 'qoob' ) . '" ' . $aria_req . ' /></p>',
 				),
-		'comment_field' => '<p class="comment-form-comment"><label for="comment">' . esc_html__( 'Message', 'qoob' ) . '</label><textarea id="comment" name="comment" cols="45" rows="8"  ' . $aria_req . ' placeholder="' . esc_html__( 'Message', 'qoob' ) . '"></textarea></p>',
+		'comment_field' => '<p class="comment-form-comment"><label class="screen-reader-text" for="comment">' . esc_html__( 'Message', 'qoob' ) . '</label><textarea id="comment" name="comment" cols="45" rows="8"  ' . $aria_req . ' placeholder="' . esc_html__( 'Message', 'qoob' ) . '"></textarea></p>',
 	));
 	?>
 	</div>

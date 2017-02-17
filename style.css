@@ -391,6 +391,26 @@ a {
 	outline: none;
 }
 
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: polygon(0px 0px, 0px 0px,0px 0px, 0px 0px);
+    position: absolute !important;
+    white-space: nowrap;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+.screen-reader-text:focus {
+    clip: auto !important;
+    display: block;
+    height: auto;
+    left: 5px;
+    top: 5px;
+    width: auto;
+    z-index: 100000; /* Above WP toolbar. */
+}
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -884,19 +904,23 @@ a:active {
 }
 
 .sf-menu li.menu-item:hover,
+.sf-menu li.menu-item:focus,
 .sf-menu li.menu-item.sfHover {
 	background: transparent;
 }
 
 .sf-menu li.menu-item-has-children:hover,
+.sf-menu li.menu-item-has-children:focus,
 .sf-menu li.menu-item-has-children.sfHover {
 	background: #fff;
 }
 
 .sf-menu > li.menu-item-has-children:hover,
+.sf-menu > li.menu-item-has-children:focus,
 .sf-menu > li.menu-item-has-children.sfHover {}
 
 .sf-menu li:hover a,
+.sf-menu li:focus a,
 .sf-menu li.sfHover a {
 	color: #0084ff;
 }
@@ -934,12 +958,6 @@ a:active {
 	margin-bottom: 1.3rem;
 }
 
-
-/*.sf-menu ul li .sf-with-ul:after {
-	border-top-color: #aaafb3;
-}*/
-
-
 /* styling for right-facing arrows */
 
 .sf-arrows ul .sf-with-ul:after {
@@ -958,9 +976,6 @@ a:active {
 	content: url(images/menu-arrow-hover.png);
 }
 
-.sf-menu ul li:hover {
-	/*background-color: #0084ff !important;*/
-}
 .sf-menu ul {
 	padding-left: 2.5rem;
 	padding-right: 2.5rem;
@@ -1003,7 +1018,8 @@ a:active {
 }
 
 .sf-menu ul li.sfHover > a,
-.sf-menu ul li a:hover {
+.sf-menu ul li a:hover,
+.sf-menu ul li a:focus {
 	color: #0084ff !important;
 }
 
@@ -1046,11 +1062,13 @@ a:active {
 	width: 3.3rem;
 }
 
-.sf-menu .social-media-icon:hover i.github {
+.sf-menu .social-media-icon a:hover i.github,
+.sf-menu .social-media-icon a:focus i.github {
 	background-position: -127px 0;
 }
 
-.sf-menu .social-media-icon:hover i.twitter {
+.sf-menu .social-media-icon a:hover i.twitter,
+.sf-menu .social-media-icon a:focus i.twitter {
 	background-position: 34px 0;
 }
 
@@ -1095,7 +1113,8 @@ a:active {
 	padding-left: 4rem;
 	color: #898989;
 }
-#mobile-menu ul.sub-menu li a:hover span {
+#mobile-menu ul.sub-menu li a:hover,
+#mobile-menu ul.sub-menu li a:focus {
 	color: #0084ff;
 }
 #mobile-menu ul.sub-menu ul {
@@ -1108,11 +1127,9 @@ a:active {
 #mobile-menu li {
 	margin: 0;
 }
-
 #mobile-menu li::before {
 	display: none;
 }
-
 #mobile-menu li a {
 	padding: 0rem 1.5rem 1rem 1.4rem;
 	display: inline-block;
@@ -1126,27 +1143,21 @@ a:active {
 #mobile-menu li:last-child > a {
 	margin-bottom: 2.4rem;
 }
-#mobile-menu > li > a:hover {
+#mobile-menu > li > a:hover,
+#mobile-menu > li > a:focus {
 	background-color: transparent;
 	color: #0084ff;
 }
-
 #mobile-menu li a.sf-with-ul {
 	position: relative;
 }
-
 #mobile-menu li a.sf-with-ul::after {
 	content: url(images/menu-arrow-level1.png);
-		/* display: block; */
 	width: 0.5rem;
 	height: 0.9rem;
-	/* background-color: #33333d; */
 	position: absolute;
 	top: 50%;
 	right: -8px;
-	/* font-size: 2.9rem; */
-	/* text-align: center; */
-	/* line-height: 5.9rem; */
 	margin-top: -10px;
 	transform: rotate(90deg);
 }
@@ -1166,8 +1177,16 @@ a:active {
 	margin-bottom: 2.4rem;
 }
 #mobile-menu-button {
-	float: right;
-	outline: none;
+    float: right;
+    outline: none;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    background-color: transparent;
+    margin: 28px 0 28px 7px;
+}
+#mobile-menu-button:focus {
+	 outline: dotted 1px #0084ff;
 }
 .site-header.fixed #mobile-menu-button .icon {
 	margin: 7px 0 0px 7px;
@@ -1175,7 +1194,6 @@ a:active {
 #mobile-menu-button .icon {
 	line-height: 92px;
 	padding: 9px 8px;
-	margin: 28px 0 28px 7px;
 	font-size: 0;
 	height: 35px;
 	width: 40px;
@@ -1183,7 +1201,6 @@ a:active {
 	float: right;
 	cursor: pointer;
 }
-
 #mobile-menu-button .icon .line {
 	transition: all 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 	transform-origin: 50% 50%;
@@ -1194,6 +1211,9 @@ a:active {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 7px;
+}
+#mobile-menu .social-media-icon {
+	display: none;
 }
 
 /*--------------------------------------------------------------

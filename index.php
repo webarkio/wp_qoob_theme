@@ -12,7 +12,7 @@
  * @package qoob
  */
 
-get_header( 'fixed' ); ?>
+get_header(); ?>
 <div class="entry-thumbnail-blog" style="background-image: url(<?php echo esc_url( get_theme_mod( 'blog_image_bg' ) ); ?>)">
 	<div class="container">
 		<div class="row">
