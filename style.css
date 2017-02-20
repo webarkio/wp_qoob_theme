@@ -1902,7 +1902,7 @@ a:active {
 .site-main .has-post-thumbnail .entry-wrap-content {
 	border-top: none;
 	margin-top: 0;
-	padding-top: 8px;
+	padding-top: 10px;
 }
 .site-main .posts-list .entry-content {
 	padding-left: 30px;
@@ -1946,7 +1946,7 @@ a:active {
 	margin-right: 1.5rem;
 }
 .site-main .posts-list .entry-header {
-	padding-top: 2.7rem;
+	padding-top: 1rem;
 }
 .site-main .has-post-thumbnail.posts-list .entry-header {
 	padding-top: 0;
