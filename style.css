@@ -1149,7 +1149,7 @@ a:active {
 	#mobile-menu li:last-child > a {
 		margin-bottom: 2.4rem;
 	}
-	#mobile-menu li a:hover, #mobile-menu li a:active, #mobile-menu li a:focus {
+	#mobile-menu .menu-item a:hover, #mobile-menu .menu-item a:active, #mobile-menu .menu-item a:focus {
 		background-color: transparent !important;
 		color: #0084ff !important;
 	}
