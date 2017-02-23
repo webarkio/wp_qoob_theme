@@ -34,7 +34,7 @@
             "type": "text"
     }],
     "defaults": {
-        "header": "1 500",
+        "header": "HTML Version<span> 1 500 downloads</span>",
         "action_text" : "download",
         "action_url" : "http://qoob.it/",
         "html_list": [{

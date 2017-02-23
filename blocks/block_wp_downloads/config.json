@@ -34,7 +34,7 @@
         "type": "text"
     }],
     "defaults": {
-        "header": "3000",
+        "header": "WordPress Version<span> 3000 downloads</span>",
         "email_pl" : "Enter your website url",
         "contact_me" : "install",
         "html_list": [{

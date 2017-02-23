@@ -21,19 +21,19 @@
         "type": "textarea"
     }, {
         "name": "text-btn-left",
-        "label": "Text",
+        "label": "Text left button",
         "type": "text"
     }, {
         "name": "text-btn-right",
-        "label": "Text",
+        "label": "Text right button",
         "type": "text"
     },{
         "name": "link-btn-left",
-        "label": "Text",
+        "label": "Link left button",
         "type": "text"
     }, {
         "name": "link-btn-right",
-        "label": "Text",
+        "label": "Link right button",
         "type": "text"
     }],
     "defaults": {

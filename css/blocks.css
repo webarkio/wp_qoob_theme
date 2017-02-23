@@ -3604,11 +3604,15 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
     padding: 2.9rem 0 5.5rem;
 }
 
-.slider-video .header-block {
+.slider-video .h2-block {
+    text-transform: uppercase;
+    color: #000;
+    font-size: 5.4rem;
     text-align: center;
-    margin-bottom: 3.2rem;
+    font-family: "RobotoBlack", sans-serif;
+    margin-bottom: 3.9rem;
+    line-height: 63px;
 }
-
 .slider-video .owl-nav,
 .slider-video .owl-nav .owl-prev,
 .slider-video .owl-nav .owl-next {
@@ -3686,6 +3690,12 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
     .slider-video .owl-item:before {
         display: none;
     }
+    .slider-video .h2-block {
+    font-size: 3rem;
+    text-align: left;
+    line-height: 36px;
+    margin-bottom: 1.7rem;
+}
 }
 
 

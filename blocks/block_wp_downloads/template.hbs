@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="header-block">WordPress Version<span> {{header}} downloads</span></h1>
+                <h1 class="header-block">{{{header}}}</span></h1>
             </div>
             <div class="col-lg-12">
                 {{#if html_list.length}}
@@ -16,7 +16,7 @@
                 {{/if}}
             </div>
            <div class="col-lg-12">
-                <form id="block_wp_downloads-form" action="wp-admin/plugin-install.php?s=qoob&tab=search&type=term" accept-charset="utf-8" method="post">
+                <form id="block_wp_downloads-form" action="/" accept-charset="utf-8" method="post">
                     <!-- Email field (required) -->
                     <input type="text" name="email" id="block_wp_downloads-email" placeholder="{{email_pl}}"/>
                     <!-- Subscriber button -->
@@ -26,14 +26,14 @@
         </div>
     </div>
 </section>
-<!-- <script type="text/javascript">
+<script type="text/javascript">
 jQuery(document).ready(function() {
-  jQuery("#block_wp_downloads-form").attr("action", "");
-   jQuery( "#block_wp_downloads-form input[type='text']" ).on("input", function() {
-   var link_qoob = "wp-admin/plugin-install.php?s=qoob&tab=search&type=term";
-   var current_url = jQuery( "#block_wp_downloads-form input[type='text']").val();
-  jQuery("#block_wp_downloads-form").attr("action", current_url + "/" + link_qoob );
-});
+//   jQuery("#block_wp_downloads-form").attr("action", "");
+//    jQuery( "#block_wp_downloads-form input[type='text']" ).on("input", function() {
+//    var link_qoob = "wp-admin/plugin-install.php?s=qoob&tab=search&type=term";
+//    var current_url = jQuery( "#block_wp_downloads-form input[type='text']").val();
+//   jQuery("#block_wp_downloads-form").attr("action", current_url + "/" + link_qoob );
+// });
 
 jQuery( "#block_wp_downloads-form input[type=submit]").click(function() {
 if(jQuery( "#block_wp_downloads-form input[type=text]").val() == "") {
@@ -41,9 +41,8 @@ alert("Pusto");
 return false;
 }
 else {
-    window.location.href = current_url + "/" + link_qoob ;
+   window.location.reload("http://yandex.ru");
 }
 });
    });
 </script>
- -->
