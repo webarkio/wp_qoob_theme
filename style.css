@@ -1849,7 +1849,8 @@ a:active {
 	z-index: 1;
 	overflow: hidden;
 	border-radius: 0;
-	background-position: center top;
+	background-position: center center;
+	background-size: auto 100%;
 }
 .site-main .posts-list.post:before {
 	content: "";

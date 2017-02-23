@@ -14,10 +14,10 @@
 	<?php if ( has_post_thumbnail( $post->ID ) ) : ?>
 	<!-- <div class="entry-thumbnail"> -->
 		<div class="overlay-dark"></div>
-<!-- <?php var_dump(the_post_thumbnail_url( 'thumbnail-blog-list' ));?> -->
 
 	<!-- </div> -->
 	<?php endif;?>
+	
 	<div class="entry-wrap-content">
 		<header class="entry-header">
 			<?php

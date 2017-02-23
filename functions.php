@@ -224,6 +224,25 @@ function qoob_theme_widgets_init() {
 
 add_action( 'widgets_init', 'qoob_theme_widgets_init' );
 
+// if (class_exists('MultiPostThumbnails')) {
+ 
+// new MultiPostThumbnails(array(
+// 'label' => 'Big Image',
+// 'id' => 'big-image',
+// 'post_type' => 'post'
+//  ) );
+ 
+//  }
+
+if (class_exists('MultiPostThumbnails')) {
+ 
+new MultiPostThumbnails(array(
+'label' => 'Small Image',
+'id' => 'small-image',
+'post_type' => 'post'
+ ) );
+ 
+ }
 /**
  * List comments. wp_list_comments comment callback
  * Used in the comments.php template to list comments for a particular post.
