@@ -86,7 +86,7 @@ class Qoob_Widget_Recent_Posts extends WP_Widget {
 			<div class="data-publish-last-posts"> 
 						<span class="posted-data"><i class="fa fa-calendar-o" aria-hidden="true"></i><?php echo get_the_date('F j, Y'); ?></span>
 						<span class="posted-comments"><i class="fa fa-comment-o" aria-hidden="true"></i><?php comments_number('0', '1', '%'); ?></span>
-						<span class="posted-eye"><i class="fa fa-eye" aria-hidden="true"></i><?php getPostViews(the_ID()); ?></span>
+						<span class="posted-eye"><i class="fa fa-eye" aria-hidden="true"></i><?php echo getPostViews(get_the_ID()); ?></span>
 					</div>
 			</li>
 		<?php endwhile; ?>

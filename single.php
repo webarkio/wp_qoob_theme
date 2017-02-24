@@ -8,7 +8,6 @@
  */
 
 get_header( 'fixed' ); ?>
-<?php setPostViews(get_the_ID()); ?>
 <div class="entry-thumbnail-full" style="background-image: url(<?php the_post_thumbnail_url( 'full' ); ?>)">
 	<div class="container">
 		<div class="row">
@@ -17,6 +16,7 @@ get_header( 'fixed' ); ?>
 				<div class="entry-meta">
 				<?php
 		while ( have_posts() ) : the_post();
+		
 			 qoob_theme_posted_meta(); 
 				
 		endwhile; // End of the loop.
