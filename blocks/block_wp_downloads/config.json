@@ -25,18 +25,18 @@
             "presets": ["fa fa-play-circle", "fa fa-github", "fa fa-book", "fa fa-book"]
         }]
     }, {
-        "name": "email_pl",
+        "name": "url_pl",
         "label": "Email palceholder",
         "type": "text"
     }, {
-        "name": "contact_me",
+        "name": "value_title",
         "label": "Submit button value",
         "type": "text"
     }],
     "defaults": {
         "header": "WordPress Version<span> 3000 downloads</span>",
-        "email_pl" : "Enter your website url",
-        "contact_me" : "install",
+        "url_pl" : "Enter your website url",
+        "value_title" : "install",
         "html_list": [{
             "title": "Try demo",
             "url": "http://qoob.it/",

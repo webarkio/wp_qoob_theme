@@ -1813,7 +1813,7 @@
     margin: 25px auto;
 }
 
-.block_wp_downloads form input[type="submit"], .block_wp_downloads form input[type="submit"]:hover {
+.block_wp_downloads form input[type="button"], .block_wp_downloads form input[type="button"]:hover {
     padding: 17px 5px;
     width: 178px;
     border: none;
@@ -1824,7 +1824,7 @@
     font-family: "RobotoBold", sans-serif;
 }
 
-.block_wp_downloads form input[name="email"]{
+.block_wp_downloads form input[type="text"]{
     background: #fff;
     width: 100%;
     max-width: calc(100% - 178px);
@@ -1850,13 +1850,13 @@
         padding-top: 3.5rem;
         padding-bottom: 3.5rem;
     }
-    .block_wp_downloads form input[name="email"] {
+    .block_wp_downloads form input[type="text"] {
         max-width: calc(100% - 110px);
         width: 100%;
         padding: 1.65rem 23px;
         font-size: 1.3rem;
     }
-    .block_wp_downloads form input[type="submit"] {
+    .block_wp_downloads form input[type="button"] {
         padding: 18.5px 5px;
         max-width: 110px;
         width: 100%;

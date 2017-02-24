@@ -16,31 +16,44 @@
                 {{/if}}
             </div>
            <div class="col-lg-12">
-                <form id="block_wp_downloads-form" action="http://www.example.com" accept-charset="utf-8" method="post">
-                    <!-- Email field (required) -->
-                    <input type="text" name="email" id="block_wp_downloads-email" placeholder="{{email_pl}}"/>
+                <form id="block_wp_downloads-form" accept-charset="utf-8">
+                    <!-- Url field (required) -->
+                    <input type="text" name="url"  id="block_wp_downloads-email" placeholder="{{url_pl}}" required />
+                    <!-- Url install Qoob -->
+                    <input type="hidden" name="hidden" value="wp-admin/plugin-install.php?s=qoob&tab=search&type=term"/>
                     <!-- Subscriber button -->
-                    <input type="submit" id="block_wp_downloads-install" class="inverse" value="{{contact_me}}"/>
+                    <input type="button" class="inverse" value="{{value_title}}"/>
                 </form>
         </div>
         </div>
     </div>
 </section>
 <script type="text/javascript">
+function installQoob() {
+var form = jQuery('#block_wp_downloads-form');
+  var link_qoob = form.find("input[type='hidden']").val();
+  var current_url = form.find("input[type='text']").val() + "/" + link_qoob;
+   if((current_url.indexOf("http://") + 1 == 0) && (current_url.indexOf("https://") + 1 == 0)) {
+   return false;
+   }
+  else {
+   window.open(current_url,'_blank');
+   }
+}
 
 jQuery(document).ready(function() {
-  jQuery("#block_wp_downloads-form").attr("action", "");
-   jQuery( "#block_wp_downloads-form input[type='text']" ).on("input", function() {
-   var link_qoob = "wp-admin/plugin-install.php?s=qoob&tab=search&type=term";
-   var current_url = jQuery( "#block_wp_downloads-form input[type='text']").val();
-  jQuery("#block_wp_downloads-form").attr("action", "www." + current_url + "/" + link_qoob );
+    jQuery('#block_wp_downloads-form').find("input[type='text']").on("focus", function() {
+ jQuery(this).val("http://");
+jQuery('#block_wp_downloads-form').on('keydown', function(event) {
+    if(event.keyCode == 13) {
+       event.preventDefault();
+       installQoob();
+    }
+ });
 });
 
-jQuery( "#block_wp_downloads-form input[type=submit]").click(function() {
-if(jQuery( "#block_wp_downloads-form input[type=text]").val() == "") {
-alert("Pusto");
-return false;
-}
+jQuery('#block_wp_downloads-form input[type=button]').on('click', function(event) {
+installQoob();
 });
    });
 </script>
