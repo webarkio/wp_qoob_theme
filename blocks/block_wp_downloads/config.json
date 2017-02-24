@@ -39,22 +39,22 @@
         "contact_me" : "install",
         "html_list": [{
             "title": "Try demo",
-            "url": "#try",
+            "url": "http://qoob.it/",
             "icon": "fa fa-play-circle",
             "order": 0
         }, {
             "title": "View on GitHub",
-            "url": "#git",
+            "url": "http://qoob.it/",
             "icon": "fa fa-github",
             "order": 1
         }, {
             "title": "Installation",
-            "url": "#install",
+            "url": "http://qoob.it/",
             "icon": "fa fa-book",
             "order": 2
         }, {
             "title": "Getting Started with qoob for HTML",
-            "url": "#start",
+            "url": "http://qoob.it/",
             "icon": "fa fa-book",
             "order": 3
         }]

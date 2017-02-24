@@ -49,7 +49,7 @@
         "header" : "What people are Saying <br>about us",
         "action_text": "Leave a comment",
         "image" : "%block_url%/assets/img/slider_comments_bg.jpg",
-        "action_url": "#",
+        "action_url": "https://github.com/webarkio/qoob/issues/new",
         "slider": [{
             "title": "STEVE BLASTER",
             "text": "Qoob is truly one of the simple and user-friendly page builders. It took us a little time to get started with our new project. We've created several sites based on Qoob and really pleased with the results we've got.",

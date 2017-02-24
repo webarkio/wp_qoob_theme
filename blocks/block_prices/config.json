@@ -102,7 +102,7 @@
                 "order": 5
             }],
             "action_text": "Download",
-            "action_url": "http://qoob.it/",
+            "action_url": "http://webark.com/qoob/download",
             "title": "Area"
         }, {
             "case_name": "Personal license",
