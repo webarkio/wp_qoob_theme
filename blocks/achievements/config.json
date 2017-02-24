@@ -14,18 +14,18 @@
         "type": "text"
     },
     {
-        "name": "email_pl",
+        "name": "url_pl",
         "label": "Email palceholder",
         "type": "text"
     },
     {
-        "name": "subscribe_btn",
+        "name": "value_text",
         "label": "Submit button value",
         "type": "text"
     }],
     "defaults": {
-       "email_pl" : "Enter your website url",
-       "subscribe_btn" : "install",
+       "url_pl" : "Enter your website url",
+       "value_text" : "install",
        "downloads_achievement" : "2,299",
        "installs_achievement" : "60 +"
     }

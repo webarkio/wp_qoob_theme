@@ -3890,7 +3890,7 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
     margin: 13px auto 8px;
 }
 
-.achievements-block form input[name='email'] {
+.achievements-block form input[name='url'] {
     width: 100%;
     float: left;
     max-width: calc(100% - 224px);
@@ -3903,7 +3903,7 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
     font-size: 1.8rem;
     font-family: "RobotoLight", sans-serif;
 }
-.achievements-block form input[type='submit'] {
+.achievements-block form input[type='button'] {
     background: #000;
     float: left;
     color: #fff;
@@ -3917,7 +3917,7 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
     font-size: 1.8rem;
 
 }
-.achievements-block form input[type='submit']:hover {
+.achievements-block form input[type='button']:hover {
     background: #000;
     color: #fff;
 }
@@ -3987,12 +3987,12 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
         text-align: center;
         line-height: 43px;
     }
-    .achievements-block form input[name="email"] {
+    .achievements-block form input[name="url"] {
         max-width: calc(100% - 103px);
         padding-left: 15px;
         padding-right: 15px;
     }
-    .achievements-block form input[type="submit"] {
+    .achievements-block form input[type="button"] {
         max-width: 103px;
         width: 100%;
         font-size: 1.4rem;
@@ -4011,11 +4011,11 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 }
 
 @media (max-width: 480px) {
-    .achievements-block form input[name='email'] {
+    .achievements-block form input[name='url'] {
         width: 100%;
         font-size: 13px;
     }
-    .achievements-block form input[type='submit'] {
+    .achievements-block form input[type='button'] {
         top: 8rem !important;
     }
 }

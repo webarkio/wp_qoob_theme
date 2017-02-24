@@ -10,13 +10,44 @@
 		</div>
 		<div class="row">
 			<div class="col-lg-12">
-				<form action="https://app.getresponse.com/add_subscriber.html" accept-charset="utf-8" method="post">
-					<!-- Email field (required) -->
-					<input type="text" name="email" placeholder="{{email_pl}}"/>
+				<form id="achievements-block-form" accept-charset="utf-8">
+					<!-- Url field (required) -->
+					<input type="text" name="url" placeholder="{{url_pl}}"/>
+					 <!-- Url install Qoob -->
+                    <input type="hidden" name="hidden" value="wp-admin/plugin-install.php?s=qoob&tab=search&type=term"/>
 					<!-- Subscriber button -->
-					<input type="submit" class="inverse" value="{{subscribe_btn}}"/>
+					<input type="button" class="inverse" value="{{value_text}}"/>
 				</form>
 			</div>
 		</div>
 	</div>
 </div>
+<script type="text/javascript">
+function installQoob() {
+var form = jQuery('#achievements-block-form');
+  var link_qoob = form.find("input[type='hidden']").val();
+  var current_url = form.find("input[type='text']").val() + "/" + link_qoob;
+   if((current_url.indexOf("http://") + 1 == 0) && (current_url.indexOf("https://") + 1 == 0)) {
+   return false;
+   }
+  else {
+   window.open(current_url,'_blank');
+   }
+}
+
+jQuery(document).ready(function() {
+    jQuery('#achievements-block-form').find("input[type='text']").on("focus", function() {
+ jQuery(this).val("http://");
+jQuery('#achievements-block-form').on('keydown', function(event) {
+    if(event.keyCode == 13) {
+       event.preventDefault();
+       installQoob();
+    }
+ });
+});
+
+jQuery('#achievements-block-form input[type=button]').on('click', function(event) {
+installQoob();
+});
+   });
+</script>
