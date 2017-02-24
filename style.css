@@ -1673,6 +1673,9 @@ a:active {
 	.comments-main-content {
 		margin-bottom: 2.9rem !important;
 	}
+	.entry-thumbnail-full h1 {
+			margin-top: 18.6rem;
+	}
 }
 @media (max-width: 767px) {
 	.entry-thumbnail-blog {
