@@ -33,7 +33,7 @@
     "defaults": {
         "header": "Premium themes",
         "action_text" : "More",
-        "action_url" : "http://qoob.it/",
+        "action_url" : "https://themeforest.net/user/webarkio/portfolio?ref=webarkio",
         "imagedesktop" : "%block_url%/assets/img/call_to_action_bg4.jpg",
         "imagetablet" : "%block_url%/assets/img/call_to_action_tablet_bg4.png",
         "imagemobile" : "%block_url%/assets/img/call_to_action_mobile_bg4.png"
