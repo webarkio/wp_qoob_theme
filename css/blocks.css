@@ -4056,7 +4056,11 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
     overflow: hidden;
     position: relative;
 }
-
+#sendmail-message {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
 .contact-image .h2-block {
     text-transform: uppercase;
     color: #000;
@@ -4103,7 +4107,7 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
     max-width: calc(100% - 222px);
     border-radius: 0px;
     border: 3px solid #000;
-    background: #fff;
+    background: #fff !important;
     color: #7a7a7a;
     padding: 0 23px 0 23px;
     height: 100%;

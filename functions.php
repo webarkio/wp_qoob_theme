@@ -16,7 +16,7 @@ if ( ! function_exists( 'qoob_theme_setup' ) ) :
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 */
-	function qoob_theme_setup() {
+function qoob_theme_setup() {
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
@@ -47,7 +47,7 @@ if ( ! function_exists( 'qoob_theme_setup' ) ) :
 		register_nav_menus( array(
 			'primary' => esc_html__( 'Primary', 'qoob' ),
 			'footer' => esc_html__( 'Footer menu', 'qoob' ),
-		) );
+			) );
 
 		/*
 		 * Switch default core markup for search form, comment form, and comments
@@ -59,19 +59,19 @@ if ( ! function_exists( 'qoob_theme_setup' ) ) :
 			'comment-list',
 			'gallery',
 			'caption',
-		) );
+			) );
 
 		// Set up the WordPress core custom background feature.
 		add_theme_support( 'custom-background', apply_filters( 'qoob_theme_custom_background_args', array(
 			'default-color' => 'ffffff',
 			'default-image' => '',
-		) ) );
+			) ) );
 
 		add_theme_support( 'custom-logo', array(
 			'height' => 52,
 			'width' => 52,
 			'flex-width' => true,
-		) );
+			) );
 
 		/*
 		 * Set the image size by cropping the image
@@ -92,8 +92,8 @@ if ( ! function_exists( 'qoob_theme_setup' ) ) :
 		return $qoob_libs;
 	}
 
-endif;
-add_action( 'after_setup_theme', 'qoob_theme_setup' );
+	endif;
+	add_action( 'after_setup_theme', 'qoob_theme_setup' );
 
 
 /**
@@ -199,7 +199,7 @@ function qoob_theme_widgets_init() {
 		'after_widget' => '</section>',
 		'before_title' => '<h2 class="widget-title">',
 		'after_title' => '</h2>',
-	) );
+		) );
 
 	register_sidebar( array(
 		'name' => esc_html__( 'Sidebar page', 'qoob' ),
@@ -209,7 +209,7 @@ function qoob_theme_widgets_init() {
 		'after_widget' => '</section>',
 		'before_title' => '<h2 class="widget-title">',
 		'after_title' => '</h2>',
-	) );
+		) );
 
 	register_sidebar(array(
 		'name' => esc_html__( 'Sidebar docs page', 'qoob' ),
@@ -219,30 +219,30 @@ function qoob_theme_widgets_init() {
 		'after_widget' => '</section>',
 		'before_title' => '<h2 class="widget-title">',
 		'after_title' => '</h2>',
-	) );
+		) );
 }
 
 add_action( 'widgets_init', 'qoob_theme_widgets_init' );
 
 // if (class_exists('MultiPostThumbnails')) {
- 
+
 // new MultiPostThumbnails(array(
 // 'label' => 'Big Image',
 // 'id' => 'big-image',
 // 'post_type' => 'post'
 //  ) );
- 
+
 //  }
 
 if (class_exists('MultiPostThumbnails')) {
- 
-new MultiPostThumbnails(array(
-'label' => 'Small Image',
-'id' => 'small-image',
-'post_type' => 'post'
- ) );
- 
- }
+
+	new MultiPostThumbnails(array(
+		'label' => 'Small Image',
+		'id' => 'small-image',
+		'post_type' => 'post'
+		) );
+
+}
 /**
  * List comments. wp_list_comments comment callback
  * Used in the comments.php template to list comments for a particular post.
@@ -267,28 +267,28 @@ function qoobtheme_comment( $comment, $args, $depth ) {
 	<<?php echo wp_kses( $tag , array( 'div', 'li' ) ) ?> <?php comment_class( empty( $args['has_children'] ) ? '' : 'parent' ) ?> id="comment-<?php comment_ID() ?>">
 	<?php if ( 'div' !== $args['style'] ) : ?>
 		<div id="div-comment-<?php comment_ID() ?>" class="comment-body">
-	<?php endif; ?>
-	<div class="comment-author vcard clearfix">
-		<?php if ( 0 !== $args['avatar_size'] ) { ?>
+		<?php endif; ?>
+		<div class="comment-author vcard clearfix">
+			<?php if ( 0 !== $args['avatar_size'] ) { ?>
 			<?php echo get_avatar( $comment, $args['avatar_size'] ); ?>
-		<?php } ?>
-		<div class="comment-author-text">
-			<?php printf( wp_kses_post( __( '<cite class="fn">%s</cite>', 'qoob' ) ), get_comment_author_link() ); ?>
-			<?php comment_text(); ?>
-			<div class="comment-meta commentmetadata"><a href="<?php echo esc_html( get_comment_link( $comment->comment_ID ) ); ?>">
-				<?php
-				printf( esc_html__( '%1$s', 'qoob' ), get_comment_date( 'j.m.Y' ) ); ?></a><?php edit_comment_link( esc_html__( '(Edit)', 'qoob' ), '  ', '' );
-				?>
-				<?php comment_reply_link( array_merge( $args, array( 'add_below' => $add_below, 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
+			<?php } ?>
+			<div class="comment-author-text">
+				<?php printf( wp_kses_post( __( '<cite class="fn">%s</cite>', 'qoob' ) ), get_comment_author_link() ); ?>
+				<?php comment_text(); ?>
+				<div class="comment-meta commentmetadata"><a href="<?php echo esc_html( get_comment_link( $comment->comment_ID ) ); ?>">
+					<?php
+					printf( esc_html__( '%1$s', 'qoob' ), get_comment_date( 'j.m.Y' ) ); ?></a><?php edit_comment_link( esc_html__( '(Edit)', 'qoob' ), '  ', '' );
+					?>
+					<?php comment_reply_link( array_merge( $args, array( 'add_below' => $add_below, 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
+				</div>
 			</div>
 		</div>
-	</div>
-	<?php if ( 0 === $comment->comment_approved ) : ?>
-		 <em class="comment-awaiting-moderation"><?php esc_html_e( 'Your comment is awaiting moderation.', 'qoob' ); ?></em>
-		  <br />
-	<?php endif; ?>
-	<?php if ( 'div' !== $args['style'] ) : ?>
-	</div>
+		<?php if ( 0 === $comment->comment_approved ) : ?>
+			<em class="comment-awaiting-moderation"><?php esc_html_e( 'Your comment is awaiting moderation.', 'qoob' ); ?></em>
+			<br />
+		<?php endif; ?>
+		<?php if ( 'div' !== $args['style'] ) : ?>
+		</div>
 	<?php endif; ?>
 	<?php
 }
@@ -304,39 +304,39 @@ add_filter( 'get_search_form', 'qoob_search_form' );
  */
 function qoob_search_form( $form ) {
 	$form = '<form role="search" method="get" class="search-form" action="' . esc_url( home_url( '/' ) ) . '">
-				<label>
-					<span class="screen-reader-text">' . _x( 'Search for:', 'label', 'qoob' ) . '</span>
-					<input type="search" class="search-field" placeholder="' . esc_attr_x( 'Search &hellip;', 'placeholder', 'qoob' ) . '" value="' . get_search_query() . '" name="s" />
-				</label>
-			</form>';
-	return $form;
+	<label>
+		<span class="screen-reader-text">' . _x( 'Search for:', 'label', 'qoob' ) . '</span>
+		<input type="search" class="search-field" placeholder="' . esc_attr_x( 'Search &hellip;', 'placeholder', 'qoob' ) . '" value="' . get_search_query() . '" name="s" />
+	</label>
+</form>';
+return $form;
 }
 
 add_action( 'widgets_init', 'qoob_theme_footer_widgets_init' );
 
 function getPostViews($postID){
-    $count_key = 'post_views_count';
-    $count = get_post_meta($postID, $count_key, true);
-    if($count==''){
-        delete_post_meta($postID, $count_key);
-        add_post_meta($postID, $count_key, '0');
-        return "0";
-    }
-    return $count;
+	$count_key = 'post_views_count';
+	$count = get_post_meta($postID, $count_key, true);
+	if($count==''){
+		delete_post_meta($postID, $count_key);
+		add_post_meta($postID, $count_key, '0');
+		return "0";
+	}
+	return $count;
 }
 
 
 function setPostViews($postID) {
-    $count_key = 'post_views_count';
-    $count = get_post_meta($postID, $count_key, true);
-    if($count==''){
-        $count = 0;
-        delete_post_meta($postID, $count_key);
-        add_post_meta($postID, $count_key, '0');
-    }else{
-        $count++;
-        update_post_meta($postID, $count_key, $count);
-    }
+	$count_key = 'post_views_count';
+	$count = get_post_meta($postID, $count_key, true);
+	if($count==''){
+		$count = 0;
+		delete_post_meta($postID, $count_key);
+		add_post_meta($postID, $count_key, '0');
+	}else{
+		$count++;
+		update_post_meta($postID, $count_key, $count);
+	}
 }
 
 /**
@@ -353,7 +353,7 @@ function qoob_theme_footer_widgets_init() {
 		'after_widget'  => '</div>',
 		'before_title'  => '<h2 class="widgettitle">',
 		'after_title'   => '</h2>',
-	));
+		));
 }
 
 /**
@@ -413,6 +413,39 @@ function qoob_theme_scripts() {
 
 add_action( 'wp_enqueue_scripts', 'qoob_theme_scripts' );
 
+function qoob_sendmail() {
+	$sendto   = "webarksendmail@gmail.com"; //subscribe@webark.io
+	$usermail = $_POST['email_webark']; // stored in a variable data obtained from the field with email
+
+	// Formation of the message header
+	$subject  = "New mail";
+	$headers  = "From: " . strip_tags($usermail) . "\r\n";
+	$headers .= "Reply-To: ". strip_tags($usermail) . "\r\n";
+	$headers .= "MIME-Version: 1.0\r\n";
+	$headers .= "Content-Type: text/html;charset=utf-8 \r\n";
+	$headers .=  "X-Mailer: PHP/" . phpversion();
+	// Formation of the message body
+	$msg  = "<html><body style='font-family:Arial,sans-serif;'>";
+	$msg .= "<h2 style='font-weight:bold;border-bottom:1px dotted #ccc;'>New mail</h2>\r\n";
+	$msg .= "<p><strong>Mail:</strong> ".$usermail."</p>\r\n";
+
+	$msg .= "</body></html>";
+
+	// send a message
+	if(@mail($sendto, $subject, $msg, $headers)) {
+		$data['response_status'] = true;
+		$data['response_text'] = esc_html__('Send message', 'qoob');
+	} 
+	else {
+		$data['response_status'] = false;
+		$data['response_text'] = esc_html__('Message not sent. Unknown error', 'qoob');
+	}
+	wp_send_json_success( $data );
+    wp_die();
+}
+
+add_action( 'wp_ajax_qoob_sendmail', 'qoob_sendmail' );
+add_action( 'wp_ajax_nopriv_qoob_sendmail', 'qoob_sendmail' );
 /**
  * Implement the Custom Header feature.
  */

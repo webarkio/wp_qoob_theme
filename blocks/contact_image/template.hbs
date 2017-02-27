@@ -13,12 +13,13 @@
             </div>
             </div>
             <div class="col-lg-12">
-                <form action="sendmail.php" accept-charset="utf-8" method="post">
+                <form accept-charset="utf-8" method="post">
                     <!-- Email field (required) -->
                     <input type="text" name="email" id="email_webark" placeholder="{{email_pl}}"/>
                     <!-- Subscriber button -->
                     <input type="submit" id="sendmail" class="inverse" value="{{contact_me}}"/>
                 </form>
+                <div id="sendmail-message"></div>
         </div>
         </div>
     </div>
@@ -26,32 +27,39 @@
 </section>
 <script>
 jQuery(document).ready(function() {
-jQuery("#sendmail").bind("click", create_order);
-    function create_order(){
-    // if (request_sent) {
-    //     alert('Ваша заявка уже принята ранее. Спасибо');
-    //     return false;
-    // }
+    var request_sent = false;
+jQuery("#sendmail").bind("click", sendmail);
+    function sendmail(){
+    if (request_sent) {
+        jQuery("#sendmail-message").text("Your message is already sent");
+        return false;
+    }
     var form = jQuery(this).parents('form:first');
 
     var email_webark = form.find("#email_webark").val();
     if((email_webark === "")) { 
-         jQuery(".main-popup_error h3").text("Ошибка");
        jQuery(".main-popup_error").css("display", "block");
        
     }
     else {
     jQuery.ajax({
       type: "POST",
-      url: "sendmail.php",
-      data: { "email_webark" : email_webark},
+      url: "/wp-admin/admin-ajax.php",
+       type: "POST",
+       dataType: 'json',
+       data: ({
+           action : 'qoob_sendmail',
+           email_webark : email_webark
+        }),
       cache: false,
       success: function(response){
-        request_sent = true;
-        var messageResp = new Array('Сообщение успешно отправлено','Сообщение не отправлено!','Ошибка');
-        var resultStat = messageResp[Number(response)];
+        request_sent = response.data.response_status;
+        jQuery("#sendmail-message").text(response.data.response_text);
       },
-      //error: function(response){
+      error: function(response){
+        request_sent = response.data.response_status;
+        jQuery("#sendmail-message").text(response.data.response_text);
+      }
     });
     }
     return false;
