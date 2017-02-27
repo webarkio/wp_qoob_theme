@@ -28,9 +28,15 @@ var form = jQuery('#achievements-block-form');
   var link_qoob = form.find("input[type='hidden']").val();
   var current_url = form.find("input[type='text']").val() + "/" + link_qoob;
    if((current_url.indexOf("http://") + 1 == 0) && (current_url.indexOf("https://") + 1 == 0)) {
+   	 form.find("input[type='text']").css({
+      "box-shadow": "0px 0px 10px 1px red inset"
+    });
    return false;
    }
   else {
+  	  form.find("input[type='text']").css({
+      "box-shadow": "none"
+    });
    window.open(current_url,'_blank');
    }
 }
@@ -39,6 +45,9 @@ jQuery(document).ready(function() {
     jQuery('#achievements-block-form').find("input[type='text']").on("focus", function() {
  jQuery(this).val("http://");
 jQuery('#achievements-block-form').on('keydown', function(event) {
+	  jQuery('#achievements-block-form').find("input[type='text']").css({
+      "box-shadow": "none"
+    });
     if(event.keyCode == 13) {
        event.preventDefault();
        installQoob();

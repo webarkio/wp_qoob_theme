@@ -52,6 +52,9 @@ jQuery(document).ready(function() {
     jQuery('#block_wp_downloads-form').find("input[type='text']").on("focus", function() {
  jQuery(this).val("http://");
 jQuery('#block_wp_downloads-form').on('keydown', function(event) {
+  jQuery('#block_wp_downloads-form').find("input[type='text']").css({
+      "box-shadow": "none"
+    });
     if(event.keyCode == 13) {
        event.preventDefault();
        installQoob();
