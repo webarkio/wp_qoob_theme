@@ -9,7 +9,7 @@
                     <ul id="accordion-{{id}}" >
                     {{#each_with_sort html_list "order"}}         
                         <li>
-                             <a class="link_html" href="{{url}}"><i class="{{icon}}"></i> {{title}}</a>
+                             <a class="link_html" target="_blank" href="{{url}}"><i class="{{icon}}"></i> {{title}}</a>
                         </li>
                       {{/each_with_sort}}
                     </ul>
@@ -33,10 +33,17 @@ function installQoob() {
 var form = jQuery('#block_wp_downloads-form');
   var link_qoob = form.find("input[type='hidden']").val();
   var current_url = form.find("input[type='text']").val() + "/" + link_qoob;
+
    if((current_url.indexOf("http://") + 1 == 0) && (current_url.indexOf("https://") + 1 == 0)) {
+    form.find("input[type='text']").css({
+      "box-shadow": "0px 0px 10px 1px red inset"
+    });
    return false;
    }
   else {
+     form.find("input[type='text']").css({
+      "box-shadow": "none"
+    });
    window.open(current_url,'_blank');
    }
 }

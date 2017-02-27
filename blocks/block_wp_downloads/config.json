@@ -44,17 +44,17 @@
             "order": 0
         }, {
             "title": "View on GitHub",
-            "url": "http://qoob.it/",
+            "url": "https://github.com/webarkio/wp_qoob",
             "icon": "fa fa-github",
             "order": 1
         }, {
             "title": "Installation",
-            "url": "http://qoob.it/",
+            "url": "http://webark.com/qoob/docs/wordpress-page-builder/wordpress-installation/",
             "icon": "fa fa-book",
             "order": 2
         }, {
-            "title": "Getting Started with qoob for HTML",
-            "url": "http://qoob.it/",
+            "title": "Getting Started with qoob for WordPress",
+            "url": "http://webark.com/qoob/docs/wordpress-page-builder/wordpress-getting-started/",
             "icon": "fa fa-book",
             "order": 3
         }]

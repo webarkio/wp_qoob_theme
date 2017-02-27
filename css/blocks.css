@@ -1854,7 +1854,7 @@
     .block_wp_downloads form input[type="text"] {
         max-width: calc(100% - 110px);
         width: 100%;
-        padding: 1.65rem 23px;
+        padding: 1.55rem 23px;
         font-size: 1.3rem;
     }
     .block_wp_downloads form input[type="button"] {

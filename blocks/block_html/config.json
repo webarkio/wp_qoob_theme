@@ -44,17 +44,17 @@
             "order": 0
         }, {
             "title": "View on GitHub",
-            "url": "http://qoob.it/",
+            "url": "https://github.com/webarkio/html_qoob_demo",
             "icon": "fa fa-github",
             "order": 1
         }, {
             "title": "Installation",
-            "url": "http://qoob.it/",
+            "url": "http://webark.com/qoob/docs/html-page-builder/installation/",
             "icon": "fa fa-book",
             "order": 2
         }, {
             "title": "Getting Started with qoob for HTML",
-            "url": "http://qoob.it/",
+            "url": "http://webark.com/qoob/docs/html-page-builder/getting-started/",
             "icon": "fa fa-book",
             "order": 3
         }]
