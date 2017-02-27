@@ -632,6 +632,7 @@
         margin: 0 auto;
         display: block;
         width: 100%;
+        float: none;
         padding-left: 0 !important;
         font-size: 3rem !important;
         top: 0px;
@@ -3677,6 +3678,28 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
     height: 16px;
 }
 
+.slider-video .item-video:before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 30%;
+    z-index: 1;
+    height: 50%;
+    top: 25%;
+    left: 0;
+    background: none;
+}
+.slider-video .item-video:after {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 30%;
+    z-index: 1;
+    top: 25%;
+    right: 0;
+    height: 50%;
+    background: none;
+}
 /* Large desktop */
 @media (max-width: 767px) {
     .slider-video {

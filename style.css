@@ -706,11 +706,6 @@ textarea {
 .site-header {
 	background-color: #fff;
 	box-shadow: 0 2px 4px 0px rgba(0,0,0,0.15);
-	-webkit-transition: all 1000ms linear;
-	-moz-transition: all 1000ms linear;
-	-o-transition: all 1000ms linear;
-	-ms-transition: all 1000ms linear;
-	transition: all 1000ms linear;
 }
 
 .site-header.fixed {
@@ -1697,6 +1692,7 @@ a:active {
 	.entry-thumbnail-blog {
 		background-image: none !important;
 		background-color: #dfdfdf;
+		margin-top: 0;
 	}
 	.single-post-template.no-side-bar .entry-content {
 		width: 100%;
