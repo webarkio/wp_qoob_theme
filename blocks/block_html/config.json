@@ -36,10 +36,10 @@
     "defaults": {
         "header": "HTML Version<span> 1 500 downloads</span>",
         "action_text" : "download",
-        "action_url" : "http://qoob.it/",
+        "action_url" : "http://webark.com/qoob/download/",
         "html_list": [{
             "title": "Try demo",
-            "url": "http://qoob.it/",
+            "url": "http://webark.io:8000/qoob.html",
             "icon": "fa fa-play-circle",
             "order": 0
         }, {

@@ -73,7 +73,7 @@
         "description" : "We do have a 30 day money back guarantee for all type of licenses.",
         "image" : "%block_url%/assets/img/prices_bg.jpg",
         "button_text" : "TRY LIVE DEMO BEFORE BUY",
-        "button_url" : "http://qoob.it/",
+        "button_url" : "http://webark.io:8000/qoob.html",
         "case": [{
             "title": "Open source license",
             "price": "Free",
