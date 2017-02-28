@@ -8,60 +8,92 @@
                 {{/if}}
             </div>
             <div class="col-lg-12">
-            <div class="contact-image-text">
+                <div class="contact-image-text">
                  {{{text}}}
-            </div>
-            </div>
-            <div class="col-lg-12">
-                <form accept-charset="utf-8" method="post">
-                    <!-- Email field (required) -->
-                    <input type="text" name="email" id="email_webark" placeholder="{{email_pl}}"/>
-                    <!-- Subscriber button -->
-                    <input type="submit" id="sendmail" class="inverse" value="{{contact_me}}"/>
-                </form>
-                <div id="sendmail-message"></div>
-        </div>
+             </div>
+         </div>
+         <div class="col-lg-12">
+            <form accept-charset="utf-8" method="post">
+                <!-- Email field (required) -->
+                <input type="text" name="email" id="email_webark" placeholder="{{email_pl}}"/>
+                <!-- Subscriber button -->
+                <input type="submit" id="sendmail" class="inverse" value="{{contact_me}}"/>
+            </form>
+            <div id="sendmail-message"></div>
         </div>
     </div>
-    <img id="background-block-{{id}}" class="background-block imagetablet" src="{{imagetablet}}" />
+</div>
+<img id="background-block-{{id}}" class="background-block imagetablet" src="{{imagetablet}}" />
 </section>
 <script>
-jQuery(document).ready(function() {
-    var request_sent = false;
-jQuery("#sendmail").bind("click", sendmail);
-    function sendmail(){
-    if (request_sent) {
-        jQuery("#sendmail-message").text("Your message is already sent");
-        return false;
+    jQuery(document).ready(function() {
+        jQuery("#email_webark").on("input", function() {
+          jQuery("#email_webark").css({
+            "box-shadow": "none"
+        });
+      });
+        var pattern = /^[a-z0-9_-]+@[a-z0-9-]+\.([a-z]{1,6}\.)?[a-z]{2,6}$/i;
+        var mail = jQuery("#email_webark");
+        var request_sent = false;
+        jQuery("#sendmail").bind("click", sendmail);
+        function sendmail(){
+            if (request_sent) {
+                jQuery("#sendmail-message").text("Your message is already sent");
+                  jQuery("#email_webark").css({
+                    "box-shadow": "0px 0px 10px 1px red inset"
+                });
+                return false;
+            }
+            if(mail.val() != ''){
+                if(mail.val().search(pattern) == 0){
+                    jQuery("#email_webark").css({
+                        "box-shadow": "none"
+                    });
+                 }
+                 else{
+                   jQuery("#email_webark").css({
+                    "box-shadow": "0px 0px 10px 1px red inset"
+                });
+                   return false
+               }
+           }
+           else{
+            jQuery("#email_webark").css({
+                "box-shadow": "0px 0px 10px 1px red inset"
+            });
+            return false
     }
     var form = jQuery(this).parents('form:first');
     var email_webark = form.find("#email_webark").val();
     if((email_webark === "")) { 
-       jQuery(".main-popup_error").css("display", "block");     
-    }
-    else {
+       jQuery("#email_webark").css({
+        "box-shadow": "0px 0px 10px 1px red inset"
+    });
+       return false;     
+   }
+   else {
     jQuery.ajax({
       type: "POST",
       url: "/wp-admin/admin-ajax.php",
-       type: "POST",
-       dataType: 'json',
-       data: ({
-           action : 'qoob_sendmail',
-           email_webark : email_webark
-        }),
+      type: "POST",
+      dataType: 'json',
+      data: ({
+       action : 'qoob_sendmail',
+       email_webark : email_webark
+   }),
       cache: false,
       success: function(response){
         request_sent = response.data.response_status;
         jQuery("#sendmail-message").text(response.data.response_text);
-      },
-      error: function(response){
+    },
+    error: function(response){
         request_sent = response.data.response_status;
         jQuery("#sendmail-message").text(response.data.response_text);
-      }
-    });
     }
-    return false;
+});
+}
+return false;
 
-  }
-  });
+}
+});
 </script>
