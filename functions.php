@@ -419,8 +419,8 @@ function qoob_sendmail() {
 
 	// Formation of the message header
 	$subject  = "New mail";
-	$headers  = "From: " . strip_tags($usermail) . "\r\n";
-	$headers .= "Reply-To: ". strip_tags($usermail) . "\r\n";
+	$headers  = "From: " . "test@webark.io" . "\r\n";
+	$headers .= "Reply-To: ". "test@webark.io" . "\r\n";
 	$headers .= "MIME-Version: 1.0\r\n";
 	$headers .= "Content-Type: text/html;charset=utf-8 \r\n";
 	$headers .=  "X-Mailer: PHP/" . phpversion();
