@@ -34,7 +34,7 @@
         "header": "30 + Predefined Blocks",
         "description" : "This web site was created with qoob!",
         "image" : "%block_url%/assets/img/call_to_action_bg_v3.jpg",
-        "action_text" : "Read",
-        "action_url" : "http://qoob.it/"
+        "action_text" : "Checkout now",
+        "action_url" : "http://webark.io:8000"
     }
 }
