@@ -36,14 +36,23 @@
         var mail = jQuery("#email_webark");
         var request_sent = false;
         jQuery("#sendmail").bind("click", sendmail);
+        var currentemail;
         function sendmail(){
-            if (request_sent) {
-                jQuery("#sendmail-message").text("Your message is already sent");
+          jQuery("#sendmail-message").text("wait...");
+          if(currentemail == jQuery(this).parents('form:first').find("#email_webark").val()) {
+             jQuery("#sendmail-message").text("Your message is already sent");
                   jQuery("#email_webark").css({
                     "box-shadow": "0px 0px 10px 1px red inset"
                 });
-                return false;
-            }
+                  return false;
+          }
+            // if (request_sent){
+            //     jQuery("#sendmail-message").text("Your message is already sent");
+            //       jQuery("#email_webark").css({
+            //         "box-shadow": "0px 0px 10px 1px red inset"
+            //     });
+            //     return false;
+            // }
             if(mail.val() != ''){
                 if(mail.val().search(pattern) == 0){
                     jQuery("#email_webark").css({
@@ -74,7 +83,7 @@
    else {
     jQuery.ajax({
       type: "POST",
-      url: "/qoob/wp-admin/admin-ajax.php",
+      url: "/wp-admin/admin-ajax.php",
       type: "POST",
       dataType: 'json',
       data: ({
@@ -85,6 +94,8 @@
       success: function(response){
         request_sent = response.data.response_status;
         jQuery("#sendmail-message").text(response.data.response_text);
+         currentemail = form.find("#email_webark").val();
+        console.log(currentemail);
     },
     error: function(response){
         request_sent = response.data.response_status;
