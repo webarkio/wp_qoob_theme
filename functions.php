@@ -414,7 +414,7 @@ function qoob_theme_scripts() {
 add_action( 'wp_enqueue_scripts', 'qoob_theme_scripts' );
 
 function qoob_sendmail() {
-	$sendto   = "webarksendmail@gmail.com"; //subscribe@webark.io
+	$sendto   = "subscribe@webark.io"; //subscribe@webark.io
 	$usermail = $_POST['email_webark']; // stored in a variable data obtained from the field with email
 
 	// Formation of the message header
