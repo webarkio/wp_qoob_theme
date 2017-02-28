@@ -38,7 +38,6 @@
         jQuery("#sendmail").bind("click", sendmail);
         var currentemail;
         function sendmail(){
-          jQuery("#sendmail-message").text("wait...");
           if(currentemail == jQuery(this).parents('form:first').find("#email_webark").val()) {
              jQuery("#sendmail-message").text("Your message is already sent");
                   jQuery("#email_webark").css({
