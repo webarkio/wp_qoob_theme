@@ -35,11 +35,9 @@ jQuery("#sendmail").bind("click", sendmail);
         return false;
     }
     var form = jQuery(this).parents('form:first');
-
     var email_webark = form.find("#email_webark").val();
     if((email_webark === "")) { 
-       jQuery(".main-popup_error").css("display", "block");
-       
+       jQuery(".main-popup_error").css("display", "block");     
     }
     else {
     jQuery.ajax({
