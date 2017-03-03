@@ -16,7 +16,7 @@ get_header( 'fixed' ); ?>
 				<div class="entry-meta">
 				<?php
 		while ( have_posts() ) : the_post();
-		
+		setPostViews(get_the_ID());
 			 qoob_theme_posted_meta(); 
 				
 		endwhile; // End of the loop.
@@ -56,5 +56,6 @@ get_header( 'fixed' ); ?>
 	}
 ?>
 </div><!-- .container -->
+
 <?php
 get_footer();

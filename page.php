@@ -24,7 +24,7 @@ get_header('fixed'); ?>
 		}
 
 		get_template_part( 'template-parts/content', $template_parts );
-
+		setPostViews(get_the_ID());
 	endwhile; // End of the loop.
 	?>
 <?php
