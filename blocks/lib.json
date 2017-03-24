@@ -48,6 +48,10 @@
         "id": "features",
         "label": "Features",
         "position": 10
+    }, {
+        "id": "keo_presentation",
+        "label": "KEO Presentation",
+        "position": 10
     }],
     "blocks": [{
         "name": "assets",
@@ -274,6 +278,9 @@
     }, {
         "name": "video_full_page",
         "url": "%theme_url%/blocks/video_full_page/"
+    }, {
+        "name": "keo_presentation",
+        "url": "%theme_url%/blocks/keo_pre_header/"
     }],
     "res": {
         "css": [

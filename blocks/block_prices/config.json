@@ -78,99 +78,65 @@
             "title": "Open source license",
             "price": "Free",
             "content_list": [{
-                "title": "Page Builder Plugin",
+                "title": "Limited Technical Support",
                 "order": 0
                 }, {
-                "title": "Limited Technical Supportn",
+                "title": "Only for Open Source",
                 "order": 1
                 }, {
-                "title": "Use for open source",
+                "title": "Future Updates",
                 "order": 2
                 }, {
-                "title": "Free updates",
+                "title": "Any CMS and Framework",
                 "order": 3
                 }, {
-                "title": "Use for any CMS and framework",
+                "title": "Can't be Used for commerce",
                 "order": 4
-                }, {
-                "title": "Not use for commerce",
-                "order": 5
-            }],
+                }],
             "action_text": "Download",
             "action_url": "http://webark.com/qoob/download"
         }, {
-            "title": "Personal license",
+            "title": "Single Commercial licenses",
             "price": "<span>$</span>29",
             "content_list": [{
-                "title": "Page Builder Plugin",
+                "title": "Regular Support",
                 "order": 0
                 }, {
-                "title": "Regular support",
+                "title": "Limited to 1 Project",
                 "order": 1
                 }, {
-                "title": "Use for 1 website",
+                "title": "Future Updates",
                 "order": 2
                 }, {
-                "title": "Free updates",
+                "title": "Any CMS and Framework",
                 "order": 3
                 }, {
-                "title": "Use for any CMS and framework",
+                "title": "Can be Used for Commerce",
                 "order": 4
-                }, {
-                "title": "Not use for commerce",
-                "order": 5
-            }],
+                }],
             "action_text": "Buy",
-            "action_url": "http://qoob.it/"
+            "action_url": "http://webark.com/pay.php?name=Qoob Single Commercial License&price=29.00"
         }, {
-            "title": "Professional license",
-            "price": "<span>$</span>99",
+            "title": "Extended Commercial licenses",
+            "price": "<span>$</span>119",
             "content_list": [{
-                "title": "Page Builder Plugin",
+                "title": "Premium Technical Support",
                 "order": 0
                 }, {
-                "title": "Premium Technical Support",
+                "title": "Unlimited Projects",
                 "order": 1
                 }, {
-                "title": "Use for 10 websites",
+                "title": "Future Updates",
                 "order": 2
                 }, {
-                "title": "Free updates",
+                "title": "Any CMS and Framework",
                 "order": 3
                 }, {
-                "title": "Use for any CMS and framework",
+                "title": "Can be Used for Commerce",
                 "order": 4
-                }, {
-                "title": "Not use for commerce",
-                "order": 5
-            }],
+                }],
             "action_text": "Buy",
-            "action_url": "http://qoob.it/"
-        }, {
-            "title": "Commerce license",
-            "price": "<span>$</span>179",
-            "content_list": [{
-                "title": "Page Builder Plugin",
-                "order": 0
-                }, {
-                "title": "Premium Technical Support",
-
-                "order": 1
-                }, {
-                "title": "Use for unlimited websites",
-                "order": 2
-                }, {
-                "title": "Free updates",
-                "order": 3
-                }, {
-                "title": "Use for any CMS and framework",
-                "order": 4
-                }, {
-                "title": "Not use for commerce",
-                "order": 5
-            }],
-            "action_text": "Buy",
-            "action_url": "http://qoob.it/"
+            "action_url": "http://webark.com/pay.php?name=Qoob Extended Commercial License&price=119.00"
         }]
     }
 }
