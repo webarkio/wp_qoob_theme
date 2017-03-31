@@ -26,11 +26,11 @@
         "header": "Create your website now - it's free and so easy!",
         "buttons": [{
             "title": "Try now",
-            "action_url": "http://qoob.it/",
+            "action_url": "http://webark.com/qoob/",
             "order": 1
         }, {
             "title": "Download",
-            "action_url": "http://qoob.it/",
+            "action_url": "http://webark.com/qoob/",
             "order": 2
         }]
     }

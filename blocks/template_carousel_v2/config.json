@@ -36,22 +36,22 @@
         "theme": [{
             "title": "Cube Girl",
             "url": "%block_url%/assets/img/theme1.png",
-            "link" : "http://qoob.it/market/",
+            "link" : "http://webark.com/qoob/market/",
             "order": 0
         }, {
             "title": "Cube Girl",
             "url": "%block_url%/assets/img/theme2.png",
-            "link" : "http://qoob.it/market/",
+            "link" : "http://webark.com/qoob/market/",
             "order": 1
         }, {
             "title": "Cube Girl",
             "url": "%block_url%/assets/img/theme3.png",
-            "link" : "http://qoob.it/market/",
+            "link" : "http://webark.com/qoob/market/",
             "order": 2
         }, {
             "title": "Cube Girl",
             "url": "%block_url%/assets/img/theme4.png",
-            "link" : "http://qoob.it/market/",
+            "link" : "http://webark.com/qoob/market/",
             "order": 2
         }]
     }

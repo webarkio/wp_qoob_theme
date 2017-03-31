@@ -53,6 +53,6 @@
         "description" : "This web site was created with qoob!",
         "image" : "%block_url%/assets/img/call_to_action_bg2.jpg",
         "action_text" : "Download",
-        "action_url" : "http://qoob.it/download/"
+        "action_url" : "http://webark.com/qoob/download/"
     }
 }

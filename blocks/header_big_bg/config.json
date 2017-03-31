@@ -41,11 +41,11 @@
         "image" : "%block_url%/assets/img/header-bg-v2.jpg",
         "buttons" : [{
             "title": "Try now",
-            "action_url": "http://qoob.it/",
+            "action_url": "http://webark.com/qoob/",
             "order" : 1
         },{
             "title": "Download",
-            "action_url": "http://qoob.it/",
+            "action_url": "http://webark.com/qoob/",
             "order" : 2
         }]
     }
