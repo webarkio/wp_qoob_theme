@@ -267,7 +267,9 @@ function qoob_search_form( $form ) {
 				<label>
 					<span class="screen-reader-text">' . _x( 'Search for:', 'label', 'qoob' ) . '</span>
 					<input type="search" class="search-field" placeholder="' . esc_attr_x( 'Search &hellip;', 'placeholder', 'qoob' ) . '" value="' . get_search_query() . '" name="s" />
+						<button type="submit" class="search-submit"><span class="screen-reader-text">' . esc_attr__( 'Search', 'qoob' ) . '</span></button>
 				</label>
+
 			</form>';
 	return $form;
 }

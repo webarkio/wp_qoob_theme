@@ -624,18 +624,6 @@ input[type="submit"].white.inverse:focus {
 	border-color: #fff;
 	color: #fff;
 }
-.btn:focus,
-button:focus,
-input[type="button"]:focus,
-input[type="reset"]:focus,
-input[type="submit"]:focus,
-.btn.active,
-button:active,
-input[type="button"]:active,
-input[type="reset"]:active,
-input[type="submit"]:active {
-	outline: none;
-}
 
 input[type="text"],
 input[type="email"],
@@ -1569,7 +1557,18 @@ a:active {
 	padding-left: 2.8rem;
 }
 .search-form {
-	padding-top: 4rem;
+	position: relative;
+	margin-top: 4rem;
+}
+.search-form .search-submit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 48px;
+    border: 0;
+    padding: 0;
+    background: transparent url(images/widget-search-icon.png) no-repeat center center;
 }
 .widget .search-field {
 	padding: 1.3rem  3.5rem  1.3rem 3.5rem;
@@ -1577,7 +1576,7 @@ a:active {
 	font-style: italic;
 	width: calc(100% - 7rem);
 	font-size: 1.4rem;
-	background: #fff url(images/widget-search-icon.png) no-repeat center right 1.7rem;
+	background-color: #fff;
 }
 .widget .search-field:focus {
 	outline: 1px solid #0084ff;
@@ -1869,7 +1868,6 @@ a:active {
 	text-decoration: none;
 	color: #898989;
 	font-size: 1.7rem;
-	outline: none;
 }
 .pagination .nav-links a.prev {
 	transform: rotate(180deg);
@@ -1895,7 +1893,6 @@ a:active {
 	height: 10px;
 	display: inline-block;
 	vertical-align: middle;
-	outline: none;
 }
 
 /*--------------------------------------------------------------
