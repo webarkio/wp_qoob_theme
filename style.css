@@ -1779,10 +1779,6 @@ a:active {
 	width: 49.5%;
 	margin-bottom: .4rem;
 }
-.comment-form .comment-form-author label,
-.comment-form .comment-form-email  label {
-	display: none;
-}
 .comment-form .comment-form-comment {
 	margin-bottom: -0.2rem;
 }
