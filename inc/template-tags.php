@@ -34,7 +34,7 @@ if ( ! function_exists( 'qoob_theme_posted_on' ) ) :
 			'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 		);
 
-		echo '<span class="posted-on"><i class="time-icon"></i>' . wp_kses_post( $posted_on ) . '</span>';
+		echo '<span class="posted-on"><i class="time-icon" aria-hidden="true"></i>' . wp_kses_post( $posted_on ) . '</span>';
 	}
 endif;
 
