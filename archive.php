@@ -9,7 +9,11 @@
 
 get_header(); ?>
 <div class="container">
-	<div id="primary" class="content-area col-lg-8">
+	<?php if ( 'sidebar_right' === get_theme_mod( 'blog_sidebar' ) ) : ?>
+		<div id="primary" class="content-area sidebar-on col-lg-9">
+	<?php else : ?>
+		<div id="primary" class="content-area sidebar-off col-lg-12">
+	<?php endif; ?>
 		<main id="main" class="site-main" role="main">
 
 		<?php
@@ -42,7 +46,9 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
+if ( 'sidebar_right' === get_theme_mod( 'blog_sidebar' ) ) {
+	get_sidebar();
+}
 ?>
 </div> <!-- .container -->
 <?php
