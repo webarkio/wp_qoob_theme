@@ -1,6 +1,6 @@
 jQuery(document).ready(function(){
 	// Init masonry blog list
-	jQuery('.blog-list').masonry({
+	jQuery('.masonry-list').masonry({
 		itemSelector: '.col-lg-4',
 		percentPosition: true,
 		resize: true
@@ -15,7 +15,7 @@ jQuery(document).ready(function(){
 	};
 
 	jQuery(window).resize(function(){
-		jQuery('.blog-list').masonry('reloadItems');
+		jQuery('.masonry-list').masonry('reloadItems');
 	});
 });
 

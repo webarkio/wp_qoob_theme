@@ -33,7 +33,7 @@ get_header(); ?>
 <?php else : ?>
 	<div id="primary" class="content-area sidebar-off col-lg-12">
 <?php endif; ?>
-		<main id="main" class="site-main blog-list row" role="main">
+		<main id="main" class="site-main blog-list masonry-list row" role="main">
 		<?php
 		if ( have_posts() ) :
 
