@@ -58,8 +58,8 @@ get_header(); ?>
 		</main><!-- #main -->
 		<?php
 			the_posts_pagination( array(
-				'prev_text'          => '',
-				'next_text'          => '',
+				'prev_text'          => '<span class="screen-reader-text">' . __( 'Next', 'qoob' ) . ' </span>',
+				'next_text'          => '<span class="screen-reader-text">' . __( 'Next', 'qoob' ) . ' </span>',
 				'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'qoob' ) . ' </span>',
 			) );
 
