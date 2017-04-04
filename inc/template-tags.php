@@ -26,7 +26,7 @@ if ( ! function_exists( 'qoob_theme_posted_on' ) ) :
 
 		$posted_on = sprintf(
 			esc_html_x( '%s', 'post date', 'qoob' ),
-			'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
+			'<a href="' . esc_url( get_month_link( get_the_date( 'Y' ), get_the_date( 'm' ) ) ) . '" rel="bookmark">' . $time_string . '</a>'
 		);
 
 		$byline = sprintf(
