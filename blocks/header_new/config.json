@@ -3,14 +3,17 @@
     "groups": "introduction",
     "template": "template.hbs",
     "settings": [{
+        "name": "image",
+        "label": "Image",
+        "type": "image"
+    }, {
+        "name": "image_retina",
+        "label": "Image Retina",
+        "type": "image"
+    }, {
         "name": "logo",
         "label": "Logo",
         "type": "image"
-    }, {
-        "name": "image",
-        "label": "Image",
-        "type": "image",
-        "tags": ["girl"]
     }, {
         "name": "header",
         "label": "Header",
@@ -20,30 +23,95 @@
         "label": "Text",
         "type": "textarea"
     }, {
-        "name": "text-btn-left",
-        "label": "Text left button",
+        "name": "btn_first_title",
+        "label": "First Action button text",
         "type": "text"
     }, {
-        "name": "text-btn-right",
-        "label": "Text right button",
-        "type": "text"
-    },{
-        "name": "link-btn-left",
-        "label": "Link left button",
+        "name": "first_btn_id",
+        "label": "First Button's id",
         "type": "text"
     }, {
-        "name": "link-btn-right",
-        "label": "Link right button",
+        "name": "first_btn_onclick",
+        "label": "First Button's onclick",
         "type": "text"
+    }, {
+        "name": "btn_first_inverse",
+        "label": "First Button Color Scheme",
+        "options": [{
+            "id": "normal",
+            "val": "normal"
+        }, {
+            "id": "inversed",
+            "val": "inversed"
+        }],
+        "type": "select"
+    }, {
+        "name": "btn_first_action_url",
+        "label": "First Url for action button",
+        "type": "text"
+    }, {
+        "name": "btn_first_hidebtn",
+        "label": "First Hide button on mobile devices?",
+        "type": "checkbox"
+    }, {
+        "name": "btn_first_target",
+        "label": "First Button Open link in new tab?",
+        "type": "checkbox"
+    }, {
+        "name": "btn_second_title",
+        "label": "Second Action button text",
+        "type": "text"
+    }, {
+        "name": "second_btn_id",
+        "label": "Second Button's id",
+        "type": "text"
+    }, {
+        "name": "second_btn_onclick",
+        "label": "Second Button's onclick",
+        "type": "text"
+    }, {
+        "name": "btn_second_inverse",
+        "label": "Second Button Color Scheme",
+        "options": [{
+            "id": "normal",
+            "val": "normal"
+        }, {
+            "id": "inversed",
+            "val": "inversed"
+        }],
+        "type": "select"
+    }, {
+        "name": "btn_second_action_url",
+        "label": "Second Url for action button",
+        "type": "text"
+    }, {
+        "name": "btn_second_hidebtn",
+        "label": "Second Hide button on mobile devices?",
+        "type": "checkbox"
+    }, {
+        "name": "btn_second_target",
+        "label": "Second Button Open link in new tab?",
+        "type": "checkbox"
     }],
     "defaults": {
-        "logo": "%block_url%/assets/img/qoob_main_logo_black.png",
+        "image_retina" : "%block_url%/assets/img/header-bg-new_retina.jpg",
         "image" : "%block_url%/assets/img/header-bg-new.jpg",
+        "logo": "%block_url%/assets/img/qoob_main_logo_black.png",
         "header": "Make a beautiful website from scratch fast and for free",
         "text": "<p>Qoob website builder offers a great number of tools and features with an intuitive interface for free. It is a powerful solution that enables you to make a customized website without any prior design and run it with minimum technical knowledge. The first page of your awesome website is just a few clicks away.</p>",
-        "text-btn-left": "Try now",
-        "text-btn-right": "Download",
-        "link-btn-left": "http://webark.io:8000/qoob.html",
-        "link-btn-right": "http://webark.com/qoob/download"
+        "first_btn_id": "",
+        "first_btn_onclick": "",
+        "btn_first_title": "Try now",
+        "btn_first_action_url": "http://webark.com/qoob/demo/",
+        "btn_first_inverse": "inversed",
+        "btn_first_target": 1,
+        "btn_first_hidebtn": 1,
+        "second_btn_id": "",
+        "second_btn_onclick": "",
+        "btn_second_title": "Download",
+        "btn_second_action_url": "http://webark.com/qoob/download",
+        "btn_second_inverse": "inversed",
+        "btn_second_target": 0,
+        "btn_second_hidebtn": 0
     }
 }

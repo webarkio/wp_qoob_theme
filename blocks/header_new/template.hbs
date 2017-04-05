@@ -1,8 +1,7 @@
 <section class="header-block-wrap header-new-bg-{{id}} header-new-bg" >
-<div id="background-block-{{id}}" class="background-block {{#ifCond parallax '==' '1'}}parallax{{/ifCond}}" {{#if image}} style="background-image : url({{image}});" {{/if}}></div>
 	<div class="container">
 		<div class="row">
-		<div class="col-lg-12 bg-image-logo">
+			<div class="col-lg-12 bg-image-logo">
 				{{#if logo}} <img src="{{logo}}" alt="logo"/> {{/if}}
 			</div>
 			<div class="col-lg-12">
@@ -12,10 +11,19 @@
 				{{{text}}}
 			</div>
 			<div class="col-lg-12 text-center btn-header-wrap">
-				<a href="{{link-btn-left}}" target="_blank" class="btn inverse">{{text-btn-left}}</a>
-				<a href="#slider-video" class="block-video-play" id="block-video-play-{{id}}"></a>
-				<a href="{{link-btn-right}}" class="btn inverse">{{text-btn-right}}</a>
+				<a href="{{btn_first_action_url}}" {{#if first_btn_id }} id="{{first_btn_id}}" {{/if}} {{#if first_btn_onclick }} onclick="{{first_btn_onclick}}" {{/if}} class="btn {{#ifCond btn_first_inverse '==' 'inversed'}}inverse{{/ifCond}} br-white {{#ifCond btn_first_hidebtn '==' '1'}}hidden-xs{{/ifCond}}" {{#if btn_first_target}}target="blank"{{/if}}>{{btn_first_title}}</a>
+
+				<a href="{{btn_second_action_url}}" {{#if second_btn_id }} id="{{second_btn_id}}" {{/if}} {{#if second_btn_onclick }} onclick="{{second_btn_onclick}}" {{/if}} class="btn btn1 {{#ifCond btn_second_inverse '==' 'inversed'}}inverse{{/ifCond}} br-white {{#ifCond btn_second_hidebtn '==' '1'}}hidden-xs{{/ifCond}}" {{#if btn_second_target}}target="blank"{{/if}}>{{btn_second_title}}</a>
 			</div>
 		</div>
 	</div>
 </section>
+<style>
+	.header-new-bg.header-new-bg-{{id}} {
+		background: url('{{image}}');
+		background: -webkit-image-set(url('{{image}}') 1x, url('{{image_retina}}') 2x);
+		background-position: center center;
+		background-repeat:  no-repeat;
+		background-size: cover;
+	}
+</style>
