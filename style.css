@@ -828,7 +828,7 @@ textarea {
 --------------------------------------------------------------*/
 
 a {
-	color: royalblue;
+	color: #0064fa;
 }
 
 a:visited {
@@ -996,7 +996,7 @@ a:active {
 }
 .sf-menu ul li a,
 .sf-menu ul ul li a {
-	color: #898989 !important;
+	color: #484848 !important;
 	text-transform: none;
 }
 
@@ -1397,6 +1397,7 @@ a:active {
 	background-position: center center;
 	height: 72.0rem;
 	position: relative;
+	background-color: #565656;
 }
 
 .entry-thumbnail-full::before {
@@ -1407,7 +1408,9 @@ a:active {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: #565656 url(images/mask_thumbnail-post.png) center center no-repeat;
+	background-image: url(images/mask_thumbnail-post.png);
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 
 .entry-thumbnail-full h1 {
@@ -1449,6 +1452,7 @@ a:active {
 	background-position: center center;
 	height: 37rem;
 	position: relative;
+	background-color: #484848;
 }
 
 .entry-thumbnail-blog::before {
@@ -1630,7 +1634,7 @@ a:active {
 	margin-bottom: 4rem;
 }
 .site-main .posts-list .entry-meta .posted-on a {
-	color: #898989;
+	color: #484848;
 	font-size: 1.3rem;
 	line-height: 2.5rem;
 }
@@ -1762,7 +1766,7 @@ a:active {
 
 .comment-meta a {
 	text-decoration: none;
-	color: #898989;
+	color: #484848;
 	font-size: 1.3rem;
 }
 
@@ -1860,7 +1864,7 @@ a:active {
 	display: inline-block;
 	margin: 4rem 1.8rem;
 	text-decoration: none;
-	color: #898989;
+	color: #484848;
 	font-size: 1.7rem;
 }
 .pagination .nav-links a.prev {
@@ -1871,7 +1875,7 @@ a:active {
 	margin-left: 2rem;
 }
 .pagination .nav-links span.current {
-	background-color: #0084ff;
+	background-color: #0064fa;
 	color: #fff;
 	border-radius: 2.5rem;
 	padding: 1.2rem 2rem;
