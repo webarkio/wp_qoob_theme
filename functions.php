@@ -389,7 +389,7 @@ function qoob_reorder_comment_fields( $fields ) {
  */
 function qoob_theme_scripts() {
 	wp_enqueue_style( 'qoob_custom_bootstrap', get_template_directory_uri() . '/css/bootstrap.css' );
-
+	wp_enqueue_style( 'bootstrap-table', get_template_directory_uri() . '/css/bootstrap-table.min.css' );
 	wp_enqueue_style( 'qoob-fonts', get_template_directory_uri() . '/css/fonts/fonts.css' );
 
 	wp_enqueue_style( 'megafish', get_template_directory_uri() . '/css/megafish.css' );
