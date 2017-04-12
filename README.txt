@@ -1,8 +1,8 @@
 === qoob ===
 Contributors: automattic
 Requires at least: 4.0
-Tested up to: WordPress 4.7
-Version: 1.0.7
+Tested up to: WordPress 4.7.3
+Version: 1.0.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column, right-sidebar, flexible-header, accessibility-ready, custom-header, footer-widgets, post-formats, sticky-post, theme-options, threaded-comments, translation-ready
@@ -69,7 +69,7 @@ qoob includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
 
-= 1.0 =
-* Released: May 12, 2016
+= 1.0.8 =
+* Released: April 12, 2017
 
 * Initial release
