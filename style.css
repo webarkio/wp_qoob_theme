@@ -1570,6 +1570,17 @@ a:active {
 .widget .search-field::-webkit-input-placeholder {
 	color: #000;
 }
+
+.footer-widget .widgettitle{
+	color: #fff;
+	font-size: 2rem;
+	text-transform: uppercase;
+	padding-left: 2.8rem;
+}
+.footer-widget ul li:before{
+	display: none;
+}
+
 /*--------------------------------------------------------------
 ## Asides
 --------------------------------------------------------------*/
@@ -1765,18 +1776,26 @@ a:active {
 	margin-bottom: .4rem;
 }
 .comment-form .comment-form-comment {
+	margin-top: 0.8rem;
 	margin-bottom: -0.2rem;
 }
+.comment-form .comment-form-author label,
+.comment-form .comment-form-email label,
 .comment-form .comment-form-comment label {
-	display: none;
+	color: #4d525e;
+	font-size: 1.5rem;
+	font-family: "OpenSans-Regular", sans-serif;
+	text-transform: uppercase;
 }
+
 .comment-form .comment-form-author input,
 .comment-form .comment-form-email input,
 .comment-form .comment-form-comment textarea {
 	border: 0.2rem solid #fff;
 	border-radius: .8rem;
+	margin-top: 0.3rem;
 	padding: 1.5rem 2.1rem;
-	font-size: 1.5rem;
+	font-size: 1.4rem;
 	width: 100%;
 }
 .comment-form .comment-form-author input:focus,
@@ -1784,38 +1803,12 @@ a:active {
 .comment-form .comment-form-comment textarea:focus {
 	outline: 1px solid #0084ff;
 }
-.comment-form .comment-form-author input::-webkit-input-placeholder,
-.comment-form .comment-form-email input::-webkit-input-placeholder,
-.comment-form .comment-form-comment textarea::-webkit-input-placeholder {
-	color: #4d525e;
-	font-size: 1.5rem;
-	font-family: "OpenSans-Bold", sans-serif;
-	text-transform: uppercase;
-}
-
-.comment-form .comment-form-author input:-moz-placeholder,
-.comment-form .comment-form-email input:-moz-placeholder,
-.comment-form .comment-form-comment textarea:-moz-placeholder {
-	color: #4d525e;
-	font-size: 1.5rem;
-	font-family: "OpenSans-Bold", sans-serif;
-	text-transform: uppercase;
-}
-
-.comment-form .comment-form-author input:-ms-input-placeholder,
-.comment-form .comment-form-email input:-ms-input-placeholder,
-.comment-form .comment-form-comment textarea:-ms-input-placeholder {
-	color: #4d525e;
-	font-size: 1.5rem;
-	font-family: "OpenSans-Bold", sans-serif;
-	text-transform: uppercase;
-}
 
 .comment-respond .comment-reply-title {
 	text-transform: uppercase;
 	color: #000;
 	font-size: 2rem;
-	margin-bottom: 2.8rem;
+	margin-bottom: 1.4rem;
 	margin-top: 4.9rem;
 }
 

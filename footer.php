@@ -15,7 +15,6 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info container">
-			<?php dynamic_sidebar( 'footer' ); ?>
 			<?php if ( has_nav_menu( 'footer' ) ) : ?>
 				<?php
 						wp_nav_menu( array(

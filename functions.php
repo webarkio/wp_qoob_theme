@@ -275,24 +275,6 @@ function qoob_search_form( $form ) {
 	return $form;
 }
 
-add_action( 'widgets_init', 'qoob_theme_footer_widgets_init' );
-
-/**
- * Register sidebar for footer
- */
-function qoob_theme_footer_widgets_init() {
-	register_sidebar( array(
-		'name' => __( 'Footer Sidebar', 'qoob' ),
-		'id' => 'footer',
-		'description' => __( 'Widgets in this area will be shown on footer.', 'qoob' ),
-		'before_widget' => '<div class="footer-widget">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h2 class="widgettitle">',
-		'after_title'   => '</h2>',
-	));
-}
-
-
 add_action( 'admin_init', 'wpdocs_theme_add_editor_styles' );
 /**
  * Registers an editor stylesheet for the theme.
