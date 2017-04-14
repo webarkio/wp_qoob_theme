@@ -2,7 +2,7 @@
 Contributors: automattic
 Requires at least: 4.0
 Tested up to: WordPress 4.7.3
-Version: 1.0.8
+Version: 1.0.10
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column, right-sidebar, flexible-header, accessibility-ready, custom-header, footer-widgets, post-formats, sticky-post, theme-options, threaded-comments, translation-ready

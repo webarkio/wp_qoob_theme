@@ -53,14 +53,18 @@
 				totalHeight = jQuery('.header-block-{{id}}').height();
 			jQuery('.header-block-{{id}} .row').height(height).css('top', (totalHeight - height) / 2 );
 		});
-		// Adding parallax to video
-		jQuery(window).on('scroll', function () {
-	        var scrolled = jQuery(document).scrollTop() - jQuery('.header-block-{{id}}').offset().top;
-	        jQuery('.header-block-{{id}} .custom-video-wrapper').css('transform', 'translate3d(0, ' + scrolled + 'px, 0)');
-	    });
+
 	    // Bug with iPad overlay
 	    if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
 	    	jQuery(".header-block-{{id}}").addClass('iPad');
 	    }
+    });
+
+    // Adding parallax to video
+	jQuery(window).on('scroll', function () {
+		if (jQuery('.header-block-{{id}}').length > 0) {
+        	var scrolled = jQuery(document).scrollTop() - jQuery('.header-block-{{id}}').offset().top;
+        	jQuery('.header-block-{{id}} .custom-video-wrapper').css('transform', 'translate3d(0, ' + scrolled + 'px, 0)');
+        }
     });
 </script>
