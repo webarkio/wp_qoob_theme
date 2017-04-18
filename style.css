@@ -1661,6 +1661,9 @@ a:active {
 .site-main .posts-list:hover .entry-meta .posted-auther, .site-main .posts-list:hover .entry-meta .posted-data, .site-main .posts-list:hover .entry-meta .posted-comments, .site-main .posts-list:hover  .posted-eye {
 	color: #fff;
 }
+.sd-content ul li:before {
+	display: none;
+}
 @media (max-width: 992px) {
 	.entry-thumbnail-blog {
 		margin-top: 45px;
