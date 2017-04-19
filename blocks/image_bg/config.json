@@ -7,25 +7,43 @@
         "label": "Header",
         "type": "text"
     }, {
-        "name": "imagedesktop",
-        "label": "Image for desktop",
+        "name": "desktop",
+        "label": "Image for Desktop",
         "type": "image",
         "tags": ["wall", "desktop"]
     }, {
-        "name": "imagetablet",
-        "label": "Image for tablet",
+        "name": "tablet",
+        "label": "Image for Tablet",
         "type": "image",
         "tags": ["wall", "tablet"]
     }, {
-        "name": "imagemobile",
-        "label": "Image for modile",
+        "name": "mobile",
+        "label": "Image for Modile",
+        "type": "image",
+        "tags": ["wall", "mobile"]
+    }, {
+        "name": "desktop_retina",
+        "label": "Image for Desktop Retina",
+        "type": "image",
+        "tags": ["wall", "desktop"]
+    }, {
+        "name": "tablet_retina",
+        "label": "Image for Tablet Retina",
+        "type": "image",
+        "tags": ["wall", "tablet"]
+    }, {
+        "name": "mobile_retina",
+        "label": "Image for Modile Retina",
         "type": "image",
         "tags": ["wall", "mobile"]
     }],
     "defaults": {
         "header": "The technologies we use",
-        "imagedesktop" : "%block_url%/assets/img/image_bg.jpg",
-        "imagetablet" : "%block_url%/assets/img/image_bgtablet.jpg",
-        "imagemobile" : "%block_url%/assets/img/image_bgmobile.png"
+        "desktop" : "%block_url%/assets/img/image_bg.jpg",
+        "desktop_retina" : "%block_url%/assets/img/image_bg_retina.jpg",
+        "tablet" : "%block_url%/assets/img/image_bg_tablet.png",
+        "tablet_retina" : "%block_url%/assets/img/image_bg_tablet_retina.png",
+        "mobile" : "%block_url%/assets/img/image_bg_mobile.png",
+        "mobile_retina" : "%block_url%/assets/img/image_bg_mobile_retina.png"
     }
 }

@@ -38,11 +38,10 @@
 					the_custom_logo();
 				}
 				?>
-				<h2 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h2>
+				<a class="site-title" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 			</div><!-- .site-branding -->
 			<a id="mobile-menu-button" href="#">
 						<span class="icon">
-							<i class="line"></i>
 							<i class="line"></i>
 							<i class="line"></i>
 						</span>

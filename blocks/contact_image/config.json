@@ -7,36 +7,42 @@
         "label": "Header",
         "type": "text"
     }, {
-        "name": "image",
-        "label": "Image",
-        "type": "image",
-        "tags": ["woman", "person"]
+        "name": "desktop",
+        "label": "Image for Desktop",
+        "type": "image"
     }, {
-        "name": "imagetablet",
-        "label": "Image for tablet",
-        "type": "image",
-        "tags": ["wall", "tablet"]
+        "name": "desktop_retina",
+        "label": "Image for Desktop Retina",
+        "type": "image"
+    }, {
+        "name": "tablet",
+        "label": "Image for Tablet",
+        "type": "image"
+    }, {
+        "name": "tablet_retina",
+        "label": "Image for Tablet Retina",
+        "type": "image"
     }, {
         "name": "text",
         "label": "Text",
         "type": "textarea"
-    },
-    {
+    }, {
         "name": "email_pl",
         "label": "Email palceholder",
         "type": "text"
-    },
-    {
+    }, {
         "name": "contact_me",
         "label": "Submit button value",
         "type": "text"
     }],
     "defaults": {
         "header": "Are You a WordPress Developer?",
-        "image" : "%block_url%/assets/img/contact_image_bg.jpg",
-        "imagetablet" : "%block_url%/assets/img/contact_image_bgtablet.jpg",
+        "desktop" : "%block_url%/assets/img/contact_img_desktop.png",
+        "desktop_retina" : "%block_url%/assets/img/contact_img_desktop_retina.png",
+        "tablet" : "%block_url%/assets/img/contact_img_tablet.png",
+        "tablet_retina" : "%block_url%/assets/img/contact_img_tablet_retina.png",
         "text" : "We would gladly help you integrate qoob to your project for FREE",
-        "email_pl" : "Your E-mail",
+        "email_pl" : "Enter your email",
         "contact_me" : "contact us"
     }
 }

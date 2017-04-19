@@ -9,7 +9,7 @@
                     <ul id="accordion-{{id}}" >
                     {{#each_with_sort html_list "order"}}         
                         <li>
-                             <a class="link_html" target="_blank" href="{{url}}"><i class="{{icon}}"></i> {{title}}</a>
+                            <a class="link_html" {{#if btn_id }} id="{{btn_id}}" {{/if}} {{#if btn_onclick }} {{#if btn_target}}target="blank"{{/if}} onclick="{{btn_onclick}}" {{/if}} href="{{url}}"><i class="{{icon}}"></i> {{title}}</a>
                         </li>
                       {{/each_with_sort}}
                     </ul>

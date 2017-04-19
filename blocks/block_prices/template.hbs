@@ -1,5 +1,4 @@
 <section class="block-prices block-prices-bg-{{id}}">
-    <div id="background-block-{{id}}" class="background-block {{#ifCond parallax '==' '1'}}parallax{{/ifCond}}" {{#if image}} style="background-image : url({{image}});" {{/if}}></div>
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -7,8 +6,16 @@
                 <h2 class="header-h2">{{{header}}}</h2>
                 {{/if}}
             </div>
+            </div>
+                        <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="description">{{description}}</div>
+            </div>
+        </div>
+         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <a href="{{button_url}}" class="btn btn-action br-white">{{button_text}}</a>
+
+                <a class="btn btn-action br-white" {{#if btn_id }} id="{{btn_id}}" {{/if}} {{#if btn_target}}target="blank"{{/if}} {{#if btn_onclick }}  onclick="{{btn_onclick}}" {{/if}} href="{{button_url}}">{{button_text}}</a>
             </div>  
             </div>
             <div class="row">                     
@@ -32,24 +39,30 @@
                                     {{/each_with_sort}}
                                 {{/if}}
                             </ul>
-                            <a class="link_license" href="{{action_url}}">{{action_text}}</a>
+                            <a class="link_license" {{#if btn_id }} id="{{btn_id}}" {{/if}} {{#if btn_target}}target="blank"{{/if}} {{#if btn_onclick }}  onclick="{{btn_onclick}}" {{/if}} href="{{action_url}}">{{action_text}}</a>
                         </div>
                     </div>
                     {{/each_with_sort}}
                 {{/if}}
             </div>
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="description">{{description}}</div>
-            </div>
-        </div>
+
     </div>
 </section>
-<script>
-    jQuery(document).ready(function() {
-            jQuery(window).scroll(function () {
-                var scrolled = jQuery(document).scrollTop() - jQuery('.block-prices-bg-{{id}}').offset().top;
-                jQuery('#background-block-{{id}}.parallax').css('top', scrolled + 'px');
-            });
-    });
-</script>
+<style>
+  .block-prices.block-prices-bg-{{id}} {
+    background-image: url('{{desktop}}');
+    background-image: -webkit-image-set(url('{{desktop}}') 1x, url('{{desktop_retina}}') 2x);
+  }
+  @media (max-width: 991px) {
+     .block-prices.block-prices-bg-{{id}} {
+      background-image: url('{{tablet}}');
+      background-image: -webkit-image-set(url('{{tablet}}') 1x, url('{{tablet_retina}}') 2x);
+    }
+  }
+  @media (max-width: 767px) {
+    .block-prices.block-prices-bg-{{id}} {
+      background-image: url('{{mobile}}');
+      background-image: -webkit-image-set(url('{{mobile}}') 1x, url('{{mobile_retina}}') 2x);
+    }
+}
+</style>

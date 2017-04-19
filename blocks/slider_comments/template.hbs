@@ -1,5 +1,4 @@
 <section class="slider-comments slider-comments-{{id}}">
-    <div id="background-block-{{id}}" class="background-block {{#ifCond parallax '==' '1'}}parallax{{/ifCond}}" {{#if image}} style="background-image : url({{image}});" {{/if}}></div>
     <div class="container container-no-padding">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -21,11 +20,20 @@
                 </div>                
             </div>
             <div class="col-lg-12">
-                  <a href="{{action_url}}" target="_blank" class="btn btn-action">{{action_text}}</a>
+            
+            <a class="btn btn-action" {{#if btn_id }} id="{{btn_id}}" {{/if}} {{#if btn_target}}target="blank"{{/if}} {{#if btn_onclick }}  onclick="{{btn_onclick}}" {{/if}} href="{{action_url}}">{{action_text}}</a>
             </div>
         </div>
     </div>
 </section>
+
+<style>
+  .slider-comments.slider-comments-{{id}} {
+    background-image: url('{{desktop}}');
+    background-image: -webkit-image-set(url('{{desktop}}') 1x, url('{{desktop_retina}}') 2x);
+  }
+}
+</style>
 
 <script type="text/javascript">
 jQuery(document).ready(function() {

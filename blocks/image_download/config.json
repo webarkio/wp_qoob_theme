@@ -6,37 +6,38 @@
         "name": "header",
         "label": "Header",
         "type": "text"
-    },  {
-        "name": "image",
-        "label": "Image",
-        "type": "image",
-        "tags": ["wall", "tablet"]
-    },  {
-        "name": "parallax",
-        "label": "Parallax Background",
-        "type": "checkbox_switch"
     }, {
-        "name": "item_icon_color",
-        "label": "Item's icon color",
-        "type": "select",
-        "visible_color": "true",
-         "options": [{
-             "id": "green",
-            "colorimage": "rgb(40, 183, 141)",
-             "val": "green"
-          }, {
-             "id": "gray",
-            "colorimage": "rgb(100, 100, 100)",
-             "val": "gray"
-         }, {
-             "id": "white",
-            "colorimage": "rgb(255, 255, 255)",
-             "val": "gray"
-         }]
-     }],
+        "name": "desktop",
+        "label": "Image for Desktop",
+        "type": "image"
+    }, {
+        "name": "desktop_retina",
+        "label": "Image for Desktop Retina",
+        "type": "image"
+    }, {
+        "name": "tablet",
+        "label": "Image for Tablet",
+        "type": "image"
+    }, {
+        "name": "tablet_retina",
+        "label": "Image for Tablet Retina",
+        "type": "image"
+    }, {
+        "name": "mobile",
+        "label": "Image for Mobile",
+        "type": "image"
+    }, {
+        "name": "mobile_retina",
+        "label": "Image for Mobile Retina",
+        "type": "image"
+    }],
     "defaults": {
         "header": "Download",
-        "item_icon_color" : "white",
-        "image" : "%block_url%/assets/img/download_bg.jpg"
+        "desktop" : "%block_url%/assets/img/download_bg.jpg",
+        "desktop_retina" : "%block_url%/assets/img/download_bg_retina.jpg",
+        "tablet" : "%block_url%/assets/img/download_bg_tablet.jpg",
+        "tablet_retina" : "%block_url%/assets/img/download_bg_tablet-retina.jpg",
+        "mobile" : "%block_url%/assets/img/download-bg-mobile.png",
+        "mobile_retina" : "%block_url%/assets/img/download-bg-mobile-retina.png"
     }
 }

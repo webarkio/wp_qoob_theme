@@ -15,14 +15,25 @@
         "label": "Url for action button",
         "type": "text"
     }, {
-        "name": "image",
-        "label": "Image",
-        "type": "image",
-        "tags": ["wall", "tablet"]
+        "name": "btn_id",
+        "label": "Button id",
+        "type": "text"
     }, {
-        "name": "parallax",
-        "label": "Parallax Background",
-        "type": "checkbox_switch"
+        "name": "btn_onclick",
+        "label": "Button onclick",
+        "type": "text"
+    }, {
+        "name": "btn_target",
+        "label": "Button Open link in new tab?",
+        "type": "checkbox"
+    }, {
+        "name": "desktop",
+        "label": "Image for Desktop",
+        "type": "image"
+    }, {
+        "name": "desktop_retina",
+        "label": "Image for Desktop Retina",
+        "type": "image"
     }, {
         "name": "slider",
         "label": "Slider",
@@ -38,33 +49,27 @@
             "type": "textarea"
         }]
     }], 
-
-    "assets": [{
-        "type": "image",
-        "src": "%block_url%/assets/img/slider_comments_bg.jpg",
-        "tags": ["tablet"]
-    }],
-    
     "defaults": {
         "header" : "What people are Saying <br>about us",
         "action_text": "Leave a comment",
-        "image" : "%block_url%/assets/img/slider_comments_bg.jpg",
+        "desktop" : "%block_url%/assets/img/slider_comments_bg_desktop.jpg",
+        "desktop_retina" : "%block_url%/assets/img/slider_comments_bg_desktop_retina.jpg",
         "action_url": "https://github.com/webarkio/qoob/issues/new",
         "slider": [{
-            "title": "STEVE BLASTER",
+            "title": "Steve Blaster",
             "text": "Qoob is truly one of the simple and user-friendly page builders. It took us a little time to get started with our new project. We've created several sites based on Qoob and really pleased with the results we've got.",
             "order": 0
         }, {
-            "title": "MARK JONES",
+            "title": "Mark Jones",
             "text": "No words but emotions... You can really see how your wishes fulfill. Qoob is the greatest helper in launching your startup and making it succesful.",
             "order": 1
         }, {
-            "title": "LUIS RICARDO",
+            "title": "Luis Ricardo",
             "text": "It's amazing how easily you can build the website of your dream. Just move the blocks and you're done! No coding and desigh skills are needed. It's really a miracle!",
             "order": 2
         }, {
-            "title": "LEE CHONG",
-            "text": "I really love this cute page creator. You're able to create incredible website that will showcase your projects. I have no doubts you really need to try it.",
+            "title": "Lee Chong",
+            "text": "By purchasing ONE 'Extended Commercial license', you are allowed to include qoob in ONE product (for example: premium theme, plugin or template) for sale. Customers and users of your product do not need to purchase their own license — as long as they are not developing their own commercial products with qoob",
             "order": 3
         }]      
     }

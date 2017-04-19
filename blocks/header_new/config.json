@@ -3,12 +3,28 @@
     "groups": "introduction",
     "template": "template.hbs",
     "settings": [{
-        "name": "image",
-        "label": "Image",
+        "name": "desktop",
+        "label": "Image Desktop",
         "type": "image"
     }, {
-        "name": "image_retina",
-        "label": "Image Retina",
+        "name": "desktop_retina",
+        "label": "Image Desktop Retina",
+        "type": "image"
+    }, {
+        "name": "tablet",
+        "label": "Image Tablet",
+        "type": "image"
+    }, {
+        "name": "tablet_retina",
+        "label": "Image Tablet Retina",
+        "type": "image"
+    }, {
+        "name": "mobile",
+        "label": "Image Mobile",
+        "type": "image"
+    }, {
+        "name": "mobile_retina",
+        "label": "Image Mobile Retina",
         "type": "image"
     }, {
         "name": "logo",
@@ -23,95 +39,81 @@
         "label": "Text",
         "type": "textarea"
     }, {
-        "name": "btn_first_title",
-        "label": "First Action button text",
-        "type": "text"
-    }, {
-        "name": "first_btn_id",
-        "label": "First Button's id",
-        "type": "text"
-    }, {
-        "name": "first_btn_onclick",
-        "label": "First Button's onclick",
-        "type": "text"
-    }, {
-        "name": "btn_first_inverse",
-        "label": "First Button Color Scheme",
-        "options": [{
-            "id": "normal",
-            "val": "normal"
+        "name": "accordion_buttons",
+        "label": "Buttons",
+        "type": "accordion",
+        "settings": [{
+            "name": "title",
+            "label": "First Action button text",
+            "type": "text"
         }, {
-            "id": "inversed",
-            "val": "inversed"
-        }],
-        "type": "select"
-    }, {
-        "name": "btn_first_action_url",
-        "label": "First Url for action button",
-        "type": "text"
-    }, {
-        "name": "btn_first_hidebtn",
-        "label": "First Hide button on mobile devices?",
-        "type": "checkbox"
-    }, {
-        "name": "btn_first_target",
-        "label": "First Button Open link in new tab?",
-        "type": "checkbox"
-    }, {
-        "name": "btn_second_title",
-        "label": "Second Action button text",
-        "type": "text"
-    }, {
-        "name": "second_btn_id",
-        "label": "Second Button's id",
-        "type": "text"
-    }, {
-        "name": "second_btn_onclick",
-        "label": "Second Button's onclick",
-        "type": "text"
-    }, {
-        "name": "btn_second_inverse",
-        "label": "Second Button Color Scheme",
-        "options": [{
-            "id": "normal",
-            "val": "normal"
+            "name": "btn_id",
+            "label": "Button id",
+            "type": "text"
         }, {
-            "id": "inversed",
-            "val": "inversed"
-        }],
-        "type": "select"
-    }, {
-        "name": "btn_second_action_url",
-        "label": "Second Url for action button",
-        "type": "text"
-    }, {
-        "name": "btn_second_hidebtn",
-        "label": "Second Hide button on mobile devices?",
-        "type": "checkbox"
-    }, {
-        "name": "btn_second_target",
-        "label": "Second Button Open link in new tab?",
-        "type": "checkbox"
+            "name": "btn_onclick",
+            "label": "Button onclick",
+            "type": "text"
+        }, {
+            "name": "btn_inverse",
+            "label": "Button Color Scheme",
+            "options": [{
+                "id": "normal",
+                "val": "normal"
+            }, {
+                "id": "inversed",
+                "val": "inversed"
+            }],
+            "type": "select"
+        }, {
+            "name": "btn_action_url",
+            "label": "Url for action button",
+            "type": "text"
+        }, {
+            "name": "btn_hidebtn",
+            "label": "Hide button on mobile devices?",
+            "type": "checkbox"
+        }, {
+            "name": "btn_target",
+            "label": "Button Open link in new tab?",
+            "type": "checkbox"
+        }]
     }],
     "defaults": {
-        "image_retina" : "%block_url%/assets/img/header-bg-new_retina.jpg",
-        "image" : "%block_url%/assets/img/header-bg-new.jpg",
+        "desktop" : "%block_url%/assets/img/header-bg-new.jpg",
+        "desktop_retina" : "%block_url%/assets/img/header-bg-new_retina.jpg",
+        "tablet" : "%block_url%/assets/img/header-bg-new-tablet.png",
+        "tablet_retina" : "%block_url%/assets/img/header-bg-new-tablet-retina.png",
+        "mobile" : "%block_url%/assets/img/header-bg-new-mobile.png",
+        "mobile_retina" : "%block_url%/assets/img/header-bg-new-mobile-retina.png",
         "logo": "%block_url%/assets/img/qoob_main_logo_black.png",
         "header": "Make a beautiful website from scratch fast and for free",
         "text": "<p>Qoob website builder offers a great number of tools and features with an intuitive interface for free. It is a powerful solution that enables you to make a customized website without any prior design and run it with minimum technical knowledge. The first page of your awesome website is just a few clicks away.</p>",
-        "first_btn_id": "",
-        "first_btn_onclick": "",
-        "btn_first_title": "Try now",
-        "btn_first_action_url": "http://webark.com/qoob/demo/",
-        "btn_first_inverse": "inversed",
-        "btn_first_target": 1,
-        "btn_first_hidebtn": 1,
         "second_btn_id": "",
         "second_btn_onclick": "",
         "btn_second_title": "Download",
         "btn_second_action_url": "http://webark.com/qoob/download",
         "btn_second_inverse": "inversed",
         "btn_second_target": 0,
-        "btn_second_hidebtn": 0
+        "btn_second_hidebtn": 0,
+        "accordion_buttons": [{
+            "title": "Try now",
+            "btn_id": "",
+            "btn_onclick": "",
+            "btn_action_url": "http://webark.com/qoob/demo/",
+            "btn_inverse": "inversed",
+            "btn_target": 1,
+            "btn_hidebtn": 1,
+            "order": 0
+        }, {
+            "title": "Download",
+            "btn_id": "",
+            "btn_onclick": "",
+            "btn_action_url": "http://webark.com/qoob/download",
+            "btn_inverse": "inversed",
+            "btn_target": 0,
+            "btn_hidebtn": 0,
+            "order": 1
+        }]
     }
 }

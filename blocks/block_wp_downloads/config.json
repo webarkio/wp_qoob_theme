@@ -23,6 +23,22 @@
             "label": "Icon",
             "type": "icon",
             "presets": ["fa fa-play-circle", "fa fa-github", "fa fa-book", "fa fa-book"]
+        }, {
+            "name": "btn_id",
+            "label": "Button id",
+            "type": "text"
+        }, {
+            "name": "btn_onclick",
+            "label": "Button onclick",
+            "type": "text"
+        }, {
+            "name": "btn_hidebtn",
+            "label": "Hide button on mobile devices?",
+            "type": "checkbox"
+        }, {
+            "name": "btn_target",
+            "label": "Button Open link in new tab?",
+            "type": "checkbox"
         }]
     }, {
         "name": "url_pl",
@@ -39,24 +55,49 @@
         "value_title" : "install",
         "html_list": [{
             "title": "Try demo",
-            "url": "http://webark.io:8000/qoob.html",
+            "url": "http://webark.com/qoob/demo/",
             "icon": "fa fa-play-circle",
+            "btn_id": "",
+            "btn_onclick": "",
+            "btn_target": 1,
+            "btn_hidebtn": 0,
             "order": 0
+        }, {
+            "title": "Download",
+            "url": "https://downloads.wordpress.org/plugin/qoob.2.0.1.zip",
+            "icon": "fa fa-download",
+            "btn_id": "",
+            "btn_onclick": "",
+            "btn_target": 1,
+            "btn_hidebtn": 0,
+            "order": 1
         }, {
             "title": "View on GitHub",
             "url": "https://github.com/webarkio/wp_qoob",
             "icon": "fa fa-github",
-            "order": 1
+            "btn_id": "",
+            "btn_onclick": "",
+            "btn_target": 1,
+            "btn_hidebtn": 0,
+            "order": 2
         }, {
             "title": "Installation",
             "url": "http://webark.com/qoob/docs/wordpress-page-builder/wordpress-installation/",
             "icon": "fa fa-book",
-            "order": 2
+            "btn_id": "",
+            "btn_onclick": "",
+            "btn_target": 1,
+            "btn_hidebtn": 0,
+            "order": 3
         }, {
             "title": "Getting Started with qoob for WordPress",
             "url": "http://webark.com/qoob/docs/wordpress-page-builder/wordpress-getting-started/",
             "icon": "fa fa-book",
-            "order": 3
+            "btn_id": "",
+            "btn_onclick": "",
+            "btn_target": 1,
+            "btn_hidebtn": 0,
+            "order": 4
         }]
     }
 }

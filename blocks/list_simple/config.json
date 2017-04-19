@@ -17,7 +17,7 @@
         }]
     }],
     "defaults": {
-        "header": "WHAT'S NEW",
+        "header": "What's new in version 2.0",
         "list": [{
             "title": "Create your page in minutes with Blocks builder",
             "order": 0

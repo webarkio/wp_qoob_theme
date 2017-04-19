@@ -23,6 +23,22 @@
             "label": "Icon",
             "type": "icon",
             "presets": ["fa fa-play-circle", "fa fa-github", "fa fa-book", "fa fa-book"]
+        }, {
+            "name": "btn_id",
+            "label": "Button id",
+            "type": "text"
+        }, {
+            "name": "btn_onclick",
+            "label": "Button onclick",
+            "type": "text"
+        }, {
+            "name": "btn_hidebtn",
+            "label": "Hide button on mobile devices?",
+            "type": "checkbox"
+        }, {
+            "name": "btn_target",
+            "label": "Button Open link in new tab?",
+            "type": "checkbox"
         }]
     }, {
             "name": "action_text",
@@ -39,23 +55,39 @@
         "action_url" : "http://webark.com/qoob/download/",
         "html_list": [{
             "title": "Try demo",
-            "url": "http://webark.io:8000/qoob.html",
-            "icon": "fa fa-play-circle",
+            "url": "http://webark.com/qoob/demo/",
+            "icon": "fa fa-play-circle","btn_id": "",
+            "btn_id": "",
+            "btn_onclick": "",
+            "btn_target": 1,
+            "btn_hidebtn": 0,
             "order": 0
         }, {
             "title": "View on GitHub",
-            "url": "https://github.com/webarkio/html_qoob_demo",
+            "url": "https://github.com/webarkio/html_qoob",
             "icon": "fa fa-github",
+            "btn_id": "",
+            "btn_onclick": "",
+            "btn_target": 1,
+            "btn_hidebtn": 0,
             "order": 1
         }, {
             "title": "Installation",
             "url": "http://webark.com/qoob/docs/html-page-builder/installation/",
             "icon": "fa fa-book",
+            "btn_id": "",
+            "btn_onclick": "",
+            "btn_target": 1,
+            "btn_hidebtn": 0,
             "order": 2
         }, {
             "title": "Getting Started with qoob for HTML",
             "url": "http://webark.com/qoob/docs/html-page-builder/getting-started/",
             "icon": "fa fa-book",
+            "btn_id": "",
+            "btn_onclick": "",
+            "btn_target": 1,
+            "btn_hidebtn": 0,
             "order": 3
         }]
     }

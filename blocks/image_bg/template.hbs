@@ -2,7 +2,24 @@
 	{{#if header}}
 	<h2 class="h2-block">{{{header}}}</h2>
 	{{/if}}
-	<img id="background-block-{{id}}" class="background-block imagedesktop" src="{{imagedesktop}}" />
-	<img id="background-block-{{id}}" class="background-block imagetablet"  src="{{imagetablet}}" />
-	<img id="background-block-{{id}}" class="background-block imagemobile"  src="{{imagemobile}}" />
 </section>
+
+<style>
+	.block-image-bg.block-image-bg-{{id}} {
+		background-image: url('{{desktop}}');
+		background-image: -webkit-image-set(url('{{desktop}}') 1x, url('{{desktop_retina}}') 2x);
+	}
+	@media (max-width: 1224px) {
+		.block-image-bg.block-image-bg-{{id}} {
+			background-image: url('{{tablet}}');
+			background-image: -webkit-image-set(url('{{tablet}}') 1x, url('{{tablet_retina}}') 2x);
+		}
+	}
+	@media (max-width: 767px) {
+		.block-image-bg.block-image-bg-{{id}} {
+			background-image: url('{{mobile}}');
+			background-image: -webkit-image-set(url('{{mobile}}') 1x, url('{{mobile_retina}}') 2x);
+
+		}
+	}
+</style>

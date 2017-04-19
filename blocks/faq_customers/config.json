@@ -28,17 +28,13 @@
             "content": "It’s an open source license that allows you to get a Page builder plugin and limited technical support absolutely for free. This type of license implies using Qoob for building non-commercial websites on any CMS and framework. Having bought open source license you are provided with free updates on the permanent basis. It doesn’t allow you to use Qoob plugin for commercial goals.",
             "order": 0
         }, {
-            "title": "Personal license",
+            "title": "Single Commercial License",
             "content": "We offer you to purchase personal license along with Qoob plugin only for $29. You’ll be getting regular support all through the period of product usage. Personal license implies using a Page builder plugin for creating only one website based on any CMS and framework. With this kind of license you can’t use a Page builder plugin for commercial goals.",
             "order": 1
         }, {
-            "title": "Professional license",
-            "content": "Unlike the previous kinds, this type of license, valued at $99, provides you with technical premium support and lets you to make up to 10 websites using a Page builder plugin on any CMS and framework. With professional license you’ll be able to get free updates constantly during the life of the product. You're not supposed to use Qoob for commercial purposes.",
+            "title": "Extended Commerce license",
+            "content": "By purchasing ONE 'Extended Commercial license', you are allowed to include qoob in ONE product (for example: premium theme, plugin or template) for sale. Customers and users of your product do not need to purchase their own license — as long as they are not developing their own commercial products with qoob",
             "order": 2
-        }, {
-            "title": "Commerce license",
-            "content": "You’ll be able to create unlimited number of websites in case you buy commerce license only for $179! Like other kinds of licenses you get premium technical support and free updates on an ongoing basis. Commercial license gives you an opportunity to use Qoob plugin for reselling.",
-            "order": 3
         }]
     }
 }

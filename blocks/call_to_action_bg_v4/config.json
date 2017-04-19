@@ -7,20 +7,29 @@
         "label": "Header",
         "type": "text"
     }, {
-        "name": "imagedesktop",
-        "label": "Image for desktop",
-        "type": "image",
-        "tags": ["wall", "desktop"]
+        "name": "desktop",
+        "label": "Image for Desktop",
+        "type": "image"
     }, {
-        "name": "imagetablet",
-        "label": "Image for tablet",
-        "type": "image",
-        "tags": ["wall", "tablet"]
+        "name": "desktop_retina",
+        "label": "Image for Desktop Retina",
+        "type": "image"
     }, {
-        "name": "imagemobile",
-        "label": "Image for modile",
-        "type": "image",
-        "tags": ["wall", "mobile"]
+        "name": "tablet",
+        "label": "Image for Tablet",
+        "type": "image"
+    }, {
+        "name": "tablet_retina",
+        "label": "Image for Tablet Retina",
+        "type": "image"
+    }, {
+        "name": "mobile",
+        "label": "Image for Mobile",
+        "type": "image"
+    }, {
+        "name": "mobile_retina",
+        "label": "Image for Mobile Retina",
+        "type": "image"
     }, {
         "name": "action_text",
         "label": "Action button text",
@@ -29,13 +38,36 @@
         "name": "action_url",
         "label": "Url for action button",
         "type": "text"
+    }, {
+        "name": "btn_id",
+        "label": "Button id",
+        "type": "text"
+    }, {
+        "name": "btn_onclick",
+        "label": "Button onclick",
+        "type": "text"
+    }, {
+        "name": "btn_hidebtn",
+        "label": "Hide button on mobile devices?",
+        "type": "checkbox"
+    }, {
+        "name": "btn_target",
+        "label": "Button Open link in new tab?",
+        "type": "checkbox"
     }],
     "defaults": {
         "header": "Premium themes",
         "action_text" : "More",
         "action_url" : "https://themeforest.net/user/webarkio/portfolio?ref=webarkio",
-        "imagedesktop" : "%block_url%/assets/img/call_to_action_bg4.jpg",
-        "imagetablet" : "%block_url%/assets/img/call_to_action_tablet_bg4.png",
-        "imagemobile" : "%block_url%/assets/img/call_to_action_mobile_bg4.png"
+        "btn_id": "",
+        "btn_onclick": "",
+        "btn_target": 1,
+        "btn_hidebtn": 0,
+        "desktop" : "%block_url%/assets/img/call_to_action_bg4.jpg",
+        "desktop_retina" : "%block_url%/assets/img/call_to_action_bg4_retina.jpg",
+        "tablet" : "%block_url%/assets/img/call_to_action_bg4_tablet.png",
+        "tablet_retina" : "%block_url%/assets/img/call_to_action_bg4_tablet_retina.png",
+        "mobile" : "%block_url%/assets/img/call_to_action_bg4_mobile.png",
+        "mobile_retina" : "%block_url%/assets/img/call_to_action_bg4_mobile_retina.png"
     }
 }

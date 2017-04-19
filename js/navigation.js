@@ -23,7 +23,7 @@
     // Submenu center 
     /************************/
     function menu_center() {
-        if (jQuery(window).width() > 1025) {
+        if (jQuery(window).width() > 768) {
             // document.onreadystatechange = function() {
             //     if (document.readyState === 'complete') {
                     jQuery("#menu > li > ul").each(function(){
@@ -62,7 +62,7 @@
             }
         });
 
-        if (jQuery(window).width() < 1025) {
+        if (jQuery(window).width() < 768) {
 
             if (jQuery("#menu").length > 0) {
 
@@ -98,7 +98,7 @@
             jQuery('#mmenu-wrap').removeClass('open');
 
         }
-         if (jQuery(window).width() < 1025) { 
+         if (jQuery(window).width() < 768) { 
             jQuery('.site-header.fixed').addClass('mobile-show');
         }else {
             jQuery('.site-header.fixed').removeClass('mobile-show');

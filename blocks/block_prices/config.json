@@ -14,19 +14,46 @@
         "name": "button_url",
         "label": "Button url",
         "type": "text"
+    }, {
+        "name": "btn_id",
+        "label": "Button id",
+        "type": "text"
+    }, {
+        "name": "btn_onclick",
+        "label": "Button onclick",
+        "type": "text"
+    }, {
+        "name": "btn_target",
+        "label": "Button Open link in new tab?",
+        "type": "checkbox"
     }, { 
         "name": "description",
         "label": "Description",
         "type": "text"
     }, {
-        "name": "image",
-        "label": "Image",
-        "type": "image",
-        "tags": ["wall", "tablet"]
-    },  {
-        "name": "parallax",
-        "label": "Parallax Background",
-        "type": "checkbox_switch"
+        "name": "desktop",
+        "label": "Image for Desktop",
+        "type": "image"
+    }, {
+        "name": "desktop_retina",
+        "label": "Image for Desktop Retina",
+        "type": "image"
+    }, {
+        "name": "tablet",
+        "label": "Image for Tablet",
+        "type": "image"
+    }, {
+        "name": "tablet_retina",
+        "label": "Image for Tablet Retina",
+        "type": "image"
+    }, {
+        "name": "mobile",
+        "label": "Image for Mobile",
+        "type": "image"
+    }, {
+        "name": "mobile_retina",
+        "label": "Image for Mobile Retina",
+        "type": "image"
     }, {
         "name": "case",
         "label": "List", 
@@ -58,6 +85,18 @@
             "label": "Url for action button",
             "type": "text"
         }, {
+            "name": "btn_id",
+            "label": "Button id",
+            "type": "text"
+        }, {
+            "name": "btn_onclick",
+            "label": "Button onclick",
+            "type": "text"
+        }, {
+            "name": "btn_target",
+            "label": "Button Open link in new tab?",
+            "type": "checkbox"
+        }, {
             "name": "best_proposal",
             "label": "Zoom best proposal",
             "type": "checkbox"
@@ -69,11 +108,16 @@
         "tags": ["wall"]
     }],
     "defaults": {
-        "header": "Used by 385,236 happy <br>customers",
+        "header": "Used by 385,236 happy customers",
         "description" : "We do have a 30 day money back guarantee for all type of licenses.",
-        "image" : "%block_url%/assets/img/prices_bg.jpg",
+        "desktop" : "%block_url%/assets/img/prices_bg-desktop.png",
+        "desktop_retina" : "%block_url%/assets/img/prices_bg-desktop-retina.png",
+        "tablet" : "%block_url%/assets/img/prices_bg-tablet.png",
+        "tablet_retina" : "%block_url%/assets/img/prices_bg-tablet-retina.png",
+        "mobile" : "%block_url%/assets/img/prices_bg-mobile.png",
+        "mobile_retina" : "%block_url%/assets/img/prices_bg-mobile-retina.png",
         "button_text" : "TRY LIVE DEMO BEFORE BUY",
-        "button_url" : "http://webark.io:8000/qoob.html",
+        "button_url" : "http://webark.com/qoob/demo/",
         "case": [{
             "title": "Open source license",
             "price": "Free",
@@ -96,7 +140,7 @@
             "action_text": "Download",
             "action_url": "http://webark.com/qoob/download"
         }, {
-            "title": "Single Commercial licenses",
+            "title": "Single Commercial",
             "price": "<span>$</span>29",
             "content_list": [{
                 "title": "Regular Support",
@@ -117,7 +161,7 @@
             "action_text": "Buy",
             "action_url": "http://webark.com/pay.php?name=Qoob Single Commercial License&price=29.00"
         }, {
-            "title": "Extended Commercial licenses",
+            "title": "Extended Commercial",
             "price": "<span>$</span>119",
             "content_list": [{
                 "title": "Premium Technical Support",

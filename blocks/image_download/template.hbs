@@ -1,5 +1,5 @@
 <section class="block-image-download block-image-download-{{id}}">
-	<div id="background-block-{{id}}" class="background-block {{#ifCond parallax '==' '1'}}parallax{{/ifCond}}"  style="{{#if image}}background-image : url({{image}}); {{/if}} {{#if item_icon_color}} background-color : {{item_icon_color}};" {{/if}}></div>
+
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
@@ -10,11 +10,21 @@
 		</div>
 	</div>
 </section>
-<script>
-	jQuery(document).ready(function() {
-			jQuery(window).scroll(function () {
-		        var scrolled = jQuery(document).scrollTop() - jQuery('.block-image-download-{{id}}').offset().top;
-		        jQuery('#background-block-{{id}}.parallax').css('top', scrolled + 'px');
-		    });
-	});
-</script>
+<style>
+  .block-image-download.block-image-download-{{id}} {
+    background-image: url('{{desktop}}');
+    background-image: -webkit-image-set(url('{{desktop}}') 1x, url('{{desktop_retina}}') 2x);
+  }
+  @media (max-width: 991px) {
+     .block-image-download.block-image-download-{{id}} {
+      background-image: url('{{tablet}}');
+      background-image: -webkit-image-set(url('{{tablet}}') 1x, url('{{tablet_retina}}') 2x);
+    }
+  }
+  @media (max-width: 767px) {
+    .block-image-download.block-image-download-{{id}} {
+      background-image: url('{{mobile}}');
+      background-image: -webkit-image-set(url('{{mobile}}') 1x, url('{{mobile_retina}}') 2x);
+    }
+}
+</style>

@@ -15,6 +15,14 @@
                     "label": "Title",
                     "type": "text"
                 }, {
+                    "name": "image",
+                    "label": "Image for Desktop",
+                    "type": "image"
+                }, {
+                    "name": "image_retina",
+                    "label": "Image for Retina",
+                    "type": "image"
+                }, {
                     "name": "url",
                     "label": "Url video",
                     "type": "text",
@@ -25,22 +33,32 @@
         "header": "",
         "video": [{
                 "title": "Title 1",
+                "image": "%block_url%/assets/img/poster_video1.jpg",
+                "image_retina": "%block_url%/assets/img/poster_img1.jpg",
                 "url": "https://www.youtube.com/embed/nTvWrpHp80w",
                 "order": 0
             }, {
                 "title": "Title 2",
+                "image": "%block_url%/assets/img/poster_video1.jpg",
+                "image_retina": "%block_url%/assets/img/poster_img1.jpg",
                 "url": "https://www.youtube.com/embed/xkrxfAhzE9E",
                 "order": 1
             }, {
                 "title": "Title 3",
+                "image": "%block_url%/assets/img/poster_video1.jpg",
+                "image_retina": "%block_url%/assets/img/poster_img1.jpg",
                 "url": "https://www.youtube.com/embed/Bnzi-FQpLqk",
                 "order": 2
             }, {
                 "title": "Title 4",
+                "image": "%block_url%/assets/img/poster_video1.jpg",
+                "image_retina": "%block_url%/assets/img/poster_img1.jpg",
                 "url": "https://www.youtube.com/embed/GgnTbYsqOZQ",
                 "order": 3
             },{
                 "title": "Title 5",
+                "image": "%block_url%/assets/img/poster_video1.jpg",
+                "image_retina": "%block_url%/assets/img/poster_img1.jpg",
                 "url": "https://www.youtube.com/embed/Mlimu8xuukc",
                 "order": 4
             }]

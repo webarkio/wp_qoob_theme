@@ -6,16 +6,14 @@
         "name": "header",
         "label": "Header",
         "type": "text"
-    }, 
-    {
+    }, {
         "name": "image",
         "label": "Image",
-        "type": "image",
-        "tags": ["wall", "tablet"]
-    },  {
-        "name": "parallax",
-        "label": "Parallax Background",
-        "type": "checkbox_switch"
+        "type": "image"
+    }, {
+        "name": "image_retina",
+        "label": "Image Retina",
+        "type": "image"
     }, {
         "name": "action_text",
         "label": "Action button text",
@@ -24,6 +22,22 @@
         "name": "action_url",
         "label": "Url for action button",
         "type": "text"
+    }, {
+        "name": "btn_id",
+        "label": "Button id",
+        "type": "text"
+    }, {
+        "name": "btn_onclick",
+        "label": "Button onclick",
+        "type": "text"
+    }, {
+        "name": "btn_hidebtn",
+        "label": "Hide button on mobile devices?",
+        "type": "checkbox"
+    }, {
+        "name": "btn_target",
+        "label": "Button Open link in new tab?",
+        "type": "checkbox"
     }],
     "assets": [{
         "type": "image",
@@ -34,7 +48,12 @@
         "header": "30 + Predefined Blocks",
         "description" : "This web site was created with qoob!",
         "image" : "%block_url%/assets/img/call_to_action_bg_v3.jpg",
+        "image_retina" : "%block_url%/assets/img/call_to_action_bg_v3_retina.jpg",
         "action_text" : "Checkout now",
-        "action_url" : "http://webark.io:8000"
+        "action_url" : "http://webark.com/qoob/demo/",
+        "btn_id": "",
+        "btn_onclick": "",
+        "btn_target": 1,
+        "btn_hidebtn": 0
     }
 }

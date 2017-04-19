@@ -1,22 +1,44 @@
 <section class="call-to-action-bg-v4 call-to-action-bg-v4-{{id}}">
 	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
+	<div class="row">
+			<div class="visible-xs col-lg-12 col-md-12 col-sm-12 col-xs-12">
 				{{#if header}}
-				<h2 class="header-block">{{{header}}}</h2>
+				<h2 class="h2-block">{{header}}</h2>
 				{{/if}}
 			</div>
 		</div>
-	</div>
-	<div id="background-block-{{id}}" class="background-block imagedesktop" {{#if imagemobile}} style="background-image : url({{imagedesktop}});" {{/if}}></div>
-	<div id="background-block-{{id}}" class="background-block imagetablet" {{#if imagetablet}} style="background-image : url({{imagetablet}});" {{/if}}></div>
-	<img id="background-block-{{id}}" class="background-block imagemobile" {{#if imagemobile}} src="{{imagemobile}}" {{/if}}/>
-
-	<div class="container">
 		<div class="row">
-			<div class="col-lg-12">
-				<a href="{{action_url}}" target="_blank" class="btn btn-action br-white">{{action_text}}</a>
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<a href="{{action_url}}" {{#if btn_id }} id="{{btn_id}}" {{/if}} {{#if btn_onclick }} onclick="{{btn_onclick}}" {{/if}} class="btn btn-action br-white{{#ifCond btn_hidebtn '==' '1'}} hidden-xs{{/ifCond}}" {{#if btn_target}}target="blank"{{/if}}>{{action_text}}</a>
 			</div>
 		</div>
 	</div>
 </section>
+<style>
+	.call-to-action-bg-v4-{{id}} {
+		background: url('{{desktop}}');
+		background: -webkit-image-set(url('{{desktop}}') 1x, url('{{desktop_retina}}') 2x);
+		background-position: center center;
+		background-repeat:  no-repeat;
+		background-size: cover;
+	}
+	@media (max-width: 1065px) {
+		.call-to-action-bg-v4-{{id}} {
+			background-image: url('{{tablet}}');
+			background-image: -webkit-image-set(url('{{tablet}}') 1x, url('{{tablet_retina}}') 2x);
+			background-position: top center;
+			background-color: #dedede;
+			background-repeat:  no-repeat;
+			background-size: contain;
+		}
+	}
+	@media (max-width: 767px) {
+		.call-to-action-bg-v4-{{id}} {
+			background-image: url('{{mobile}}');
+			background-image: -webkit-image-set(url('{{mobile}}') 1x, url('{{mobile_retina}}') 2x);
+			background-position: center center;
+			background-repeat:  no-repeat;
+			background-size: initial;
+		}
+	}
+</style>

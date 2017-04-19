@@ -716,6 +716,7 @@ textarea {
 	width: 100%;
 	z-index: 99;
 	transition: all 0.5s ease;
+	padding: 6px 0 
 }
 .site-header.fixed.move {
 	top: -100px;
@@ -737,17 +738,34 @@ textarea {
 		margin-bottom: 3px;
 	}
 	.site-header.fixed .site-branding {
-		margin-top: 7px;
-		margin-bottom: 3px;
+		margin-top: 9px;
+		margin-bottom: 4px;
 	}
 	.site-header .site-branding img {
 		height: 3rem;
 		width: 3rem;
 	}
 	.site-header.fixed .site-title {
-		margin-top: -12px;
+		margin-top: -9px;
 		font-size: 2.7rem;
 		margin-left: 0px;
+		color: #000;
+	    text-decoration: none;
+	    outline: 0;
+	    font-family: "Roboto",sans-serif !important;
+	    font-size: 2rem;
+	    font-weight: bold;
+	}
+	.site-header .site-title {
+		margin-top: -9px;
+		font-size: 2.7rem;
+		margin-left: 0px;
+		color: #000;
+	    text-decoration: none;
+	    outline: 0;
+	    font-family: "Roboto",sans-serif !important;
+	    font-size: 2rem;
+	    font-weight: bold;
 	}
 	.custom-logo-link,
 	.site-title {
@@ -789,7 +807,28 @@ textarea {
 		top: 0;
 		background-color: #fff;
 	}
-
+@media (max-width: 992px) {
+	.site-header.fixed {
+		padding: 10px 0;
+	}
+}
+@media (max-width: 767px) {
+	.site-header {
+		height: 59px;
+	}
+	.site-header .site-branding img {
+		height: 3.3rem;
+		width: 3.3rem;
+	}
+	.site-branding {
+    margin-top: 13px;
+    margin-bottom: 11px;
+}
+.site-header .site-title {
+    margin-top: -8px;
+    font-size: 2.4rem;
+}
+}
 
 /*--------------------------------------------------------------
 # Navigation
@@ -839,10 +878,11 @@ a:active {
 .main-navigation a {
 	display: block;
 	text-decoration: none;
-	font-family: "Roboto", sans-serif;
+	font-family: "RobotoMedium", sans-serif;
 	color: #000;
 	font-weight: 500;
-	font-size: 1.5rem;
+	font-size: 1.6rem;
+	letter-spacing: 0.024em;
 }
 .site-header.fixed .sf-menu {
 	margin-bottom: .1em;
@@ -871,7 +911,7 @@ a:active {
 }
 .sf-menu li.social-media-icon {
 	position: relative;
-	top: 10px
+	top: 11px
 }
 
 .sf-menu li.menu-item-has-children:hover,
@@ -1034,10 +1074,15 @@ a:active {
 		margin: 0 6px !important;
 	}
 
-	.social-media-icon-footer i {
+	.social-media-icon-footer .fa-facebook {
+		font-size: 21px;
+	}
+	.social-media-icon-footer .fa-github {
 		font-size: 25px;
 	}
-
+	.social-media-icon-footer .fa-twitter {
+		font-size: 24px;
+	}
 	.social-media-icon-footer i:hover {
 		color: #0084ff;
 	}
@@ -1187,6 +1232,8 @@ a:active {
 	#mobile-menu-button {
 		float: right;
 		outline: none;
+		position: relative;
+    	right: -9px;
 	}
 	.site-header.fixed #mobile-menu-button .icon {
 		margin: 7px 0 0px 7px;
@@ -1194,11 +1241,11 @@ a:active {
 
 	#mobile-menu-button .icon {
 		line-height: 92px;
-		padding: 9px 8px;
-		margin: 5px 0 0px 6px;
-		font-size: 0;
-		height: 35px;
-		width: 40px;
+	    padding: 5px 8px;
+	    margin: 0px 0 0px 0px;
+	    font-size: 0;
+	    height: 59px;
+	    width: 45px;
 		display: inline-block;
 		float: right;
 		cursor: pointer;
@@ -1210,10 +1257,12 @@ a:active {
 		background: #000;
 		display: block;
 		width: 100%;
-		height: 3px;
+		height: 5px;
 		margin-left: auto;
 		margin-right: auto;
 		margin-bottom: 4px;
+		position: relative;
+    	top: 17px
 	}
 	@media (max-width: 1024px) {
 		#mobile-menu {
@@ -1237,15 +1286,7 @@ a:active {
 			top: 0;
 			z-index: 10;
 		}
-/*#mobile-menu .social-media-icon {
-	position: absolute;
-	left: 0;
-	top: 0;
-}
-#mobile-menu .social-media-icon:first-child {
-	margin-left: 0;
-	left: 20px;
-	}*/
+
 	.sf-menu .social-media-icon .fa-facebook, #mobile-menu .social-media-icon .fa-facebook {
 		font-size: 21px;
 	}
@@ -1324,31 +1365,7 @@ a:active {
 		transform: rotate(-45deg); 
 	}
 }
-@media (max-width: 531px) {
-	#mobile-menu-button .icon {
-		line-height: 92px;
-		padding: 0;
-		margin: 0;
-		font-size: 0;
-		height: 24px;
-		float: none;
-		width: 21px;
-		display: inline-block;
-		cursor: pointer;
-		margin-top: 14px;
-	}
-	.site-header {
-		width: 51px;
-		float: none;
-		height: 45px;
-		position: absolute;
-		right: 0;
-		z-index: 1;
-	}
-	.site-branding {
-		display: none;
-	}
-}
+
 /*--------------------------------------------------------------
 ## Footer menu
 --------------------------------------------------------------*/
@@ -1365,10 +1382,10 @@ a:active {
 
 .footer-navigation li a {
 	color: inherit;
-	font-size: 1.5rem;
-	font-family: "RobotoLight", sans-serif;
+	font-size: 1.6rem;
+	font-family: "RobotoMedium", sans-serif;
 	text-decoration: none;
-	letter-spacing: 0.01em;
+	letter-spacing: 0.024em;
 }
 
 .footer-navigation li a:hover {
@@ -1379,6 +1396,7 @@ a:active {
 	color: inherit;
 	font-size: 1.4rem;
 	font-family: "RobotoLight", sans-serif;
+	margin-left: 22px !important;
 }
 
 .footer-copyright a {
@@ -2269,7 +2287,7 @@ a:active {
 
 .site-footer {
 	background-color: #000;
-	padding: 10px 0;
+	padding: 31px 0;
 	color: #fff;
 	text-align: center;
 }
