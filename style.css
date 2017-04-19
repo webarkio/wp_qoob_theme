@@ -893,8 +893,9 @@ a:active {
 .sf-menu a {
 	border: none;
 	padding: 0.66em 0em;
-	padding-right: 3rem;
-	letter-spacing: 0.01em
+	padding-right: 1.5rem;
+	letter-spacing: 0.01em;
+	padding-left: 1.5rem;
 }
 
 .sf-menu li {
