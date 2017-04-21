@@ -747,13 +747,13 @@ textarea {
 	}
 	.site-header.fixed .site-title {
 		margin-top: -9px;
-		font-size: 2.7rem;
 		margin-left: 0px;
 		color: #000;
 	    text-decoration: none;
 	    outline: 0;
 	    font-family: "Roboto",sans-serif !important;
 	    font-size: 2rem;
+	    letter-spacing: 0.025em;
 	    font-weight: bold;
 	}
 	.site-header .site-title {
@@ -894,7 +894,7 @@ a:active {
 	border: none;
 	padding: 0.66em 0em;
 	padding-right: 1.5rem;
-	letter-spacing: 0.01em;
+	letter-spacing: 0.025em;
 	padding-left: 1.5rem;
 }
 

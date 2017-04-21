@@ -86,6 +86,7 @@
  margin-top: 107px;
  color: #000;
  font-size: 5.4rem;
+ letter-spacing: 0.025em;
  position: relative;
  left: 0;
  right: 0;
@@ -134,7 +135,7 @@
     padding-bottom: 10.8rem;
     text-align: center;
     background-repeat: no-repeat;
-    background-size: inherit;
+    background-size: contain;
     background-position: center;
     background-color: #dfdfdf;
     overflow: hidden;
@@ -580,7 +581,7 @@
 --------------------------------------------------------------*/
 .call-to-action-bg-v3 {
     padding-top: 7rem;
-    padding-bottom: 6.5rem;
+    padding-bottom: 10.7rem;
     text-align: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -600,7 +601,7 @@
     font-size: 5.4rem;
     font-family: "RobotoBlack", sans-serif;
     text-shadow: 0px 7px 83px #000;
-    letter-spacing: 0.024em;
+    letter-spacing: 0.025em;
 }
 .call-to-action-bg-v3 .header-desc {
     color: #000;
@@ -608,7 +609,8 @@
 .call-to-action-bg-v3 .btn-action {
     display: inline-block;
     margin: auto;
-    min-width: 260px;
+    max-width: 240px;
+    width: 100%;
     font-size: 1.8rem;
     color: #fff;
     font-family: "RobotoBold", sans-serif;
@@ -1254,7 +1256,7 @@
     color: #000;
     font-family: "RobotoBlack", sans-serif;
     margin: 1.7rem 0 2.1rem !important;
-    letter-spacing: 0.024em;
+    letter-spacing: 0.025em;
 }
 .list_simple ul li:before {
  display: none;
@@ -1264,9 +1266,16 @@
     color: #000;
     margin: 23px auto;
     font-family: "RobotoLight", sans-serif;
+    position: relative;
+    padding-left: 20px;
+    letter-spacing: 0.025em;
 }
 .list_simple ul .fa-check {
     margin-right: 7px;
+    font-size: 12px;
+    position: absolute;
+    top: 9px;
+    left: 0;
 }
 .list_simple ul {
     max-width: 565px;
@@ -2620,7 +2629,7 @@
 .header-new-bg .btn-header-wrap .btn {
     margin-right: 3.7rem !important;
     margin-left: 3.7rem !important;
-    min-width: 260px;
+    min-width: 240px;
     font-size: 1.8rem;
     font-family: "RobotoBold", sans-serif;
     padding: 18.5px;
@@ -2640,6 +2649,7 @@
     font-size: 5.4rem !important;
     font-family: "RobotoBlack", sans-serif;
     line-height: 75px !important;
+    letter-spacing: 0.025em;
 }
 
 .header-new-bg .btn-header-wrap {
@@ -2681,6 +2691,7 @@
         margin-bottom: 30px;
         margin-left: 0 !important;
         margin-right: 0 !important;
+        max-width: 240px;
     }
 
     .header-new-bg .btn-header-wrap .block-video-play {
@@ -2719,7 +2730,7 @@
         margin-left: 9px !important;
         margin-bottom: 0;
         min-width: auto;
-        max-width: 260px;
+        max-width: 240px;
         width: calc(50% - 18px);
         display: inline-block;
         padding: 14px 10px;
@@ -3571,9 +3582,13 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 # Slider video
 --------------------------------------------------------------*/
 .slider-video {
-    padding: 6.8rem 0 10.9rem;
+    padding: 10.7rem 0 10.2rem;
 }
-
+.slider-video .owl-theme .owl-dots .owl-dot span {
+    width: 10px;
+    height: 10px;
+    margin: 5px 4px;
+}
 .slider-video .h2-block {
     text-transform: uppercase;
     color: #000;
@@ -3938,7 +3953,7 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
     width: 100%;
     float: left;
     max-width: calc(100% - 224px);
-    border-radius: 6px 0px 0px 6px;
+    border-radius: 5px 0px 0px 5px;
     border: 3px solid #000;
     background: #fff;
     color: #7a7a7a;
@@ -3956,7 +3971,7 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
     width: 100%;
     font-family: "RobotoBold", sans-serif;
     border: none;
-    border-radius: 0px 6px 6px 0;
+    border-radius: 0px 4px 4px 0;
     height: 100%;
     padding: 0;
     font-size: 1.8rem;
@@ -3989,11 +4004,13 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
     font-size: 8.1rem;
     font-family: "RobotoBlack", sans-serif;
     color: #000;
+    letter-spacing: 0.025em;
     max-width: 50%;
 }
 .achievements-block .downloads_achievement span, 
 .achievements-block .installs_achievement span {
-    font-size: 4rem;
+    font-size: 3.6rem;
+    letter-spacing: 0.025em;
     font-family: "RobotoLight", sans-serif;
     position: relative;
     bottom: 13px;
@@ -4071,7 +4088,7 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 --------------------------------------------------------------*/
 
 .contact-image {
-    padding-top: 9.1rem;
+    padding-top: 7.1rem;
     padding-bottom: 76.2rem;
     text-align: center;
     background-position: center bottom;
@@ -4092,7 +4109,7 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
     font-family: "RobotoBlack", sans-serif;
     margin-bottom: 3.4rem;
     line-height: 75px;
-    letter-spacing: 0.024em;
+    letter-spacing: 0.025em;
 }
 
 
@@ -4100,7 +4117,7 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
     max-width: 750px;
     position: relative;
     height: 60px;
-    margin: 15px auto 15px;
+    margin: 16px auto 15px;
 }
 
 .contact-image form input[name='email'] {
@@ -4163,13 +4180,13 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
     font-size: 18px;
     font-family: "RobotoLight", sans-serif;
     line-height: 50px;
-    letter-spacing: 0.024em;
+    letter-spacing: 0.025em;
     margin-bottom: 73px;
 }
 @media (max-width: 1224px) {
     .contact-image {
-        padding-top: 4.8rem;
-        padding-bottom: 54.5rem;
+        padding-top: 7.3rem;
+        padding-bottom: 57.3rem;
         background-position: center bottom;
         background-repeat:  no-repeat;
         background-size: inherit;
@@ -4180,7 +4197,8 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
         font-family: "RobotoLight", sans-serif;
         line-height: 41px;
         letter-spacing: 0.036em;
-        margin-bottom: 46px;
+        margin-bottom: 88px;
+        margin-top: 35px;
     }
     .contact-image .h2-block {
         letter-spacing: 0.036em;
