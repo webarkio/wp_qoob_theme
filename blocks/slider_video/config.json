@@ -32,31 +32,31 @@
     "defaults": {
         "header": "",
         "video": [{
-                "title": "Title 1",
-                "image": "%block_url%/assets/img/poster_video1.jpg",
-                "image_retina": "%block_url%/assets/img/poster_img1.jpg",
+                "title": "Blocks Builder",
+                "image": "%block_url%/assets/img/poster_1.png",
+                "image_retina": "%block_url%/assets/img/poster_retina_1.png",
                 "url": "https://www.youtube.com/embed/nTvWrpHp80w",
                 "order": 0
             }, {
-                "title": "Title 2",
+                "title": "Live editing",
                 "image": "%block_url%/assets/img/poster_video1.jpg",
                 "image_retina": "%block_url%/assets/img/poster_img1.jpg",
                 "url": "https://www.youtube.com/embed/xkrxfAhzE9E",
                 "order": 1
             }, {
-                "title": "Title 3",
+                "title": "Always Looking Good",
                 "image": "%block_url%/assets/img/poster_video1.jpg",
                 "image_retina": "%block_url%/assets/img/poster_img1.jpg",
                 "url": "https://www.youtube.com/embed/Bnzi-FQpLqk",
                 "order": 2
             }, {
-                "title": "Title 4",
+                "title": "Clean inutuitive UI",
                 "image": "%block_url%/assets/img/poster_video1.jpg",
                 "image_retina": "%block_url%/assets/img/poster_img1.jpg",
                 "url": "https://www.youtube.com/embed/GgnTbYsqOZQ",
                 "order": 3
             },{
-                "title": "Title 5",
+                "title": "Realtime Editing Mobile Version",
                 "image": "%block_url%/assets/img/poster_video1.jpg",
                 "image_retina": "%block_url%/assets/img/poster_img1.jpg",
                 "url": "https://www.youtube.com/embed/Mlimu8xuukc",
