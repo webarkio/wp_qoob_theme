@@ -49,7 +49,7 @@
         "description" : "This web site was created with qoob!",
         "image" : "%block_url%/assets/img/call_to_action_bg_v3.jpg",
         "image_retina" : "%block_url%/assets/img/call_to_action_bg_v3_retina.jpg",
-        "action_text" : "Checkout now",
+        "action_text" : "Check out",
         "action_url" : "http://webark.com/qoob/demo/",
         "btn_id": "",
         "btn_onclick": "",

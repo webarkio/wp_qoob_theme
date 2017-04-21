@@ -83,7 +83,7 @@
 
 .block-image-bg .h2-block {
  text-transform: uppercase;
- margin-top: 107px;
+ margin-top: 95px;
  color: #000;
  font-size: 5.4rem;
  letter-spacing: 0.025em;
@@ -96,7 +96,7 @@
 
 @media (max-width: 1224px) { 
     .block-image-bg {
-        padding: 5rem 0 58.5rem 0;
+        padding: 7.2rem 0 58.5rem 0;
         background-position: bottom center;
         background-repeat:  no-repeat;
         background-size: inherit;
@@ -2618,6 +2618,7 @@
     margin-right: auto;
     margin-left: auto;
     max-width: 725px;
+    letter-spacing: 0.025em;
     line-height: 32px;
 }
 
