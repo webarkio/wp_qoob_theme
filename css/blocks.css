@@ -168,6 +168,7 @@
     font-family: "RobotoBlack", sans-serif;
     width: calc(100% - 30px);
     margin-left: 15px;
+    letter-spacing: 0.025em;
     margin-right: 15px;
 }
 
@@ -175,11 +176,14 @@
     color: #000;
     font-size: 3rem;
     font-family: "RobotoBold", sans-serif;
-    margin-bottom: 17px;
+    margin-bottom: 24px;
     margin-top: 35px;
-    line-height: 31px
+    line-height: 31px;
+    letter-spacing: 0.025em;
 }
-
+.slider-comments .owl-theme .owl-nav.disabled + .owl-dots {
+    margin-top: 7px;
+}
 .slider-comments .owl-dot span {
  width: 10px;
  height: 10px;
@@ -198,8 +202,9 @@
     background: #0084ff;
     font-family: "RobotoBold", sans-serif;
     font-size: 18px;
-    padding: 21px 72px;
-    margin-top: 36px;
+    letter-spacing: 0.05em;
+    padding: 21px 27.5px;
+    margin-top: 64px;
 }
 
 .slider-comments .btn-action:hover {
@@ -230,6 +235,7 @@
     text-align: center;
     font-family: "RobotoLight", sans-serif;
     line-height: 32px;
+    letter-spacing: 0.025em;
     margin-bottom: 2.1rem;
 }
 @media (max-width: 767px) {
@@ -1501,7 +1507,7 @@
     font-size: 1.8rem;
     padding: 21px 20px;
     margin: 49px auto 119px;
-    letter-spacing: 0.037em;
+    letter-spacing: 0.05em;
     font-family: "RobotoBold", sans-serif;
 }
 
@@ -1563,10 +1569,12 @@
     padding-right: 25px;
 }
 .block-prices .name_licence {
-    font-size: 18px;
+    font-size: 20px;
+    letter-spacing: 0.025em;
     font-family: "RobotoBold", sans-serif;
 }
 .block-prices .cost_license {
+    letter-spacing: 0.025em;
     font-size: 54px;
     font-family: "RobotoLight", sans-serif;
 }
@@ -1578,7 +1586,7 @@
     top: -4px;
 }
 .block-prices .content_license {
-    padding: 0 40px;
+    padding: 0 64px;
     margin-bottom: 2.4rem;
     padding-top: 25px;
 }
@@ -1588,6 +1596,7 @@
     font-size: 14px;
     font-family: "RobotoRegular", sans-serif;
     padding: 15px 0;
+    letter-spacing: 0.025em;
     margin: 0;
     border-bottom: 1px solid #efefef;
 }
@@ -2138,7 +2147,7 @@
 # Faq customers
 --------------------------------------------------------------*/
 .faq-customers {
-    padding: 8.2rem 0 11.9rem;
+    padding: 6.9rem 0 10.7rem;
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
@@ -2169,7 +2178,8 @@
     font-size: 5.4rem;
     text-transform: uppercase;
     font-family: "RobotoBlack", sans-serif;
-    margin: 1.7rem 0 2.4rem;
+    letter-spacing: 0.025em;
+    margin: 1.7rem 0 5rem;
 }
 
 .faq-customers .accordion-toggle,
@@ -2182,14 +2192,15 @@
 }
 
 .faq-customers .panel-title a {
-    font-family: "RobotoRegular", sans-serif;
+    font-family: "RobotoBold", sans-serif;
     margin: 0;
     display: block;
-    padding: 15px 45px;
+    padding: 13px 45px;
     min-height: 70px;
     height: 100%;
     background: #d9d9d9;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    letter-spacing: 0.025em;
     color: #000;
     text-align: left;
     font-weight: 300;
@@ -2200,7 +2211,7 @@
 }
 .faq-customers .panel-title .waves-effect {
     width: 100%;
-    border-radius: 0; 
+    border-radius: 0;  
 }
 .faq-customers .panel-title .waves-effect div {
     background: #0084ff;
@@ -2212,11 +2223,13 @@
 }
 
 .faq-customers .panel {
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.3rem;
 }
-
-.faq-customers .panel:last-child {
-    border-bottom: 1px solid #dbdbdb;
+.faq-customers .panel .collapse.in {
+    margin-bottom: -0.3rem;
+}
+.faq-customers .panel:last-child .panel-body {
+    border-bottom: 3px solid #dbdbdb;
 }
 
 .faq-customers .panel-heading[aria-expanded="false"] .indicator {
@@ -2225,11 +2238,10 @@
 }
 
 .faq-customers .panel-body {
-    border-left: 1px solid #dbdbdb;
-    border-right: 1px solid #dbdbdb;
-    padding: 40px 17% 36px;
+    border-left: 3px solid #dbdbdb;
+    border-right: 3px solid #dbdbdb;
+    padding: 66px 17% 62px;
 }
-
 .faq-customers .panel-body p {
     line-height: 24px;
     text-align: justify;
