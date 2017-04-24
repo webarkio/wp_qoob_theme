@@ -281,8 +281,8 @@
     font-family: "RobotoBlack", sans-serif;
     color: #000;
     text-align: center !important;
-    font-size: 4.1rem;
-    letter-spacing: 0.018em;
+    font-size: 5.4rem;
+    letter-spacing: 0.024em;
     line-height: 56px;
 }
 @media (max-width: 991px) {
@@ -317,8 +317,8 @@
 --------------------------------------------------------------*/
 
 .block-drupal-comming {
-    padding-top: 9rem;
-    padding-bottom: 8.8rem;
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
     text-align: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1331,7 +1331,7 @@
 # Block html
 --------------------------------------------------------------*/
 .block_html {
-    padding-top: 7.7rem;
+    padding-top: 7.3rem;
     padding-bottom: 8.2rem;
 }
 
@@ -1376,7 +1376,7 @@
     font-family: "RobotoBold", sans-serif;
     font-size: 1.8rem;
     letter-spacing: 0.05em;
-    padding: 17px 0px;
+    padding: 21px 0px;
     background-color: #0084ff;
     color: #fff;
     text-decoration: none;
@@ -1786,7 +1786,7 @@
     width: 100%;
     max-width: calc(100% - 178px);
     float: left;
-    border-radius: 6px 0 0 6px;
+    border-radius: 4px 0 0 4px;
     padding: 16px 26px;
     font-size: 1.8rem;
     color: #000;
