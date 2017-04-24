@@ -6,7 +6,6 @@ jQuery(document).ready(function(){
 		percentPosition: true,
 		resize: true
 	});
-
 	window.onscroll = function() {
 		if (window.pageYOffset > 107) {
 			jQuery('.site-header.fixed').addClass('move');	

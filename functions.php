@@ -122,7 +122,7 @@ function qoob_social_media_icons( $nav, $args ) {
 			}
 		}
 
-		return $nav . $icons;
+		return $nav . "<span class='wrap-social-icon'>" . $icons . "</span>";
 	}
 
 	$socials_footer = qoob_customizer_social_media_array();

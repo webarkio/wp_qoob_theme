@@ -7,18 +7,10 @@
 	 /************************/
     // Mobile Button
     /************************/
-    function show_hide_show_qoob_theme_menu() {
-
-        jQuery("#mobile-menu-button").on("click", function(e) {
-
-            e.preventDefault();
-
-            jQuery("#mobile-menu").slideToggle(300);
-            jQuery("#mmenu-wrap").toggleClass("open");
-
-        });
-
-    }
+    // function show_hide_show_qoob_theme_menu() {
+    //     jQuery("#mobile-wrap").slideToggle(300);
+    //     e.preventDefault();
+    // }
     /************************/
     // Submenu center 
     /************************/
@@ -72,16 +64,16 @@
                         class: "",
                         id: "mobile-menu"
                     }).appendTo("#mmenu-wrap");
-                    jQuery("#mobile-menu a.sf-with-ul, .mobile-menu-close").next('ul').css('margin-top', '0px');
+                    // jQuery("#mobile-menu a.sf-with-ul, .mobile-menu-close").next('ul').css('margin-top', '0px');
 
-                    jQuery("#mobile-menu a.sf-with-ul").on("click", function(e) {
+                    // jQuery("#mobile-menu a.sf-with-ul").on("click", function(e) {
 
-                        e.preventDefault();
+                    //     e.preventDefault();
 
-                        jQuery(this).toggleClass("open").next("ul").slideToggle(300);
+                    //     jQuery(this).toggleClass("open").next("ul").slideToggle(300);
 
 
-                    });
+                    // });
 
 
                 }
@@ -108,14 +100,23 @@
 
 jQuery(document).ready(function() {
     qoob_menu();
-    show_hide_show_qoob_theme_menu();
+    // show_hide_show_qoob_theme_menu();
     menu_center();
-     jQuery("#mobile-menu").find(".social-media-icon").detach();
-        jQuery(".social-media-icon").prependTo(jQuery("#mobile-menu"));
-        jQuery("<div class='mobile-menu-close'></div>").prependTo(jQuery("#mobile-menu"));
-        jQuery(".mobile-menu-close").on("click", function() {
-        jQuery("#mobile-menu").toggleClass("open").slideToggle(300);
+    jQuery("#mobile-menu-button").click(function() {
+        jQuery(this).toggleClass("btn-open");
+        jQuery("#mmenu-wrap").slideToggle(300);
+        jQuery(".site-header").toggleClass("posfixed");
     });
+    jQuery(".sf-with-ul").click(function(e) {
+        e.preventDefault();
+        jQuery(this).next("ul").slideToggle(300);
+    });
+     // jQuery("#mobile-menu").find(".social-media-icon").detach();
+        // jQuery(".social-media-icon").prependTo(jQuery("#mobile-menu"));
+        // jQuery("<div class='mobile-menu-close'></div>").prependTo(jQuery("#mobile-menu"));
+    //     jQuery(".mobile-menu-close").on("click", function() {
+    //     jQuery("#mobile-menu").toggleClass("open").slideToggle(300);
+    // });
 });
 
 jQuery(window).resize(function(){
