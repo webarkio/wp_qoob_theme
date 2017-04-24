@@ -1415,6 +1415,9 @@
 }
 
 @media (max-width: 767px) {
+    .block_html .hidden-xs {
+        display: none !important;
+    }
     .block_html .header-block span {
         display: block;
     }

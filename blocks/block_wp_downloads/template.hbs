@@ -22,7 +22,7 @@
                     <!-- Url install Qoob -->
                     <input type="hidden" name="hidden" value="wp-admin/plugin-install.php?s=qoob&tab=search&type=term"/>
                     <!-- Subscriber button -->
-                    <input type="button" class="inverse" value="{{value_title}}"/>
+                    <input type="button" class="inverse" value="{{value_title}}" {{#if button_id }} id="{{button_id}}" {{/if}} {{#if button_onclick }} onclick="{{button_onclick}}" {{/if}} />
                 </form>
         </div>
         </div>

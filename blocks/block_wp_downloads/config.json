@@ -48,11 +48,21 @@
         "name": "value_title",
         "label": "Submit button value",
         "type": "text"
+    }, {
+        "name": "button_id",
+        "label": "Button id",
+        "type": "text"
+    }, {
+        "name": "button_onclick",
+        "label": "Button onclick",
+        "type": "text"
     }],
     "defaults": {
         "header": "WordPress Version<span> 3000 downloads</span>",
         "url_pl" : "Enter your website url",
         "value_title" : "install",
+        "button_id": "",
+        "button_onclick": "",
         "html_list": [{
             "title": "Try demo",
             "url": "http://webark.com/qoob/demo/",
