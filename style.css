@@ -1061,6 +1061,8 @@ a:active {
 	.sf-menu .social-media-icon .fa-facebook {
 		font-size: 21px;
 		margin-top: 2px;
+		position: relative;
+		top: -1px;
 	}
 	.sf-menu .social-media-icon .fa-github {
 		position: relative;
@@ -1260,7 +1262,7 @@ a:active {
 	position: relative;
 	top: 17px
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	#mobile-menu {
 		padding-top: 40px;
 		display: flex;
