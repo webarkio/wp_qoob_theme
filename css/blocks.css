@@ -96,7 +96,7 @@
 
 @media (max-width: 1224px) { 
     .block-image-bg {
-        padding: 7.2rem 0 58.5rem 0;
+        padding: 4.7rem 0 58.5rem 0;
         background-position: bottom center;
         background-repeat:  no-repeat;
         background-size: inherit;
@@ -104,9 +104,8 @@
     .block-image-bg .h2-block {
         margin-top: 20px;
         line-height: 72px;
-        letter-spacing: 0.036em;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 75px;
+        padding-right: 75px;
     }
 }
 @media (max-width: 767px) { 
@@ -535,7 +534,7 @@
         max-width: 183px;
         min-width: auto;
         width: 100%;
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
     .call-to-action-bg-v4 {
         height: 589px;
@@ -644,13 +643,25 @@
     font-size: 1.8rem;
     font-family: "RobotoBold", sans-serif;
 }
-@media (max-width: 827px) { 
-
-    .call-to-action-bg-v3 .h2-block {
-        padding: 0 !important;
-        text-align: center !important;
-    }
+@media (max-width: 991px) { 
+.call-to-action-bg-v3 {
+padding-top: 4.7rem;
+padding-bottom: 8.5rem;
 }
+.call-to-action-bg-v3 .h2-block {
+        padding-left: 60px !important;
+    padding-right: 60px !important;
+    line-height: 72px;
+    text-align: center;
+}
+.call-to-action-bg-v3 .btn-action {
+    margin-top: 25px;
+}
+.call-to-action-bg-v3 {
+
+}
+}
+
 @media (max-width: 767px) {
     .call-to-action-bg-v3 .hidden-xs {
         display: none !important;
@@ -1261,7 +1272,7 @@
 .list_simple .header-block {
     font-size: 5.4rem !important;
     text-align: center !important;
-    line-height: 75px !important;
+    line-height: 72px !important;
     color: #000;
     text-transform: uppercase;
     font-family: "RobotoBlack", sans-serif;
@@ -1292,9 +1303,28 @@
     margin: 17px auto 0;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
+    .list_simple {
+    padding-top: 5rem;
+    padding-bottom: 4.2rem;
+}
+    .list_simple ul {
+        padding-left: 0 !important;
+    }
     .list_simple ul .fa-check {
         font-size: 14px;
+    }
+    .list_simple ul li {
+    
+       margin: 34px auto;
+}
+    .list_simple .header-block {
+            text-align: left !important;
+    padding-left: 0 !important;
+    margin-bottom: 0 !important;
+    }
+    .list_simple > .container {
+        max-width: 630px;
     }
 }
 @media (max-width: 767px) {
@@ -2700,6 +2730,7 @@
         text-align: left !important;
         line-height: 72px !important;
         padding-left: 0 !important;
+        margin-bottom: 33px;
     }
     .header-new-bg .bg-image-logo {
         display: none;
@@ -2712,14 +2743,15 @@
         align-items: center;
     }
     .header-new-bg .container {
-
+        padding-left: 77px;
+        padding-right: 77px;
     }
     .header-new-bg .btn-header-wrap .btn {
         order: 0;
         margin-bottom: 30px;
         margin-left: 0 !important;
         margin-right: 0 !important;
-        max-width: 240px;
+        max-width: 235px;
     }
 
     .header-new-bg .btn-header-wrap .block-video-play {
@@ -2727,6 +2759,7 @@
     }
     .header-new-bg p {
         text-align: left;
+        margin-bottom: 52px;
     }
 }
 
@@ -3774,8 +3807,23 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 .slider-video .videoPoster:hover svg .ytp-large-play-button-bg, .slider-video .videoPoster:focus svg .ytp-large-play-button-bg {
   fill: #cc181e;
 }
-
-/* Large desktop */
+@media (max-width: 991px) {
+.slider-video {
+    padding: 8.3rem 0 7.8rem;
+}
+.slider-video .owl-carousel {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 710px;
+}
+.slider-video .owl-dots {
+    margin-top: 12px !important;
+}
+.slider-video .owl-theme .owl-dots .owl-dot span {
+    margin-right: 3.5px;
+    margin-left: 3.5px;
+}
+}
 @media (max-width: 767px) {
     .slider-video .row {
         margin: 0;
@@ -4073,16 +4121,24 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 }
 @media (max-width: 992px) {
     .achievements-block {
-        padding-top: 10rem;
+        padding-top: 6.6rem;
+        padding-bottom: 7.5rem;
     }
     .achievements-block .downloads_achievement, .achievements-block .installs_achievement {
-        font-size: 5.4rem !important;
+        font-size: 4.5rem !important;
     }
     .achievements-block .downloads_achievement span, 
     .achievements-block .installs_achievement span {
-        font-size: 3rem;
-        bottom: 0px;
+        font-size: 2.5rem;
+        bottom: 7px;
     }
+      .achievements-block > .container {
+            width: 627px;
+      }
+      .achievements-block form {
+    
+    margin-top: 22px;
+}
 }
 @media (max-width: 767px) {
     .achievements-block {
@@ -4239,13 +4295,16 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
     }
     .contact-image .contact-image-text {
         line-height: 41px;
-        margin-bottom: 93px;
-        margin-top: 41px;
+        margin-bottom: 46px;
+        margin-top: 27px;
     }
     .contact-image .h2-block {
-        letter-spacing: 0.036em;
         line-height: 72px;
         margin-bottom: 2.3rem;
+    }
+    .contact-image > .container {
+        max-width: 626px;
+
     }
 }
 
