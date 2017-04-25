@@ -1338,7 +1338,8 @@ a:active {
 		text-align: center;
 	}
 	.posfixed {
-
+		position: fixed;
+    	width: 100%;
 		overflow: hidden !important; 
 		z-index: 2;
 	}
