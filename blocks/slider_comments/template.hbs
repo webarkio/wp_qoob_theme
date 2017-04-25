@@ -7,70 +7,43 @@
         </div>
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="owl-carousel owl-theme slider-carousel-{{id}}">
-                    {{#if slider.length}}
-                        {{#each_with_sort slider "order"}}
-                            <div class="item-slider">
-                                <h2 class="title_slider">{{{ title }}}</h2>
-                                 <div class="text_slider">{{{ text }}}</div>
-                            </div>
-                        {{/each_with_sort}}
-                    {{/if}}
+                <div id="slider-{{id}}" class="carousel slide" data-ride="carousel">
 
-                </div>                
+                    <div class="carousel-inner" role="listbox">
+                     {{#if slider.length}}
+                        {{#each_with_sort slider "order"}}
+                        <div class="item{{#ifCond order '==' '0'}} active{{/ifCond}}">
+                         <div class="carousel-conten containe">
+                            <h2 class="title_slider">{{{ title }}}</h2>
+                            <div class="text_slider">{{{ text }}}</div>
+                            </div>
+                        </div>
+                        {{/each_with_sort}}
+                    </div>
+                    {{/if}} 
+        {{#ifCond slider.length ">" 1}}
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    {{#each_with_sort slider "order"}}
+                         <li data-target="#slider-{{../id}}" data-slide-to="{{ order }}" {{#ifCond order "==" "0"}}class="active"{{/ifCond}}></li>
+                    {{/each_with_sort}}
+                </ol>
+        {{/ifCond}}
+        
             </div>
+        </div>
             <div class="col-lg-12">
             
             <a class="btn btn-action" {{#if btn_id }} id="{{btn_id}}" {{/if}} {{#if btn_target}}target="blank"{{/if}} {{#if btn_onclick }}  onclick="{{btn_onclick}}" {{/if}} href="{{action_url}}">{{action_text}}</a>
-            </div>
         </div>
     </div>
+</div>
 </section>
 
 <style>
   .slider-comments.slider-comments-{{id}} {
     background-image: url('{{desktop}}');
     background-image: -webkit-image-set(url('{{desktop}}') 1x, url('{{desktop_retina}}') 2x);
-  }
+}
 }
 </style>
-
-<script type="text/javascript">
-jQuery(document).ready(function() {
-    jQuery('.slider-carousel-{{id}}').owlCarousel({
-        margin: 50,
-        lazyLoad: true,
-        navText: [],
-        nav: false,
-        dots: true,
-        autoHeight: true,
-        responsive: {
-            0: {
-                items: 1,
-                margin: 0,
-                center: true
-            },
-            480: {
-                items: 1,
-                center: true,
-                margin: 0
-            },
-            678: {
-                items: 1,
-                center: true
-            },
-            960: {
-                items: 1,
-                center: true
-            },
-            1200: {
-                items: 1
-            }
-        }
-    });
-});
-jQuery(window).scroll(function () {
-                var scrolled = jQuery(document).scrollTop() - jQuery('.slider-comments-{{id}}').offset().top;
-                jQuery('#background-block-{{id}}.parallax').css('top', scrolled + 'px');
-            });
-</script>

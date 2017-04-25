@@ -105,7 +105,7 @@ jQuery(document).ready(function() {
     jQuery("#mobile-menu-button").click(function() {
         jQuery(this).toggleClass("btn-open");
         jQuery("#mmenu-wrap").slideToggle(300);
-        jQuery(".site-header").toggleClass("posfixed");
+        jQuery("body").toggleClass("posfixed");
     });
     jQuery(".sf-with-ul").click(function(e) {
         e.preventDefault();

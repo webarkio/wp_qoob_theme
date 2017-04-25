@@ -7,30 +7,6 @@
         "label": "Downloads",
         "type": "text"
     }, {
-        "name": "button_id",
-        "label": "Button id",
-        "type": "text"
-    }, {
-        "name": "button_onclick",
-        "label": "Button onclick",
-        "type": "text"
-    }, {
-        "name": "button_hidebtn",
-        "label": "Hide button on mobile devices?",
-        "type": "checkbox"
-    }, {
-        "name": "button_target",
-        "label": "Button Open link in new tab?",
-        "type": "checkbox"
-    }, {
-            "name": "action_text",
-            "label": "Action button text",
-            "type": "text"
-    }, {
-            "name": "action_url",
-            "label": "Url for action button",
-            "type": "text"
-    }, {
         "name": "html_list",
         "label": "List",
         "type": "accordion",
@@ -60,14 +36,33 @@
             "label": "Button Open link in new tab?",
             "type": "checkbox"
         }]
+    }, {
+        "name": "button_id",
+        "label": "Button id",
+        "type": "text"
+    }, {
+        "name": "button_onclick",
+        "label": "Button onclick",
+        "type": "text"
+    }, {
+        "name": "button_hidebtn",
+        "label": "Hide button on mobile devices?",
+        "type": "checkbox"
+    }, {
+        "name": "button_target",
+        "label": "Button Open link in new tab?",
+        "type": "checkbox"
+    }, {
+            "name": "action_text",
+            "label": "Action button text",
+            "type": "text"
+    }, {
+            "name": "action_url",
+            "label": "Url for action button",
+            "type": "text"
     }],
     "defaults": {
         "header": "HTML Version<span> 1 500 downloads</span>",
-        "action_text" : "download",
-        "action_url" : "http://webark.com/qoob/download/",
-        "button_id": "",
-        "button_onclick": "",
-        "button_target": 1,
         "html_list": [{
             "title": "Try demo",
             "url": "http://webark.com/qoob/demo/",
@@ -104,6 +99,11 @@
             "btn_target": 1,
             "btn_hidebtn": 0,
             "order": 3
-        }]
+        }],
+        "action_text" : "download",
+        "action_url" : "http://webark.com/qoob/download/",
+        "button_id": "",
+        "button_onclick": "",
+        "button_target": 1
     }
 }

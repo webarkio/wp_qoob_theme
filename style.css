@@ -815,9 +815,9 @@ textarea {
 		}
 	}
 	@media (max-width: 767px) {
-		.site-header {
+/*		.site-header {
 			height: 59px;
-		}
+		}*/
 		.site-header .site-branding img {
 			height: 3.3rem;
 			width: 3.3rem;
@@ -1334,10 +1334,11 @@ a:active {
 		text-align: center;
 	}
 	.posfixed {
-		position: fixed;
+		/*position: fixed;
 		left: 0;
 		top: 0;
-		width: 100%;
+		width: 100%;*/
+		overflow-y: hidden; 
 		z-index: 2;
 	}
 	#mobile-menu-button.btn-open .icon .line:first-child {
@@ -2643,7 +2644,7 @@ img.mfp-img {
 	}
 }
 
-*/
+
 /* Landscape phones and down */
 @media (max-width: 480px) {
 	.container-fluid .header-block {
