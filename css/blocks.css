@@ -2263,6 +2263,7 @@ padding-bottom: 8.5rem;
 }
 .faq-customers .panel:last-child .panel-body {
     border-bottom: 3px solid #dbdbdb;
+    margin-bottom: 5px;
 }
 
 .faq-customers .panel-heading[aria-expanded="false"] .indicator {
@@ -2275,7 +2276,7 @@ padding-bottom: 8.5rem;
     border-right: 3px solid #dbdbdb;
     padding: 66px 17% 62px;
 }
-.faq-customers .panel-body p {
+.faq-customers .panel-body p, .faq-customers .panel-body {
     line-height: 32px;
     text-align: justify;
     font-size: 1.8rem;
