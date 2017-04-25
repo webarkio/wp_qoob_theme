@@ -12,7 +12,7 @@
  * @package qoob
  */
 
-get_header('fixed' ); ?>
+get_header( 'fixed' ); ?>
 	<?php
 	$template_parts = 'page-sidebar';
 	while ( have_posts() ) : the_post();
