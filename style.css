@@ -828,7 +828,8 @@ textarea {
 		}
 		.site-header .site-title {
 			margin-top: -8px;
-			font-size: 2.4rem;
+			font-size: 2.2rem;
+			letter-spacing: 0.025em;
 		}
 	}
 
@@ -1273,14 +1274,17 @@ a:active {
 		padding-bottom: 40px;
 	}
 	#mobile-menu li a {
-		padding-bottom: 0.7rem;
+		padding-bottom: 0.9rem;
 		position: relative;
 		z-index: 10;
-		font-size: 20pt;
+		font-size: 20px;
 		font-family: "RobotoLight", sans-serif;
 		display: block;
+		letter-spacing: 0.025em;
 		margin: 0 !important;
 		transform: all 0.5s;
+		padding-left: 7px;
+		padding-right: 7px;
 	}
 	#mobile-menu .menu-item a:hover, #mobile-menu .menu-item a:active, #mobile-menu .menu-item a:focus {
 		color: #000 !important;
@@ -1307,18 +1311,18 @@ a:active {
 	}
 
 	.sf-menu .social-media-icon .fa-facebook, #mobile-menu .social-media-icon .fa-facebook {
-		font-size: 29pt;
+		font-size: 22pt;
 		position: relative;
 		top: 1px;
 	}
 	.sf-menu .social-media-icon .fa-github, #mobile-menu .social-media-icon .fa-github {
-		font-size: 32pt;
+		font-size: 25pt;
 		position: relative;
 		top: 0px;
 		left: -1px;
 	}
 	.sf-menu .social-media-icon .fa-twitter, #mobile-menu .social-media-icon .fa-twitter {
-		font-size: 35pt;
+		font-size: 28pt;
 		position: relative;
 		top: 1px;
 	}
@@ -1334,11 +1338,8 @@ a:active {
 		text-align: center;
 	}
 	.posfixed {
-		/*position: fixed;
-		left: 0;
-		top: 0;
-		width: 100%;*/
-		overflow-y: hidden; 
+
+		overflow: hidden !important; 
 		z-index: 2;
 	}
 	#mobile-menu-button.btn-open .icon .line:first-child {

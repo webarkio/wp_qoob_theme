@@ -2764,6 +2764,10 @@ padding-bottom: 8.5rem;
 }
 
 @media (max-width: 767px) {
+    .header-new-bg .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
     .header-new-bg {
         margin-top: 0;
         padding-top: 8.8em;
@@ -4133,7 +4137,7 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
         bottom: 7px;
     }
       .achievements-block > .container {
-            width: 627px;
+            max-width: 627px;
       }
       .achievements-block form {
     
