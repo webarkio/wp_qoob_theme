@@ -300,9 +300,6 @@
         background-position: center top !important;
         background-size: inherit !important;
     }
-    .block-image-download .header-h2 {
-        letter-spacing: 0.012em;
-    }
 }
 @media (max-width: 767px) { 
     .block-image-download {
@@ -1457,7 +1454,7 @@
         max-width: 100%; 
         display: block;
         margin-top: 5px;
-        margin-bottom: 45px;
+        margin-bottom: 43px;
         text-align: center;   
     }
     .block_html .link_html {
@@ -1865,12 +1862,12 @@
 }
 @media (max-width: 991px) {
 
-    .block_wp_downloads {
-        padding-top: 4.1rem;
-        padding-bottom: 5rem;
-    }
+   .block_wp_downloads {
+    padding-top: 5.1rem;
+    padding-bottom: 5.9rem;
+}
     .block_wp_downloads > .container {
-        max-width: 645px;
+        max-width: 657px;
     }
     .block_wp_downloads form input[type="text"] {
         padding-left: 40px;
