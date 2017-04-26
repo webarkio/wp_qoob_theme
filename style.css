@@ -1337,6 +1337,16 @@ a:active {
 		position: absolute;
 		text-align: center;
 	}
+	.wrap-social-icon .social-media-icon i {
+		    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+	}
+		.wrap-social-icon .social-media-icon i:before {
+			content: "\f09a";
+		}
 	.posfixed {
 		position: fixed;
     	width: 100%;
@@ -1442,6 +1452,11 @@ a:active {
 
 .footer-copyright a {
 	pointer-events: none;
+}
+@media (max-width: 767px) {
+.footer-navigation li a {
+	font-family: "RobotoLight", sans-serif;
+}
 }
 /*--------------------------------------------------------------
 # Accessibility
@@ -1771,7 +1786,7 @@ a:active {
 	}
 	.social-media-icon-footer {
 		display: inline-block !important;
-		margin-top: 13px !important;
+		margin-top: 19px !important;
 		margin-bottom: 16px !important;
 	}
 }
@@ -2337,7 +2352,7 @@ a:active {
 }
 @media (max-width: 767px) {
 	.site-footer {
-		padding: 30px 0;
+		padding: 30px 0 56px;
 	}
 }
 
@@ -2743,25 +2758,47 @@ img.mfp-img {
 --------------------------------------------------------------*/
 .sidebar-docs {
 	margin-top: 0rem;
-	padding-top: 5.5rem;
+	padding-top: 0.5rem;
 	padding-bottom: 3.3rem;
 }
 .sidebar-docs .widget ul.menu {
 	padding-left: 1.1rem;
 }
+.doc-block {
+	    background-size: cover;
+    background-position: center center;
+    margin-top: 60px;
+    padding-top: 87px;
+    padding-bottom: 87px;
+
+}
+.doc-block h2 {
+	text-align: center;
+	color: #000;
+	line-height: 72px;
+	font-size: 52px;
+	letter-spacing: 0.025;
+	text-transform: uppercase;
+	font-family: "RobotoBlack", sans-serif;
+}
 .sidebar-docs .widget ul.menu > li,
 .sidebar-docs .widget ul.menu > li a {
 	font-size: 1.6rem;
-	font-family: "OpenSans-Bold", sans-serif;
+	font-family: "RobotoBold", sans-serif;
+	letter-spacing: 0.025em;
 }
 .sidebar-docs .widget ul.sub-menu > li,
 .sidebar-docs .widget ul.sub-menu > li a {
 	font-size: 1.6rem;
 	font-family: "OpenSans-Light", sans-serif;
 }
+.sidebar-docs .widget {
+	padding-left: 10px;
+}
 .sidebar-docs .widget ul li {
 	margin-top: 0;
 	margin-bottom: 1.8rem;
+	position: relative;
 	/*arrow_list_widge_gray.png*/
 }
 .sidebar-docs .widget ul li.current_page_item {
@@ -2769,6 +2806,18 @@ img.mfp-img {
 }
 .sidebar-docs .widget ul li.current_page_item a {
 	color: #0084ff;
+}
+.sidebar-docs .widget ul li.current_page_item:before {
+	content: "";
+	width: 6px;
+	position: absolute;
+	left: -36px;
+	top: 0;
+	height: 100%;
+	display: block;
+	background: #0084ff;
+	border-radius: 0;
+	margin: 0;
 }
 .sidebar-docs .widget ul.sub-menu {
 	padding-left: 0;
@@ -2788,8 +2837,20 @@ img.mfp-img {
 .page-docs {
 	padding-left: 40px;
 }
-.page-docs .entry-header .entry-title {
+.page-docs .entry-content h2 {
 	margin-top: 0;
+	color: #000;
+	font-family: "RobotoBlack", sans-serif;
+	font-size: 45px;
+	line-height: 62px;
+	letter-spacing: 0.025em;
+}
+.page-docs .entry-content p {
+	font-size: 18px;
+	font-family: "RobotoLight", sans-serif;
+	}
+.site-main-docs .sidebar-docs:before {
+	width: 2px;
 }
 /*--------------------------------------------------------------
 # Page 404
