@@ -1337,7 +1337,7 @@ a:active {
 		position: absolute;
 		text-align: center;
 	}
-	.wrap-social-icon .social-media-icon i {
+/*	.wrap-social-icon .social-media-icon i {
 		    display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
     font-size: inherit;
@@ -1346,7 +1346,7 @@ a:active {
 	}
 		.wrap-social-icon .social-media-icon i:before {
 			content: "\f09a";
-		}
+		}*/
 	.posfixed {
 		position: fixed;
     	width: 100%;
