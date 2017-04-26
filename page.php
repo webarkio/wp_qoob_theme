@@ -16,10 +16,10 @@ get_header(); ?>
 	<?php
 	$template_parts = 'page';
 	while ( have_posts() ) : the_post();
-		$content = get_the_content();
-		$meta = get_post_meta( get_the_ID(), 'qoob_data', true );
+		$meta = json_decode( get_post_meta( get_the_ID(), 'qoob_data', true ), true );
 
-		if ( ( isset( $_GET['qoob'] ) && true === (boolean) $_GET['qoob'] ) || ( '{"blocks":[]}' !== $meta && '' !== $meta ) ) { // input var okay
+		if ( ( isset( $_GET['qoob'] ) && true === (boolean) $_GET['qoob'] ) ||
+			( isset( $meta['blocks'] ) && count($meta['blocks']) > 0 ) ) {
 			$template_parts = 'qoob';
 		}
 

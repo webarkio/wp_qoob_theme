@@ -231,130 +231,59 @@
         "url": "%theme_url%/blocks/video_full_page/"
     }],
     "res": {
-        "css": [
-            {
-                "name": "entypo_css",
-                "url": "%theme_url%/blocks/entypo/assets/css/entypo.css",
-                "use": {
-                    "frontend": true,
-                    "backend": true
-                }
-            }, {
-                "name": "fontawesome_css",
-                "url": "%theme_url%/blocks/fontawesome/assets/css/fontawesome.css",
-                "use": {
-                    "frontend": true,
-                    "backend": true
-                }
-            }, {
-                "name": "glyphicons_css",
-                "url": "%theme_url%/blocks/glyphicons/assets/css/glyphicons.css",
-                "use": {
-                    "frontend": true,
-                    "backend": true
-                }
-            }, {
-                "name": "ionicons_css",
-                "url": "%theme_url%/blocks/ionicons/assets/css/ionicons.css",
-                "use": {
-                    "frontend": true,
-                    "backend": true
-                }
-            }, {
-                "name": "themify_css",
-                "url": "%theme_url%/blocks/themify/assets/css/themify.css",
-                "use": {
-                    "frontend": true,
-                    "backend": true
-                }
-            }, {
-                "name": "owl_carousel_css",
-                "url": "%theme_url%/blocks/template_carousel/assets/css/owl.carousel.css",
-                "use": {
-                    "frontend": true,
-                    "backend": true
-                }
-            }, {
-                "name": "owl_theme_default_css",
-                "url": "%theme_url%/blocks/template_carousel/assets/css/owl.theme.default.css",
-                "use": {
-                    "frontend": true,
-                    "backend": true
-                }
-            }, {
-                "name": "bootstrap_progressbar_css",
-                "url": "%theme_url%/blocks/team/assets/css/bootstrap-progressbar.css",
-                "use": {
-                    "frontend": true,
-                    "backend": true
-                }
-            }, {
-                "name": "carousel_css",
-                "url": "%theme_url%/blocks/slider_buttons/assets/css/carousel.css",
-                "use": {
-                    "frontend": true,
-                    "backend": true
-                }
-            }, {
-                "name": "collapse_css",
-                "url": "%theme_url%/blocks/faq_accordion/assets/css/collapse.css",
-                "use": {
-                    "frontend": true,
-                    "backend": true
-                }
-            }
-        ],
-        "js": [
-            {
+        "css": [{
+            "name": "entypo_css",
+            "url": "%theme_url%/blocks/entypo/assets/css/entypo.css"
+        }, {
+            "name": "fontawesome_css",
+            "url": "%theme_url%/blocks/fontawesome/assets/css/fontawesome.css"
+        }, {
+            "name": "glyphicons_css",
+            "url": "%theme_url%/blocks/glyphicons/assets/css/glyphicons.css"
+        }, {
+            "name": "ionicons_css",
+            "url": "%theme_url%/blocks/ionicons/assets/css/ionicons.css"
+        }, {
+            "name": "themify_css",
+            "url": "%theme_url%/blocks/themify/assets/css/themify.css"
+        }, {
+            "name": "owl_carousel_css",
+            "url": "%theme_url%/blocks/template_carousel/assets/css/owl.carousel.css"
+        }, {
+            "name": "owl_theme_default_css",
+            "url": "%theme_url%/blocks/template_carousel/assets/css/owl.theme.default.css"
+        }, {
+            "name": "bootstrap_progressbar_css",
+            "url": "%theme_url%/blocks/team/assets/css/bootstrap-progressbar.css"
+        }, {
+            "name": "carousel_css",
+            "url": "%theme_url%/blocks/slider_buttons/assets/css/carousel.css"
+        }, {
+            "name": "collapse_css",
+            "url": "%theme_url%/blocks/faq_accordion/assets/css/collapse.css"
+        }],
+        "js": [{
             "name": "owl_carousel_js",
-            "url": "%theme_url%/blocks/template_carousel/assets/js/owl.carousel.js",
-            "use": {
-                "frontend": true,
-                "backend": true
-            }
-            }, {
-                "name": "jQuery_countTo_js",
-                "url": "%theme_url%/blocks/counter/assets/js/jQuery.countTo.js",
-                "use": {
-                    "frontend": true,
-                    "backend": true
-                }
-            }, {
-                "name": "progressbar_js",
-                "url": "%theme_url%/blocks/counter_circle/assets/js/progressbar.js",
-                "use": {
-                    "frontend": true,
-                    "backend": true
-                }
-            }, {
-                "name": "jquery_waypoints_js",
-                "url": "%theme_url%/blocks/counter_circle/assets/js/jquery.waypoints.js",
-                "use": {
-                    "frontend": true,
-                    "backend": true
-                }
-            }, {
-                "name": "bootstrap_progressbar_js",
-                "url": "%theme_url%/blocks/team/assets/js/bootstrap-progressbar.js",
-                "use": {
-                    "frontend": true,
-                    "backend": true
-                }
-            }, {
-                "name": "carousel_js",
-                "url": "%theme_url%/blocks/slider_buttons/assets/js/carousel.js",
-                "use": {
-                    "frontend": true,
-                    "backend": true
-                }
-            }, {
-                "name": "collapse_js",
-                "url": "%theme_url%/blocks/faq_accordion/assets/js/collapse.js",
-                "use": {
-                    "frontend": true,
-                    "backend": true
-                }
-            }
-        ]
+            "url": "%theme_url%/blocks/template_carousel/assets/js/owl.carousel.js"
+        }, {
+            "name": "jQuery_countTo_js",
+            "url": "%theme_url%/blocks/counter/assets/js/jQuery.countTo.js"
+        }, {
+            "name": "progressbar_js",
+            "url": "%theme_url%/blocks/counter_circle/assets/js/progressbar.js"
+        }, {
+            "name": "jquery_waypoints_js",
+            "url": "%theme_url%/blocks/counter_circle/assets/js/jquery.waypoints.js"
+        }, {
+            "name": "bootstrap_progressbar_js",
+            "url": "%theme_url%/blocks/team/assets/js/bootstrap-progressbar.js"
+        }, {
+            "name": "carousel_js",
+            "url": "%theme_url%/blocks/slider_buttons/assets/js/carousel.js"
+
+        }, {
+            "name": "collapse_js",
+            "url": "%theme_url%/blocks/faq_accordion/assets/js/collapse.js"
+        }]
     }
 }

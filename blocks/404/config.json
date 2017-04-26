@@ -3,29 +3,27 @@
     "groups": "introduction",
     "template": "template.hbs",
     "settings": [{
-            "name": "image",
-            "label": "Image",
-            "type": "image",
-            "tags": ["404"]
-        },
-        {
-            "name": "text",
-            "label": "Text",
-            "type": "text"
-        },
-        {
-            "name": "button_text",
-            "label": "Button text",
-            "type": "text"
-        }],
-    "defaults" : {
+        "name": "image",
+        "label": "Image",
+        "type": "image",
+        "tags": ["404"]
+    }, {
+        "name": "text",
+        "label": "Text",
+        "type": "text"
+    }, {
+        "name": "button_text",
+        "label": "Button text",
+        "type": "text"
+    }],
+    "defaults": {
         "text": "Page not found",
         "button_text": "Go to main page",
-        "image" : "%theme_url%/images/qoob_404.png"
+        "image": "/wp-content/themes/qoob/images/qoob_404.png"
     },
-     "assets" : [{
+    "assets": [{
         "type": "image",
-        "src": "%theme_url%/images/qoob_404.png",
+        "src": "/wp-content/themes/qoob/images/qoob_404.png",
         "tags": ["404", "error"]
     }]
 }

@@ -7,13 +7,16 @@
         "label": "Header",
         "type": "text"
     }, {
-        "name": "url",
+        "name": "src",
         "label": "Video",
         "type": "video",
-        "tags": ["myVid"]
+        "tags": ["cube girl"]
     }],
     "defaults": {
         "header": "MEET THE TEAM",
-        "url": "%block_url(assets)%/assets/videos/cube_girl.mp4"
+        "src": {
+            "url": "%block_url(assets)%/assets/videos/cube_girl.mp4",
+            "preview": ""
+        }
     }
 }

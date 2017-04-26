@@ -6,77 +6,87 @@
         "name": "header",
         "label": "Header block",
         "type": "text"
-    },
-    {
+    }, {
         "name": "features",
         "label": "Features list",
         "type": "accordion",
         "viewcontent": "standart",
         "viewType": "expand",
         "settings": [{
-                "name": "title",
-                "label": "Title",
-                "type": "text"
-            },
-            {
-                "name": "text_feature",
-                "label": "Text",
-                "type": "textarea"
-            },
-            {
-                "name": "number",
-                "label": "Number",
-                "type": "text"
-            },
-            {
-                "name": "poster",
-                "label": "Video poster",
-                "type": "image",
-                "tags": [""]
-            },
-            {
-                "name": "url",
-                "label": "Video",
-                "type": "video",
-                "tags": [""]
-            }]
+            "name": "title",
+            "label": "Title",
+            "type": "text"
+        }, {
+            "name": "text_feature",
+            "label": "Text",
+            "type": "textarea"
+        }, {
+            "name": "number",
+            "label": "Number",
+            "type": "text"
+        }, {
+            "name": "poster",
+            "label": "Video poster",
+            "type": "image",
+            "tags": [""]
+        }, {
+            "name": "src",
+            "label": "Video",
+            "type": "video",
+            "tags": [""]
+        }]
     }],
     "defaults": {
         "header": "5 reasons why you need to try qoob",
         "features": [{
-            "title" : "Blocks Builder",
-            "text_feature" : "You add to your page ready-made blocks. You do not need to think about the size, font, indentation. Everything is ready and works fine. You can easily create your first page in 30 seconds.",
-            "url": "http://webark.com/qoob/blocks/default/media/assets/videos/blocks_builder.mp4",
-            "poster" : "http://webark.com/qoob/blocks/default/media/assets/img/blocks_builder.png",
-            "number" : "1",
+            "title": "Blocks Builder",
+            "text_feature": "You add to your page ready-made blocks. You do not need to think about the size, font, indentation. Everything is ready and works fine. You can easily create your first page in 30 seconds.",
+            "src": {
+                "url": "http://webark.com/qoob/blocks/default/media/assets/videos/blocks_builder.mp4",
+                "preview": "http://webark.com/qoob/blocks/default/media/assets/img/blocks_builder.png"
+            },
+            "poster": "http://webark.com/qoob/blocks/default/media/assets/img/blocks_builder.png",
+            "number": "1",
             "order": 1
         }, {
-            "title" : "Live Editing",
-            "text_feature" : "You will be amazed to see how it is easy to change the contents of the blocks. We have tried to make this process as easy as possible. And the most amazing thing is that this happens in real time. You can see all changes without leaving the page.",
-            "url": "http://webark.com/qoob/blocks/default/media/assets/videos/live_editing.mp4",
-            "poster" : "http://webark.com/qoob/blocks/default/media/assets/img/live_editing.png",
-            "number" : "2",
+            "title": "Live Editing",
+            "text_feature": "You will be amazed to see how it is easy to change the contents of the blocks. We have tried to make this process as easy as possible. And the most amazing thing is that this happens in real time. You can see all changes without leaving the page.",
+            "src": {
+                "url": "http://webark.com/qoob/blocks/default/media/assets/videos/live_editing.mp4",
+                "preview": "http://webark.com/qoob/blocks/default/media/assets/img/live_editing.png"
+            },
+            "poster": "http://webark.com/qoob/blocks/default/media/assets/img/live_editing.png",
+            "number": "2",
             "order": 2
         }, {
-            "title" : "Alaways Looking Good",
-            "text_feature" : "QOOB automatically optimizes your website's pages for desktop, tablet and mobile. This ensures your visitors get the best viewing experience no matter what device they use.",
-            "url": "http://webark.com/qoob/blocks/default/media/assets/videos/always_looking_good.mp4",
-            "poster" : "http://webark.com/qoob/blocks/default/media/assets/img/always_looking_good.png",
-            "number" : "3",
+            "title": "Alaways Looking Good",
+            "text_feature": "QOOB automatically optimizes your website's pages for desktop, tablet and mobile. This ensures your visitors get the best viewing experience no matter what device they use.",
+            "src": {
+                "url": "http://webark.com/qoob/blocks/default/media/assets/videos/always_looking_good.mp4",
+                "preview": "http://webark.com/qoob/blocks/default/media/assets/img/always_looking_good.png"
+            },
+            "poster": "http://webark.com/qoob/blocks/default/media/assets/img/always_looking_good.png",
+            "number": "3",
             "order": 3
-        },{
-            "title" : "Clean and Intuitive UI",
-            "text_feature" : "All the visual editors that you met before almost always do not fit the overall design. They add their own frame, buttons and other elements that, almost always fit into the overall design of the site. Qoob is the only editor that does not do it! This editing site content is simple and straightforward.",
-            "url": "http://webark.com/qoob/blocks/default/media/assets/videos/clean_intuitive_ui.mp4",
-            "poster" : "http://webark.com/qoob/blocks/default/media/assets/img/clean_intuitive_ui.png",
-            "number" : "4",
+        }, {
+            "title": "Clean and Intuitive UI",
+            "text_feature": "All the visual editors that you met before almost always do not fit the overall design. They add their own frame, buttons and other elements that, almost always fit into the overall design of the site. Qoob is the only editor that does not do it! This editing site content is simple and straightforward.",
+            "src": {
+                "url": "http://webark.com/qoob/blocks/default/media/assets/videos/clean_intuitive_ui.mp4",
+                "preview": "http://webark.com/qoob/blocks/default/media/assets/img/clean_intuitive_ui.png"
+            },
+            "poster": "http://webark.com/qoob/blocks/default/media/assets/img/clean_intuitive_ui.png",
+            "number": "4",
             "order": 3
-        },{
-            "title" : "Realtime Editing Mobile Version",
-            "text_feature" : "You have not seen it. You can add, delete and edit the unit is in tablet modeor even on a mobile device.",
-            "url": "http://webark.com/qoob/blocks/default/media/assets/videos/editing_mobile_version.mp4",
-            "poster" : "http://webark.com/qoob/blocks/default/media/assets/img/editing_mobile_version.png",
-            "number" : "5",
+        }, {
+            "title": "Realtime Editing Mobile Version",
+            "text_feature": "You have not seen it. You can add, delete and edit the unit is in tablet modeor even on a mobile device.",
+            "src": {
+                "url": "http://webark.com/qoob/blocks/default/media/assets/videos/editing_mobile_version.mp4",
+                "preview": "http://webark.com/qoob/blocks/default/media/assets/img/editing_mobile_version.png"
+            },
+            "poster": "http://webark.com/qoob/blocks/default/media/assets/img/editing_mobile_version.png",
+            "number": "5",
             "order": 3
         }]
     }

@@ -10,7 +10,7 @@
                 <div class="owl-carousel video-carousel-{{id}}">
                     {{#if video.length}}
                         {{#each_with_sort video "order"}}
-                            <div class="item-video" data-url="{{url}}"></div>
+                            <div class="item-video" data-url="{{src.url}}"></div>
                         {{/each_with_sort}}
                     {{/if}}
                 </div>                
