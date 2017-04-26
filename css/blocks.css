@@ -647,8 +647,8 @@
 }
 @media (max-width: 991px) { 
     .call-to-action-bg-v3 {
-        padding-top: 4.7rem;
-        padding-bottom: 8.5rem;
+        padding-top: 5.4rem;
+        padding-bottom: 8.4rem;
     }
     .call-to-action-bg-v3 .h2-block {
         padding-left: 60px !important;
@@ -659,9 +659,9 @@
     .call-to-action-bg-v3 .btn-action {
         margin-top: 25px;
     }
-    .call-to-action-bg-v3 {
-
-    }
+.call-to-action-bg-v3 .btn-action {
+        max-width: 235px;
+}
 }
 
 @media (max-width: 767px) {
@@ -1317,9 +1317,12 @@
         font-size: 14px;
     }
     .list_simple ul li {
-
-     margin: 34px auto;
+        line-height: 32px;
+     margin: 30px auto;
  }
+     .list_simple ul li:first-child {
+        margin-top: 27px;
+     }
  .list_simple .header-block {
     text-align: left !important;
     padding-left: 0 !important;
@@ -2749,7 +2752,7 @@
 .header-new-bg .btn-header-wrap .btn {
     margin-right: 3.7rem !important;
     margin-left: 3.7rem !important;
-    min-width: 240px;
+    min-width: 235px;
     font-size: 1.8rem;
     font-family: "RobotoBold", sans-serif;
     padding: 18.5px;
@@ -4352,7 +4355,7 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 }
 @media (max-width: 1224px) {
     .contact-image {
-        padding-top: 7.6rem;
+        padding-top: 5rem;
         padding-bottom: 57.3rem;
         background-position: center bottom;
         background-repeat:  no-repeat;
