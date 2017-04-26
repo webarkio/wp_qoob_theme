@@ -112,7 +112,9 @@
 
     .block-image-bg .h2-block {
         font-size: 3rem;
-        letter-spacing: 0.024em;
+        letter-spacing: 0.025em;
+        padding-left: 15px;
+        padding-right: 15px;
         line-height: 40px !important;  
     }
     .block-image-bg {
@@ -677,6 +679,8 @@
         font-size: 3.0rem !important;
         line-height: 36px !important;
         margin-bottom: 1.3rem;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .call-to-action-bg-v3 .btn-action {
         max-width: 29rem;
@@ -3895,6 +3899,18 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
     }
 }
 @media (max-width: 767px) {
+        .slider-video .owl-dots .owl-dot span {
+    width: 13px;
+    height: 13px;
+}
+  .slider-video .owl-theme .owl-dots .owl-dot span {
+        margin-right: 7px;
+        margin-left: 7px;
+    }
+    .slider-video .owl-dots .owl-dot.active span {
+    width: 23px;
+    height: 23px;
+}
     .slider-video .row {
         margin: 0;
     }
