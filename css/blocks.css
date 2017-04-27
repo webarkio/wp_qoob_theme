@@ -257,8 +257,8 @@
     }
 
     .slider-comments {
-        padding-top: 3.6rem;
-        padding-bottom: 5rem;
+        padding-top: 4.2rem;
+        padding-bottom: 5.6rem;
     }
 /*    .owl-carousel .owl-item {
         padding-left: 15px;
@@ -1718,27 +1718,30 @@
         top: 0px;
     }
     .block-prices {
-        padding-top: 3.5rem;
+        padding-top: 4.2rem;
         padding-bottom: 4.3rem;
         margin-top: 0px;
+        background-position: center 18px !important;
     }
 
     .block-prices .cost_license {
         text-align: center;
-        font-size: 42pt;
+        font-size: 42px;
+        margin-top: 5px;
+
     }
     .block-prices .best_proposal {
         margin-top: 10px;
     }
     .block-prices .description {
-        font-size: 18pt;
-        line-height: 28pt;
+        font-size: 18px;
+        line-height: 28px;
         margin-top: 15px;
         letter-spacing: 0.025em;
     }
     .block-prices .header-h2 {
-        font-size: 30pt !important;
-        line-height: 40pt !important;
+        font-size: 30px !important;
+        line-height: 40px !important;
         margin-bottom: 3px;
         text-align: left !important;
         padding-top: 97px;
@@ -1748,29 +1751,39 @@
         height: 50px;
         line-height: 50px;
         margin-bottom: 35px;
-        margin-left: 40px;
+        margin-left: auto;
+        margin-right: auto;
     }
     .block-prices .btn-action {
         max-width: 29rem;
-        padding: 1.60rem 3rem;
-        margin-top: 13px;
+        padding: 1.60rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        margin-top: 11px;
         width: 100%;
-        margin-bottom: 55px;
+        margin-bottom: 56px;
         font-size: 1.6rem;
     }
     .block-prices .block_license {
         margin-bottom: 23px;
+            width: 100%;
+    max-width: calc(100% - 45px);
     }
     .block-prices .content_license {
         padding-top: 20px;
         margin-bottom: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
     .block-prices .content_license li {
-        font-size: 12pt;
+        font-size: 12px;
         padding: 10px 0;
     }
     .block-prices .name_licence {
-        font-size: 17pt;
+        font-size: 17px;
+        line-height: 25px;
         text-align: center;
     }
     .block-prices ul li i {
@@ -2367,11 +2380,11 @@
         line-height: 36px !important;
         font-size: 3rem !important;
         padding-left: 0 !important;
-        margin-bottom: 53px;
+        margin-bottom: 25px;
     }
     .faq-customers {
         padding-top: 2em;
-        padding-bottom: 5.8rem;
+        padding-bottom: 6.3rem;
     }
     .faq-customers .panel-title .waves-effect {
         text-align: left;
@@ -2390,6 +2403,10 @@
     }
     .faq-customers .panel-body p {
         text-align: left;
+        padding-bottom: 30px;
+    }
+        .faq-customers .panel-body p:last-child {
+        padding-bottom: 0;
     }
     .slider-comments .btn-action {
         font-size: 1.6rem;
@@ -2404,6 +2421,8 @@
     .faq-customers .panel-body {
         padding-left: 22px;
         padding-right: 22px;
+        padding-top: 23px;
+        padding-bottom: 24px;
     }
 }
 /*--------------------------------------------------------------
