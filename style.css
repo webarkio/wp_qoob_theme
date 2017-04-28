@@ -2801,7 +2801,7 @@ line-height: 24px;
 .sidebar-docs .widget ul.sub-menu > li,
 .sidebar-docs .widget ul.sub-menu > li a {
 	font-size: 1.6rem;
-	font-family: "OpenSans-Light", sans-serif;
+	font-family: "RobotoLight", sans-serif;
 }
 .sidebar-docs .widget ul.sub-menu > li a {
 	padding-left: 70px;
@@ -2820,6 +2820,7 @@ line-height: 24px;
 }
 .sidebar-docs .widget ul li.current_page_item > a {
 	color: #0084ff;
+	position: relative;
 }
 .sidebar-docs .widget ul li.current_page_item > a:before {
 	content: "";
@@ -2850,6 +2851,7 @@ line-height: 24px;
 
 .page-docs {
 	padding-left: 40px;
+	background: #fff !important;
 }
 .main-docs {
 	margin-top: 9.3rem;
@@ -2885,7 +2887,7 @@ line-height: 24px;
 	color: #000;
 	font-family: "RobotoBlack", sans-serif;
 	font-size: 28px;
-	line-height: 45px;
+	line-height: 38px;
 	letter-spacing: 0.025em;
 }
 .page-docs .entry-content h5 {
@@ -2977,7 +2979,7 @@ line-height: 24px;
 	}
 	.page-docs .entry-content h4 {
 		font-size: 28px;
-		line-height: 45px;
+		line-height: 38px;
 		letter-spacing: 0.025em;
 	}
 	.page-docs .entry-content h5 {
@@ -3150,7 +3152,7 @@ line-height: 24px;
 	}
 	.page-docs .entry-content h4 {
 		font-size: 28px;
-		line-height: 45px;
+		line-height: 38px;
 		letter-spacing: 0.025em;
 	}
 	.page-docs .entry-content h5 {
