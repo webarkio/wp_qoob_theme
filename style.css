@@ -2932,7 +2932,6 @@ line-height: 24px;
 		z-index: 1;
 		margin: 0;
 		transition: left 0.5s;
-		overflow-y: scroll;
 	}
 	.open-btn.sidebar-docs {
 		left: 0;
