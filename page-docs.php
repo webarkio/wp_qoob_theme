@@ -14,15 +14,9 @@
 
 get_header( 'fixed' ); ?>
 	<?php
-	$template_parts = 'page-docs';
 	while ( have_posts() ) : the_post();
 		$content = get_the_content();
-		$meta = get_post_meta( get_the_ID(), 'qoob_data', true );
-
-		if ( ( isset( $_GET['qoob'] ) && true === (boolean) $_GET['qoob'] ) || ( '{"blocks":[]}' !== $meta && '' !== $meta ) ) { // input var okay
-			$template_parts = 'qoob';
-		}
-		get_template_part( 'template-parts/content', $template_parts );
+		get_template_part( 'template-parts/content', 'page-docs' );
 
 	endwhile; // End of the loop.
 	?>

@@ -99,6 +99,13 @@
     }
 
 jQuery(document).ready(function() {
+         if (jQuery(window).width() < 991) { 
+            jQuery(".turn-btn-docs").click(function() {
+            jQuery(".sidebar-docs").toggleClass("open-btn");
+            jQuery(".spoiler-docs").toggleClass("hiddendark");
+            jQuery("body").toggleClass("scrollnone");
+        });
+        };
     qoob_menu();
     // show_hide_show_qoob_theme_menu();
     menu_center();

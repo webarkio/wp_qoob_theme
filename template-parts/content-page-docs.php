@@ -8,18 +8,43 @@
  */
 
 ?>
-<div id="primary" class="content-area container">
-	<main id="main" class="site-main" role="main">
+
+<section class="doc-block">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<h1>Documentation</h1>
+			</div>
+		</div>
+	</div>
+</section>
+<style>
+  .doc-block {
+    background-image: url(<?php echo get_template_directory_uri(); ?>/images/doc-desktop.jpg);
+    background-image: -webkit-image-set(url(<?php echo get_template_directory_uri(); ?>/images/doc-desktop.jpg) 1x, url(<?php echo get_template_directory_uri(); ?>/images/doc-desktop-retina.jpg) 2x);
+}
+@media (max-width: 991px) {
+  .doc-block  {
+    background-image: url(<?php echo get_template_directory_uri(); ?>/images/doс-bg-tablet.png);
+    background-image: -webkit-image-set(url(<?php echo get_template_directory_uri(); ?>/images/doс-bg-tablet-retina.png) 1x, url(<?php echo get_template_directory_uri(); ?>/images/doс-bg-tablet-retina.png) 2x);
+}
+}
+
+    @media (max-width: 767px) {
+  .doc-block  {
+    background-image: url(<?php echo get_template_directory_uri(); ?>/images/download-bg-mobile.png);
+    background-image: -webkit-image-set(url(<?php echo get_template_directory_uri(); ?>/images/download-bg-mobile.png) 1x, url(<?php echo get_template_directory_uri(); ?>/images/download-bg-mobile-retina.png) 2x);
+}
+}
+</style>
+<div id="primary" class="content-area container main-docs">
+	<main id="main" class="site-main-docs" role="main">
 		<?php
 
 			get_sidebar( 'docs' );
 
 		?>
-		<article id="post-<?php the_ID(); ?>" <?php post_class( 'col-lg-9 page-docs' ); ?>>
-			<header class="entry-header">
-				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-			</header><!-- .entry-header -->
-
+		<article id="post-<?php the_ID(); ?>" <?php post_class( 'col-lg-9 col-md-9 col-sm-12 col-xs-12 page-docs' ); ?>>
 			<div class="entry-content">
 				<?php
 					the_content();

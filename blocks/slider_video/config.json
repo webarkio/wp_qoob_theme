@@ -39,26 +39,26 @@
                 "order": 0
             }, {
                 "title": "Live editing",
-                "image": "%block_url%/assets/img/poster_video1.jpg",
-                "image_retina": "%block_url%/assets/img/poster_img1.jpg",
+                "image": "%block_url%/assets/img/poster_2.png",
+                "image_retina": "%block_url%/assets/img/poster_retina_2.png",
                 "url": "https://www.youtube.com/embed/xkrxfAhzE9E",
                 "order": 1
             }, {
                 "title": "Always Looking Good",
-                "image": "%block_url%/assets/img/poster_video1.jpg",
-                "image_retina": "%block_url%/assets/img/poster_img1.jpg",
+                "image": "%block_url%/assets/img/poster_3.png",
+                "image_retina": "%block_url%/assets/img/poster_retina_3.png",
                 "url": "https://www.youtube.com/embed/Bnzi-FQpLqk",
                 "order": 2
             }, {
                 "title": "Clean inutuitive UI",
-                "image": "%block_url%/assets/img/poster_video1.jpg",
-                "image_retina": "%block_url%/assets/img/poster_img1.jpg",
+                "image": "%block_url%/assets/img/poster_4.png",
+                "image_retina": "%block_url%/assets/img/poster_retina_4.png",
                 "url": "https://www.youtube.com/embed/GgnTbYsqOZQ",
                 "order": 3
             },{
                 "title": "Realtime Editing Mobile Version",
-                "image": "%block_url%/assets/img/poster_video1.jpg",
-                "image_retina": "%block_url%/assets/img/poster_img1.jpg",
+                "image": "%block_url%/assets/img/poster_5.png",
+                "image_retina": "%block_url%/assets/img/poster_retina_5.png",
                 "url": "https://www.youtube.com/embed/Mlimu8xuukc",
                 "order": 4
             }]

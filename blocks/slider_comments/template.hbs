@@ -10,29 +10,29 @@
                 <div id="slider-{{id}}" class="carousel slide" data-ride="carousel">
 
                     <div class="carousel-inner" role="listbox">
-                     {{#if slider.length}}
-                        {{#each_with_sort slider "order"}}
-                        <div class="item{{#ifCond order '==' '0'}} active{{/ifCond}}">
-                         <div class="carousel-conten containe">
+                       {{#if slider.length}}
+                       {{#each_with_sort slider "order"}}
+                       <div class="item{{#ifCond order '==' '0'}} active{{/ifCond}}">
+                           <div class="carousel-conten containe">
                             <h2 class="title_slider">{{{ title }}}</h2>
                             <div class="text_slider">{{{ text }}}</div>
-                            </div>
                         </div>
-                        {{/each_with_sort}}
                     </div>
-                    {{/if}} 
-        {{#ifCond slider.length ">" 1}}
+                    {{/each_with_sort}}
+                </div>
+                {{/if}} 
+                {{#ifCond slider.length ">" 1}}
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
                     {{#each_with_sort slider "order"}}
-                         <li data-target="#slider-{{../id}}" data-slide-to="{{ order }}" {{#ifCond order "==" "0"}}class="active"{{/ifCond}}></li>
+                    <li data-target="#slider-{{../id}}" data-slide-to="{{ order }}" {{#ifCond order "==" "0"}}class="active"{{/ifCond}}></li>
                     {{/each_with_sort}}
                 </ol>
-        {{/ifCond}}
-        
+                {{/ifCond}}
+                
             </div>
         </div>
-            <div class="col-lg-12">
+        <div class="col-lg-12">
             
             <a class="btn btn-action" {{#if btn_id }} id="{{btn_id}}" {{/if}} {{#if btn_target}}target="blank"{{/if}} {{#if btn_onclick }}  onclick="{{btn_onclick}}" {{/if}} href="{{action_url}}">{{action_text}}</a>
         </div>
@@ -44,6 +44,5 @@
   .slider-comments.slider-comments-{{id}} {
     background-image: url('{{desktop}}');
     background-image: -webkit-image-set(url('{{desktop}}') 1x, url('{{desktop_retina}}') 2x);
-}
 }
 </style>
