@@ -2802,6 +2802,7 @@ line-height: 24px;
 .sidebar-docs .widget ul.sub-menu > li a {
 	font-size: 1.6rem;
 	font-family: "RobotoLight", sans-serif;
+	font-weight: normal;
 }
 .sidebar-docs .widget ul.sub-menu > li a {
 	padding-left: 70px;
@@ -2915,6 +2916,9 @@ line-height: 24px;
 }
 .turn-btn-docs {
 	display: none;
+}
+.main-docs .comments-area {
+	background: #fff !important;
 }
 @media (max-width: 991px) {
 	.sidebar-docs {
