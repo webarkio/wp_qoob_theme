@@ -2866,7 +2866,7 @@ line-height: 24px;
 	letter-spacing: 0.025em;
 }
 
-.page-docs .entry-content h2 {
+.page-docs .entry-content h2, .page-docs .entry-title {
 	margin-top: 0;
 	color: #000;
 	font-family: "RobotoBlack", sans-serif;
@@ -2931,6 +2931,7 @@ line-height: 24px;
 		background: #fff;
 		z-index: 1;
 		margin: 0;
+		overflow-y: auto;
 		transition: left 0.5s;
 	}
 	.open-btn.sidebar-docs {
@@ -2942,13 +2943,17 @@ line-height: 24px;
 		height: 75px;
 		background: #0084ff;
 		border-radius: 0px 6px 6px 0px;
-		position: absolute;
-		right: -40px;
+		position: fixed;
+		left: 0px;
 		top: 50%;
 		cursor: pointer;
 		padding: 20px 0;
 		margin-top: -37.5px;
+		    transition: all 0.5s;
 	}
+	.turn-btn-docs.active {
+    left: 65%;
+}
 	.turn-btn-docs b {
 		color: #fff;
 		display: block;
@@ -2970,7 +2975,7 @@ line-height: 24px;
 		letter-spacing: 0.025em;
 	}
 
-	.page-docs .entry-content h2 {
+	.page-docs .entry-content h2, .page-docs .entry-title {
 		font-size: 52px;
 		line-height: 72px;
 		letter-spacing: 0.025em;
@@ -3118,19 +3123,25 @@ line-height: 24px;
 		height: 50px;
 		background: #0084ff;
 		border-radius: 0px 6px 6px 0px;
-		position: absolute;
-		right: -27px;
+		position: fixed;
+		left: 0px;
 		top: 50%;
 		cursor: pointer;
 		padding: 10px 0;
 		margin-top: -25px;
+		z-index: 1;
+		transition: all 0.5s;
 	}
+	.turn-btn-docs.active {
+		left: 81.25%;
+		}
 	.sidebar-docs {
 		position: fixed;
 		display: block;
 		left: calc(-100% + 18.75%);
 		top: 0;
 		width: calc(100% - 18.75%);
+
 	}
 	
 	.turn-btn-docs b {
@@ -3143,7 +3154,7 @@ line-height: 24px;
 		letter-spacing: 0.025em;
 	}
 
-	.page-docs .entry-content h2 {
+	.page-docs .entry-content h2, .page-docs .entry-title {
 		font-size: 24px;
 		line-height: 34px;
 		letter-spacing: 0.025em;

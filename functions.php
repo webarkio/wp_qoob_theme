@@ -396,6 +396,7 @@ function qoob_theme_scripts() {
 	wp_enqueue_style( 'magnific-popup', get_template_directory_uri() . '/css/magnific-popup.css' );
 	wp_enqueue_style( 'qoob-theme-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'blocks', get_template_directory_uri() . '/css/blocks.css' );
+	wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/css/fontawesome/assets/css/fontawesome.css' );
 
 	wp_enqueue_script( 'qoob-theme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array( 'jquery' ), false, true );
 	wp_enqueue_script( 'hoverintent', get_template_directory_uri() . '/js/hoverIntent.js', array( 'jquery' ), false, true );
