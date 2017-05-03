@@ -118,9 +118,9 @@
         line-height: 40px !important;  
     }
     .block-image-bg {
-        padding-top: 3.5rem;
-        padding-bottom: 44.4rem;
-        background-position: bottom center;
+        padding-top: 3.7rem;
+        padding-bottom: 44.3rem;
+        background-position: center bottom 10px;
         background-repeat:  no-repeat;
     } 
 }
@@ -563,6 +563,8 @@
         margin-top: 30px;
         top: 587px;
         left: 0px;
+        padding-top: 13px;
+        padding-bottom: 13px;
     }
     .call-to-action-bg-v4 .background-block {
         position: relative;
@@ -673,14 +675,14 @@
 
     .call-to-action-bg-v3 {
         padding-top: 3.7rem;
-        padding-bottom: 6rem;
+        padding-bottom: 6.6rem;
     }
     .call-to-action-bg-v3 .h2-block {
         font-size: 3.0rem !important;
-        line-height: 36px !important;
+        line-height: 40px !important;
         margin-bottom: 1.3rem;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 15px !important;
+        padding-right: 15px !important; 
     }
     .call-to-action-bg-v3 .btn-action {
         max-width: 29rem;
@@ -1342,19 +1344,19 @@
     }
     .list_simple ul {
         max-width: 100%; 
-        margin-top: 16px;   
+        margin-top: 0px;   
     }
     .list_simple {
         padding-top: 3.5rem;
-        padding-bottom: 2.3rem;
+        padding-bottom: 3.1rem;
     }
     .list_simple .header-block {
         text-align: left !important;
         font-size: 3.0rem !important;
-        line-height: 37px !important;
+        line-height: 40px !important;
         margin-bottom: 1.3rem;
     }
-
+    
     .list_simple .btn-action {
         max-width: 29rem;
         padding: 1.45rem 3.5rem;
@@ -1365,10 +1367,13 @@
 
     .list_simple ul li {
         font-size: 1.6rem;
-        margin: 17px auto 32px;
+        margin: 17px auto 27px;
+        line-height: 28px;
         font-family: "RobotoLight", sans-serif;
     }
-
+    .list_simple ul li:first-child {
+        margin-top: 15px;
+    }
     .list_simple ul li i {
         font-size: 1.4rem;    
     }
@@ -3918,17 +3923,20 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
     }
 }
 @media (max-width: 767px) {
+        .slider-video .owl-dots {
+        margin-top: 24px !important;
+    }
         .slider-video .owl-dots .owl-dot span {
-    width: 13px;
-    height: 13px;
+    width: 13px !important;
+    height: 13px !important;
 }
   .slider-video .owl-theme .owl-dots .owl-dot span {
         margin-right: 7px;
         margin-left: 7px;
     }
     .slider-video .owl-dots .owl-dot.active span {
-    width: 23px;
-    height: 23px;
+    width: 23px !important;
+    height: 23px !important;
 }
     .slider-video .row {
         margin: 0;
@@ -3937,7 +3945,7 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
         display: block;
     }
     .slider-video {
-        padding: 0rem 0 4rem;
+        padding: 0rem 0 5.5rem;
     }
     
     .slider-video .item-video {
@@ -4247,14 +4255,16 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
 }
 @media (max-width: 767px) {
     .achievements-block {
-        padding-top: 5.8rem;
-        padding-bottom: 4.5rem;
+        padding-top: 6.5rem;
+        padding-bottom: 5.1rem;
     }
     .achievements-block .downloads_achievement, .achievements-block .installs_achievement {
         max-width: 100% !important;
         width: 100%;
         text-align: center;
         line-height: 43px;
+        font-size: 5.4rem !important;
+        margin-bottom: 13px;
     }
     .achievements-block form input[name="url"] {
         max-width: calc(100% - 103px);
@@ -4264,18 +4274,17 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
     .achievements-block form input[type="button"] {
         max-width: 103px;
         width: 100%;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }   
-    .achievements-block .downloads_achievement {
-        margin-bottom: 3.6rem;
-    }
     .achievements-block .downloads_achievement span, 
     .achievements-block .installs_achievement span {
         display: inherit;
+        font-size: 3rem !important;
+        margin-top: 9px;
     }
     .achievements-block form {
         height: 54px;
-        margin: 33px auto 15px;
+        margin: 35px auto 15px;
     }
 }
 
@@ -4443,13 +4452,16 @@ _::-webkit-:not(:root:root), .header-block-bg-video .container .row{
         font-size: 3rem;
         text-align: left;
         line-height: 40px;
-        margin-bottom: 1.7rem;
+        margin-bottom: 0.7rem;
         letter-spacing: 0.024em;
     }
 
     .contact-image form {
         height: 52px;
     }
+    .contact-image .contact-image-text {
+    margin-top: 15px;
+}
 }
 
 @media (max-width: 480px) {
