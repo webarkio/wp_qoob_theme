@@ -2491,6 +2491,10 @@
     }
 }
 @media (max-width: 767px) {
+    .faq-customers .panel-body p, .faq-customers .panel-body {
+        line-height: 32px;
+        font-size: 3.2rem;
+    }
     .slider-comments .carousel {
         max-width: 100%;
     }
@@ -2503,7 +2507,7 @@
     }
 
     .faq-customers {
-        padding-top: 2.2em;
+        padding-top: 4.2rem;
         padding-bottom: 6.3rem;
     }
     .faq-customers .panel-title .waves-effect {
@@ -2522,6 +2526,7 @@
     .faq-customers .panel-body p {
         text-align: left;
         padding-bottom: 30px;
+        line-height: 32px;
         font-size: 1.7rem;
     }
     .faq-customers .panel-body p:last-child {
