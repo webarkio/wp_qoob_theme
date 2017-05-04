@@ -1818,12 +1818,12 @@ a:active {
 	position: relative;
 	margin-bottom: 71px;
 }
-.widget-area:before {
+.sidebar-docs .widget_nav_menu:before {
 	content: "";
 	position: absolute;
 	display: block;
 	height: 100%;
-	width: 1px;
+	width: 2px;
 	left: -1px;
 	top: 0;
 	background: #d5dde2;
@@ -2765,6 +2765,7 @@ img.mfp-img {
 }
 .sidebar-docs .widget ul.menu {
 	padding-left: 0rem;
+
 }
 .doc-block {
 	background-size: cover;
@@ -2782,7 +2783,7 @@ img.mfp-img {
 	color: #000;
 	line-height: 72px;
 	font-size: 54px;
-	letter-spacing: 0.025;
+	letter-spacing: 0.025em;
 	text-transform: uppercase;
 	font-family: "RobotoBlack", sans-serif;
 }
@@ -2796,6 +2797,8 @@ img.mfp-img {
 padding-left: 36px;
 display: block;
 line-height: 24px;
+    padding-top: 4.5px;
+    padding-bottom: 4.5px;
 	}
 
 .sidebar-docs .widget ul.sub-menu > li,
@@ -2803,16 +2806,18 @@ line-height: 24px;
 	font-size: 1.6rem;
 	font-family: "RobotoLight", sans-serif;
 	font-weight: normal;
+	letter-spacing: 0.01em;
 }
 .sidebar-docs .widget ul.sub-menu > li a {
-	padding-left: 70px;
+	padding-left: 68px;
 }
 .sidebar-docs .widget {
 	padding-left: 0px;
+	position: relative;
 }
 .sidebar-docs .widget ul li {
 	margin-top: 0;
-	margin-bottom: 1.8rem;
+	margin-bottom: 1rem;
 	position: relative;
 	/*arrow_list_widge_gray.png*/
 }
@@ -2838,7 +2843,8 @@ line-height: 24px;
 .sidebar-docs .widget ul.sub-menu {
 	padding-left: 0;
 	margin-left: 0rem;
-	margin-top: 1.8rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 }
 .sidebar-docs .widget ul.sub-menu > li.menu-item-has-children,
 .sidebar-docs .widget ul.sub-menu > li.menu-item-has-children > a {
@@ -2910,6 +2916,9 @@ line-height: 24px;
 .page-docs .entry-content p {
 	font-size: 18px;
 	font-family: "RobotoLight", sans-serif;
+	letter-spacing: 0.025em;
+	line-height: 32px;
+	margin-bottom: 32px;
 }
 .site-main-docs .sidebar-docs:before {
 	width: 2px;
