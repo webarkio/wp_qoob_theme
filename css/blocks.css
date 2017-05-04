@@ -142,7 +142,6 @@
     overflow: hidden;
     position: relative;
 }
-.slider-comments 
 .slider-comments .background-block {
     display: block;
     width: 100%;
@@ -241,8 +240,8 @@
 }
 @media (max-width: 991px) {
     .slider-comments {
-        padding-top: 5.5rem;
-        padding-bottom: 6.5rem;
+        padding-top: 5.1rem;
+        padding-bottom: 8.3rem;
         background: #dfdfdf !important;
     }
     .slider-comments .header-h2 {
@@ -2465,7 +2464,7 @@
     padding: 66px 17% 62px;
 }
 .faq-customers .panel-body p, .faq-customers .panel-body {
-    line-height: 32px;
+    line-height: 31px;
     text-align: justify;
     font-size: 1.8rem;
     color: #000;
@@ -2482,13 +2481,13 @@
         padding: 4.5rem 0 8rem;
     }
     .faq-customers .panel-body {
-        padding: 49px 62px 50px;
+        padding: 49px 57px 50px;
     }
     .faq-customers .header-h2 {
-        margin: 1.7rem 0 6.1rem;
+        margin: 1.7rem 0 2.8rem;
     }
     .faq-customers .panel-title a {
-        padding: 13px 62px;
+        padding: 13px 61px;
     }
 }
 @media (max-width: 767px) {
