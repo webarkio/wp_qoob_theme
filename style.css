@@ -2794,7 +2794,7 @@ img.mfp-img {
 	letter-spacing: 0.025em;
 }
 .sidebar-docs .widget ul.menu > li a {
-padding-left: 36px;
+padding-left: 54px;
 display: block;
 line-height: 24px;
     padding-top: 4.5px;
@@ -2975,7 +2975,7 @@ line-height: 24px;
 		padding-right: 50px;
 	}
 	.main-docs {
-		margin-top: 4.8rem;
+		margin-top: 11.5rem;
 	}
 
 	.page-docs .entry-content h1 {
@@ -2985,9 +2985,10 @@ line-height: 24px;
 	}
 
 	.page-docs .entry-content h2, .page-docs .entry-title {
-		font-size: 52px;
+		font-size: 54px;
 		line-height: 72px;
 		letter-spacing: 0.025em;
+		margin-bottom: 51px;
 	}
 
 	.page-docs .entry-content h3 {
@@ -3011,8 +3012,8 @@ line-height: 24px;
 		letter-spacing: 0.025em;
 	}
 	.page-docs .entry-content p {
-		font-size: 26px;
-		line-height: 48px;
+		font-size: 25px;
+		line-height: 47px;
 	}
 	.doc-block {
 		padding-top: 14.8rem;
@@ -3024,12 +3025,12 @@ line-height: 24px;
 		background-repeat: no-repeat;
 	}
 	.doc-block h1 {
-		font-size: 5.5rem !important;
+		font-size: 5.4rem !important;
 		letter-spacing: 0.025em;
 		line-height: 73px;
 	}
 	.sidebar-docs .widget {
-		padding-top: 130px;
+		padding-top: 140px;
 	}
 	.sidebar-docs .widget {
     padding-left: 0px;
@@ -3071,7 +3072,7 @@ line-height: 24px;
 	padding-right: 10px;
 }
 .sidebar-docs .widget ul.menu li ul.sub-menu li > a {
-    padding-left: 110px;
+    padding-left: 103px;
 }
 .sidebar-docs .widget ul li {
     margin-bottom: 1rem;
