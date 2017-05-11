@@ -3037,7 +3037,7 @@ img.mfp-img {
 		line-height: 73px;
 	}
 	.sidebar-docs .widget {
-		padding-top: 113px;
+		padding-top: 120px;
 	}
 	.sidebar-docs .widget {
 		padding-left: 0px;
@@ -3085,13 +3085,16 @@ img.mfp-img {
 		padding-right: 10px;
 	}
 	.sidebar-docs .widget ul.menu li ul.sub-menu li > a {
-		padding-left: 103px;
+		padding-left: 106px;
 	}
 	.sidebar-docs .widget ul li {
 		margin-bottom: 1rem;
 	}
 	.sidebar-docs .widget ul li.current_page_item > a:before {
 		left: 0
+	}
+		.sidebar-docs .widget ul.menu > li a {
+		padding-left: 56px;
 	}
 }
 @media (max-width: 767px) {
