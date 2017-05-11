@@ -1,0 +1,255 @@
+{
+    "name": "",
+    "groups": "text",
+    "template": "template.hbs",
+    "settings": [{
+        "name": "header",
+        "label": "Header",
+        "type": "text"
+    }, {
+        "name": "list",
+        "label": "List",
+        "type": "accordion",
+        "settings": [{
+            "name": "title",
+            "label": "Title",
+            "type": "text"
+        }]
+    }, {
+        "name": "header_wordpress",
+        "label": "Tab (WordPress Header)",
+        "type": "text"
+    }, {
+        "name": "title_wordpress",
+        "label": "Title WordPress",
+        "type": "text"
+    }, {
+        "name": "wordpress_list",
+        "label": "List",
+        "type": "accordion",
+        "settings": [{
+            "name": "title",
+            "label": "Title",
+            "type": "text"
+        }, {
+            "name": "url",
+            "label": "Link",
+            "type": "text"
+        }, {
+            "name": "icon",
+            "label": "Icon",
+            "type": "icon",
+            "presets": ["fa fa-play-circle", "fa fa-github", "fa fa-book", "fa fa-book"]
+        }, {
+            "name": "btn_id",
+            "label": "Button id",
+            "type": "text"
+        }, {
+            "name": "btn_onclick",
+            "label": "Button onclick",
+            "type": "text"
+        }, {
+            "name": "btn_target",
+            "label": "Button Open link in new tab?",
+            "type": "checkbox"
+        }]
+
+    }, {
+        "name": "url_wordpress_pl",
+        "label": "Email WordPress palceholder",
+        "type": "text"
+    }, {
+        "name": "wordpress_value_title",
+        "label": "Submit button value",
+        "type": "text"
+    }, {
+        "name": "wordpress_button_id",
+        "label": "Button id",
+        "type": "text"
+    }, {
+        "name": "wordpress_button_onclick",
+        "label": "Button onclick",
+        "type": "text"
+    }, {
+        "name": "header_html",
+        "label": "Tab (HTML Header)",
+        "type": "text"
+    }, {
+        "name": "title_html",
+        "label": "Title html",
+        "type": "text"
+    }, {
+        "name": "html_list",
+        "label": "List",
+        "type": "accordion",
+        "settings": [{
+            "name": "title",
+            "label": "Title",
+            "type": "text"
+        }, {
+            "name": "url",
+            "label": "Link",
+            "type": "text"
+        }, {
+            "name": "icon",
+            "label": "Icon",
+            "type": "icon",
+            "presets": ["fa fa-play-circle", "fa fa-github", "fa fa-book", "fa fa-book"]
+        }, {
+            "name": "btn_id",
+            "label": "Button id",
+            "type": "text"
+        }, {
+            "name": "btn_onclick",
+            "label": "Button onclick",
+            "type": "text"
+        }, {
+            "name": "btn_target",
+            "label": "Button Open link in new tab?",
+            "type": "checkbox"
+        }]
+    }, {
+        "name": "btn_html_title",
+        "label": "Button WordPress Title",
+        "type": "text"
+    }, {
+        "name": "btn_html_url",
+        "label": "Button WordPress Url",
+        "type": "text"
+    }, {
+        "name": "btn_html_id",
+        "label": "Button HTML Id",
+        "type": "text"
+    }, {
+        "name": "btn_html_click",
+        "label": "Button HTML OnClick",
+        "type": "text"
+    }, {
+        "name": "btn_html_target",
+        "label": "Button Wordpress Open link in new tab?",
+        "type": "checkbox"
+    }, {
+        "name": "header_drupal",
+        "label": "Tab (Drupal Header)",
+        "type": "text"
+    }, {
+        "name": "title_drupal",
+        "label": "Title Drupal",
+        "type": "text"
+    }],
+    "defaults": {
+        "header": "What's new in version 2.0",
+        "list": [{
+            "title": "Create your page in minutes with Blocks builder",
+            "order": 0
+        }, {
+            "title": "Get a real time preview of your page with Live Editing while modifying it",
+            "order": 1
+        }, {
+            "title": "Be confident that your website looks awesome on any device",
+            "order": 2
+        }, {
+            "title": "Be sure your website has a professional-looking design with Clean and Intuitive UI",
+            "order": 3
+        }, {
+            "title": "Arrange your website faster with a Real-time Editing Mobile Version",
+            "order": 4
+        }, {
+            "title": "Now you can save your templates",
+            "order": 5
+        }, {
+            "title": "Add, update or delete the libraries fast and easily",
+            "order": 6
+        }],
+        "header_wordpress": "Wordpress Version",
+        "title_wordpress": "WordPress Version <span>3000 downloads</span>",
+        "wordpress_list": [{
+            "title": "Try demo",
+            "url": "http://webark.com/qoob/demo/",
+            "icon": "fa fa-play-circle","btn_id": "",
+            "btn_id": "",
+            "btn_onclick": "",
+            "btn_target": 1,
+            "btn_hidebtn": 0,
+            "order": 0
+        }, {
+            "title": "View on GitHub",
+            "url": "https://github.com/webarkio/html_qoob",
+            "icon": "fa fa-github",
+            "btn_id": "",
+            "btn_onclick": "",
+            "btn_target": 1,
+            "btn_hidebtn": 0,
+            "order": 1
+        }, {
+            "title": "Installation",
+            "url": "http://webark.com/qoob/docs/html-page-builder/installation/",
+            "icon": "fa fa-book",
+            "btn_id": "",
+            "btn_onclick": "",
+            "btn_target": 1,
+            "btn_hidebtn": 0,
+            "order": 2
+        }, {
+            "title": "Getting Started with qoob for HTML",
+            "url": "http://webark.com/qoob/docs/html-page-builder/getting-started/",
+            "icon": "fa fa-book",
+            "btn_id": "",
+            "btn_onclick": "",
+            "btn_target": 1,
+            "btn_hidebtn": 0,
+            "order": 3
+        }],
+        "url_wordpress_pl" : "Enter your website url",
+        "wordpress_value_title" : "install",
+        "wordpress_button_id": "",
+        "wordpress_button_onclick": "",
+        "header_html": "Html Version",
+        "title_html": "HTML Version <span>1500 downloads</span>",
+        "html_list": [{
+            "title": "Try demo",
+            "url": "http://webark.com/qoob/demo/",
+            "icon": "fa fa-play-circle","btn_id": "",
+            "btn_id": "",
+            "btn_onclick": "",
+            "btn_target": 1,
+            "btn_hidebtn": 0,
+            "order": 0
+        }, {
+            "title": "View on GitHub",
+            "url": "https://github.com/webarkio/html_qoob",
+            "icon": "fa fa-github",
+            "btn_id": "",
+            "btn_onclick": "",
+            "btn_target": 1,
+            "btn_hidebtn": 0,
+            "order": 1
+        }, {
+            "title": "Installation",
+            "url": "http://webark.com/qoob/docs/html-page-builder/installation/",
+            "icon": "fa fa-book",
+            "btn_id": "",
+            "btn_onclick": "",
+            "btn_target": 1,
+            "btn_hidebtn": 0,
+            "order": 2
+        }, {
+            "title": "Getting Started with qoob for HTML",
+            "url": "http://webark.com/qoob/docs/html-page-builder/getting-started/",
+            "icon": "fa fa-book",
+            "btn_id": "",
+            "btn_onclick": "",
+            "btn_target": 1,
+            "btn_hidebtn": 0,
+            "order": 3
+        }],
+        "btn_html_title": "Download",
+        "btn_html_url": "http://webark.com/qoob/download/",
+        "btn_html_id": "",
+        "btn_html_click": "",
+        "btn_html_target": 1,
+        "header_drupal": "Drupal Version",
+        "title_drupal": "Drupal Version Comming soon..."
+    }
+    
+}

@@ -1,0 +1,38 @@
+<section class="list_simple_ver_a list_simple_ver_a-{{id}}">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h2 class="header-block">{{header}}</h2>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                {{#if list.length}}
+                    <ul id="accordion-{{id}}">
+                    {{#each_with_sort list "order"}} 
+                            <li id="li-simple-{{order}}">
+                              <i class="fa fa-check" aria-hidden="true"></i>{{ title }}
+                            </li>
+                      {{/each_with_sort}}
+                    </ul>
+                {{/if}}
+            </div>
+        </div>
+        <div class="row list_a">
+        {{#if box.length}}
+                {{#each_with_sort box "order"}}
+                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class= "block-image boxbg">
+                        {{#if image}}
+                            <img alt="" src="{{image}}">
+                        {{/if}}
+                        </div>
+                        <a href="{{linkbtn}}" {{#if btn_id }} id="{{btn_id}}" {{/if}} {{#if btn_onclick }} onclick="{{btn_onclick}}" {{/if}} class="btn btn-action {{#ifCond disabled '==' '1'}}disabled{{/ifCond}}">{{textbtn}}</a>
+                     </div>
+                    
+                {{/each_with_sort}}
+              {{/if}}
+           
+
+           
+        </div> 
+    </div>
+</section>

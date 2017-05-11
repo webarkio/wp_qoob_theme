@@ -48,10 +48,6 @@
         "id": "features",
         "label": "Features",
         "position": 10
-    }, {
-        "id": "keo_presentation",
-        "label": "KEO Presentation",
-        "position": 10
     }],
     "blocks": [{
         "name": "assets",
@@ -246,6 +242,12 @@
         "name": "list_simple",
         "url": "%theme_url%/blocks/list_simple/"
     }, {
+        "name": "list_simple_ver_a",
+        "url": "%theme_url%/blocks/list_simple_ver_A/"
+    }, {
+        "name": "list_simple_ver_b",
+        "url": "%theme_url%/blocks/list_simple_ver_B/"
+    }, {
         "name": "block_html",
         "url": "%theme_url%/blocks/block_html/"
     }, {
@@ -278,9 +280,6 @@
     }, {
         "name": "video_full_page",
         "url": "%theme_url%/blocks/video_full_page/"
-    }, {
-        "name": "keo_presentation",
-        "url": "%theme_url%/blocks/keo_pre_header/"
     }],
     "res": {
         "css": [

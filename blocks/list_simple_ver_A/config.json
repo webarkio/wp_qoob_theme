@@ -1,0 +1,115 @@
+{
+    "name": "",
+    "groups": "text",
+    "template": "template.hbs",
+    "settings": [{
+        "name": "header",
+        "label": "Header",
+        "type": "text"
+    }, {
+        "name": "list",
+        "label": "List",
+        "type": "accordion",
+        "settings": [{
+            "name": "title",
+            "label": "Title",
+            "type": "text"
+        }]
+    }, {
+        "name": "box",
+        "label": "Items",
+        "type": "accordion",
+        "viewcontent": "standart",
+        "viewType": "expand",
+        "settings": [{
+            "name": "title",
+            "label": "Title",
+            "type": "text",
+            "placeholder": "Enter title"
+        }, {
+            "name": "boxbg",
+            "label": "Background color",
+            "type": "select",
+            "visible_color": "true",
+            "options": [{
+                "id": "release",
+                "colorimage": "rgb(0, 132, 255)",
+                "val": "release"
+            }, {
+                "id": "comingsoon",
+                "colorimage": "rgb(0, 0, 0)",
+                "val": "comingsoon"
+            }]
+        }, {
+            "name": "btn_id",
+            "label": "Button's id",
+            "type": "text"
+        }, {
+            "name": "btn_onclick",
+            "label": "Button's onclick",
+            "type": "text"
+        }, {
+            "name": "textbtn",
+            "label": "Text button",
+            "type": "text"
+        }, {
+            "name": "linkbtn",
+            "label": "Url link button",
+            "type": "text"
+        }, {
+            "name": "disabled",
+            "label": "Disabled button?",
+            "type": "checkbox"
+        }, {
+            "name" : "image",
+            "type" : "image",
+            "label": "image"
+        }]
+    }],
+    "defaults": {
+        "header": "What's new in version 2.0",
+       "box": [{
+            "boxbg" : "release",
+            "image" : "%block_url%/assets/img/html5.png",
+            "title": "Html",
+            "btn_id" : "",
+            "btn_onclick" : "",
+            "textbtn" : "Download",
+            "linkbtn" : "#",
+            "disabled" : 0,
+            "order": 1
+        }, {
+            "boxbg" : "comingsoon",
+            "image" : "%block_url%/assets/img/wp.png",
+            "title": "WordPress",
+            "btn_id" : "",
+            "btn_onclick" : "",
+            "textbtn" : "Download",
+            "linkbtn" : "#",
+            "disabled" : 1,
+            "order": 2
+        }],
+        "list": [{
+            "title": "Create your page in minutes with Blocks builder",
+            "order": 0
+        }, {
+            "title": "Get a real time preview of your page with Live Editing while modifying it",
+            "order": 1
+        }, {
+            "title": "Be confident that your website looks awesome on any device",
+            "order": 2
+        }, {
+            "title": "Be sure your website has a professional-looking design with Clean and Intuitive UI",
+            "order": 3
+        }, {
+            "title": "Arrange your website faster with a Real-time Editing Mobile Version",
+            "order": 4
+        }, {
+            "title": "Now you can save your templates",
+            "order": 5
+        }, {
+            "title": "Add, update or delete the libraries fast and easily",
+            "order": 6
+        }]
+    }
+}

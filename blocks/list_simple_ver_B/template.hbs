@@ -1,0 +1,109 @@
+<section class="list_simple_ver_b list_simple_ver_b-{{id}}">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h2 class="header-block">{{header}}</h2>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                {{#if list.length}}
+                <ul id="accordion-{{id}}">
+                    {{#each_with_sort list "order"}} 
+                    <li id="li-simple-{{order}}">
+                      <i class="fa fa-check" aria-hidden="true"></i>{{ title }}
+                  </li>
+                  {{/each_with_sort}}
+              </ul>
+              {{/if}}
+          </div>
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+             <div class="tabs">
+                <ul class="tabs-header">
+                    <li> {{ header_wordpress }}</li>
+
+                    <li> {{ header_html }}</li>
+
+                    <li> {{ header_drupal }}</li>
+                </ul>
+                <div>
+                   <div> 
+                       <h4>{{{title_wordpress}}}</h4>
+                       <ul class="tabs-container">
+                           {{#if wordpress_list.length}}
+                           {{#each_with_sort wordpress_list "order"}} 
+                           <li>
+                            <a class="link_wordpress" {{#if btn_id }} id="{{btn_id}}" {{/if}} {{#if btn_target}}target="blank"{{/if}}  {{#if btn_onclick }} onclick="{{btn_onclick}}" {{/if}} href="{{url}}"><i class="{{icon}}"></i> {{title}}</a>
+                        </li>
+                        {{/each_with_sort}}
+                        {{/if}}
+                    </ul>
+                    <form id="block_wp_downloads-form" accept-charset="utf-8">
+                        <!-- Url field (required) -->
+                        <input type="text" name="url"  id="block_wp_downloads-email" placeholder="{{url_wordpress_pl}}" required />
+                        <!-- Url install Qoob -->
+                        <input type="hidden" name="hidden" value="wp-admin/plugin-install.php?s=qoob&tab=search&type=term"/>
+                        <!-- Subscriber button -->
+                        <input type="button" class="inverse" value="{{wordpress_value_title}}" {{#if wordpress_button_id }} id="{{wordpress_button_id}}" {{/if}} {{#if wordpress_button_onclick }} onclick="{{wordpress_button_onclick}}" {{/if}} />
+                    </form>
+
+                </div>
+                <div> 
+                <h4>{{{title_html}}}</h4>
+                   <ul class="tabs-container">
+                       {{#if html_list.length}}
+                       {{#each_with_sort html_list "order"}} 
+                       <li>
+                        <a class="link_html" {{#if btn_id }} id="{{btn_id}}" {{/if}} {{#if btn_target}}target="blank"{{/if}}  {{#if btn_onclick }} onclick="{{btn_onclick}}" {{/if}} href="{{url}}"><i class="{{icon}}"></i> {{title}}</a>
+                    </li>
+                    {{/each_with_sort}}
+                    {{/if}}
+                </ul>
+ <a class="btn btn-action {{#if button_hidebtn}}hidden-xs{{/if}}" {{#if button_id }} id="{{button_id}}" {{/if}} {{#if button_target}}target="blank"{{/if}}  {{#if button_onclick }} onclick="{{button_onclick}}" {{/if}} href="{{action_url}}">{{btn_html_title}}</a>
+            </div>
+            <div>   <h4>{{{title_drupal}}}</h4> </div>
+
+        </div>
+
+    </div>  
+
+</div> 
+
+</div>
+
+</div>
+</div>
+</section>
+
+<script type="text/javascript">
+    (function(jQuery){               
+        jQuery.fn.lightTabs = function(options){
+
+            var createTabs = function(){
+                tabs = this;
+                i = 0;
+
+                showPage = function(i){
+                    jQuery(tabs).children("div").children("div").hide();
+                    jQuery(tabs).children("div").children("div").eq(i).show();
+                    jQuery(tabs).children("ul").children("li").removeClass("active");
+                    jQuery(tabs).children("ul").children("li").eq(i).addClass("active");
+                }
+
+                showPage(0);                
+
+                jQuery(tabs).children("ul").children("li").each(function(index, element){
+                    jQuery(element).attr("data-page", i);
+                    i++;                        
+                });
+
+                jQuery(tabs).children("ul").children("li").click(function(){
+                    showPage(parseInt(jQuery(this).attr("data-page")));
+                });             
+            };      
+            return this.each(createTabs);
+        };  
+    })(jQuery);
+    jQuery(document).ready(function() {
+       jQuery(".tabs").lightTabs();
+   });
+</script>

@@ -339,10 +339,35 @@ function setPostViews($postID) {
 	}
 }
 
+/* Add shortcode on the page partners*/
+function formPartners( $atts ) {
+	$atts = shortcode_atts( array(
+		'placeholder'   => 'Enter your email',
+		'button_text' => 'Send now',   
+	), $atts );
+
+	return '<form class="form-partners" accept-charset="utf-8" method="post">
+            	<input type="text" name="email" id="email_partners" placeholder="'. $atts['placeholder'] .'">
+                <input type="submit" class="inverse" id="sendmail_partners" value="'. $atts['button_text'] .'">
+            </form>';
+}
+add_shortcode('formPartners', 'formPartners');
+
+/* Add shortcode on the page partners custom link*/
+function linkPartners( $atts ) {
+	$atts = shortcode_atts( array(
+		'href'   => '#',
+		'link_text' => 'Enter text button',
+		'target' => '',   
+	), $atts );
+
+	return '<a class="custom-link" href="'. $atts['href'] .'" target="'.$atts['target'].'">'. $atts['link_text'] .'</a>';
+}
+add_shortcode('linkPartners', 'linkPartners');
+
 /**
  * Register sidebar for footer
  */
-
 
 function qoob_theme_footer_widgets_init() {
 	register_sidebar( array(

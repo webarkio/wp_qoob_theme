@@ -1,29 +1,26 @@
 jQuery(document).ready(function(){
 	var scrollDefault = window.pageYOffset;
+	var lastScrollTop = 0;
 	// Init masonry blog list
 	jQuery('.blog-list').masonry({
 		itemSelector: '.col-lg-4',
 		percentPosition: true,
 		resize: true
 	});
-	window.onscroll = function() {
-		if (window.pageYOffset > 107) {
-			jQuery('.site-header.fixed').addClass('move');	
-		} 
-
-		if(scrollDefault > window.pageYOffset) {
-			jQuery('.site-header.fixed').removeClass('move');	
-		}
-		if(scrollDefault < window.pageYOffset) {
-			jQuery('.site-header.fixed').addClass('move');
-			scrollDefault = window.pageYOffset;
-		}
-		else {
-			jQuery('.site-header.fixed').removeClass('move');
-
-		}
-		scrollDefault = window.pageYOffset;
-	};
+	if(scrollDefault > 60) {
+	   	jQuery('.site-header.fixed').addClass('move');
+	}
+	jQuery(window).scroll(function(event){
+	   var st = jQuery(this).scrollTop();
+	   if (st > lastScrollTop){
+	   	   if(st > 60) {
+	   	   	jQuery('.site-header.fixed').addClass('move');
+	   	   }
+	   } else {
+	     jQuery('.site-header.fixed').removeClass('move');
+	   }
+	   lastScrollTop = st;
+	});
 
 	if(jQuery(window).width() < 768) {
 		jQuery('.site-header').removeClass('fixed');
