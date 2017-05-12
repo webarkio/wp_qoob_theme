@@ -2773,7 +2773,10 @@ img.mfp-img {
 	margin-top: 60px;
 	padding-top: 87px;
 	padding-bottom: 87px;
-
+}
+.page-docs img {
+    margin-top: 29px;
+    margin-bottom: 26px;
 }
 .page-docs .entry-content {
 	margin-top: 0;
@@ -2794,7 +2797,7 @@ img.mfp-img {
 	letter-spacing: 0.025em;
 }
 .sidebar-docs .widget ul.menu > li a {
-	padding-left: 36px;
+	padding-left: 35px;
 	display: block;
 	line-height: 24px;
 	padding-top: 4.5px;
@@ -2809,7 +2812,7 @@ img.mfp-img {
 	letter-spacing: 0.01em;
 }
 .sidebar-docs .widget ul.sub-menu > li a {
-	padding-left: 66px;
+	padding-left: 68px;
 }
 .sidebar-docs .widget {
 	padding-left: 0px;
@@ -2844,7 +2847,7 @@ img.mfp-img {
 	padding-left: 0;
 	margin-left: 0rem;
 	margin-top: 1rem;
-	margin-bottom: 2.3rem;
+	margin-bottom: 2.2rem;
 }
 .sidebar-docs .widget ul.sub-menu > li.menu-item-has-children,
 .sidebar-docs .widget ul.sub-menu > li.menu-item-has-children > a {
@@ -2862,7 +2865,7 @@ img.mfp-img {
 	background: #fff !important;
 }
 .main-docs {
-	margin-top: 9.3rem;
+	margin-top: 8.7rem;
 }
 .page-docs .entry-content h1 {
 	margin-top: 0;
@@ -2880,6 +2883,7 @@ img.mfp-img {
 	font-size: 45px;
 	line-height: 62px;
 	letter-spacing: 0.025em;
+	margin-bottom: 45px;
 }
 
 .page-docs .entry-content h3 {
@@ -3088,7 +3092,7 @@ img.mfp-img {
 		padding-left: 106px;
 	}
 	.sidebar-docs .widget ul li {
-		margin-bottom: 1rem;
+		margin-bottom: 0.9rem;
 	}
 	.sidebar-docs .widget ul li.current_page_item > a:before {
 		left: 0
