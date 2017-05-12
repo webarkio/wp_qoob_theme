@@ -3128,7 +3128,7 @@ img.mfp-img {
 		left: 0;
 	}
 	.sidebar-docs .widget ul.sub-menu {
-		margin:  0px 0px 7px 0px !important;
+		margin:  0px 0px 18px 0px !important;
 	}
 	.sidebar-docs .widget ul > li.current_page_item:before {
 		left: 0;
@@ -3146,8 +3146,11 @@ img.mfp-img {
 	.sidebar-docs .widget ul.menu > li, .sidebar-docs .widget ul.menu > li a {
 		font-size: 1.4rem;
 		letter-spacing: 0.025em;
-		line-height: 26px;
+		line-height: 20px;
+		margin-bottom: 7px;
 		position: relative;
+		padding-top: 3px;
+    	padding-bottom: 3px;
 	}
 	.doc-block h1 {
 		font-size: 30px !important;
