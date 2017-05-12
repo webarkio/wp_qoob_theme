@@ -3136,7 +3136,10 @@ img.mfp-img {
 		left: 0;
 	}
 	.sidebar-docs .widget ul.sub-menu {
-		margin:  6px 0px 11px 0px !important;
+		margin:  7px 0px 10px 0px !important;
+	}
+	.sidebar-docs .widget ul.sub-menu > li {
+		margin-bottom: 6px;
 	}
 	.sidebar-docs .widget ul > li.current_page_item:before {
 		left: 0;
