@@ -2984,14 +2984,14 @@ img.mfp-img {
 	.page-docs {
 		padding-left: 76px;
 		padding-right: 76px;
-		margin-bottom: 70px;
+		margin-bottom: 47px;
 	}
 	.page-docs img {
 		margin-top: 37px;
 		margin-bottom: 37px;
 	}
 	.main-docs {
-		margin-top: 11.5rem;
+		margin-top: 11.2rem;
 	}
 
 	.page-docs .entry-content h1 {
@@ -3004,13 +3004,14 @@ img.mfp-img {
 		font-size: 54px;
 		line-height: 72px;
 		letter-spacing: 0.025em;
-		margin-bottom: 51px;
+		margin-bottom: 50px;
 	}
 
 	.page-docs .entry-content h3 {
-		font-size: 37px;
-		line-height: 55px;
+		font-size: 36px;
+		line-height: 53px;
 		letter-spacing: 0.025em;
+		margin-bottom: 22px;
 	}
 	.page-docs .entry-content h4 {
 		font-size: 28px;
@@ -3097,7 +3098,7 @@ img.mfp-img {
 		padding-left: 106px;
 	}
 	.sidebar-docs .widget ul li {
-		margin-bottom: 0.9rem;
+		margin-bottom: 1.2rem;
 	}
 	.sidebar-docs .widget ul li.current_page_item > a:before {
 		left: 0
