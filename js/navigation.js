@@ -91,8 +91,11 @@ function qoob_menu() {
     }
     if (jQuery(window).width() < 768) {
         jQuery('.site-header.fixed').addClass('mobile-show');
-            jQuery("#mobile-menu li a").click(function() {
+            jQuery("#mobile-menu li a").hover(function() {
             jQuery(this).addClass("touch-active");
+            console.log("in");
+        }, function() {
+            console.log("Out");
         });
     } else {
         jQuery('.site-header.fixed').removeClass('mobile-show');
