@@ -2844,7 +2844,7 @@ img.mfp-img {
 	padding-left: 0;
 	margin-left: 0rem;
 	margin-top: 1rem;
-	margin-bottom: 1rem;
+	margin-bottom: 2.3rem;
 }
 .sidebar-docs .widget ul.sub-menu > li.menu-item-has-children,
 .sidebar-docs .widget ul.sub-menu > li.menu-item-has-children > a {
@@ -3061,7 +3061,7 @@ img.mfp-img {
 		overflow: hidden;
 	}
 	.sidebar-docs .widget ul.menu > li, .sidebar-docs .widget ul.menu > li a {
-		font-size: 2.6rem;
+		font-size: 2.5rem;
 		line-height: 27px;
 
 	}
