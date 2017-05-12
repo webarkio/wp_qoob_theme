@@ -2866,6 +2866,7 @@ img.mfp-img {
 }
 .main-docs {
 	margin-top: 8.7rem;
+	margin-bottom: 4rem;
 }
 .page-docs .entry-content h1 {
 	margin-top: 0;
@@ -2891,8 +2892,9 @@ img.mfp-img {
 	color: #000;
 	font-family: "RobotoBlack", sans-serif;
 	font-size: 37px;
-	line-height: 55px;
+	line-height: 47px;
 	letter-spacing: 0.025em;
+	margin-bottom: 37px;
 }
 .page-docs .entry-content h4 {
 	margin-top: 0;
@@ -2901,6 +2903,7 @@ img.mfp-img {
 	font-size: 28px;
 	line-height: 38px;
 	letter-spacing: 0.025em;
+	margin-bottom: 28px;
 }
 .page-docs .entry-content h5 {
 	margin-top: 0;
@@ -2909,6 +2912,7 @@ img.mfp-img {
 	font-size: 22px;
 	line-height: 38px;
 	letter-spacing: 0.025em;
+	margin-bottom: 22px;
 }
 .page-docs .entry-content h6 {
 	margin-top: 0;
@@ -2917,6 +2921,7 @@ img.mfp-img {
 	font-size: 18px;
 	line-height: 28px;
 	letter-spacing: 0.025em;
+	margin-bottom: 18px;
 }
 .page-docs .entry-content p {
 	font-size: 18px;
