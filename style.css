@@ -3108,8 +3108,13 @@ img.mfp-img {
 	}
 }
 @media (max-width: 767px) {
+	.page-docs img {
+    	margin-top: 8px;
+    	margin-bottom: 7px;
+	}
 	.main-docs {
-		margin-top: 5.8rem;
+		margin-top: 5.3rem;
+		margin-bottom: 1px;
 	}
 	.sidebar-docs .widget ul.menu {
 		padding-left: 0 !important;
