@@ -3146,7 +3146,7 @@ img.mfp-img {
 	}
 	.sidebar-docs .widget {
 		padding-left: 0px !important;
-		padding-top: 46px;
+		padding-top: 50px;
 	}
 	.sidebar-docs .widget ul.menu > li a {
 		padding-left: 31px;
@@ -3245,6 +3245,7 @@ img.mfp-img {
 		padding-left: 38px;
 		padding-right: 38px;
 		overflow-x: hidden;
+		margin-bottom: 40px;
 	}
 	}
 /*--------------------------------------------------------------
