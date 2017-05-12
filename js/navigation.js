@@ -91,6 +91,9 @@ function qoob_menu() {
     }
     if (jQuery(window).width() < 768) {
         jQuery('.site-header.fixed').addClass('mobile-show');
+            jQuery("#mobile-menu li a").click(function() {
+            jQuery(this).addClass("touch-active");
+        });
     } else {
         jQuery('.site-header.fixed').removeClass('mobile-show');
     }

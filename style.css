@@ -1286,6 +1286,9 @@ a:active {
 		padding-left: 7px;
 		padding-right: 7px;
 	}
+	#mobile-menu li a.touch-active {
+		font-family: "RobotoMedium", sans-serif !important;
+	}
 	#mobile-menu .menu-item a:hover, #mobile-menu .menu-item a:active, #mobile-menu .menu-item a:focus {
 		color: #000 !important;
 		font-family: "RobotoBlack", sans-serif;
