@@ -441,7 +441,7 @@ add_action( 'wp_enqueue_scripts', 'qoob_theme_scripts' );
 
 function sendwebark() {
 	$data = array();
-	$sendto   = "webarkinc@gmail.com"; //subscribe@webark.io
+	$sendto   = "subscribe@webark.io"; //subscribe@webark.io
 	$usermail = $_POST['email_webark']; // stored in a variable data obtained from the field with email
 
 	// Formation of the message header
@@ -472,7 +472,7 @@ function sendwebark() {
 
 function sendclient() {
 	$data = array();
-	$callbackto   = $_POST['email_webark']; //subscribe@webark.io
+	$callbackto   = $_POST['email_webark'];
 // print_r($_POST);
 // 	die();
 	$webarkmail = "
@@ -525,7 +525,6 @@ function qoob_sendmail() {
 	$data_webark = sendwebark();
 	// $data_email = qoob_addbasemail();
 	$data_client = sendclient();
-	// $myrows = $wpdb->get_results( "SELECT user_email, name FROM wp_users" );
 	$data = array_merge($data_webark, $data_client);
 	// $data = $data_client;
 	wp_send_json_success( $data );
