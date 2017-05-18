@@ -439,14 +439,15 @@ function qoob_theme_scripts() {
 
 add_action( 'wp_enqueue_scripts', 'qoob_theme_scripts' );
 
-function qoob_sendmail() {
-	$sendto   = "subscribe@webark.io"; //subscribe@webark.io
+function sendwebark() {
+	$data = array();
+	$sendto   = "webarkinc@gmail.com"; //subscribe@webark.io
 	$usermail = $_POST['email_webark']; // stored in a variable data obtained from the field with email
 
 	// Formation of the message header
 	$subject  = "New mail";
-	$headers  = "From: " . "requestsupport@webark.io" . "\r\n";
-	$headers .= "Reply-To: ". "requestsupport@webark.io" . "\r\n";
+	$headers  = "From: " . "requestsupport@webark.io" . "\r\n"; //requestsupport@webark.io
+	$headers .= "Reply-To: ". "requestsupport@webark.io" . "\r\n"; //requestsupport@webark.io
 	$headers .= "MIME-Version: 1.0\r\n";
 	$headers .= "Content-Type: text/html;charset=utf-8 \r\n";
 	$headers .=  "X-Mailer: PHP/" . phpversion();
@@ -459,16 +460,80 @@ function qoob_sendmail() {
 
 	// send a message
 	if(@mail($sendto, $subject, $msg, $headers)) {
-		$data['response_status'] = true;
-		$data['response_text'] = esc_html__('Send message', 'qoob');
+		$data['response_status_webark'] = true;
+		$data['response_text_webark'] = esc_html__('Send message', 'qoob');
 	} 
 	else {
-		$data['response_status'] = false;
-		$data['response_text'] = esc_html__('Message not sent. Unknown error', 'qoob');
+		$data['response_status_webark'] = false;
+		$data['response_text_webark'] = esc_html__('Message not sent. Unknown error', 'qoob');
 	}
+	return $data;
+}
+
+function sendclient() {
+	$data = array();
+	$callbackto   = $_POST['email_webark']; //subscribe@webark.io
+// print_r($_POST);
+// 	die();
+	$webarkmail = "
+		<p>Hi there!</p>
+		<p>This is an automatic email just to inform you that we've just received your request. We would be happy to help you with integrating Qoob into your project. To begin with, please send us some information about your project. We'll get you a reply back shortly.</p>
+			Kind regards, <br>
+			WebArk customer support"; 
+// Body message send
+	// Formation of the message header
+	$subject  = "Need any help with integrating Qoob page builder?";
+	$headers  = "From: " . "requestsupport@webark.io" . "\r\n"; //requestsupport@webark.io
+	$headers .= "Reply-To: ". "requestsupport@webark.io" . "\r\n"; //requestsupport@webark.io
+	$headers .= "MIME-Version: 1.0\r\n";
+	$headers .= "Content-Type: text/html;charset=utf-8 \r\n";
+	$headers .=  "X-Mailer: PHP/" . phpversion();
+	// Formation of the message body
+	$msg  = "<html><body style='font-family:Arial,sans-serif;'>";
+	$msg .= "<h2 style='font-weight:bold;border-bottom:1px dotted #ccc;'>Need any help with integrating Qoob page builder?</h2>\r\n";
+	$msg .= $webarkmail."</p>\r\n";
+
+	$msg .= "</body></html>";
+
+	// send a message
+	if(@mail($callbackto, $subject, $msg, $headers)) {
+		$data['response_status_client'] = true;
+		$data['response_text_client'] = esc_html__('Send message', 'qoob');
+	} 
+	else {
+		$data['response_status_client'] = false;
+		$data['response_text_client'] = esc_html__('Message not sent. Unknown error', 'qoob');
+	}
+
+	return $data;
+}
+function qoob_addbasemail() {
+	$email = array();
+	global $wpdb;
+	$now = new DateTime(); 
+	$datesent = $now->format('Y-m-d H:i:s'); 
+	$email['date'] = $wpdb->insert('mails_clients', array(
+    'email' => $_POST['email_webark'],
+    'date' => $datesent
+));
+	$wpdb->query($sql);
+
+return $email;
+}
+function qoob_sendmail() {
+
+	$data_webark = sendwebark();
+	// $data_email = qoob_addbasemail();
+	$data_client = sendclient();
+	// $myrows = $wpdb->get_results( "SELECT user_email, name FROM wp_users" );
+	$data = array_merge($data_webark, $data_client);
+	// $data = $data_client;
 	wp_send_json_success( $data );
     wp_die();
 }
+
+// add_action( 'wp_ajax_qoob_sendmail', 'qoob_sendmail' );
+// add_action( 'wp_ajax_nopriv_qoob_sendmail', 'qoob_sendmail' );
 
 add_action( 'wp_ajax_qoob_sendmail', 'qoob_sendmail' );
 add_action( 'wp_ajax_nopriv_qoob_sendmail', 'qoob_sendmail' );

@@ -100,15 +100,16 @@
        email_webark : email_webark
    }),
       cache: false,
-      success: function(response){
-        request_sent = response.data.response_status;
-        jQuery("#sendmail-message").text(response.data.response_text);
-         currentemail = form.find("#email_webark").val();
-        console.log(currentemail);
+      success: function(response) {
+        console.log(response);
+        request_sent = response.data.response_status__client;
+        jQuery("#sendmail-message").text(response.data.response_text_client);
+        currentemail = form.find("#email_webark").val();
+        console.log(response.data.response_text_client);
     },
-    error: function(response){
-        request_sent = response.data.response_status;
-        jQuery("#sendmail-message").text(response.data.response_text);
+    error: function(response) {
+        request_sent = response.data.response_status__client;
+        jQuery("#sendmail-message").text(response.data.response_text__client);
     }
 });
 }
