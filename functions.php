@@ -507,32 +507,45 @@ function sendclient() {
 
 	return $data;
 }
+
 function qoob_addbasemail() {
 	$email = array();
 	global $wpdb;
+	$table_name = 'mails_clients';
 	$now = new DateTime(); 
 	$datesent = $now->format('Y-m-d H:i:s'); 
-	$email['date'] = $wpdb->insert('mails_clients', array(
-    'email' => $_POST['email_webark'],
-    'date' => $datesent
-));
+
+
+	if($wpdb->get_var("SHOW TABLES LIKE '$table_name'") != $table_name) {
+
+		$sql = "CREATE TABLE " . $table_name . " (id int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT, email VARCHAR(50)  NOT NULL, date timestamp NOT NULL) ENGINE = MyISAM CHARSET=utf8 COLLATE utf8_general_ci;";
+		$wpdb->query($sql);
+		$email['date'] = $wpdb->insert($table_name, array(
+    	'email' => $_POST['email_webark'],
+    	'date' => $datesent
+    	));
+	}
+	else {
+		$email['date'] = $wpdb->insert($table_name, array(
+    	'email' => $_POST['email_webark'],
+    	'date' => $datesent
+	));
+	} 		
 	$wpdb->query($sql);
 
 return $email;
 }
+
 function qoob_sendmail() {
 
 	$data_webark = sendwebark();
-	// $data_email = qoob_addbasemail();
+	qoob_addbasemail();
 	$data_client = sendclient();
 	$data = array_merge($data_webark, $data_client);
-	// $data = $data_client;
+	// $data = $data_email;
 	wp_send_json_success( $data );
     wp_die();
 }
-
-// add_action( 'wp_ajax_qoob_sendmail', 'qoob_sendmail' );
-// add_action( 'wp_ajax_nopriv_qoob_sendmail', 'qoob_sendmail' );
 
 add_action( 'wp_ajax_qoob_sendmail', 'qoob_sendmail' );
 add_action( 'wp_ajax_nopriv_qoob_sendmail', 'qoob_sendmail' );

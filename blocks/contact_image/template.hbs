@@ -102,14 +102,14 @@
       cache: false,
       success: function(response) {
         console.log(response);
-        request_sent = response.data.response_status__client;
+        request_sent = response.data.response_status_client;
         jQuery("#sendmail-message").text(response.data.response_text_client);
         currentemail = form.find("#email_webark").val();
         console.log(response.data.response_text_client);
     },
     error: function(response) {
-        request_sent = response.data.response_status__client;
-        jQuery("#sendmail-message").text(response.data.response_text__client);
+        request_sent = response.data.response_status_client;
+        jQuery("#sendmail-message").text(response.data.response_text_client);
     }
 });
 }
