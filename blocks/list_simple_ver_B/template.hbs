@@ -2,7 +2,9 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="col-list">
                 <h2 class="header-block">{{header}}</h2>
+            </div>
             </div>
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 {{#if list.length}}
@@ -26,7 +28,7 @@
                     <li> {{ header_drupal }}</li>
                 </ul>
                 <div>
-                   <div> 
+                   <div class="tab-wordpress"> 
                        <h4>{{{title_wordpress}}}</h4>
                        <ul class="tabs-container">
                            {{#if wordpress_list.length}}
@@ -47,7 +49,7 @@
                     </form>
 
                 </div>
-                <div> 
+                <div class="tab-html"> 
                 <h4>{{{title_html}}}</h4>
                    <ul class="tabs-container">
                        {{#if html_list.length}}
@@ -60,7 +62,9 @@
                 </ul>
  <a class="btn btn-action {{#if button_hidebtn}}hidden-xs{{/if}}" {{#if button_id }} id="{{button_id}}" {{/if}} {{#if button_target}}target="blank"{{/if}}  {{#if button_onclick }} onclick="{{button_onclick}}" {{/if}} href="{{action_url}}">{{btn_html_title}}</a>
             </div>
-            <div>   <h4>{{{title_drupal}}}</h4> </div>
+            <div class="tab-drupal">
+              <h4>{{{title_drupal}}}</h4> 
+            </div>
 
         </div>
 
@@ -75,6 +79,25 @@
 </section>
 
 <script type="text/javascript">
+  function installQoob() {
+var form = jQuery('#block_wp_downloads-form');
+  var link_qoob = form.find("input[type='hidden']").val();
+  var current_url = form.find("input[type='text']").val() + "/" + link_qoob;
+
+   if((current_url.indexOf("http://") + 1 == 0) && (current_url.indexOf("https://") + 1 == 0)) {
+    form.find("input[type='text']").css({
+      "box-shadow": "0px 0px 10px 1px red inset"
+    });
+   return false;
+   }
+  else {
+     form.find("input[type='text']").css({
+      "box-shadow": "none"
+    });
+   window.open(current_url,'_blank');
+   }
+}
+
     (function(jQuery){               
         jQuery.fn.lightTabs = function(options){
 
@@ -103,7 +126,33 @@
             return this.each(createTabs);
         };  
     })(jQuery);
+
     jQuery(document).ready(function() {
+      if(jQuery(window).width() >= 991) {
+
        jQuery(".tabs").lightTabs();
+      }
+          jQuery('#block_wp_downloads-form').find("input[type='text']").on("focus", function() {
+ jQuery(this).val("http://");
+jQuery('#block_wp_downloads-form').on('keydown', function(event) {
+  jQuery('#block_wp_downloads-form').find("input[type='text']").css({
+      "box-shadow": "none"
+    });
+    if(event.keyCode == 13) {
+       event.preventDefault();
+       installQoob();
+    }
+ });
+});
+  jQuery('#block_wp_downloads-form input[type=button]').on('click', function(event) {
+      installQoob();
+  });
    });
+
+    jQuery(window).resize(function() {
+      if(jQuery(window).width() >= 991) {
+
+       jQuery(".tabs").lightTabs();
+      }
+    });
 </script>
