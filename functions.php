@@ -441,7 +441,7 @@ add_action( 'wp_enqueue_scripts', 'qoob_theme_scripts' );
 
 function sendwebark() {
 	$data = array();
-	$sendto   = "subscribe@webark.io"; //subscribe@webark.io
+	$sendto   = "webarkinc@gmail.com"; //subscribe@webark.io
 	$usermail = $_POST['email_webark']; // stored in a variable data obtained from the field with email
 
 	// Formation of the message header
@@ -473,8 +473,6 @@ function sendwebark() {
 function sendclient() {
 	$data = array();
 	$callbackto   = $_POST['email_webark'];
-// print_r($_POST);
-// 	die();
 	$webarkmail = "
 		<p>Hi there!</p>
 		<p>This is an automatic email just to inform you that we've just received your request. We would be happy to help you with integrating Qoob into your project. To begin with, please send us some information about your project. We'll get you a reply back shortly.</p>

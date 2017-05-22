@@ -1508,7 +1508,7 @@
 }
 .list_simple_ver_a .list_a {
     margin-top: 78px;
-    max-width: 768px;
+    max-width: 780px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -1544,14 +1544,14 @@
 }
 @media (max-width: 767px) {
     .list_simple_ver_a .list_a {
-    margin-top: 40px;
+    margin-top: 31px;
 }
     .list_simple_ver_a .btn {
         font-size: 1.6rem;
-        height: 48px;
+        height: 50px;
         width: 100%;
-        padding-top: 17px;
-        padding-bottom: 17px;
+        padding-top: 18px;
+        padding-bottom: 18px;
         margin-bottom: 40px;
     }
     .list_simple_ver_a .header-block, .list_simple_ver_a ul {
@@ -1596,7 +1596,7 @@
 --------------------------------------------------------------*/
 .list_simple_ver_b {
     padding-top: 7.3rem;
-    padding-bottom: 9.5rem;
+    padding-bottom: 10.8rem;
 }
 .list_simple_ver_b .header-block {
     font-size: 5.4rem !important;
@@ -1692,6 +1692,7 @@
     border-bottom: 2px solid #dedede;
     border-left: 2px solid #dedede;
     border-right: 2px solid #dedede;
+    border-radius: 0px 0px 2px 2px;
     overflow: hidden;
     padding-top: 77px;
     padding-bottom: 87px; 
@@ -1726,6 +1727,7 @@
     color: #7a7a7a;
     padding: 0 23px 0 23px;
     height: 100%;
+    height: 60px;
     font-size: 1.8rem;
     font-family: "RobotoLight", sans-serif;
     letter-spacing: 0.024em;
@@ -1739,7 +1741,7 @@
     font-family: "RobotoBold", sans-serif;
     border: none;
     border-radius: 0px 6px 6px 0;
-    height: 100%;
+    height: 60px;
     padding: 0;
     font-size: 1.8rem;
     letter-spacing: 0.05em;
@@ -1791,50 +1793,12 @@ color: #fff;
     font-family: "RobotoRegular", sans-serif;
     letter-spacing: 0.025em;
 }
-/*.list_simple_ver_b .block-image.boxbg {
-    background: #000;
-    max-width: 360px;
-    width: 100%;
-    border-radius: 6px;
-    text-align: center;
-    margin: 0 auto;
-    padding-top: 72px;
-    padding-bottom: 72px;
-}*/
-/*.list_simple_ver_b .btn {
-    height: 60px;
-    background: #0084ff;
-    color: #fff;
-    margin: 13px auto;
-    border: none;
-    border-radius: 6px;
-    display: block;
-    max-width: 360px;
-    font-size: 18px;
-    font-family: "RobotoBold", sans-serif;
-    padding: 22px 0;
-    letter-spacing: 0.05em;
-}*/
-/*.list_simple_ver_b  .btn:hover {
-    background: #006acc;
-    border-color: #006acc;
-    color: #fff;
-}
-.list_simple_ver_b .list_a {
-    margin-top: 78px;
-    max-width: 768px;
-    margin-left: auto;
-    margin-right: auto;
-}*/
 @media (max-width: 991px) {
     .list_simple_ver_b {
         padding-top: 5rem;
-        padding-bottom: 0rem;
+        padding-bottom: 8.3rem;
     }
-    .list_simple_ver_b ul {
-        padding-left: 15px !important;
-         padding-right: 15px !important;
-    }
+
     .list_simple_ver_b ul .fa-check {
         font-size: 14px;
     }
@@ -1852,11 +1816,7 @@ color: #fff;
         margin-bottom: 0 !important;
     }
 
-
-    .list_simple_ver_b .tabs .tabs-header {
-        display: none;
-    }
-    .list_simple_ver_b .tabs .tabs-container {
+.list_simple_ver_b .tabs .tabs-container {
     max-width: 100%;
     display: block;
     margin-top: 5px;
@@ -1869,14 +1829,11 @@ color: #fff;
     float: none;
     margin: 6px 16px;
 }
-.list_simple_ver_b .tabs > div {
-    border: none;
-}
+
 .list_simple_ver_b .tabs .tab-wordpress {
     padding-top: 5.1rem;
     padding-bottom: 5.9rem;
-    background: #e2e2e2;
-       padding-left: 15px;
+    padding-left: 15px;
     padding-right: 15px;
 }
 .list_simple_ver_b .tabs .tab-wordpress h4 {
@@ -1896,6 +1853,7 @@ color: #fff;
 .list_simple_ver_b .tabs .tab-wordpress .tabs-container li {
     float: none;
     margin: 6px 16px;
+    line-height: 25px;
 }
 .list_simple_ver_b .tabs .tab-wordpress .tabs-container li a {
     font-size: 1.6rem;
@@ -1907,12 +1865,12 @@ color: #fff;
 .list_simple_ver_b > .container {
     max-width: 100%;
     width: 100%;
-    padding: 0;
 }
 
 .list_simple_ver_b .tabs .tab-wordpress form {
-    max-width: 655px;
     margin: 25px auto;
+    height: auto;
+    overflow: hidden;
 }
 
 .list_simple_ver_b .tabs .tab-wordpress form input[type="text"] {
@@ -1924,7 +1882,7 @@ color: #fff;
 }
 .list_simple_ver_b .tabs .tab-html {
     padding-top: 5.1rem;
-    padding-bottom: 5.8rem;
+    padding-bottom: 6.3rem;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -1938,6 +1896,7 @@ color: #fff;
 .list_simple_ver_b .tabs .tab-html .tabs-container li {
      float: none;
     margin: 6px 16px;
+    line-height: 25px;
 }
 .list_simple_ver_b .tabs .tab-html .tabs-container li a {
         font-size: 1.6rem;
@@ -1947,25 +1906,55 @@ color: #fff;
     border-bottom-width: 0px !important;
 }
 .list_simple_ver_b .tabs .tab-drupal {
-    padding-top: 5.1rem;
-    padding-bottom: 5.1rem;
+    padding-top: 5.2rem;
+    padding-bottom: 6.5rem;
     padding-left: 15px;
     padding-right: 15px;
-    background: #e2e2e2;
 }
     .list_simple_ver_b .col-list {
-        max-width: 700px;
+        max-width: 630px;
         margin-left: auto;
         margin-right: auto;
     }
+    .list_simple_ver_b ul {
+    max-width: 630px;
+}
+.list_simple_ver_b .tabs {
+    margin-top: 45px;
+}
+.list_simple_ver_b .tabs .tabs-header li {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
 }
 @media (max-width: 767px) {
+    .list_simple_ver_b .col-list {
+        max-width: 630px;
+    }
+    .list_simple_ver_b form input[type='button'] {
+        background: #0084ff;
+
+}
+        .list_simple_ver_b ul {
+        padding-left: 15px !important;
+         padding-right: 15px !important;
+    }
+    .list_simple_ver_b > .container {
+    padding: 0;
+}
+    .list_simple_ver_b .tabs > div {
+    border: none;
+}
+
+    .list_simple_ver_b .tabs .tabs-header {
+        display: none;
+    }
     .list_simple_ver_b .list_a {
     margin-top: 40px;
 }
     .list_simple_ver_b .btn {
         font-size: 1.6rem;
-        height: 48px;
+        height: 50px;
         width: 100%;
         padding-top: 17px;
         padding-bottom: 17px;
@@ -1976,7 +1965,7 @@ color: #fff;
          padding-right: 15px !important;
     }
     .list_simple_ver_b ul {
-        max-width: 100%; 
+        max-width: 630px; 
         margin-top: 0px;   
     }
     .list_simple_ver_b {
@@ -2012,17 +2001,22 @@ color: #fff;
     line-height: 34px !important;
     margin-bottom: 0rem;
     text-align: left !important;
+    max-width: 678px;
+    margin-left: auto;
+    margin-right: auto;
     }
 .list_simple_ver_b .tabs .tab-wordpress {
     padding-top: 4.1rem;
-    padding-bottom: 6.6rem;
+    padding-bottom: 4.1rem;
     overflow: hidden;
+    background: #dedede;
 }
 .list_simple_ver_b .tabs .tab-wordpress .tabs-container {
     display: block;
     text-align: left;
     margin-top: 18px;
     margin-bottom: 41px;
+    max-width: 678px;
 }
 .list_simple_ver_b .tabs .tab-wordpress .tabs-container li { 
     font-size: 1.6rem;
@@ -2053,7 +2047,7 @@ color: #fff;
     font-size: 1.6rem;
 }
 .list_simple_ver_b .tabs .tab-wordpress form input[type="button"], .list_simple_ver_b .tabs .tab-wordpress form input[type="button"]:hover {
-    padding: 16px 5px;
+    padding: 17px 5px;
     max-width: 100%;
     width: 100%;
     font-size: 1.6rem;
@@ -2070,12 +2064,16 @@ color: #fff;
     line-height: 34px !important;
     margin-bottom: 0rem;
     text-align: left !important;
+    max-width: 678px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .list_simple_ver_b .tabs .tab-html .tabs-container {
     display: block;
     text-align: left;
     margin-top: 16px;
     margin-bottom: 40px;
+    max-width: 678px;
 }
 .list_simple_ver_b .tabs .tab-html .tabs-container li {
     margin: 11px auto 11px;
@@ -2094,10 +2092,14 @@ color: #fff;
     line-height: 34px !important;
     font-size: 2.4rem !important;
     text-align: left !important;
+    max-width: 678px;
+    margin-right: auto;
+    margin-left: auto;
 }
 .list_simple_ver_b .tabs .tab-drupal {
     padding-top: 4.1rem;
-    padding-bottom: 4.1rem;
+    padding-bottom: 5.4rem;
+    background: #dedede;
 }
 }
 /*--------------------------------------------------------------
@@ -2206,6 +2208,9 @@ color: #fff;
 }
 
 @media (max-width: 767px) {
+    .list_simple_ver_b .tabs {
+    margin-top: 31px;
+}
     .block_html .hidden-xs {
         display: none !important;
     }
