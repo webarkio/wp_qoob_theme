@@ -2107,6 +2107,9 @@ color: #fff;
     padding-bottom: 5.4rem;
     background: #dedede;
 }
+.list_simple_ver_b .btn-action {
+    max-width: 290px;
+}
 }
 /*--------------------------------------------------------------
 # Block html
