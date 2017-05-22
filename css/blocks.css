@@ -1689,10 +1689,10 @@
     text-decoration: none;
 }
 .list_simple_ver_b .tabs > div {
-    border-bottom: 2px solid #dedede;
-    border-left: 2px solid #dedede;
-    border-right: 2px solid #dedede;
-    border-radius: 0px 0px 2px 2px;
+    border-bottom: 3px solid #dedede;
+    border-left: 3px solid #dedede;
+    border-right: 3px solid #dedede;
+    border-radius: 0px 0px 3px 3px;
     overflow: hidden;
     padding-top: 77px;
     padding-bottom: 87px; 
