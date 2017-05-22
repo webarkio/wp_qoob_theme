@@ -1917,10 +1917,13 @@ color: #fff;
         margin-right: auto;
     }
     .list_simple_ver_b ul {
-    max-width: 630px;
+    max-width: 600px;
+    padding-left: 0;
 }
 .list_simple_ver_b .tabs {
     margin-top: 45px;
+    padding-left: 7px;
+    padding-right: 7px;
 }
 .list_simple_ver_b .tabs .tabs-header li {
     padding-top: 15px;
@@ -1982,7 +1985,10 @@ color: #fff;
        padding-left: 0;
        padding-right: 0;
     }
-
+    .list_simple_ver_b .tabs {
+    padding-left: 0;
+    padding-right: 0;
+    }
     .list_simple_ver_b ul li {
         font-size: 1.6rem;
         margin: 17px auto 27px;

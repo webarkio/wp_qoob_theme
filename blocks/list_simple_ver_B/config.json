@@ -249,7 +249,7 @@
         "btn_html_click": "",
         "btn_html_target": 1,
         "header_drupal": "Drupal Version",
-        "title_drupal": "Drupal Version Comming soon..."
+        "title_drupal": "Drupal Version <span>Comming soon...</span>"
     }
     
 }
