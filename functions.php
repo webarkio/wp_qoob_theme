@@ -77,8 +77,8 @@ if ( ! function_exists( 'qoob_theme_setup' ) ) :
 		 * Set the image size by cropping the image
 		 * See https://developer.wordpress.org/reference/functions/add_image_size/
 		 */
-		add_image_size( 'thumbnail-size-post-page', 1903, 720, array( 'left', 'top' ) ); // Hard crop left top
-		add_image_size( 'thumbnail-blog-list', 540, 420, array( 'left', 'top' ) ); // Hard crop left top
+		add_image_size( 'thumbnail-size-post-page', 1903, 720, array( 'center', 'center' ) ); // Hard crop center center
+		add_image_size( 'thumbnail-blog-list', 540, 420, array( 'center', 'center' ) ); // Hard crop center center
 
 		add_filter( 'qoob_libs', 'qoob_add_theme_lib', 10, 2 );
 	}
@@ -369,8 +369,3 @@ require get_template_directory() . '/inc/jetpack.php';
  * Register widget
  */
 require get_template_directory() . '/inc/widgets/widget-register.php';
-
-/**
- * Plugin Activator
- */
-require_once( get_template_directory() . '/inc/plugin_activation/init.php' );

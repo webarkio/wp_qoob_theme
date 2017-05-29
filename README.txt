@@ -1,8 +1,8 @@
 === qoob ===
 Contributors: automattic
 Requires at least: 4.0
-Tested up to: WordPress 4.7.3
-Version: 1.0.10
+Tested up to: WordPress 4.7.5
+Version: 1.0.11
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column, right-sidebar, flexible-header, accessibility-ready, custom-header, footer-widgets, post-formats, sticky-post, theme-options, threaded-comments, translation-ready
@@ -18,8 +18,7 @@ Hi. I'm a starter theme called qoob, or underscores, if you like. I'm a theme me
 1. In your admin panel, go to Appearance > Themes and click the Add New button.
 2. Type in Qoob in the search form and press the 'Enter' key on your keyboard.  
 3. Click on the 'Activate' button to use your new theme right away.
-4. Go to http://webark.com/qoob/docs/ for a guide on how to customize this theme.
-5. Navigate to Appearance > Customize in your admin panel and customize to taste.
+4. Navigate to Appearance > Customize in your admin panel and customize to taste.
 
 == Copyright ==
 
