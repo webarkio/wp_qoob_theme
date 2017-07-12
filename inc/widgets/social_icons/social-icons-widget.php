@@ -97,11 +97,11 @@ class Qoob_Social_Icons extends WP_Widget {
 	 */
 	public function update( $new_instance, $old_instance ) {
 		$array = array();
-		$array['twitter'] = ( ! empty( $new_instance['twitter'] ) ) ? strip_tags( $new_instance['twitter'] ) : '';
-		$array['facebook'] = ( ! empty( $new_instance['facebook'] ) ) ? strip_tags( $new_instance['facebook'] ) : '';
-		$array['google'] = ( ! empty( $new_instance['google'] ) ) ? strip_tags( $new_instance['google'] ) : '';
-		$array['instagram'] = ( ! empty( $new_instance['instagram'] ) ) ? strip_tags( $new_instance['instagram'] ) : '';
-		$array['youtube'] = ( ! empty( $new_instance['youtube'] ) ) ? strip_tags( $new_instance['youtube'] ) : '';
+		$array['twitter'] = ( ! empty( $new_instance['twitter'] ) ) ? esc_url( $new_instance['twitter'] ) : '';
+		$array['facebook'] = ( ! empty( $new_instance['facebook'] ) ) ? esc_url( $new_instance['facebook'] ) : '';
+		$array['google'] = ( ! empty( $new_instance['google'] ) ) ? esc_url( $new_instance['google'] ) : '';
+		$array['instagram'] = ( ! empty( $new_instance['instagram'] ) ) ? esc_url( $new_instance['instagram'] ) : '';
+		$array['youtube'] = ( ! empty( $new_instance['youtube'] ) ) ? esc_url( $new_instance['youtube'] ) : '';
 
 		return $array;
 	}

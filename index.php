@@ -17,12 +17,13 @@ get_header(); ?>
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
-				<h1><?php
-				global $wp_query;
-
-				$wp_query->is_posts_page ?  wp_title( '' ) : bloginfo( 'name' );
-
-				?></h1>
+				<h1>
+				<?php if ( is_home() && ! is_front_page() ) : ?>
+						<?php single_post_title(); ?>
+				<?php else : ?>
+					<?php esc_html_e( 'Posts', 'qoob' ); ?>
+				<?php endif; ?>
+				</h1>
 			</div>
 		</div>
 	</div>

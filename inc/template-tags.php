@@ -14,18 +14,18 @@ if ( ! function_exists( 'qoob_theme_posted_on' ) ) :
 	function qoob_theme_posted_on() {
 		$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
 		if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
-			$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time> <time class="updated" datetime="%3$s">%4$s</time>';
+			$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time> - <time class="updated" datetime="%3$s">%4$s</time>';
 		}
 
 		$time_string = sprintf( $time_string,
-			esc_attr( get_the_date( 'j' ) ),
-			esc_html( get_the_date( 'j.m.Y' ) ),
-			esc_attr( get_the_modified_date( 'j' ) ),
-			esc_html( get_the_modified_date( 'j.m.Y' ) )
+			esc_attr( get_the_date( get_option( 'date_format' ) ) ),
+			esc_html( get_the_date( get_option( 'date_format' ) ) ),
+			esc_attr( get_the_modified_date( get_option( 'date_format' ) ) ),
+			esc_html( get_the_modified_date( get_option( 'date_format' ) ) )
 		);
 
 		$posted_on = sprintf(
-			esc_html_x( '%s', 'post date', 'qoob' ),
+			'%s',
 			'<a href="' . esc_url( get_month_link( get_the_date( 'Y' ), get_the_date( 'm' ) ) ) . '" rel="bookmark">' . $time_string . '</a>'
 		);
 

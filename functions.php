@@ -77,8 +77,8 @@ if ( ! function_exists( 'qoob_theme_setup' ) ) :
 		 * Set the image size by cropping the image
 		 * See https://developer.wordpress.org/reference/functions/add_image_size/
 		 */
-		add_image_size( 'thumbnail-size-post-page', 1903, 720, array( 'center', 'center' ) ); // Hard crop center center
-		add_image_size( 'thumbnail-blog-list', 540, 420, array( 'center', 'center' ) ); // Hard crop center center
+		add_image_size( 'qoob-thumbnail-size-post-page', 1903, 720, array( 'center', 'center' ) ); // Hard crop center center
+		add_image_size( 'qoob-thumbnail-blog-list', 540, 420, array( 'center', 'center' ) ); // Hard crop center center
 
 		add_filter( 'qoob_libs', 'qoob_add_theme_lib', 10, 2 );
 	}
@@ -157,9 +157,13 @@ if ( ! function_exists( 'qoob_theme_excerpt_more' ) ) {
 	/**
 	 * Register new excerpt more
 	 *
-	 * @param string $more The string shown within the more link.
+	 * @param string $link The string shown within the more link.
 	 */
-	function qoob_theme_excerpt_more( $more ) {
+	function qoob_theme_excerpt_more( $link ) {
+		if ( is_admin() ) {
+			return $link;
+		}
+
 		return '...';
 	}
 }
@@ -237,8 +241,8 @@ function qoobtheme_comment( $comment, $args, $depth ) {
 			<?php printf( wp_kses_post( __( '<cite class="fn">%s</cite>', 'qoob' ) ), get_comment_author_link() ); ?>
 			<?php comment_text(); ?>
 			<div class="comment-meta commentmetadata"><a href="<?php echo esc_html( get_comment_link( $comment->comment_ID ) ); ?>">
-				<?php
-				printf( esc_html__( '%1$s', 'qoob' ), get_comment_date( 'j.m.Y' ) ); ?></a><?php edit_comment_link( esc_html__( '(Edit)', 'qoob' ), '  ', '' );
+				<?php printf( '%1$s', get_comment_date( 'j.m.Y' ) ); ?></a>
+				<?php edit_comment_link( esc_html__( '(Edit)', 'qoob' ), '  ', '' );
 				?>
 				<?php comment_reply_link( array_merge( $args, array( 'add_below' => $add_below, 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
 			</div>
@@ -275,11 +279,11 @@ function qoob_search_form( $form ) {
 	return $form;
 }
 
-add_action( 'admin_init', 'wpdocs_theme_add_editor_styles' );
+add_action( 'admin_init', 'qoob_add_editor_styles' );
 /**
  * Registers an editor stylesheet for the theme.
  */
-function wpdocs_theme_add_editor_styles() {
+function qoob_add_editor_styles() {
 	add_editor_style( 'custom-editor-style.css' );
 }
 
@@ -325,13 +329,13 @@ function qoob_theme_scripts() {
 	wp_enqueue_style( 'blocks', get_template_directory_uri() . '/css/blocks.css' );
 
 	wp_enqueue_script( 'qoob-theme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array( 'jquery' ), false, true );
+	wp_enqueue_script( 'imagesloaded', get_template_directory_uri() . '/js/imagesloaded.pkgd.js', array( 'jquery' ), false, true );
 	wp_enqueue_script( 'hoverintent', get_template_directory_uri() . '/js/hoverIntent.js', array( 'jquery' ), false, true );
 	wp_enqueue_script( 'superfish', get_template_directory_uri() . '/js/superfish.js', array( 'jquery' ), false, true );
 	wp_enqueue_script( 'qoob-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array( 'jquery' ), false, true );
-	wp_enqueue_script( 'masonry', get_template_directory_uri() . '/js/masonry.js', array( 'jquery' ), false, true );
+	wp_enqueue_script( 'masonry' );
 	wp_enqueue_script( 'qoob-theme-common', get_template_directory_uri() . '/js/common.js', array( 'jquery' ) );
 	wp_enqueue_script( 'magnific-popup', get_template_directory_uri() . '/js/jquery.magnific-popup.js', array( 'jquery' ), false, true );
-	wp_enqueue_script( 'froogaloop', get_template_directory_uri() . '/js/froogaloop.js', array( 'jquery', 'qoob-theme-bg-video-vimeo' ), false, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

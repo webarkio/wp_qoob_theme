@@ -1,17 +1,16 @@
 === qoob ===
-Contributors: automattic
 Requires at least: 4.0
-Tested up to: WordPress 4.7.5
-Version: 1.0.11
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: one-column, right-sidebar, flexible-header, accessibility-ready, custom-header, footer-widgets, post-formats, sticky-post, theme-options, threaded-comments, translation-ready
+Tested up to: WordPress 4.8
+Version: 1.0.13
+License: GPLv3+
+License URI: https://www.gnu.org/licenses/gpl.html
+Tags: one-column, right-sidebar, flexible-header, accessibility-ready, custom-header, footer-widgets, theme-options, threaded-comments, translation-ready
 
-A starter theme called qoob.
+Qoob theme is what your business has always lacked. It’s more than just a theme for WordPress, it’s a universal template that is suitable for any business needs from a personal blog to a corporate website. Qoob theme is feature-rich and user-friendly at the same time. Its responsive design provides the awesome look of your site in any environment.
 
 == Description ==
 
-Hi. I'm a starter theme called qoob, or underscores, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
+Qoob theme is a multipurpose WordPress theme with laconic and clean design that is fully responsive. It’s a perfect solution for a personal blog that has got all the necessary features to run it effectively: customizing sidebars, changeable backgrounds, multi-columns for post listings etc. It fits portfolio, web studios and corporate sites as well. Thank to the flexible and fluid design your website will always stand out of the crowd and bring nothing but only pleasant experience to your visitors no matter what device they’re on. You can adjust Qoob theme to your personal needs and make it totally custom just by making some minor tweaks.
 
 == Installation ==
 	
@@ -47,10 +46,6 @@ Source: http://dimsemenov.com/plugins/magnific-popup/
 Waypoints, Copyright (c) 2011-2015 Caleb Troughton
 License: MIT
 Source: https://github.com/imakewebthings/waypoints
-
-Masonry PACKAGED, Copyright (c) 2016 David DeSandro
-License: MIT
-Source: http://masonry.desandro.com
 
 Owl Carousel, Copyright 2013-2016 David Deutsch
 License: MIT

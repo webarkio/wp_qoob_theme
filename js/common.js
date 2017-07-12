@@ -1,10 +1,13 @@
 jQuery(document).ready(function(){
 	// Init masonry blog list
-	jQuery('.masonry-list').masonry({
-		itemSelector: '.col-lg-4',
-		percentPosition: true,
-		resize: true
+	jQuery('.content-area').imagesLoaded( function() {
+		jQuery('.masonry-list').masonry({
+			itemSelector: '.col-lg-4',
+			percentPosition: true,
+			resize: true
+		});
 	});
+
 
 	window.onscroll = function() {
 			if (window.pageYOffset > 107) {

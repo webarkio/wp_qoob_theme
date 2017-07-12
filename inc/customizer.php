@@ -14,7 +14,6 @@ function qoob_theme_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
-	$wp_customize->remove_control( 'blogdescription' ); // @Remove tagline input
 
 	$wp_customize->add_section( 'blog_settings', array(
 		'priority' => 10,
@@ -30,7 +29,7 @@ function qoob_theme_customize_register( $wp_customize ) {
 		'type' => 'theme_mod',
 		'capability' => 'edit_theme_options',
 		'transport' => '',
-		'sanitize_callback' => 'esc_url',
+		'sanitize_callback' => 'esc_url_raw',
 	));
 
 	$wp_customize->add_control(
@@ -52,7 +51,7 @@ function qoob_theme_customize_register( $wp_customize ) {
 		'type' => 'theme_mod',
 		'capability' => 'edit_theme_options',
 		'transport' => '',
-		'sanitize_callback' => 'esc_html',
+		'sanitize_callback' => 'sanitize_text_field',
 	));
 
 	$wp_customize->add_control(
@@ -85,7 +84,7 @@ function qoob_theme_customize_register( $wp_customize ) {
 		'type' => 'theme_mod',
 		'capability' => 'edit_theme_options',
 		'transport' => '',
-		'sanitize_callback' => 'esc_html',
+		'sanitize_callback' => 'sanitize_text_field',
 	));
 
 	$wp_customize->add_control( 'footer_text', array(
