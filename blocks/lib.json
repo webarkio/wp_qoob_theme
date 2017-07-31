@@ -59,12 +59,6 @@
         "name": "call_to_action",
         "url": "%theme_url%/blocks/call_to_action/"
     }, {
-        "name": "call_to_action_bg",
-        "url": "%theme_url%/blocks/call_to_action_bg/"
-    }, {
-        "name": "call_to_action_bg_v2",
-        "url": "%theme_url%/blocks/call_to_action_bg_v2/"
-    }, {
         "name": "call_to_action_noimg",
         "url": "%theme_url%/blocks/call_to_action_noimg/"
     }, {
@@ -83,29 +77,17 @@
         "name": "counter_circle",
         "url": "%theme_url%/blocks/counter_circle/"
     }, {
-        "name": "download_page",
-        "url": "%theme_url%/blocks/download_page/"
-    }, {
         "name": "entypo",
         "url": "%theme_url%/blocks/entypo/"
     }, {
         "name": "faq_accordion",
         "url": "%theme_url%/blocks/faq_accordion/"
     }, {
-        "name": "faq_list",
-        "url": "%theme_url%/blocks/contact/"
-    }, {
         "name": "fontawesome",
         "url": "%theme_url%/blocks/fontawesome/"
     }, {
         "name": "gallery_popup",
         "url": "%theme_url%/blocks/gallery_popup/"
-    }, {
-        "name": "gallery_scroll",
-        "url": "%theme_url%/blocks/gallery_scroll/"
-    }, {
-        "name": "gallery_zoom",
-        "url": "%theme_url%/blocks/gallery_zoom/"
     }, {
         "name": "glyphicons",
         "url": "%theme_url%/blocks/glyphicons/"
@@ -116,17 +98,11 @@
         "name": "header_big_bg",
         "url": "%theme_url%/blocks/header_big_bg/"
     }, {
-        "name": "header_no_bg",
-        "url": "%theme_url%/blocks/header_no_bg/"
-    }, {
         "name": "header_small_bg",
         "url": "%theme_url%/blocks/header_small_bg/"
     }, {
         "name": "iconbox",
         "url": "%theme_url%/blocks/iconbox/"
-    }, {
-        "name": "iconbox_no_header",
-        "url": "%theme_url%/blocks/iconbox_no_header/"
     }, {
         "name": "iconbox_no_icon",
         "url": "%theme_url%/blocks/iconbox_no_icon/"
@@ -134,41 +110,17 @@
         "name": "ionicons",
         "url": "%theme_url%/blocks/ionicons/"
     }, {
-        "name": "landing_bg_video",
-        "url": "%theme_url%/blocks/landing_bg_video/"
-    }, {
-        "name": "landing_mac",
-        "url": "%theme_url%/blocks/landing_mac/"
-    }, {
-        "name": "landing_photo",
-        "url": "%theme_url%/blocks/landing_photo/"
-    }, {
-        "name": "load_more",
-        "url": "%theme_url%/blocks/load_more/"
-    }, {
         "name": "progressbar_circle",
         "url": "%theme_url%/blocks/progressbar_circle/"
     }, {
         "name": "progressbar_romb",
         "url": "%theme_url%/blocks/progressbar_romb/"
     }, {
-        "name": "slider_buttons",
-        "url": "%theme_url%/blocks/slider_buttons/"
-    }, {
-        "name": "slider_text",
-        "url": "%theme_url%/blocks/slider_text/"
-    }, {
         "name": "social",
         "url": "%theme_url%/blocks/social/"
     }, {
-        "name": "subscribe",
-        "url": "%theme_url%/blocks/subscribe/"
-    }, {
         "name": "team",
         "url": "%theme_url%/blocks/team/"
-    }, {
-        "name": "team_step",
-        "url": "%theme_url%/blocks/team_step/"
     }, {
         "name": "team_step_vertical",
         "url": "%theme_url%/blocks/team_step_vertical/"
@@ -184,9 +136,6 @@
     }, {
         "name": "technology",
         "url": "%theme_url%/blocks/technology/"
-    }, {
-        "name": "template_carousel",
-        "url": "%theme_url%/blocks/template_carousel/"
     }, {
         "name": "template_carousel_v2",
         "url": "%theme_url%/blocks/template_carousel_v2/"
@@ -221,9 +170,6 @@
         "name": "video_carousel",
         "url": "%theme_url%/blocks/video_carousel/"
     }, {
-        "name": "video_features",
-        "url": "%theme_url%/blocks/video_features/"
-    }, {
         "name": "video_features_number",
         "url": "%theme_url%/blocks/video_features_number/"
     }, {
@@ -248,23 +194,20 @@
             "url": "%theme_url%/blocks/themify/assets/css/themify.css"
         }, {
             "name": "owl_carousel_css",
-            "url": "%theme_url%/blocks/template_carousel/assets/css/owl.carousel.css"
+            "url": "%theme_url%/blocks/template_carousel_v2/assets/css/owl.carousel.css"
         }, {
             "name": "owl_theme_default_css",
-            "url": "%theme_url%/blocks/template_carousel/assets/css/owl.theme.default.css"
+            "url": "%theme_url%/blocks/template_carousel_v2/assets/css/owl.theme.default.css"
         }, {
             "name": "bootstrap_progressbar_css",
             "url": "%theme_url%/blocks/team/assets/css/bootstrap-progressbar.css"
-        }, {
-            "name": "carousel_css",
-            "url": "%theme_url%/blocks/slider_buttons/assets/css/carousel.css"
         }, {
             "name": "collapse_css",
             "url": "%theme_url%/blocks/faq_accordion/assets/css/collapse.css"
         }],
         "js": [{
             "name": "owl_carousel_js",
-            "url": "%theme_url%/blocks/template_carousel/assets/js/owl.carousel.js"
+            "url": "%theme_url%/blocks/template_carousel_v2/assets/js/owl.carousel.js"
         }, {
             "name": "jQuery_countTo_js",
             "url": "%theme_url%/blocks/counter/assets/js/jQuery.countTo.js"
@@ -277,10 +220,6 @@
         }, {
             "name": "bootstrap_progressbar_js",
             "url": "%theme_url%/blocks/team/assets/js/bootstrap-progressbar.js"
-        }, {
-            "name": "carousel_js",
-            "url": "%theme_url%/blocks/slider_buttons/assets/js/carousel.js"
-
         }, {
             "name": "collapse_js",
             "url": "%theme_url%/blocks/faq_accordion/assets/js/collapse.js"

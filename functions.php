@@ -373,3 +373,8 @@ require get_template_directory() . '/inc/jetpack.php';
  * Register widget
  */
 require get_template_directory() . '/inc/widgets/widget-register.php';
+
+/**
+ * Plugin Activator
+ */
+require get_template_directory() . '/inc/plugin_activation/init.php';
