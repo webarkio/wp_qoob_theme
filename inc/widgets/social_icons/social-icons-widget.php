@@ -47,7 +47,7 @@ class Qoob_Social_Icons extends WP_Widget {
 				<?php
 				foreach ( $instance as $key => $value ) {
 					if ( ! empty( $value ) ) {
-						echo '<a class="social-icons ' . esc_html( $this->icons_class[ $key ] ) . ' ' . esc_html( $key ) . '" href="' . esc_html( $value ) . '"></a>';
+						echo '<a class="social-icons ' . esc_html( $this->icons_class[ $key ] ) . ' ' . esc_html( $key ) . '" href="' . esc_url( $value ) . '"></a>';
 					}
 				}
 				?>
@@ -97,11 +97,11 @@ class Qoob_Social_Icons extends WP_Widget {
 	 */
 	public function update( $new_instance, $old_instance ) {
 		$array = array();
-		$array['twitter'] = ( ! empty( $new_instance['twitter'] ) ) ? esc_url( $new_instance['twitter'] ) : '';
-		$array['facebook'] = ( ! empty( $new_instance['facebook'] ) ) ? esc_url( $new_instance['facebook'] ) : '';
-		$array['google'] = ( ! empty( $new_instance['google'] ) ) ? esc_url( $new_instance['google'] ) : '';
-		$array['instagram'] = ( ! empty( $new_instance['instagram'] ) ) ? esc_url( $new_instance['instagram'] ) : '';
-		$array['youtube'] = ( ! empty( $new_instance['youtube'] ) ) ? esc_url( $new_instance['youtube'] ) : '';
+		$array['twitter'] = ( ! empty( $new_instance['twitter'] ) ) ? esc_url_raw( $new_instance['twitter'] ) : '';
+		$array['facebook'] = ( ! empty( $new_instance['facebook'] ) ) ? esc_url_raw( $new_instance['facebook'] ) : '';
+		$array['google'] = ( ! empty( $new_instance['google'] ) ) ? esc_url_raw( $new_instance['google'] ) : '';
+		$array['instagram'] = ( ! empty( $new_instance['instagram'] ) ) ? esc_url_raw( $new_instance['instagram'] ) : '';
+		$array['youtube'] = ( ! empty( $new_instance['youtube'] ) ) ? esc_url_raw( $new_instance['youtube'] ) : '';
 
 		return $array;
 	}

@@ -1,7 +1,7 @@
 === qoob ===
 Requires at least: 4.0
 Tested up to: WordPress 4.8
-Version: 1.0.13
+Version: 1.0.15
 License: GPLv3+
 License URI: https://www.gnu.org/licenses/gpl.html
 Tags: one-column, right-sidebar, flexible-header, accessibility-ready, custom-header, footer-widgets, theme-options, threaded-comments, translation-ready
@@ -23,21 +23,9 @@ Qoob theme is a multipurpose WordPress theme with laconic and clean design that 
 
 qoob bundles the following third-party resources:
 
-imagesLoaded PACKAGED v4.1.3
-License: MIT
-Source: https://imagesloaded.desandro.com/
-
-imagesLoaded PACKAGED v4.1.3
-License: MIT
-Source: https://imagesloaded.desandro.com/
-
 Bootstrap, Copyright 2011-2016 Twitter, Inc.
 License: MIT
 Source: http://getbootstrap.com
-
-hoverIntent, Copyright 2007, 2013 Brian Cherne
-License: MIT
-Source: http://cherne.net/brian/resources/jquery.hoverIntent.html
 
 Magnific Popup - v1.1.0 - 2016-02-20, Copyright (c) 2016 Dmitry Semenov
 License: MIT

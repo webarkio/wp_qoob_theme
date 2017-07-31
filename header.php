@@ -52,21 +52,15 @@
 				<?php
 						wp_nav_menu( array(
 							'theme_location'  => 'primary',
-							'menu'            => '',
 							'container'       => 'div',
-							'container_class' => '',
-							'container_id'    => '',
 							'menu_class'      => 'sf-menu list-style-none',
 							'menu_id'         => 'menu',
 							'echo'            => true,
 							'fallback_cb'     => 'wp_page_menu',
-							'before'          => '',
-							'after'           => '',
 							'link_before'     => '<span>',
 							'link_after'      => '</span>',
 							'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-							'depth'           => 3,
-							'walker'          => '',
+							'depth'           => 3
 						) );
 				?>
 			</nav><!-- #site-navigation -->

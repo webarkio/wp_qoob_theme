@@ -1,7 +1,7 @@
 === qoob ===
 Requires at least: 4.0
 Tested up to: WordPress 4.8
-Version: 1.0.13
+Version: 1.0.15
 License: GPLv3+
 License URI: https://www.gnu.org/licenses/gpl.html
 Tags: one-column, right-sidebar, flexible-header, accessibility-ready, custom-header, footer-widgets, theme-options, threaded-comments, translation-ready
@@ -30,10 +30,6 @@ Source: http://www.minddust.com/project/bootstrap-progressbar/
 Bootstrap, Copyright 2011-2016 Twitter, Inc.
 License: MIT
 Source: http://getbootstrap.com
-
-hoverIntent, Copyright 2007, 2013 Brian Cherne
-License: MIT
-Source: http://cherne.net/brian/resources/jquery.hoverIntent.html
 
 jquery-countTo, Copyright (c) 2012-2014 Matt Huggins
 License: MIT
