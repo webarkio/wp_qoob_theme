@@ -3289,7 +3289,7 @@ img.mfp-img {
     font-size: 1.8rem;
     color: #fff;
     font-family: "RobotoBold", sans-serif;
-    padding: 15px 31px;
+    padding: 11px 31px;
     border: 3px solid #0084ff;
     border-radius: 6px;
     letter-spacing: 0.05em;
@@ -3375,6 +3375,7 @@ text-decoration: none;
 }
 .site-main-partners .entry-content form {
     margin-top: 44px;
+    margin-bottom: 8px;
 }
 }
 
