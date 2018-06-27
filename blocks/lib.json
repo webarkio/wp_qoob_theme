@@ -1,228 +1,312 @@
 {
-    "name": "qoob_theme",
-    "groups": [{
-        "id": "video",
-        "label": "Video",
-        "position": 0
-    }, {
-        "id": "slider",
-        "label": "Slider",
-        "position": 1
-    }, {
-        "id": "testimonial",
-        "label": "Testimonial",
-        "position": 11
-    }, {
-        "id": "gallery",
-        "label": "Gallery",
-        "position": 2
-    }, {
-        "id": "text",
-        "label": "Text",
-        "position": 3
-    }, {
-        "id": "forms",
-        "label": "Forms",
-        "position": 4
-    }, {
-        "id": "our_team",
-        "label": "Our Team",
-        "position": 5
-    }, {
-        "id": "other",
-        "label": "Other",
-        "position": 6
-    }, {
-        "id": "introduction",
-        "label": "Introduction",
-        "position": 7
-    }, {
-        "id": "faq",
-        "label": "FAQ",
-        "position": 8
-    }, {
-        "id": "call_to_action",
-        "label": "Call to action",
-        "position": 9
-    }, {
-        "id": "features",
-        "label": "Features",
-        "position": 10
-    }],
-    "blocks": [{
-        "name": "assets",
-        "url": "http://webark.com/qoob/blocks/default/media/"
-    }, {
-        "name": "404",
-        "url": "%theme_url%/blocks/404/"
-    }, {
-        "name": "call_to_action",
-        "url": "%theme_url%/blocks/call_to_action/"
-    }, {
-        "name": "call_to_action_noimg",
-        "url": "%theme_url%/blocks/call_to_action_noimg/"
-    }, {
-        "name": "contact",
-        "url": "%theme_url%/blocks/contact/"
-    }, {
-        "name": "contact_fluid",
-        "url": "%theme_url%/blocks/contact_fluid/"
-    }, {
-        "name": "contact_no_map",
-        "url": "%theme_url%/blocks/contact_no_map/"
-    }, {
-        "name": "counter",
-        "url": "%theme_url%/blocks/counter/"
-    }, {
-        "name": "counter_circle",
-        "url": "%theme_url%/blocks/counter_circle/"
-    }, {
-        "name": "entypo",
-        "url": "%theme_url%/blocks/entypo/"
-    }, {
-        "name": "faq_accordion",
-        "url": "%theme_url%/blocks/faq_accordion/"
-    }, {
-        "name": "fontawesome",
-        "url": "%theme_url%/blocks/fontawesome/"
-    }, {
-        "name": "gallery_popup",
-        "url": "%theme_url%/blocks/gallery_popup/"
-    }, {
-        "name": "glyphicons",
-        "url": "%theme_url%/blocks/glyphicons/"
-    }, {
-        "name": "header",
-        "url": "%theme_url%/blocks/header/"
-    }, {
-        "name": "header_big_bg",
-        "url": "%theme_url%/blocks/header_big_bg/"
-    }, {
-        "name": "header_small_bg",
-        "url": "%theme_url%/blocks/header_small_bg/"
-    }, {
-        "name": "iconbox",
-        "url": "%theme_url%/blocks/iconbox/"
-    }, {
-        "name": "iconbox_no_icon",
-        "url": "%theme_url%/blocks/iconbox_no_icon/"
-    }, {
-        "name": "ionicons",
-        "url": "%theme_url%/blocks/ionicons/"
-    }, {
-        "name": "progressbar_circle",
-        "url": "%theme_url%/blocks/progressbar_circle/"
-    }, {
-        "name": "progressbar_romb",
-        "url": "%theme_url%/blocks/progressbar_romb/"
-    }, {
-        "name": "social",
-        "url": "%theme_url%/blocks/social/"
-    }, {
-        "name": "team",
-        "url": "%theme_url%/blocks/team/"
-    }, {
-        "name": "team_step_vertical",
-        "url": "%theme_url%/blocks/team_step_vertical/"
-    }, {
-        "name": "team_top_bar",
-        "url": "%theme_url%/blocks/team_top_bar/"
-    }, {
-        "name": "team_vertical",
-        "url": "%theme_url%/blocks/team_vertical/"
-    }, {
-        "name": "team_vertical_top_bar",
-        "url": "%theme_url%/blocks/team_vertical_top_bar/"
-    }, {
-        "name": "technology",
-        "url": "%theme_url%/blocks/technology/"
-    }, {
-        "name": "template_carousel_v2",
-        "url": "%theme_url%/blocks/template_carousel_v2/"
-    }, {
-        "name": "testimonial",
-        "url": "%theme_url%/blocks/testimonial/"
-    }, {
-        "name": "testimonial_arrow",
-        "url": "%theme_url%/blocks/testimonial_arrow/"
-    }, {
-        "name": "testimonial_center",
-        "url": "%theme_url%/blocks/testimonial_center/"
-    }, {
-        "name": "testimonial_grid",
-        "url": "%theme_url%/blocks/testimonial_grid/"
-    }, {
-        "name": "text",
-        "url": "%theme_url%/blocks/text/"
-    }, {
-        "name": "text_image_left",
-        "url": "%theme_url%/blocks/text_image_left/"
-    }, {
-        "name": "text_image_right",
-        "url": "%theme_url%/blocks/text_image_right/"
-    }, {
-        "name": "themify",
-        "url": "%theme_url%/blocks/themify/"
-    }, {
-        "name": "video",
-        "url": "%theme_url%/blocks/video/"
-    }, {
-        "name": "video_carousel",
-        "url": "%theme_url%/blocks/video_carousel/"
-    }, {
-        "name": "video_features_number",
-        "url": "%theme_url%/blocks/video_features_number/"
-    }, {
-        "name": "video_full_page",
-        "url": "%theme_url%/blocks/video_full_page/"
-    }],
-    "res": {
-        "css": [{
-            "name": "entypo_css",
-            "url": "%theme_url%/blocks/entypo/assets/css/entypo.css"
-        }, {
-            "name": "fontawesome_css",
-            "url": "%theme_url%/blocks/fontawesome/assets/css/fontawesome.css"
-        }, {
-            "name": "glyphicons_css",
-            "url": "%theme_url%/blocks/glyphicons/assets/css/glyphicons.css"
-        }, {
-            "name": "ionicons_css",
-            "url": "%theme_url%/blocks/ionicons/assets/css/ionicons.css"
-        }, {
-            "name": "themify_css",
-            "url": "%theme_url%/blocks/themify/assets/css/themify.css"
-        }, {
-            "name": "owl_carousel_css",
-            "url": "%theme_url%/blocks/template_carousel_v2/assets/css/owl.carousel.css"
-        }, {
-            "name": "owl_theme_default_css",
-            "url": "%theme_url%/blocks/template_carousel_v2/assets/css/owl.theme.default.css"
-        }, {
-            "name": "bootstrap_progressbar_css",
-            "url": "%theme_url%/blocks/team/assets/css/bootstrap-progressbar.css"
-        }, {
-            "name": "collapse_css",
-            "url": "%theme_url%/blocks/faq_accordion/assets/css/collapse.css"
-        }],
-        "js": [{
-            "name": "owl_carousel_js",
-            "url": "%theme_url%/blocks/template_carousel_v2/assets/js/owl.carousel.js"
-        }, {
-            "name": "jQuery_countTo_js",
-            "url": "%theme_url%/blocks/counter/assets/js/jQuery.countTo.js"
-        }, {
-            "name": "progressbar_js",
-            "url": "%theme_url%/blocks/counter_circle/assets/js/progressbar.js"
-        }, {
-            "name": "jquery_waypoints_js",
-            "url": "%theme_url%/blocks/counter_circle/assets/js/jquery.waypoints.js"
-        }, {
-            "name": "bootstrap_progressbar_js",
-            "url": "%theme_url%/blocks/team/assets/js/bootstrap-progressbar.js"
-        }, {
-            "name": "collapse_js",
-            "url": "%theme_url%/blocks/faq_accordion/assets/js/collapse.js"
-        }]
+  "name": "qoob_theme",
+  "groups": [
+    {
+      "id": "video",
+      "label": "Video",
+      "position": 0
+    },
+    {
+      "id": "slider",
+      "label": "Slider",
+      "position": 1
+    },
+    {
+      "id": "gallery",
+      "label": "Gallery",
+      "position": 2
+    },
+    {
+      "id": "text",
+      "label": "Text",
+      "position": 3
+    },
+    {
+      "id": "forms",
+      "label": "Forms",
+      "position": 4
+    },
+    {
+      "id": "our_team",
+      "label": "Our Team",
+      "position": 5
+    },
+    {
+      "id": "other",
+      "label": "Other",
+      "position": 6
+    },
+    {
+      "id": "introduction",
+      "label": "Introduction",
+      "position": 7
+    },
+    {
+      "id": "faq",
+      "label": "FAQ",
+      "position": 8
+    },
+    {
+      "id": "call_to_action",
+      "label": "Call to action",
+      "position": 9
+    },
+    {
+      "id": "features",
+      "label": "Features",
+      "position": 10
+    },
+    {
+      "id": "testimonial",
+      "label": "Testimonial",
+      "position": 11
     }
+  ],
+  "blocks": [
+    {
+      "name": "assets",
+      "url": "assets/"
+    },
+    {
+      "name": "404",
+      "url": "404/"
+    },
+    {
+      "name": "call_to_action",
+      "url": "call_to_action/"
+    },
+    {
+      "name": "call_to_action_noimg",
+      "url": "call_to_action_noimg/"
+    },
+    {
+      "name": "contact",
+      "url": "contact/"
+    },
+    {
+      "name": "contact_fluid",
+      "url": "contact_fluid/"
+    },
+    {
+      "name": "contact_no_map",
+      "url": "contact_no_map/"
+    },
+    {
+      "name": "counter",
+      "url": "counter/"
+    },
+    {
+      "name": "counter_circle",
+      "url": "counter_circle/"
+    },
+    {
+      "name": "entypo",
+      "url": "entypo/"
+    },
+    {
+      "name": "faq_accordion",
+      "url": "faq_accordion/"
+    },
+    {
+      "name": "fontawesome",
+      "url": "fontawesome/"
+    },
+    {
+      "name": "gallery_popup",
+      "url": "gallery_popup/"
+    },
+    {
+      "name": "glyphicons",
+      "url": "glyphicons/"
+    },
+    {
+      "name": "header",
+      "url": "header/"
+    },
+    {
+      "name": "header_big_bg",
+      "url": "header_big_bg/"
+    },
+    {
+      "name": "header_small_bg",
+      "url": "header_small_bg/"
+    },
+    {
+      "name": "iconbox",
+      "url": "iconbox/"
+    },
+    {
+      "name": "iconbox_no_icon",
+      "url": "iconbox_no_icon/"
+    },
+    {
+      "name": "ionicons",
+      "url": "ionicons/"
+    },
+    {
+      "name": "progressbar_circle",
+      "url": "progressbar_circle/"
+    },
+    {
+      "name": "progressbar_romb",
+      "url": "progressbar_romb/"
+    },
+    {
+      "name": "social",
+      "url": "social/"
+    },
+    {
+      "name": "team",
+      "url": "team/"
+    },
+    {
+      "name": "team_step_vertical",
+      "url": "team_step_vertical/"
+    },
+    {
+      "name": "team_top_bar",
+      "url": "team_top_bar/"
+    },
+    {
+      "name": "team_vertical",
+      "url": "team_vertical/"
+    },
+    {
+      "name": "team_vertical_top_bar",
+      "url": "team_vertical_top_bar/"
+    },
+    {
+      "name": "technology",
+      "url": "technology/"
+    },
+    {
+      "name": "template_carousel_v2",
+      "url": "template_carousel_v2/"
+    },
+    {
+      "name": "testimonial",
+      "url": "testimonial/"
+    },
+    {
+      "name": "testimonial_arrow",
+      "url": "testimonial_arrow/"
+    },
+    {
+      "name": "testimonial_center",
+      "url": "testimonial_center/"
+    },
+    {
+      "name": "testimonial_grid",
+      "url": "testimonial_grid/"
+    },
+    {
+      "name": "text",
+      "url": "text/"
+    },
+    {
+      "name": "text_image_left",
+      "url": "text_image_left/"
+    },
+    {
+      "name": "text_image_right",
+      "url": "text_image_right/"
+    },
+    {
+      "name": "themify",
+      "url": "themify/"
+    },
+    {
+      "name": "video",
+      "url": "video/"
+    },
+    {
+      "name": "video_carousel",
+      "url": "video_carousel/"
+    },
+    {
+      "name": "video_features_number",
+      "url": "video_features_number/"
+    },
+    {
+      "name": "video_full_page",
+      "url": "video_full_page/"
+    }
+  ],
+  "res": [
+    {
+      "name": "entypo_css",
+      "type": "css",
+      "src": "%theme_url%/blocks/entypo/assets/css/entypo.css"
+    },
+    {
+      "name": "fontawesome_css",
+      "type": "css",
+      "src": "%theme_url%/blocks/fontawesome/assets/css/fontawesome.css"
+    },
+    {
+      "name": "glyphicons_css",
+      "type": "css",
+      "src": "%theme_url%/blocks/glyphicons/assets/css/glyphicons.css"
+    },
+    {
+      "name": "ionicons_css",
+      "type": "css",
+      "src": "%theme_url%/blocks/ionicons/assets/css/ionicons.css"
+    },
+    {
+      "name": "themify_css",
+      "type": "css",
+      "src": "%theme_url%/blocks/themify/assets/css/themify.css"
+    },
+    {
+      "name": "owl_carousel_css",
+      "type": "css",
+      "src": "%theme_url%/blocks/template_carousel_v2/assets/css/owl.carousel.css"
+    },
+    {
+      "name": "owl_theme_default_css",
+      "type": "css",
+      "src": "%theme_url%/blocks/template_carousel_v2/assets/css/owl.theme.default.css"
+    },
+    {
+      "name": "bootstrap_progressbar_css",
+      "type": "css",
+      "src": "%theme_url%/blocks/team/assets/css/bootstrap-progressbar.css"
+    },
+    {
+      "name": "collapse_css",
+      "type": "css",
+      "src": "%theme_url%/blocks/faq_accordion/assets/css/collapse.css"
+    },
+    {
+      "name": "owl_carousel_js",
+      "type": "js",
+      "src": "%theme_url%/blocks/template_carousel_v2/assets/js/owl.carousel.js"
+    },
+    {
+      "name": "jQuery_countTo_js",
+      "type": "js",
+      "src": "%theme_url%/blocks/counter/assets/js/jQuery.countTo.js"
+    },
+    {
+      "name": "progressbar_js",
+      "type": "js",
+      "src": "%theme_url%/blocks/counter_circle/assets/js/progressbar.js"
+    },
+    {
+      "name": "jquery_waypoints_js",
+      "type": "js",
+      "src": "%theme_url%/blocks/counter_circle/assets/js/jquery.waypoints.js"
+    },
+    {
+      "name": "bootstrap_progressbar_js",
+      "type": "js",
+      "src": "%theme_url%/blocks/team/assets/js/bootstrap-progressbar.js"
+    },
+    {
+      "name": "collapse_js",
+      "type": "js",
+      "src": "%theme_url%/blocks/faq_accordion/assets/js/collapse.js"
+    }
+  ]
 }

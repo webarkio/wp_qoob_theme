@@ -12,7 +12,7 @@
         "type": "text"
     },{
         "name": "e-mail",
-        "label": "E-mail",
+        "label": "E-mail to",
         "type": "text"
     },{
         "name": "phone",

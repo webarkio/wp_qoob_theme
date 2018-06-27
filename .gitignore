@@ -1,6 +1,1 @@
-
 /node_modules
-
-*.map
-.sass-cache
-/tests/phpunit/log

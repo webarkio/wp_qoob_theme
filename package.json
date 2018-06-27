@@ -1,6 +1,6 @@
 {
   "name": "qoob.wordpress.theme",
-  "version": "1.0.0",
+  "version": "1.0.18",
   "description": "Wordpress theme, based on Qoob Page Editor",
   "main": "index.js",
   "directories": {
@@ -22,11 +22,11 @@
   },
   "homepage": "https://github.com/webarkio/wp_qoob_theme#readme",
   "devDependencies": {
-    "grunt": "^0.4.5",
+    "grunt": "^1.0.3",
     "grunt-cli": "^1.2.0",
-    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-clean": "^1.1.0",
     "grunt-contrib-concat": "^1.0.1",
-    "grunt-contrib-watch": "^1.0.0",
-    "load-grunt-tasks": "^3.2.0"
+    "grunt-contrib-watch": "^1.1.0",
+    "load-grunt-tasks": "^4.0.0"
   }
 }

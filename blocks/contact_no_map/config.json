@@ -10,9 +10,14 @@
         "name": "text-btn",
         "label": "Text button",
         "type": "text"
+    },{
+        "name": "e-mail",
+        "label": "E-mail to",
+        "type": "text"
     }],
     "defaults" : {
         "header": "CONTACT TO US",
-        "text-btn": "Send"
+        "text-btn": "Send",
+        "e-mail": "qube@gmail.com"
     }
 }

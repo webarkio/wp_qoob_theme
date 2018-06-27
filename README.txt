@@ -1,7 +1,7 @@
-=== qoob ===
+﻿=== qoob ===
 Requires at least: 4.0
-Tested up to: WordPress 4.8
-Version: 1.0.16
+Tested up to: WordPress 4.9.6
+Version: 1.0.18
 License: GPLv3+
 License URI: https://www.gnu.org/licenses/gpl.html
 Tags: one-column, right-sidebar, flexible-header, accessibility-ready, custom-header, footer-widgets, theme-options, threaded-comments, translation-ready
@@ -78,6 +78,12 @@ Source: https://material.io/guidelines/resources/roboto-noto-fonts.html
 qoob includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
+
+= 1.0.18 =
+* Block assest added
+
+= 1.0.17 =
+* Contact forms were fixed
 
 = 1.0.16 =
 * Blocks for Qoob plugin have been added to the theme

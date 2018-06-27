@@ -335,6 +335,7 @@ function qoob_theme_scripts() {
 	wp_enqueue_script( 'qoob-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array( 'jquery' ), false, true );
 	wp_enqueue_script( 'masonry' );
 	wp_enqueue_script( 'qoob-theme-common', get_template_directory_uri() . '/js/common.js', array( 'jquery' ) );
+	wp_enqueue_script( 'qoob-theme-contact', get_template_directory_uri() . '/js/contact.js', array( 'jquery' ) );
 	wp_enqueue_script( 'magnific-popup', get_template_directory_uri() . '/js/jquery.magnific-popup.js', array( 'jquery' ), false, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -368,6 +369,11 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+ * Contact form
+ */
+require get_template_directory() . '/inc/ajax-contact-form.php';
 
 /**
  * Register widget

@@ -14,7 +14,10 @@
     }],
     "defaults": {
         "header": "Create with Qube is so easy",
-        "video" : "%block_url(assets)%/assets/videos/cube_girl.mp4"
+        "video": {
+            "url": "%block_url(assets)%/assets/videos/cube_girl.mp4",
+            "preview": ""
+        }
     },
     "assets" : [{
         "type": "image",

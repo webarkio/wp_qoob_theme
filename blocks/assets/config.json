@@ -1,0 +1,9 @@
+{
+    "assets": [{
+        "type": "video",
+        "url": "%block_url%/assets/videos/cube_girl.mp4",
+        "preview": "%block_url%/assets/img/cube_girl_preview.png",
+        "title": "Cube Girl",
+        "tags": ["cube"]
+    }]
+}
