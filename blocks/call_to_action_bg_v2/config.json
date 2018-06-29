@@ -1,6 +1,6 @@
 {
     "name": "",
-    "groups": "call_to_action",
+    "groups": "callToAction",
     "template": "template.hbs",
     "settings": [{
         "name": "header",

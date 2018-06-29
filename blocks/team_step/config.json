@@ -134,7 +134,7 @@
             }],
             "order": 2
         }, {
-            "image": "%block_url%/assets/img/person4.png",
+            "image": "%block_url(team)%/assets/img/person4.png",
             "title": "Linda damon",
             "position": "Designer",
             "social": [{

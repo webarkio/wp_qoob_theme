@@ -1,6 +1,6 @@
 {
     "name": "",
-    "groups": "call_to_action",
+    "groups": "callToAction",
     "template": "template.hbs",
     "settings": [{
         "name": "header",
@@ -26,12 +26,12 @@
     }],
     "assets": [{
         "type": "image",
-        "src": "%block_url%/assets/img/call_to_action1.jpg",
-        "tags": ["woman"]
+        "src": "%block_url(gallery_popup)%/assets/img/5.jpg",
+        "tags": ["time"]
     }],
     "defaults": {
         "header": "H1 HEADER VESTIBULUM AC DIAM SIT AMET QUAM SED SIT DUI",
-        "image": "%block_url%/assets/img/call_to_action1.jpg",
+        "image": "%block_url(gallery_popup)%/assets/img/5.jpg",
         "action_text": "Try now",
         "action_url": "http://webark.com/qoob/",
         "text": "<p>Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec rutrum congue leo eget malesuada. Cras ultricies ligula sed magna dictum porta.</p><p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec rutrum congue leo eget malesuada.</p>"

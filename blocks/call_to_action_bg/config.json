@@ -1,40 +1,52 @@
 {
-    "name": "",
-    "groups": "call_to_action",
-    "template": "template.hbs",
-    "settings": [{
-        "name": "header",
-        "label": "Header",
-        "type": "text"
-    }, 
+  "name": "",
+  "groups": "callToAction",
+  "template": "template.hbs",
+  "settings": [
     {
-        "name": "image",
-        "label": "Image",
-        "type": "image",
-        "tags": ["wall", "tablet"]
-    },  {
-        "name": "parallax",
-        "label": "Parallax Background",
-        "type": "checkbox_switch"
-    }, {
-        "name": "action_text",
-        "label": "Action button text",
-        "type": "text"
-    }, {
-        "name": "action_url",
-        "label": "Url for action button",
-        "type": "text"
-    }],
-    "assets": [{
-        "type": "image",
-        "src": "%block_url%/assets/img/call_to_action_bg.jpg",
-        "tags": ["wall"]
-    }],
-    "defaults": {
-        "header": "Ready to build your web site?",
-        "description" : "This web site was created with qoob!",
-        "image" : "%block_url%/assets/img/call_to_action_bg.jpg",
-        "action_text" : "Try now",
-        "action_url" : "http://webark.com/qoob/"
+      "name": "header",
+      "label": "Header",
+      "type": "text"
+    },
+    {
+      "name": "image",
+      "label": "Image",
+      "type": "image",
+      "tags": [
+        "wall",
+        "tablet"
+      ]
+    },
+    {
+      "name": "parallax",
+      "label": "Parallax Background",
+      "type": "checkbox_switch"
+    },
+    {
+      "name": "action_text",
+      "label": "Action button text",
+      "type": "text"
+    },
+    {
+      "name": "action_url",
+      "label": "Url for action button",
+      "type": "text"
     }
+  ],
+  "assets": [
+    {
+      "type": "image",
+      "src": "%block_url%/assets/img/call_to_action_bg.jpg",
+      "tags": [
+        "wall"
+      ]
+    }
+  ],
+  "defaults": {
+    "header": "Ready to build your web site?",
+    "description": "This web site was created with qoob!",
+    "image": "%block_url%/assets/img/call_to_action_bg.jpg",
+    "action_text": "Try now",
+    "action_url": "http://webark.com/qoob/"
+  }
 }

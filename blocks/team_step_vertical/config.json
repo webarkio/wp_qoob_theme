@@ -71,7 +71,7 @@
         "header": "MEET THE TEAM",
         "text": "<p>Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur aliquet quam id dui posuere blandit. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus.</p>",
         "team": [{
-            "image": "%block_url%/assets/img/person1.png",
+            "image": "%block_url(team)%/assets/img/person1.png",
             "title": "Thara noles",
             "position": "Designer",
             "social": [{
@@ -92,7 +92,7 @@
             }],
             "order": 0
         }, {
-            "image": "%block_url%/assets/img/person2.png",
+            "image": "%block_url(team)%/assets/img/person2.png",
             "title": "jerry smith",
             "position": "Manager",
             "social": [{
@@ -113,7 +113,7 @@
             }],
             "order": 1
         }, {
-            "image": "%block_url%/assets/img/person3.png",
+            "image": "%block_url(team)%/assets/img/person3.png",
             "title": "Tom house",
             "position": "Project manager",
             "social": [{
@@ -134,7 +134,7 @@
             }],
             "order": 2
         }, {
-            "image": "%block_url%/assets/img/person4.png",
+            "image": "%block_url(team)%/assets/img/person4.png",
             "title": "Linda damon",
             "position": "Designer",
             "social": [{

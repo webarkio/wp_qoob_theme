@@ -120,10 +120,6 @@
         "tags": ["logo"]
     }, {
         "type": "image",
-        "src": "%block_url%/assets/videos/cube_girl_preview.png",
-        "tags": ["preview"]
-    }, {
-        "type": "image",
         "src": "%block_url%/assets/img/mobile-bg.jpg",
         "tags": ["preview, wall"]
     }]

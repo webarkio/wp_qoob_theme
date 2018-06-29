@@ -2,71 +2,62 @@
   "name": "qoob_theme",
   "groups": [
     {
-      "id": "video",
-      "label": "Video",
-      "position": 0
-    },
-    {
       "id": "slider",
       "label": "Slider",
-      "position": 1
+      "position": 0
     },
     {
       "id": "gallery",
       "label": "Gallery",
-      "position": 2
+      "position": 1
     },
     {
       "id": "text",
       "label": "Text",
-      "position": 3
+      "position": 2
     },
     {
       "id": "forms",
       "label": "Forms",
-      "position": 4
+      "position": 3
     },
     {
       "id": "our_team",
       "label": "Our Team",
-      "position": 5
+      "position": 4
     },
     {
       "id": "other",
       "label": "Other",
-      "position": 6
+      "position": 5
     },
     {
       "id": "introduction",
       "label": "Introduction",
-      "position": 7
+      "position": 6
     },
     {
       "id": "faq",
       "label": "FAQ",
-      "position": 8
+      "position": 7
     },
     {
-      "id": "call_to_action",
+      "id": "callToAction",
       "label": "Call to action",
-      "position": 9
+      "position": 8
     },
     {
       "id": "features",
       "label": "Features",
-      "position": 10
+      "position": 9
     },
     {
       "id": "testimonial",
       "label": "Testimonial",
-      "position": 11
+      "position": 10
     }
   ],
   "blocks": [
-    {
-      "name": "assets",
-      "url": "assets/"
-    },
     {
       "name": "404",
       "url": "404/"
@@ -74,6 +65,10 @@
     {
       "name": "call_to_action",
       "url": "call_to_action/"
+    },
+    {
+      "name": "call_to_action_bg_v2",
+      "url": "call_to_action_bg_v2/"
     },
     {
       "name": "call_to_action_noimg",
@@ -116,6 +111,10 @@
       "url": "gallery_popup/"
     },
     {
+      "name": "gallery_zoom",
+      "url": "gallery_zoom/"
+    },
+    {
       "name": "glyphicons",
       "url": "glyphicons/"
     },
@@ -128,12 +127,20 @@
       "url": "header_big_bg/"
     },
     {
+      "name": "header_no_bg",
+      "url": "header_no_bg/"
+    },
+    {
       "name": "header_small_bg",
       "url": "header_small_bg/"
     },
     {
       "name": "iconbox",
       "url": "iconbox/"
+    },
+    {
+      "name": "iconbox_no_header",
+      "url": "iconbox_no_header/"
     },
     {
       "name": "iconbox_no_icon",
@@ -156,8 +163,16 @@
       "url": "social/"
     },
     {
+      "name": "subscribe",
+      "url": "subscribe/"
+    },
+    {
       "name": "team",
       "url": "team/"
+    },
+    {
+      "name": "team_step",
+      "url": "team_step/"
     },
     {
       "name": "team_step_vertical",
@@ -216,20 +231,8 @@
       "url": "themify/"
     },
     {
-      "name": "video",
-      "url": "video/"
-    },
-    {
-      "name": "video_carousel",
-      "url": "video_carousel/"
-    },
-    {
       "name": "video_features_number",
       "url": "video_features_number/"
-    },
-    {
-      "name": "video_full_page",
-      "url": "video_full_page/"
     }
   ],
   "res": [
@@ -291,12 +294,12 @@
     {
       "name": "progressbar_js",
       "type": "js",
-      "src": "%theme_url%/blocks/counter_circle/assets/js/progressbar.js"
+      "src": "%theme_url%/blocks/counter_circle/assets/js/progressbar.min.js"
     },
     {
       "name": "jquery_waypoints_js",
       "type": "js",
-      "src": "%theme_url%/blocks/counter_circle/assets/js/jquery.waypoints.js"
+      "src": "%theme_url%/blocks/counter_circle/assets/js/jquery.waypoints.min.js"
     },
     {
       "name": "bootstrap_progressbar_js",

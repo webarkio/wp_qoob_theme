@@ -18,10 +18,5 @@
             "url": "%block_url(assets)%/assets/videos/cube_girl.mp4",
             "preview": ""
         }
-    },
-    "assets" : [{
-        "type": "image",
-        "src": "%block_url%/assets/img/mac_pic.png",
-        "tags": ["woman", "person"]
-    }]
+    }
 }

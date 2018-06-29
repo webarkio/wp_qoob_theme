@@ -33,16 +33,16 @@ function qoob_ajax_contactform_action_callback() {
     }
     // if the e-mail is not valid, switch $error to TRUE and set the result text to the shortcode attribute named 'error_noemail'
     if (is_email($params['e-mail'])) {
-        $subject = __('A message from your website\'s contact form', 'wp_qoob_theme');
+        $subject = __('A message from your website\'s contact form', 'qoob');
 
         $message = '';
         if (isset($params['message'])) {
             $message .= wp_kses(stripcslashes($params['message']), array());
         }
         if (isset($name)) {
-            $message .= sprintf(__('%1$sSender\'s name: %2$s', 'wp_qoob_theme'), PHP_EOL, $name);
+            $message .= sprintf(__('%1$sSender\'s name: %2$s', 'qoob'), PHP_EOL, $name);
         }
-        $message .= sprintf(__('%1$sE-mail address: %2$s', 'wp_qoob_theme'), PHP_EOL, $email);
+        $message .= sprintf(__('%1$sE-mail address: %2$s', 'qoob'), PHP_EOL, $email);
 
         $sitename = strtolower($_SERVER['SERVER_NAME']);
         if (substr($sitename, 0, 4) == 'www.') {
