@@ -6,7 +6,7 @@
         "name": "header",
         "label": "Header",
         "type": "text"
-    },{
+    }, {
         "name": "video",
         "label": "Video",
         "type": "video",
@@ -14,9 +14,9 @@
     }],
     "defaults": {
         "header": "Create with Qube is so easy",
-        "video" : "%block_url(assets)%/assets/videos/cube_girl.mp4"
+        "video": "%blocks_url(assets)%/assets/videos/cube_girl.mp4"
     },
-    "assets" : [{
+    "assets": [{
         "type": "image",
         "src": "%block_url%/assets/img/mac_pic.png",
         "tags": ["woman", "person"]

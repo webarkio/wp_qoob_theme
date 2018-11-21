@@ -51,375 +51,314 @@
     }],
     "blocks": [{
         "name": "assets",
-        "url": "http://webark.com/qoob/blocks/default/media/"
+        "url": "assets/"
     }, {
         "name": "404",
-        "url": "%theme_url%/blocks/404/"
+        "url": "404/"
     }, {
         "name": "call_to_action",
-        "url": "%theme_url%/blocks/call_to_action/"
+        "url": "call_to_action/"
     }, {
         "name": "call_to_action_bg",
-        "url": "%theme_url%/blocks/call_to_action_bg/"
+        "url": "call_to_action_bg/"
     }, {
         "name": "call_to_action_v4",
-        "url": "%theme_url%/blocks/call_to_action_bg_v4/"
+        "url": "call_to_action_bg_v4/"
     }, {
         "name": "call_to_action_bg_v2",
-        "url": "%theme_url%/blocks/call_to_action_bg_v2/"
+        "url": "call_to_action_bg_v2/"
     }, {
         "name": "call_to_action_bg_v3",
-        "url": "%theme_url%/blocks/call_to_action_bg_v3/"
+        "url": "call_to_action_bg_v3/"
     }, {
         "name": "call_to_action_noimg",
-        "url": "%theme_url%/blocks/call_to_action_noimg/"
+        "url": "call_to_action_noimg/"
     }, {
         "name": "image_bg",
-        "url": "%theme_url%/blocks/image_bg/"
+        "url": "image_bg/"
     }, {
         "name": "image_download",
-        "url": "%theme_url%/blocks/image_download/"
+        "url": "image_download/"
     }, {
         "name": "block_drupal_comming",
-        "url": "%theme_url%/blocks/block_drupal_comming/"
+        "url": "block_drupal_comming/"
     }, {
         "name": "contact",
-        "url": "%theme_url%/blocks/contact/"
+        "url": "contact/"
     }, {
         "name": "contact_image",
-        "url": "%theme_url%/blocks/contact_image/"
+        "url": "contact_image/"
     }, {
         "name": "contact_fluid",
-        "url": "%theme_url%/blocks/contact_fluid/"
+        "url": "contact_fluid/"
     }, {
         "name": "contact_no_map",
-        "url": "%theme_url%/blocks/contact_no_map/"
+        "url": "contact_no_map/"
     }, {
         "name": "counter",
-        "url": "%theme_url%/blocks/counter/"
+        "url": "counter/"
     }, {
         "name": "counter_circle",
-        "url": "%theme_url%/blocks/counter_circle/"
+        "url": "counter_circle/"
     }, {
         "name": "download_page",
-        "url": "%theme_url%/blocks/download_page/"
+        "url": "download_page/"
     }, {
         "name": "entypo",
-        "url": "%theme_url%/blocks/entypo/"
+        "url": "entypo/"
     }, {
         "name": "faq_accordion",
-        "url": "%theme_url%/blocks/faq_accordion/"
+        "url": "faq_accordion/"
     }, {
         "name": "faq_customers",
-        "url": "%theme_url%/blocks/faq_customers/"
+        "url": "faq_customers/"
     }, {
         "name": "faq_list",
-        "url": "%theme_url%/blocks/contact/"
+        "url": "contact/"
     }, {
         "name": "fontawesome",
-        "url": "%theme_url%/blocks/fontawesome/"
+        "url": "fontawesome/"
     }, {
         "name": "gallery_popup",
-        "url": "%theme_url%/blocks/gallery_popup/"
+        "url": "gallery_popup/"
     }, {
         "name": "gallery_scroll",
-        "url": "%theme_url%/blocks/gallery_scroll/"
+        "url": "gallery_scroll/"
     }, {
         "name": "gallery_zoom",
-        "url": "%theme_url%/blocks/gallery_zoom/"
+        "url": "gallery_zoom/"
     }, {
         "name": "glyphicons",
-        "url": "%theme_url%/blocks/glyphicons/"
+        "url": "glyphicons/"
     }, {
         "name": "header",
-        "url": "%theme_url%/blocks/header/"
+        "url": "header/"
     }, {
         "name": "header_new",
-        "url": "%theme_url%/blocks/header_new/"
-    },{
+        "url": "header_new/"
+    }, {
         "name": "header_big_bg",
-        "url": "%theme_url%/blocks/header_big_bg/"
+        "url": "header_big_bg/"
     }, {
         "name": "header_no_bg",
-        "url": "%theme_url%/blocks/header_no_bg/"
+        "url": "header_no_bg/"
     }, {
         "name": "header_small_bg",
-        "url": "%theme_url%/blocks/header_small_bg/"
+        "url": "header_small_bg/"
     }, {
         "name": "iconbox",
-        "url": "%theme_url%/blocks/iconbox/"
+        "url": "iconbox/"
     }, {
         "name": "iconbox_no_header",
-        "url": "%theme_url%/blocks/iconbox_no_header/"
+        "url": "iconbox_no_header/"
     }, {
         "name": "iconbox_no_icon",
-        "url": "%theme_url%/blocks/iconbox_no_icon/"
+        "url": "iconbox_no_icon/"
     }, {
         "name": "ionicons",
-        "url": "%theme_url%/blocks/ionicons/"
+        "url": "ionicons/"
     }, {
         "name": "landing_bg_video",
-        "url": "%theme_url%/blocks/landing_bg_video/"
+        "url": "landing_bg_video/"
     }, {
         "name": "landing_mac",
-        "url": "%theme_url%/blocks/landing_mac/"
+        "url": "landing_mac/"
     }, {
         "name": "landing_photo",
-        "url": "%theme_url%/blocks/landing_photo/"
+        "url": "landing_photo/"
     }, {
         "name": "load_more",
-        "url": "%theme_url%/blocks/load_more/"
+        "url": "load_more/"
     }, {
         "name": "progressbar_circle",
-        "url": "%theme_url%/blocks/progressbar_circle/"
+        "url": "progressbar_circle/"
     }, {
         "name": "progressbar_romb",
-        "url": "%theme_url%/blocks/progressbar_romb/"
+        "url": "progressbar_romb/"
     }, {
         "name": "slider_buttons",
-        "url": "%theme_url%/blocks/slider_buttons/"
+        "url": "slider_buttons/"
     }, {
         "name": "slider_text",
-        "url": "%theme_url%/blocks/slider_text/"
-    },  {
+        "url": "slider_text/"
+    }, {
         "name": "slider_comments",
-        "url": "%theme_url%/blocks/slider_comments/"
-    },  {
+        "url": "slider_comments/"
+    }, {
         "name": "slider_video",
-        "url": "%theme_url%/blocks/slider_video/"
+        "url": "slider_video/"
     }, {
         "name": "social",
-        "url": "%theme_url%/blocks/social/"
+        "url": "social/"
     }, {
         "name": "subscribe",
-        "url": "%theme_url%/blocks/subscribe/"
+        "url": "subscribe/"
     }, {
         "name": "achievements",
-        "url": "%theme_url%/blocks/achievements/"
+        "url": "achievements/"
     }, {
         "name": "team",
-        "url": "%theme_url%/blocks/team/"
+        "url": "team/"
     }, {
         "name": "team_step",
-        "url": "%theme_url%/blocks/team_step/"
+        "url": "team_step/"
     }, {
         "name": "team_step_vertical",
-        "url": "%theme_url%/blocks/team_step_vertical/"
+        "url": "team_step_vertical/"
     }, {
         "name": "team_top_bar",
-        "url": "%theme_url%/blocks/team_top_bar/"
+        "url": "team_top_bar/"
     }, {
         "name": "team_vertical",
-        "url": "%theme_url%/blocks/team_vertical/"
+        "url": "team_vertical/"
     }, {
         "name": "team_vertical_top_bar",
-        "url": "%theme_url%/blocks/team_vertical_top_bar/"
+        "url": "team_vertical_top_bar/"
     }, {
         "name": "technology",
-        "url": "%theme_url%/blocks/technology/"
+        "url": "technology/"
     }, {
         "name": "template_carousel",
-        "url": "%theme_url%/blocks/template_carousel/"
+        "url": "template_carousel/"
     }, {
         "name": "template_carousel_v2",
-        "url": "%theme_url%/blocks/template_carousel_v2/"
+        "url": "template_carousel_v2/"
     }, {
         "name": "testimonial",
-        "url": "%theme_url%/blocks/testimonial/"
+        "url": "testimonial/"
     }, {
         "name": "testimonial_arrow",
-        "url": "%theme_url%/blocks/testimonial_arrow/"
+        "url": "testimonial_arrow/"
     }, {
         "name": "testimonial_center",
-        "url": "%theme_url%/blocks/testimonial_center/"
+        "url": "testimonial_center/"
     }, {
         "name": "testimonial_grid",
-        "url": "%theme_url%/blocks/testimonial_grid/"
+        "url": "testimonial_grid/"
     }, {
         "name": "text",
-        "url": "%theme_url%/blocks/text/"
+        "url": "text/"
     }, {
         "name": "list_simple",
-        "url": "%theme_url%/blocks/list_simple/"
+        "url": "list_simple/"
     }, {
         "name": "list_simple_ver_a",
-        "url": "%theme_url%/blocks/list_simple_ver_A/"
+        "url": "list_simple_ver_A/"
     }, {
         "name": "list_simple_ver_b",
-        "url": "%theme_url%/blocks/list_simple_ver_B/"
+        "url": "list_simple_ver_B/"
     }, {
         "name": "block_html",
-        "url": "%theme_url%/blocks/block_html/"
+        "url": "block_html/"
     }, {
         "name": "block_prices",
-        "url": "%theme_url%/blocks/block_prices/"
+        "url": "block_prices/"
     }, {
         "name": "block_wp_downloads",
-        "url": "%theme_url%/blocks/block_wp_downloads/"
+        "url": "block_wp_downloads/"
     }, {
         "name": "text_image_left",
-        "url": "%theme_url%/blocks/text_image_left/"
+        "url": "text_image_left/"
     }, {
         "name": "text_image_right",
-        "url": "%theme_url%/blocks/text_image_right/"
+        "url": "text_image_right/"
     }, {
         "name": "themify",
-        "url": "%theme_url%/blocks/themify/"
+        "url": "themify/"
     }, {
         "name": "video",
-        "url": "%theme_url%/blocks/video/"
+        "url": "video/"
     }, {
         "name": "video_carousel",
-        "url": "%theme_url%/blocks/video_carousel/"
+        "url": "video_carousel/"
     }, {
         "name": "video_features",
-        "url": "%theme_url%/blocks/video_features/"
+        "url": "video_features/"
     }, {
         "name": "video_features_number",
-        "url": "%theme_url%/blocks/video_features_number/"
+        "url": "video_features_number/"
     }, {
         "name": "video_full_page",
-        "url": "%theme_url%/blocks/video_full_page/"
+        "url": "video_full_page/"
     }],
     "res": {
-        "css": [
-            {
-                "name": "entypo_css",
-                "url": "%theme_url%/blocks/entypo/assets/css/entypo.css",
-                "use": {
-                    "frontend": true,
-                    "backend": true
-                }
-            }, {
-                "name": "fontawesome_css",
-                "url": "%theme_url%/blocks/fontawesome/assets/css/fontawesome.css",
-                "use": {
-                    "frontend": true,
-                    "backend": true
-                }
-            }, {
-                "name": "glyphicons_css",
-                "url": "%theme_url%/blocks/glyphicons/assets/css/glyphicons.css",
-                "use": {
-                    "frontend": true,
-                    "backend": true
-                }
-            }, {
-                "name": "ionicons_css",
-                "url": "%theme_url%/blocks/ionicons/assets/css/ionicons.css",
-                "use": {
-                    "frontend": true,
-                    "backend": true
-                }
-            }, {
-                "name": "themify_css",
-                "url": "%theme_url%/blocks/themify/assets/css/themify.css",
-                "use": {
-                    "frontend": true,
-                    "backend": true
-                }
-            }, {
-                "name": "owl_carousel_css",
-                "url": "%theme_url%/blocks/template_carousel/assets/css/owl.carousel.css",
-                "use": {
-                    "frontend": true,
-                    "backend": true
-                }
-            }, {
-                "name": "owl_theme_default_css",
-                "url": "%theme_url%/blocks/template_carousel/assets/css/owl.theme.default.css",
-                "use": {
-                    "frontend": true,
-                    "backend": true
-                }
-            }, {
-                "name": "bootstrap_progressbar_css",
-                "url": "%theme_url%/blocks/team/assets/css/bootstrap-progressbar.css",
-                "use": {
-                    "frontend": true,
-                    "backend": true
-                }
-            }, {
-                "name": "carousel_css",
-                "url": "%theme_url%/blocks/slider_buttons/assets/css/carousel.css",
-                "use": {
-                    "frontend": true,
-                    "backend": true
-                }
-            }, {
-                "name": "collapse_css",
-                "url": "%theme_url%/blocks/faq_accordion/assets/css/collapse.css",
-                "use": {
-                    "frontend": true,
-                    "backend": true
-                }
-            }, {
-                "name": "waves_css",
-                "url": "%theme_url%/blocks/faq_customers/assets/css/waves.min.css",
-                "use": {
-                    "frontend": true,
-                    "backend": true
-                }
-            }
-        ],
-        "js": [
-            {
+        "css": [{
+            "name": "entypo_css",
+            "type": "css",
+            "url": "%theme_url%/blocks/entypo/assets/css/entypo.css"
+        }, {
+            "name": "fontawesome_css",
+            "type": "css",
+            "url": "%theme_url%/blocks/fontawesome/assets/css/fontawesome.css"
+        }, {
+            "name": "glyphicons_css",
+            "type": "css",
+            "url": "%theme_url%/blocks/glyphicons/assets/css/glyphicons.css"
+        }, {
+            "name": "ionicons_css",
+            "type": "css",
+            "url": "%theme_url%/blocks/ionicons/assets/css/ionicons.css"
+        }, {
+            "name": "themify_css",
+            "type": "css",
+            "url": "%theme_url%/blocks/themify/assets/css/themify.css"
+        }, {
+            "name": "owl_carousel_css",
+            "type": "css",
+            "url": "%theme_url%/blocks/template_carousel/assets/css/owl.carousel.css"
+        }, {
+            "name": "owl_theme_default_css",
+            "type": "css",
+            "url": "%theme_url%/blocks/template_carousel/assets/css/owl.theme.default.css"
+        }, {
+            "name": "bootstrap_progressbar_css",
+            "type": "css",
+            "url": "%theme_url%/blocks/team/assets/css/bootstrap-progressbar.css"
+        }, {
+            "name": "carousel_css",
+            "type": "css",
+            "url": "%theme_url%/blocks/slider_buttons/assets/css/carousel.css"
+        }, {
+            "name": "collapse_css",
+            "type": "css",
+            "url": "%theme_url%/blocks/faq_accordion/assets/css/collapse.css"
+        }, {
+            "name": "waves_css",
+            "type": "css",
+            "url": "%theme_url%/blocks/faq_customers/assets/css/waves.min.css"
+        }],
+        "js": [{
             "name": "owl_carousel_js",
-            "url": "%theme_url%/blocks/template_carousel/assets/js/owl.carousel.js",
-            "use": {
-                "frontend": true,
-                "backend": true
-            }
-            }, {
-                "name": "jQuery_countTo_js",
-                "url": "%theme_url%/blocks/counter/assets/js/jQuery.countTo.js",
-                "use": {
-                    "frontend": true,
-                    "backend": true
-                }
-            }, {
-                "name": "progressbar_js",
-                "url": "%theme_url%/blocks/counter_circle/assets/js/progressbar.js",
-                "use": {
-                    "frontend": true,
-                    "backend": true
-                }
-            }, {
-                "name": "jquery_waypoints_js",
-                "url": "%theme_url%/blocks/counter_circle/assets/js/jquery.waypoints.js",
-                "use": {
-                    "frontend": true,
-                    "backend": true
-                }
-            }, {
-                "name": "bootstrap_progressbar_js",
-                "url": "%theme_url%/blocks/team/assets/js/bootstrap-progressbar.js",
-                "use": {
-                    "frontend": true,
-                    "backend": true
-                }
-            }, {
-                "name": "carousel_js",
-                "url": "%theme_url%/blocks/slider_buttons/assets/js/carousel.js",
-                "use": {
-                    "frontend": true,
-                    "backend": true
-                }
-            }, {
-                "name": "collapse_js",
-                "url": "%theme_url%/blocks/faq_accordion/assets/js/collapse.js",
-                "use": {
-                    "frontend": true,
-                    "backend": true
-                }
-            }, {
-                "name": "waves_js",
-                "url": "%theme_url%/blocks/faq_customers/assets/js/waves.min.js",
-                "use": {
-                    "frontend": true,
-                    "backend": true
-                }
-            }
-        ]
+            "type": "js",
+            "url": "%theme_url%/blocks/template_carousel/assets/js/owl.carousel.js"
+        }, {
+            "name": "jQuery_countTo_js",
+            "type": "js",
+            "url": "%theme_url%/blocks/counter/assets/js/jQuery.countTo.js"
+        }, {
+            "name": "progressbar_js",
+            "type": "js",
+            "url": "%theme_url%/blocks/counter_circle/assets/js/progressbar.js"
+        }, {
+            "name": "jquery_waypoints_js",
+            "type": "js",
+            "url": "%theme_url%/blocks/counter_circle/assets/js/jquery.waypoints.js"
+        }, {
+            "name": "bootstrap_progressbar_js",
+            "type": "js",
+            "url": "%theme_url%/blocks/team/assets/js/bootstrap-progressbar.js"
+        }, {
+            "name": "carousel_js",
+            "type": "js",
+            "url": "%theme_url%/blocks/slider_buttons/assets/js/carousel.js"
+        }, {
+            "name": "collapse_js",
+            "type": "js",
+            "url": "%theme_url%/blocks/faq_accordion/assets/js/collapse.js"
+        }, {
+            "name": "waves_js",
+            "type": "js",
+            "url": "%theme_url%/blocks/faq_customers/assets/js/waves.min.js"
+        }]
     }
 }

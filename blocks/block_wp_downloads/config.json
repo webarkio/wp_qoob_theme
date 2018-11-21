@@ -59,13 +59,13 @@
     }],
     "defaults": {
         "header": "WordPress Version<span> 3000 downloads</span>",
-        "url_pl" : "Enter your website url",
-        "value_title" : "install",
+        "url_pl": "Enter your website url",
+        "value_title": "install",
         "button_id": "",
         "button_onclick": "",
         "html_list": [{
             "title": "Try demo",
-            "url": "http://webark.com/qoob/demo/",
+            "url": "http://qoob-builder.com:8000/qoob",
             "icon": "fa fa-play-circle",
             "btn_id": "",
             "btn_onclick": "",
@@ -74,7 +74,7 @@
             "order": 0
         }, {
             "title": "Download",
-            "url": "https://downloads.wordpress.org/plugin/qoob.2.0.1.zip",
+            "url": "https://downloads.wordpress.org/plugin/qoob.3.0.6.zip",
             "icon": "fa fa-download",
             "btn_id": "",
             "btn_onclick": "",
@@ -92,7 +92,7 @@
             "order": 2
         }, {
             "title": "Installation",
-            "url": "http://webark.com/qoob/docs/wordpress-page-builder/wordpress-installation/",
+            "url": "http://qoob-builder.com/docs/wordpress-page-builder/wordpress-installation/",
             "icon": "fa fa-book",
             "btn_id": "",
             "btn_onclick": "",
@@ -101,7 +101,7 @@
             "order": 3
         }, {
             "title": "Getting Started with qoob for WordPress",
-            "url": "http://webark.com/qoob/docs/wordpress-page-builder/wordpress-getting-started/",
+            "url": "http://qoob-builder.com/docs/wordpress-page-builder/",
             "icon": "fa fa-book",
             "btn_id": "",
             "btn_onclick": "",

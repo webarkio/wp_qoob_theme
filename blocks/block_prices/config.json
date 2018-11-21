@@ -26,7 +26,7 @@
         "name": "btn_target",
         "label": "Button Open link in new tab?",
         "type": "checkbox"
-    }, { 
+    }, {
         "name": "description",
         "label": "Description",
         "type": "text"
@@ -56,14 +56,14 @@
         "type": "image"
     }, {
         "name": "case",
-        "label": "List", 
+        "label": "List",
         "type": "accordion",
-        "viewType" : "flip",
+        "viewType": "flip",
         "settings": [{
-                "name": "title",
-                "label": "Titile",
-                "type": "text"
-            }, {
+            "name": "title",
+            "label": "Titile",
+            "type": "text"
+        }, {
             "name": "price",
             "label": "Price",
             "type": "text"
@@ -109,78 +109,78 @@
     }],
     "defaults": {
         "header": "Used by 385,236 happy customers",
-        "description" : "We do have a 30 day money back guarantee for all type of licenses.",
-        "desktop" : "%block_url%/assets/img/prices_bg-desktop.png",
-        "desktop_retina" : "%block_url%/assets/img/prices_bg-desktop-retina.png",
-        "tablet" : "%block_url%/assets/img/prices_bg-tablet.png",
-        "tablet_retina" : "%block_url%/assets/img/prices_bg-tablet-retina.png",
-        "mobile" : "%block_url%/assets/img/prices_bg-mobile.png",
-        "mobile_retina" : "%block_url%/assets/img/prices_bg-mobile-retina.png",
-        "button_text" : "TRY LIVE DEMO BEFORE BUY",
-        "button_url" : "http://webark.com/qoob/demo/",
+        "description": "We do have a 30 day money back guarantee for all type of licenses.",
+        "desktop": "%block_url%/assets/img/prices_bg-desktop.png",
+        "desktop_retina": "%block_url%/assets/img/prices_bg-desktop-retina.png",
+        "tablet": "%block_url%/assets/img/prices_bg-tablet.png",
+        "tablet_retina": "%block_url%/assets/img/prices_bg-tablet-retina.png",
+        "mobile": "%block_url%/assets/img/prices_bg-mobile.png",
+        "mobile_retina": "%block_url%/assets/img/prices_bg-mobile-retina.png",
+        "button_text": "TRY LIVE DEMO BEFORE BUY",
+        "button_url": "http://qoob-builder.com:8000/qoob",
         "case": [{
             "title": "Open source license",
             "price": "Free",
             "content_list": [{
                 "title": "Limited Technical Support",
                 "order": 0
-                }, {
+            }, {
                 "title": "Only for Open Source",
                 "order": 1
-                }, {
+            }, {
                 "title": "Future Updates",
                 "order": 2
-                }, {
+            }, {
                 "title": "Any CMS and Framework",
                 "order": 3
-                }, {
+            }, {
                 "title": "Can't be Used for commerce",
                 "order": 4
-                }],
+            }],
             "action_text": "Download",
-            "action_url": "http://webark.com/qoob/download"
+            "action_url": "http://qoob-builder.com/download/"
         }, {
             "title": "Single Commercial",
             "price": "<span>$</span>29",
             "content_list": [{
                 "title": "Regular Support",
                 "order": 0
-                }, {
+            }, {
                 "title": "Limited to 1 Project",
                 "order": 1
-                }, {
+            }, {
                 "title": "Future Updates",
                 "order": 2
-                }, {
+            }, {
                 "title": "Any CMS and Framework",
                 "order": 3
-                }, {
+            }, {
                 "title": "Can be Used for Commerce",
                 "order": 4
-                }],
+            }],
             "action_text": "Buy",
-            "action_url": "http://webark.com/pay.php?name=Qoob Single Commercial License&price=29.00"
+            "action_url": "https://webark.com/pay.php?name=Qoob Single Commercial License&price=29.00"
         }, {
             "title": "Extended Commercial",
             "price": "<span>$</span>119",
             "content_list": [{
                 "title": "Premium Technical Support",
                 "order": 0
-                }, {
+            }, {
                 "title": "Unlimited Projects",
                 "order": 1
-                }, {
+            }, {
                 "title": "Future Updates",
                 "order": 2
-                }, {
+            }, {
                 "title": "Any CMS and Framework",
                 "order": 3
-                }, {
+            }, {
                 "title": "Can be Used for Commerce",
                 "order": 4
-                }],
+            }],
             "action_text": "Buy",
-            "action_url": "http://webark.com/pay.php?name=Qoob Extended Commercial License&price=119.00"
+            "action_url": "https://webark.com/pay.php?name=Qoob Extended Commercial License&price=119.00"
         }]
     }
 }
